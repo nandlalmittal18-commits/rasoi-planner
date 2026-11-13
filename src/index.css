@@ -32,8 +32,8 @@
   --wa: #1fa855;
   --danger: #c62828;
 
-  --font-display: 'Bricolage Grotesque', 'Segoe UI', system-ui, sans-serif;
-  --font-body: 'Mukta', 'Noto Sans Devanagari', 'Segoe UI', system-ui, sans-serif;
+  --font-display: 'Poppins', 'Segoe UI', system-ui, sans-serif;
+  --font-body: 'Hind', 'Noto Sans Devanagari', 'Segoe UI', system-ui, sans-serif;
 
   --radius: 20px;
   --radius-sm: 12px;
@@ -56,10 +56,10 @@ body {
   -webkit-tap-highlight-color: transparent;
 }
 body.sheet-open { overflow: hidden; }
-h1, h2, h3 { font-family: var(--font-display); margin: 0; text-wrap: balance; letter-spacing: -0.015em; }
-h1 { font-size: 1.65rem; line-height: 1.12; font-weight: 700; }
-h2 { font-size: 1.28rem; font-weight: 700; }
-h3 { font-size: 1.04rem; font-weight: 650; }
+h1, h2, h3 { font-family: var(--font-display); margin: 0; text-wrap: balance; letter-spacing: -0.01em; }
+h1 { font-size: 1.55rem; line-height: 1.15; font-weight: 700; }
+h2 { font-size: 1.22rem; font-weight: 600; }
+h3 { font-size: 1rem; font-weight: 600; }
 p { margin: 0; }
 button, input, select { font: inherit; color: inherit; }
 button { cursor: pointer; }
@@ -81,7 +81,7 @@ a { color: var(--primary); }
   border-bottom: 1px solid var(--line);
 }
 .brand { display: flex; flex-direction: column; min-width: 0; }
-.brand-name { font-family: var(--font-display); font-weight: 800; font-size: 1.15rem; line-height: 1.1; color: var(--primary); }
+.brand-name { font-family: var(--font-display); font-weight: 700; font-size: 1.15rem; line-height: 1.1; color: var(--primary); }
 .brand-sub { color: var(--muted); font-size: 0.85rem; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
 .content { padding: 18px 16px 8px; }
 .stack { display: flex; flex-direction: column; gap: 14px; }
@@ -206,7 +206,7 @@ a { color: var(--primary); }
 }
 .day-pill:active { transform: scale(0.95); }
 .day-pill-name { font-size: 0.72rem; color: var(--muted); font-weight: 700; text-transform: uppercase; letter-spacing: 0.04em; }
-.day-pill-date { font-family: var(--font-display); font-weight: 800; font-size: 1.2rem; line-height: 1.1; font-variant-numeric: tabular-nums; }
+.day-pill-date { font-family: var(--font-display); font-weight: 600; font-size: 1.2rem; line-height: 1.1; font-variant-numeric: tabular-nums; }
 .day-pill-marks { display: flex; gap: 3px; height: 8px; align-items: center; }
 .day-pill.is-today { border-color: var(--primary); }
 .day-pill.is-active { background: linear-gradient(160deg, #ff7a18, var(--primary)); border-color: transparent; color: #fff; box-shadow: 0 8px 18px rgb(232 89 12 / 0.3); }
@@ -278,6 +278,9 @@ a { color: var(--primary); }
 }
 .sheet-hero { position: relative; height: 230px; overflow: hidden; border-radius: 26px 26px 0 0; }
 .sheet-hero .dish-art { width: 100%; height: 100%; border-radius: 0; box-shadow: none; }
+.dish-photo { object-fit: cover; background: var(--surface-2); }
+.photo-credit { position: absolute; left: 10px; bottom: 8px; max-width: calc(100% - 20px); margin: 0; padding: 2px 8px; border-radius: 999px; background: rgb(0 0 0 / 0.5); color: #fff; font-size: 0.7rem; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+.photo-credit a { color: #fff; }
 .sheet-close { position: absolute; top: 12px; right: 12px; width: 40px; height: 40px; border-radius: 50%; border: 0; background: rgb(255 255 255 / 0.92); font-size: 1.05rem; font-weight: 700; box-shadow: var(--shadow); }
 .sheet-body { padding: 18px 18px 24px; display: flex; flex-direction: column; gap: 16px; }
 .sheet-title h2 { font-size: 1.55rem; }

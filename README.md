@@ -69,6 +69,16 @@ scripts/
 4. Add its recipe (English and Hindi, same number of steps) to a file in `scripts/recipes/`, then run `python3 scripts/build_recipes.py`. It refuses to build if any dish is missing a recipe.
 5. Its picture is drawn automatically from its name and category (`src/components/DishArt.tsx`).
 
+### Adding real dish photos
+
+Add an entry to `src/data/photos.json` (dish id → photo). Use only photos you're allowed to use: your own, bought, or free-licensed ones (for example Wikimedia Commons) with the photographer credited:
+
+```json
+"poha": { "src": "https://…/640px-Poha.jpg", "credit": "Photographer", "license": "CC BY-SA 4.0", "page": "https://commons.wikimedia.org/wiki/File:…" }
+```
+
+The credit shows on the dish's detail screen. A dish without a photo, or whose photo fails to load, shows its drawn picture.
+
 ## How the menu engine decides
 
 1. **Never broken:** diet, non-veg days, Jain, no onion-garlic, vrat days, "never suggest" dishes.

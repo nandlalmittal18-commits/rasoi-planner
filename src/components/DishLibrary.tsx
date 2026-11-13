@@ -1,6 +1,6 @@
 import { useMemo, useState } from 'react';
 import { DISHES, WORLD_CUISINES, cuisineOf, isWorldDish, type Dish, type FamilyProfile } from '../engine';
-import { DishArt } from './DishArt';
+import { DishPicture } from './DishPicture';
 import { FoodMark } from './icons';
 
 const MEALS = ['All', 'Breakfast', 'Lunch', 'Dinner', 'Snack', 'Dessert'] as const;
@@ -107,7 +107,7 @@ export function DishLibrary({
           return (
             <li key={d.id} className={`card lib-row${disliked ? ' is-disliked' : ''}`}>
               <button className="lib-main" onClick={() => onOpenDish(d.id)} aria-label={`${d.name}: see recipe and details`}>
-                <DishArt dish={d} size={72} />
+                <DishPicture dish={d} size={72} />
                 <span className="dish-text">
                   <span className="dish-name">
                     <FoodMark diet={d.diet} /> {d.name}

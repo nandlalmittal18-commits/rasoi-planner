@@ -1,7 +1,7 @@
 import { useEffect, useRef, useState } from 'react';
 import { getDish, getRecipe, recipeMessage, whatsappLink } from '../engine';
 import { copyText } from '../lib/clipboard';
-import { DishArt } from './DishArt';
+import { DishPicture, getPhoto } from './DishPicture';
 import { CopyIcon, FoodMark, WhatsAppIcon } from './icons';
 
 interface Props {
@@ -36,6 +36,7 @@ export function DishSheet({ dishId, onClose, notify }: Props) {
   if (!dishId) return null;
   const d = getDish(dishId);
   const recipe = getRecipe(dishId);
+  const photo = getPhoto(dishId);
   const steps = recipe?.[lang] ?? [];
   const tags = [
     d.jain && 'Jain OK',
@@ -49,10 +50,23 @@ export function DishSheet({ dishId, onClose, notify }: Props) {
     <div className="sheet-backdrop" onClick={onClose}>
       <div className="sheet" role="dialog" aria-modal="true" aria-labelledby="sheet-title" onClick={(e) => e.stopPropagation()}>
         <div className="sheet-hero">
-          <DishArt dish={d} size={220} className="sheet-art" cover />
+          <DishPicture dish={d} size={220} className="sheet-art" cover />
           <button ref={closeRef} type="button" className="sheet-close" onClick={onClose} aria-label="Close">
             ✕
           </button>
+          {photo?.credit && (
+            <p className="photo-credit">
+              Photo:{' '}
+              {photo.page ? (
+                <a href={photo.page} target="_blank" rel="noopener noreferrer">
+                  {photo.credit}
+                </a>
+              ) : (
+                photo.credit
+              )}
+              {photo.license ? `, ${photo.license}` : ''}
+            </p>
+          )}
         </div>
 
         <div className="sheet-body">

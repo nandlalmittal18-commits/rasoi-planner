@@ -18,7 +18,7 @@ import {
   type WeekPlan,
 } from '../engine';
 import { copyText } from '../lib/clipboard';
-import { DishArt } from './DishArt';
+import { DishPicture } from './DishPicture';
 import { CopyIcon, FoodMark, MoonIcon, ShuffleIcon, SunIcon, SunriseIcon, SwapIcon, WhatsAppIcon } from './icons';
 
 interface Props {
@@ -190,7 +190,7 @@ function NextUp({
         </div>
       </div>
       <button className="next-art" onClick={() => onOpenDish(dish.id)} aria-label={`Open ${dish.name}`}>
-        <DishArt dish={dish} size={112} />
+        <DishPicture dish={dish} size={112} />
       </button>
     </section>
   );
@@ -328,7 +328,7 @@ function MealCard({ meal, onSwap, onOpenDish }: { meal: Meal; onSwap: (item: num
           return (
             <li key={`${item.dishId}-${i}`} className={`dish-row pop-in${isBase ? ' is-base' : ''}`}>
               <button className="dish-open" onClick={() => onOpenDish(d.id)} aria-label={`${d.name}: see recipe and details`}>
-                <DishArt dish={d} size={isBase ? 44 : 58} />
+                <DishPicture dish={d} size={isBase ? 44 : 58} />
                 <span className="dish-text">
                   <span className="dish-name">
                     <FoodMark diet={d.diet} /> {d.name}
