@@ -13,7 +13,10 @@ const KEYS = {
   profile: 'rasoi.profile.v1',
   plan: 'rasoi.plan.v1',
   grocery: 'rasoi.grocery.v1',
+  photos: 'rasoi.photos.v1',
 };
+
+const PHOTO_CACHE_DAYS = 14;
 
 interface Ticked {
   plan: string;
@@ -182,8 +185,19 @@ export const storage = {
     if (plan) cloud((uid) => db().from('week_plans').upsert({ user_id: uid, plan, grocery, updated_at: now() }));
   },
 
-  /** Removes the copy on this phone (used on sign-out). */
-  clearLocal: () => Object.values(KEYS).forEach(remove),
+  /** Dish photos found on Wikipedia, kept for two weeks. Not personal data, so never sent online. */
+  loadPhotoCache<T>(version: string): T | null {
+    const saved = read<{ version: string; savedAt: number; photos: T }>(KEYS.photos);
+    if (!saved || saved.version !== version) return null;
+    if (Date.now() - saved.savedAt > PHOTO_CACHE_DAYS * 86_400_000) return null;
+    return saved.photos;
+  },
+  savePhotoCache(version: string, photos: unknown) {
+    write(KEYS.photos, { version, savedAt: Date.now(), photos });
+  },
+
+  /** Removes the family's data from this phone (used on sign-out). Dish photos stay. */
+  clearLocal: () => [KEYS.profile, KEYS.plan, KEYS.grocery].forEach(remove),
 
   /** "Start over": removes this phone's copy and, if signed in, the online copy. */
   clearAll() {

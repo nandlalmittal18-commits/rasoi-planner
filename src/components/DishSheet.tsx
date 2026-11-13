@@ -1,7 +1,8 @@
 import { useEffect, useRef, useState } from 'react';
 import { getDish, getRecipe, recipeMessage, whatsappLink } from '../engine';
 import { copyText } from '../lib/clipboard';
-import { DishPicture, getPhoto } from './DishPicture';
+import { usePhoto } from '../lib/photos';
+import { DishPicture } from './DishPicture';
 import { CopyIcon, FoodMark, WhatsAppIcon } from './icons';
 
 interface Props {
@@ -15,6 +16,7 @@ const DIET_TEXT = { Veg: 'Vegetarian', Egg: 'Contains egg', 'Non-Veg': 'Non-vege
 /** Full details of one dish: picture, facts from the dish sheet, ingredients and recipe. */
 export function DishSheet({ dishId, onClose, notify }: Props) {
   const [lang, setLang] = useState<'en' | 'hi'>('en');
+  const photo = usePhoto(dishId ?? '');
   const closeRef = useRef<HTMLButtonElement>(null);
 
   useEffect(() => {
@@ -36,7 +38,6 @@ export function DishSheet({ dishId, onClose, notify }: Props) {
   if (!dishId) return null;
   const d = getDish(dishId);
   const recipe = getRecipe(dishId);
-  const photo = getPhoto(dishId);
   const steps = recipe?.[lang] ?? [];
   const tags = [
     d.jain && 'Jain OK',

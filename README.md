@@ -69,15 +69,19 @@ scripts/
 4. Add its recipe (English and Hindi, same number of steps) to a file in `scripts/recipes/`, then run `python3 scripts/build_recipes.py`. It refuses to build if any dish is missing a recipe.
 5. Its picture is drawn automatically from its name and category (`src/components/DishArt.tsx`).
 
-### Adding real dish photos
+### Dish photos
 
-Add an entry to `src/data/photos.json` (dish id → photo). Use only photos you're allowed to use: your own, bought, or free-licensed ones (for example Wikimedia Commons) with the photographer credited:
+Photos come from Wikipedia / Wikimedia Commons (free to use with credit). The app fetches them itself the first time it opens and keeps them on the phone for two weeks.
+
+- `src/data/photo-sources.json`: for each dish, the Wikipedia article(s) to take the photo from. The first with a free photo wins. Vegetarian dishes only use articles about that exact dish, so no meat photo appears (a test checks this).
+- `src/data/photos.json`: your own overrides. Add your own or bought photos, or hide a wrong one:
 
 ```json
-"poha": { "src": "https://…/640px-Poha.jpg", "credit": "Photographer", "license": "CC BY-SA 4.0", "page": "https://commons.wikimedia.org/wiki/File:…" }
+"poha": { "src": "https://…/poha.jpg", "credit": "Your name", "license": "Own photo" },
+"tinda-masala": { "hide": true }
 ```
 
-The credit shows on the dish's detail screen. A dish without a photo, or whose photo fails to load, shows its drawn picture.
+The photographer and licence show on each dish's detail screen. A dish without a photo shows its drawn picture.
 
 ## How the menu engine decides
 
