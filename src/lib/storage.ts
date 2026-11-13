@@ -64,21 +64,44 @@ function withDefaults(p: FamilyProfile): FamilyProfile {
 
 // ---------------------------------------------------------------- online copy
 
-const SAVE_FAILED = 'Couldn’t save online. Your changes are kept on this phone.';
+/** Whether the online copy is up to date. Shown on the Family screen. */
+export type SyncState = { state: 'idle' | 'saving' | 'saved' | 'error'; message?: string };
+
 let userId: string | null = null;
 let reportError: (message: string) => void = () => {};
+let sync: SyncState = { state: 'idle' };
+const syncListeners = new Set<(s: SyncState) => void>();
+let pending = 0;
+let failedThisRound = false;
 // Online writes run one after another, so a quick swap-swap can't arrive out of order.
 let queue: Promise<unknown> = Promise.resolve();
+
+function setSync(next: SyncState) {
+  sync = next;
+  syncListeners.forEach((fn) => fn(next));
+}
 
 function cloud(task: (uid: string) => PromiseLike<{ error: { message: string } | null }>) {
   const uid = userId;
   if (!uid || !supabase()) return;
+  if (pending === 0) failedThisRound = false;
+  pending++;
+  if (sync.state !== 'error') setSync({ state: 'saving' });
+  const fail = (message: string) => {
+    if (!failedThisRound) reportError(`Couldn’t save online: ${message}. Your changes are kept on this phone.`);
+    failedThisRound = true;
+    setSync({ state: 'error', message });
+  };
   queue = queue
     .then(() => task(uid))
     .then((res) => {
-      if (res.error) reportError(SAVE_FAILED);
+      if (res.error) fail(res.error.message);
     })
-    .catch(() => reportError(SAVE_FAILED));
+    .catch((e: unknown) => fail(e instanceof Error ? e.message : 'no internet connection'))
+    .finally(() => {
+      pending--;
+      if (pending === 0 && !failedThisRound) setSync({ state: 'saved' });
+    });
 }
 
 const db = () => supabase()!;
@@ -88,6 +111,15 @@ export const storage = {
   /** Called when someone signs in (their id) or out (null). */
   setUser(id: string | null) {
     userId = id;
+    setSync({ state: 'idle' });
+  },
+  getSync: () => sync,
+  /** Listen for changes to the online-save status. Returns a function that stops listening. */
+  onSync(fn: (s: SyncState) => void) {
+    syncListeners.add(fn);
+    return () => {
+      syncListeners.delete(fn);
+    };
   },
   onError(fn: (message: string) => void) {
     reportError = fn;

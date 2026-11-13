@@ -18,6 +18,11 @@ create table if not exists public.week_plans (
   updated_at timestamptz not null default now()
 );
 
+-- Signed-in users may use these tables at all (row level security below then limits them to their own rows).
+-- Some Supabase projects don't grant this automatically for new tables.
+grant select, insert, update, delete on table public.families   to authenticated;
+grant select, insert, update, delete on table public.week_plans to authenticated;
+
 -- Row level security: a signed-in family can only see and change its own rows.
 alter table public.families   enable row level security;
 alter table public.week_plans enable row level security;
@@ -51,3 +56,6 @@ join auth.users u on u.id = f.user_id
 left join public.week_plans w on w.user_id = f.user_id;
 
 revoke all on public.family_overview from anon, authenticated;
+
+-- Make the API notice the changes straight away.
+notify pgrst, 'reload schema';

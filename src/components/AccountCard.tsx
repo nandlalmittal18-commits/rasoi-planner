@@ -1,3 +1,5 @@
+import type { SyncState } from '../lib/storage';
+
 export interface Account {
   id: string;
   email: string;
@@ -7,12 +9,14 @@ export interface Account {
 interface Props {
   account: Account | null;
   ready: boolean;
+  sync: SyncState;
   onSignIn: () => void;
   onSignOut: () => void;
+  onRetry: () => void;
 }
 
 /** Sign in with Google, or show who is signed in. */
-export function AccountCard({ account, ready, onSignIn, onSignOut }: Props) {
+export function AccountCard({ account, ready, sync, onSignIn, onSignOut, onRetry }: Props) {
   if (!ready) {
     return (
       <div className="card account">
@@ -45,12 +49,24 @@ export function AccountCard({ account, ready, onSignIn, onSignOut }: Props) {
         <div className="account-text">
           <strong>{account.name || 'Signed in'}</strong>
           <span className="muted small">{account.email}</span>
-          <span className="saved-online small">Menu saved to your account</span>
+          {sync.state === 'saving' && <span className="muted small">Saving to your account…</span>}
+          {(sync.state === 'saved' || sync.state === 'idle') && <span className="saved-online small">Menu saved to your account</span>}
         </div>
       </div>
       <button type="button" className="btn btn-quiet btn-small" onClick={onSignOut}>
         Sign out
       </button>
+      {sync.state === 'error' && (
+        <div className="sync-error" role="alert">
+          <p>
+            <strong>Not saved online yet.</strong> Your family is safe on this phone.
+          </p>
+          <p className="small">Reason: {sync.message}</p>
+          <button type="button" className="btn btn-primary btn-small" onClick={onRetry}>
+            Try again
+          </button>
+        </div>
+      )}
     </div>
   );
 }

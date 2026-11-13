@@ -8,7 +8,7 @@ import { GroceryView } from './components/GroceryView';
 import { BookIcon, CalendarIcon, CartIcon, FamilyIcon, Logo } from './components/icons';
 import { MenuView } from './components/MenuView';
 import { BLANK_PROFILE, DIET_LABEL, SAMPLE_PROFILE } from './lib/sample';
-import { storage } from './lib/storage';
+import { storage, type SyncState } from './lib/storage';
 import { signInWithGoogle, signOut, supabase } from './lib/supabase';
 
 type Tab = 'menu' | 'grocery' | 'dishes' | 'family';
@@ -62,6 +62,7 @@ export default function App() {
   const [toast, setToast] = useState('');
   const [account, setAccount] = useState<Account | null>(null);
   const [authReady, setAuthReady] = useState(!online);
+  const [sync, setSync] = useState<SyncState>(storage.getSync());
   const toastTimer = useRef<number | undefined>(undefined);
   const signedInAs = useRef<string | null>(null);
 
@@ -84,6 +85,7 @@ export default function App() {
   }, []);
 
   useEffect(() => storage.onError(notify), [notify]);
+  useEffect(() => storage.onSync(setSync), []);
 
   // ---- Google sign-in: load the family's saved data whenever someone signs in.
   useEffect(() => {
@@ -198,7 +200,16 @@ export default function App() {
     notify(account ? 'Your family was deleted from this phone and your account' : 'Your family was deleted from this phone');
   };
 
-  const accountCard = online ? <AccountCard account={account} ready={authReady} onSignIn={onSignIn} onSignOut={onSignOut} /> : null;
+  const accountCard = online ? (
+    <AccountCard
+      account={account}
+      ready={authReady}
+      sync={sync}
+      onSignIn={onSignIn}
+      onSignOut={onSignOut}
+      onRetry={() => storage.pushAllToCloud()}
+    />
+  ) : null;
 
   return (
     <div className="app">
