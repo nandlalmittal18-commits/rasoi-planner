@@ -51,7 +51,7 @@ const text = (d: Dish) => `${d.id} ${d.name.toLowerCase()}`;
 
 export function kindOf(d: Dish): Kind {
   const t = text(d);
-  if (/chaas|buttermilk|lassi/.test(t)) return 'glass';
+  if (/chaas|buttermilk|lassi|shake|smoothie/.test(t)) return 'glass';
   if (/pizza/.test(t)) return 'wedge';
   if (/samosa/.test(t)) return 'triangle';
   if (/sandwich|burger|toast|bruschetta|garlic-bread/.test(t)) return 'stack';
@@ -73,6 +73,7 @@ export function kindOf(d: Dish): Kind {
 
 export function colourOf(d: Dish): string {
   const t = text(d);
+  if (/shake|smoothie/.test(t)) return FOOD.wheat;
   if (/chaas|buttermilk|raita|kheer|payasam|shrikhand|idli|curd|white-sauce/.test(t)) return FOOD.cream;
   if (/palak|saag|methi|hara|green|spinach|bhindi|beans|poriyal|thoran|cabbage|lauki|turai|tinda|karela|cucumber|fattoush|minestrone|papaya/.test(t)) return FOOD.green;
   if (/gajar|carrot|kaddu|pumpkin|tikka|thai-red|chettinad|tandoori/.test(t)) return FOOD.orange;

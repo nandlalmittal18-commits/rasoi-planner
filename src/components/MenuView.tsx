@@ -19,6 +19,7 @@ import {
 } from '../engine';
 import { copyText } from '../lib/clipboard';
 import { DishPicture } from './DishPicture';
+import { ProteinPill } from './ProteinPill';
 import { CopyIcon, FoodMark, MoonIcon, ShuffleIcon, SunIcon, SunriseIcon, SwapIcon, WhatsAppIcon } from './icons';
 
 interface Props {
@@ -339,7 +340,7 @@ function MealCard({ meal, onSwap, onOpenDish }: { meal: Meal; onSwap: (item: num
                   {!isBase && (
                     <span className="dish-meta">
                       {d.cookTime} min · {d.heaviness}
-                      {d.region !== 'Pan-India' && d.region !== 'Modern' ? ` · ${d.region}` : ''}
+                      {d.region !== 'Pan-India' && d.region !== 'Modern' ? ` · ${d.region}` : ''} <ProteinPill dishId={d.id} />
                     </span>
                   )}
                 </span>

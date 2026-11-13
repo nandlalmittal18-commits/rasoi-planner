@@ -1,5 +1,6 @@
 import { useEffect, useRef, useState } from 'react';
 import { getDish, getRecipe, recipeMessage, whatsappLink } from '../engine';
+import { NutritionPanel } from './NutritionPanel';
 import { copyText } from '../lib/clipboard';
 import { usePhoto } from '../lib/photos';
 import { DishPicture } from './DishPicture';
@@ -115,6 +116,8 @@ export function DishSheet({ dishId, onClose, notify }: Props) {
               <strong>Plan ahead:</strong> {d.prepAhead}
             </p>
           )}
+
+          <NutritionPanel dishId={d.id} />
 
           <section aria-labelledby="ing-title">
             <h3 id="ing-title">Main ingredients</h3>

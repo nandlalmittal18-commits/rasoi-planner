@@ -7,12 +7,14 @@
 //     fits, in this order: in-season only, then weekday cooking time, then
 //     no dish twice in a week, and last tiffin-friendly lunch and at most one
 //     heavy dish a day.
-//  3. Among the dishes that fit, preferred cuisines, kid favourites and
-//     seasonal dishes are more likely to be picked.
+//  3. Among the dishes that fit, preferred cuisines, kid favourites,
+//     seasonal dishes and (with "Protein focus" on) protein-rich dishes
+//     are more likely to be picked.
 //  4. World food (Chinese, Italian, Continental…) appears only on the
 //     family's chosen number of "world-food dinners", plus the odd
 //     continental breakfast, and never on vrat days.
 
+import { proteinLevel } from './nutrition';
 import { ALL_DISHES, cuisineOf, getDish, hasDish, isRiceStaple, isStaple, isWorldCuisine, isWorldDish } from './dishes';
 import type { DayPlan, Dish, FamilyProfile, Meal, MealItem, MealType, RoleKey, Season, WeekPlan } from './types';
 import {
@@ -128,6 +130,14 @@ const WORLD_TEMPLATE: Template = {
   weight: () => 1,
 };
 
+const PROTEIN_ROLES: RoleKey[] = ['dal', 'paneer', 'nonveg'];
+
+/** With "Protein focus" on, meal patterns that include a dal, paneer or non-veg dish come up more often. */
+function proteinPatternBoost(t: Template, c: Ctx): number {
+  if (!c.profile.proteinFocus) return 1;
+  return t.roles.some((slot) => PROTEIN_ROLES.includes(slot.role)) ? 2 : 0.5;
+}
+
 /** Last resort when no pattern fits (very strict profiles). */
 const FALLBACK: Template = { key: 'simple', label: 'Simple meal', roles: [r('any')], weight: () => 1 };
 
@@ -174,6 +184,11 @@ function weight(d: Dish, c: Ctx): number {
   }
   if (d.season !== 'All' && d.season === c.season) w *= 1.6;
   if (c.profile.hasKids && d.kidFavourite) w *= 1.5;
+  if (c.profile.proteinFocus) {
+    // Soft preference only: hard rules (diet, vrat, Jain…) are checked before this.
+    const level = proteinLevel(d.id);
+    w *= level === 'high' ? 3 : level === 'good' ? 1.8 : 1;
+  }
   if (c.isWeekend && (d.heaviness === 'Heavy' || d.difficulty === 'Hard')) w *= 1.8;
   if (!c.isWeekend && d.difficulty === 'Hard') w *= 0.4;
   if (c.meal === 'Dinner' && d.heaviness === 'Heavy') w *= 0.4;
@@ -314,7 +329,7 @@ function buildMeal(c: Ctx, rng: Rng, world = false): Meal {
     }
   }
   const templates = (c.isFast ? FAST_TEMPLATES : TEMPLATES)[c.meal];
-  const order = [...weightedOrder(templates, (t) => t.weight(c), rng), FALLBACK];
+  const order = [...weightedOrder(templates, (t) => t.weight(c) * proteinPatternBoost(t, c), rng), FALLBACK];
   // Try every meal pattern with all rules first; relax rules only if no pattern fits.
   for (let maxLevel = 0; maxLevel <= MAX_LEVEL; maxLevel++) {
     for (const t of order) {

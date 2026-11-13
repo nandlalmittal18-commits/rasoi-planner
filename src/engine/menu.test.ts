@@ -2,6 +2,9 @@ import { describe, expect, it } from 'vitest';
 import {
   DISHES,
   getRecipe,
+  getNutrition,
+  dayNutrition,
+  proteinLevel,
   recipeMessage,
   cuisineOf,
   isWorldDish,
@@ -30,6 +33,7 @@ const base: FamilyProfile = {
   cuisines: ['North', 'West'],
   worldMealsPerWeek: 2,
   hasKids: true,
+  proteinFocus: false,
   packsTiffin: true,
   weekdayMaxCookTime: 45,
   dislikes: [],
@@ -43,9 +47,9 @@ function everyItem(plan: WeekPlan) {
 }
 
 describe('dish data', () => {
-  it('has 204 dishes with unique, plain ids and Hindi names', () => {
-    expect(DISHES).toHaveLength(204);
-    expect(new Set(DISHES.map((d) => d.id)).size).toBe(204);
+  it('has 219 dishes with unique, plain ids and Hindi names', () => {
+    expect(DISHES).toHaveLength(219);
+    expect(new Set(DISHES.map((d) => d.id)).size).toBe(219);
     expect(DISHES.every((d) => /^[a-z0-9-]+$/.test(d.id))).toBe(true);
     expect(DISHES.every((d) => d.hindi.length > 0)).toBe(true);
   });
@@ -117,6 +121,7 @@ describe('generateWeek', () => {
         cuisines: (['North', 'West', 'South', 'East', 'Chinese', 'Italian', 'Thai'] as const).filter((_, i) => r(20 + i) > 0.5),
         worldMealsPerWeek: Math.floor(r(40) * 5),
         hasKids: r(30) > 0.5,
+        proteinFocus: r(33) > 0.5,
         packsTiffin: r(31) > 0.5,
         weekdayMaxCookTime: [30, 45, 60][Math.floor(r(32) * 3)],
         dislikes: ['poha', 'rajma', 'aloo-gobi'],
@@ -271,5 +276,54 @@ describe('prep, grocery and messages', () => {
     expect(new Set(list.map((i) => i.key)).size).toBe(list.length);
     const potato = list.find((i) => i.key === 'potato');
     if (potato) expect(potato.group).toBe('Vegetables & herbs');
+  });
+});
+
+describe('nutrition and protein focus', () => {
+  it('has a serving with sensible numbers for every dish', () => {
+    for (const d of [...DISHES, getDish('steamed-rice')]) {
+      const n = getNutrition(d.id);
+      expect(n, d.id).not.toBeNull();
+      expect(n!.serving.length, d.id).toBeGreaterThan(0);
+      expect(n!.kcal, d.id).toBeGreaterThan(0);
+      expect(n!.kcal, d.id).toBeLessThan(1000);
+      // Calories should roughly match protein, carbs and fat (4/4/9 kcal per gram).
+      const fromParts = 4 * n!.protein + 4 * n!.carbs + 9 * n!.fat;
+      expect(Math.abs(fromParts - n!.kcal) / n!.kcal, d.id).toBeLessThan(0.2);
+    }
+  });
+
+  it('marks the new protein dishes as protein-rich', () => {
+    for (const id of ['sattu-shake', 'soya-keema', 'tofu-bhurji', 'paneer-stuffed-besan-chilla', 'masoor-dal-tikki', 'egg-white-bhurji']) {
+      expect(proteinLevel(id), id).toBe('high');
+    }
+    expect(proteinLevel('dal-makhani')).toBe('good');
+    expect(proteinLevel('kabuli-chana-chaat')).toBe('good');
+    expect(proteinLevel('jeera-aloo')).toBeNull();
+  });
+
+  it('puts more protein on the plate when Protein focus is on, without breaking hard rules', () => {
+    const veg: FamilyProfile = { ...base, worldMealsPerWeek: 0, fastDays: [1], jain: true };
+    const avg = (focus: boolean) => {
+      let total = 0;
+      let days = 0;
+      for (let seed = 1; seed <= 30; seed++) {
+        const plan = generateWeek({ ...veg, proteinFocus: focus }, START, seed);
+        for (const day of plan.days) {
+          total += dayNutrition(day).protein;
+          days++;
+        }
+        if (focus) {
+          for (const { dish } of everyItem(plan)) {
+            expect(dish.diet).toBe('Veg');
+            expect(dish.jain).toBe(true);
+          }
+        }
+      }
+      return total / days;
+    };
+    const without = avg(false);
+    const withFocus = avg(true);
+    expect(withFocus).toBeGreaterThan(without + 3);
   });
 });

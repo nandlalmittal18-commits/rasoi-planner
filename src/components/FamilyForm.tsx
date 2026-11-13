@@ -113,6 +113,13 @@ export function FamilyForm({ initial, isNew, account, onSave, onReset }: Props) 
         <div className="toggles">
           <Toggle id="kids" label="Children at home" help="Kid favourites come up more often" checked={p.hasKids} onChange={(v) => set('hasKids', v)} />
           <Toggle id="tiffin" label="Pack tiffin on weekdays" help="Weekday lunch will travel well in a lunchbox" checked={p.packsTiffin} onChange={(v) => set('packsTiffin', v)} />
+          <Toggle
+            id="protein"
+            label="Protein focus"
+            help="More dal, paneer, chana, sprouts and eggs (as your diet allows)"
+            checked={p.proteinFocus}
+            onChange={(v) => set('proteinFocus', v)}
+          />
         </div>
       </fieldset>
 

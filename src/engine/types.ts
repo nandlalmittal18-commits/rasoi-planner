@@ -53,6 +53,8 @@ export interface FamilyProfile {
   /** World-food dinners each week (Chinese, Italian…). 0 = Indian food only */
   worldMealsPerWeek: number;
   hasKids: boolean;
+  /** Prefer protein-rich dishes (dals, paneer, eggs, sprouts…) */
+  proteinFocus: boolean;
   /** Weekday lunch is packed in a tiffin */
   packsTiffin: boolean;
   /** Longest a single dish may take on Monday–Friday, in minutes */

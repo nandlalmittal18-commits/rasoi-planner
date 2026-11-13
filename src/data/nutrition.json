@@ -1,0 +1,1762 @@
+{
+ "poha": {
+  "serving": "1 plate",
+  "kcal": 322,
+  "protein": 6.6,
+  "carbs": 46.2,
+  "fat": 12.6,
+  "fibre": 2.8
+ },
+ "upma": {
+  "serving": "1 plate",
+  "kcal": 272,
+  "protein": 6.5,
+  "carbs": 41.0,
+  "fat": 8.6,
+  "fibre": 3.5
+ },
+ "aloo-paratha": {
+  "serving": "2 parathas",
+  "kcal": 426,
+  "protein": 11.2,
+  "carbs": 68.8,
+  "fat": 11.4,
+  "fibre": 10.6
+ },
+ "gobi-paratha": {
+  "serving": "2 parathas",
+  "kcal": 380,
+  "protein": 10.9,
+  "carbs": 58.7,
+  "fat": 11.6,
+  "fibre": 10.2
+ },
+ "paneer-paratha": {
+  "serving": "2 parathas",
+  "kcal": 494,
+  "protein": 18.8,
+  "carbs": 55.8,
+  "fat": 21.8,
+  "fibre": 8.8
+ },
+ "methi-thepla": {
+  "serving": "3 theplas",
+  "kcal": 341,
+  "protein": 9.5,
+  "carbs": 49.7,
+  "fat": 11.8,
+  "fibre": 8.2
+ },
+ "idli-sambar": {
+  "serving": "3 idlis + sambar",
+  "kcal": 322,
+  "protein": 11.4,
+  "carbs": 59.5,
+  "fat": 3.8,
+  "fibre": 5.8
+ },
+ "masala-dosa": {
+  "serving": "1 dosa",
+  "kcal": 386,
+  "protein": 8.9,
+  "carbs": 63.1,
+  "fat": 10.6,
+  "fibre": 5.3
+ },
+ "uttapam": {
+  "serving": "2 uttapams",
+  "kcal": 332,
+  "protein": 8.1,
+  "carbs": 55.6,
+  "fat": 8.6,
+  "fibre": 4.2
+ },
+ "rava-dosa": {
+  "serving": "2 dosas",
+  "kcal": 294,
+  "protein": 5.1,
+  "carbs": 42.3,
+  "fat": 11.1,
+  "fibre": 1.8
+ },
+ "medu-vada": {
+  "serving": "3 vadas",
+  "kcal": 303,
+  "protein": 12.0,
+  "carbs": 29.0,
+  "fat": 15.8,
+  "fibre": 9.0
+ },
+ "ven-pongal": {
+  "serving": "1 bowl",
+  "kcal": 345,
+  "protein": 8.8,
+  "carbs": 48.4,
+  "fat": 12.7,
+  "fibre": 2.2
+ },
+ "pesarattu": {
+  "serving": "2 pesarattus",
+  "kcal": 267,
+  "protein": 14.6,
+  "carbs": 37.4,
+  "fat": 6.7,
+  "fibre": 9.9
+ },
+ "neer-dosa": {
+  "serving": "3 dosas",
+  "kcal": 298,
+  "protein": 4.7,
+  "carbs": 49.0,
+  "fat": 9.2,
+  "fibre": 2.0
+ },
+ "akki-roti": {
+  "serving": "2 rotis",
+  "kcal": 369,
+  "protein": 4.8,
+  "carbs": 59.3,
+  "fat": 12.3,
+  "fibre": 2.9
+ },
+ "appam-with-veg-stew": {
+  "serving": "2 appams + stew",
+  "kcal": 454,
+  "protein": 7.6,
+  "carbs": 61.8,
+  "fat": 20.4,
+  "fibre": 5.0
+ },
+ "puttu-kadala-curry": {
+  "serving": "1 plate",
+  "kcal": 476,
+  "protein": 11.1,
+  "carbs": 74.1,
+  "fat": 15.6,
+  "fibre": 9.5
+ },
+ "besan-chilla": {
+  "serving": "2 chillas",
+  "kcal": 270,
+  "protein": 11.4,
+  "carbs": 31.6,
+  "fat": 11.1,
+  "fibre": 6.1
+ },
+ "moong-dal-chilla": {
+  "serving": "2 chillas",
+  "kcal": 252,
+  "protein": 12.2,
+  "carbs": 30.9,
+  "fat": 8.6,
+  "fibre": 4.3
+ },
+ "vegetable-dalia": {
+  "serving": "1 bowl",
+  "kcal": 226,
+  "protein": 6.9,
+  "carbs": 36.3,
+  "fat": 5.9,
+  "fibre": 7.2
+ },
+ "masala-oats": {
+  "serving": "1 bowl",
+  "kcal": 225,
+  "protein": 6.7,
+  "carbs": 32.5,
+  "fat": 7.9,
+  "fibre": 5.7
+ },
+ "puri-bhaji": {
+  "serving": "4 puris + bhaji",
+  "kcal": 464,
+  "protein": 9.4,
+  "carbs": 59.2,
+  "fat": 21.2,
+  "fibre": 9.0
+ },
+ "chole-bhature": {
+  "serving": "2 bhature + chole",
+  "kcal": 668,
+  "protein": 16.5,
+  "carbs": 87.9,
+  "fat": 28.5,
+  "fibre": 9.8
+ },
+ "misal-pav": {
+  "serving": "2 pav + misal",
+  "kcal": 498,
+  "protein": 17.7,
+  "carbs": 64.2,
+  "fat": 18.9,
+  "fibre": 9.3
+ },
+ "luchi-with-cholar-dal": {
+  "serving": "4 luchis + dal",
+  "kcal": 595,
+  "protein": 13.7,
+  "carbs": 71.9,
+  "fat": 28.8,
+  "fibre": 7.8
+ },
+ "thalipeeth": {
+  "serving": "2 thalipeeth",
+  "kcal": 326,
+  "protein": 9.4,
+  "carbs": 49.1,
+  "fat": 10.6,
+  "fibre": 7.7
+ },
+ "dal-pakwan": {
+  "serving": "1 plate",
+  "kcal": 456,
+  "protein": 13.5,
+  "carbs": 61.9,
+  "fat": 17.7,
+  "fibre": 7.5
+ },
+ "khaman-dhokla": {
+  "serving": "4 pieces",
+  "kcal": 287,
+  "protein": 11.5,
+  "carbs": 34.7,
+  "fat": 11.5,
+  "fibre": 5.5
+ },
+ "handvo": {
+  "serving": "2 pieces",
+  "kcal": 338,
+  "protein": 9.3,
+  "carbs": 45.2,
+  "fat": 13.7,
+  "fibre": 4.5
+ },
+ "vegetable-sandwich": {
+  "serving": "2 sandwiches",
+  "kcal": 364,
+  "protein": 10.4,
+  "carbs": 58.1,
+  "fat": 9.8,
+  "fibre": 4.1
+ },
+ "bread-omelette": {
+  "serving": "1 plate",
+  "kcal": 390,
+  "protein": 18.3,
+  "carbs": 31.9,
+  "fat": 20.5,
+  "fibre": 2.0
+ },
+ "egg-bhurji": {
+  "serving": "1 plate (2 eggs)",
+  "kcal": 231,
+  "protein": 13.2,
+  "carbs": 4.6,
+  "fat": 17.6,
+  "fibre": 0.9
+ },
+ "sabudana-khichdi": {
+  "serving": "1 plate",
+  "kcal": 427,
+  "protein": 6.1,
+  "carbs": 62.2,
+  "fat": 18.0,
+  "fibre": 3.1
+ },
+ "kuttu-puri-with-aloo": {
+  "serving": "3 puris + aloo",
+  "kcal": 409,
+  "protein": 8.5,
+  "carbs": 52.5,
+  "fat": 19.8,
+  "fibre": 7.2
+ },
+ "rajgira-paratha": {
+  "serving": "2 parathas",
+  "kcal": 297,
+  "protein": 7.8,
+  "carbs": 41.0,
+  "fat": 11.6,
+  "fibre": 4.5
+ },
+ "sprouts-chaat": {
+  "serving": "1 bowl",
+  "kcal": 112,
+  "protein": 7.4,
+  "carbs": 19.8,
+  "fat": 0.6,
+  "fibre": 4.6
+ },
+ "vermicelli-upma": {
+  "serving": "1 plate",
+  "kcal": 270,
+  "protein": 6.8,
+  "carbs": 42.2,
+  "fat": 8.6,
+  "fibre": 2.9
+ },
+ "meethi-sevaiyan": {
+  "serving": "1 bowl",
+  "kcal": 417,
+  "protein": 9.2,
+  "carbs": 56.4,
+  "fat": 17.6,
+  "fibre": 1.8
+ },
+ "lemon-shavige": {
+  "serving": "1 plate",
+  "kcal": 307,
+  "protein": 5.6,
+  "carbs": 41.6,
+  "fat": 13.2,
+  "fibre": 1.6
+ },
+ "idiyappam-with-veg-stew": {
+  "serving": "1 plate",
+  "kcal": 435,
+  "protein": 7.1,
+  "carbs": 61.2,
+  "fat": 18.4,
+  "fibre": 5.1
+ },
+ "dal-tadka": {
+  "serving": "1 katori",
+  "kcal": 155,
+  "protein": 6.9,
+  "carbs": 18.8,
+  "fat": 5.5,
+  "fibre": 3.1
+ },
+ "moong-dal": {
+  "serving": "1 katori",
+  "kcal": 143,
+  "protein": 7.3,
+  "carbs": 18.1,
+  "fat": 4.4,
+  "fibre": 2.5
+ },
+ "masoor-dal": {
+  "serving": "1 katori",
+  "kcal": 147,
+  "protein": 7.6,
+  "carbs": 19.4,
+  "fat": 4.3,
+  "fibre": 3.7
+ },
+ "dal-makhani": {
+  "serving": "1 katori",
+  "kcal": 237,
+  "protein": 9.7,
+  "carbs": 25.1,
+  "fat": 11.2,
+  "fibre": 7.5
+ },
+ "rajma": {
+  "serving": "1 katori",
+  "kcal": 213,
+  "protein": 9.5,
+  "carbs": 28.3,
+  "fat": 7.5,
+  "fibre": 8.2
+ },
+ "chole-chana-masala": {
+  "serving": "1 katori",
+  "kcal": 225,
+  "protein": 8.3,
+  "carbs": 28.7,
+  "fat": 9.5,
+  "fibre": 7.8
+ },
+ "kala-chana-curry": {
+  "serving": "1 katori",
+  "kcal": 213,
+  "protein": 8.2,
+  "carbs": 28.0,
+  "fat": 8.5,
+  "fibre": 7.6
+ },
+ "lobia-curry": {
+  "serving": "1 katori",
+  "kcal": 202,
+  "protein": 9.9,
+  "carbs": 27.2,
+  "fat": 6.6,
+  "fibre": 5.2
+ },
+ "chana-dal-lauki": {
+  "serving": "1 katori",
+  "kcal": 168,
+  "protein": 6.9,
+  "carbs": 21.4,
+  "fat": 6.8,
+  "fibre": 5.5
+ },
+ "sambar": {
+  "serving": "1 katori",
+  "kcal": 147,
+  "protein": 7.0,
+  "carbs": 19.1,
+  "fat": 4.6,
+  "fibre": 4.0
+ },
+ "rasam": {
+  "serving": "1 katori",
+  "kcal": 63,
+  "protein": 2.2,
+  "carbs": 6.5,
+  "fat": 3.2,
+  "fibre": 1.3
+ },
+ "gujarati-dal": {
+  "serving": "1 katori",
+  "kcal": 199,
+  "protein": 8.1,
+  "carbs": 26.1,
+  "fat": 6.9,
+  "fibre": 3.3
+ },
+ "kadhi-pakora": {
+  "serving": "1 katori",
+  "kcal": 248,
+  "protein": 9.0,
+  "carbs": 20.4,
+  "fat": 14.7,
+  "fibre": 3.0
+ },
+ "gujarati-kadhi": {
+  "serving": "1 katori",
+  "kcal": 161,
+  "protein": 5.9,
+  "carbs": 16.5,
+  "fat": 7.9,
+  "fibre": 1.3
+ },
+ "dalma": {
+  "serving": "1 katori",
+  "kcal": 178,
+  "protein": 8.2,
+  "carbs": 25.5,
+  "fat": 4.6,
+  "fibre": 4.2
+ },
+ "dal-dhokli": {
+  "serving": "1 bowl",
+  "kcal": 377,
+  "protein": 14.6,
+  "carbs": 54.5,
+  "fat": 11.1,
+  "fibre": 8.2
+ },
+ "dal-baati-churma": {
+  "serving": "2 baati + dal + churma",
+  "kcal": 870,
+  "protein": 21.0,
+  "carbs": 111.3,
+  "fat": 37.7,
+  "fibre": 15.1
+ },
+ "litti-chokha": {
+  "serving": "3 litti + chokha",
+  "kcal": 664,
+  "protein": 20.3,
+  "carbs": 92.5,
+  "fat": 23.6,
+  "fibre": 18.1
+ },
+ "pav-bhaji": {
+  "serving": "2 pav + bhaji",
+  "kcal": 489,
+  "protein": 12.7,
+  "carbs": 65.9,
+  "fat": 19.3,
+  "fibre": 8.2
+ },
+ "aloo-gobi": {
+  "serving": "1 katori",
+  "kcal": 147,
+  "protein": 2.9,
+  "carbs": 15.9,
+  "fat": 8.3,
+  "fibre": 3.1
+ },
+ "bhindi-masala": {
+  "serving": "1 katori",
+  "kcal": 120,
+  "protein": 2.6,
+  "carbs": 11.2,
+  "fat": 8.3,
+  "fibre": 4.3
+ },
+ "jeera-aloo": {
+  "serving": "1 katori",
+  "kcal": 175,
+  "protein": 2.6,
+  "carbs": 22.1,
+  "fat": 8.1,
+  "fibre": 2.9
+ },
+ "aloo-methi": {
+  "serving": "1 katori",
+  "kcal": 161,
+  "protein": 3.2,
+  "carbs": 18.4,
+  "fat": 8.3,
+  "fibre": 3.2
+ },
+ "gajar-matar": {
+  "serving": "1 katori",
+  "kcal": 130,
+  "protein": 3.5,
+  "carbs": 15.9,
+  "fat": 6.4,
+  "fibre": 5.1
+ },
+ "cabbage-matar": {
+  "serving": "1 katori",
+  "kcal": 113,
+  "protein": 3.6,
+  "carbs": 12.2,
+  "fat": 6.3,
+  "fibre": 4.8
+ },
+ "lauki-sabzi": {
+  "serving": "1 katori",
+  "kcal": 76,
+  "protein": 1.1,
+  "carbs": 7.0,
+  "fat": 5.2,
+  "fibre": 2.1
+ },
+ "tinda-masala": {
+  "serving": "1 katori",
+  "kcal": 90,
+  "protein": 1.3,
+  "carbs": 8.1,
+  "fat": 6.2,
+  "fibre": 2.3
+ },
+ "turai-sabzi": {
+  "serving": "1 katori",
+  "kcal": 76,
+  "protein": 1.1,
+  "carbs": 7.0,
+  "fat": 5.2,
+  "fibre": 2.1
+ },
+ "karela-fry": {
+  "serving": "1 katori",
+  "kcal": 120,
+  "protein": 1.0,
+  "carbs": 7.1,
+  "fat": 10.1,
+  "fibre": 1.8
+ },
+ "mix-veg": {
+  "serving": "1 katori",
+  "kcal": 151,
+  "protein": 4.0,
+  "carbs": 18.4,
+  "fat": 7.4,
+  "fibre": 4.9
+ },
+ "arbi-fry": {
+  "serving": "1 katori",
+  "kcal": 223,
+  "protein": 1.8,
+  "carbs": 31.2,
+  "fat": 10.2,
+  "fibre": 4.8
+ },
+ "khatta-meetha-kaddu": {
+  "serving": "1 katori",
+  "kcal": 114,
+  "protein": 1.5,
+  "carbs": 17.4,
+  "fat": 5.2,
+  "fibre": 0.8
+ },
+ "beans-poriyal": {
+  "serving": "1 katori",
+  "kcal": 134,
+  "protein": 2.7,
+  "carbs": 10.7,
+  "fat": 10.2,
+  "fibre": 4.6
+ },
+ "cabbage-thoran": {
+  "serving": "1 katori",
+  "kcal": 127,
+  "protein": 2.1,
+  "carbs": 9.2,
+  "fat": 10.1,
+  "fibre": 4.3
+ },
+ "aloo-posto": {
+  "serving": "1 katori",
+  "kcal": 237,
+  "protein": 4.2,
+  "carbs": 23.2,
+  "fat": 14.3,
+  "fibre": 4.6
+ },
+ "baingan-bharta": {
+  "serving": "1 katori",
+  "kcal": 127,
+  "protein": 2.2,
+  "carbs": 13.3,
+  "fat": 8.4,
+  "fibre": 5.5
+ },
+ "undhiyu": {
+  "serving": "1 katori",
+  "kcal": 350,
+  "protein": 7.3,
+  "carbs": 39.6,
+  "fat": 18.9,
+  "fibre": 8.2
+ },
+ "sarson-ka-saag": {
+  "serving": "1 katori",
+  "kcal": 184,
+  "protein": 6.7,
+  "carbs": 16.2,
+  "fat": 11.2,
+  "fibre": 6.0
+ },
+ "sev-tamatar": {
+  "serving": "1 katori",
+  "kcal": 239,
+  "protein": 5.0,
+  "carbs": 18.5,
+  "fat": 16.8,
+  "fibre": 3.6
+ },
+ "gatte-ki-sabzi": {
+  "serving": "1 katori",
+  "kcal": 292,
+  "protein": 10.8,
+  "carbs": 25.9,
+  "fat": 16.3,
+  "fibre": 4.4
+ },
+ "avial": {
+  "serving": "1 katori",
+  "kcal": 208,
+  "protein": 5.1,
+  "carbs": 15.5,
+  "fat": 14.6,
+  "fibre": 6.2
+ },
+ "shukto": {
+  "serving": "1 katori",
+  "kcal": 127,
+  "protein": 3.7,
+  "carbs": 10.0,
+  "fat": 8.3,
+  "fibre": 3.5
+ },
+ "aloo-matar": {
+  "serving": "1 katori",
+  "kcal": 182,
+  "protein": 4.9,
+  "carbs": 24.2,
+  "fat": 7.4,
+  "fibre": 5.1
+ },
+ "dum-aloo": {
+  "serving": "1 katori",
+  "kcal": 206,
+  "protein": 3.6,
+  "carbs": 22.5,
+  "fat": 11.1,
+  "fibre": 2.9
+ },
+ "lauki-kofta": {
+  "serving": "1 katori (3 koftas)",
+  "kcal": 233,
+  "protein": 6.7,
+  "carbs": 21.9,
+  "fat": 13.7,
+  "fibre": 4.8
+ },
+ "malai-kofta": {
+  "serving": "1 katori (3 koftas)",
+  "kcal": 373,
+  "protein": 11.1,
+  "carbs": 16.0,
+  "fat": 29.9,
+  "fibre": 2.2
+ },
+ "mushroom-matar": {
+  "serving": "1 katori",
+  "kcal": 135,
+  "protein": 6.0,
+  "carbs": 13.4,
+  "fat": 7.6,
+  "fibre": 4.0
+ },
+ "soya-chunks-curry": {
+  "serving": "1 katori",
+  "kcal": 191,
+  "protein": 14.3,
+  "carbs": 17.6,
+  "fat": 7.3,
+  "fibre": 4.9
+ },
+ "palak-paneer": {
+  "serving": "1 katori",
+  "kcal": 306,
+  "protein": 16.9,
+  "carbs": 8.1,
+  "fat": 23.6,
+  "fibre": 3.6
+ },
+ "matar-paneer": {
+  "serving": "1 katori",
+  "kcal": 297,
+  "protein": 15.6,
+  "carbs": 10.4,
+  "fat": 21.8,
+  "fibre": 2.9
+ },
+ "paneer-butter-masala": {
+  "serving": "1 katori",
+  "kcal": 394,
+  "protein": 16.2,
+  "carbs": 7.8,
+  "fat": 33.9,
+  "fibre": 1.3
+ },
+ "kadai-paneer": {
+  "serving": "1 katori",
+  "kcal": 305,
+  "protein": 15.0,
+  "carbs": 8.6,
+  "fat": 23.9,
+  "fibre": 2.1
+ },
+ "paneer-bhurji": {
+  "serving": "1 plate",
+  "kcal": 309,
+  "protein": 17.1,
+  "carbs": 5.0,
+  "fat": 24.8,
+  "fibre": 0.9
+ },
+ "paneer-tikka": {
+  "serving": "6 pieces",
+  "kcal": 411,
+  "protein": 23.7,
+  "carbs": 7.5,
+  "fat": 32.1,
+  "fibre": 1.2
+ },
+ "jeera-rice": {
+  "serving": "1 plate",
+  "kcal": 255,
+  "protein": 4.2,
+  "carbs": 46.8,
+  "fat": 5.3,
+  "fibre": 0.6
+ },
+ "veg-pulao": {
+  "serving": "1 plate",
+  "kcal": 307,
+  "protein": 6.8,
+  "carbs": 54.5,
+  "fat": 6.6,
+  "fibre": 3.4
+ },
+ "veg-biryani": {
+  "serving": "1 plate",
+  "kcal": 397,
+  "protein": 8.1,
+  "carbs": 64.2,
+  "fat": 11.6,
+  "fibre": 3.4
+ },
+ "moong-dal-khichdi": {
+  "serving": "1 bowl",
+  "kcal": 282,
+  "protein": 8.8,
+  "carbs": 46.0,
+  "fat": 6.5,
+  "fibre": 2.4
+ },
+ "bisi-bele-bath": {
+  "serving": "1 plate",
+  "kcal": 370,
+  "protein": 11.4,
+  "carbs": 54.9,
+  "fat": 11.2,
+  "fibre": 4.9
+ },
+ "curd-rice": {
+  "serving": "1 bowl",
+  "kcal": 274,
+  "protein": 7.5,
+  "carbs": 44.4,
+  "fat": 7.1,
+  "fibre": 0.5
+ },
+ "lemon-rice": {
+  "serving": "1 plate",
+  "kcal": 329,
+  "protein": 6.8,
+  "carbs": 48.4,
+  "fat": 12.2,
+  "fibre": 1.4
+ },
+ "puliyogare-tamarind-rice": {
+  "serving": "1 plate",
+  "kcal": 391,
+  "protein": 7.3,
+  "carbs": 53.8,
+  "fat": 16.7,
+  "fibre": 1.8
+ },
+ "coconut-rice": {
+  "serving": "1 plate",
+  "kcal": 369,
+  "protein": 5.9,
+  "carbs": 52.0,
+  "fat": 15.8,
+  "fibre": 3.0
+ },
+ "tomato-rice": {
+  "serving": "1 plate",
+  "kcal": 294,
+  "protein": 5.1,
+  "carbs": 51.8,
+  "fat": 7.5,
+  "fibre": 1.9
+ },
+ "veg-fried-rice": {
+  "serving": "1 plate",
+  "kcal": 324,
+  "protein": 5.2,
+  "carbs": 52.5,
+  "fat": 10.5,
+  "fibre": 2.7
+ },
+ "samak-rice-pulao": {
+  "serving": "1 plate",
+  "kcal": 375,
+  "protein": 8.3,
+  "carbs": 48.8,
+  "fat": 14.6,
+  "fibre": 8.2
+ },
+ "egg-fried-rice": {
+  "serving": "1 plate",
+  "kcal": 459,
+  "protein": 17.8,
+  "carbs": 50.7,
+  "fat": 19.9,
+  "fibre": 1.8
+ },
+ "veg-hakka-noodles": {
+  "serving": "1 plate",
+  "kcal": 404,
+  "protein": 10.1,
+  "carbs": 60.3,
+  "fat": 13.7,
+  "fibre": 4.6
+ },
+ "masala-pasta": {
+  "serving": "1 plate",
+  "kcal": 424,
+  "protein": 14.0,
+  "carbs": 62.2,
+  "fat": 13.3,
+  "fibre": 3.8
+ },
+ "phulka-roti": {
+  "serving": "2 phulkas",
+  "kcal": 204,
+  "protein": 7.2,
+  "carbs": 41.4,
+  "fat": 1.0,
+  "fibre": 6.6
+ },
+ "plain-paratha": {
+  "serving": "2 parathas",
+  "kcal": 328,
+  "protein": 8.4,
+  "carbs": 48.3,
+  "fat": 11.2,
+  "fibre": 7.7
+ },
+ "missi-roti": {
+  "serving": "2 rotis",
+  "kcal": 280,
+  "protein": 10.9,
+  "carbs": 42.4,
+  "fat": 7.4,
+  "fibre": 7.3
+ },
+ "makki-ki-roti": {
+  "serving": "2 rotis",
+  "kcal": 328,
+  "protein": 4.9,
+  "carbs": 53.2,
+  "fat": 10.7,
+  "fibre": 4.9
+ },
+ "bajra-roti": {
+  "serving": "2 rotis",
+  "kcal": 297,
+  "protein": 7.7,
+  "carbs": 46.9,
+  "fat": 8.5,
+  "fibre": 8.1
+ },
+ "jowar-bhakri": {
+  "serving": "2 bhakris",
+  "kcal": 238,
+  "protein": 7.3,
+  "carbs": 50.4,
+  "fat": 1.3,
+  "fibre": 6.8
+ },
+ "ragi-mudde": {
+  "serving": "2 balls",
+  "kcal": 231,
+  "protein": 5.1,
+  "carbs": 50.4,
+  "fat": 0.9,
+  "fibre": 7.7
+ },
+ "steamed-rice": {
+  "serving": "1 plate",
+  "kcal": 210,
+  "protein": 4.2,
+  "carbs": 46.8,
+  "fat": 0.3,
+  "fibre": 0.6
+ },
+ "home-style-chicken-curry": {
+  "serving": "1 katori",
+  "kcal": 271,
+  "protein": 22.8,
+  "carbs": 5.2,
+  "fat": 17.8,
+  "fibre": 1.2
+ },
+ "butter-chicken": {
+  "serving": "1 katori",
+  "kcal": 321,
+  "protein": 23.8,
+  "carbs": 4.4,
+  "fat": 23.5,
+  "fibre": 0.9
+ },
+ "chicken-biryani": {
+  "serving": "1 plate",
+  "kcal": 554,
+  "protein": 26.2,
+  "carbs": 58.7,
+  "fat": 23.3,
+  "fibre": 1.2
+ },
+ "chicken-tikka": {
+  "serving": "6 pieces",
+  "kcal": 289,
+  "protein": 31.0,
+  "carbs": 1.4,
+  "fat": 17.5,
+  "fibre": 0.0
+ },
+ "chicken-chettinad": {
+  "serving": "1 katori",
+  "kcal": 339,
+  "protein": 23.4,
+  "carbs": 7.8,
+  "fat": 24.4,
+  "fibre": 2.8
+ },
+ "kerala-chicken-stew": {
+  "serving": "1 katori",
+  "kcal": 427,
+  "protein": 23.6,
+  "carbs": 15.3,
+  "fat": 31.3,
+  "fibre": 3.6
+ },
+ "chilli-chicken": {
+  "serving": "1 plate",
+  "kcal": 381,
+  "protein": 25.0,
+  "carbs": 17.0,
+  "fat": 23.6,
+  "fibre": 1.7
+ },
+ "chicken-kathi-roll": {
+  "serving": "1 roll",
+  "kcal": 513,
+  "protein": 29.2,
+  "carbs": 46.0,
+  "fat": 23.2,
+  "fibre": 4.6
+ },
+ "chicken-soup": {
+  "serving": "1 bowl",
+  "kcal": 150,
+  "protein": 14.0,
+  "carbs": 6.4,
+  "fat": 7.4,
+  "fibre": 2.4
+ },
+ "egg-curry": {
+  "serving": "1 katori (2 eggs)",
+  "kcal": 256,
+  "protein": 13.5,
+  "carbs": 6.2,
+  "fat": 19.6,
+  "fibre": 1.3
+ },
+ "mutton-rogan-josh": {
+  "serving": "1 katori",
+  "kcal": 351,
+  "protein": 21.9,
+  "carbs": 3.6,
+  "fat": 27.9,
+  "fibre": 0.3
+ },
+ "keema-matar": {
+  "serving": "1 katori",
+  "kcal": 320,
+  "protein": 21.5,
+  "carbs": 11.0,
+  "fat": 21.6,
+  "fibre": 3.2
+ },
+ "macher-jhol": {
+  "serving": "1 katori",
+  "kcal": 248,
+  "protein": 22.1,
+  "carbs": 9.3,
+  "fat": 12.8,
+  "fibre": 1.3
+ },
+ "goan-fish-curry": {
+  "serving": "1 katori",
+  "kcal": 282,
+  "protein": 22.1,
+  "carbs": 6.3,
+  "fat": 18.7,
+  "fibre": 3.0
+ },
+ "masala-fish-fry": {
+  "serving": "2 pieces",
+  "kcal": 269,
+  "protein": 23.4,
+  "carbs": 8.0,
+  "fat": 15.1,
+  "fibre": 0.2
+ },
+ "prawn-masala": {
+  "serving": "1 katori",
+  "kcal": 263,
+  "protein": 22.2,
+  "carbs": 8.0,
+  "fat": 16.4,
+  "fibre": 2.5
+ },
+ "samosa": {
+  "serving": "2 samosas",
+  "kcal": 472,
+  "protein": 7.4,
+  "carbs": 52.8,
+  "fat": 25.6,
+  "fibre": 3.9
+ },
+ "onion-pakora": {
+  "serving": "1 plate",
+  "kcal": 359,
+  "protein": 9.7,
+  "carbs": 30.4,
+  "fat": 22.5,
+  "fibre": 5.8
+ },
+ "aloo-tikki-chaat": {
+  "serving": "1 plate",
+  "kcal": 264,
+  "protein": 4.0,
+  "carbs": 30.6,
+  "fat": 13.7,
+  "fibre": 2.6
+ },
+ "bhel-puri": {
+  "serving": "1 plate",
+  "kcal": 267,
+  "protein": 6.1,
+  "carbs": 45.3,
+  "fat": 7.0,
+  "fibre": 2.6
+ },
+ "vada-pav": {
+  "serving": "1 vada pav",
+  "kcal": 404,
+  "protein": 10.5,
+  "carbs": 49.7,
+  "fat": 17.9,
+  "fibre": 5.3
+ },
+ "sabudana-vada": {
+  "serving": "3 vadas",
+  "kcal": 450,
+  "protein": 5.2,
+  "carbs": 51.7,
+  "fat": 25.5,
+  "fibre": 3.0
+ },
+ "roasted-makhana": {
+  "serving": "1 bowl",
+  "kcal": 150,
+  "protein": 2.9,
+  "carbs": 23.1,
+  "fat": 5.0,
+  "fibre": 2.1
+ },
+ "masala-corn": {
+  "serving": "1 cup",
+  "kcal": 161,
+  "protein": 4.0,
+  "carbs": 22.8,
+  "fat": 8.2,
+  "fibre": 3.2
+ },
+ "khandvi": {
+  "serving": "6 rolls",
+  "kcal": 248,
+  "protein": 9.6,
+  "carbs": 23.8,
+  "fat": 13.0,
+  "fibre": 4.8
+ },
+ "hara-bhara-kabab": {
+  "serving": "4 kababs",
+  "kcal": 232,
+  "protein": 7.1,
+  "carbs": 22.3,
+  "fat": 13.1,
+  "fibre": 5.7
+ },
+ "veg-momos": {
+  "serving": "6 momos",
+  "kcal": 275,
+  "protein": 6.8,
+  "carbs": 49.2,
+  "fat": 5.6,
+  "fibre": 3.4
+ },
+ "sooji-halwa": {
+  "serving": "1 small bowl",
+  "kcal": 370,
+  "protein": 4.2,
+  "carbs": 47.6,
+  "fat": 17.8,
+  "fibre": 1.6
+ },
+ "gajar-halwa": {
+  "serving": "1 small bowl",
+  "kcal": 309,
+  "protein": 5.3,
+  "carbs": 37.3,
+  "fat": 15.9,
+  "fibre": 3.8
+ },
+ "rice-kheer": {
+  "serving": "1 small bowl",
+  "kcal": 262,
+  "protein": 7.8,
+  "carbs": 39.3,
+  "fat": 8.3,
+  "fibre": 0.6
+ },
+ "makhana-kheer": {
+  "serving": "1 small bowl",
+  "kcal": 250,
+  "protein": 8.2,
+  "carbs": 36.2,
+  "fat": 8.3,
+  "fibre": 1.5
+ },
+ "semiya-payasam": {
+  "serving": "1 small bowl",
+  "kcal": 311,
+  "protein": 8.2,
+  "carbs": 42.2,
+  "fat": 12.5,
+  "fibre": 0.8
+ },
+ "besan-ladoo": {
+  "serving": "2 ladoos",
+  "kcal": 362,
+  "protein": 6.6,
+  "carbs": 39.4,
+  "fat": 19.8,
+  "fibre": 3.3
+ },
+ "shrikhand": {
+  "serving": "1 small bowl",
+  "kcal": 200,
+  "protein": 8.0,
+  "carbs": 30.0,
+  "fat": 5.0,
+  "fibre": 0.0
+ },
+ "moong-dal-halwa": {
+  "serving": "1 small bowl",
+  "kcal": 438,
+  "protein": 9.5,
+  "carbs": 45.6,
+  "fat": 24.1,
+  "fibre": 2.8
+ },
+ "singhara-atta-halwa": {
+  "serving": "1 small bowl",
+  "kcal": 317,
+  "protein": 1.2,
+  "carbs": 43.1,
+  "fat": 15.3,
+  "fibre": 1.2
+ },
+ "gulab-jamun": {
+  "serving": "2 pieces",
+  "kcal": 365,
+  "protein": 5.3,
+  "carbs": 47.2,
+  "fat": 17.1,
+  "fibre": 0.2
+ },
+ "boondi-raita": {
+  "serving": "1 katori",
+  "kcal": 153,
+  "protein": 6.1,
+  "carbs": 12.2,
+  "fat": 8.9,
+  "fibre": 0.9
+ },
+ "cucumber-raita": {
+  "serving": "1 katori",
+  "kcal": 78,
+  "protein": 4.2,
+  "carbs": 6.8,
+  "fat": 3.9,
+  "fibre": 0.2
+ },
+ "kachumber-salad": {
+  "serving": "1 bowl",
+  "kcal": 25,
+  "protein": 1.0,
+  "carbs": 5.6,
+  "fat": 0.2,
+  "fibre": 1.2
+ },
+ "chaas-masala-buttermilk": {
+  "serving": "1 glass",
+  "kcal": 60,
+  "protein": 3.3,
+  "carbs": 4.5,
+  "fat": 3.2,
+  "fibre": 0.0
+ },
+ "chilli-paneer-with-fried-rice": {
+  "serving": "1 plate",
+  "kcal": 628,
+  "protein": 20.4,
+  "carbs": 64.0,
+  "fat": 32.2,
+  "fibre": 2.8
+ },
+ "veg-manchurian-with-fried-rice": {
+  "serving": "1 plate",
+  "kcal": 540,
+  "protein": 7.2,
+  "carbs": 81.4,
+  "fat": 20.6,
+  "fibre": 4.5
+ },
+ "schezwan-noodles": {
+  "serving": "1 plate",
+  "kcal": 432,
+  "protein": 10.6,
+  "carbs": 62.0,
+  "fat": 15.7,
+  "fibre": 4.2
+ },
+ "chicken-hakka-noodles": {
+  "serving": "1 plate",
+  "kcal": 490,
+  "protein": 23.6,
+  "carbs": 56.9,
+  "fat": 18.4,
+  "fibre": 3.5
+ },
+ "hot-sour-soup": {
+  "serving": "1 bowl",
+  "kcal": 77,
+  "protein": 1.2,
+  "carbs": 11.6,
+  "fat": 3.1,
+  "fibre": 1.6
+ },
+ "sweet-corn-soup": {
+  "serving": "1 bowl",
+  "kcal": 99,
+  "protein": 1.9,
+  "carbs": 18.7,
+  "fat": 2.7,
+  "fibre": 2.0
+ },
+ "veg-spring-rolls": {
+  "serving": "4 rolls",
+  "kcal": 325,
+  "protein": 5.0,
+  "carbs": 35.4,
+  "fat": 18.5,
+  "fibre": 3.2
+ },
+ "gobi-manchurian": {
+  "serving": "1 plate",
+  "kcal": 300,
+  "protein": 3.3,
+  "carbs": 31.6,
+  "fat": 18.5,
+  "fibre": 2.9
+ },
+ "red-sauce-pasta": {
+  "serving": "1 plate",
+  "kcal": 402,
+  "protein": 11.3,
+  "carbs": 63.9,
+  "fat": 11.4,
+  "fibre": 3.6
+ },
+ "white-sauce-pasta": {
+  "serving": "1 plate",
+  "kcal": 599,
+  "protein": 21.5,
+  "carbs": 80.7,
+  "fat": 21.4,
+  "fibre": 3.5
+ },
+ "margherita-pizza": {
+  "serving": "3 slices (medium)",
+  "kcal": 537,
+  "protein": 24.4,
+  "carbs": 62.2,
+  "fat": 20.9,
+  "fibre": 3.7
+ },
+ "veggie-pizza": {
+  "serving": "3 slices (medium)",
+  "kcal": 555,
+  "protein": 24.4,
+  "carbs": 68.9,
+  "fat": 20.3,
+  "fibre": 5.0
+ },
+ "vegetable-lasagne": {
+  "serving": "1 portion",
+  "kcal": 531,
+  "protein": 20.9,
+  "carbs": 65.8,
+  "fat": 20.5,
+  "fibre": 5.4
+ },
+ "mushroom-risotto": {
+  "serving": "1 plate",
+  "kcal": 444,
+  "protein": 11.9,
+  "carbs": 59.5,
+  "fat": 18.0,
+  "fibre": 1.8
+ },
+ "creamy-chicken-pasta": {
+  "serving": "1 plate",
+  "kcal": 523,
+  "protein": 27.0,
+  "carbs": 61.1,
+  "fat": 18.4,
+  "fibre": 2.4
+ },
+ "garlic-bread": {
+  "serving": "4 pieces",
+  "kcal": 320,
+  "protein": 7.3,
+  "carbs": 39.2,
+  "fat": 14.7,
+  "fibre": 2.2
+ },
+ "minestrone-soup": {
+  "serving": "1 bowl",
+  "kcal": 169,
+  "protein": 6.6,
+  "carbs": 25.6,
+  "fat": 4.7,
+  "fibre": 5.2
+ },
+ "bruschetta": {
+  "serving": "4 pieces",
+  "kcal": 265,
+  "protein": 6.8,
+  "carbs": 36.2,
+  "fat": 10.3,
+  "fibre": 2.5
+ },
+ "cheese-omelette-with-toast": {
+  "serving": "1 plate",
+  "kcal": 440,
+  "protein": 22.3,
+  "carbs": 30.5,
+  "fat": 24.7,
+  "fibre": 1.6
+ },
+ "pancakes-with-honey": {
+  "serving": "3 pancakes",
+  "kcal": 476,
+  "protein": 12.4,
+  "carbs": 77.2,
+  "fat": 13.7,
+  "fibre": 2.9
+ },
+ "french-toast": {
+  "serving": "2 slices",
+  "kcal": 344,
+  "protein": 13.1,
+  "carbs": 39.7,
+  "fat": 14.4,
+  "fibre": 1.6
+ },
+ "overnight-oats-with-fruit": {
+  "serving": "1 bowl",
+  "kcal": 351,
+  "protein": 12.0,
+  "carbs": 58.5,
+  "fat": 8.8,
+  "fibre": 6.1
+ },
+ "veg-cheese-grilled-sandwich": {
+  "serving": "2 sandwiches",
+  "kcal": 446,
+  "protein": 15.9,
+  "carbs": 51.8,
+  "fat": 19.2,
+  "fibre": 3.4
+ },
+ "baked-vegetables-in-white-sauce": {
+  "serving": "1 portion",
+  "kcal": 406,
+  "protein": 16.2,
+  "carbs": 28.7,
+  "fat": 25.3,
+  "fibre": 4.8
+ },
+ "grilled-paneer-with-sauteed-vegetables": {
+  "serving": "1 plate",
+  "kcal": 457,
+  "protein": 25.8,
+  "carbs": 13.4,
+  "fat": 33.5,
+  "fibre": 4.5
+ },
+ "grilled-chicken-with-sauteed-vegetables": {
+  "serving": "1 plate",
+  "kcal": 357,
+  "protein": 33.8,
+  "carbs": 12.0,
+  "fat": 19.0,
+  "fibre": 4.5
+ },
+ "lemon-butter-fish-with-mash": {
+  "serving": "1 plate",
+  "kcal": 403,
+  "protein": 32.6,
+  "carbs": 27.0,
+  "fat": 17.0,
+  "fibre": 3.3
+ },
+ "veg-burger": {
+  "serving": "1 burger",
+  "kcal": 503,
+  "protein": 13.3,
+  "carbs": 50.8,
+  "fat": 27.1,
+  "fibre": 4.9
+ },
+ "cream-of-tomato-soup": {
+  "serving": "1 bowl",
+  "kcal": 131,
+  "protein": 2.2,
+  "carbs": 8.3,
+  "fat": 10.6,
+  "fibre": 2.4
+ },
+ "cream-of-mushroom-soup": {
+  "serving": "1 bowl",
+  "kcal": 194,
+  "protein": 7.8,
+  "carbs": 15.0,
+  "fat": 12.3,
+  "fibre": 1.2
+ },
+ "russian-salad": {
+  "serving": "1 bowl",
+  "kcal": 270,
+  "protein": 3.5,
+  "carbs": 21.6,
+  "fat": 19.0,
+  "fibre": 4.1
+ },
+ "veg-burrito-bowl": {
+  "serving": "1 bowl",
+  "kcal": 468,
+  "protein": 17.0,
+  "carbs": 75.9,
+  "fat": 11.5,
+  "fibre": 8.1
+ },
+ "veg-quesadilla": {
+  "serving": "1 quesadilla",
+  "kcal": 518,
+  "protein": 22.2,
+  "carbs": 63.4,
+  "fat": 19.3,
+  "fibre": 7.6
+ },
+ "bean-tacos": {
+  "serving": "3 tacos",
+  "kcal": 456,
+  "protein": 17.7,
+  "carbs": 51.6,
+  "fat": 20.6,
+  "fibre": 10.1
+ },
+ "chicken-burrito": {
+  "serving": "1 burrito",
+  "kcal": 675,
+  "protein": 35.9,
+  "carbs": 82.7,
+  "fat": 21.0,
+  "fibre": 6.2
+ },
+ "nachos-with-salsa": {
+  "serving": "1 plate",
+  "kcal": 344,
+  "protein": 9.4,
+  "carbs": 35.8,
+  "fat": 18.6,
+  "fibre": 3.4
+ },
+ "mexican-corn-salad": {
+  "serving": "1 bowl",
+  "kcal": 101,
+  "protein": 4.0,
+  "carbs": 22.1,
+  "fat": 1.6,
+  "fibre": 3.7
+ },
+ "thai-green-curry-with-rice": {
+  "serving": "1 plate",
+  "kcal": 584,
+  "protein": 10.0,
+  "carbs": 63.0,
+  "fat": 34.5,
+  "fibre": 6.6
+ },
+ "thai-red-curry-chicken-with-rice": {
+  "serving": "1 plate",
+  "kcal": 693,
+  "protein": 28.0,
+  "carbs": 56.6,
+  "fat": 41.2,
+  "fibre": 4.2
+ },
+ "veg-pad-thai": {
+  "serving": "1 plate",
+  "kcal": 629,
+  "protein": 17.2,
+  "carbs": 77.3,
+  "fat": 28.2,
+  "fibre": 3.3
+ },
+ "tom-yum-soup": {
+  "serving": "1 bowl",
+  "kcal": 32,
+  "protein": 2.9,
+  "carbs": 5.5,
+  "fat": 0.3,
+  "fibre": 1.9
+ },
+ "raw-papaya-salad": {
+  "serving": "1 bowl",
+  "kcal": 149,
+  "protein": 4.9,
+  "carbs": 18.2,
+  "fat": 7.5,
+  "fibre": 3.8
+ },
+ "falafel-wrap-with-hummus": {
+  "serving": "1 wrap",
+  "kcal": 553,
+  "protein": 16.8,
+  "carbs": 67.9,
+  "fat": 24.6,
+  "fibre": 10.9
+ },
+ "paneer-shawarma-wrap": {
+  "serving": "1 wrap",
+  "kcal": 511,
+  "protein": 22.3,
+  "carbs": 40.5,
+  "fat": 28.4,
+  "fibre": 2.5
+ },
+ "chicken-shawarma": {
+  "serving": "1 wrap",
+  "kcal": 441,
+  "protein": 27.5,
+  "carbs": 38.8,
+  "fat": 18.8,
+  "fibre": 1.9
+ },
+ "hummus-with-pita": {
+  "serving": "1 plate",
+  "kcal": 428,
+  "protein": 12.9,
+  "carbs": 51.8,
+  "fat": 19.2,
+  "fibre": 7.8
+ },
+ "fattoush-salad": {
+  "serving": "1 bowl",
+  "kcal": 187,
+  "protein": 4.0,
+  "carbs": 18.2,
+  "fat": 11.3,
+  "fibre": 2.3
+ },
+ "sattu-shake": {
+  "serving": "1 glass",
+  "kcal": 445,
+  "protein": 19.5,
+  "carbs": 60.0,
+  "fat": 15.2,
+  "fibre": 8.4
+ },
+ "badam-lassi": {
+  "serving": "1 glass",
+  "kcal": 268,
+  "protein": 10.7,
+  "carbs": 26.2,
+  "fat": 14.0,
+  "fibre": 1.5
+ },
+ "peanut-banana-smoothie": {
+  "serving": "1 glass",
+  "kcal": 426,
+  "protein": 16.5,
+  "carbs": 49.5,
+  "fat": 20.4,
+  "fibre": 5.4
+ },
+ "sattu-paratha": {
+  "serving": "2 parathas",
+  "kcal": 570,
+  "protein": 18.7,
+  "carbs": 81.9,
+  "fat": 18.4,
+  "fibre": 15.3
+ },
+ "kabuli-chana-chaat": {
+  "serving": "1 bowl",
+  "kcal": 200,
+  "protein": 10.3,
+  "carbs": 35.0,
+  "fat": 3.1,
+  "fibre": 9.4
+ },
+ "chana-sundal": {
+  "serving": "1 bowl",
+  "kcal": 277,
+  "protein": 10.0,
+  "carbs": 32.8,
+  "fat": 12.9,
+  "fibre": 9.8
+ },
+ "roasted-chana-chaat": {
+  "serving": "1 bowl",
+  "kcal": 182,
+  "protein": 10.4,
+  "carbs": 29.5,
+  "fat": 2.3,
+  "fibre": 7.5
+ },
+ "tofu-bhurji": {
+  "serving": "1 plate",
+  "kcal": 282,
+  "protein": 21.9,
+  "carbs": 9.9,
+  "fat": 18.4,
+  "fibre": 2.9
+ },
+ "soya-keema": {
+  "serving": "1 katori",
+  "kcal": 235,
+  "protein": 20.5,
+  "carbs": 20.2,
+  "fat": 8.4,
+  "fibre": 7.1
+ },
+ "paneer-salad": {
+  "serving": "1 bowl",
+  "kcal": 234,
+  "protein": 15.7,
+  "carbs": 5.8,
+  "fat": 16.9,
+  "fibre": 1.3
+ },
+ "paneer-stuffed-besan-chilla": {
+  "serving": "2 chillas",
+  "kcal": 402,
+  "protein": 20.5,
+  "carbs": 32.2,
+  "fat": 21.5,
+  "fibre": 6.1
+ },
+ "masoor-dal-tikki": {
+  "serving": "4 tikkis",
+  "kcal": 308,
+  "protein": 14.7,
+  "carbs": 37.5,
+  "fat": 11.0,
+  "fibre": 7.0
+ },
+ "peanut-chaat": {
+  "serving": "1 bowl",
+  "kcal": 242,
+  "protein": 10.9,
+  "carbs": 9.8,
+  "fat": 19.7,
+  "fibre": 4.2
+ },
+ "egg-white-bhurji": {
+  "serving": "1 plate (4 whites)",
+  "kcal": 137,
+  "protein": 15.2,
+  "carbs": 6.3,
+  "fat": 5.4,
+  "fibre": 1.4
+ },
+ "moong-usal": {
+  "serving": "1 katori",
+  "kcal": 238,
+  "protein": 9.2,
+  "carbs": 28.9,
+  "fat": 10.0,
+  "fibre": 6.4
+ }
+}

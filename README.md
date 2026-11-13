@@ -10,10 +10,10 @@ A balanced weekly menu for Indian homes: breakfast, lunch and dinner planned aro
 | --- | --- |
 | **Menu** | 7-day menu, one day at a time. Swap any dish with one tap, shuffle a day or the whole week. "Plan ahead" shows what to soak, ferment or marinate the night before. Share the day on WhatsApp in English (family) or Hindi (cook). |
 | **Shopping** | Main ingredients for the week, grouped like a shop list. Tick what you have; send the rest on WhatsApp. |
-| **Dishes** | All 204 dishes (157 Indian, 47 world) with a picture, search and filters (cuisine, meal, veg, Jain, vrat, tiffin, kids). Mark "Never suggest". |
-| **Dish details** | Tap any dish: picture, cooking time, difficulty, heaviness, season, tags (Jain, vrat, tiffin, kids), prep-ahead, main ingredients, what it goes with, and a short recipe in English or Hindi. "Send recipe to cook" shares the Hindi recipe on WhatsApp. |
+| **Dishes** | All 219 dishes (172 Indian, 47 world) with a picture, search and filters (cuisine, meal, veg, protein-rich, Jain, vrat, tiffin, kids). Mark "Never suggest". |
+| **Dish details** | Tap any dish: picture, cooking time, difficulty, heaviness, season, tags (Jain, vrat, tiffin, kids), nutrition for one home serving (calories, protein, carbs, fat, fibre), prep-ahead, main ingredients, what it goes with, and a short recipe in English or Hindi. "Send recipe to cook" shares the Hindi recipe on WhatsApp. |
 | **Account** | "Continue with Google" saves the family and menu online (Supabase), so the same menu shows on every phone. Without signing in, everything stays on the phone. |
-| **Family** | Diet and non-veg days, Jain, no onion-garlic, weekly vrat, Indian cuisines, world-food dinners per week and which world cuisines, weekday cooking time, kids, tiffin, cook's name. |
+| **Family** | Diet and non-veg days, Jain, no onion-garlic, weekly vrat, Indian cuisines, world-food dinners per week and which world cuisines, weekday cooking time, kids, tiffin, protein focus, cook's name. |
 
 ## Run it on your computer
 
@@ -48,9 +48,11 @@ src/
     grocery.ts       Shopping list
     share.ts         WhatsApp messages (English + Hindi)
     recipes.ts       Recipe lookup and WhatsApp recipe message
+    nutrition.ts     Nutrition per serving, protein badges
     menu.test.ts     Checks that every rule is respected
   data/dishes.json   The dish database (generated, do not edit by hand)
   data/recipes.json  Recipes in English and Hindi (generated from scripts/recipes/*.json)
+  data/nutrition.json  Nutrition per serving (generated from scripts/nutrition/)
   components/        The screens, the dish detail sheet and the dish pictures (DishArt.tsx)
   lib/storage.ts     Where data is saved: this phone, plus Supabase when signed in
   lib/supabase.ts    Supabase connection and Google sign-in
@@ -59,6 +61,9 @@ docs/google-login-setup.md  One-time Google + Supabase setup steps
 scripts/
   dishes.psv         The dish sheet as text (one dish per line, columns split by |)
   build_dishes.py    Turns dishes.psv into src/data/dishes.json
+  nutrition/ingredients.psv  Nutrients per 100 g of each ingredient (one place to correct values)
+  nutrition/servings.psv     One home serving per dish, in grams of each ingredient
+  build_nutrition.py         Works out nutrition per serving into src/data/nutrition.json
 ```
 
 ### Adding or changing dishes
@@ -67,7 +72,12 @@ scripts/
 2. Run `python3 scripts/build_dishes.py`, then `npm test`.
 3. If the new dish has a new "Prep Ahead" text, add its Hindi to `PREP_HI` in `src/engine/prep.ts`.
 4. Add its recipe (English and Hindi, same number of steps) to a file in `scripts/recipes/`, then run `python3 scripts/build_recipes.py`. It refuses to build if any dish is missing a recipe.
-5. Its picture is drawn automatically from its name and category (`src/components/DishArt.tsx`).
+5. Add one line for it to `scripts/nutrition/servings.psv` (serving + grams of each ingredient), then run `python3 scripts/build_nutrition.py`. It refuses to build if any dish is missing.
+6. Its picture is drawn automatically from its name and category (`src/components/DishArt.tsx`).
+
+### Nutrition values
+
+Values are approximate, for one standard home serving, worked out from typical ingredient amounts and standard food composition data (in line with the Indian Food Composition Tables, IFCT 2017). They are not medical advice. To correct a number, change the ingredient in `scripts/nutrition/ingredients.psv` or the grams in `servings.psv` and run `python3 scripts/build_nutrition.py`. A dietitian review is recommended before promoting the numbers. "High protein" means 12 g or more per serving; "Good protein" means 8 g or more.
 
 ### Dish photos
 
@@ -87,7 +97,7 @@ The photographer and licence show on each dish's detail screen. A dish without a
 
 1. **Never broken:** diet, non-veg days, Jain, no onion-garlic, vrat days, "never suggest" dishes.
 2. **Kept whenever possible**, relaxed one at a time only if nothing fits, in this order: in-season dishes only, then the weekday cooking-time limit, then no dish twice in a week, and last a tiffin-friendly weekday lunch and at most one heavy dish a day (no heavy breakfast on weekdays).
-3. **Preferred:** chosen cuisines, kid favourites, seasonal dishes; bigger dishes at the weekend.
+3. **Preferred:** chosen cuisines, kid favourites, seasonal dishes; bigger dishes at the weekend. With **Protein focus** on, protein-rich dishes and meal patterns with a dal, paneer or non-veg dish come up more often (about 5 g more protein a day for one person).
 4. **World food** appears only on the chosen number of world-food dinners a week (never on a vrat day; weekends slightly more likely), with a soup or side from the same cuisine. Liked world cuisines are picked about 30 times more often than others. "None" keeps every meal Indian.
 5. Meals follow familiar patterns: dal + sabzi + roti/rice, rice meal, paneer meal, non-veg meal, one-pot dinner, dosa-style dinner, weekend special. Roti or rice is chosen from what the main dish is usually eaten with.
 

@@ -1,7 +1,8 @@
 import { useMemo, useState } from 'react';
-import { DISHES, WORLD_CUISINES, cuisineOf, isWorldDish, type Dish, type FamilyProfile } from '../engine';
+import { DISHES, WORLD_CUISINES, cuisineOf, getNutrition, isWorldDish, proteinLevel, type Dish, type FamilyProfile } from '../engine';
 import { DishPicture } from './DishPicture';
 import { FoodMark } from './icons';
+import { ProteinPill } from './ProteinPill';
 
 const MEALS = ['All', 'Breakfast', 'Lunch', 'Dinner', 'Snack', 'Dessert'] as const;
 const FLAGS: { key: keyof Dish; label: string }[] = [
@@ -26,18 +27,22 @@ export function DishLibrary({
   const [vegOnly, setVegOnly] = useState(false);
   const [flags, setFlags] = useState<Set<keyof Dish>>(new Set());
   const [cuisine, setCuisine] = useState<string>('All');
+  const [proteinOnly, setProteinOnly] = useState(false);
 
   const shown = useMemo(() => {
     const q = query.trim().toLowerCase();
-    return DISHES.filter(
+    const list = DISHES.filter(
       (d) =>
         (!q || d.name.toLowerCase().includes(q) || d.hindi.includes(q) || d.ingredients.some((i) => i.toLowerCase().includes(q)) || d.region.toLowerCase().includes(q)) &&
         (meal === 'All' || d.slots.includes(meal)) &&
         (!vegOnly || d.diet === 'Veg') &&
         (cuisine === 'All' || (cuisine === 'Indian' ? !isWorldDish(d) : cuisineOf(d) === cuisine)) &&
-        [...flags].every((f) => d[f] === true),
+        [...flags].every((f) => d[f] === true) &&
+        (!proteinOnly || proteinLevel(d.id) !== null),
     );
-  }, [query, meal, vegOnly, flags, cuisine]);
+    // With the protein filter on, show the most protein first.
+    return proteinOnly ? list.sort((a, b) => (getNutrition(b.id)?.protein ?? 0) - (getNutrition(a.id)?.protein ?? 0)) : list;
+  }, [query, meal, vegOnly, flags, cuisine, proteinOnly]);
 
   const toggleFlag = (f: keyof Dish) => {
     const next = new Set(flags);
@@ -90,6 +95,9 @@ export function DishLibrary({
           <button className={`chip chip-toggle${vegOnly ? ' is-on' : ''}`} aria-pressed={vegOnly} onClick={() => setVegOnly(!vegOnly)}>
             Veg only
           </button>
+          <button className={`chip chip-toggle${proteinOnly ? ' is-on' : ''}`} aria-pressed={proteinOnly} onClick={() => setProteinOnly(!proteinOnly)}>
+            Protein-rich
+          </button>
           {FLAGS.map((f) => (
             <button key={f.key} className={`chip chip-toggle${flags.has(f.key) ? ' is-on' : ''}`} aria-pressed={flags.has(f.key)} onClick={() => toggleFlag(f.key)}>
               {f.label}
@@ -116,7 +124,7 @@ export function DishLibrary({
                     {d.hindi}
                   </span>
                   <span className="dish-meta">
-                    {d.category} · {d.region} · {d.cookTime} min · {d.difficulty}
+                    {d.category} · {d.region} · {d.cookTime} min · {d.difficulty} <ProteinPill dishId={d.id} />
                   </span>
                   <span className="lib-recipe-link">See recipe →</span>
                 </span>

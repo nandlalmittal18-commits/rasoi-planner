@@ -203,3 +203,18 @@ Paneer Shawarma Wrap|Dinner|World Main|Veg|Middle Eastern|35|Medium|Paneer, pita
 Chicken Shawarma|Dinner|World Main|Non-Veg|Middle Eastern|40|Medium|Chicken, pita, garlic, cucumber, curd|N|N|N|Y|Y|All|Medium|Marinate 2 hrs|Hummus|चिकन शवर्मा
 Hummus with Pita|Snack / Dinner|World Side|Veg|Middle Eastern|20|Easy|Chickpeas, sesame, garlic, lemon, pita|N|N|N|Y|N|All|Light|Soak chickpeas overnight|Falafel|हम्मस और पीटा
 Fattoush Salad|Side|World Side|Veg|Middle Eastern|15|Easy|Cucumber, tomato, lettuce, pita, lemon|Y|Y|N|N|N|Summer|Light||Wrap|फतूश सलाद
+Sattu Shake|Breakfast / Snack|Breakfast|Veg|Bihar|5|Easy|Sattu, banana, milk, dry fruits, honey|N|Y|N|N|Y|All|Medium|||सत्तू शेक
+Badam Lassi|Breakfast / Snack|Snack|Veg|Punjab|5|Easy|Curd, milk, almonds, cardamom|Y|Y|Y|N|Y|Summer|Light|||बादाम लस्सी
+Peanut Banana Smoothie|Breakfast / Snack|Snack|Veg|Modern|5|Easy|Banana, peanut butter, milk, oats|Y|Y|N|N|Y|All|Medium|||पीनट बनाना स्मूदी
+Sattu Paratha|Breakfast / Lunch|Breakfast|Veg|Bihar|35|Medium|Wheat flour, sattu, onion, green chilli, ajwain|Y|Y|N|Y|Y|All|Medium||Curd, pickle|सत्तू पराठा
+Kabuli Chana Chaat|Breakfast / Snack|Snack|Veg|North|15|Easy|Boiled chickpeas, onion, tomato, cucumber, lemon|Y|Y|N|Y|Y|All|Light|Soak chickpeas overnight||काबुली चना चाट
+Chana Sundal|Breakfast / Snack|Snack|Veg|Tamil Nadu|15|Easy|Boiled chickpeas, coconut, mustard seeds, curry leaves|Y|Y|N|Y|Y|All|Light|Soak chickpeas overnight||चना सुंडल
+Roasted Chana Chaat|Snack|Snack|Veg|Pan-India|5|Easy|Roasted chana, onion, tomato, lemon, chaat masala|Y|Y|N|Y|Y|All|Light|||भुना चना चाट
+Tofu Bhurji|Breakfast / Dinner|Paneer|Veg|Modern|15|Easy|Tofu, onion, tomato, capsicum|Y|Y|N|Y|Y|All|Light||Roti, toast|टोफू भुर्जी
+Soya Keema|Lunch / Dinner|Sabzi (Gravy)|Veg|North|30|Easy|Soya granules, peas, onion, tomato|Y|Y|N|Y|Y|All|Medium||Roti, pav|सोया कीमा
+Paneer Salad|Breakfast / Snack|Snack|Veg|Modern|10|Easy|Paneer, cucumber, tomato, capsicum, lemon|Y|Y|N|Y|N|All|Light|||पनीर सलाद
+Paneer Stuffed Besan Chilla|Breakfast / Dinner|Breakfast|Veg|North|25|Easy|Gram flour, paneer, onion, tomato|Y|Y|N|Y|Y|All|Light||Green chutney|पनीर भरा बेसन चीला
+Masoor Dal Tikki|Snack / Dinner|Snack|Veg|North|35|Medium|Masoor dal, onion, ginger, coriander|Y|Y|N|Y|Y|All|Light|Soak dal 4 hrs|Green chutney|मसूर दाल टिक्की
+Peanut Chaat|Snack|Snack|Veg|Maharashtra|15|Easy|Boiled peanuts, onion, tomato, lemon|Y|Y|N|Y|Y|Monsoon|Light|||मूंगफली चाट
+Egg White Bhurji|Breakfast / Dinner|Breakfast|Egg|Modern|15|Easy|Egg whites, onion, tomato, capsicum|N|Y|N|Y|N|All|Light||Toast, roti|एग व्हाइट भुर्जी
+Moong Usal|Lunch / Dinner|Dal / Legume|Veg|Maharashtra|30|Easy|Sprouted moong, onion, tomato, coconut, goda masala|N|Y|N|Y|N|All|Light|Sprout moong 1-2 days|Roti, pav|मूंग उसल

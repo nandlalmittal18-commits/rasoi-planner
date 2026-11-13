@@ -1,0 +1,101 @@
+# Nutrients per 100 g of the ingredient as bought (raw / dry), edible part.
+# Approximate values in line with the Indian Food Composition Tables (IFCT 2017) and USDA FoodData Central.
+# A dietitian can correct any line here and every dish using it updates on the next build.
+# key|kcal|protein g|carbs g|fat g|fibre g|what it covers
+rice|350|7.0|78|0.5|1.0|Raw rice, basmati or sona masoori
+atta|340|12.0|69|1.7|11.0|Whole wheat flour
+maida|350|10.0|74|0.9|2.7|Refined flour
+sooji|350|10.5|72|1.0|4.0|Semolina / rava
+besan|375|22.0|58|6.0|11.0|Gram flour
+sattu|380|22.0|60|5.0|15.0|Roasted gram flour
+poha|350|6.6|77|1.2|2.0|Flattened rice
+oats|380|13.0|67|7.0|10.0|Rolled oats
+dalia|345|12.0|70|1.5|12.0|Broken wheat
+vermicelli|350|11.0|75|1.0|3.0|Wheat vermicelli / sevai
+ricevermicelli|360|6.0|80|0.6|1.6|Rice vermicelli / rice noodles
+noodles|360|12.0|72|2.0|3.0|Dry wheat noodles
+pasta|370|13.0|75|1.5|3.0|Dry pasta / lasagne sheets
+bread|265|9.0|49|3.2|2.7|Bread, pav, burger bun, pizza base
+flatbread|290|9.0|52|4.0|2.5|Pita / tortilla
+tacoshell|490|7.0|63|24.0|5.0|Taco shells / nachos
+maize|365|7.0|76|3.9|7.0|Maize flour (makki)
+bajra|360|11.0|67|5.0|11.5|Pearl millet flour
+jowar|340|10.4|72|1.9|9.7|Sorghum flour
+ragi|330|7.3|72|1.3|11.0|Finger millet flour
+kuttu|340|13.0|71|3.4|10.0|Buckwheat flour
+rajgira|370|13.6|65|7.0|6.7|Amaranth flour
+sabudana|350|0.2|87|0.2|0.9|Sago
+samak|340|6.0|66|2.0|10.0|Barnyard millet
+singhara|340|4.0|77|1.0|4.0|Water chestnut flour
+riceflour|365|6.0|80|1.4|2.4|Rice flour
+puffedrice|325|7.5|74|0.5|0.3|Murmura
+makhana|350|9.7|77|0.1|7.0|Fox nuts
+cornflour|380|0.3|91|0.1|0.9|Cornflour
+toor|340|22.0|57|1.5|9.0|Toor / arhar dal
+moongdal|350|24.0|59|1.2|8.0|Yellow moong dal
+wholemoong|347|24.0|60|1.2|16.0|Whole green moong / moth
+masoor|345|24.5|59|0.8|11.0|Masoor dal
+urad|340|24.0|58|1.6|18.0|Urad dal (whole or split)
+chanadal|360|21.0|60|5.6|15.0|Chana dal
+chickpea|360|19.0|61|6.0|17.0|Dry kabuli or kala chana
+roastedchana|370|22.0|58|5.0|15.0|Roasted chana
+rajma|330|22.0|60|1.0|18.0|Dry kidney beans
+lobia|336|23.5|60|1.3|11.0|Dry black-eyed beans
+soya|345|52.0|33|0.5|13.0|Soya chunks / granules (dry)
+sprouts|100|7.0|17|0.5|4.0|Sprouted moong
+beansprouts|30|3.0|6|0.2|1.8|Long bean sprouts
+tofu|130|14.0|3|7.5|1.0|Firm tofu
+peanut|567|25.8|16|49.0|8.5|Raw peanuts
+peanutbutter|590|25.0|20|50.0|6.0|Peanut butter
+almond|580|21.0|22|50.0|12.5|Almonds
+cashew|553|18.0|30|44.0|3.3|Cashews
+nuts|590|20.0|20|50.0|8.0|Mixed dry fruits / nuts
+sesame|573|18.0|23|50.0|12.0|Sesame seeds
+poppy|525|18.0|28|42.0|20.0|Poppy seeds (posto)
+coconut|350|3.3|15|33.0|9.0|Fresh grated coconut
+coconutmilk|230|2.3|5.5|24.0|2.0|Coconut milk
+milk|60|3.2|4.8|3.2|0|Toned milk
+curd|60|3.3|4.5|3.2|0|Curd from toned milk
+hungcurd|100|8.0|5|5.0|0|Hung curd
+paneer|265|18.3|1.2|20.8|0|Paneer
+cheese|330|21.0|2|26.0|0|Processed cheese
+mozzarella|280|22.0|3|20.0|0|Mozzarella
+khoya|420|15.0|21|30.0|0|Khoya / mawa
+cream|250|2.0|3.5|25.0|0|Fresh cream (25%)
+butter|717|0.9|0.1|81.0|0|Butter
+ghee|900|0|0|100.0|0|Ghee
+oil|884|0|0|100.0|0|Cooking oil
+mayonnaise|680|1.0|1|75.0|0|Mayonnaise
+egg|143|12.6|0.7|9.5|0|Whole egg (about 50 g each)
+eggwhite|52|11.0|0.7|0.2|0|Egg white
+chicken|145|20.0|0|7.0|0|Chicken, edible part
+mutton|194|18.5|0|13.3|0|Mutton, edible part
+fish|105|19.0|0|2.5|0|Fish, edible part
+prawns|90|19.0|0.5|1.2|0|Prawns, cleaned
+potato|80|2.0|17|0.1|2.2|Potato
+yam|90|1.5|21|0.1|3.5|Yam / sweet potato
+arbi|112|1.5|26|0.2|4.0|Colocasia
+onion|40|1.1|9|0.1|1.7|Onion
+tomato|18|0.9|3.9|0.2|1.2|Tomato, tomato puree or sauce
+veg|45|2.5|8|0.3|3.0|Mixed vegetables
+peas|81|5.4|14.5|0.4|5.1|Green peas
+leafy|26|2.9|3.6|0.4|2.5|Spinach, methi, sarson, lettuce
+gourd|18|0.6|4|0.1|1.2|Lauki, tinda, turai, karela
+pumpkin|26|1.0|6.5|0.1|0.5|Pumpkin
+cauliflower|25|1.9|5|0.3|2.0|Cauliflower
+brinjal|25|1.0|6|0.2|3.0|Brinjal
+bhindi|33|1.9|7.5|0.2|3.2|Okra
+cabbage|25|1.3|5.8|0.1|2.5|Cabbage
+carrot|41|0.9|9.6|0.2|2.8|Carrot
+beans|31|1.8|7|0.2|2.7|French beans / papdi
+mushroom|22|3.1|3.3|0.3|1.0|Mushroom
+corn|86|3.3|19|1.4|2.7|Sweet corn kernels
+capsicum|25|1.0|5|0.3|1.8|Capsicum
+cucumber|15|0.7|3.6|0.1|0.5|Cucumber
+rawpapaya|32|0.6|8|0.1|1.8|Raw papaya
+banana|89|1.1|23|0.3|2.6|Banana
+pineapple|50|0.5|13|0.1|1.4|Pineapple
+farsan|540|14.0|45|34.0|6.0|Sev, boondi, namkeen
+sugar|400|0|100|0|0|Sugar
+jaggery|380|0.4|95|0.1|0|Jaggery
+honey|304|0.3|82|0|0|Honey

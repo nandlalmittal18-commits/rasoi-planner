@@ -62,7 +62,7 @@ function remove(key: string) {
 
 /** Profiles saved before a setting existed get its default here. */
 function withDefaults(p: FamilyProfile): FamilyProfile {
-  return { ...p, worldMealsPerWeek: p.worldMealsPerWeek ?? 1 };
+  return { ...p, worldMealsPerWeek: p.worldMealsPerWeek ?? 1, proteinFocus: p.proteinFocus ?? false };
 }
 
 // ---------------------------------------------------------------- online copy

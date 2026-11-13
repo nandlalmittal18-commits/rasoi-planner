@@ -6146,5 +6146,463 @@
   "pairsWith": [
    "Wrap"
   ]
+ },
+ {
+  "id": "sattu-shake",
+  "name": "Sattu Shake",
+  "hindi": "सत्तू शेक",
+  "slots": [
+   "Breakfast",
+   "Snack"
+  ],
+  "category": "Breakfast",
+  "diet": "Veg",
+  "region": "Bihar",
+  "cookTime": 5,
+  "difficulty": "Easy",
+  "ingredients": [
+   "Sattu",
+   "banana",
+   "milk",
+   "dry fruits",
+   "honey"
+  ],
+  "jain": false,
+  "noOnionGarlic": true,
+  "vrat": false,
+  "tiffin": false,
+  "kidFavourite": true,
+  "season": "All",
+  "heaviness": "Medium",
+  "prepAhead": null,
+  "pairsWith": []
+ },
+ {
+  "id": "badam-lassi",
+  "name": "Badam Lassi",
+  "hindi": "बादाम लस्सी",
+  "slots": [
+   "Breakfast",
+   "Snack"
+  ],
+  "category": "Snack",
+  "diet": "Veg",
+  "region": "Punjab",
+  "cookTime": 5,
+  "difficulty": "Easy",
+  "ingredients": [
+   "Curd",
+   "milk",
+   "almonds",
+   "cardamom"
+  ],
+  "jain": true,
+  "noOnionGarlic": true,
+  "vrat": true,
+  "tiffin": false,
+  "kidFavourite": true,
+  "season": "Summer",
+  "heaviness": "Light",
+  "prepAhead": null,
+  "pairsWith": []
+ },
+ {
+  "id": "peanut-banana-smoothie",
+  "name": "Peanut Banana Smoothie",
+  "hindi": "पीनट बनाना स्मूदी",
+  "slots": [
+   "Breakfast",
+   "Snack"
+  ],
+  "category": "Snack",
+  "diet": "Veg",
+  "region": "Modern",
+  "cookTime": 5,
+  "difficulty": "Easy",
+  "ingredients": [
+   "Banana",
+   "peanut butter",
+   "milk",
+   "oats"
+  ],
+  "jain": true,
+  "noOnionGarlic": true,
+  "vrat": false,
+  "tiffin": false,
+  "kidFavourite": true,
+  "season": "All",
+  "heaviness": "Medium",
+  "prepAhead": null,
+  "pairsWith": []
+ },
+ {
+  "id": "sattu-paratha",
+  "name": "Sattu Paratha",
+  "hindi": "सत्तू पराठा",
+  "slots": [
+   "Breakfast",
+   "Lunch"
+  ],
+  "category": "Breakfast",
+  "diet": "Veg",
+  "region": "Bihar",
+  "cookTime": 35,
+  "difficulty": "Medium",
+  "ingredients": [
+   "Wheat flour",
+   "sattu",
+   "onion",
+   "green chilli",
+   "ajwain"
+  ],
+  "jain": true,
+  "noOnionGarlic": true,
+  "vrat": false,
+  "tiffin": true,
+  "kidFavourite": true,
+  "season": "All",
+  "heaviness": "Medium",
+  "prepAhead": null,
+  "pairsWith": [
+   "Curd",
+   "pickle"
+  ]
+ },
+ {
+  "id": "kabuli-chana-chaat",
+  "name": "Kabuli Chana Chaat",
+  "hindi": "काबुली चना चाट",
+  "slots": [
+   "Breakfast",
+   "Snack"
+  ],
+  "category": "Snack",
+  "diet": "Veg",
+  "region": "North",
+  "cookTime": 15,
+  "difficulty": "Easy",
+  "ingredients": [
+   "Boiled chickpeas",
+   "onion",
+   "tomato",
+   "cucumber",
+   "lemon"
+  ],
+  "jain": true,
+  "noOnionGarlic": true,
+  "vrat": false,
+  "tiffin": true,
+  "kidFavourite": true,
+  "season": "All",
+  "heaviness": "Light",
+  "prepAhead": "Soak chickpeas overnight",
+  "pairsWith": []
+ },
+ {
+  "id": "chana-sundal",
+  "name": "Chana Sundal",
+  "hindi": "चना सुंडल",
+  "slots": [
+   "Breakfast",
+   "Snack"
+  ],
+  "category": "Snack",
+  "diet": "Veg",
+  "region": "Tamil Nadu",
+  "cookTime": 15,
+  "difficulty": "Easy",
+  "ingredients": [
+   "Boiled chickpeas",
+   "coconut",
+   "mustard seeds",
+   "curry leaves"
+  ],
+  "jain": true,
+  "noOnionGarlic": true,
+  "vrat": false,
+  "tiffin": true,
+  "kidFavourite": true,
+  "season": "All",
+  "heaviness": "Light",
+  "prepAhead": "Soak chickpeas overnight",
+  "pairsWith": []
+ },
+ {
+  "id": "roasted-chana-chaat",
+  "name": "Roasted Chana Chaat",
+  "hindi": "भुना चना चाट",
+  "slots": [
+   "Snack"
+  ],
+  "category": "Snack",
+  "diet": "Veg",
+  "region": "Pan-India",
+  "cookTime": 5,
+  "difficulty": "Easy",
+  "ingredients": [
+   "Roasted chana",
+   "onion",
+   "tomato",
+   "lemon",
+   "chaat masala"
+  ],
+  "jain": true,
+  "noOnionGarlic": true,
+  "vrat": false,
+  "tiffin": true,
+  "kidFavourite": true,
+  "season": "All",
+  "heaviness": "Light",
+  "prepAhead": null,
+  "pairsWith": []
+ },
+ {
+  "id": "tofu-bhurji",
+  "name": "Tofu Bhurji",
+  "hindi": "टोफू भुर्जी",
+  "slots": [
+   "Breakfast",
+   "Dinner"
+  ],
+  "category": "Paneer",
+  "diet": "Veg",
+  "region": "Modern",
+  "cookTime": 15,
+  "difficulty": "Easy",
+  "ingredients": [
+   "Tofu",
+   "onion",
+   "tomato",
+   "capsicum"
+  ],
+  "jain": true,
+  "noOnionGarlic": true,
+  "vrat": false,
+  "tiffin": true,
+  "kidFavourite": true,
+  "season": "All",
+  "heaviness": "Light",
+  "prepAhead": null,
+  "pairsWith": [
+   "Roti",
+   "toast"
+  ]
+ },
+ {
+  "id": "soya-keema",
+  "name": "Soya Keema",
+  "hindi": "सोया कीमा",
+  "slots": [
+   "Lunch",
+   "Dinner"
+  ],
+  "category": "Sabzi (Gravy)",
+  "diet": "Veg",
+  "region": "North",
+  "cookTime": 30,
+  "difficulty": "Easy",
+  "ingredients": [
+   "Soya granules",
+   "peas",
+   "onion",
+   "tomato"
+  ],
+  "jain": true,
+  "noOnionGarlic": true,
+  "vrat": false,
+  "tiffin": true,
+  "kidFavourite": true,
+  "season": "All",
+  "heaviness": "Medium",
+  "prepAhead": null,
+  "pairsWith": [
+   "Roti",
+   "pav"
+  ]
+ },
+ {
+  "id": "paneer-salad",
+  "name": "Paneer Salad",
+  "hindi": "पनीर सलाद",
+  "slots": [
+   "Breakfast",
+   "Snack"
+  ],
+  "category": "Snack",
+  "diet": "Veg",
+  "region": "Modern",
+  "cookTime": 10,
+  "difficulty": "Easy",
+  "ingredients": [
+   "Paneer",
+   "cucumber",
+   "tomato",
+   "capsicum",
+   "lemon"
+  ],
+  "jain": true,
+  "noOnionGarlic": true,
+  "vrat": false,
+  "tiffin": true,
+  "kidFavourite": false,
+  "season": "All",
+  "heaviness": "Light",
+  "prepAhead": null,
+  "pairsWith": []
+ },
+ {
+  "id": "paneer-stuffed-besan-chilla",
+  "name": "Paneer Stuffed Besan Chilla",
+  "hindi": "पनीर भरा बेसन चीला",
+  "slots": [
+   "Breakfast",
+   "Dinner"
+  ],
+  "category": "Breakfast",
+  "diet": "Veg",
+  "region": "North",
+  "cookTime": 25,
+  "difficulty": "Easy",
+  "ingredients": [
+   "Gram flour",
+   "paneer",
+   "onion",
+   "tomato"
+  ],
+  "jain": true,
+  "noOnionGarlic": true,
+  "vrat": false,
+  "tiffin": true,
+  "kidFavourite": true,
+  "season": "All",
+  "heaviness": "Light",
+  "prepAhead": null,
+  "pairsWith": [
+   "Green chutney"
+  ]
+ },
+ {
+  "id": "masoor-dal-tikki",
+  "name": "Masoor Dal Tikki",
+  "hindi": "मसूर दाल टिक्की",
+  "slots": [
+   "Snack",
+   "Dinner"
+  ],
+  "category": "Snack",
+  "diet": "Veg",
+  "region": "North",
+  "cookTime": 35,
+  "difficulty": "Medium",
+  "ingredients": [
+   "Masoor dal",
+   "onion",
+   "ginger",
+   "coriander"
+  ],
+  "jain": true,
+  "noOnionGarlic": true,
+  "vrat": false,
+  "tiffin": true,
+  "kidFavourite": true,
+  "season": "All",
+  "heaviness": "Light",
+  "prepAhead": "Soak dal 4 hrs",
+  "pairsWith": [
+   "Green chutney"
+  ]
+ },
+ {
+  "id": "peanut-chaat",
+  "name": "Peanut Chaat",
+  "hindi": "मूंगफली चाट",
+  "slots": [
+   "Snack"
+  ],
+  "category": "Snack",
+  "diet": "Veg",
+  "region": "Maharashtra",
+  "cookTime": 15,
+  "difficulty": "Easy",
+  "ingredients": [
+   "Boiled peanuts",
+   "onion",
+   "tomato",
+   "lemon"
+  ],
+  "jain": true,
+  "noOnionGarlic": true,
+  "vrat": false,
+  "tiffin": true,
+  "kidFavourite": true,
+  "season": "Monsoon",
+  "heaviness": "Light",
+  "prepAhead": null,
+  "pairsWith": []
+ },
+ {
+  "id": "egg-white-bhurji",
+  "name": "Egg White Bhurji",
+  "hindi": "एग व्हाइट भुर्जी",
+  "slots": [
+   "Breakfast",
+   "Dinner"
+  ],
+  "category": "Breakfast",
+  "diet": "Egg",
+  "region": "Modern",
+  "cookTime": 15,
+  "difficulty": "Easy",
+  "ingredients": [
+   "Egg whites",
+   "onion",
+   "tomato",
+   "capsicum"
+  ],
+  "jain": false,
+  "noOnionGarlic": true,
+  "vrat": false,
+  "tiffin": true,
+  "kidFavourite": false,
+  "season": "All",
+  "heaviness": "Light",
+  "prepAhead": null,
+  "pairsWith": [
+   "Toast",
+   "roti"
+  ]
+ },
+ {
+  "id": "moong-usal",
+  "name": "Moong Usal",
+  "hindi": "मूंग उसल",
+  "slots": [
+   "Lunch",
+   "Dinner"
+  ],
+  "category": "Dal / Legume",
+  "diet": "Veg",
+  "region": "Maharashtra",
+  "cookTime": 30,
+  "difficulty": "Easy",
+  "ingredients": [
+   "Sprouted moong",
+   "onion",
+   "tomato",
+   "coconut",
+   "goda masala"
+  ],
+  "jain": false,
+  "noOnionGarlic": true,
+  "vrat": false,
+  "tiffin": true,
+  "kidFavourite": false,
+  "season": "All",
+  "heaviness": "Light",
+  "prepAhead": "Sprout moong 1-2 days",
+  "pairsWith": [
+   "Roti",
+   "pav"
+  ]
  }
 ]
