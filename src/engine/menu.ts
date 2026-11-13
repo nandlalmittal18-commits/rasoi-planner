@@ -29,7 +29,12 @@ import {
   type Rng,
 } from './util';
 
-export const MEAL_TYPES: MealType[] = ['Breakfast', 'Lunch', 'Dinner'];
+export const MEAL_TYPES: MealType[] = ['Breakfast', 'Lunch', 'Snack', 'Dinner'];
+
+/** The meals planned each day for this family, in the order they are eaten. */
+export function mealsFor(profile: FamilyProfile): MealType[] {
+  return MEAL_TYPES.filter((m) => m !== 'Snack' || profile.eveningSnack);
+}
 
 interface Ctx {
   profile: FamilyProfile;
@@ -62,11 +67,13 @@ const ROLE_MATCH: Record<Exclude<RoleKey, 'base'>, (d: Dish, meal: MealType) => 
     (d.category === 'One-Pot Meal' || (d.category === 'Rice' && !isRiceStaple(d))) && d.slots.includes(m) && !isWorldDish(d),
   combo: (d, m) => d.category === 'Combo Meal' && d.slots.includes(m),
   lightDinner: (d) => d.category === 'Breakfast' && d.slots.includes('Dinner'),
+  snack: (d) => d.slots.includes('Snack') && !isWorldDish(d) && d.category !== 'Non-Veg Main',
   side: (d) => d.category === 'Side',
   vratBreakfast: (d) => d.vrat && (d.slots.includes('Breakfast') || d.category === 'Snack'),
   vratMain: (d) => d.vrat && (d.category === 'Breakfast' || d.category === 'Rice'),
   vratSide: (d) => d.vrat && d.category.startsWith('Sabzi'),
   vratExtra: (d) => d.vrat && (d.category === 'Snack' || d.category === 'Sweet'),
+  vratSnack: (d) => d.vrat && (d.slots.includes('Snack') || d.category === 'Snack' || d.category === 'Sweet'),
   worldMain: (d, m) =>
     isWorldDish(d) && d.slots.includes(m) && ['World Main', 'Rice', 'One-Pot Meal', 'Non-Veg Main'].includes(d.category),
   worldSide: (d) => d.category === 'World Side',
@@ -108,6 +115,7 @@ const TEMPLATES: Record<MealType, Template[]> = {
     { key: 'light', label: 'Light dinner', roles: [r('lightDinner')], weight: (c) => (prefers(c, 'South') ? 2 : 0.6) },
     { key: 'combo', label: 'Weekend special', roles: [r('combo')], weight: (c) => (c.isWeekend ? 1 : 0) },
   ],
+  Snack: [{ key: 'snack', label: 'Chai time', roles: [r('snack')], weight: () => 1 }],
 };
 
 const FAST_TEMPLATES: Record<MealType, Template[]> = {
@@ -120,6 +128,7 @@ const FAST_TEMPLATES: Record<MealType, Template[]> = {
     { key: 'vrat-meal', label: 'Vrat meal', roles: [r('vratMain'), r('vratSide', true)], weight: () => 1 },
     { key: 'vrat-light', label: 'Vrat meal', roles: [r('vratSide'), r('vratExtra')], weight: () => 0.01 },
   ],
+  Snack: [{ key: 'vrat-snack', label: 'Vrat snack', roles: [r('vratSnack')], weight: () => 1 }],
 };
 
 /** Used only on the family's world-food nights. The side always matches the main's cuisine. */
@@ -166,7 +175,8 @@ function passes(d: Dish, c: Ctx, level: number): boolean {
   if (level < 3 && !isStaple(d) && c.used.has(d.id)) return false;
   if (level < 4) {
     if (c.tiffin && !d.tiffin) return false;
-    if (d.heaviness === 'Heavy' && (c.dayHeavy || (c.meal === 'Breakfast' && !c.isWeekend))) return false;
+    // No heavy breakfast or evening snack on weekdays, and at most one heavy dish a day.
+    if (d.heaviness === 'Heavy' && (c.dayHeavy || ((c.meal === 'Breakfast' || c.meal === 'Snack') && !c.isWeekend))) return false;
   }
   return true;
 }
@@ -192,6 +202,8 @@ function weight(d: Dish, c: Ctx): number {
   if (c.isWeekend && (d.heaviness === 'Heavy' || d.difficulty === 'Hard')) w *= 1.8;
   if (!c.isWeekend && d.difficulty === 'Hard') w *= 0.4;
   if (c.meal === 'Dinner' && d.heaviness === 'Heavy') w *= 0.4;
+  // Weekday evening snacks should be quick to make.
+  if (c.meal === 'Snack' && !c.isWeekend && d.cookTime > 20) w *= 0.4;
   return w;
 }
 
@@ -387,13 +399,13 @@ function buildDay(profile: FamilyProfile, date: Date, used: Set<string>, rng: Rn
     meals: [],
   };
   let dayHeavy = false;
-  for (const meal of MEAL_TYPES) {
+  for (const meal of mealsFor(profile)) {
     const m = buildMeal(makeCtx(profile, day, meal, used, dayHeavy), rng, worldDinner && meal === 'Dinner');
     rememberMeal(m, used);
     dayHeavy ||= isHeavyMeal(m);
     day.meals.push(m);
   }
-  day.worldDinner = day.meals[2].items.some((i) => i.role === 'worldMain');
+  day.worldDinner = day.meals.some((m) => m.type === 'Dinner' && m.items.some((i) => i.role === 'worldMain'));
   return day;
 }
 

@@ -7,7 +7,9 @@ import { prepForDay } from './prep';
 import type { DayPlan, FamilyProfile, MealType, WeekPlan } from './types';
 import { WEEKDAYS, WEEKDAYS_HI, WEEKDAYS_SHORT, parseISODate } from './util';
 
-const MEAL_HI: Record<MealType, string> = { Breakfast: 'नाश्ता', Lunch: 'दोपहर का खाना', Dinner: 'रात का खाना' };
+/** How each meal is named for people (English). */
+export const MEAL_NAME: Record<MealType, string> = { Breakfast: 'Breakfast', Lunch: 'Lunch', Snack: 'Evening snack', Dinner: 'Dinner' };
+const MEAL_HI: Record<MealType, string> = { Breakfast: 'नाश्ता', Lunch: 'दोपहर का खाना', Snack: 'शाम का नाश्ता', Dinner: 'रात का खाना' };
 
 export function formatDate(iso: string): string {
   return parseISODate(iso).toLocaleDateString('en-IN', { day: 'numeric', month: 'short' });
@@ -20,7 +22,7 @@ export function dayMessage(day: DayPlan, profile: FamilyProfile): string {
   if (day.isFast) lines.push('🙏 Vrat day');
   for (const meal of day.meals) {
     const names = meal.items.map((i) => getDish(i.dishId).name).join(', ');
-    lines.push(`*${meal.type}${meal.tiffin ? ' (tiffin)' : ''}:* ${names}`);
+    lines.push(`*${MEAL_NAME[meal.type]}${meal.tiffin ? ' (tiffin)' : ''}:* ${names}`);
   }
   const prep = prepForDay(day);
   const night = prep.filter((p) => p.when === 'night');

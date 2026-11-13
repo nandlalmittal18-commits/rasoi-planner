@@ -75,3 +75,26 @@ export function mealNutrition(meal: Meal): NutritionTotals {
 export function dayNutrition(day: DayPlan): NutritionTotals {
   return add(day.meals.flatMap((m) => m.items.map((i) => i.dishId)));
 }
+
+/**
+ * Daily protein guide for adults, from ICMR-NIN 2020 (0.83 g per kg body weight a day):
+ * about 46 g for the reference woman (55 kg) and 54 g for the reference man (65 kg).
+ */
+export const PROTEIN_GUIDE = { low: 46, high: 54 } as const;
+
+export interface DayProtein {
+  date: string;
+  weekday: number;
+  protein: number;
+  kcal: number;
+}
+
+/** Protein and calories per day for one person (one serving of each dish), for the week's card. */
+export function weekProtein(plan: { days: DayPlan[] }): { days: DayProtein[]; average: number } {
+  const days = plan.days.map((d) => {
+    const t = dayNutrition(d);
+    return { date: d.date, weekday: d.weekday, protein: t.protein, kcal: t.kcal };
+  });
+  const average = days.length ? Math.round(days.reduce((a, d) => a + d.protein, 0) / days.length) : 0;
+  return { days, average };
+}

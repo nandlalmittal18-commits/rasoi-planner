@@ -3102,5 +3102,33 @@
    "अंकुरित मूंग, नमक और 1 कप पानी डालें; ढककर 8–10 मिनट नरम होने तक पकाएं, गलने न दें।",
    "थोड़ा गुड़ और नींबू डालें; धनिया डालकर पाव या रोटी के साथ परोसें।"
   ]
+ },
+ "fruit-chaat": {
+  "en": [
+   "Chop banana, apple, papaya and any fruit in season into bite-size pieces.",
+   "Add pomegranate seeds.",
+   "Sprinkle chaat masala and a pinch of black salt (rock salt on vrat days), then squeeze lemon.",
+   "Toss gently and serve straight away."
+  ],
+  "hi": [
+   "केला, सेब, पपीता और मौसम का कोई भी फल छोटे टुकड़ों में काटें।",
+   "अनार के दाने डालें।",
+   "चाट मसाला और चुटकी भर काला नमक (व्रत में सेंधा नमक) डालें, फिर नींबू निचोड़ें।",
+   "हल्के हाथ से मिलाएं और तुरंत परोसें।"
+  ]
+ },
+ "shakarkandi-chaat": {
+  "en": [
+   "Boil or roast sweet potatoes till soft; peel and cut into cubes.",
+   "Warm 1 tsp ghee in a pan and toss the cubes for 2 minutes.",
+   "Add rock salt, roasted cumin powder, black pepper and lemon juice.",
+   "Mix well, top with coriander and serve warm."
+  ],
+  "hi": [
+   "शकरकंदी को नरम होने तक उबालें या भूनें; छीलकर टुकड़े काटें।",
+   "कड़ाही में 1 छोटा चम्मच घी गरम करें और टुकड़े 2 मिनट चलाएं।",
+   "सेंधा नमक, भुना जीरा पाउडर, काली मिर्च और नींबू डालें।",
+   "अच्छे से मिलाएं, धनिया डालकर गरम परोसें।"
+  ]
  }
 }

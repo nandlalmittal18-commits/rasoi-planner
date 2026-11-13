@@ -2,7 +2,8 @@
 // The engine is plain TypeScript with no React or browser code, so the web app
 // and the future WhatsApp bot can both use it.
 
-export type MealType = 'Breakfast' | 'Lunch' | 'Dinner';
+/** 'Snack' is the evening (chai-time) snack, planned when the family wants one. */
+export type MealType = 'Breakfast' | 'Lunch' | 'Snack' | 'Dinner';
 export type Diet = 'Veg' | 'Egg' | 'Non-Veg';
 export type Season = 'All' | 'Winter' | 'Summer' | 'Monsoon';
 export type Heaviness = 'Light' | 'Medium' | 'Heavy';
@@ -53,6 +54,8 @@ export interface FamilyProfile {
   /** World-food dinners each week (Chinese, Italian…). 0 = Indian food only */
   worldMealsPerWeek: number;
   hasKids: boolean;
+  /** Plan an evening (chai-time) snack every day */
+  eveningSnack: boolean;
   /** Prefer protein-rich dishes (dals, paneer, eggs, sprouts…) */
   proteinFocus: boolean;
   /** Weekday lunch is packed in a tiffin */
@@ -75,12 +78,14 @@ export type RoleKey =
   | 'riceDish'
   | 'combo'
   | 'lightDinner'
+  | 'snack'
   | 'side'
   | 'base'
   | 'vratBreakfast'
   | 'vratMain'
   | 'vratSide'
   | 'vratExtra'
+  | 'vratSnack'
   | 'worldMain'
   | 'worldSide'
   | 'any';

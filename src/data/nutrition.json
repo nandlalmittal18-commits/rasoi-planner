@@ -1758,5 +1758,21 @@
   "carbs": 28.9,
   "fat": 10.0,
   "fibre": 6.4
+ },
+ "fruit-chaat": {
+  "serving": "1 bowl",
+  "kcal": 135,
+  "protein": 1.5,
+  "carbs": 33.4,
+  "fat": 0.5,
+  "fibre": 4.6
+ },
+ "shakarkandi-chaat": {
+  "serving": "1 bowl",
+  "kcal": 171,
+  "protein": 2.2,
+  "carbs": 31.5,
+  "fat": 4.2,
+  "fibre": 5.2
  }
 }

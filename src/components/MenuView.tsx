@@ -1,9 +1,12 @@
 import { useState, type ReactNode } from 'react';
 import {
+  MEAL_NAME,
+  MEAL_TYPES,
   WEEKDAYS,
   WEEKDAYS_SHORT,
   cookMessage,
   dayMessage,
+  dayNutrition,
   formatDate,
   getDish,
   parseISODate,
@@ -20,7 +23,8 @@ import {
 import { copyText } from '../lib/clipboard';
 import { DishPicture } from './DishPicture';
 import { ProteinPill } from './ProteinPill';
-import { CopyIcon, FoodMark, MoonIcon, ShuffleIcon, SunIcon, SunriseIcon, SwapIcon, WhatsAppIcon } from './icons';
+import { ProteinWeek } from './ProteinWeek';
+import { ChaiIcon, CopyIcon, FoodMark, MoonIcon, ShuffleIcon, SunIcon, SunriseIcon, SwapIcon, WhatsAppIcon } from './icons';
 
 interface Props {
   plan: WeekPlan;
@@ -39,6 +43,7 @@ interface Props {
 const MEAL_ICON: Record<MealType, ReactNode> = {
   Breakfast: <SunriseIcon />,
   Lunch: <SunIcon size={18} />,
+  Snack: <ChaiIcon />,
   Dinner: <MoonIcon size={18} />,
 };
 
@@ -46,11 +51,12 @@ function mainItem(meal: Meal) {
   return meal.items.find((i) => i.role !== 'base') ?? meal.items[0];
 }
 
-/** Which meal is next, by the clock: before 10 breakfast, before 3 lunch, before 10 pm dinner. */
-function nextMeal(now: Date): { meal: MealType; tomorrow: boolean } {
+/** Which meal is next, by the clock: before 10 breakfast, before 3 lunch, before 6 pm snack, before 10 pm dinner. */
+function nextMeal(now: Date, hasSnack: boolean): { meal: MealType; tomorrow: boolean } {
   const h = now.getHours();
   if (h < 10) return { meal: 'Breakfast', tomorrow: false };
   if (h < 15) return { meal: 'Lunch', tomorrow: false };
+  if (h < 18 && hasSnack) return { meal: 'Snack', tomorrow: false };
   if (h < 22) return { meal: 'Dinner', tomorrow: false };
   return { meal: 'Breakfast', tomorrow: true };
 }
@@ -133,6 +139,8 @@ export function MenuView({ plan, profile, isSample, onSwap, onShuffleDay, onNewW
 
       <WeekGlance plan={plan} selected={selected} onSelect={setSelected} />
 
+      <ProteinWeek plan={plan} selected={selected} onSelect={setSelected} />
+
       <div className="card share-week">
         <div>
           <h3>Share the whole week</h3>
@@ -161,7 +169,7 @@ function NextUp({
   onOpenDish: (id: string) => void;
   onPickDay: (i: number) => void;
 }) {
-  const next = nextMeal(now);
+  const next = nextMeal(now, plan.days.some((d) => d.meals.some((m) => m.type === 'Snack')));
   const dayIndex = todayIndex < 0 ? 0 : Math.min(todayIndex + (next.tomorrow ? 1 : 0), plan.days.length - 1);
   const day = plan.days[dayIndex];
   const meal = day.meals.find((m) => m.type === next.meal) ?? day.meals[0];
@@ -178,7 +186,7 @@ function NextUp({
           {profile.familyName ? `, ${profile.familyName} family` : ''}!
         </p>
         <p className="next-label">
-          {when}’s {meal.type.toLowerCase()}
+          {when}’s {MEAL_NAME[meal.type].toLowerCase()}
         </p>
         <h2 className="next-dish">{names}</h2>
         <div className="btn-row">
@@ -275,6 +283,8 @@ function DayDetail({
         <MealCard key={meal.type} meal={meal} onSwap={(i) => onSwap(dayIndex, m, i)} onOpenDish={onOpenDish} />
       ))}
 
+      <DayNutrition day={day} />
+
       <div className="card share-day">
         <h3>Send this day’s menu</h3>
         <div className="btn-row">
@@ -316,7 +326,7 @@ function MealCard({ meal, onSwap, onOpenDish }: { meal: Meal; onSwap: (item: num
           {MEAL_ICON[meal.type]}
         </span>
         <div className="meal-title">
-          <h3>{meal.type}</h3>
+          <h3>{MEAL_NAME[meal.type]}</h3>
           {meal.label !== meal.type && <span className="meal-label">{meal.label}</span>}
         </div>
         {longest > 0 && <span className="meal-time">⏱ {longest} min</span>}
@@ -357,10 +367,12 @@ function MealCard({ meal, onSwap, onOpenDish }: { meal: Meal; onSwap: (item: num
 }
 
 function WeekGlance({ plan, selected, onSelect }: { plan: WeekPlan; selected: number; onSelect: (i: number) => void }) {
-  const mainOf = (meal: Meal) => {
-    const item = mainItem(meal);
+  const mainOf = (meal: Meal | undefined) => {
+    const item = meal && mainItem(meal);
     return item ? getDish(item.dishId).name : '–';
   };
+  // Columns follow the meals in the plan (the evening snack only if the family plans one).
+  const types = MEAL_TYPES.filter((t) => plan.days.some((d) => d.meals.some((m) => m.type === t)));
   return (
     <section className="card glance" aria-labelledby="glance-title">
       <h3 id="glance-title">Week at a glance</h3>
@@ -369,9 +381,11 @@ function WeekGlance({ plan, selected, onSelect }: { plan: WeekPlan; selected: nu
           <thead>
             <tr>
               <th scope="col">Day</th>
-              <th scope="col">Breakfast</th>
-              <th scope="col">Lunch</th>
-              <th scope="col">Dinner</th>
+              {types.map((t) => (
+                <th key={t} scope="col">
+                  {t}
+                </th>
+              ))}
             </tr>
           </thead>
           <tbody>
@@ -383,8 +397,8 @@ function WeekGlance({ plan, selected, onSelect }: { plan: WeekPlan; selected: nu
                   </button>
                   {d.isFast && <span className="dot dot-vrat" aria-label="Vrat day" />}
                 </th>
-                {d.meals.map((m) => (
-                  <td key={m.type}>{mainOf(m)}</td>
+                {types.map((t) => (
+                  <td key={t}>{mainOf(d.meals.find((m) => m.type === t))}</td>
                 ))}
               </tr>
             ))}
@@ -392,5 +406,22 @@ function WeekGlance({ plan, selected, onSelect }: { plan: WeekPlan; selected: nu
         </table>
       </div>
     </section>
+  );
+}
+
+/** Rough protein and calories for one person if they have one serving of every dish today. */
+function DayNutrition({ day }: { day: DayPlan }) {
+  const t = dayNutrition(day);
+  if (!t.kcal) return null;
+  return (
+    <p className="day-nutri">
+      <span>
+        <strong>{t.protein} g</strong> protein
+      </span>
+      <span>
+        <strong>{t.kcal.toLocaleString('en-IN')}</strong> kcal
+      </span>
+      <span className="muted">for one person, one serving of each dish</span>
+    </p>
   );
 }

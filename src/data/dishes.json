@@ -6604,5 +6604,64 @@
    "Roti",
    "pav"
   ]
+ },
+ {
+  "id": "fruit-chaat",
+  "name": "Fruit Chaat",
+  "hindi": "फ्रूट चाट",
+  "slots": [
+   "Breakfast",
+   "Snack"
+  ],
+  "category": "Snack",
+  "diet": "Veg",
+  "region": "North",
+  "cookTime": 10,
+  "difficulty": "Easy",
+  "ingredients": [
+   "Banana",
+   "apple",
+   "papaya",
+   "pomegranate",
+   "lemon",
+   "chaat masala"
+  ],
+  "jain": true,
+  "noOnionGarlic": true,
+  "vrat": true,
+  "tiffin": false,
+  "kidFavourite": true,
+  "season": "All",
+  "heaviness": "Light",
+  "prepAhead": null,
+  "pairsWith": []
+ },
+ {
+  "id": "shakarkandi-chaat",
+  "name": "Shakarkandi Chaat",
+  "hindi": "शकरकंदी चाट",
+  "slots": [
+   "Snack"
+  ],
+  "category": "Snack",
+  "diet": "Veg",
+  "region": "North",
+  "cookTime": 25,
+  "difficulty": "Easy",
+  "ingredients": [
+   "Sweet potato",
+   "lemon",
+   "rock salt",
+   "roasted cumin"
+  ],
+  "jain": false,
+  "noOnionGarlic": true,
+  "vrat": true,
+  "tiffin": true,
+  "kidFavourite": false,
+  "season": "Winter",
+  "heaviness": "Light",
+  "prepAhead": null,
+  "pairsWith": []
  }
 ]

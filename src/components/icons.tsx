@@ -25,6 +25,8 @@ export const SunIcon = ({ size = 16 }: P) =>
   svg(size, <><circle cx="12" cy="12" r="3.5" /><path d="M12 3v2M12 19v2M3 12h2M19 12h2M5.6 5.6l1.4 1.4M17 17l1.4 1.4M5.6 18.4 7 17M17 7l1.4-1.4" /></>);
 export const SunriseIcon = ({ size = 18 }: P) =>
   svg(size, <><path d="M5 17a7 7 0 0 1 14 0" /><path d="M3 20h18M12 4v3M4.9 9.9l1.4 1.4M19.1 9.9l-1.4 1.4" /></>);
+export const ChaiIcon = ({ size = 18 }: P) =>
+  svg(size, <><path d="M4 9h13v5a5 5 0 0 1-5 5H9a5 5 0 0 1-5-5V9z" /><path d="M17 10h1.5a2.5 2.5 0 0 1 0 5H17M8 3c0 1.5 1.5 1.5 1.5 3M12 3c0 1.5 1.5 1.5 1.5 3" /></>);
 export const CopyIcon = ({ size = 18 }: P) =>
   svg(size, <><rect x="8" y="8" width="12" height="12" rx="2" /><path d="M16 8V6a2 2 0 0 0-2-2H6a2 2 0 0 0-2 2v8a2 2 0 0 0 2 2h2" /></>);
 export const WhatsAppIcon = ({ size = 18 }: P) => (
