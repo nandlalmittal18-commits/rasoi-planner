@@ -31,6 +31,10 @@ export const ALL_DISHES: Dish[] = [...DISHES, STEAMED_RICE];
 
 const byId = new Map(ALL_DISHES.map((d) => [d.id, d]));
 
+export function hasDish(id: string): boolean {
+  return byId.has(id);
+}
+
 export function getDish(id: string): Dish {
   const dish = byId.get(id);
   if (!dish) throw new Error(`Unknown dish id: ${id}`);

@@ -1,8 +1,9 @@
 import { useCallback, useEffect, useRef, useState, type ReactNode } from 'react';
 import type { User } from '@supabase/supabase-js';
-import { generateWeek, randomSeed, regenerateDay, swapItem, toISODate, type FamilyProfile, type WeekPlan } from './engine';
+import { generateWeek, isPlanUsable, randomSeed, regenerateDay, swapItem, toISODate, type FamilyProfile, type WeekPlan } from './engine';
 import { AccountCard, type Account } from './components/AccountCard';
 import { DishLibrary } from './components/DishLibrary';
+import { DishSheet } from './components/DishSheet';
 import { FamilyForm } from './components/FamilyForm';
 import { GroceryView } from './components/GroceryView';
 import { BookIcon, CalendarIcon, CartIcon, FamilyIcon, Logo } from './components/icons';
@@ -29,9 +30,11 @@ function today(): Date {
   return new Date(d.getFullYear(), d.getMonth(), d.getDate());
 }
 
+/** A saved menu needs replacing when its week is over or it mentions a dish that no longer exists. */
 function isExpired(plan: WeekPlan | null): boolean {
-  const lastDay = plan?.days[plan.days.length - 1]?.date;
-  return !plan || !lastDay || lastDay < toISODate(today());
+  if (!isPlanUsable(plan)) return true;
+  const lastDay = plan.days[plan.days.length - 1]?.date;
+  return !lastDay || lastDay < toISODate(today());
 }
 
 /** First load: the family and menu kept on this phone, or the sample family. An expired menu is replaced. */
@@ -63,6 +66,8 @@ export default function App() {
   const [account, setAccount] = useState<Account | null>(null);
   const [authReady, setAuthReady] = useState(!online);
   const [sync, setSync] = useState<SyncState>(storage.getSync());
+  const [openDish, setOpenDish] = useState<string | null>(null);
+  const closeDish = useCallback(() => setOpenDish(null), []);
   const toastTimer = useRef<number | undefined>(undefined);
   const signedInAs = useRef<string | null>(null);
 
@@ -238,12 +243,13 @@ export default function App() {
               notify('Fresh menu for the week');
             }}
             onSetUp={() => go('family')}
+            onOpenDish={setOpenDish}
             onSignIn={online && authReady && !account ? onSignIn : undefined}
             notify={notify}
           />
         )}
         {tab === 'grocery' && <GroceryView key={plan.createdAt} plan={plan} notify={notify} />}
-        {tab === 'dishes' && <DishLibrary profile={profile} onToggleDislike={onToggleDislike} />}
+        {tab === 'dishes' && <DishLibrary profile={profile} onToggleDislike={onToggleDislike} onOpenDish={setOpenDish} />}
         {tab === 'family' && (
           <FamilyForm
             key={isSample ? 'new' : `edit-${account?.id ?? 'phone'}`}
@@ -264,6 +270,8 @@ export default function App() {
           </button>
         ))}
       </nav>
+
+      <DishSheet dishId={openDish} onClose={closeDish} notify={notify} />
 
       <div className={`toast${toast ? ' is-on' : ''}`} role="status" aria-live="polite">
         {toast}

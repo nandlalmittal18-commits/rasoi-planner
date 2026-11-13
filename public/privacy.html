@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="theme-color" content="#1d5a43" />
+    <meta name="theme-color" content="#e8590c" />
     <link rel="icon" type="image/svg+xml" href="./favicon.svg" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -12,26 +12,16 @@
     <style>
       /* Same palette as the app. Layout: one readable column. */
       :root {
-        --bg: #f1f4ef;
+        --bg: #fff8f2;
         --surface: #ffffff;
-        --ink: #17231c;
-        --muted: #5b6a61;
-        --line: #dbe3da;
-        --primary: #1d5a43;
-        --primary-soft: #e3efe8;
+        --ink: #26180f;
+        --muted: #7b6658;
+        --line: #f3e3d3;
+        --primary: #e8590c;
+        --primary-soft: #ffe7d4;
         --font-display: 'Bricolage Grotesque', 'Segoe UI', system-ui, sans-serif;
         --font-body: 'Mukta', 'Segoe UI', system-ui, sans-serif;
         color-scheme: light;
-      }
-      @media (prefers-color-scheme: dark) {
-        :root:not([data-theme='light']) {
-          --bg: #0e1411; --surface: #17201b; --ink: #e6eee9; --muted: #9fb0a6; --line: #2b3832; --primary: #6cc59b; --primary-soft: #1f3a2e;
-          color-scheme: dark;
-        }
-      }
-      :root[data-theme='dark'] {
-        --bg: #0e1411; --surface: #17201b; --ink: #e6eee9; --muted: #9fb0a6; --line: #2b3832; --primary: #6cc59b; --primary-soft: #1f3a2e;
-        color-scheme: dark;
       }
       * { box-sizing: border-box; }
       body { margin: 0; background: var(--bg); color: var(--ink); font-family: var(--font-body); font-size: 17px; line-height: 1.6; }

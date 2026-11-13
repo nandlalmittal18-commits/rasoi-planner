@@ -1082,6 +1082,127 @@
   "pairsWith": []
  },
  {
+  "id": "vermicelli-upma",
+  "name": "Vermicelli Upma",
+  "hindi": "सेवई उपमा",
+  "slots": [
+   "Breakfast"
+  ],
+  "category": "Breakfast",
+  "diet": "Veg",
+  "region": "South",
+  "cookTime": 20,
+  "difficulty": "Easy",
+  "ingredients": [
+   "Roasted vermicelli",
+   "onion",
+   "peas",
+   "curry leaves"
+  ],
+  "jain": true,
+  "noOnionGarlic": true,
+  "vrat": false,
+  "tiffin": true,
+  "kidFavourite": true,
+  "season": "All",
+  "heaviness": "Light",
+  "prepAhead": null,
+  "pairsWith": [
+   "Coconut chutney"
+  ]
+ },
+ {
+  "id": "meethi-sevaiyan",
+  "name": "Meethi Sevaiyan",
+  "hindi": "मीठी सेवइयां",
+  "slots": [
+   "Breakfast",
+   "Dessert"
+  ],
+  "category": "Breakfast",
+  "diet": "Veg",
+  "region": "North",
+  "cookTime": 20,
+  "difficulty": "Easy",
+  "ingredients": [
+   "Roasted vermicelli",
+   "ghee",
+   "sugar",
+   "dry fruits"
+  ],
+  "jain": true,
+  "noOnionGarlic": true,
+  "vrat": false,
+  "tiffin": true,
+  "kidFavourite": true,
+  "season": "All",
+  "heaviness": "Medium",
+  "prepAhead": null,
+  "pairsWith": [
+   "Tea"
+  ]
+ },
+ {
+  "id": "lemon-shavige",
+  "name": "Lemon Shavige",
+  "hindi": "नींबू वाली सेवई",
+  "slots": [
+   "Breakfast"
+  ],
+  "category": "Breakfast",
+  "diet": "Veg",
+  "region": "Karnataka",
+  "cookTime": 20,
+  "difficulty": "Easy",
+  "ingredients": [
+   "Rice vermicelli",
+   "lemon",
+   "peanuts",
+   "curry leaves"
+  ],
+  "jain": true,
+  "noOnionGarlic": true,
+  "vrat": false,
+  "tiffin": true,
+  "kidFavourite": true,
+  "season": "All",
+  "heaviness": "Light",
+  "prepAhead": null,
+  "pairsWith": [
+   "Coconut chutney"
+  ]
+ },
+ {
+  "id": "idiyappam-with-veg-stew",
+  "name": "Idiyappam with Veg Stew",
+  "hindi": "इडियप्पम और वेज स्टू",
+  "slots": [
+   "Breakfast",
+   "Dinner"
+  ],
+  "category": "Breakfast",
+  "diet": "Veg",
+  "region": "Kerala",
+  "cookTime": 35,
+  "difficulty": "Medium",
+  "ingredients": [
+   "Rice flour",
+   "coconut milk",
+   "mixed vegetables"
+  ],
+  "jain": false,
+  "noOnionGarlic": true,
+  "vrat": false,
+  "tiffin": false,
+  "kidFavourite": true,
+  "season": "All",
+  "heaviness": "Light",
+  "prepAhead": null,
+  "pairsWith": [
+   "Egg curry"
+  ]
+ },
+ {
   "id": "dal-tadka",
   "name": "Dal Tadka",
   "hindi": "दाल तड़का",
@@ -5317,7 +5438,7 @@
   ]
  },
  {
-  "id": "grilled-paneer-with-saut-ed-vegetables",
+  "id": "grilled-paneer-with-sauteed-vegetables",
   "name": "Grilled Paneer with Sautéed Vegetables",
   "hindi": "ग्रिल्ड पनीर और सब्ज़ियाँ",
   "slots": [
@@ -5347,7 +5468,7 @@
   ]
  },
  {
-  "id": "grilled-chicken-with-saut-ed-vegetables",
+  "id": "grilled-chicken-with-sauteed-vegetables",
   "name": "Grilled Chicken with Sautéed Vegetables",
   "hindi": "ग्रिल्ड चिकन और सब्ज़ियाँ",
   "slots": [

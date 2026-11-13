@@ -10,7 +10,8 @@ A balanced weekly menu for Indian homes: breakfast, lunch and dinner planned aro
 | --- | --- |
 | **Menu** | 7-day menu, one day at a time. Swap any dish with one tap, shuffle a day or the whole week. "Plan ahead" shows what to soak, ferment or marinate the night before. Share the day on WhatsApp in English (family) or Hindi (cook). |
 | **Shopping** | Main ingredients for the week, grouped like a shop list. Tick what you have; send the rest on WhatsApp. |
-| **Dishes** | All 200 dishes (153 Indian, 47 world) with search and filters (cuisine, meal, veg, Jain, vrat, tiffin, kids). Mark "Never suggest". |
+| **Dishes** | All 204 dishes (157 Indian, 47 world) with a picture, search and filters (cuisine, meal, veg, Jain, vrat, tiffin, kids). Mark "Never suggest". |
+| **Dish details** | Tap any dish: picture, cooking time, difficulty, heaviness, season, tags (Jain, vrat, tiffin, kids), prep-ahead, main ingredients, what it goes with, and a short recipe in English or Hindi. "Send recipe to cook" shares the Hindi recipe on WhatsApp. |
 | **Account** | "Continue with Google" saves the family and menu online (Supabase), so the same menu shows on every phone. Without signing in, everything stays on the phone. |
 | **Family** | Diet and non-veg days, Jain, no onion-garlic, weekly vrat, Indian cuisines, world-food dinners per week and which world cuisines, weekday cooking time, kids, tiffin, cook's name. |
 
@@ -21,7 +22,7 @@ You need [Node.js](https://nodejs.org) 20 or newer.
 ```bash
 npm install
 npm run dev        # opens the app at http://localhost:5173
-npm test           # runs the menu-engine checks (15 tests)
+npm test           # runs the menu-engine checks (17 tests)
 npm run build      # makes the production files in dist/
 ```
 
@@ -46,9 +47,11 @@ src/
     prep.ts          Night-before / morning reminders (+ Hindi)
     grocery.ts       Shopping list
     share.ts         WhatsApp messages (English + Hindi)
+    recipes.ts       Recipe lookup and WhatsApp recipe message
     menu.test.ts     Checks that every rule is respected
   data/dishes.json   The dish database (generated, do not edit by hand)
-  components/        The four screens
+  data/recipes.json  Recipes in English and Hindi (generated from scripts/recipes/*.json)
+  components/        The screens, the dish detail sheet and the dish pictures (DishArt.tsx)
   lib/storage.ts     Where data is saved: this phone, plus Supabase when signed in
   lib/supabase.ts    Supabase connection and Google sign-in
 supabase/schema.sql  Database tables and security rules (run once in Supabase)
@@ -63,6 +66,8 @@ scripts/
 1. Edit the dish in your Dish Database sheet, then copy the rows into `scripts/dishes.psv` (same columns, with the Hindi name last). Or edit `dishes.psv` directly.
 2. Run `python3 scripts/build_dishes.py`, then `npm test`.
 3. If the new dish has a new "Prep Ahead" text, add its Hindi to `PREP_HI` in `src/engine/prep.ts`.
+4. Add its recipe (English and Hindi, same number of steps) to a file in `scripts/recipes/`, then run `python3 scripts/build_recipes.py`. It refuses to build if any dish is missing a recipe.
+5. Its picture is drawn automatically from its name and category (`src/components/DishArt.tsx`).
 
 ## How the menu engine decides
 

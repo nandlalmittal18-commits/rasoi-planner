@@ -1,6 +1,8 @@
 import { describe, expect, it } from 'vitest';
 import {
   DISHES,
+  getRecipe,
+  recipeMessage,
   cuisineOf,
   isWorldDish,
   cookMessage,
@@ -41,10 +43,28 @@ function everyItem(plan: WeekPlan) {
 }
 
 describe('dish data', () => {
-  it('has 200 dishes with unique ids and Hindi names', () => {
-    expect(DISHES).toHaveLength(200);
-    expect(new Set(DISHES.map((d) => d.id)).size).toBe(200);
+  it('has 204 dishes with unique, plain ids and Hindi names', () => {
+    expect(DISHES).toHaveLength(204);
+    expect(new Set(DISHES.map((d) => d.id)).size).toBe(204);
+    expect(DISHES.every((d) => /^[a-z0-9-]+$/.test(d.id))).toBe(true);
     expect(DISHES.every((d) => d.hindi.length > 0)).toBe(true);
+  });
+});
+
+describe('recipes', () => {
+  it('every dish, and plain rice, has a recipe in English and Hindi with matching steps', () => {
+    for (const d of [...DISHES, getDish('steamed-rice')]) {
+      const r = getRecipe(d.id);
+      expect(r, d.name).not.toBeNull();
+      expect(r!.en.length, d.name).toBeGreaterThanOrEqual(3);
+      expect(r!.hi.length, d.name).toBe(r!.en.length);
+    }
+  });
+
+  it('builds a Hindi recipe message for the cook', () => {
+    const msg = recipeMessage(getDish('rajma'), 'hi');
+    expect(msg).toContain('राजमा बनाने का तरीका');
+    expect(msg).toContain('1. ');
   });
 });
 

@@ -13,7 +13,7 @@
 //     family's chosen number of "world-food dinners", plus the odd
 //     continental breakfast, and never on vrat days.
 
-import { ALL_DISHES, cuisineOf, getDish, isRiceStaple, isStaple, isWorldCuisine, isWorldDish } from './dishes';
+import { ALL_DISHES, cuisineOf, getDish, hasDish, isRiceStaple, isStaple, isWorldCuisine, isWorldDish } from './dishes';
 import type { DayPlan, Dish, FamilyProfile, Meal, MealItem, MealType, RoleKey, Season, WeekPlan } from './types';
 import {
   addDays,
@@ -482,6 +482,11 @@ export function swapItem(
     next.days[dayIndex].meals[mealIndex].items = others;
   }
   return next;
+}
+
+/** False when a saved menu mentions a dish that no longer exists (renamed or removed). */
+export function isPlanUsable(plan: WeekPlan | null | undefined): plan is WeekPlan {
+  return !!plan?.days?.length && plan.days.every((d) => d.meals.every((m) => m.items.every((i) => hasDish(i.dishId))));
 }
 
 /** Every dish in a meal, resolved. */

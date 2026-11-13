@@ -1,5 +1,6 @@
 import { useMemo, useState } from 'react';
 import { DISHES, WORLD_CUISINES, cuisineOf, isWorldDish, type Dish, type FamilyProfile } from '../engine';
+import { DishArt } from './DishArt';
 import { FoodMark } from './icons';
 
 const MEALS = ['All', 'Breakfast', 'Lunch', 'Dinner', 'Snack', 'Dessert'] as const;
@@ -11,7 +12,15 @@ const FLAGS: { key: keyof Dish; label: string }[] = [
   { key: 'kidFavourite', label: 'Kids love it' },
 ];
 
-export function DishLibrary({ profile, onToggleDislike }: { profile: FamilyProfile; onToggleDislike: (id: string) => void }) {
+export function DishLibrary({
+  profile,
+  onToggleDislike,
+  onOpenDish,
+}: {
+  profile: FamilyProfile;
+  onToggleDislike: (id: string) => void;
+  onOpenDish: (id: string) => void;
+}) {
   const [query, setQuery] = useState('');
   const [meal, setMeal] = useState<(typeof MEALS)[number]>('All');
   const [vegOnly, setVegOnly] = useState(false);
@@ -97,19 +106,21 @@ export function DishLibrary({ profile, onToggleDislike }: { profile: FamilyProfi
           const disliked = profile.dislikes.includes(d.id);
           return (
             <li key={d.id} className={`card lib-row${disliked ? ' is-disliked' : ''}`}>
-              <div className="lib-main">
-                <FoodMark diet={d.diet} />
-                <div className="dish-text">
-                  <span className="dish-name">{d.name}</span>
+              <button className="lib-main" onClick={() => onOpenDish(d.id)} aria-label={`${d.name}: see recipe and details`}>
+                <DishArt dish={d} size={72} />
+                <span className="dish-text">
+                  <span className="dish-name">
+                    <FoodMark diet={d.diet} /> {d.name}
+                  </span>
                   <span className="dish-hindi" lang="hi">
                     {d.hindi}
                   </span>
                   <span className="dish-meta">
                     {d.category} · {d.region} · {d.cookTime} min · {d.difficulty}
                   </span>
-                  <span className="dish-meta">{d.ingredients.join(', ')}</span>
-                </div>
-              </div>
+                  <span className="lib-recipe-link">See recipe →</span>
+                </span>
+              </button>
               <div className="lib-foot">
                 <div className="chips">
                   {d.jain && <span className="chip chip-sm">Jain</span>}

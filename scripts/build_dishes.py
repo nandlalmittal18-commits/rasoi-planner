@@ -1,7 +1,7 @@
 """Convert scripts/dishes.psv (exported from the Rasoi Planner dish sheet) into src/data/dishes.json.
 Run: python3 scripts/build_dishes.py
 """
-import json, re, sys
+import json, re, sys, unicodedata
 from pathlib import Path
 
 root = Path(__file__).resolve().parent.parent
@@ -12,7 +12,8 @@ for i, r in enumerate(rows, start=2):
     if len(r) != len(header):
         errors.append(f"line {i}: {len(r)} fields"); continue
     d = dict(zip(header, r))
-    slug = re.sub(r"[^a-z0-9]+", "-", d["Dish"].lower()).strip("-")
+    plain = unicodedata.normalize("NFKD", d["Dish"]).encode("ascii", "ignore").decode()
+    slug = re.sub(r"[^a-z0-9]+", "-", plain.lower()).strip("-")
     if slug in seen: errors.append(f"duplicate {slug}")
     seen.add(slug)
     yn = lambda k: d[k] == "Y"
