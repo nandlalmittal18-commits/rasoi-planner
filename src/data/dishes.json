@@ -1,0 +1,4581 @@
+[
+ {
+  "id": "poha",
+  "name": "Poha",
+  "hindi": "पोहा",
+  "slots": [
+   "Breakfast"
+  ],
+  "category": "Breakfast",
+  "diet": "Veg",
+  "region": "Maharashtra",
+  "cookTime": 20,
+  "difficulty": "Easy",
+  "ingredients": [
+   "Flattened rice",
+   "onion",
+   "peanuts",
+   "curry leaves"
+  ],
+  "jain": true,
+  "noOnionGarlic": true,
+  "vrat": false,
+  "tiffin": true,
+  "kidFavourite": true,
+  "season": "All",
+  "heaviness": "Light",
+  "prepAhead": null,
+  "pairsWith": [
+   "Tea",
+   "sev"
+  ]
+ },
+ {
+  "id": "upma",
+  "name": "Upma",
+  "hindi": "उपमा",
+  "slots": [
+   "Breakfast"
+  ],
+  "category": "Breakfast",
+  "diet": "Veg",
+  "region": "South",
+  "cookTime": 20,
+  "difficulty": "Easy",
+  "ingredients": [
+   "Semolina",
+   "mixed veg",
+   "curry leaves"
+  ],
+  "jain": true,
+  "noOnionGarlic": true,
+  "vrat": false,
+  "tiffin": true,
+  "kidFavourite": true,
+  "season": "All",
+  "heaviness": "Light",
+  "prepAhead": null,
+  "pairsWith": [
+   "Coconut chutney"
+  ]
+ },
+ {
+  "id": "aloo-paratha",
+  "name": "Aloo Paratha",
+  "hindi": "आलू पराठा",
+  "slots": [
+   "Breakfast",
+   "Lunch"
+  ],
+  "category": "Breakfast",
+  "diet": "Veg",
+  "region": "Punjab",
+  "cookTime": 40,
+  "difficulty": "Medium",
+  "ingredients": [
+   "Wheat flour",
+   "potato",
+   "green chilli"
+  ],
+  "jain": false,
+  "noOnionGarlic": true,
+  "vrat": false,
+  "tiffin": true,
+  "kidFavourite": true,
+  "season": "Winter",
+  "heaviness": "Heavy",
+  "prepAhead": "Boil potatoes",
+  "pairsWith": [
+   "Curd",
+   "pickle",
+   "butter"
+  ]
+ },
+ {
+  "id": "gobi-paratha",
+  "name": "Gobi Paratha",
+  "hindi": "गोभी पराठा",
+  "slots": [
+   "Breakfast",
+   "Lunch"
+  ],
+  "category": "Breakfast",
+  "diet": "Veg",
+  "region": "Punjab",
+  "cookTime": 40,
+  "difficulty": "Medium",
+  "ingredients": [
+   "Wheat flour",
+   "cauliflower"
+  ],
+  "jain": false,
+  "noOnionGarlic": true,
+  "vrat": false,
+  "tiffin": true,
+  "kidFavourite": true,
+  "season": "Winter",
+  "heaviness": "Heavy",
+  "prepAhead": null,
+  "pairsWith": [
+   "Curd",
+   "pickle"
+  ]
+ },
+ {
+  "id": "paneer-paratha",
+  "name": "Paneer Paratha",
+  "hindi": "पनीर पराठा",
+  "slots": [
+   "Breakfast",
+   "Lunch"
+  ],
+  "category": "Breakfast",
+  "diet": "Veg",
+  "region": "Punjab",
+  "cookTime": 35,
+  "difficulty": "Medium",
+  "ingredients": [
+   "Wheat flour",
+   "paneer"
+  ],
+  "jain": true,
+  "noOnionGarlic": true,
+  "vrat": false,
+  "tiffin": true,
+  "kidFavourite": true,
+  "season": "All",
+  "heaviness": "Medium",
+  "prepAhead": null,
+  "pairsWith": [
+   "Curd",
+   "pickle"
+  ]
+ },
+ {
+  "id": "methi-thepla",
+  "name": "Methi Thepla",
+  "hindi": "मेथी थेपला",
+  "slots": [
+   "Breakfast",
+   "Lunch"
+  ],
+  "category": "Breakfast",
+  "diet": "Veg",
+  "region": "Gujarat",
+  "cookTime": 30,
+  "difficulty": "Easy",
+  "ingredients": [
+   "Wheat flour",
+   "fenugreek leaves",
+   "curd"
+  ],
+  "jain": true,
+  "noOnionGarlic": true,
+  "vrat": false,
+  "tiffin": true,
+  "kidFavourite": false,
+  "season": "Winter",
+  "heaviness": "Medium",
+  "prepAhead": null,
+  "pairsWith": [
+   "Chhunda",
+   "curd"
+  ]
+ },
+ {
+  "id": "idli-sambar",
+  "name": "Idli Sambar",
+  "hindi": "इडली सांभर",
+  "slots": [
+   "Breakfast"
+  ],
+  "category": "Breakfast",
+  "diet": "Veg",
+  "region": "South",
+  "cookTime": 30,
+  "difficulty": "Medium",
+  "ingredients": [
+   "Rice-urad batter",
+   "toor dal",
+   "vegetables"
+  ],
+  "jain": true,
+  "noOnionGarlic": true,
+  "vrat": false,
+  "tiffin": true,
+  "kidFavourite": true,
+  "season": "All",
+  "heaviness": "Light",
+  "prepAhead": "Soak & grind batter, ferment overnight",
+  "pairsWith": [
+   "Coconut chutney"
+  ]
+ },
+ {
+  "id": "masala-dosa",
+  "name": "Masala Dosa",
+  "hindi": "मसाला डोसा",
+  "slots": [
+   "Breakfast",
+   "Dinner"
+  ],
+  "category": "Breakfast",
+  "diet": "Veg",
+  "region": "Karnataka",
+  "cookTime": 40,
+  "difficulty": "Medium",
+  "ingredients": [
+   "Dosa batter",
+   "potato",
+   "onion"
+  ],
+  "jain": false,
+  "noOnionGarlic": true,
+  "vrat": false,
+  "tiffin": false,
+  "kidFavourite": true,
+  "season": "All",
+  "heaviness": "Medium",
+  "prepAhead": "Ferment batter overnight",
+  "pairsWith": [
+   "Sambar",
+   "chutney"
+  ]
+ },
+ {
+  "id": "uttapam",
+  "name": "Uttapam",
+  "hindi": "उत्तपम",
+  "slots": [
+   "Breakfast",
+   "Dinner"
+  ],
+  "category": "Breakfast",
+  "diet": "Veg",
+  "region": "South",
+  "cookTime": 25,
+  "difficulty": "Easy",
+  "ingredients": [
+   "Dosa batter",
+   "onion",
+   "tomato",
+   "capsicum"
+  ],
+  "jain": true,
+  "noOnionGarlic": true,
+  "vrat": false,
+  "tiffin": true,
+  "kidFavourite": true,
+  "season": "All",
+  "heaviness": "Medium",
+  "prepAhead": "Ferment batter overnight",
+  "pairsWith": [
+   "Coconut chutney"
+  ]
+ },
+ {
+  "id": "rava-dosa",
+  "name": "Rava Dosa",
+  "hindi": "रवा डोसा",
+  "slots": [
+   "Breakfast",
+   "Dinner"
+  ],
+  "category": "Breakfast",
+  "diet": "Veg",
+  "region": "South",
+  "cookTime": 25,
+  "difficulty": "Medium",
+  "ingredients": [
+   "Semolina",
+   "rice flour",
+   "curd"
+  ],
+  "jain": true,
+  "noOnionGarlic": true,
+  "vrat": false,
+  "tiffin": false,
+  "kidFavourite": true,
+  "season": "All",
+  "heaviness": "Medium",
+  "prepAhead": "Rest batter 20 min",
+  "pairsWith": [
+   "Sambar",
+   "chutney"
+  ]
+ },
+ {
+  "id": "medu-vada",
+  "name": "Medu Vada",
+  "hindi": "मेदु वड़ा",
+  "slots": [
+   "Breakfast"
+  ],
+  "category": "Breakfast",
+  "diet": "Veg",
+  "region": "South",
+  "cookTime": 40,
+  "difficulty": "Medium",
+  "ingredients": [
+   "Urad dal",
+   "curry leaves",
+   "pepper"
+  ],
+  "jain": true,
+  "noOnionGarlic": true,
+  "vrat": false,
+  "tiffin": false,
+  "kidFavourite": true,
+  "season": "All",
+  "heaviness": "Medium",
+  "prepAhead": "Soak urad dal 4 hrs",
+  "pairsWith": [
+   "Sambar",
+   "chutney"
+  ]
+ },
+ {
+  "id": "ven-pongal",
+  "name": "Ven Pongal",
+  "hindi": "वेन पोंगल",
+  "slots": [
+   "Breakfast"
+  ],
+  "category": "Breakfast",
+  "diet": "Veg",
+  "region": "Tamil Nadu",
+  "cookTime": 30,
+  "difficulty": "Easy",
+  "ingredients": [
+   "Rice",
+   "moong dal",
+   "pepper",
+   "ghee"
+  ],
+  "jain": true,
+  "noOnionGarlic": true,
+  "vrat": false,
+  "tiffin": false,
+  "kidFavourite": true,
+  "season": "Winter",
+  "heaviness": "Medium",
+  "prepAhead": null,
+  "pairsWith": [
+   "Sambar",
+   "coconut chutney"
+  ]
+ },
+ {
+  "id": "pesarattu",
+  "name": "Pesarattu",
+  "hindi": "पेसरट्टू",
+  "slots": [
+   "Breakfast"
+  ],
+  "category": "Breakfast",
+  "diet": "Veg",
+  "region": "Andhra Pradesh",
+  "cookTime": 25,
+  "difficulty": "Easy",
+  "ingredients": [
+   "Green moong",
+   "ginger",
+   "green chilli"
+  ],
+  "jain": true,
+  "noOnionGarlic": true,
+  "vrat": false,
+  "tiffin": true,
+  "kidFavourite": false,
+  "season": "All",
+  "heaviness": "Light",
+  "prepAhead": "Soak moong 6 hrs",
+  "pairsWith": [
+   "Ginger chutney",
+   "upma"
+  ]
+ },
+ {
+  "id": "neer-dosa",
+  "name": "Neer Dosa",
+  "hindi": "नीर डोसा",
+  "slots": [
+   "Breakfast",
+   "Dinner"
+  ],
+  "category": "Breakfast",
+  "diet": "Veg",
+  "region": "Karnataka",
+  "cookTime": 25,
+  "difficulty": "Medium",
+  "ingredients": [
+   "Rice",
+   "coconut"
+  ],
+  "jain": true,
+  "noOnionGarlic": true,
+  "vrat": false,
+  "tiffin": false,
+  "kidFavourite": true,
+  "season": "All",
+  "heaviness": "Light",
+  "prepAhead": "Soak rice 4 hrs",
+  "pairsWith": [
+   "Coconut chutney",
+   "chicken curry"
+  ]
+ },
+ {
+  "id": "akki-roti",
+  "name": "Akki Roti",
+  "hindi": "अक्की रोटी",
+  "slots": [
+   "Breakfast"
+  ],
+  "category": "Breakfast",
+  "diet": "Veg",
+  "region": "Karnataka",
+  "cookTime": 30,
+  "difficulty": "Medium",
+  "ingredients": [
+   "Rice flour",
+   "onion",
+   "dill",
+   "coconut"
+  ],
+  "jain": true,
+  "noOnionGarlic": true,
+  "vrat": false,
+  "tiffin": true,
+  "kidFavourite": false,
+  "season": "All",
+  "heaviness": "Medium",
+  "prepAhead": null,
+  "pairsWith": [
+   "Coconut chutney"
+  ]
+ },
+ {
+  "id": "appam-with-veg-stew",
+  "name": "Appam with Veg Stew",
+  "hindi": "अप्पम और वेज स्टू",
+  "slots": [
+   "Breakfast",
+   "Dinner"
+  ],
+  "category": "Breakfast",
+  "diet": "Veg",
+  "region": "Kerala",
+  "cookTime": 40,
+  "difficulty": "Medium",
+  "ingredients": [
+   "Rice",
+   "coconut",
+   "potato",
+   "vegetables"
+  ],
+  "jain": false,
+  "noOnionGarlic": true,
+  "vrat": false,
+  "tiffin": false,
+  "kidFavourite": true,
+  "season": "All",
+  "heaviness": "Medium",
+  "prepAhead": "Ferment batter overnight",
+  "pairsWith": []
+ },
+ {
+  "id": "puttu-kadala-curry",
+  "name": "Puttu Kadala Curry",
+  "hindi": "पुट्टू कडला करी",
+  "slots": [
+   "Breakfast"
+  ],
+  "category": "Breakfast",
+  "diet": "Veg",
+  "region": "Kerala",
+  "cookTime": 40,
+  "difficulty": "Medium",
+  "ingredients": [
+   "Rice flour",
+   "coconut",
+   "black chana"
+  ],
+  "jain": true,
+  "noOnionGarlic": true,
+  "vrat": false,
+  "tiffin": false,
+  "kidFavourite": false,
+  "season": "All",
+  "heaviness": "Medium",
+  "prepAhead": "Soak kala chana overnight",
+  "pairsWith": [
+   "Banana",
+   "papad"
+  ]
+ },
+ {
+  "id": "besan-chilla",
+  "name": "Besan Chilla",
+  "hindi": "बेसन चीला",
+  "slots": [
+   "Breakfast",
+   "Dinner"
+  ],
+  "category": "Breakfast",
+  "diet": "Veg",
+  "region": "North",
+  "cookTime": 20,
+  "difficulty": "Easy",
+  "ingredients": [
+   "Gram flour",
+   "onion",
+   "tomato",
+   "coriander"
+  ],
+  "jain": true,
+  "noOnionGarlic": true,
+  "vrat": false,
+  "tiffin": true,
+  "kidFavourite": true,
+  "season": "All",
+  "heaviness": "Light",
+  "prepAhead": null,
+  "pairsWith": [
+   "Green chutney"
+  ]
+ },
+ {
+  "id": "moong-dal-chilla",
+  "name": "Moong Dal Chilla",
+  "hindi": "मूंग दाल चीला",
+  "slots": [
+   "Breakfast"
+  ],
+  "category": "Breakfast",
+  "diet": "Veg",
+  "region": "North",
+  "cookTime": 25,
+  "difficulty": "Easy",
+  "ingredients": [
+   "Yellow moong dal",
+   "ginger",
+   "coriander"
+  ],
+  "jain": true,
+  "noOnionGarlic": true,
+  "vrat": false,
+  "tiffin": true,
+  "kidFavourite": true,
+  "season": "All",
+  "heaviness": "Light",
+  "prepAhead": "Soak dal 4 hrs",
+  "pairsWith": [
+   "Green chutney",
+   "paneer"
+  ]
+ },
+ {
+  "id": "vegetable-dalia",
+  "name": "Vegetable Dalia",
+  "hindi": "सब्ज़ी दलिया",
+  "slots": [
+   "Breakfast",
+   "Dinner"
+  ],
+  "category": "Breakfast",
+  "diet": "Veg",
+  "region": "North",
+  "cookTime": 25,
+  "difficulty": "Easy",
+  "ingredients": [
+   "Broken wheat",
+   "mixed vegetables"
+  ],
+  "jain": true,
+  "noOnionGarlic": true,
+  "vrat": false,
+  "tiffin": true,
+  "kidFavourite": false,
+  "season": "All",
+  "heaviness": "Light",
+  "prepAhead": null,
+  "pairsWith": [
+   "Curd"
+  ]
+ },
+ {
+  "id": "masala-oats",
+  "name": "Masala Oats",
+  "hindi": "मसाला ओट्स",
+  "slots": [
+   "Breakfast"
+  ],
+  "category": "Breakfast",
+  "diet": "Veg",
+  "region": "Modern",
+  "cookTime": 15,
+  "difficulty": "Easy",
+  "ingredients": [
+   "Oats",
+   "onion",
+   "tomato",
+   "peas"
+  ],
+  "jain": true,
+  "noOnionGarlic": true,
+  "vrat": false,
+  "tiffin": true,
+  "kidFavourite": false,
+  "season": "All",
+  "heaviness": "Light",
+  "prepAhead": null,
+  "pairsWith": []
+ },
+ {
+  "id": "puri-bhaji",
+  "name": "Puri Bhaji",
+  "hindi": "पूरी भाजी",
+  "slots": [
+   "Breakfast",
+   "Lunch"
+  ],
+  "category": "Breakfast",
+  "diet": "Veg",
+  "region": "North",
+  "cookTime": 40,
+  "difficulty": "Medium",
+  "ingredients": [
+   "Wheat flour",
+   "potato",
+   "tomato"
+  ],
+  "jain": false,
+  "noOnionGarlic": true,
+  "vrat": false,
+  "tiffin": true,
+  "kidFavourite": true,
+  "season": "All",
+  "heaviness": "Heavy",
+  "prepAhead": "Boil potatoes",
+  "pairsWith": [
+   "Pickle",
+   "halwa"
+  ]
+ },
+ {
+  "id": "chole-bhature",
+  "name": "Chole Bhature",
+  "hindi": "छोले भटूरे",
+  "slots": [
+   "Breakfast",
+   "Lunch"
+  ],
+  "category": "Breakfast",
+  "diet": "Veg",
+  "region": "Punjab",
+  "cookTime": 60,
+  "difficulty": "Hard",
+  "ingredients": [
+   "Chickpeas",
+   "maida",
+   "curd"
+  ],
+  "jain": false,
+  "noOnionGarlic": true,
+  "vrat": false,
+  "tiffin": false,
+  "kidFavourite": true,
+  "season": "All",
+  "heaviness": "Heavy",
+  "prepAhead": "Soak chickpeas overnight; rest dough 2 hrs",
+  "pairsWith": [
+   "Onion salad",
+   "lassi"
+  ]
+ },
+ {
+  "id": "misal-pav",
+  "name": "Misal Pav",
+  "hindi": "मिसल पाव",
+  "slots": [
+   "Breakfast",
+   "Lunch"
+  ],
+  "category": "Breakfast",
+  "diet": "Veg",
+  "region": "Maharashtra",
+  "cookTime": 45,
+  "difficulty": "Medium",
+  "ingredients": [
+   "Sprouted moth beans",
+   "farsan",
+   "pav"
+  ],
+  "jain": false,
+  "noOnionGarlic": false,
+  "vrat": false,
+  "tiffin": false,
+  "kidFavourite": false,
+  "season": "All",
+  "heaviness": "Heavy",
+  "prepAhead": "Sprout moth beans 1-2 days",
+  "pairsWith": [
+   "Onion",
+   "lemon"
+  ]
+ },
+ {
+  "id": "luchi-with-cholar-dal",
+  "name": "Luchi with Cholar Dal",
+  "hindi": "लूची और छोलार दाल",
+  "slots": [
+   "Breakfast",
+   "Lunch"
+  ],
+  "category": "Breakfast",
+  "diet": "Veg",
+  "region": "West Bengal",
+  "cookTime": 45,
+  "difficulty": "Medium",
+  "ingredients": [
+   "Maida",
+   "chana dal",
+   "coconut"
+  ],
+  "jain": true,
+  "noOnionGarlic": true,
+  "vrat": false,
+  "tiffin": false,
+  "kidFavourite": true,
+  "season": "Winter",
+  "heaviness": "Heavy",
+  "prepAhead": "Soak chana dal 2 hrs",
+  "pairsWith": []
+ },
+ {
+  "id": "thalipeeth",
+  "name": "Thalipeeth",
+  "hindi": "थालीपीठ",
+  "slots": [
+   "Breakfast"
+  ],
+  "category": "Breakfast",
+  "diet": "Veg",
+  "region": "Maharashtra",
+  "cookTime": 30,
+  "difficulty": "Medium",
+  "ingredients": [
+   "Multigrain flour",
+   "onion",
+   "coriander"
+  ],
+  "jain": true,
+  "noOnionGarlic": true,
+  "vrat": false,
+  "tiffin": true,
+  "kidFavourite": false,
+  "season": "All",
+  "heaviness": "Medium",
+  "prepAhead": null,
+  "pairsWith": [
+   "Curd",
+   "white butter"
+  ]
+ },
+ {
+  "id": "dal-pakwan",
+  "name": "Dal Pakwan",
+  "hindi": "दाल पकवान",
+  "slots": [
+   "Breakfast"
+  ],
+  "category": "Breakfast",
+  "diet": "Veg",
+  "region": "Sindhi",
+  "cookTime": 45,
+  "difficulty": "Medium",
+  "ingredients": [
+   "Chana dal",
+   "maida"
+  ],
+  "jain": true,
+  "noOnionGarlic": true,
+  "vrat": false,
+  "tiffin": false,
+  "kidFavourite": false,
+  "season": "All",
+  "heaviness": "Heavy",
+  "prepAhead": "Soak chana dal 2 hrs",
+  "pairsWith": [
+   "Imli chutney"
+  ]
+ },
+ {
+  "id": "khaman-dhokla",
+  "name": "Khaman Dhokla",
+  "hindi": "खमण ढोकला",
+  "slots": [
+   "Breakfast",
+   "Snack"
+  ],
+  "category": "Breakfast",
+  "diet": "Veg",
+  "region": "Gujarat",
+  "cookTime": 35,
+  "difficulty": "Medium",
+  "ingredients": [
+   "Gram flour",
+   "curd",
+   "mustard seeds"
+  ],
+  "jain": true,
+  "noOnionGarlic": true,
+  "vrat": false,
+  "tiffin": true,
+  "kidFavourite": true,
+  "season": "All",
+  "heaviness": "Light",
+  "prepAhead": null,
+  "pairsWith": [
+   "Green chutney"
+  ]
+ },
+ {
+  "id": "handvo",
+  "name": "Handvo",
+  "hindi": "हांडवो",
+  "slots": [
+   "Breakfast",
+   "Snack"
+  ],
+  "category": "Breakfast",
+  "diet": "Veg",
+  "region": "Gujarat",
+  "cookTime": 60,
+  "difficulty": "Medium",
+  "ingredients": [
+   "Rice-dal batter",
+   "bottle gourd",
+   "sesame"
+  ],
+  "jain": true,
+  "noOnionGarlic": true,
+  "vrat": false,
+  "tiffin": true,
+  "kidFavourite": false,
+  "season": "All",
+  "heaviness": "Medium",
+  "prepAhead": "Soak & ferment batter overnight",
+  "pairsWith": [
+   "Green chutney"
+  ]
+ },
+ {
+  "id": "vegetable-sandwich",
+  "name": "Vegetable Sandwich",
+  "hindi": "वेज सैंडविच",
+  "slots": [
+   "Breakfast",
+   "Snack"
+  ],
+  "category": "Breakfast",
+  "diet": "Veg",
+  "region": "Maharashtra",
+  "cookTime": 15,
+  "difficulty": "Easy",
+  "ingredients": [
+   "Bread",
+   "cucumber",
+   "tomato",
+   "potato",
+   "chutney"
+  ],
+  "jain": true,
+  "noOnionGarlic": true,
+  "vrat": false,
+  "tiffin": true,
+  "kidFavourite": true,
+  "season": "All",
+  "heaviness": "Light",
+  "prepAhead": "Boil potatoes",
+  "pairsWith": [
+   "Ketchup"
+  ]
+ },
+ {
+  "id": "bread-omelette",
+  "name": "Bread Omelette",
+  "hindi": "ब्रेड ऑमलेट",
+  "slots": [
+   "Breakfast"
+  ],
+  "category": "Breakfast",
+  "diet": "Egg",
+  "region": "Pan-India",
+  "cookTime": 15,
+  "difficulty": "Easy",
+  "ingredients": [
+   "Eggs",
+   "bread",
+   "onion",
+   "green chilli"
+  ],
+  "jain": false,
+  "noOnionGarlic": true,
+  "vrat": false,
+  "tiffin": true,
+  "kidFavourite": true,
+  "season": "All",
+  "heaviness": "Light",
+  "prepAhead": null,
+  "pairsWith": [
+   "Ketchup",
+   "tea"
+  ]
+ },
+ {
+  "id": "egg-bhurji",
+  "name": "Egg Bhurji",
+  "hindi": "अंडा भुर्जी",
+  "slots": [
+   "Breakfast",
+   "Dinner"
+  ],
+  "category": "Breakfast",
+  "diet": "Egg",
+  "region": "Maharashtra",
+  "cookTime": 15,
+  "difficulty": "Easy",
+  "ingredients": [
+   "Eggs",
+   "onion",
+   "tomato"
+  ],
+  "jain": false,
+  "noOnionGarlic": true,
+  "vrat": false,
+  "tiffin": true,
+  "kidFavourite": true,
+  "season": "All",
+  "heaviness": "Light",
+  "prepAhead": null,
+  "pairsWith": [
+   "Pav",
+   "roti"
+  ]
+ },
+ {
+  "id": "sabudana-khichdi",
+  "name": "Sabudana Khichdi",
+  "hindi": "साबूदाना खिचड़ी",
+  "slots": [
+   "Breakfast"
+  ],
+  "category": "Breakfast",
+  "diet": "Veg",
+  "region": "Maharashtra",
+  "cookTime": 25,
+  "difficulty": "Easy",
+  "ingredients": [
+   "Sago",
+   "peanuts",
+   "potato"
+  ],
+  "jain": false,
+  "noOnionGarlic": true,
+  "vrat": true,
+  "tiffin": false,
+  "kidFavourite": true,
+  "season": "All",
+  "heaviness": "Medium",
+  "prepAhead": "Soak sabudana overnight",
+  "pairsWith": [
+   "Curd"
+  ]
+ },
+ {
+  "id": "kuttu-puri-with-aloo",
+  "name": "Kuttu Puri with Aloo",
+  "hindi": "कुट्टू की पूरी और आलू",
+  "slots": [
+   "Breakfast",
+   "Lunch"
+  ],
+  "category": "Breakfast",
+  "diet": "Veg",
+  "region": "North",
+  "cookTime": 30,
+  "difficulty": "Medium",
+  "ingredients": [
+   "Buckwheat flour",
+   "potato"
+  ],
+  "jain": false,
+  "noOnionGarlic": true,
+  "vrat": true,
+  "tiffin": false,
+  "kidFavourite": false,
+  "season": "All",
+  "heaviness": "Heavy",
+  "prepAhead": "Boil potatoes",
+  "pairsWith": [
+   "Curd"
+  ]
+ },
+ {
+  "id": "rajgira-paratha",
+  "name": "Rajgira Paratha",
+  "hindi": "राजगिरा पराठा",
+  "slots": [
+   "Breakfast",
+   "Lunch"
+  ],
+  "category": "Breakfast",
+  "diet": "Veg",
+  "region": "North",
+  "cookTime": 30,
+  "difficulty": "Medium",
+  "ingredients": [
+   "Amaranth flour",
+   "potato"
+  ],
+  "jain": false,
+  "noOnionGarlic": true,
+  "vrat": true,
+  "tiffin": true,
+  "kidFavourite": false,
+  "season": "All",
+  "heaviness": "Medium",
+  "prepAhead": "Boil potatoes",
+  "pairsWith": [
+   "Curd"
+  ]
+ },
+ {
+  "id": "sprouts-chaat",
+  "name": "Sprouts Chaat",
+  "hindi": "अंकुरित मूंग चाट",
+  "slots": [
+   "Breakfast",
+   "Snack"
+  ],
+  "category": "Snack",
+  "diet": "Veg",
+  "region": "Pan-India",
+  "cookTime": 10,
+  "difficulty": "Easy",
+  "ingredients": [
+   "Sprouted moong",
+   "onion",
+   "tomato",
+   "lemon"
+  ],
+  "jain": false,
+  "noOnionGarlic": true,
+  "vrat": false,
+  "tiffin": true,
+  "kidFavourite": false,
+  "season": "All",
+  "heaviness": "Light",
+  "prepAhead": "Sprout moong 1-2 days",
+  "pairsWith": []
+ },
+ {
+  "id": "dal-tadka",
+  "name": "Dal Tadka",
+  "hindi": "दाल तड़का",
+  "slots": [
+   "Lunch",
+   "Dinner"
+  ],
+  "category": "Dal / Legume",
+  "diet": "Veg",
+  "region": "North",
+  "cookTime": 30,
+  "difficulty": "Easy",
+  "ingredients": [
+   "Toor dal",
+   "ghee",
+   "cumin",
+   "garlic"
+  ],
+  "jain": true,
+  "noOnionGarlic": true,
+  "vrat": false,
+  "tiffin": false,
+  "kidFavourite": true,
+  "season": "All",
+  "heaviness": "Light",
+  "prepAhead": null,
+  "pairsWith": [
+   "Jeera rice",
+   "roti"
+  ]
+ },
+ {
+  "id": "moong-dal",
+  "name": "Moong Dal",
+  "hindi": "मूंग दाल",
+  "slots": [
+   "Lunch",
+   "Dinner"
+  ],
+  "category": "Dal / Legume",
+  "diet": "Veg",
+  "region": "Pan-India",
+  "cookTime": 25,
+  "difficulty": "Easy",
+  "ingredients": [
+   "Yellow moong dal",
+   "turmeric",
+   "cumin"
+  ],
+  "jain": true,
+  "noOnionGarlic": true,
+  "vrat": false,
+  "tiffin": false,
+  "kidFavourite": true,
+  "season": "All",
+  "heaviness": "Light",
+  "prepAhead": null,
+  "pairsWith": [
+   "Rice",
+   "roti"
+  ]
+ },
+ {
+  "id": "masoor-dal",
+  "name": "Masoor Dal",
+  "hindi": "मसूर दाल",
+  "slots": [
+   "Lunch",
+   "Dinner"
+  ],
+  "category": "Dal / Legume",
+  "diet": "Veg",
+  "region": "West Bengal",
+  "cookTime": 25,
+  "difficulty": "Easy",
+  "ingredients": [
+   "Red lentils",
+   "tomato",
+   "cumin"
+  ],
+  "jain": true,
+  "noOnionGarlic": true,
+  "vrat": false,
+  "tiffin": false,
+  "kidFavourite": true,
+  "season": "All",
+  "heaviness": "Light",
+  "prepAhead": null,
+  "pairsWith": [
+   "Rice"
+  ]
+ },
+ {
+  "id": "dal-makhani",
+  "name": "Dal Makhani",
+  "hindi": "दाल मखनी",
+  "slots": [
+   "Lunch",
+   "Dinner"
+  ],
+  "category": "Dal / Legume",
+  "diet": "Veg",
+  "region": "Punjab",
+  "cookTime": 75,
+  "difficulty": "Medium",
+  "ingredients": [
+   "Whole urad",
+   "rajma",
+   "butter",
+   "cream"
+  ],
+  "jain": true,
+  "noOnionGarlic": true,
+  "vrat": false,
+  "tiffin": false,
+  "kidFavourite": true,
+  "season": "Winter",
+  "heaviness": "Heavy",
+  "prepAhead": "Soak overnight",
+  "pairsWith": [
+   "Naan",
+   "jeera rice"
+  ]
+ },
+ {
+  "id": "rajma",
+  "name": "Rajma",
+  "hindi": "राजमा",
+  "slots": [
+   "Lunch"
+  ],
+  "category": "Dal / Legume",
+  "diet": "Veg",
+  "region": "Punjab",
+  "cookTime": 60,
+  "difficulty": "Medium",
+  "ingredients": [
+   "Kidney beans",
+   "onion",
+   "tomato"
+  ],
+  "jain": true,
+  "noOnionGarlic": true,
+  "vrat": false,
+  "tiffin": true,
+  "kidFavourite": true,
+  "season": "All",
+  "heaviness": "Medium",
+  "prepAhead": "Soak overnight",
+  "pairsWith": [
+   "Steamed rice"
+  ]
+ },
+ {
+  "id": "chole-chana-masala",
+  "name": "Chole (Chana Masala)",
+  "hindi": "छोले",
+  "slots": [
+   "Lunch",
+   "Dinner"
+  ],
+  "category": "Dal / Legume",
+  "diet": "Veg",
+  "region": "Punjab",
+  "cookTime": 60,
+  "difficulty": "Medium",
+  "ingredients": [
+   "Chickpeas",
+   "onion",
+   "tomato",
+   "chole masala"
+  ],
+  "jain": true,
+  "noOnionGarlic": true,
+  "vrat": false,
+  "tiffin": true,
+  "kidFavourite": true,
+  "season": "All",
+  "heaviness": "Medium",
+  "prepAhead": "Soak overnight",
+  "pairsWith": [
+   "Rice",
+   "kulcha",
+   "puri"
+  ]
+ },
+ {
+  "id": "kala-chana-curry",
+  "name": "Kala Chana Curry",
+  "hindi": "काले चने",
+  "slots": [
+   "Lunch",
+   "Dinner"
+  ],
+  "category": "Dal / Legume",
+  "diet": "Veg",
+  "region": "North",
+  "cookTime": 50,
+  "difficulty": "Easy",
+  "ingredients": [
+   "Black chickpeas",
+   "onion",
+   "tomato"
+  ],
+  "jain": true,
+  "noOnionGarlic": true,
+  "vrat": false,
+  "tiffin": true,
+  "kidFavourite": false,
+  "season": "All",
+  "heaviness": "Medium",
+  "prepAhead": "Soak overnight",
+  "pairsWith": [
+   "Rice",
+   "roti"
+  ]
+ },
+ {
+  "id": "lobia-curry",
+  "name": "Lobia Curry",
+  "hindi": "लोबिया",
+  "slots": [
+   "Lunch"
+  ],
+  "category": "Dal / Legume",
+  "diet": "Veg",
+  "region": "North",
+  "cookTime": 45,
+  "difficulty": "Easy",
+  "ingredients": [
+   "Black-eyed beans",
+   "tomato"
+  ],
+  "jain": true,
+  "noOnionGarlic": true,
+  "vrat": false,
+  "tiffin": true,
+  "kidFavourite": false,
+  "season": "All",
+  "heaviness": "Medium",
+  "prepAhead": "Soak 6 hrs",
+  "pairsWith": [
+   "Rice"
+  ]
+ },
+ {
+  "id": "chana-dal-lauki",
+  "name": "Chana Dal Lauki",
+  "hindi": "चना दाल लौकी",
+  "slots": [
+   "Lunch",
+   "Dinner"
+  ],
+  "category": "Dal / Legume",
+  "diet": "Veg",
+  "region": "North",
+  "cookTime": 35,
+  "difficulty": "Easy",
+  "ingredients": [
+   "Chana dal",
+   "bottle gourd"
+  ],
+  "jain": true,
+  "noOnionGarlic": true,
+  "vrat": false,
+  "tiffin": false,
+  "kidFavourite": false,
+  "season": "Summer",
+  "heaviness": "Light",
+  "prepAhead": "Soak dal 1 hr",
+  "pairsWith": [
+   "Roti"
+  ]
+ },
+ {
+  "id": "sambar",
+  "name": "Sambar",
+  "hindi": "सांभर",
+  "slots": [
+   "Lunch",
+   "Dinner"
+  ],
+  "category": "Dal / Legume",
+  "diet": "Veg",
+  "region": "South",
+  "cookTime": 40,
+  "difficulty": "Medium",
+  "ingredients": [
+   "Toor dal",
+   "tamarind",
+   "drumstick",
+   "sambar powder"
+  ],
+  "jain": true,
+  "noOnionGarlic": true,
+  "vrat": false,
+  "tiffin": false,
+  "kidFavourite": true,
+  "season": "All",
+  "heaviness": "Medium",
+  "prepAhead": null,
+  "pairsWith": [
+   "Rice",
+   "idli",
+   "dosa"
+  ]
+ },
+ {
+  "id": "rasam",
+  "name": "Rasam",
+  "hindi": "रसम",
+  "slots": [
+   "Lunch",
+   "Dinner"
+  ],
+  "category": "Dal / Legume",
+  "diet": "Veg",
+  "region": "South",
+  "cookTime": 20,
+  "difficulty": "Easy",
+  "ingredients": [
+   "Tamarind",
+   "tomato",
+   "pepper",
+   "toor dal water"
+  ],
+  "jain": true,
+  "noOnionGarlic": true,
+  "vrat": false,
+  "tiffin": false,
+  "kidFavourite": false,
+  "season": "Monsoon",
+  "heaviness": "Light",
+  "prepAhead": null,
+  "pairsWith": [
+   "Rice",
+   "poriyal"
+  ]
+ },
+ {
+  "id": "gujarati-dal",
+  "name": "Gujarati Dal",
+  "hindi": "गुजराती दाल",
+  "slots": [
+   "Lunch"
+  ],
+  "category": "Dal / Legume",
+  "diet": "Veg",
+  "region": "Gujarat",
+  "cookTime": 30,
+  "difficulty": "Easy",
+  "ingredients": [
+   "Toor dal",
+   "jaggery",
+   "kokum",
+   "peanuts"
+  ],
+  "jain": true,
+  "noOnionGarlic": true,
+  "vrat": false,
+  "tiffin": false,
+  "kidFavourite": true,
+  "season": "All",
+  "heaviness": "Light",
+  "prepAhead": null,
+  "pairsWith": [
+   "Rice",
+   "rotli"
+  ]
+ },
+ {
+  "id": "kadhi-pakora",
+  "name": "Kadhi Pakora",
+  "hindi": "कढ़ी पकौड़ा",
+  "slots": [
+   "Lunch"
+  ],
+  "category": "Dal / Legume",
+  "diet": "Veg",
+  "region": "Punjab",
+  "cookTime": 45,
+  "difficulty": "Medium",
+  "ingredients": [
+   "Curd",
+   "gram flour",
+   "onion pakoras"
+  ],
+  "jain": true,
+  "noOnionGarlic": true,
+  "vrat": false,
+  "tiffin": false,
+  "kidFavourite": true,
+  "season": "All",
+  "heaviness": "Medium",
+  "prepAhead": null,
+  "pairsWith": [
+   "Steamed rice"
+  ]
+ },
+ {
+  "id": "gujarati-kadhi",
+  "name": "Gujarati Kadhi",
+  "hindi": "गुजराती कढ़ी",
+  "slots": [
+   "Lunch"
+  ],
+  "category": "Dal / Legume",
+  "diet": "Veg",
+  "region": "Gujarat",
+  "cookTime": 20,
+  "difficulty": "Easy",
+  "ingredients": [
+   "Curd",
+   "gram flour",
+   "ginger"
+  ],
+  "jain": true,
+  "noOnionGarlic": true,
+  "vrat": false,
+  "tiffin": false,
+  "kidFavourite": false,
+  "season": "All",
+  "heaviness": "Light",
+  "prepAhead": null,
+  "pairsWith": [
+   "Khichdi",
+   "rice"
+  ]
+ },
+ {
+  "id": "dalma",
+  "name": "Dalma",
+  "hindi": "डालमा",
+  "slots": [
+   "Lunch"
+  ],
+  "category": "Dal / Legume",
+  "diet": "Veg",
+  "region": "Odisha",
+  "cookTime": 40,
+  "difficulty": "Easy",
+  "ingredients": [
+   "Toor dal",
+   "pumpkin",
+   "raw banana",
+   "papaya"
+  ],
+  "jain": false,
+  "noOnionGarlic": true,
+  "vrat": false,
+  "tiffin": false,
+  "kidFavourite": false,
+  "season": "All",
+  "heaviness": "Light",
+  "prepAhead": null,
+  "pairsWith": [
+   "Rice"
+  ]
+ },
+ {
+  "id": "dal-dhokli",
+  "name": "Dal Dhokli",
+  "hindi": "दाल ढोकली",
+  "slots": [
+   "Lunch",
+   "Dinner"
+  ],
+  "category": "One-Pot Meal",
+  "diet": "Veg",
+  "region": "Gujarat",
+  "cookTime": 45,
+  "difficulty": "Medium",
+  "ingredients": [
+   "Toor dal",
+   "wheat flour",
+   "peanuts"
+  ],
+  "jain": true,
+  "noOnionGarlic": true,
+  "vrat": false,
+  "tiffin": false,
+  "kidFavourite": true,
+  "season": "Winter",
+  "heaviness": "Medium",
+  "prepAhead": null,
+  "pairsWith": [
+   "Papad"
+  ]
+ },
+ {
+  "id": "dal-baati-churma",
+  "name": "Dal Baati Churma",
+  "hindi": "दाल बाटी चूरमा",
+  "slots": [
+   "Lunch"
+  ],
+  "category": "Combo Meal",
+  "diet": "Veg",
+  "region": "Rajasthan",
+  "cookTime": 90,
+  "difficulty": "Hard",
+  "ingredients": [
+   "Wheat flour",
+   "mixed dal",
+   "ghee",
+   "jaggery"
+  ],
+  "jain": true,
+  "noOnionGarlic": true,
+  "vrat": false,
+  "tiffin": false,
+  "kidFavourite": true,
+  "season": "Winter",
+  "heaviness": "Heavy",
+  "prepAhead": null,
+  "pairsWith": []
+ },
+ {
+  "id": "litti-chokha",
+  "name": "Litti Chokha",
+  "hindi": "लिट्टी चोखा",
+  "slots": [
+   "Lunch",
+   "Dinner"
+  ],
+  "category": "Combo Meal",
+  "diet": "Veg",
+  "region": "Bihar",
+  "cookTime": 60,
+  "difficulty": "Medium",
+  "ingredients": [
+   "Wheat flour",
+   "sattu",
+   "brinjal",
+   "potato"
+  ],
+  "jain": false,
+  "noOnionGarlic": false,
+  "vrat": false,
+  "tiffin": false,
+  "kidFavourite": false,
+  "season": "Winter",
+  "heaviness": "Heavy",
+  "prepAhead": null,
+  "pairsWith": [
+   "Ghee"
+  ]
+ },
+ {
+  "id": "pav-bhaji",
+  "name": "Pav Bhaji",
+  "hindi": "पाव भाजी",
+  "slots": [
+   "Dinner"
+  ],
+  "category": "Combo Meal",
+  "diet": "Veg",
+  "region": "Maharashtra",
+  "cookTime": 45,
+  "difficulty": "Medium",
+  "ingredients": [
+   "Potato",
+   "mixed vegetables",
+   "butter",
+   "pav"
+  ],
+  "jain": false,
+  "noOnionGarlic": true,
+  "vrat": false,
+  "tiffin": false,
+  "kidFavourite": true,
+  "season": "All",
+  "heaviness": "Heavy",
+  "prepAhead": null,
+  "pairsWith": [
+   "Onion",
+   "lemon"
+  ]
+ },
+ {
+  "id": "aloo-gobi",
+  "name": "Aloo Gobi",
+  "hindi": "आलू गोभी",
+  "slots": [
+   "Lunch",
+   "Dinner"
+  ],
+  "category": "Sabzi (Dry)",
+  "diet": "Veg",
+  "region": "Punjab",
+  "cookTime": 30,
+  "difficulty": "Easy",
+  "ingredients": [
+   "Potato",
+   "cauliflower"
+  ],
+  "jain": false,
+  "noOnionGarlic": true,
+  "vrat": false,
+  "tiffin": true,
+  "kidFavourite": true,
+  "season": "Winter",
+  "heaviness": "Medium",
+  "prepAhead": null,
+  "pairsWith": [
+   "Roti",
+   "dal"
+  ]
+ },
+ {
+  "id": "bhindi-masala",
+  "name": "Bhindi Masala",
+  "hindi": "भिंडी मसाला",
+  "slots": [
+   "Lunch",
+   "Dinner"
+  ],
+  "category": "Sabzi (Dry)",
+  "diet": "Veg",
+  "region": "North",
+  "cookTime": 30,
+  "difficulty": "Easy",
+  "ingredients": [
+   "Okra",
+   "onion",
+   "spices"
+  ],
+  "jain": true,
+  "noOnionGarlic": true,
+  "vrat": false,
+  "tiffin": true,
+  "kidFavourite": true,
+  "season": "Summer",
+  "heaviness": "Light",
+  "prepAhead": null,
+  "pairsWith": [
+   "Roti",
+   "dal"
+  ]
+ },
+ {
+  "id": "jeera-aloo",
+  "name": "Jeera Aloo",
+  "hindi": "जीरा आलू",
+  "slots": [
+   "Lunch",
+   "Dinner"
+  ],
+  "category": "Sabzi (Dry)",
+  "diet": "Veg",
+  "region": "North",
+  "cookTime": 20,
+  "difficulty": "Easy",
+  "ingredients": [
+   "Potato",
+   "cumin"
+  ],
+  "jain": false,
+  "noOnionGarlic": true,
+  "vrat": true,
+  "tiffin": true,
+  "kidFavourite": true,
+  "season": "All",
+  "heaviness": "Medium",
+  "prepAhead": "Boil potatoes",
+  "pairsWith": [
+   "Puri",
+   "roti",
+   "dal"
+  ]
+ },
+ {
+  "id": "aloo-methi",
+  "name": "Aloo Methi",
+  "hindi": "आलू मेथी",
+  "slots": [
+   "Lunch",
+   "Dinner"
+  ],
+  "category": "Sabzi (Dry)",
+  "diet": "Veg",
+  "region": "North",
+  "cookTime": 25,
+  "difficulty": "Easy",
+  "ingredients": [
+   "Potato",
+   "fenugreek leaves"
+  ],
+  "jain": false,
+  "noOnionGarlic": true,
+  "vrat": false,
+  "tiffin": true,
+  "kidFavourite": false,
+  "season": "Winter",
+  "heaviness": "Medium",
+  "prepAhead": null,
+  "pairsWith": [
+   "Roti",
+   "dal"
+  ]
+ },
+ {
+  "id": "gajar-matar",
+  "name": "Gajar Matar",
+  "hindi": "गाजर मटर",
+  "slots": [
+   "Lunch",
+   "Dinner"
+  ],
+  "category": "Sabzi (Dry)",
+  "diet": "Veg",
+  "region": "North",
+  "cookTime": 25,
+  "difficulty": "Easy",
+  "ingredients": [
+   "Carrot",
+   "green peas"
+  ],
+  "jain": false,
+  "noOnionGarlic": true,
+  "vrat": false,
+  "tiffin": true,
+  "kidFavourite": true,
+  "season": "Winter",
+  "heaviness": "Light",
+  "prepAhead": null,
+  "pairsWith": [
+   "Roti",
+   "dal"
+  ]
+ },
+ {
+  "id": "cabbage-matar",
+  "name": "Cabbage Matar",
+  "hindi": "पत्ता गोभी मटर",
+  "slots": [
+   "Lunch",
+   "Dinner"
+  ],
+  "category": "Sabzi (Dry)",
+  "diet": "Veg",
+  "region": "North",
+  "cookTime": 25,
+  "difficulty": "Easy",
+  "ingredients": [
+   "Cabbage",
+   "green peas"
+  ],
+  "jain": false,
+  "noOnionGarlic": true,
+  "vrat": false,
+  "tiffin": true,
+  "kidFavourite": true,
+  "season": "Winter",
+  "heaviness": "Light",
+  "prepAhead": null,
+  "pairsWith": [
+   "Roti",
+   "dal"
+  ]
+ },
+ {
+  "id": "lauki-sabzi",
+  "name": "Lauki Sabzi",
+  "hindi": "लौकी की सब्ज़ी",
+  "slots": [
+   "Lunch",
+   "Dinner"
+  ],
+  "category": "Sabzi (Dry)",
+  "diet": "Veg",
+  "region": "North",
+  "cookTime": 25,
+  "difficulty": "Easy",
+  "ingredients": [
+   "Bottle gourd",
+   "tomato"
+  ],
+  "jain": true,
+  "noOnionGarlic": true,
+  "vrat": false,
+  "tiffin": false,
+  "kidFavourite": false,
+  "season": "Summer",
+  "heaviness": "Light",
+  "prepAhead": null,
+  "pairsWith": [
+   "Roti"
+  ]
+ },
+ {
+  "id": "tinda-masala",
+  "name": "Tinda Masala",
+  "hindi": "टिंडा मसाला",
+  "slots": [
+   "Lunch",
+   "Dinner"
+  ],
+  "category": "Sabzi (Dry)",
+  "diet": "Veg",
+  "region": "North",
+  "cookTime": 30,
+  "difficulty": "Easy",
+  "ingredients": [
+   "Apple gourd",
+   "tomato"
+  ],
+  "jain": true,
+  "noOnionGarlic": true,
+  "vrat": false,
+  "tiffin": false,
+  "kidFavourite": false,
+  "season": "Summer",
+  "heaviness": "Light",
+  "prepAhead": null,
+  "pairsWith": [
+   "Roti",
+   "dal"
+  ]
+ },
+ {
+  "id": "turai-sabzi",
+  "name": "Turai Sabzi",
+  "hindi": "तोरई की सब्ज़ी",
+  "slots": [
+   "Lunch",
+   "Dinner"
+  ],
+  "category": "Sabzi (Dry)",
+  "diet": "Veg",
+  "region": "North",
+  "cookTime": 25,
+  "difficulty": "Easy",
+  "ingredients": [
+   "Ridge gourd",
+   "tomato"
+  ],
+  "jain": true,
+  "noOnionGarlic": true,
+  "vrat": false,
+  "tiffin": false,
+  "kidFavourite": false,
+  "season": "Summer",
+  "heaviness": "Light",
+  "prepAhead": null,
+  "pairsWith": [
+   "Roti",
+   "dal"
+  ]
+ },
+ {
+  "id": "karela-fry",
+  "name": "Karela Fry",
+  "hindi": "करेला फ्राई",
+  "slots": [
+   "Lunch"
+  ],
+  "category": "Sabzi (Dry)",
+  "diet": "Veg",
+  "region": "Pan-India",
+  "cookTime": 35,
+  "difficulty": "Medium",
+  "ingredients": [
+   "Bitter gourd",
+   "onion",
+   "amchur"
+  ],
+  "jain": true,
+  "noOnionGarlic": true,
+  "vrat": false,
+  "tiffin": true,
+  "kidFavourite": false,
+  "season": "Summer",
+  "heaviness": "Light",
+  "prepAhead": "Salt & rest karela 30 min",
+  "pairsWith": [
+   "Roti",
+   "dal"
+  ]
+ },
+ {
+  "id": "mix-veg",
+  "name": "Mix Veg",
+  "hindi": "मिक्स वेज",
+  "slots": [
+   "Lunch",
+   "Dinner"
+  ],
+  "category": "Sabzi (Dry)",
+  "diet": "Veg",
+  "region": "North",
+  "cookTime": 35,
+  "difficulty": "Easy",
+  "ingredients": [
+   "Carrot",
+   "beans",
+   "peas",
+   "potato",
+   "cauliflower"
+  ],
+  "jain": false,
+  "noOnionGarlic": true,
+  "vrat": false,
+  "tiffin": true,
+  "kidFavourite": true,
+  "season": "Winter",
+  "heaviness": "Medium",
+  "prepAhead": null,
+  "pairsWith": [
+   "Roti",
+   "dal"
+  ]
+ },
+ {
+  "id": "arbi-fry",
+  "name": "Arbi Fry",
+  "hindi": "अरबी फ्राई",
+  "slots": [
+   "Lunch"
+  ],
+  "category": "Sabzi (Dry)",
+  "diet": "Veg",
+  "region": "North",
+  "cookTime": 35,
+  "difficulty": "Easy",
+  "ingredients": [
+   "Colocasia",
+   "ajwain"
+  ],
+  "jain": false,
+  "noOnionGarlic": true,
+  "vrat": false,
+  "tiffin": true,
+  "kidFavourite": false,
+  "season": "Monsoon",
+  "heaviness": "Medium",
+  "prepAhead": "Boil arbi",
+  "pairsWith": [
+   "Roti",
+   "dal"
+  ]
+ },
+ {
+  "id": "khatta-meetha-kaddu",
+  "name": "Khatta Meetha Kaddu",
+  "hindi": "खट्टा मीठा कद्दू",
+  "slots": [
+   "Lunch",
+   "Dinner"
+  ],
+  "category": "Sabzi (Dry)",
+  "diet": "Veg",
+  "region": "North",
+  "cookTime": 25,
+  "difficulty": "Easy",
+  "ingredients": [
+   "Pumpkin",
+   "jaggery",
+   "amchur"
+  ],
+  "jain": true,
+  "noOnionGarlic": true,
+  "vrat": true,
+  "tiffin": false,
+  "kidFavourite": true,
+  "season": "All",
+  "heaviness": "Light",
+  "prepAhead": null,
+  "pairsWith": [
+   "Puri",
+   "kuttu puri"
+  ]
+ },
+ {
+  "id": "beans-poriyal",
+  "name": "Beans Poriyal",
+  "hindi": "बीन्स पोरियल",
+  "slots": [
+   "Lunch"
+  ],
+  "category": "Sabzi (Dry)",
+  "diet": "Veg",
+  "region": "Tamil Nadu",
+  "cookTime": 20,
+  "difficulty": "Easy",
+  "ingredients": [
+   "French beans",
+   "coconut",
+   "mustard seeds"
+  ],
+  "jain": true,
+  "noOnionGarlic": true,
+  "vrat": false,
+  "tiffin": true,
+  "kidFavourite": false,
+  "season": "All",
+  "heaviness": "Light",
+  "prepAhead": null,
+  "pairsWith": [
+   "Sambar rice"
+  ]
+ },
+ {
+  "id": "cabbage-thoran",
+  "name": "Cabbage Thoran",
+  "hindi": "पत्ता गोभी थोरन",
+  "slots": [
+   "Lunch"
+  ],
+  "category": "Sabzi (Dry)",
+  "diet": "Veg",
+  "region": "Kerala",
+  "cookTime": 20,
+  "difficulty": "Easy",
+  "ingredients": [
+   "Cabbage",
+   "coconut",
+   "curry leaves"
+  ],
+  "jain": false,
+  "noOnionGarlic": true,
+  "vrat": false,
+  "tiffin": true,
+  "kidFavourite": false,
+  "season": "All",
+  "heaviness": "Light",
+  "prepAhead": null,
+  "pairsWith": [
+   "Rice",
+   "sambar"
+  ]
+ },
+ {
+  "id": "aloo-posto",
+  "name": "Aloo Posto",
+  "hindi": "आलू पोस्तो",
+  "slots": [
+   "Lunch"
+  ],
+  "category": "Sabzi (Dry)",
+  "diet": "Veg",
+  "region": "West Bengal",
+  "cookTime": 30,
+  "difficulty": "Easy",
+  "ingredients": [
+   "Potato",
+   "poppy seeds"
+  ],
+  "jain": false,
+  "noOnionGarlic": true,
+  "vrat": false,
+  "tiffin": true,
+  "kidFavourite": true,
+  "season": "All",
+  "heaviness": "Medium",
+  "prepAhead": "Soak poppy seeds 1 hr",
+  "pairsWith": [
+   "Rice",
+   "dal"
+  ]
+ },
+ {
+  "id": "baingan-bharta",
+  "name": "Baingan Bharta",
+  "hindi": "बैंगन भर्ता",
+  "slots": [
+   "Lunch",
+   "Dinner"
+  ],
+  "category": "Sabzi (Dry)",
+  "diet": "Veg",
+  "region": "Punjab",
+  "cookTime": 40,
+  "difficulty": "Medium",
+  "ingredients": [
+   "Brinjal",
+   "onion",
+   "tomato"
+  ],
+  "jain": false,
+  "noOnionGarlic": true,
+  "vrat": false,
+  "tiffin": false,
+  "kidFavourite": false,
+  "season": "Winter",
+  "heaviness": "Light",
+  "prepAhead": null,
+  "pairsWith": [
+   "Roti",
+   "bajra roti"
+  ]
+ },
+ {
+  "id": "undhiyu",
+  "name": "Undhiyu",
+  "hindi": "उंधियू",
+  "slots": [
+   "Lunch"
+  ],
+  "category": "Sabzi (Dry)",
+  "diet": "Veg",
+  "region": "Gujarat",
+  "cookTime": 90,
+  "difficulty": "Hard",
+  "ingredients": [
+   "Surti papdi",
+   "yam",
+   "sweet potato",
+   "methi muthia"
+  ],
+  "jain": false,
+  "noOnionGarlic": true,
+  "vrat": false,
+  "tiffin": false,
+  "kidFavourite": false,
+  "season": "Winter",
+  "heaviness": "Heavy",
+  "prepAhead": null,
+  "pairsWith": [
+   "Puri",
+   "shrikhand"
+  ]
+ },
+ {
+  "id": "sarson-ka-saag",
+  "name": "Sarson ka Saag",
+  "hindi": "सरसों का साग",
+  "slots": [
+   "Lunch",
+   "Dinner"
+  ],
+  "category": "Sabzi (Gravy)",
+  "diet": "Veg",
+  "region": "Punjab",
+  "cookTime": 90,
+  "difficulty": "Medium",
+  "ingredients": [
+   "Mustard greens",
+   "spinach",
+   "maize flour"
+  ],
+  "jain": true,
+  "noOnionGarlic": true,
+  "vrat": false,
+  "tiffin": false,
+  "kidFavourite": false,
+  "season": "Winter",
+  "heaviness": "Heavy",
+  "prepAhead": null,
+  "pairsWith": [
+   "Makki ki roti",
+   "jaggery"
+  ]
+ },
+ {
+  "id": "sev-tamatar",
+  "name": "Sev Tamatar",
+  "hindi": "सेव टमाटर",
+  "slots": [
+   "Dinner"
+  ],
+  "category": "Sabzi (Gravy)",
+  "diet": "Veg",
+  "region": "Gujarat",
+  "cookTime": 20,
+  "difficulty": "Easy",
+  "ingredients": [
+   "Tomato",
+   "sev"
+  ],
+  "jain": true,
+  "noOnionGarlic": true,
+  "vrat": false,
+  "tiffin": false,
+  "kidFavourite": true,
+  "season": "All",
+  "heaviness": "Light",
+  "prepAhead": null,
+  "pairsWith": [
+   "Roti",
+   "bhakri"
+  ]
+ },
+ {
+  "id": "gatte-ki-sabzi",
+  "name": "Gatte ki Sabzi",
+  "hindi": "गट्टे की सब्ज़ी",
+  "slots": [
+   "Lunch",
+   "Dinner"
+  ],
+  "category": "Sabzi (Gravy)",
+  "diet": "Veg",
+  "region": "Rajasthan",
+  "cookTime": 50,
+  "difficulty": "Medium",
+  "ingredients": [
+   "Gram flour dumplings",
+   "curd"
+  ],
+  "jain": true,
+  "noOnionGarlic": true,
+  "vrat": false,
+  "tiffin": false,
+  "kidFavourite": false,
+  "season": "All",
+  "heaviness": "Medium",
+  "prepAhead": null,
+  "pairsWith": [
+   "Roti",
+   "rice"
+  ]
+ },
+ {
+  "id": "avial",
+  "name": "Avial",
+  "hindi": "अवियल",
+  "slots": [
+   "Lunch"
+  ],
+  "category": "Sabzi (Gravy)",
+  "diet": "Veg",
+  "region": "Kerala",
+  "cookTime": 40,
+  "difficulty": "Medium",
+  "ingredients": [
+   "Mixed vegetables",
+   "coconut",
+   "curd"
+  ],
+  "jain": false,
+  "noOnionGarlic": true,
+  "vrat": false,
+  "tiffin": false,
+  "kidFavourite": false,
+  "season": "All",
+  "heaviness": "Light",
+  "prepAhead": null,
+  "pairsWith": [
+   "Rice",
+   "sambar"
+  ]
+ },
+ {
+  "id": "shukto",
+  "name": "Shukto",
+  "hindi": "शुक्तो",
+  "slots": [
+   "Lunch"
+  ],
+  "category": "Sabzi (Gravy)",
+  "diet": "Veg",
+  "region": "West Bengal",
+  "cookTime": 45,
+  "difficulty": "Medium",
+  "ingredients": [
+   "Bitter gourd",
+   "raw banana",
+   "drumstick",
+   "milk"
+  ],
+  "jain": false,
+  "noOnionGarlic": true,
+  "vrat": false,
+  "tiffin": false,
+  "kidFavourite": false,
+  "season": "Summer",
+  "heaviness": "Light",
+  "prepAhead": null,
+  "pairsWith": [
+   "Rice"
+  ]
+ },
+ {
+  "id": "aloo-matar",
+  "name": "Aloo Matar",
+  "hindi": "आलू मटर",
+  "slots": [
+   "Lunch",
+   "Dinner"
+  ],
+  "category": "Sabzi (Gravy)",
+  "diet": "Veg",
+  "region": "North",
+  "cookTime": 30,
+  "difficulty": "Easy",
+  "ingredients": [
+   "Potato",
+   "peas",
+   "tomato"
+  ],
+  "jain": false,
+  "noOnionGarlic": true,
+  "vrat": false,
+  "tiffin": true,
+  "kidFavourite": true,
+  "season": "Winter",
+  "heaviness": "Medium",
+  "prepAhead": null,
+  "pairsWith": [
+   "Roti",
+   "puri"
+  ]
+ },
+ {
+  "id": "dum-aloo",
+  "name": "Dum Aloo",
+  "hindi": "दम आलू",
+  "slots": [
+   "Dinner"
+  ],
+  "category": "Sabzi (Gravy)",
+  "diet": "Veg",
+  "region": "Kashmir",
+  "cookTime": 45,
+  "difficulty": "Medium",
+  "ingredients": [
+   "Baby potatoes",
+   "curd",
+   "fennel"
+  ],
+  "jain": false,
+  "noOnionGarlic": true,
+  "vrat": false,
+  "tiffin": false,
+  "kidFavourite": true,
+  "season": "All",
+  "heaviness": "Medium",
+  "prepAhead": "Boil potatoes",
+  "pairsWith": [
+   "Roti",
+   "puri"
+  ]
+ },
+ {
+  "id": "lauki-kofta",
+  "name": "Lauki Kofta",
+  "hindi": "लौकी कोफ्ता",
+  "slots": [
+   "Dinner"
+  ],
+  "category": "Sabzi (Gravy)",
+  "diet": "Veg",
+  "region": "North",
+  "cookTime": 50,
+  "difficulty": "Medium",
+  "ingredients": [
+   "Bottle gourd",
+   "gram flour",
+   "tomato"
+  ],
+  "jain": true,
+  "noOnionGarlic": true,
+  "vrat": false,
+  "tiffin": false,
+  "kidFavourite": true,
+  "season": "All",
+  "heaviness": "Medium",
+  "prepAhead": null,
+  "pairsWith": [
+   "Roti",
+   "rice"
+  ]
+ },
+ {
+  "id": "malai-kofta",
+  "name": "Malai Kofta",
+  "hindi": "मलाई कोफ्ता",
+  "slots": [
+   "Dinner"
+  ],
+  "category": "Sabzi (Gravy)",
+  "diet": "Veg",
+  "region": "North",
+  "cookTime": 60,
+  "difficulty": "Hard",
+  "ingredients": [
+   "Paneer",
+   "potato",
+   "cashew",
+   "cream"
+  ],
+  "jain": false,
+  "noOnionGarlic": true,
+  "vrat": false,
+  "tiffin": false,
+  "kidFavourite": true,
+  "season": "All",
+  "heaviness": "Heavy",
+  "prepAhead": null,
+  "pairsWith": [
+   "Naan",
+   "jeera rice"
+  ]
+ },
+ {
+  "id": "mushroom-matar",
+  "name": "Mushroom Matar",
+  "hindi": "मशरूम मटर",
+  "slots": [
+   "Dinner"
+  ],
+  "category": "Sabzi (Gravy)",
+  "diet": "Veg",
+  "region": "North",
+  "cookTime": 35,
+  "difficulty": "Easy",
+  "ingredients": [
+   "Mushroom",
+   "peas",
+   "onion",
+   "tomato"
+  ],
+  "jain": false,
+  "noOnionGarlic": true,
+  "vrat": false,
+  "tiffin": false,
+  "kidFavourite": true,
+  "season": "Winter",
+  "heaviness": "Medium",
+  "prepAhead": null,
+  "pairsWith": [
+   "Roti"
+  ]
+ },
+ {
+  "id": "soya-chunks-curry",
+  "name": "Soya Chunks Curry",
+  "hindi": "सोया चंक्स करी",
+  "slots": [
+   "Lunch",
+   "Dinner"
+  ],
+  "category": "Sabzi (Gravy)",
+  "diet": "Veg",
+  "region": "North",
+  "cookTime": 35,
+  "difficulty": "Easy",
+  "ingredients": [
+   "Soya chunks",
+   "onion",
+   "tomato"
+  ],
+  "jain": true,
+  "noOnionGarlic": true,
+  "vrat": false,
+  "tiffin": true,
+  "kidFavourite": false,
+  "season": "All",
+  "heaviness": "Medium",
+  "prepAhead": null,
+  "pairsWith": [
+   "Rice",
+   "roti"
+  ]
+ },
+ {
+  "id": "palak-paneer",
+  "name": "Palak Paneer",
+  "hindi": "पालक पनीर",
+  "slots": [
+   "Lunch",
+   "Dinner"
+  ],
+  "category": "Paneer",
+  "diet": "Veg",
+  "region": "Punjab",
+  "cookTime": 40,
+  "difficulty": "Medium",
+  "ingredients": [
+   "Spinach",
+   "paneer",
+   "cream"
+  ],
+  "jain": true,
+  "noOnionGarlic": true,
+  "vrat": false,
+  "tiffin": false,
+  "kidFavourite": true,
+  "season": "Winter",
+  "heaviness": "Medium",
+  "prepAhead": null,
+  "pairsWith": [
+   "Roti",
+   "jeera rice"
+  ]
+ },
+ {
+  "id": "matar-paneer",
+  "name": "Matar Paneer",
+  "hindi": "मटर पनीर",
+  "slots": [
+   "Lunch",
+   "Dinner"
+  ],
+  "category": "Paneer",
+  "diet": "Veg",
+  "region": "North",
+  "cookTime": 35,
+  "difficulty": "Medium",
+  "ingredients": [
+   "Paneer",
+   "peas",
+   "tomato"
+  ],
+  "jain": true,
+  "noOnionGarlic": true,
+  "vrat": false,
+  "tiffin": true,
+  "kidFavourite": true,
+  "season": "Winter",
+  "heaviness": "Medium",
+  "prepAhead": null,
+  "pairsWith": [
+   "Roti",
+   "pulao"
+  ]
+ },
+ {
+  "id": "paneer-butter-masala",
+  "name": "Paneer Butter Masala",
+  "hindi": "पनीर बटर मसाला",
+  "slots": [
+   "Dinner"
+  ],
+  "category": "Paneer",
+  "diet": "Veg",
+  "region": "Punjab",
+  "cookTime": 40,
+  "difficulty": "Medium",
+  "ingredients": [
+   "Paneer",
+   "tomato",
+   "butter",
+   "cashew"
+  ],
+  "jain": true,
+  "noOnionGarlic": true,
+  "vrat": false,
+  "tiffin": false,
+  "kidFavourite": true,
+  "season": "All",
+  "heaviness": "Heavy",
+  "prepAhead": null,
+  "pairsWith": [
+   "Naan",
+   "jeera rice"
+  ]
+ },
+ {
+  "id": "kadai-paneer",
+  "name": "Kadai Paneer",
+  "hindi": "कढ़ाई पनीर",
+  "slots": [
+   "Dinner"
+  ],
+  "category": "Paneer",
+  "diet": "Veg",
+  "region": "Punjab",
+  "cookTime": 35,
+  "difficulty": "Medium",
+  "ingredients": [
+   "Paneer",
+   "capsicum",
+   "onion",
+   "kadai masala"
+  ],
+  "jain": true,
+  "noOnionGarlic": true,
+  "vrat": false,
+  "tiffin": true,
+  "kidFavourite": true,
+  "season": "All",
+  "heaviness": "Medium",
+  "prepAhead": null,
+  "pairsWith": [
+   "Roti",
+   "naan"
+  ]
+ },
+ {
+  "id": "paneer-bhurji",
+  "name": "Paneer Bhurji",
+  "hindi": "पनीर भुर्जी",
+  "slots": [
+   "Breakfast",
+   "Dinner"
+  ],
+  "category": "Paneer",
+  "diet": "Veg",
+  "region": "Punjab",
+  "cookTime": 20,
+  "difficulty": "Easy",
+  "ingredients": [
+   "Paneer",
+   "onion",
+   "tomato"
+  ],
+  "jain": true,
+  "noOnionGarlic": true,
+  "vrat": false,
+  "tiffin": true,
+  "kidFavourite": true,
+  "season": "All",
+  "heaviness": "Medium",
+  "prepAhead": null,
+  "pairsWith": [
+   "Roti",
+   "pav"
+  ]
+ },
+ {
+  "id": "paneer-tikka",
+  "name": "Paneer Tikka",
+  "hindi": "पनीर टिक्का",
+  "slots": [
+   "Snack",
+   "Dinner"
+  ],
+  "category": "Paneer",
+  "diet": "Veg",
+  "region": "Punjab",
+  "cookTime": 40,
+  "difficulty": "Medium",
+  "ingredients": [
+   "Paneer",
+   "curd",
+   "capsicum"
+  ],
+  "jain": true,
+  "noOnionGarlic": true,
+  "vrat": false,
+  "tiffin": true,
+  "kidFavourite": true,
+  "season": "All",
+  "heaviness": "Medium",
+  "prepAhead": "Marinate 1-2 hrs",
+  "pairsWith": [
+   "Green chutney"
+  ]
+ },
+ {
+  "id": "jeera-rice",
+  "name": "Jeera Rice",
+  "hindi": "जीरा राइस",
+  "slots": [
+   "Lunch",
+   "Dinner"
+  ],
+  "category": "Rice",
+  "diet": "Veg",
+  "region": "North",
+  "cookTime": 25,
+  "difficulty": "Easy",
+  "ingredients": [
+   "Basmati rice",
+   "cumin",
+   "ghee"
+  ],
+  "jain": true,
+  "noOnionGarlic": true,
+  "vrat": false,
+  "tiffin": false,
+  "kidFavourite": true,
+  "season": "All",
+  "heaviness": "Light",
+  "prepAhead": null,
+  "pairsWith": [
+   "Dal tadka",
+   "rajma"
+  ]
+ },
+ {
+  "id": "veg-pulao",
+  "name": "Veg Pulao",
+  "hindi": "वेज पुलाव",
+  "slots": [
+   "Lunch",
+   "Dinner"
+  ],
+  "category": "Rice",
+  "diet": "Veg",
+  "region": "North",
+  "cookTime": 30,
+  "difficulty": "Easy",
+  "ingredients": [
+   "Basmati rice",
+   "carrot",
+   "peas",
+   "beans"
+  ],
+  "jain": false,
+  "noOnionGarlic": true,
+  "vrat": false,
+  "tiffin": true,
+  "kidFavourite": true,
+  "season": "All",
+  "heaviness": "Medium",
+  "prepAhead": null,
+  "pairsWith": [
+   "Raita"
+  ]
+ },
+ {
+  "id": "veg-biryani",
+  "name": "Veg Biryani",
+  "hindi": "वेज बिरयानी",
+  "slots": [
+   "Lunch",
+   "Dinner"
+  ],
+  "category": "Rice",
+  "diet": "Veg",
+  "region": "Telangana",
+  "cookTime": 60,
+  "difficulty": "Hard",
+  "ingredients": [
+   "Basmati rice",
+   "vegetables",
+   "curd",
+   "saffron"
+  ],
+  "jain": false,
+  "noOnionGarlic": true,
+  "vrat": false,
+  "tiffin": false,
+  "kidFavourite": true,
+  "season": "All",
+  "heaviness": "Heavy",
+  "prepAhead": null,
+  "pairsWith": [
+   "Raita",
+   "salan"
+  ]
+ },
+ {
+  "id": "moong-dal-khichdi",
+  "name": "Moong Dal Khichdi",
+  "hindi": "मूंग दाल खिचड़ी",
+  "slots": [
+   "Dinner"
+  ],
+  "category": "One-Pot Meal",
+  "diet": "Veg",
+  "region": "Pan-India",
+  "cookTime": 25,
+  "difficulty": "Easy",
+  "ingredients": [
+   "Rice",
+   "moong dal",
+   "ghee"
+  ],
+  "jain": true,
+  "noOnionGarlic": true,
+  "vrat": false,
+  "tiffin": false,
+  "kidFavourite": true,
+  "season": "All",
+  "heaviness": "Light",
+  "prepAhead": null,
+  "pairsWith": [
+   "Kadhi",
+   "papad",
+   "pickle"
+  ]
+ },
+ {
+  "id": "bisi-bele-bath",
+  "name": "Bisi Bele Bath",
+  "hindi": "बिसी बेले भात",
+  "slots": [
+   "Lunch",
+   "Dinner"
+  ],
+  "category": "One-Pot Meal",
+  "diet": "Veg",
+  "region": "Karnataka",
+  "cookTime": 45,
+  "difficulty": "Medium",
+  "ingredients": [
+   "Rice",
+   "toor dal",
+   "vegetables",
+   "tamarind"
+  ],
+  "jain": false,
+  "noOnionGarlic": true,
+  "vrat": false,
+  "tiffin": true,
+  "kidFavourite": true,
+  "season": "All",
+  "heaviness": "Medium",
+  "prepAhead": null,
+  "pairsWith": [
+   "Boondi",
+   "papad"
+  ]
+ },
+ {
+  "id": "curd-rice",
+  "name": "Curd Rice",
+  "hindi": "दही चावल",
+  "slots": [
+   "Lunch",
+   "Dinner"
+  ],
+  "category": "Rice",
+  "diet": "Veg",
+  "region": "South",
+  "cookTime": 15,
+  "difficulty": "Easy",
+  "ingredients": [
+   "Cooked rice",
+   "curd",
+   "mustard seeds"
+  ],
+  "jain": true,
+  "noOnionGarlic": true,
+  "vrat": false,
+  "tiffin": true,
+  "kidFavourite": true,
+  "season": "Summer",
+  "heaviness": "Light",
+  "prepAhead": null,
+  "pairsWith": [
+   "Pickle"
+  ]
+ },
+ {
+  "id": "lemon-rice",
+  "name": "Lemon Rice",
+  "hindi": "नींबू चावल",
+  "slots": [
+   "Lunch"
+  ],
+  "category": "Rice",
+  "diet": "Veg",
+  "region": "South",
+  "cookTime": 20,
+  "difficulty": "Easy",
+  "ingredients": [
+   "Cooked rice",
+   "lemon",
+   "peanuts"
+  ],
+  "jain": true,
+  "noOnionGarlic": true,
+  "vrat": false,
+  "tiffin": true,
+  "kidFavourite": true,
+  "season": "All",
+  "heaviness": "Light",
+  "prepAhead": "Use leftover rice",
+  "pairsWith": [
+   "Papad"
+  ]
+ },
+ {
+  "id": "puliyogare-tamarind-rice",
+  "name": "Puliyogare (Tamarind Rice)",
+  "hindi": "इमली चावल",
+  "slots": [
+   "Lunch"
+  ],
+  "category": "Rice",
+  "diet": "Veg",
+  "region": "Karnataka",
+  "cookTime": 30,
+  "difficulty": "Medium",
+  "ingredients": [
+   "Cooked rice",
+   "tamarind",
+   "peanuts"
+  ],
+  "jain": true,
+  "noOnionGarlic": true,
+  "vrat": false,
+  "tiffin": true,
+  "kidFavourite": false,
+  "season": "All",
+  "heaviness": "Light",
+  "prepAhead": "Use leftover rice",
+  "pairsWith": [
+   "Papad",
+   "curd"
+  ]
+ },
+ {
+  "id": "coconut-rice",
+  "name": "Coconut Rice",
+  "hindi": "नारियल चावल",
+  "slots": [
+   "Lunch"
+  ],
+  "category": "Rice",
+  "diet": "Veg",
+  "region": "South",
+  "cookTime": 20,
+  "difficulty": "Easy",
+  "ingredients": [
+   "Cooked rice",
+   "grated coconut",
+   "cashew"
+  ],
+  "jain": true,
+  "noOnionGarlic": true,
+  "vrat": false,
+  "tiffin": true,
+  "kidFavourite": true,
+  "season": "All",
+  "heaviness": "Light",
+  "prepAhead": "Use leftover rice",
+  "pairsWith": [
+   "Papad"
+  ]
+ },
+ {
+  "id": "tomato-rice",
+  "name": "Tomato Rice",
+  "hindi": "टमाटर चावल",
+  "slots": [
+   "Lunch"
+  ],
+  "category": "Rice",
+  "diet": "Veg",
+  "region": "South",
+  "cookTime": 25,
+  "difficulty": "Easy",
+  "ingredients": [
+   "Rice",
+   "tomato",
+   "onion"
+  ],
+  "jain": true,
+  "noOnionGarlic": true,
+  "vrat": false,
+  "tiffin": true,
+  "kidFavourite": true,
+  "season": "All",
+  "heaviness": "Light",
+  "prepAhead": null,
+  "pairsWith": [
+   "Raita"
+  ]
+ },
+ {
+  "id": "veg-fried-rice",
+  "name": "Veg Fried Rice",
+  "hindi": "वेज फ्राइड राइस",
+  "slots": [
+   "Dinner"
+  ],
+  "category": "Rice",
+  "diet": "Veg",
+  "region": "Indo-Chinese",
+  "cookTime": 25,
+  "difficulty": "Easy",
+  "ingredients": [
+   "Rice",
+   "cabbage",
+   "capsicum",
+   "soy sauce"
+  ],
+  "jain": false,
+  "noOnionGarlic": true,
+  "vrat": false,
+  "tiffin": true,
+  "kidFavourite": true,
+  "season": "All",
+  "heaviness": "Medium",
+  "prepAhead": "Use leftover rice",
+  "pairsWith": [
+   "Manchurian"
+  ]
+ },
+ {
+  "id": "samak-rice-pulao",
+  "name": "Samak Rice Pulao",
+  "hindi": "समा के चावल का पुलाव",
+  "slots": [
+   "Lunch",
+   "Dinner"
+  ],
+  "category": "Rice",
+  "diet": "Veg",
+  "region": "North",
+  "cookTime": 25,
+  "difficulty": "Easy",
+  "ingredients": [
+   "Barnyard millet",
+   "potato",
+   "peanuts"
+  ],
+  "jain": false,
+  "noOnionGarlic": true,
+  "vrat": true,
+  "tiffin": false,
+  "kidFavourite": false,
+  "season": "All",
+  "heaviness": "Light",
+  "prepAhead": null,
+  "pairsWith": [
+   "Curd"
+  ]
+ },
+ {
+  "id": "egg-fried-rice",
+  "name": "Egg Fried Rice",
+  "hindi": "एग फ्राइड राइस",
+  "slots": [
+   "Dinner"
+  ],
+  "category": "Rice",
+  "diet": "Egg",
+  "region": "Indo-Chinese",
+  "cookTime": 20,
+  "difficulty": "Easy",
+  "ingredients": [
+   "Rice",
+   "eggs",
+   "spring onion",
+   "soy sauce"
+  ],
+  "jain": false,
+  "noOnionGarlic": false,
+  "vrat": false,
+  "tiffin": true,
+  "kidFavourite": true,
+  "season": "All",
+  "heaviness": "Medium",
+  "prepAhead": "Use leftover rice",
+  "pairsWith": [
+   "Chilli sauce"
+  ]
+ },
+ {
+  "id": "veg-hakka-noodles",
+  "name": "Veg Hakka Noodles",
+  "hindi": "वेज हक्का नूडल्स",
+  "slots": [
+   "Dinner"
+  ],
+  "category": "One-Pot Meal",
+  "diet": "Veg",
+  "region": "Indo-Chinese",
+  "cookTime": 25,
+  "difficulty": "Easy",
+  "ingredients": [
+   "Noodles",
+   "cabbage",
+   "capsicum",
+   "soy sauce"
+  ],
+  "jain": false,
+  "noOnionGarlic": true,
+  "vrat": false,
+  "tiffin": true,
+  "kidFavourite": true,
+  "season": "All",
+  "heaviness": "Medium",
+  "prepAhead": null,
+  "pairsWith": [
+   "Manchurian"
+  ]
+ },
+ {
+  "id": "masala-pasta",
+  "name": "Masala Pasta",
+  "hindi": "मसाला पास्ता",
+  "slots": [
+   "Dinner"
+  ],
+  "category": "One-Pot Meal",
+  "diet": "Veg",
+  "region": "Modern",
+  "cookTime": 25,
+  "difficulty": "Easy",
+  "ingredients": [
+   "Pasta",
+   "tomato",
+   "capsicum",
+   "cheese"
+  ],
+  "jain": true,
+  "noOnionGarlic": true,
+  "vrat": false,
+  "tiffin": true,
+  "kidFavourite": true,
+  "season": "All",
+  "heaviness": "Medium",
+  "prepAhead": null,
+  "pairsWith": []
+ },
+ {
+  "id": "phulka-roti",
+  "name": "Phulka / Roti",
+  "hindi": "फुलका / रोटी",
+  "slots": [
+   "Lunch",
+   "Dinner"
+  ],
+  "category": "Bread",
+  "diet": "Veg",
+  "region": "Pan-India",
+  "cookTime": 20,
+  "difficulty": "Easy",
+  "ingredients": [
+   "Whole wheat flour"
+  ],
+  "jain": true,
+  "noOnionGarlic": true,
+  "vrat": false,
+  "tiffin": true,
+  "kidFavourite": true,
+  "season": "All",
+  "heaviness": "Light",
+  "prepAhead": null,
+  "pairsWith": [
+   "Any dal or sabzi"
+  ]
+ },
+ {
+  "id": "plain-paratha",
+  "name": "Plain Paratha",
+  "hindi": "सादा पराठा",
+  "slots": [
+   "Breakfast",
+   "Lunch",
+   "Dinner"
+  ],
+  "category": "Bread",
+  "diet": "Veg",
+  "region": "North",
+  "cookTime": 25,
+  "difficulty": "Easy",
+  "ingredients": [
+   "Whole wheat flour",
+   "ghee"
+  ],
+  "jain": true,
+  "noOnionGarlic": true,
+  "vrat": false,
+  "tiffin": true,
+  "kidFavourite": true,
+  "season": "All",
+  "heaviness": "Medium",
+  "prepAhead": null,
+  "pairsWith": [
+   "Any sabzi"
+  ]
+ },
+ {
+  "id": "missi-roti",
+  "name": "Missi Roti",
+  "hindi": "मिस्सी रोटी",
+  "slots": [
+   "Lunch",
+   "Dinner"
+  ],
+  "category": "Bread",
+  "diet": "Veg",
+  "region": "Punjab",
+  "cookTime": 30,
+  "difficulty": "Easy",
+  "ingredients": [
+   "Gram flour",
+   "wheat flour",
+   "onion"
+  ],
+  "jain": true,
+  "noOnionGarlic": true,
+  "vrat": false,
+  "tiffin": true,
+  "kidFavourite": false,
+  "season": "All",
+  "heaviness": "Medium",
+  "prepAhead": null,
+  "pairsWith": [
+   "Dal",
+   "curd"
+  ]
+ },
+ {
+  "id": "makki-ki-roti",
+  "name": "Makki ki Roti",
+  "hindi": "मक्की की रोटी",
+  "slots": [
+   "Lunch",
+   "Dinner"
+  ],
+  "category": "Bread",
+  "diet": "Veg",
+  "region": "Punjab",
+  "cookTime": 30,
+  "difficulty": "Medium",
+  "ingredients": [
+   "Maize flour"
+  ],
+  "jain": true,
+  "noOnionGarlic": true,
+  "vrat": false,
+  "tiffin": false,
+  "kidFavourite": false,
+  "season": "Winter",
+  "heaviness": "Medium",
+  "prepAhead": null,
+  "pairsWith": [
+   "Sarson ka saag"
+  ]
+ },
+ {
+  "id": "bajra-roti",
+  "name": "Bajra Roti",
+  "hindi": "बाजरे की रोटी",
+  "slots": [
+   "Lunch",
+   "Dinner"
+  ],
+  "category": "Bread",
+  "diet": "Veg",
+  "region": "Rajasthan",
+  "cookTime": 30,
+  "difficulty": "Medium",
+  "ingredients": [
+   "Pearl millet flour"
+  ],
+  "jain": true,
+  "noOnionGarlic": true,
+  "vrat": false,
+  "tiffin": false,
+  "kidFavourite": false,
+  "season": "Winter",
+  "heaviness": "Medium",
+  "prepAhead": null,
+  "pairsWith": [
+   "Baingan bharta",
+   "garlic chutney"
+  ]
+ },
+ {
+  "id": "jowar-bhakri",
+  "name": "Jowar Bhakri",
+  "hindi": "ज्वार भाकरी",
+  "slots": [
+   "Lunch",
+   "Dinner"
+  ],
+  "category": "Bread",
+  "diet": "Veg",
+  "region": "Maharashtra",
+  "cookTime": 30,
+  "difficulty": "Medium",
+  "ingredients": [
+   "Sorghum flour"
+  ],
+  "jain": true,
+  "noOnionGarlic": true,
+  "vrat": false,
+  "tiffin": true,
+  "kidFavourite": false,
+  "season": "All",
+  "heaviness": "Light",
+  "prepAhead": null,
+  "pairsWith": [
+   "Pitla",
+   "thecha"
+  ]
+ },
+ {
+  "id": "ragi-mudde",
+  "name": "Ragi Mudde",
+  "hindi": "रागी मुद्दे",
+  "slots": [
+   "Lunch"
+  ],
+  "category": "Bread",
+  "diet": "Veg",
+  "region": "Karnataka",
+  "cookTime": 20,
+  "difficulty": "Medium",
+  "ingredients": [
+   "Finger millet flour"
+  ],
+  "jain": true,
+  "noOnionGarlic": true,
+  "vrat": false,
+  "tiffin": false,
+  "kidFavourite": false,
+  "season": "All",
+  "heaviness": "Light",
+  "prepAhead": null,
+  "pairsWith": [
+   "Bassaru",
+   "sambar"
+  ]
+ },
+ {
+  "id": "home-style-chicken-curry",
+  "name": "Home-Style Chicken Curry",
+  "hindi": "घर वाली चिकन करी",
+  "slots": [
+   "Lunch",
+   "Dinner"
+  ],
+  "category": "Non-Veg Main",
+  "diet": "Non-Veg",
+  "region": "North",
+  "cookTime": 50,
+  "difficulty": "Medium",
+  "ingredients": [
+   "Chicken",
+   "onion",
+   "tomato",
+   "garam masala"
+  ],
+  "jain": false,
+  "noOnionGarlic": false,
+  "vrat": false,
+  "tiffin": false,
+  "kidFavourite": true,
+  "season": "All",
+  "heaviness": "Medium",
+  "prepAhead": null,
+  "pairsWith": [
+   "Rice",
+   "roti"
+  ]
+ },
+ {
+  "id": "butter-chicken",
+  "name": "Butter Chicken",
+  "hindi": "बटर चिकन",
+  "slots": [
+   "Dinner"
+  ],
+  "category": "Non-Veg Main",
+  "diet": "Non-Veg",
+  "region": "Punjab",
+  "cookTime": 60,
+  "difficulty": "Medium",
+  "ingredients": [
+   "Chicken",
+   "butter",
+   "tomato",
+   "cream"
+  ],
+  "jain": false,
+  "noOnionGarlic": false,
+  "vrat": false,
+  "tiffin": false,
+  "kidFavourite": true,
+  "season": "All",
+  "heaviness": "Heavy",
+  "prepAhead": "Marinate 2 hrs",
+  "pairsWith": [
+   "Naan",
+   "jeera rice"
+  ]
+ },
+ {
+  "id": "chicken-biryani",
+  "name": "Chicken Biryani",
+  "hindi": "चिकन बिरयानी",
+  "slots": [
+   "Lunch",
+   "Dinner"
+  ],
+  "category": "Non-Veg Main",
+  "diet": "Non-Veg",
+  "region": "Telangana",
+  "cookTime": 90,
+  "difficulty": "Hard",
+  "ingredients": [
+   "Chicken",
+   "basmati rice",
+   "curd",
+   "fried onion"
+  ],
+  "jain": false,
+  "noOnionGarlic": false,
+  "vrat": false,
+  "tiffin": false,
+  "kidFavourite": true,
+  "season": "All",
+  "heaviness": "Heavy",
+  "prepAhead": "Marinate 2+ hrs",
+  "pairsWith": [
+   "Raita",
+   "salan"
+  ]
+ },
+ {
+  "id": "chicken-tikka",
+  "name": "Chicken Tikka",
+  "hindi": "चिकन टिक्का",
+  "slots": [
+   "Snack",
+   "Dinner"
+  ],
+  "category": "Non-Veg Main",
+  "diet": "Non-Veg",
+  "region": "Punjab",
+  "cookTime": 45,
+  "difficulty": "Medium",
+  "ingredients": [
+   "Chicken",
+   "curd",
+   "spices"
+  ],
+  "jain": false,
+  "noOnionGarlic": false,
+  "vrat": false,
+  "tiffin": true,
+  "kidFavourite": true,
+  "season": "All",
+  "heaviness": "Medium",
+  "prepAhead": "Marinate 2+ hrs",
+  "pairsWith": [
+   "Mint chutney",
+   "onion"
+  ]
+ },
+ {
+  "id": "chicken-chettinad",
+  "name": "Chicken Chettinad",
+  "hindi": "चिकन चेट्टीनाड",
+  "slots": [
+   "Dinner"
+  ],
+  "category": "Non-Veg Main",
+  "diet": "Non-Veg",
+  "region": "Tamil Nadu",
+  "cookTime": 60,
+  "difficulty": "Medium",
+  "ingredients": [
+   "Chicken",
+   "black pepper",
+   "coconut",
+   "fennel"
+  ],
+  "jain": false,
+  "noOnionGarlic": false,
+  "vrat": false,
+  "tiffin": false,
+  "kidFavourite": false,
+  "season": "All",
+  "heaviness": "Medium",
+  "prepAhead": null,
+  "pairsWith": [
+   "Parotta",
+   "rice"
+  ]
+ },
+ {
+  "id": "kerala-chicken-stew",
+  "name": "Kerala Chicken Stew",
+  "hindi": "केरल चिकन स्टू",
+  "slots": [
+   "Breakfast",
+   "Dinner"
+  ],
+  "category": "Non-Veg Main",
+  "diet": "Non-Veg",
+  "region": "Kerala",
+  "cookTime": 45,
+  "difficulty": "Medium",
+  "ingredients": [
+   "Chicken",
+   "coconut milk",
+   "potato"
+  ],
+  "jain": false,
+  "noOnionGarlic": false,
+  "vrat": false,
+  "tiffin": false,
+  "kidFavourite": true,
+  "season": "All",
+  "heaviness": "Light",
+  "prepAhead": null,
+  "pairsWith": [
+   "Appam"
+  ]
+ },
+ {
+  "id": "chilli-chicken",
+  "name": "Chilli Chicken",
+  "hindi": "चिली चिकन",
+  "slots": [
+   "Dinner"
+  ],
+  "category": "Non-Veg Main",
+  "diet": "Non-Veg",
+  "region": "Indo-Chinese",
+  "cookTime": 40,
+  "difficulty": "Medium",
+  "ingredients": [
+   "Chicken",
+   "capsicum",
+   "soy sauce"
+  ],
+  "jain": false,
+  "noOnionGarlic": false,
+  "vrat": false,
+  "tiffin": false,
+  "kidFavourite": true,
+  "season": "All",
+  "heaviness": "Medium",
+  "prepAhead": null,
+  "pairsWith": [
+   "Fried rice",
+   "noodles"
+  ]
+ },
+ {
+  "id": "chicken-kathi-roll",
+  "name": "Chicken Kathi Roll",
+  "hindi": "चिकन काठी रोल",
+  "slots": [
+   "Dinner",
+   "Snack"
+  ],
+  "category": "Non-Veg Main",
+  "diet": "Non-Veg",
+  "region": "West Bengal",
+  "cookTime": 40,
+  "difficulty": "Medium",
+  "ingredients": [
+   "Chicken",
+   "paratha",
+   "onion",
+   "egg"
+  ],
+  "jain": false,
+  "noOnionGarlic": false,
+  "vrat": false,
+  "tiffin": true,
+  "kidFavourite": true,
+  "season": "All",
+  "heaviness": "Medium",
+  "prepAhead": "Marinate 1 hr",
+  "pairsWith": [
+   "Ketchup"
+  ]
+ },
+ {
+  "id": "chicken-soup",
+  "name": "Chicken Soup",
+  "hindi": "चिकन सूप",
+  "slots": [
+   "Dinner"
+  ],
+  "category": "Non-Veg Main",
+  "diet": "Non-Veg",
+  "region": "Pan-India",
+  "cookTime": 40,
+  "difficulty": "Easy",
+  "ingredients": [
+   "Chicken",
+   "vegetables",
+   "pepper"
+  ],
+  "jain": false,
+  "noOnionGarlic": false,
+  "vrat": false,
+  "tiffin": false,
+  "kidFavourite": true,
+  "season": "Winter",
+  "heaviness": "Light",
+  "prepAhead": null,
+  "pairsWith": [
+   "Toast"
+  ]
+ },
+ {
+  "id": "egg-curry",
+  "name": "Egg Curry",
+  "hindi": "अंडा करी",
+  "slots": [
+   "Lunch",
+   "Dinner"
+  ],
+  "category": "Non-Veg Main",
+  "diet": "Egg",
+  "region": "Pan-India",
+  "cookTime": 35,
+  "difficulty": "Easy",
+  "ingredients": [
+   "Boiled eggs",
+   "onion",
+   "tomato"
+  ],
+  "jain": false,
+  "noOnionGarlic": true,
+  "vrat": false,
+  "tiffin": false,
+  "kidFavourite": true,
+  "season": "All",
+  "heaviness": "Medium",
+  "prepAhead": null,
+  "pairsWith": [
+   "Rice",
+   "roti"
+  ]
+ },
+ {
+  "id": "mutton-rogan-josh",
+  "name": "Mutton Rogan Josh",
+  "hindi": "मटन रोगन जोश",
+  "slots": [
+   "Lunch"
+  ],
+  "category": "Non-Veg Main",
+  "diet": "Non-Veg",
+  "region": "Kashmir",
+  "cookTime": 90,
+  "difficulty": "Hard",
+  "ingredients": [
+   "Mutton",
+   "curd",
+   "Kashmiri chilli",
+   "fennel"
+  ],
+  "jain": false,
+  "noOnionGarlic": true,
+  "vrat": false,
+  "tiffin": false,
+  "kidFavourite": false,
+  "season": "Winter",
+  "heaviness": "Heavy",
+  "prepAhead": null,
+  "pairsWith": [
+   "Rice"
+  ]
+ },
+ {
+  "id": "keema-matar",
+  "name": "Keema Matar",
+  "hindi": "कीमा मटर",
+  "slots": [
+   "Lunch",
+   "Dinner"
+  ],
+  "category": "Non-Veg Main",
+  "diet": "Non-Veg",
+  "region": "North",
+  "cookTime": 45,
+  "difficulty": "Medium",
+  "ingredients": [
+   "Minced mutton",
+   "peas",
+   "onion"
+  ],
+  "jain": false,
+  "noOnionGarlic": false,
+  "vrat": false,
+  "tiffin": true,
+  "kidFavourite": true,
+  "season": "Winter",
+  "heaviness": "Medium",
+  "prepAhead": null,
+  "pairsWith": [
+   "Roti",
+   "pav"
+  ]
+ },
+ {
+  "id": "macher-jhol",
+  "name": "Macher Jhol",
+  "hindi": "माछेर झोल",
+  "slots": [
+   "Lunch"
+  ],
+  "category": "Non-Veg Main",
+  "diet": "Non-Veg",
+  "region": "West Bengal",
+  "cookTime": 40,
+  "difficulty": "Medium",
+  "ingredients": [
+   "Fish (rohu)",
+   "potato",
+   "mustard oil"
+  ],
+  "jain": false,
+  "noOnionGarlic": true,
+  "vrat": false,
+  "tiffin": false,
+  "kidFavourite": false,
+  "season": "All",
+  "heaviness": "Light",
+  "prepAhead": null,
+  "pairsWith": [
+   "Rice"
+  ]
+ },
+ {
+  "id": "goan-fish-curry",
+  "name": "Goan Fish Curry",
+  "hindi": "गोअन फिश करी",
+  "slots": [
+   "Lunch",
+   "Dinner"
+  ],
+  "category": "Non-Veg Main",
+  "diet": "Non-Veg",
+  "region": "Goa",
+  "cookTime": 40,
+  "difficulty": "Medium",
+  "ingredients": [
+   "Fish",
+   "coconut",
+   "kokum"
+  ],
+  "jain": false,
+  "noOnionGarlic": false,
+  "vrat": false,
+  "tiffin": false,
+  "kidFavourite": false,
+  "season": "All",
+  "heaviness": "Medium",
+  "prepAhead": null,
+  "pairsWith": [
+   "Rice"
+  ]
+ },
+ {
+  "id": "masala-fish-fry",
+  "name": "Masala Fish Fry",
+  "hindi": "मसाला फिश फ्राई",
+  "slots": [
+   "Lunch",
+   "Dinner"
+  ],
+  "category": "Non-Veg Main",
+  "diet": "Non-Veg",
+  "region": "Coastal",
+  "cookTime": 30,
+  "difficulty": "Easy",
+  "ingredients": [
+   "Fish",
+   "chilli",
+   "turmeric",
+   "rice flour"
+  ],
+  "jain": false,
+  "noOnionGarlic": true,
+  "vrat": false,
+  "tiffin": false,
+  "kidFavourite": true,
+  "season": "All",
+  "heaviness": "Medium",
+  "prepAhead": "Marinate 30 min",
+  "pairsWith": [
+   "Rice",
+   "dal"
+  ]
+ },
+ {
+  "id": "prawn-masala",
+  "name": "Prawn Masala",
+  "hindi": "झींगा मसाला",
+  "slots": [
+   "Dinner"
+  ],
+  "category": "Non-Veg Main",
+  "diet": "Non-Veg",
+  "region": "Coastal",
+  "cookTime": 35,
+  "difficulty": "Medium",
+  "ingredients": [
+   "Prawns",
+   "onion",
+   "tomato",
+   "coconut"
+  ],
+  "jain": false,
+  "noOnionGarlic": false,
+  "vrat": false,
+  "tiffin": false,
+  "kidFavourite": false,
+  "season": "All",
+  "heaviness": "Medium",
+  "prepAhead": null,
+  "pairsWith": [
+   "Rice",
+   "neer dosa"
+  ]
+ },
+ {
+  "id": "samosa",
+  "name": "Samosa",
+  "hindi": "समोसा",
+  "slots": [
+   "Snack"
+  ],
+  "category": "Snack",
+  "diet": "Veg",
+  "region": "North",
+  "cookTime": 60,
+  "difficulty": "Hard",
+  "ingredients": [
+   "Maida",
+   "potato",
+   "peas"
+  ],
+  "jain": false,
+  "noOnionGarlic": true,
+  "vrat": false,
+  "tiffin": false,
+  "kidFavourite": true,
+  "season": "Monsoon",
+  "heaviness": "Heavy",
+  "prepAhead": "Boil potatoes",
+  "pairsWith": [
+   "Tamarind chutney",
+   "tea"
+  ]
+ },
+ {
+  "id": "onion-pakora",
+  "name": "Onion Pakora",
+  "hindi": "प्याज़ के पकौड़े",
+  "slots": [
+   "Snack"
+  ],
+  "category": "Snack",
+  "diet": "Veg",
+  "region": "Pan-India",
+  "cookTime": 25,
+  "difficulty": "Easy",
+  "ingredients": [
+   "Onion",
+   "gram flour"
+  ],
+  "jain": false,
+  "noOnionGarlic": false,
+  "vrat": false,
+  "tiffin": false,
+  "kidFavourite": true,
+  "season": "Monsoon",
+  "heaviness": "Heavy",
+  "prepAhead": null,
+  "pairsWith": [
+   "Tea",
+   "green chutney"
+  ]
+ },
+ {
+  "id": "aloo-tikki-chaat",
+  "name": "Aloo Tikki Chaat",
+  "hindi": "आलू टिक्की चाट",
+  "slots": [
+   "Snack"
+  ],
+  "category": "Snack",
+  "diet": "Veg",
+  "region": "North",
+  "cookTime": 40,
+  "difficulty": "Medium",
+  "ingredients": [
+   "Potato",
+   "curd",
+   "chutneys"
+  ],
+  "jain": false,
+  "noOnionGarlic": true,
+  "vrat": false,
+  "tiffin": false,
+  "kidFavourite": true,
+  "season": "All",
+  "heaviness": "Medium",
+  "prepAhead": "Boil potatoes",
+  "pairsWith": []
+ },
+ {
+  "id": "bhel-puri",
+  "name": "Bhel Puri",
+  "hindi": "भेल पूरी",
+  "slots": [
+   "Snack"
+  ],
+  "category": "Snack",
+  "diet": "Veg",
+  "region": "Maharashtra",
+  "cookTime": 15,
+  "difficulty": "Easy",
+  "ingredients": [
+   "Puffed rice",
+   "sev",
+   "onion",
+   "chutneys"
+  ],
+  "jain": false,
+  "noOnionGarlic": true,
+  "vrat": false,
+  "tiffin": false,
+  "kidFavourite": true,
+  "season": "Summer",
+  "heaviness": "Light",
+  "prepAhead": null,
+  "pairsWith": []
+ },
+ {
+  "id": "vada-pav",
+  "name": "Vada Pav",
+  "hindi": "वड़ा पाव",
+  "slots": [
+   "Snack"
+  ],
+  "category": "Snack",
+  "diet": "Veg",
+  "region": "Maharashtra",
+  "cookTime": 45,
+  "difficulty": "Medium",
+  "ingredients": [
+   "Potato",
+   "gram flour",
+   "pav"
+  ],
+  "jain": false,
+  "noOnionGarlic": true,
+  "vrat": false,
+  "tiffin": false,
+  "kidFavourite": true,
+  "season": "Monsoon",
+  "heaviness": "Heavy",
+  "prepAhead": "Boil potatoes",
+  "pairsWith": [
+   "Dry garlic chutney"
+  ]
+ },
+ {
+  "id": "sabudana-vada",
+  "name": "Sabudana Vada",
+  "hindi": "साबूदाना वड़ा",
+  "slots": [
+   "Snack"
+  ],
+  "category": "Snack",
+  "diet": "Veg",
+  "region": "Maharashtra",
+  "cookTime": 40,
+  "difficulty": "Medium",
+  "ingredients": [
+   "Sago",
+   "potato",
+   "peanuts"
+  ],
+  "jain": false,
+  "noOnionGarlic": true,
+  "vrat": true,
+  "tiffin": false,
+  "kidFavourite": true,
+  "season": "All",
+  "heaviness": "Heavy",
+  "prepAhead": "Soak sabudana overnight",
+  "pairsWith": [
+   "Curd",
+   "green chutney"
+  ]
+ },
+ {
+  "id": "roasted-makhana",
+  "name": "Roasted Makhana",
+  "hindi": "भुना मखाना",
+  "slots": [
+   "Snack"
+  ],
+  "category": "Snack",
+  "diet": "Veg",
+  "region": "Bihar",
+  "cookTime": 10,
+  "difficulty": "Easy",
+  "ingredients": [
+   "Fox nuts",
+   "ghee"
+  ],
+  "jain": true,
+  "noOnionGarlic": true,
+  "vrat": true,
+  "tiffin": true,
+  "kidFavourite": true,
+  "season": "All",
+  "heaviness": "Light",
+  "prepAhead": null,
+  "pairsWith": [
+   "Tea"
+  ]
+ },
+ {
+  "id": "masala-corn",
+  "name": "Masala Corn",
+  "hindi": "मसाला कॉर्न",
+  "slots": [
+   "Snack"
+  ],
+  "category": "Snack",
+  "diet": "Veg",
+  "region": "Pan-India",
+  "cookTime": 10,
+  "difficulty": "Easy",
+  "ingredients": [
+   "Sweet corn",
+   "butter",
+   "lemon"
+  ],
+  "jain": true,
+  "noOnionGarlic": true,
+  "vrat": false,
+  "tiffin": true,
+  "kidFavourite": true,
+  "season": "Monsoon",
+  "heaviness": "Light",
+  "prepAhead": null,
+  "pairsWith": []
+ },
+ {
+  "id": "khandvi",
+  "name": "Khandvi",
+  "hindi": "खांडवी",
+  "slots": [
+   "Snack"
+  ],
+  "category": "Snack",
+  "diet": "Veg",
+  "region": "Gujarat",
+  "cookTime": 30,
+  "difficulty": "Hard",
+  "ingredients": [
+   "Gram flour",
+   "buttermilk",
+   "coconut"
+  ],
+  "jain": true,
+  "noOnionGarlic": true,
+  "vrat": false,
+  "tiffin": true,
+  "kidFavourite": true,
+  "season": "All",
+  "heaviness": "Light",
+  "prepAhead": null,
+  "pairsWith": [
+   "Green chutney"
+  ]
+ },
+ {
+  "id": "hara-bhara-kabab",
+  "name": "Hara Bhara Kabab",
+  "hindi": "हरा भरा कबाब",
+  "slots": [
+   "Snack"
+  ],
+  "category": "Snack",
+  "diet": "Veg",
+  "region": "North",
+  "cookTime": 40,
+  "difficulty": "Medium",
+  "ingredients": [
+   "Spinach",
+   "peas",
+   "potato"
+  ],
+  "jain": false,
+  "noOnionGarlic": true,
+  "vrat": false,
+  "tiffin": true,
+  "kidFavourite": true,
+  "season": "Winter",
+  "heaviness": "Medium",
+  "prepAhead": "Boil potatoes",
+  "pairsWith": [
+   "Green chutney"
+  ]
+ },
+ {
+  "id": "veg-momos",
+  "name": "Veg Momos",
+  "hindi": "वेज मोमोज़",
+  "slots": [
+   "Snack",
+   "Dinner"
+  ],
+  "category": "Snack",
+  "diet": "Veg",
+  "region": "North-East",
+  "cookTime": 60,
+  "difficulty": "Hard",
+  "ingredients": [
+   "Maida",
+   "cabbage",
+   "carrot"
+  ],
+  "jain": false,
+  "noOnionGarlic": false,
+  "vrat": false,
+  "tiffin": false,
+  "kidFavourite": true,
+  "season": "Winter",
+  "heaviness": "Medium",
+  "prepAhead": null,
+  "pairsWith": [
+   "Red chutney"
+  ]
+ },
+ {
+  "id": "sooji-halwa",
+  "name": "Sooji Halwa",
+  "hindi": "सूजी का हलवा",
+  "slots": [
+   "Dessert"
+  ],
+  "category": "Sweet",
+  "diet": "Veg",
+  "region": "North",
+  "cookTime": 20,
+  "difficulty": "Easy",
+  "ingredients": [
+   "Semolina",
+   "ghee",
+   "sugar"
+  ],
+  "jain": true,
+  "noOnionGarlic": true,
+  "vrat": false,
+  "tiffin": false,
+  "kidFavourite": true,
+  "season": "All",
+  "heaviness": "Heavy",
+  "prepAhead": null,
+  "pairsWith": [
+   "Puri",
+   "chana"
+  ]
+ },
+ {
+  "id": "gajar-halwa",
+  "name": "Gajar Halwa",
+  "hindi": "गाजर का हलवा",
+  "slots": [
+   "Dessert"
+  ],
+  "category": "Sweet",
+  "diet": "Veg",
+  "region": "Punjab",
+  "cookTime": 60,
+  "difficulty": "Medium",
+  "ingredients": [
+   "Carrot",
+   "milk",
+   "ghee",
+   "sugar"
+  ],
+  "jain": false,
+  "noOnionGarlic": true,
+  "vrat": false,
+  "tiffin": false,
+  "kidFavourite": true,
+  "season": "Winter",
+  "heaviness": "Heavy",
+  "prepAhead": null,
+  "pairsWith": []
+ },
+ {
+  "id": "rice-kheer",
+  "name": "Rice Kheer",
+  "hindi": "चावल की खीर",
+  "slots": [
+   "Dessert"
+  ],
+  "category": "Sweet",
+  "diet": "Veg",
+  "region": "Pan-India",
+  "cookTime": 45,
+  "difficulty": "Easy",
+  "ingredients": [
+   "Rice",
+   "milk",
+   "sugar",
+   "cardamom"
+  ],
+  "jain": true,
+  "noOnionGarlic": true,
+  "vrat": false,
+  "tiffin": false,
+  "kidFavourite": true,
+  "season": "All",
+  "heaviness": "Medium",
+  "prepAhead": null,
+  "pairsWith": []
+ },
+ {
+  "id": "makhana-kheer",
+  "name": "Makhana Kheer",
+  "hindi": "मखाने की खीर",
+  "slots": [
+   "Dessert"
+  ],
+  "category": "Sweet",
+  "diet": "Veg",
+  "region": "Bihar",
+  "cookTime": 30,
+  "difficulty": "Easy",
+  "ingredients": [
+   "Fox nuts",
+   "milk",
+   "sugar"
+  ],
+  "jain": true,
+  "noOnionGarlic": true,
+  "vrat": true,
+  "tiffin": false,
+  "kidFavourite": true,
+  "season": "All",
+  "heaviness": "Medium",
+  "prepAhead": null,
+  "pairsWith": []
+ },
+ {
+  "id": "semiya-payasam",
+  "name": "Semiya Payasam",
+  "hindi": "सेवइयां पायसम",
+  "slots": [
+   "Dessert"
+  ],
+  "category": "Sweet",
+  "diet": "Veg",
+  "region": "South",
+  "cookTime": 25,
+  "difficulty": "Easy",
+  "ingredients": [
+   "Vermicelli",
+   "milk",
+   "cashew"
+  ],
+  "jain": true,
+  "noOnionGarlic": true,
+  "vrat": false,
+  "tiffin": false,
+  "kidFavourite": true,
+  "season": "All",
+  "heaviness": "Medium",
+  "prepAhead": null,
+  "pairsWith": []
+ },
+ {
+  "id": "besan-ladoo",
+  "name": "Besan Ladoo",
+  "hindi": "बेसन के लड्डू",
+  "slots": [
+   "Dessert"
+  ],
+  "category": "Sweet",
+  "diet": "Veg",
+  "region": "North",
+  "cookTime": 40,
+  "difficulty": "Medium",
+  "ingredients": [
+   "Gram flour",
+   "ghee",
+   "sugar"
+  ],
+  "jain": true,
+  "noOnionGarlic": true,
+  "vrat": false,
+  "tiffin": true,
+  "kidFavourite": true,
+  "season": "All",
+  "heaviness": "Heavy",
+  "prepAhead": null,
+  "pairsWith": []
+ },
+ {
+  "id": "shrikhand",
+  "name": "Shrikhand",
+  "hindi": "श्रीखंड",
+  "slots": [
+   "Dessert"
+  ],
+  "category": "Sweet",
+  "diet": "Veg",
+  "region": "Gujarat",
+  "cookTime": 15,
+  "difficulty": "Easy",
+  "ingredients": [
+   "Hung curd",
+   "sugar",
+   "saffron"
+  ],
+  "jain": true,
+  "noOnionGarlic": true,
+  "vrat": false,
+  "tiffin": false,
+  "kidFavourite": true,
+  "season": "Summer",
+  "heaviness": "Medium",
+  "prepAhead": "Hang curd overnight",
+  "pairsWith": [
+   "Puri"
+  ]
+ },
+ {
+  "id": "moong-dal-halwa",
+  "name": "Moong Dal Halwa",
+  "hindi": "मूंग दाल हलवा",
+  "slots": [
+   "Dessert"
+  ],
+  "category": "Sweet",
+  "diet": "Veg",
+  "region": "Rajasthan",
+  "cookTime": 60,
+  "difficulty": "Hard",
+  "ingredients": [
+   "Moong dal",
+   "ghee",
+   "sugar"
+  ],
+  "jain": true,
+  "noOnionGarlic": true,
+  "vrat": false,
+  "tiffin": false,
+  "kidFavourite": true,
+  "season": "Winter",
+  "heaviness": "Heavy",
+  "prepAhead": "Soak dal 4 hrs",
+  "pairsWith": []
+ },
+ {
+  "id": "singhara-atta-halwa",
+  "name": "Singhara Atta Halwa",
+  "hindi": "सिंघाड़े के आटे का हलवा",
+  "slots": [
+   "Dessert"
+  ],
+  "category": "Sweet",
+  "diet": "Veg",
+  "region": "North",
+  "cookTime": 20,
+  "difficulty": "Easy",
+  "ingredients": [
+   "Water chestnut flour",
+   "ghee",
+   "sugar"
+  ],
+  "jain": true,
+  "noOnionGarlic": true,
+  "vrat": true,
+  "tiffin": false,
+  "kidFavourite": true,
+  "season": "All",
+  "heaviness": "Heavy",
+  "prepAhead": null,
+  "pairsWith": []
+ },
+ {
+  "id": "gulab-jamun",
+  "name": "Gulab Jamun",
+  "hindi": "गुलाब जामुन",
+  "slots": [
+   "Dessert"
+  ],
+  "category": "Sweet",
+  "diet": "Veg",
+  "region": "Pan-India",
+  "cookTime": 60,
+  "difficulty": "Medium",
+  "ingredients": [
+   "Khoya",
+   "maida",
+   "sugar syrup"
+  ],
+  "jain": true,
+  "noOnionGarlic": true,
+  "vrat": false,
+  "tiffin": false,
+  "kidFavourite": true,
+  "season": "All",
+  "heaviness": "Heavy",
+  "prepAhead": null,
+  "pairsWith": []
+ },
+ {
+  "id": "boondi-raita",
+  "name": "Boondi Raita",
+  "hindi": "बूंदी रायता",
+  "slots": [
+   "Side"
+  ],
+  "category": "Side",
+  "diet": "Veg",
+  "region": "North",
+  "cookTime": 10,
+  "difficulty": "Easy",
+  "ingredients": [
+   "Curd",
+   "boondi"
+  ],
+  "jain": true,
+  "noOnionGarlic": true,
+  "vrat": false,
+  "tiffin": false,
+  "kidFavourite": true,
+  "season": "All",
+  "heaviness": "Light",
+  "prepAhead": null,
+  "pairsWith": [
+   "Pulao",
+   "biryani"
+  ]
+ },
+ {
+  "id": "cucumber-raita",
+  "name": "Cucumber Raita",
+  "hindi": "खीरे का रायता",
+  "slots": [
+   "Side"
+  ],
+  "category": "Side",
+  "diet": "Veg",
+  "region": "Pan-India",
+  "cookTime": 10,
+  "difficulty": "Easy",
+  "ingredients": [
+   "Curd",
+   "cucumber"
+  ],
+  "jain": true,
+  "noOnionGarlic": true,
+  "vrat": false,
+  "tiffin": false,
+  "kidFavourite": true,
+  "season": "Summer",
+  "heaviness": "Light",
+  "prepAhead": null,
+  "pairsWith": [
+   "Any meal"
+  ]
+ },
+ {
+  "id": "kachumber-salad",
+  "name": "Kachumber Salad",
+  "hindi": "कचुंबर सलाद",
+  "slots": [
+   "Side"
+  ],
+  "category": "Side",
+  "diet": "Veg",
+  "region": "Pan-India",
+  "cookTime": 10,
+  "difficulty": "Easy",
+  "ingredients": [
+   "Cucumber",
+   "tomato",
+   "onion",
+   "lemon"
+  ],
+  "jain": true,
+  "noOnionGarlic": true,
+  "vrat": false,
+  "tiffin": true,
+  "kidFavourite": false,
+  "season": "All",
+  "heaviness": "Light",
+  "prepAhead": null,
+  "pairsWith": [
+   "Any meal"
+  ]
+ },
+ {
+  "id": "chaas-masala-buttermilk",
+  "name": "Chaas (Masala Buttermilk)",
+  "hindi": "छाछ",
+  "slots": [
+   "Side"
+  ],
+  "category": "Side",
+  "diet": "Veg",
+  "region": "Gujarat",
+  "cookTime": 5,
+  "difficulty": "Easy",
+  "ingredients": [
+   "Curd",
+   "roasted cumin",
+   "mint"
+  ],
+  "jain": true,
+  "noOnionGarlic": true,
+  "vrat": false,
+  "tiffin": false,
+  "kidFavourite": false,
+  "season": "Summer",
+  "heaviness": "Light",
+  "prepAhead": null,
+  "pairsWith": [
+   "Lunch"
+  ]
+ }
+]

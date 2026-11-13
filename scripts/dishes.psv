@@ -1,0 +1,154 @@
+Dish|Meal Slot|Category|Diet|Region|Cook Time (min)|Difficulty|Key Ingredients|Jain OK|No Onion-Garlic OK|Vrat OK|Tiffin OK|Kid Favourite|Best Season|Heaviness|Prep Ahead|Pairs With|Hindi
+Poha|Breakfast|Breakfast|Veg|Maharashtra|20|Easy|Flattened rice, onion, peanuts, curry leaves|Y|Y|N|Y|Y|All|Light||Tea, sev|पोहा
+Upma|Breakfast|Breakfast|Veg|South|20|Easy|Semolina, mixed veg, curry leaves|Y|Y|N|Y|Y|All|Light||Coconut chutney|उपमा
+Aloo Paratha|Breakfast / Lunch|Breakfast|Veg|Punjab|40|Medium|Wheat flour, potato, green chilli|N|Y|N|Y|Y|Winter|Heavy|Boil potatoes|Curd, pickle, butter|आलू पराठा
+Gobi Paratha|Breakfast / Lunch|Breakfast|Veg|Punjab|40|Medium|Wheat flour, cauliflower|N|Y|N|Y|Y|Winter|Heavy||Curd, pickle|गोभी पराठा
+Paneer Paratha|Breakfast / Lunch|Breakfast|Veg|Punjab|35|Medium|Wheat flour, paneer|Y|Y|N|Y|Y|All|Medium||Curd, pickle|पनीर पराठा
+Methi Thepla|Breakfast / Lunch|Breakfast|Veg|Gujarat|30|Easy|Wheat flour, fenugreek leaves, curd|Y|Y|N|Y|N|Winter|Medium||Chhunda, curd|मेथी थेपला
+Idli Sambar|Breakfast|Breakfast|Veg|South|30|Medium|Rice-urad batter, toor dal, vegetables|Y|Y|N|Y|Y|All|Light|Soak & grind batter, ferment overnight|Coconut chutney|इडली सांभर
+Masala Dosa|Breakfast / Dinner|Breakfast|Veg|Karnataka|40|Medium|Dosa batter, potato, onion|N|Y|N|N|Y|All|Medium|Ferment batter overnight|Sambar, chutney|मसाला डोसा
+Uttapam|Breakfast / Dinner|Breakfast|Veg|South|25|Easy|Dosa batter, onion, tomato, capsicum|Y|Y|N|Y|Y|All|Medium|Ferment batter overnight|Coconut chutney|उत्तपम
+Rava Dosa|Breakfast / Dinner|Breakfast|Veg|South|25|Medium|Semolina, rice flour, curd|Y|Y|N|N|Y|All|Medium|Rest batter 20 min|Sambar, chutney|रवा डोसा
+Medu Vada|Breakfast|Breakfast|Veg|South|40|Medium|Urad dal, curry leaves, pepper|Y|Y|N|N|Y|All|Medium|Soak urad dal 4 hrs|Sambar, chutney|मेदु वड़ा
+Ven Pongal|Breakfast|Breakfast|Veg|Tamil Nadu|30|Easy|Rice, moong dal, pepper, ghee|Y|Y|N|N|Y|Winter|Medium||Sambar, coconut chutney|वेन पोंगल
+Pesarattu|Breakfast|Breakfast|Veg|Andhra Pradesh|25|Easy|Green moong, ginger, green chilli|Y|Y|N|Y|N|All|Light|Soak moong 6 hrs|Ginger chutney, upma|पेसरट्टू
+Neer Dosa|Breakfast / Dinner|Breakfast|Veg|Karnataka|25|Medium|Rice, coconut|Y|Y|N|N|Y|All|Light|Soak rice 4 hrs|Coconut chutney, chicken curry|नीर डोसा
+Akki Roti|Breakfast|Breakfast|Veg|Karnataka|30|Medium|Rice flour, onion, dill, coconut|Y|Y|N|Y|N|All|Medium||Coconut chutney|अक्की रोटी
+Appam with Veg Stew|Breakfast / Dinner|Breakfast|Veg|Kerala|40|Medium|Rice, coconut, potato, vegetables|N|Y|N|N|Y|All|Medium|Ferment batter overnight||अप्पम और वेज स्टू
+Puttu Kadala Curry|Breakfast|Breakfast|Veg|Kerala|40|Medium|Rice flour, coconut, black chana|Y|Y|N|N|N|All|Medium|Soak kala chana overnight|Banana, papad|पुट्टू कडला करी
+Besan Chilla|Breakfast / Dinner|Breakfast|Veg|North|20|Easy|Gram flour, onion, tomato, coriander|Y|Y|N|Y|Y|All|Light||Green chutney|बेसन चीला
+Moong Dal Chilla|Breakfast|Breakfast|Veg|North|25|Easy|Yellow moong dal, ginger, coriander|Y|Y|N|Y|Y|All|Light|Soak dal 4 hrs|Green chutney, paneer|मूंग दाल चीला
+Vegetable Dalia|Breakfast / Dinner|Breakfast|Veg|North|25|Easy|Broken wheat, mixed vegetables|Y|Y|N|Y|N|All|Light||Curd|सब्ज़ी दलिया
+Masala Oats|Breakfast|Breakfast|Veg|Modern|15|Easy|Oats, onion, tomato, peas|Y|Y|N|Y|N|All|Light|||मसाला ओट्स
+Puri Bhaji|Breakfast / Lunch|Breakfast|Veg|North|40|Medium|Wheat flour, potato, tomato|N|Y|N|Y|Y|All|Heavy|Boil potatoes|Pickle, halwa|पूरी भाजी
+Chole Bhature|Breakfast / Lunch|Breakfast|Veg|Punjab|60|Hard|Chickpeas, maida, curd|N|Y|N|N|Y|All|Heavy|Soak chickpeas overnight; rest dough 2 hrs|Onion salad, lassi|छोले भटूरे
+Misal Pav|Breakfast / Lunch|Breakfast|Veg|Maharashtra|45|Medium|Sprouted moth beans, farsan, pav|N|N|N|N|N|All|Heavy|Sprout moth beans 1-2 days|Onion, lemon|मिसल पाव
+Luchi with Cholar Dal|Breakfast / Lunch|Breakfast|Veg|West Bengal|45|Medium|Maida, chana dal, coconut|Y|Y|N|N|Y|Winter|Heavy|Soak chana dal 2 hrs||लूची और छोलार दाल
+Thalipeeth|Breakfast|Breakfast|Veg|Maharashtra|30|Medium|Multigrain flour, onion, coriander|Y|Y|N|Y|N|All|Medium||Curd, white butter|थालीपीठ
+Dal Pakwan|Breakfast|Breakfast|Veg|Sindhi|45|Medium|Chana dal, maida|Y|Y|N|N|N|All|Heavy|Soak chana dal 2 hrs|Imli chutney|दाल पकवान
+Khaman Dhokla|Breakfast / Snack|Breakfast|Veg|Gujarat|35|Medium|Gram flour, curd, mustard seeds|Y|Y|N|Y|Y|All|Light||Green chutney|खमण ढोकला
+Handvo|Breakfast / Snack|Breakfast|Veg|Gujarat|60|Medium|Rice-dal batter, bottle gourd, sesame|Y|Y|N|Y|N|All|Medium|Soak & ferment batter overnight|Green chutney|हांडवो
+Vegetable Sandwich|Breakfast / Snack|Breakfast|Veg|Maharashtra|15|Easy|Bread, cucumber, tomato, potato, chutney|Y|Y|N|Y|Y|All|Light|Boil potatoes|Ketchup|वेज सैंडविच
+Bread Omelette|Breakfast|Breakfast|Egg|Pan-India|15|Easy|Eggs, bread, onion, green chilli|N|Y|N|Y|Y|All|Light||Ketchup, tea|ब्रेड ऑमलेट
+Egg Bhurji|Breakfast / Dinner|Breakfast|Egg|Maharashtra|15|Easy|Eggs, onion, tomato|N|Y|N|Y|Y|All|Light||Pav, roti|अंडा भुर्जी
+Sabudana Khichdi|Breakfast|Breakfast|Veg|Maharashtra|25|Easy|Sago, peanuts, potato|N|Y|Y|N|Y|All|Medium|Soak sabudana overnight|Curd|साबूदाना खिचड़ी
+Kuttu Puri with Aloo|Breakfast / Lunch|Breakfast|Veg|North|30|Medium|Buckwheat flour, potato|N|Y|Y|N|N|All|Heavy|Boil potatoes|Curd|कुट्टू की पूरी और आलू
+Rajgira Paratha|Breakfast / Lunch|Breakfast|Veg|North|30|Medium|Amaranth flour, potato|N|Y|Y|Y|N|All|Medium|Boil potatoes|Curd|राजगिरा पराठा
+Sprouts Chaat|Breakfast / Snack|Snack|Veg|Pan-India|10|Easy|Sprouted moong, onion, tomato, lemon|N|Y|N|Y|N|All|Light|Sprout moong 1-2 days||अंकुरित मूंग चाट
+Dal Tadka|Lunch / Dinner|Dal / Legume|Veg|North|30|Easy|Toor dal, ghee, cumin, garlic|Y|Y|N|N|Y|All|Light||Jeera rice, roti|दाल तड़का
+Moong Dal|Lunch / Dinner|Dal / Legume|Veg|Pan-India|25|Easy|Yellow moong dal, turmeric, cumin|Y|Y|N|N|Y|All|Light||Rice, roti|मूंग दाल
+Masoor Dal|Lunch / Dinner|Dal / Legume|Veg|West Bengal|25|Easy|Red lentils, tomato, cumin|Y|Y|N|N|Y|All|Light||Rice|मसूर दाल
+Dal Makhani|Lunch / Dinner|Dal / Legume|Veg|Punjab|75|Medium|Whole urad, rajma, butter, cream|Y|Y|N|N|Y|Winter|Heavy|Soak overnight|Naan, jeera rice|दाल मखनी
+Rajma|Lunch|Dal / Legume|Veg|Punjab|60|Medium|Kidney beans, onion, tomato|Y|Y|N|Y|Y|All|Medium|Soak overnight|Steamed rice|राजमा
+Chole (Chana Masala)|Lunch / Dinner|Dal / Legume|Veg|Punjab|60|Medium|Chickpeas, onion, tomato, chole masala|Y|Y|N|Y|Y|All|Medium|Soak overnight|Rice, kulcha, puri|छोले
+Kala Chana Curry|Lunch / Dinner|Dal / Legume|Veg|North|50|Easy|Black chickpeas, onion, tomato|Y|Y|N|Y|N|All|Medium|Soak overnight|Rice, roti|काले चने
+Lobia Curry|Lunch|Dal / Legume|Veg|North|45|Easy|Black-eyed beans, tomato|Y|Y|N|Y|N|All|Medium|Soak 6 hrs|Rice|लोबिया
+Chana Dal Lauki|Lunch / Dinner|Dal / Legume|Veg|North|35|Easy|Chana dal, bottle gourd|Y|Y|N|N|N|Summer|Light|Soak dal 1 hr|Roti|चना दाल लौकी
+Sambar|Lunch / Dinner|Dal / Legume|Veg|South|40|Medium|Toor dal, tamarind, drumstick, sambar powder|Y|Y|N|N|Y|All|Medium||Rice, idli, dosa|सांभर
+Rasam|Lunch / Dinner|Dal / Legume|Veg|South|20|Easy|Tamarind, tomato, pepper, toor dal water|Y|Y|N|N|N|Monsoon|Light||Rice, poriyal|रसम
+Gujarati Dal|Lunch|Dal / Legume|Veg|Gujarat|30|Easy|Toor dal, jaggery, kokum, peanuts|Y|Y|N|N|Y|All|Light||Rice, rotli|गुजराती दाल
+Kadhi Pakora|Lunch|Dal / Legume|Veg|Punjab|45|Medium|Curd, gram flour, onion pakoras|Y|Y|N|N|Y|All|Medium||Steamed rice|कढ़ी पकौड़ा
+Gujarati Kadhi|Lunch|Dal / Legume|Veg|Gujarat|20|Easy|Curd, gram flour, ginger|Y|Y|N|N|N|All|Light||Khichdi, rice|गुजराती कढ़ी
+Dalma|Lunch|Dal / Legume|Veg|Odisha|40|Easy|Toor dal, pumpkin, raw banana, papaya|N|Y|N|N|N|All|Light||Rice|डालमा
+Dal Dhokli|Lunch / Dinner|One-Pot Meal|Veg|Gujarat|45|Medium|Toor dal, wheat flour, peanuts|Y|Y|N|N|Y|Winter|Medium||Papad|दाल ढोकली
+Dal Baati Churma|Lunch|Combo Meal|Veg|Rajasthan|90|Hard|Wheat flour, mixed dal, ghee, jaggery|Y|Y|N|N|Y|Winter|Heavy|||दाल बाटी चूरमा
+Litti Chokha|Lunch / Dinner|Combo Meal|Veg|Bihar|60|Medium|Wheat flour, sattu, brinjal, potato|N|N|N|N|N|Winter|Heavy||Ghee|लिट्टी चोखा
+Pav Bhaji|Dinner|Combo Meal|Veg|Maharashtra|45|Medium|Potato, mixed vegetables, butter, pav|N|Y|N|N|Y|All|Heavy||Onion, lemon|पाव भाजी
+Aloo Gobi|Lunch / Dinner|Sabzi (Dry)|Veg|Punjab|30|Easy|Potato, cauliflower|N|Y|N|Y|Y|Winter|Medium||Roti, dal|आलू गोभी
+Bhindi Masala|Lunch / Dinner|Sabzi (Dry)|Veg|North|30|Easy|Okra, onion, spices|Y|Y|N|Y|Y|Summer|Light||Roti, dal|भिंडी मसाला
+Jeera Aloo|Lunch / Dinner|Sabzi (Dry)|Veg|North|20|Easy|Potato, cumin|N|Y|Y|Y|Y|All|Medium|Boil potatoes|Puri, roti, dal|जीरा आलू
+Aloo Methi|Lunch / Dinner|Sabzi (Dry)|Veg|North|25|Easy|Potato, fenugreek leaves|N|Y|N|Y|N|Winter|Medium||Roti, dal|आलू मेथी
+Gajar Matar|Lunch / Dinner|Sabzi (Dry)|Veg|North|25|Easy|Carrot, green peas|N|Y|N|Y|Y|Winter|Light||Roti, dal|गाजर मटर
+Cabbage Matar|Lunch / Dinner|Sabzi (Dry)|Veg|North|25|Easy|Cabbage, green peas|N|Y|N|Y|Y|Winter|Light||Roti, dal|पत्ता गोभी मटर
+Lauki Sabzi|Lunch / Dinner|Sabzi (Dry)|Veg|North|25|Easy|Bottle gourd, tomato|Y|Y|N|N|N|Summer|Light||Roti|लौकी की सब्ज़ी
+Tinda Masala|Lunch / Dinner|Sabzi (Dry)|Veg|North|30|Easy|Apple gourd, tomato|Y|Y|N|N|N|Summer|Light||Roti, dal|टिंडा मसाला
+Turai Sabzi|Lunch / Dinner|Sabzi (Dry)|Veg|North|25|Easy|Ridge gourd, tomato|Y|Y|N|N|N|Summer|Light||Roti, dal|तोरई की सब्ज़ी
+Karela Fry|Lunch|Sabzi (Dry)|Veg|Pan-India|35|Medium|Bitter gourd, onion, amchur|Y|Y|N|Y|N|Summer|Light|Salt & rest karela 30 min|Roti, dal|करेला फ्राई
+Mix Veg|Lunch / Dinner|Sabzi (Dry)|Veg|North|35|Easy|Carrot, beans, peas, potato, cauliflower|N|Y|N|Y|Y|Winter|Medium||Roti, dal|मिक्स वेज
+Arbi Fry|Lunch|Sabzi (Dry)|Veg|North|35|Easy|Colocasia, ajwain|N|Y|N|Y|N|Monsoon|Medium|Boil arbi|Roti, dal|अरबी फ्राई
+Khatta Meetha Kaddu|Lunch / Dinner|Sabzi (Dry)|Veg|North|25|Easy|Pumpkin, jaggery, amchur|Y|Y|Y|N|Y|All|Light||Puri, kuttu puri|खट्टा मीठा कद्दू
+Beans Poriyal|Lunch|Sabzi (Dry)|Veg|Tamil Nadu|20|Easy|French beans, coconut, mustard seeds|Y|Y|N|Y|N|All|Light||Sambar rice|बीन्स पोरियल
+Cabbage Thoran|Lunch|Sabzi (Dry)|Veg|Kerala|20|Easy|Cabbage, coconut, curry leaves|N|Y|N|Y|N|All|Light||Rice, sambar|पत्ता गोभी थोरन
+Aloo Posto|Lunch|Sabzi (Dry)|Veg|West Bengal|30|Easy|Potato, poppy seeds|N|Y|N|Y|Y|All|Medium|Soak poppy seeds 1 hr|Rice, dal|आलू पोस्तो
+Baingan Bharta|Lunch / Dinner|Sabzi (Dry)|Veg|Punjab|40|Medium|Brinjal, onion, tomato|N|Y|N|N|N|Winter|Light||Roti, bajra roti|बैंगन भर्ता
+Undhiyu|Lunch|Sabzi (Dry)|Veg|Gujarat|90|Hard|Surti papdi, yam, sweet potato, methi muthia|N|Y|N|N|N|Winter|Heavy||Puri, shrikhand|उंधियू
+Sarson ka Saag|Lunch / Dinner|Sabzi (Gravy)|Veg|Punjab|90|Medium|Mustard greens, spinach, maize flour|Y|Y|N|N|N|Winter|Heavy||Makki ki roti, jaggery|सरसों का साग
+Sev Tamatar|Dinner|Sabzi (Gravy)|Veg|Gujarat|20|Easy|Tomato, sev|Y|Y|N|N|Y|All|Light||Roti, bhakri|सेव टमाटर
+Gatte ki Sabzi|Lunch / Dinner|Sabzi (Gravy)|Veg|Rajasthan|50|Medium|Gram flour dumplings, curd|Y|Y|N|N|N|All|Medium||Roti, rice|गट्टे की सब्ज़ी
+Avial|Lunch|Sabzi (Gravy)|Veg|Kerala|40|Medium|Mixed vegetables, coconut, curd|N|Y|N|N|N|All|Light||Rice, sambar|अवियल
+Shukto|Lunch|Sabzi (Gravy)|Veg|West Bengal|45|Medium|Bitter gourd, raw banana, drumstick, milk|N|Y|N|N|N|Summer|Light||Rice|शुक्तो
+Aloo Matar|Lunch / Dinner|Sabzi (Gravy)|Veg|North|30|Easy|Potato, peas, tomato|N|Y|N|Y|Y|Winter|Medium||Roti, puri|आलू मटर
+Dum Aloo|Dinner|Sabzi (Gravy)|Veg|Kashmir|45|Medium|Baby potatoes, curd, fennel|N|Y|N|N|Y|All|Medium|Boil potatoes|Roti, puri|दम आलू
+Lauki Kofta|Dinner|Sabzi (Gravy)|Veg|North|50|Medium|Bottle gourd, gram flour, tomato|Y|Y|N|N|Y|All|Medium||Roti, rice|लौकी कोफ्ता
+Malai Kofta|Dinner|Sabzi (Gravy)|Veg|North|60|Hard|Paneer, potato, cashew, cream|N|Y|N|N|Y|All|Heavy||Naan, jeera rice|मलाई कोफ्ता
+Mushroom Matar|Dinner|Sabzi (Gravy)|Veg|North|35|Easy|Mushroom, peas, onion, tomato|N|Y|N|N|Y|Winter|Medium||Roti|मशरूम मटर
+Soya Chunks Curry|Lunch / Dinner|Sabzi (Gravy)|Veg|North|35|Easy|Soya chunks, onion, tomato|Y|Y|N|Y|N|All|Medium||Rice, roti|सोया चंक्स करी
+Palak Paneer|Lunch / Dinner|Paneer|Veg|Punjab|40|Medium|Spinach, paneer, cream|Y|Y|N|N|Y|Winter|Medium||Roti, jeera rice|पालक पनीर
+Matar Paneer|Lunch / Dinner|Paneer|Veg|North|35|Medium|Paneer, peas, tomato|Y|Y|N|Y|Y|Winter|Medium||Roti, pulao|मटर पनीर
+Paneer Butter Masala|Dinner|Paneer|Veg|Punjab|40|Medium|Paneer, tomato, butter, cashew|Y|Y|N|N|Y|All|Heavy||Naan, jeera rice|पनीर बटर मसाला
+Kadai Paneer|Dinner|Paneer|Veg|Punjab|35|Medium|Paneer, capsicum, onion, kadai masala|Y|Y|N|Y|Y|All|Medium||Roti, naan|कढ़ाई पनीर
+Paneer Bhurji|Breakfast / Dinner|Paneer|Veg|Punjab|20|Easy|Paneer, onion, tomato|Y|Y|N|Y|Y|All|Medium||Roti, pav|पनीर भुर्जी
+Paneer Tikka|Snack / Dinner|Paneer|Veg|Punjab|40|Medium|Paneer, curd, capsicum|Y|Y|N|Y|Y|All|Medium|Marinate 1-2 hrs|Green chutney|पनीर टिक्का
+Jeera Rice|Lunch / Dinner|Rice|Veg|North|25|Easy|Basmati rice, cumin, ghee|Y|Y|N|N|Y|All|Light||Dal tadka, rajma|जीरा राइस
+Veg Pulao|Lunch / Dinner|Rice|Veg|North|30|Easy|Basmati rice, carrot, peas, beans|N|Y|N|Y|Y|All|Medium||Raita|वेज पुलाव
+Veg Biryani|Lunch / Dinner|Rice|Veg|Telangana|60|Hard|Basmati rice, vegetables, curd, saffron|N|Y|N|N|Y|All|Heavy||Raita, salan|वेज बिरयानी
+Moong Dal Khichdi|Dinner|One-Pot Meal|Veg|Pan-India|25|Easy|Rice, moong dal, ghee|Y|Y|N|N|Y|All|Light||Kadhi, papad, pickle|मूंग दाल खिचड़ी
+Bisi Bele Bath|Lunch / Dinner|One-Pot Meal|Veg|Karnataka|45|Medium|Rice, toor dal, vegetables, tamarind|N|Y|N|Y|Y|All|Medium||Boondi, papad|बिसी बेले भात
+Curd Rice|Lunch / Dinner|Rice|Veg|South|15|Easy|Cooked rice, curd, mustard seeds|Y|Y|N|Y|Y|Summer|Light||Pickle|दही चावल
+Lemon Rice|Lunch|Rice|Veg|South|20|Easy|Cooked rice, lemon, peanuts|Y|Y|N|Y|Y|All|Light|Use leftover rice|Papad|नींबू चावल
+Puliyogare (Tamarind Rice)|Lunch|Rice|Veg|Karnataka|30|Medium|Cooked rice, tamarind, peanuts|Y|Y|N|Y|N|All|Light|Use leftover rice|Papad, curd|इमली चावल
+Coconut Rice|Lunch|Rice|Veg|South|20|Easy|Cooked rice, grated coconut, cashew|Y|Y|N|Y|Y|All|Light|Use leftover rice|Papad|नारियल चावल
+Tomato Rice|Lunch|Rice|Veg|South|25|Easy|Rice, tomato, onion|Y|Y|N|Y|Y|All|Light||Raita|टमाटर चावल
+Veg Fried Rice|Dinner|Rice|Veg|Indo-Chinese|25|Easy|Rice, cabbage, capsicum, soy sauce|N|Y|N|Y|Y|All|Medium|Use leftover rice|Manchurian|वेज फ्राइड राइस
+Samak Rice Pulao|Lunch / Dinner|Rice|Veg|North|25|Easy|Barnyard millet, potato, peanuts|N|Y|Y|N|N|All|Light||Curd|समा के चावल का पुलाव
+Egg Fried Rice|Dinner|Rice|Egg|Indo-Chinese|20|Easy|Rice, eggs, spring onion, soy sauce|N|N|N|Y|Y|All|Medium|Use leftover rice|Chilli sauce|एग फ्राइड राइस
+Veg Hakka Noodles|Dinner|One-Pot Meal|Veg|Indo-Chinese|25|Easy|Noodles, cabbage, capsicum, soy sauce|N|Y|N|Y|Y|All|Medium||Manchurian|वेज हक्का नूडल्स
+Masala Pasta|Dinner|One-Pot Meal|Veg|Modern|25|Easy|Pasta, tomato, capsicum, cheese|Y|Y|N|Y|Y|All|Medium|||मसाला पास्ता
+Phulka / Roti|Lunch / Dinner|Bread|Veg|Pan-India|20|Easy|Whole wheat flour|Y|Y|N|Y|Y|All|Light||Any dal or sabzi|फुलका / रोटी
+Plain Paratha|Breakfast / Lunch / Dinner|Bread|Veg|North|25|Easy|Whole wheat flour, ghee|Y|Y|N|Y|Y|All|Medium||Any sabzi|सादा पराठा
+Missi Roti|Lunch / Dinner|Bread|Veg|Punjab|30|Easy|Gram flour, wheat flour, onion|Y|Y|N|Y|N|All|Medium||Dal, curd|मिस्सी रोटी
+Makki ki Roti|Lunch / Dinner|Bread|Veg|Punjab|30|Medium|Maize flour|Y|Y|N|N|N|Winter|Medium||Sarson ka saag|मक्की की रोटी
+Bajra Roti|Lunch / Dinner|Bread|Veg|Rajasthan|30|Medium|Pearl millet flour|Y|Y|N|N|N|Winter|Medium||Baingan bharta, garlic chutney|बाजरे की रोटी
+Jowar Bhakri|Lunch / Dinner|Bread|Veg|Maharashtra|30|Medium|Sorghum flour|Y|Y|N|Y|N|All|Light||Pitla, thecha|ज्वार भाकरी
+Ragi Mudde|Lunch|Bread|Veg|Karnataka|20|Medium|Finger millet flour|Y|Y|N|N|N|All|Light||Bassaru, sambar|रागी मुद्दे
+Home-Style Chicken Curry|Lunch / Dinner|Non-Veg Main|Non-Veg|North|50|Medium|Chicken, onion, tomato, garam masala|N|N|N|N|Y|All|Medium||Rice, roti|घर वाली चिकन करी
+Butter Chicken|Dinner|Non-Veg Main|Non-Veg|Punjab|60|Medium|Chicken, butter, tomato, cream|N|N|N|N|Y|All|Heavy|Marinate 2 hrs|Naan, jeera rice|बटर चिकन
+Chicken Biryani|Lunch / Dinner|Non-Veg Main|Non-Veg|Telangana|90|Hard|Chicken, basmati rice, curd, fried onion|N|N|N|N|Y|All|Heavy|Marinate 2+ hrs|Raita, salan|चिकन बिरयानी
+Chicken Tikka|Snack / Dinner|Non-Veg Main|Non-Veg|Punjab|45|Medium|Chicken, curd, spices|N|N|N|Y|Y|All|Medium|Marinate 2+ hrs|Mint chutney, onion|चिकन टिक्का
+Chicken Chettinad|Dinner|Non-Veg Main|Non-Veg|Tamil Nadu|60|Medium|Chicken, black pepper, coconut, fennel|N|N|N|N|N|All|Medium||Parotta, rice|चिकन चेट्टीनाड
+Kerala Chicken Stew|Breakfast / Dinner|Non-Veg Main|Non-Veg|Kerala|45|Medium|Chicken, coconut milk, potato|N|N|N|N|Y|All|Light||Appam|केरल चिकन स्टू
+Chilli Chicken|Dinner|Non-Veg Main|Non-Veg|Indo-Chinese|40|Medium|Chicken, capsicum, soy sauce|N|N|N|N|Y|All|Medium||Fried rice, noodles|चिली चिकन
+Chicken Kathi Roll|Dinner / Snack|Non-Veg Main|Non-Veg|West Bengal|40|Medium|Chicken, paratha, onion, egg|N|N|N|Y|Y|All|Medium|Marinate 1 hr|Ketchup|चिकन काठी रोल
+Chicken Soup|Dinner|Non-Veg Main|Non-Veg|Pan-India|40|Easy|Chicken, vegetables, pepper|N|N|N|N|Y|Winter|Light||Toast|चिकन सूप
+Egg Curry|Lunch / Dinner|Non-Veg Main|Egg|Pan-India|35|Easy|Boiled eggs, onion, tomato|N|Y|N|N|Y|All|Medium||Rice, roti|अंडा करी
+Mutton Rogan Josh|Lunch|Non-Veg Main|Non-Veg|Kashmir|90|Hard|Mutton, curd, Kashmiri chilli, fennel|N|Y|N|N|N|Winter|Heavy||Rice|मटन रोगन जोश
+Keema Matar|Lunch / Dinner|Non-Veg Main|Non-Veg|North|45|Medium|Minced mutton, peas, onion|N|N|N|Y|Y|Winter|Medium||Roti, pav|कीमा मटर
+Macher Jhol|Lunch|Non-Veg Main|Non-Veg|West Bengal|40|Medium|Fish (rohu), potato, mustard oil|N|Y|N|N|N|All|Light||Rice|माछेर झोल
+Goan Fish Curry|Lunch / Dinner|Non-Veg Main|Non-Veg|Goa|40|Medium|Fish, coconut, kokum|N|N|N|N|N|All|Medium||Rice|गोअन फिश करी
+Masala Fish Fry|Lunch / Dinner|Non-Veg Main|Non-Veg|Coastal|30|Easy|Fish, chilli, turmeric, rice flour|N|Y|N|N|Y|All|Medium|Marinate 30 min|Rice, dal|मसाला फिश फ्राई
+Prawn Masala|Dinner|Non-Veg Main|Non-Veg|Coastal|35|Medium|Prawns, onion, tomato, coconut|N|N|N|N|N|All|Medium||Rice, neer dosa|झींगा मसाला
+Samosa|Snack|Snack|Veg|North|60|Hard|Maida, potato, peas|N|Y|N|N|Y|Monsoon|Heavy|Boil potatoes|Tamarind chutney, tea|समोसा
+Onion Pakora|Snack|Snack|Veg|Pan-India|25|Easy|Onion, gram flour|N|N|N|N|Y|Monsoon|Heavy||Tea, green chutney|प्याज़ के पकौड़े
+Aloo Tikki Chaat|Snack|Snack|Veg|North|40|Medium|Potato, curd, chutneys|N|Y|N|N|Y|All|Medium|Boil potatoes||आलू टिक्की चाट
+Bhel Puri|Snack|Snack|Veg|Maharashtra|15|Easy|Puffed rice, sev, onion, chutneys|N|Y|N|N|Y|Summer|Light|||भेल पूरी
+Vada Pav|Snack|Snack|Veg|Maharashtra|45|Medium|Potato, gram flour, pav|N|Y|N|N|Y|Monsoon|Heavy|Boil potatoes|Dry garlic chutney|वड़ा पाव
+Sabudana Vada|Snack|Snack|Veg|Maharashtra|40|Medium|Sago, potato, peanuts|N|Y|Y|N|Y|All|Heavy|Soak sabudana overnight|Curd, green chutney|साबूदाना वड़ा
+Roasted Makhana|Snack|Snack|Veg|Bihar|10|Easy|Fox nuts, ghee|Y|Y|Y|Y|Y|All|Light||Tea|भुना मखाना
+Masala Corn|Snack|Snack|Veg|Pan-India|10|Easy|Sweet corn, butter, lemon|Y|Y|N|Y|Y|Monsoon|Light|||मसाला कॉर्न
+Khandvi|Snack|Snack|Veg|Gujarat|30|Hard|Gram flour, buttermilk, coconut|Y|Y|N|Y|Y|All|Light||Green chutney|खांडवी
+Hara Bhara Kabab|Snack|Snack|Veg|North|40|Medium|Spinach, peas, potato|N|Y|N|Y|Y|Winter|Medium|Boil potatoes|Green chutney|हरा भरा कबाब
+Veg Momos|Snack / Dinner|Snack|Veg|North-East|60|Hard|Maida, cabbage, carrot|N|N|N|N|Y|Winter|Medium||Red chutney|वेज मोमोज़
+Sooji Halwa|Dessert|Sweet|Veg|North|20|Easy|Semolina, ghee, sugar|Y|Y|N|N|Y|All|Heavy||Puri, chana|सूजी का हलवा
+Gajar Halwa|Dessert|Sweet|Veg|Punjab|60|Medium|Carrot, milk, ghee, sugar|N|Y|N|N|Y|Winter|Heavy|||गाजर का हलवा
+Rice Kheer|Dessert|Sweet|Veg|Pan-India|45|Easy|Rice, milk, sugar, cardamom|Y|Y|N|N|Y|All|Medium|||चावल की खीर
+Makhana Kheer|Dessert|Sweet|Veg|Bihar|30|Easy|Fox nuts, milk, sugar|Y|Y|Y|N|Y|All|Medium|||मखाने की खीर
+Semiya Payasam|Dessert|Sweet|Veg|South|25|Easy|Vermicelli, milk, cashew|Y|Y|N|N|Y|All|Medium|||सेवइयां पायसम
+Besan Ladoo|Dessert|Sweet|Veg|North|40|Medium|Gram flour, ghee, sugar|Y|Y|N|Y|Y|All|Heavy|||बेसन के लड्डू
+Shrikhand|Dessert|Sweet|Veg|Gujarat|15|Easy|Hung curd, sugar, saffron|Y|Y|N|N|Y|Summer|Medium|Hang curd overnight|Puri|श्रीखंड
+Moong Dal Halwa|Dessert|Sweet|Veg|Rajasthan|60|Hard|Moong dal, ghee, sugar|Y|Y|N|N|Y|Winter|Heavy|Soak dal 4 hrs||मूंग दाल हलवा
+Singhara Atta Halwa|Dessert|Sweet|Veg|North|20|Easy|Water chestnut flour, ghee, sugar|Y|Y|Y|N|Y|All|Heavy|||सिंघाड़े के आटे का हलवा
+Gulab Jamun|Dessert|Sweet|Veg|Pan-India|60|Medium|Khoya, maida, sugar syrup|Y|Y|N|N|Y|All|Heavy|||गुलाब जामुन
+Boondi Raita|Side|Side|Veg|North|10|Easy|Curd, boondi|Y|Y|N|N|Y|All|Light||Pulao, biryani|बूंदी रायता
+Cucumber Raita|Side|Side|Veg|Pan-India|10|Easy|Curd, cucumber|Y|Y|N|N|Y|Summer|Light||Any meal|खीरे का रायता
+Kachumber Salad|Side|Side|Veg|Pan-India|10|Easy|Cucumber, tomato, onion, lemon|Y|Y|N|Y|N|All|Light||Any meal|कचुंबर सलाद
+Chaas (Masala Buttermilk)|Side|Side|Veg|Gujarat|5|Easy|Curd, roasted cumin, mint|Y|Y|N|N|N|Summer|Light||Lunch|छाछ
