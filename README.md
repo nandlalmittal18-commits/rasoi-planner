@@ -1,5 +1,7 @@
 # Rasoi Planner
 
+**Live app:** https://rasoi-planner-eta.vercel.app
+
 A balanced weekly menu for Indian homes: breakfast, lunch and dinner planned around the family's diet, fasting days, favourite cuisines, tiffin and cooking time. It also gives night-before prep reminders, a shopping list, and WhatsApp messages for the family and, in Hindi, for the cook.
 
 ## What's in version 1
