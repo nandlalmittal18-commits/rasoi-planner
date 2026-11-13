@@ -189,7 +189,7 @@ button { cursor: pointer; }
   padding: 14px 16px; border-radius: var(--radius);
   background: var(--accent-soft); color: var(--accent-ink); border: 1px solid color-mix(in srgb, var(--accent) 40%, transparent);
 }
-.sample-banner .btn { align-self: flex-start; }
+.sample-banner .btn-row { align-self: flex-start; }
 .day-strip { display: grid; grid-template-columns: repeat(7, 1fr); gap: 6px; }
 .day-pill {
   display: flex; flex-direction: column; align-items: center; gap: 1px;
@@ -271,6 +271,17 @@ button { cursor: pointer; }
 .lib-main .food-mark { margin-top: 5px; }
 .lib-foot { display: flex; align-items: center; justify-content: space-between; gap: 10px; flex-wrap: wrap; }
 .lib-row.is-disliked { opacity: 0.6; }
+
+/* ---------- account ---------- */
+.account { display: flex; flex-direction: column; gap: 12px; }
+.account.is-signed-in { flex-direction: row; align-items: center; justify-content: space-between; flex-wrap: wrap; }
+.account-who { display: flex; align-items: center; gap: 12px; min-width: 0; }
+.account-text { display: flex; flex-direction: column; min-width: 0; }
+.account-text .muted { overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+.avatar { width: 40px; height: 40px; border-radius: 50%; display: grid; place-items: center; flex: none; background: var(--primary); color: var(--on-primary); font-family: var(--font-display); font-weight: 700; font-size: 1.1rem; }
+.saved-online { color: var(--primary); font-weight: 600; }
+.btn-google { align-self: flex-start; background: #fff; color: #1f1f1f; border-color: #747775; font-weight: 600; }
+.btn-google:hover { background: #f5f5f5; border-color: #747775; }
 
 /* ---------- family form ---------- */
 .field { border: 1px solid var(--line); margin: 0; display: flex; flex-direction: column; gap: 10px; }

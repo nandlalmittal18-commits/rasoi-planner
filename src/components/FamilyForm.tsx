@@ -1,10 +1,12 @@
-import { useState } from 'react';
+import { useState, type ReactNode } from 'react';
 import { WEEKDAYS_SHORT, type CuisineGroup, type Diet, type FamilyProfile } from '../engine';
 import { CUISINES, WORLD_CUISINE_OPTIONS } from '../lib/sample';
 
 interface Props {
   initial: FamilyProfile;
   isNew: boolean;
+  /** Sign-in card, shown under the heading */
+  account?: ReactNode;
   onSave: (p: FamilyProfile) => void;
   onReset: () => void;
 }
@@ -16,7 +18,7 @@ const DIETS: { key: Diet; label: string }[] = [
 ];
 const TIMES = [30, 45, 60, 90];
 
-export function FamilyForm({ initial, isNew, onSave, onReset }: Props) {
+export function FamilyForm({ initial, isNew, account, onSave, onReset }: Props) {
   const [p, setP] = useState<FamilyProfile>(initial);
   const [confirmReset, setConfirmReset] = useState(false);
   const set = <K extends keyof FamilyProfile>(key: K, value: FamilyProfile[K]) => setP({ ...p, [key]: value });
@@ -36,6 +38,8 @@ export function FamilyForm({ initial, isNew, onSave, onReset }: Props) {
           <h1>{isNew ? 'Tell us about your family' : 'Family settings'}</h1>
         </div>
       </div>
+
+      {account}
 
       <fieldset className="card field">
         <legend>Family name</legend>
@@ -134,7 +138,7 @@ export function FamilyForm({ initial, isNew, onSave, onReset }: Props) {
         {!isNew &&
           (confirmReset ? (
             <div className="confirm">
-              <span>Delete this family and start again?</span>
+              <span>Delete this family and its menu, and start again?</span>
               <button type="button" className="btn btn-danger btn-small" onClick={onReset}>
                 Yes, delete
               </button>

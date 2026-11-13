@@ -1,5 +1,7 @@
 import { useCallback, useEffect, useRef, useState, type ReactNode } from 'react';
+import type { User } from '@supabase/supabase-js';
 import { generateWeek, randomSeed, regenerateDay, swapItem, toISODate, type FamilyProfile, type WeekPlan } from './engine';
+import { AccountCard, type Account } from './components/AccountCard';
 import { DishLibrary } from './components/DishLibrary';
 import { FamilyForm } from './components/FamilyForm';
 import { GroceryView } from './components/GroceryView';
@@ -7,6 +9,7 @@ import { BookIcon, CalendarIcon, CartIcon, FamilyIcon, Logo } from './components
 import { MenuView } from './components/MenuView';
 import { BLANK_PROFILE, DIET_LABEL, SAMPLE_PROFILE } from './lib/sample';
 import { storage } from './lib/storage';
+import { signInWithGoogle, signOut, supabase } from './lib/supabase';
 
 type Tab = 'menu' | 'grocery' | 'dishes' | 'family';
 const TABS: { key: Tab; label: string; icon: ReactNode }[] = [
@@ -26,18 +29,29 @@ function today(): Date {
   return new Date(d.getFullYear(), d.getMonth(), d.getDate());
 }
 
-/** First load: the saved family and menu, or the sample family. An expired menu is replaced. */
+function isExpired(plan: WeekPlan | null): boolean {
+  const lastDay = plan?.days[plan.days.length - 1]?.date;
+  return !plan || !lastDay || lastDay < toISODate(today());
+}
+
+/** First load: the family and menu kept on this phone, or the sample family. An expired menu is replaced. */
 function initialState() {
   const saved = storage.loadProfile();
   const profile = saved ?? SAMPLE_PROFILE;
   let plan = saved ? storage.loadPlan() : null;
-  const lastDay = plan?.days[plan.days.length - 1]?.date;
-  if (!plan || !lastDay || lastDay < toISODate(today())) {
+  if (isExpired(plan)) {
     plan = generateWeek(profile, today(), randomSeed());
     if (saved) storage.savePlan(plan);
   }
-  return { profile, plan, isSample: !saved };
+  return { profile, plan: plan!, isSample: !saved };
 }
+
+function toAccount(u: User): Account {
+  const meta = u.user_metadata ?? {};
+  return { id: u.id, email: u.email ?? '', name: (meta.full_name as string) ?? (meta.name as string) ?? '' };
+}
+
+const online = supabase() !== null;
 
 export default function App() {
   const [init] = useState(initialState);
@@ -46,7 +60,10 @@ export default function App() {
   const [isSample, setIsSample] = useState(init.isSample);
   const [tab, setTab] = useState<Tab>(tabFromHash);
   const [toast, setToast] = useState('');
+  const [account, setAccount] = useState<Account | null>(null);
+  const [authReady, setAuthReady] = useState(!online);
   const toastTimer = useRef<number | undefined>(undefined);
+  const signedInAs = useRef<string | null>(null);
 
   useEffect(() => {
     const onHash = () => setTab(tabFromHash());
@@ -54,17 +71,95 @@ export default function App() {
     return () => window.removeEventListener('hashchange', onHash);
   }, []);
 
-  const go = (t: Tab) => {
+  const go = useCallback((t: Tab) => {
     if (window.location.hash !== `#${t}`) window.location.hash = t;
     setTab(t);
     window.scrollTo({ top: 0 });
-  };
+  }, []);
 
   const notify = useCallback((msg: string) => {
     setToast(msg);
     window.clearTimeout(toastTimer.current);
-    toastTimer.current = window.setTimeout(() => setToast(''), 3200);
+    toastTimer.current = window.setTimeout(() => setToast(''), 3600);
   }, []);
+
+  useEffect(() => storage.onError(notify), [notify]);
+
+  // ---- Google sign-in: load the family's saved data whenever someone signs in.
+  useEffect(() => {
+    const sb = supabase();
+    if (!sb) return;
+
+    const params = new URLSearchParams(window.location.search);
+    const failed = params.get('error_description');
+    if (failed) {
+      notify(`Google sign-in didn’t work: ${failed}`);
+      window.history.replaceState(null, '', window.location.pathname + window.location.hash);
+    }
+
+    const handleUser = async (user: User | null) => {
+      const id = user?.id ?? null;
+      if (id === signedInAs.current) {
+        setAuthReady(true);
+        return;
+      }
+      signedInAs.current = id;
+      storage.setUser(id);
+      setAccount(user ? toAccount(user) : null);
+      if (!user) {
+        setAuthReady(true);
+        return;
+      }
+      try {
+        const saved = await storage.pullFromCloud();
+        if (saved) {
+          // This Google account already has a family: show it (on any phone).
+          let next = saved.plan;
+          if (isExpired(next)) {
+            next = generateWeek(saved.profile, today(), randomSeed());
+            storage.savePlan(next);
+          }
+          setProfile(saved.profile);
+          setIsSample(false);
+          setPlanState(next!);
+        } else if (storage.loadProfile()) {
+          // First sign-in on a phone that already has a family: copy it to the account.
+          storage.pushAllToCloud();
+          notify('Your family is now saved to your Google account');
+        } else {
+          go('family');
+          notify('Signed in. Now tell us about your family.');
+        }
+      } catch {
+        notify('Couldn’t load your saved menu. Check your internet and open the app again.');
+      }
+      setAuthReady(true);
+    };
+
+    // Supabase asks that other Supabase calls are not made inside this callback, hence the setTimeout.
+    const { data } = sb.auth.onAuthStateChange((_event, session) => {
+      window.setTimeout(() => void handleUser(session?.user ?? null), 0);
+    });
+    return () => data.subscription.unsubscribe();
+  }, [go, notify]);
+
+  const onSignIn = async () => {
+    const error = await signInWithGoogle();
+    if (error) notify(error);
+  };
+
+  const onSignOut = async () => {
+    await signOut();
+    signedInAs.current = null;
+    storage.setUser(null);
+    storage.clearLocal();
+    setAccount(null);
+    setProfile(SAMPLE_PROFILE);
+    setIsSample(true);
+    setPlanState(generateWeek(SAMPLE_PROFILE, today(), randomSeed()));
+    go('menu');
+    notify('Signed out. Your family is safe in your Google account.');
+  };
 
   const setPlan = (p: WeekPlan, sample = isSample) => {
     setPlanState(p);
@@ -100,8 +195,10 @@ export default function App() {
     setIsSample(true);
     setPlanState(generateWeek(SAMPLE_PROFILE, today(), randomSeed()));
     go('family');
-    notify('Your family was deleted from this phone');
+    notify(account ? 'Your family was deleted from this phone and your account' : 'Your family was deleted from this phone');
   };
+
+  const accountCard = online ? <AccountCard account={account} ready={authReady} onSignIn={onSignIn} onSignOut={onSignOut} /> : null;
 
   return (
     <div className="app">
@@ -112,6 +209,7 @@ export default function App() {
           <span className="brand-sub">
             {isSample ? 'Sample family' : profile.familyName ? `${profile.familyName} family` : 'Your family'} · {DIET_LABEL[profile.diet]}
             {profile.jain ? ' · Jain' : ''}
+            {account && !isSample ? ' · Saved online' : ''}
           </span>
         </div>
       </header>
@@ -129,6 +227,7 @@ export default function App() {
               notify('Fresh menu for the week');
             }}
             onSetUp={() => go('family')}
+            onSignIn={online && authReady && !account ? onSignIn : undefined}
             notify={notify}
           />
         )}
@@ -136,9 +235,10 @@ export default function App() {
         {tab === 'dishes' && <DishLibrary profile={profile} onToggleDislike={onToggleDislike} />}
         {tab === 'family' && (
           <FamilyForm
-            key={isSample ? 'new' : 'edit'}
+            key={isSample ? 'new' : `edit-${account?.id ?? 'phone'}`}
             initial={isSample ? BLANK_PROFILE : profile}
             isNew={isSample}
+            account={accountCard}
             onSave={onSaveProfile}
             onReset={onReset}
           />

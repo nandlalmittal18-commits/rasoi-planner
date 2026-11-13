@@ -11,7 +11,8 @@ A startup product that plans weekly menus for Indian households. Users: urban wo
 - `src/engine/` must stay free of React and browser APIs. The WhatsApp bot will import it on the server.
 - Every menu rule lives in `src/engine/menu.ts`. If you add or change a rule, add a test to `src/engine/menu.test.ts`.
 - `src/data/dishes.json` is generated. Change `scripts/dishes.psv`, then run `python3 scripts/build_dishes.py`.
-- All saving goes through `src/lib/storage.ts`. Phase 2 replaces it with Supabase; don't call localStorage anywhere else.
+- All saving goes through `src/lib/storage.ts` (phone copy + Supabase when signed in). Don't call localStorage or Supabase tables anywhere else.
+- Supabase: project `arwkorwglqcuosngfubv`. The URL and publishable key in `src/lib/supabase.ts` are public by design. Database changes go in `supabase/schema.sql` (keep it re-runnable) and every table needs row level security.
 - Hard rules (diet, non-veg days, Jain, no onion-garlic, vrat days, dislikes) must never be relaxed.
 - User-facing text: short, plain English. Hindi strings are for the cook's WhatsApp message.
 - Never commit secrets. Put keys in `.env.local` (already git-ignored) and in Vercel's environment variables.

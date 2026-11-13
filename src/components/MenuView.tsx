@@ -27,10 +27,12 @@ interface Props {
   onShuffleDay: (day: number) => void;
   onNewWeek: () => void;
   onSetUp: () => void;
+  /** Present when the visitor can sign in with Google */
+  onSignIn?: () => void;
   notify: (msg: string) => void;
 }
 
-export function MenuView({ plan, profile, isSample, onSwap, onShuffleDay, onNewWeek, onSetUp, notify }: Props) {
+export function MenuView({ plan, profile, isSample, onSwap, onShuffleDay, onNewWeek, onSetUp, onSignIn, notify }: Props) {
   const todayIso = toISODate(new Date());
   const todayIndex = plan.days.findIndex((d) => d.date === todayIso);
   const [selected, setSelected] = useState(Math.max(0, todayIndex));
@@ -44,9 +46,16 @@ export function MenuView({ plan, profile, isSample, onSwap, onShuffleDay, onNewW
             <strong>This is a sample menu for the Sharma family.</strong> Tell us about your family and we’ll plan
             your week.
           </p>
-          <button className="btn btn-primary" onClick={onSetUp}>
-            Set up my family
-          </button>
+          <div className="btn-row">
+            <button className="btn btn-primary" onClick={onSetUp}>
+              Set up my family
+            </button>
+            {onSignIn && (
+              <button className="btn btn-quiet" onClick={onSignIn}>
+                I already have an account
+              </button>
+            )}
+          </div>
         </div>
       )}
 

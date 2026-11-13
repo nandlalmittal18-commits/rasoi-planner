@@ -11,6 +11,7 @@ A balanced weekly menu for Indian homes: breakfast, lunch and dinner planned aro
 | **Menu** | 7-day menu, one day at a time. Swap any dish with one tap, shuffle a day or the whole week. "Plan ahead" shows what to soak, ferment or marinate the night before. Share the day on WhatsApp in English (family) or Hindi (cook). |
 | **Shopping** | Main ingredients for the week, grouped like a shop list. Tick what you have; send the rest on WhatsApp. |
 | **Dishes** | All 200 dishes (153 Indian, 47 world) with search and filters (cuisine, meal, veg, Jain, vrat, tiffin, kids). Mark "Never suggest". |
+| **Account** | "Continue with Google" saves the family and menu online (Supabase), so the same menu shows on every phone. Without signing in, everything stays on the phone. |
 | **Family** | Diet and non-veg days, Jain, no onion-garlic, weekly vrat, Indian cuisines, world-food dinners per week and which world cuisines, weekday cooking time, kids, tiffin, cook's name. |
 
 ## Run it on your computer
@@ -48,7 +49,10 @@ src/
     menu.test.ts     Checks that every rule is respected
   data/dishes.json   The dish database (generated, do not edit by hand)
   components/        The four screens
-  lib/storage.ts     Where data is saved (this phone's browser for now)
+  lib/storage.ts     Where data is saved: this phone, plus Supabase when signed in
+  lib/supabase.ts    Supabase connection and Google sign-in
+supabase/schema.sql  Database tables and security rules (run once in Supabase)
+docs/google-login-setup.md  One-time Google + Supabase setup steps
 scripts/
   dishes.psv         The dish sheet as text (one dish per line, columns split by |)
   build_dishes.py    Turns dishes.psv into src/data/dishes.json
@@ -70,7 +74,7 @@ scripts/
 
 ## Roadmap
 
-**Phase 2 – accounts and database (Supabase).** Families log in with their phone number (OTP) and their menu works on any device. Replace `src/lib/storage.ts` with Supabase calls. Tables to start with: `families` (the profile), `week_plans` (the plan as JSON), `dishes` (move the database here so you can edit it without a new release).
+**Phase 2 – accounts and database (Supabase). ✅ Built.** Google sign-in; `families` and `week_plans` tables with row level security; data moves from the phone to the account on first sign-in. Setup steps: `docs/google-login-setup.md`. Next in this phase: move the dish list into a `dishes` table so it can be edited without a new release, and add email or phone login.
 
 **Phase 3 – WhatsApp bot.** A Vercel serverless function (`/api/whatsapp`) receives messages from a WhatsApp Business provider (Gupshup, AiSensy, Interakt, WATI or Meta's Cloud API). Every evening it sends each family tomorrow's menu using `dayMessage` / `cookMessage`, and replies like "1" (swap) call `swapItem`. Needs Meta business verification; business-initiated messages are charged per message.
 
@@ -78,4 +82,4 @@ scripts/
 
 ## Privacy
 
-Version 1 stores everything only in the browser of the phone where it was set up. Nothing is sent to a server. Once you add accounts (Phase 2) you will be holding family and health-related preferences, so follow India's Digital Personal Data Protection Act: ask for consent, collect only what you need, and let users delete their data.
+Without signing in, everything stays in the browser of the phone where it was set up. When a family signs in with Google, their profile and menu are stored in your Supabase project, and row level security means each account can only read its own rows. "Start over" deletes the online copy too. You are now holding family and health-related preferences, so follow India's Digital Personal Data Protection Act: publish a short privacy notice, collect only what you need, and honour deletion requests.
