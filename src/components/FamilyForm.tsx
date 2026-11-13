@@ -152,6 +152,10 @@ export function FamilyForm({ initial, isNew, account, onSave, onReset }: Props) 
             </button>
           ))}
       </div>
+
+      <p className="legal-links small">
+        <a href="./privacy.html">Privacy Policy</a>
+      </p>
     </form>
   );
 }

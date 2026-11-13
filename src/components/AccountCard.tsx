@@ -36,6 +36,9 @@ export function AccountCard({ account, ready, sync, onSignIn, onSignOut, onRetry
         <button type="button" className="btn btn-google" onClick={onSignIn}>
           <GoogleMark /> Continue with Google
         </button>
+        <p className="muted small">
+          We use only your name and email to save your family’s menu. See our <a href="./privacy.html">Privacy Policy</a>.
+        </p>
       </div>
     );
   }
