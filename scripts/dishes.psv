@@ -152,3 +152,50 @@ Boondi Raita|Side|Side|Veg|North|10|Easy|Curd, boondi|Y|Y|N|N|Y|All|Light||Pulao
 Cucumber Raita|Side|Side|Veg|Pan-India|10|Easy|Curd, cucumber|Y|Y|N|N|Y|Summer|Light||Any meal|खीरे का रायता
 Kachumber Salad|Side|Side|Veg|Pan-India|10|Easy|Cucumber, tomato, onion, lemon|Y|Y|N|Y|N|All|Light||Any meal|कचुंबर सलाद
 Chaas (Masala Buttermilk)|Side|Side|Veg|Gujarat|5|Easy|Curd, roasted cumin, mint|Y|Y|N|N|N|Summer|Light||Lunch|छाछ
+Chilli Paneer with Fried Rice|Lunch / Dinner|World Main|Veg|Indo-Chinese|35|Medium|Paneer, capsicum, onion, soy sauce, cooked rice|Y|Y|N|Y|Y|All|Medium|Use leftover rice|Hot & sour soup|चिली पनीर और फ्राइड राइस
+Veg Manchurian with Fried Rice|Dinner|World Main|Veg|Indo-Chinese|45|Medium|Cabbage, carrot, cornflour, soy sauce, cooked rice|N|Y|N|N|Y|Winter|Medium|Use leftover rice|Sweet corn soup|वेज मंचूरियन और फ्राइड राइस
+Schezwan Noodles|Dinner|World Main|Veg|Indo-Chinese|25|Easy|Noodles, capsicum, cabbage, schezwan sauce|N|N|N|Y|Y|All|Medium||Manchurian|शेज़वान नूडल्स
+Chicken Hakka Noodles|Dinner|World Main|Non-Veg|Indo-Chinese|30|Easy|Noodles, chicken, cabbage, soy sauce|N|N|N|Y|Y|All|Medium||Chilli chicken|चिकन हक्का नूडल्स
+Hot & Sour Soup|Dinner|World Side|Veg|Indo-Chinese|20|Easy|Cabbage, carrot, mushroom, soy sauce, vinegar|N|N|N|N|Y|Winter|Light||Noodles|हॉट एंड सॉर सूप
+Sweet Corn Soup|Dinner|World Side|Veg|Indo-Chinese|20|Easy|Sweet corn, carrot, cornflour|N|Y|N|N|Y|All|Light||Fried rice|स्वीट कॉर्न सूप
+Veg Spring Rolls|Snack / Dinner|World Side|Veg|Indo-Chinese|45|Medium|Spring roll sheets, cabbage, carrot, capsicum|N|Y|N|N|Y|All|Medium||Chilli sauce|वेज स्प्रिंग रोल
+Gobi Manchurian|Snack / Dinner|World Side|Veg|Indo-Chinese|35|Medium|Cauliflower, cornflour, soy sauce, garlic|N|N|N|N|Y|Winter|Medium||Fried rice|गोभी मंचूरियन
+Red Sauce Pasta|Lunch / Dinner|World Main|Veg|Italian|25|Easy|Pasta, tomato, garlic, basil, chilli flakes|Y|Y|N|Y|Y|All|Medium||Garlic bread|रेड सॉस पास्ता
+White Sauce Pasta|Lunch / Dinner|World Main|Veg|Italian|25|Easy|Pasta, milk, butter, maida, cheese, sweet corn|Y|Y|N|Y|Y|All|Heavy||Garlic bread|व्हाइट सॉस पास्ता
+Margherita Pizza|Dinner|World Main|Veg|Italian|40|Medium|Pizza base, pizza sauce, mozzarella, oregano|Y|Y|N|N|Y|All|Heavy||Salad|मार्गेरिटा पिज़्ज़ा
+Veggie Pizza|Dinner|World Main|Veg|Italian|45|Medium|Pizza base, pizza sauce, mozzarella, capsicum, onion, sweet corn|Y|Y|N|N|Y|All|Heavy||Salad|वेजी पिज़्ज़ा
+Vegetable Lasagne|Dinner|World Main|Veg|Italian|75|Hard|Lasagne sheets, tomato sauce, white sauce, mixed vegetables, cheese|N|Y|N|N|Y|All|Heavy||Salad|वेज लज़ानिया
+Mushroom Risotto|Dinner|World Main|Veg|Italian|40|Medium|Rice, mushroom, butter, cheese|N|Y|N|N|N|Winter|Medium||Garlic bread|मशरूम रिसोट्टो
+Creamy Chicken Pasta|Dinner|World Main|Non-Veg|Italian|35|Medium|Pasta, chicken, cream, garlic|N|N|N|Y|Y|All|Heavy||Garlic bread|क्रीमी चिकन पास्ता
+Garlic Bread|Snack / Dinner|World Side|Veg|Italian|15|Easy|Bread, butter, garlic, oregano|N|N|N|N|Y|All|Medium||Pasta|गार्लिक ब्रेड
+Minestrone Soup|Dinner|World Side|Veg|Italian|30|Easy|Mixed vegetables, tomato, pasta, beans|N|Y|N|N|N|Winter|Light||Garlic bread|मिनेस्ट्रोन सूप
+Bruschetta|Snack / Dinner|World Side|Veg|Italian|15|Easy|Bread, tomato, basil, olive oil|Y|Y|N|N|N|Summer|Light||Pasta|ब्रुशेटा
+Cheese Omelette with Toast|Breakfast|Breakfast|Egg|Continental|15|Easy|Eggs, cheese, bread, butter|N|Y|N|Y|Y|All|Light||Coffee|चीज़ ऑमलेट और टोस्ट
+Pancakes with Honey|Breakfast|Breakfast|Veg|Continental|25|Easy|Maida, milk, butter, honey, banana|Y|Y|N|N|Y|All|Medium||Fruit|हनी पैनकेक
+French Toast|Breakfast|Breakfast|Egg|Continental|15|Easy|Bread, eggs, milk, sugar|N|Y|N|Y|Y|All|Light||Fruit|फ्रेंच टोस्ट
+Overnight Oats with Fruit|Breakfast|Breakfast|Veg|Continental|10|Easy|Oats, milk, curd, banana, honey|Y|Y|N|Y|N|Summer|Light|Soak oats overnight||ओवरनाइट ओट्स
+Veg Cheese Grilled Sandwich|Breakfast / Snack|Breakfast|Veg|Continental|20|Easy|Bread, cheese, capsicum, tomato, butter|Y|Y|N|Y|Y|All|Medium||Ketchup|वेज चीज़ ग्रिल्ड सैंडविच
+Baked Vegetables in White Sauce|Dinner|World Main|Veg|Continental|50|Medium|Mixed vegetables, milk, butter, maida, cheese|N|Y|N|N|Y|Winter|Heavy||Garlic bread|बेक्ड वेजिटेबल्स
+Grilled Paneer with Sautéed Vegetables|Dinner|World Main|Veg|Continental|35|Medium|Paneer, mixed vegetables, butter, herbs|Y|Y|N|N|Y|All|Medium|Marinate 30 min|Soup|ग्रिल्ड पनीर और सब्ज़ियाँ
+Grilled Chicken with Sautéed Vegetables|Dinner|World Main|Non-Veg|Continental|45|Medium|Chicken, mixed vegetables, butter, herbs, garlic|N|N|N|N|N|All|Light|Marinate 1 hr|Soup|ग्रिल्ड चिकन और सब्ज़ियाँ
+Lemon Butter Fish with Mash|Dinner|World Main|Non-Veg|Continental|35|Medium|Fish, butter, lemon, garlic, potato|N|N|N|N|N|All|Medium||Salad|लेमन बटर फिश
+Veg Burger|Dinner / Snack|World Main|Veg|Continental|40|Medium|Burger buns, potato, peas, cheese, cabbage|N|Y|N|N|Y|All|Heavy|Boil potatoes|Fries|वेज बर्गर
+Cream of Tomato Soup|Dinner|World Side|Veg|Continental|25|Easy|Tomato, butter, cream|Y|Y|N|N|Y|Winter|Light||Garlic bread|क्रीम ऑफ़ टोमैटो सूप
+Cream of Mushroom Soup|Dinner|World Side|Veg|Continental|25|Easy|Mushroom, milk, butter|N|Y|N|N|N|Winter|Light||Garlic bread|क्रीम ऑफ़ मशरूम सूप
+Russian Salad|Side|World Side|Veg|Continental|20|Easy|Potato, carrot, peas, pineapple, mayonnaise|N|Y|N|N|Y|Summer|Medium|Boil potatoes|Sandwich|रशियन सलाद
+Veg Burrito Bowl|Lunch / Dinner|World Main|Veg|Mexican|40|Medium|Rice, kidney beans, sweet corn, capsicum, salsa, cheese|Y|Y|N|Y|Y|All|Medium|Soak kidney beans overnight|Nachos|वेज बरिटो बाउल
+Veg Quesadilla|Dinner / Snack|World Main|Veg|Mexican|25|Easy|Tortilla, cheese, kidney beans, capsicum, sweet corn|Y|Y|N|Y|Y|All|Medium||Salsa|वेज केसडिया
+Bean Tacos|Dinner|World Main|Veg|Mexican|35|Medium|Taco shells, kidney beans, lettuce, tomato, cheese|Y|Y|N|N|Y|All|Medium|Soak kidney beans overnight|Salsa|बीन टैकोज़
+Chicken Burrito|Dinner|World Main|Non-Veg|Mexican|40|Medium|Tortilla, chicken, rice, kidney beans, cheese|N|N|N|Y|Y|All|Heavy|Marinate 30 min|Salsa|चिकन बरिटो
+Nachos with Salsa|Snack / Dinner|World Side|Veg|Mexican|15|Easy|Nachos, tomato, onion, cheese, jalapeño|N|Y|N|N|Y|All|Medium||Burrito bowl|नाचोज़ और सालसा
+Mexican Corn Salad|Side|World Side|Veg|Mexican|10|Easy|Sweet corn, capsicum, tomato, lemon|Y|Y|N|Y|Y|Summer|Light||Quesadilla|मैक्सिकन कॉर्न सलाद
+Thai Green Curry with Rice|Dinner|World Main|Veg|Thai|40|Medium|Coconut milk, green curry paste, mixed vegetables, rice|N|N|N|N|N|All|Medium||Spring rolls|थाई ग्रीन करी और चावल
+Thai Red Curry Chicken with Rice|Dinner|World Main|Non-Veg|Thai|40|Medium|Chicken, coconut milk, red curry paste, rice|N|N|N|N|N|All|Medium||Papaya salad|थाई रेड करी चिकन और चावल
+Veg Pad Thai|Dinner|World Main|Veg|Thai|30|Medium|Rice noodles, peanuts, paneer, bean sprouts, tamarind|N|N|N|Y|Y|All|Medium||Tom yum soup|वेज पैड थाई
+Tom Yum Soup|Dinner|World Side|Veg|Thai|25|Easy|Mushroom, lemongrass, galangal, chilli, lime|N|N|N|N|N|Monsoon|Light||Thai curry|टॉम यम सूप
+Raw Papaya Salad|Side|World Side|Veg|Thai|15|Easy|Raw papaya, peanuts, tomato, lime|Y|Y|N|N|N|Summer|Light||Thai curry|कच्चे पपीते का थाई सलाद
+Falafel Wrap with Hummus|Dinner|World Main|Veg|Middle Eastern|45|Medium|Chickpeas, pita, cucumber, tomato, sesame|N|N|N|Y|N|All|Medium|Soak chickpeas overnight|Salad|फलाफल रैप
+Paneer Shawarma Wrap|Dinner|World Main|Veg|Middle Eastern|35|Medium|Paneer, pita, garlic, cabbage, curd|N|N|N|Y|Y|All|Medium|Marinate 30 min|Hummus|पनीर शवर्मा रैप
+Chicken Shawarma|Dinner|World Main|Non-Veg|Middle Eastern|40|Medium|Chicken, pita, garlic, cucumber, curd|N|N|N|Y|Y|All|Medium|Marinate 2 hrs|Hummus|चिकन शवर्मा
+Hummus with Pita|Snack / Dinner|World Side|Veg|Middle Eastern|20|Easy|Chickpeas, sesame, garlic, lemon, pita|N|N|N|Y|N|All|Light|Soak chickpeas overnight|Falafel|हम्मस और पीटा
+Fattoush Salad|Side|World Side|Veg|Middle Eastern|15|Easy|Cucumber, tomato, lettuce, pita, lemon|Y|Y|N|N|N|Summer|Light||Wrap|फतूश सलाद

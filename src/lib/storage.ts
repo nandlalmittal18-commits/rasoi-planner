@@ -49,7 +49,11 @@ function remove(key: string) {
 }
 
 export const storage = {
-  loadProfile: () => read<FamilyProfile>(KEYS.profile),
+  loadProfile: () => {
+    const saved = read<FamilyProfile>(KEYS.profile);
+    // Profiles saved before world cuisines existed get the default of 1 world dinner a week.
+    return saved ? { ...saved, worldMealsPerWeek: saved.worldMealsPerWeek ?? 1 } : null;
+  },
   saveProfile: (p: FamilyProfile) => write(KEYS.profile, p),
   loadPlan: () => read<WeekPlan>(KEYS.plan),
   savePlan: (p: WeekPlan) => write(KEYS.plan, p),

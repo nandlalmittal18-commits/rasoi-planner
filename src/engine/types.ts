@@ -7,7 +7,9 @@ export type Diet = 'Veg' | 'Egg' | 'Non-Veg';
 export type Season = 'All' | 'Winter' | 'Summer' | 'Monsoon';
 export type Heaviness = 'Light' | 'Medium' | 'Heavy';
 export type Difficulty = 'Easy' | 'Medium' | 'Hard';
-export type CuisineGroup = 'North' | 'West' | 'South' | 'East';
+export type IndianCuisine = 'North' | 'West' | 'South' | 'East';
+export type WorldCuisine = 'Chinese' | 'Italian' | 'Continental' | 'Mexican' | 'Thai' | 'Middle Eastern';
+export type CuisineGroup = IndianCuisine | WorldCuisine;
 
 /** One row of the dish database (src/data/dishes.json). */
 export interface Dish {
@@ -46,8 +48,10 @@ export interface FamilyProfile {
   noOnionGarlic: boolean;
   /** Weekly fasting (vrat) days. 0 = Monday … 6 = Sunday */
   fastDays: number[];
-  /** Preferred cuisines. Empty = no preference */
+  /** Preferred cuisines, Indian and world. Empty = no preference */
   cuisines: CuisineGroup[];
+  /** World-food dinners each week (Chinese, Italian…). 0 = Indian food only */
+  worldMealsPerWeek: number;
   hasKids: boolean;
   /** Weekday lunch is packed in a tiffin */
   packsTiffin: boolean;
@@ -75,6 +79,8 @@ export type RoleKey =
   | 'vratMain'
   | 'vratSide'
   | 'vratExtra'
+  | 'worldMain'
+  | 'worldSide'
   | 'any';
 
 export interface MealItem {
@@ -98,6 +104,8 @@ export interface DayPlan {
   weekday: number;
   isFast: boolean;
   nonVegAllowed: boolean;
+  /** Dinner this day is a world-food night */
+  worldDinner?: boolean;
   meals: Meal[];
 }
 

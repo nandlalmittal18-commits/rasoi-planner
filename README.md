@@ -2,7 +2,7 @@
 
 **Live app:** https://rasoi-planner-eta.vercel.app
 
-A balanced weekly menu for Indian homes: breakfast, lunch and dinner planned around the family's diet, fasting days, favourite cuisines, tiffin and cooking time. It also gives night-before prep reminders, a shopping list, and WhatsApp messages for the family and, in Hindi, for the cook.
+A balanced weekly menu for Indian homes: breakfast, lunch and dinner planned around the family's diet, fasting days, favourite cuisines, tiffin and cooking time, plus as many world-food dinners (Chinese, Italian, Continental, Mexican, Thai, Middle Eastern) as the family wants. It also gives night-before prep reminders, a shopping list, and WhatsApp messages for the family and, in Hindi, for the cook.
 
 ## What's in version 1
 
@@ -10,8 +10,8 @@ A balanced weekly menu for Indian homes: breakfast, lunch and dinner planned aro
 | --- | --- |
 | **Menu** | 7-day menu, one day at a time. Swap any dish with one tap, shuffle a day or the whole week. "Plan ahead" shows what to soak, ferment or marinate the night before. Share the day on WhatsApp in English (family) or Hindi (cook). |
 | **Shopping** | Main ingredients for the week, grouped like a shop list. Tick what you have; send the rest on WhatsApp. |
-| **Dishes** | All 153 dishes with search and filters (meal, veg, Jain, vrat, tiffin, kids). Mark "Never suggest". |
-| **Family** | Diet and non-veg days, Jain, no onion-garlic, weekly vrat, cuisines, weekday cooking time, kids, tiffin, cook's name. |
+| **Dishes** | All 200 dishes (153 Indian, 47 world) with search and filters (cuisine, meal, veg, Jain, vrat, tiffin, kids). Mark "Never suggest". |
+| **Family** | Diet and non-veg days, Jain, no onion-garlic, weekly vrat, Indian cuisines, world-food dinners per week and which world cuisines, weekday cooking time, kids, tiffin, cook's name. |
 
 ## Run it on your computer
 
@@ -20,7 +20,7 @@ You need [Node.js](https://nodejs.org) 20 or newer.
 ```bash
 npm install
 npm run dev        # opens the app at http://localhost:5173
-npm test           # runs the menu-engine checks (11 tests)
+npm test           # runs the menu-engine checks (15 tests)
 npm run build      # makes the production files in dist/
 ```
 
@@ -63,9 +63,10 @@ scripts/
 ## How the menu engine decides
 
 1. **Never broken:** diet, non-veg days, Jain, no onion-garlic, vrat days, "never suggest" dishes.
-2. **Kept whenever possible**, relaxed one at a time only if nothing fits: no dish twice in a week, in-season dishes only, weekday cooking-time limit, tiffin-friendly weekday lunch, at most one heavy dish a day, no heavy breakfast on weekdays.
+2. **Kept whenever possible**, relaxed one at a time only if nothing fits, in this order: in-season dishes only, then the weekday cooking-time limit, then no dish twice in a week, and last a tiffin-friendly weekday lunch and at most one heavy dish a day (no heavy breakfast on weekdays).
 3. **Preferred:** chosen cuisines, kid favourites, seasonal dishes; bigger dishes at the weekend.
-4. Meals follow familiar patterns: dal + sabzi + roti/rice, rice meal, paneer meal, non-veg meal, one-pot dinner, dosa-style dinner, weekend special. Roti or rice is chosen from what the main dish is usually eaten with.
+4. **World food** appears only on the chosen number of world-food dinners a week (never on a vrat day; weekends slightly more likely), with a soup or side from the same cuisine. Liked world cuisines are picked about 30 times more often than others. "None" keeps every meal Indian.
+5. Meals follow familiar patterns: dal + sabzi + roti/rice, rice meal, paneer meal, non-veg meal, one-pot dinner, dosa-style dinner, weekend special. Roti or rice is chosen from what the main dish is usually eaten with.
 
 ## Roadmap
 

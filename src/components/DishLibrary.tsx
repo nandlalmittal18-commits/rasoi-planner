@@ -1,5 +1,5 @@
 import { useMemo, useState } from 'react';
-import { DISHES, type Dish, type FamilyProfile } from '../engine';
+import { DISHES, WORLD_CUISINES, cuisineOf, isWorldDish, type Dish, type FamilyProfile } from '../engine';
 import { FoodMark } from './icons';
 
 const MEALS = ['All', 'Breakfast', 'Lunch', 'Dinner', 'Snack', 'Dessert'] as const;
@@ -16,6 +16,7 @@ export function DishLibrary({ profile, onToggleDislike }: { profile: FamilyProfi
   const [meal, setMeal] = useState<(typeof MEALS)[number]>('All');
   const [vegOnly, setVegOnly] = useState(false);
   const [flags, setFlags] = useState<Set<keyof Dish>>(new Set());
+  const [cuisine, setCuisine] = useState<string>('All');
 
   const shown = useMemo(() => {
     const q = query.trim().toLowerCase();
@@ -24,9 +25,10 @@ export function DishLibrary({ profile, onToggleDislike }: { profile: FamilyProfi
         (!q || d.name.toLowerCase().includes(q) || d.hindi.includes(q) || d.ingredients.some((i) => i.toLowerCase().includes(q)) || d.region.toLowerCase().includes(q)) &&
         (meal === 'All' || d.slots.includes(meal)) &&
         (!vegOnly || d.diet === 'Veg') &&
+        (cuisine === 'All' || (cuisine === 'Indian' ? !isWorldDish(d) : cuisineOf(d) === cuisine)) &&
         [...flags].every((f) => d[f] === true),
     );
-  }, [query, meal, vegOnly, flags]);
+  }, [query, meal, vegOnly, flags, cuisine]);
 
   const toggleFlag = (f: keyof Dish) => {
     const next = new Set(flags);
@@ -39,7 +41,7 @@ export function DishLibrary({ profile, onToggleDislike }: { profile: FamilyProfi
     <div className="stack">
       <div className="week-head">
         <div>
-          <p className="eyebrow">{DISHES.length} home-style dishes</p>
+          <p className="eyebrow">{DISHES.length} dishes from India and the world</p>
           <h1>Dish library</h1>
         </div>
       </div>
@@ -56,6 +58,18 @@ export function DishLibrary({ profile, onToggleDislike }: { profile: FamilyProfi
           value={query}
           onChange={(e) => setQuery(e.target.value)}
         />
+        <label className="select-wrap" htmlFor="cuisine-filter">
+          <span>Cuisine</span>
+          <select id="cuisine-filter" value={cuisine} onChange={(e) => setCuisine(e.target.value)}>
+            <option value="All">All cuisines</option>
+            <option value="Indian">Indian</option>
+            {WORLD_CUISINES.map((c) => (
+              <option key={c} value={c}>
+                {c}
+              </option>
+            ))}
+          </select>
+        </label>
         <div className="seg" role="group" aria-label="Meal">
           {MEALS.map((m) => (
             <button key={m} className={`seg-btn${meal === m ? ' is-on' : ''}`} aria-pressed={meal === m} onClick={() => setMeal(m)}>

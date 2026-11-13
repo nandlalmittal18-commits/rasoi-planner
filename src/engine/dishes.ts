@@ -1,5 +1,5 @@
 import raw from '../data/dishes.json';
-import type { CuisineGroup, Dish } from './types';
+import type { CuisineGroup, Dish, WorldCuisine } from './types';
 
 /** The 153 dishes from the dish sheet. Regenerate with `python3 scripts/build_dishes.py`. */
 export const DISHES: Dish[] = raw as unknown as Dish[];
@@ -69,5 +69,25 @@ export const REGION_GROUP: Record<string, CuisineGroup | null> = {
   'North-East': 'East',
   'Pan-India': null,
   Modern: null,
-  'Indo-Chinese': null,
+  'Indo-Chinese': 'Chinese',
+  Italian: 'Italian',
+  Continental: 'Continental',
+  Mexican: 'Mexican',
+  Thai: 'Thai',
+  'Middle Eastern': 'Middle Eastern',
 };
+
+export const WORLD_CUISINES: WorldCuisine[] = ['Chinese', 'Italian', 'Continental', 'Mexican', 'Thai', 'Middle Eastern'];
+
+export function isWorldCuisine(g: CuisineGroup | null | undefined): g is WorldCuisine {
+  return !!g && (WORLD_CUISINES as string[]).includes(g);
+}
+
+/** Chinese, Italian, Continental… (anything not Indian home food) */
+export function isWorldDish(d: Dish): boolean {
+  return isWorldCuisine(REGION_GROUP[d.region]);
+}
+
+export function cuisineOf(d: Dish): CuisineGroup | null {
+  return REGION_GROUP[d.region] ?? null;
+}

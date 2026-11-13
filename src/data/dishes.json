@@ -4577,5 +4577,1453 @@
   "pairsWith": [
    "Lunch"
   ]
+ },
+ {
+  "id": "chilli-paneer-with-fried-rice",
+  "name": "Chilli Paneer with Fried Rice",
+  "hindi": "चिली पनीर और फ्राइड राइस",
+  "slots": [
+   "Lunch",
+   "Dinner"
+  ],
+  "category": "World Main",
+  "diet": "Veg",
+  "region": "Indo-Chinese",
+  "cookTime": 35,
+  "difficulty": "Medium",
+  "ingredients": [
+   "Paneer",
+   "capsicum",
+   "onion",
+   "soy sauce",
+   "cooked rice"
+  ],
+  "jain": true,
+  "noOnionGarlic": true,
+  "vrat": false,
+  "tiffin": true,
+  "kidFavourite": true,
+  "season": "All",
+  "heaviness": "Medium",
+  "prepAhead": "Use leftover rice",
+  "pairsWith": [
+   "Hot & sour soup"
+  ]
+ },
+ {
+  "id": "veg-manchurian-with-fried-rice",
+  "name": "Veg Manchurian with Fried Rice",
+  "hindi": "वेज मंचूरियन और फ्राइड राइस",
+  "slots": [
+   "Dinner"
+  ],
+  "category": "World Main",
+  "diet": "Veg",
+  "region": "Indo-Chinese",
+  "cookTime": 45,
+  "difficulty": "Medium",
+  "ingredients": [
+   "Cabbage",
+   "carrot",
+   "cornflour",
+   "soy sauce",
+   "cooked rice"
+  ],
+  "jain": false,
+  "noOnionGarlic": true,
+  "vrat": false,
+  "tiffin": false,
+  "kidFavourite": true,
+  "season": "Winter",
+  "heaviness": "Medium",
+  "prepAhead": "Use leftover rice",
+  "pairsWith": [
+   "Sweet corn soup"
+  ]
+ },
+ {
+  "id": "schezwan-noodles",
+  "name": "Schezwan Noodles",
+  "hindi": "शेज़वान नूडल्स",
+  "slots": [
+   "Dinner"
+  ],
+  "category": "World Main",
+  "diet": "Veg",
+  "region": "Indo-Chinese",
+  "cookTime": 25,
+  "difficulty": "Easy",
+  "ingredients": [
+   "Noodles",
+   "capsicum",
+   "cabbage",
+   "schezwan sauce"
+  ],
+  "jain": false,
+  "noOnionGarlic": false,
+  "vrat": false,
+  "tiffin": true,
+  "kidFavourite": true,
+  "season": "All",
+  "heaviness": "Medium",
+  "prepAhead": null,
+  "pairsWith": [
+   "Manchurian"
+  ]
+ },
+ {
+  "id": "chicken-hakka-noodles",
+  "name": "Chicken Hakka Noodles",
+  "hindi": "चिकन हक्का नूडल्स",
+  "slots": [
+   "Dinner"
+  ],
+  "category": "World Main",
+  "diet": "Non-Veg",
+  "region": "Indo-Chinese",
+  "cookTime": 30,
+  "difficulty": "Easy",
+  "ingredients": [
+   "Noodles",
+   "chicken",
+   "cabbage",
+   "soy sauce"
+  ],
+  "jain": false,
+  "noOnionGarlic": false,
+  "vrat": false,
+  "tiffin": true,
+  "kidFavourite": true,
+  "season": "All",
+  "heaviness": "Medium",
+  "prepAhead": null,
+  "pairsWith": [
+   "Chilli chicken"
+  ]
+ },
+ {
+  "id": "hot-sour-soup",
+  "name": "Hot & Sour Soup",
+  "hindi": "हॉट एंड सॉर सूप",
+  "slots": [
+   "Dinner"
+  ],
+  "category": "World Side",
+  "diet": "Veg",
+  "region": "Indo-Chinese",
+  "cookTime": 20,
+  "difficulty": "Easy",
+  "ingredients": [
+   "Cabbage",
+   "carrot",
+   "mushroom",
+   "soy sauce",
+   "vinegar"
+  ],
+  "jain": false,
+  "noOnionGarlic": false,
+  "vrat": false,
+  "tiffin": false,
+  "kidFavourite": true,
+  "season": "Winter",
+  "heaviness": "Light",
+  "prepAhead": null,
+  "pairsWith": [
+   "Noodles"
+  ]
+ },
+ {
+  "id": "sweet-corn-soup",
+  "name": "Sweet Corn Soup",
+  "hindi": "स्वीट कॉर्न सूप",
+  "slots": [
+   "Dinner"
+  ],
+  "category": "World Side",
+  "diet": "Veg",
+  "region": "Indo-Chinese",
+  "cookTime": 20,
+  "difficulty": "Easy",
+  "ingredients": [
+   "Sweet corn",
+   "carrot",
+   "cornflour"
+  ],
+  "jain": false,
+  "noOnionGarlic": true,
+  "vrat": false,
+  "tiffin": false,
+  "kidFavourite": true,
+  "season": "All",
+  "heaviness": "Light",
+  "prepAhead": null,
+  "pairsWith": [
+   "Fried rice"
+  ]
+ },
+ {
+  "id": "veg-spring-rolls",
+  "name": "Veg Spring Rolls",
+  "hindi": "वेज स्प्रिंग रोल",
+  "slots": [
+   "Snack",
+   "Dinner"
+  ],
+  "category": "World Side",
+  "diet": "Veg",
+  "region": "Indo-Chinese",
+  "cookTime": 45,
+  "difficulty": "Medium",
+  "ingredients": [
+   "Spring roll sheets",
+   "cabbage",
+   "carrot",
+   "capsicum"
+  ],
+  "jain": false,
+  "noOnionGarlic": true,
+  "vrat": false,
+  "tiffin": false,
+  "kidFavourite": true,
+  "season": "All",
+  "heaviness": "Medium",
+  "prepAhead": null,
+  "pairsWith": [
+   "Chilli sauce"
+  ]
+ },
+ {
+  "id": "gobi-manchurian",
+  "name": "Gobi Manchurian",
+  "hindi": "गोभी मंचूरियन",
+  "slots": [
+   "Snack",
+   "Dinner"
+  ],
+  "category": "World Side",
+  "diet": "Veg",
+  "region": "Indo-Chinese",
+  "cookTime": 35,
+  "difficulty": "Medium",
+  "ingredients": [
+   "Cauliflower",
+   "cornflour",
+   "soy sauce",
+   "garlic"
+  ],
+  "jain": false,
+  "noOnionGarlic": false,
+  "vrat": false,
+  "tiffin": false,
+  "kidFavourite": true,
+  "season": "Winter",
+  "heaviness": "Medium",
+  "prepAhead": null,
+  "pairsWith": [
+   "Fried rice"
+  ]
+ },
+ {
+  "id": "red-sauce-pasta",
+  "name": "Red Sauce Pasta",
+  "hindi": "रेड सॉस पास्ता",
+  "slots": [
+   "Lunch",
+   "Dinner"
+  ],
+  "category": "World Main",
+  "diet": "Veg",
+  "region": "Italian",
+  "cookTime": 25,
+  "difficulty": "Easy",
+  "ingredients": [
+   "Pasta",
+   "tomato",
+   "garlic",
+   "basil",
+   "chilli flakes"
+  ],
+  "jain": true,
+  "noOnionGarlic": true,
+  "vrat": false,
+  "tiffin": true,
+  "kidFavourite": true,
+  "season": "All",
+  "heaviness": "Medium",
+  "prepAhead": null,
+  "pairsWith": [
+   "Garlic bread"
+  ]
+ },
+ {
+  "id": "white-sauce-pasta",
+  "name": "White Sauce Pasta",
+  "hindi": "व्हाइट सॉस पास्ता",
+  "slots": [
+   "Lunch",
+   "Dinner"
+  ],
+  "category": "World Main",
+  "diet": "Veg",
+  "region": "Italian",
+  "cookTime": 25,
+  "difficulty": "Easy",
+  "ingredients": [
+   "Pasta",
+   "milk",
+   "butter",
+   "maida",
+   "cheese",
+   "sweet corn"
+  ],
+  "jain": true,
+  "noOnionGarlic": true,
+  "vrat": false,
+  "tiffin": true,
+  "kidFavourite": true,
+  "season": "All",
+  "heaviness": "Heavy",
+  "prepAhead": null,
+  "pairsWith": [
+   "Garlic bread"
+  ]
+ },
+ {
+  "id": "margherita-pizza",
+  "name": "Margherita Pizza",
+  "hindi": "मार्गेरिटा पिज़्ज़ा",
+  "slots": [
+   "Dinner"
+  ],
+  "category": "World Main",
+  "diet": "Veg",
+  "region": "Italian",
+  "cookTime": 40,
+  "difficulty": "Medium",
+  "ingredients": [
+   "Pizza base",
+   "pizza sauce",
+   "mozzarella",
+   "oregano"
+  ],
+  "jain": true,
+  "noOnionGarlic": true,
+  "vrat": false,
+  "tiffin": false,
+  "kidFavourite": true,
+  "season": "All",
+  "heaviness": "Heavy",
+  "prepAhead": null,
+  "pairsWith": [
+   "Salad"
+  ]
+ },
+ {
+  "id": "veggie-pizza",
+  "name": "Veggie Pizza",
+  "hindi": "वेजी पिज़्ज़ा",
+  "slots": [
+   "Dinner"
+  ],
+  "category": "World Main",
+  "diet": "Veg",
+  "region": "Italian",
+  "cookTime": 45,
+  "difficulty": "Medium",
+  "ingredients": [
+   "Pizza base",
+   "pizza sauce",
+   "mozzarella",
+   "capsicum",
+   "onion",
+   "sweet corn"
+  ],
+  "jain": true,
+  "noOnionGarlic": true,
+  "vrat": false,
+  "tiffin": false,
+  "kidFavourite": true,
+  "season": "All",
+  "heaviness": "Heavy",
+  "prepAhead": null,
+  "pairsWith": [
+   "Salad"
+  ]
+ },
+ {
+  "id": "vegetable-lasagne",
+  "name": "Vegetable Lasagne",
+  "hindi": "वेज लज़ानिया",
+  "slots": [
+   "Dinner"
+  ],
+  "category": "World Main",
+  "diet": "Veg",
+  "region": "Italian",
+  "cookTime": 75,
+  "difficulty": "Hard",
+  "ingredients": [
+   "Lasagne sheets",
+   "tomato sauce",
+   "white sauce",
+   "mixed vegetables",
+   "cheese"
+  ],
+  "jain": false,
+  "noOnionGarlic": true,
+  "vrat": false,
+  "tiffin": false,
+  "kidFavourite": true,
+  "season": "All",
+  "heaviness": "Heavy",
+  "prepAhead": null,
+  "pairsWith": [
+   "Salad"
+  ]
+ },
+ {
+  "id": "mushroom-risotto",
+  "name": "Mushroom Risotto",
+  "hindi": "मशरूम रिसोट्टो",
+  "slots": [
+   "Dinner"
+  ],
+  "category": "World Main",
+  "diet": "Veg",
+  "region": "Italian",
+  "cookTime": 40,
+  "difficulty": "Medium",
+  "ingredients": [
+   "Rice",
+   "mushroom",
+   "butter",
+   "cheese"
+  ],
+  "jain": false,
+  "noOnionGarlic": true,
+  "vrat": false,
+  "tiffin": false,
+  "kidFavourite": false,
+  "season": "Winter",
+  "heaviness": "Medium",
+  "prepAhead": null,
+  "pairsWith": [
+   "Garlic bread"
+  ]
+ },
+ {
+  "id": "creamy-chicken-pasta",
+  "name": "Creamy Chicken Pasta",
+  "hindi": "क्रीमी चिकन पास्ता",
+  "slots": [
+   "Dinner"
+  ],
+  "category": "World Main",
+  "diet": "Non-Veg",
+  "region": "Italian",
+  "cookTime": 35,
+  "difficulty": "Medium",
+  "ingredients": [
+   "Pasta",
+   "chicken",
+   "cream",
+   "garlic"
+  ],
+  "jain": false,
+  "noOnionGarlic": false,
+  "vrat": false,
+  "tiffin": true,
+  "kidFavourite": true,
+  "season": "All",
+  "heaviness": "Heavy",
+  "prepAhead": null,
+  "pairsWith": [
+   "Garlic bread"
+  ]
+ },
+ {
+  "id": "garlic-bread",
+  "name": "Garlic Bread",
+  "hindi": "गार्लिक ब्रेड",
+  "slots": [
+   "Snack",
+   "Dinner"
+  ],
+  "category": "World Side",
+  "diet": "Veg",
+  "region": "Italian",
+  "cookTime": 15,
+  "difficulty": "Easy",
+  "ingredients": [
+   "Bread",
+   "butter",
+   "garlic",
+   "oregano"
+  ],
+  "jain": false,
+  "noOnionGarlic": false,
+  "vrat": false,
+  "tiffin": false,
+  "kidFavourite": true,
+  "season": "All",
+  "heaviness": "Medium",
+  "prepAhead": null,
+  "pairsWith": [
+   "Pasta"
+  ]
+ },
+ {
+  "id": "minestrone-soup",
+  "name": "Minestrone Soup",
+  "hindi": "मिनेस्ट्रोन सूप",
+  "slots": [
+   "Dinner"
+  ],
+  "category": "World Side",
+  "diet": "Veg",
+  "region": "Italian",
+  "cookTime": 30,
+  "difficulty": "Easy",
+  "ingredients": [
+   "Mixed vegetables",
+   "tomato",
+   "pasta",
+   "beans"
+  ],
+  "jain": false,
+  "noOnionGarlic": true,
+  "vrat": false,
+  "tiffin": false,
+  "kidFavourite": false,
+  "season": "Winter",
+  "heaviness": "Light",
+  "prepAhead": null,
+  "pairsWith": [
+   "Garlic bread"
+  ]
+ },
+ {
+  "id": "bruschetta",
+  "name": "Bruschetta",
+  "hindi": "ब्रुशेटा",
+  "slots": [
+   "Snack",
+   "Dinner"
+  ],
+  "category": "World Side",
+  "diet": "Veg",
+  "region": "Italian",
+  "cookTime": 15,
+  "difficulty": "Easy",
+  "ingredients": [
+   "Bread",
+   "tomato",
+   "basil",
+   "olive oil"
+  ],
+  "jain": true,
+  "noOnionGarlic": true,
+  "vrat": false,
+  "tiffin": false,
+  "kidFavourite": false,
+  "season": "Summer",
+  "heaviness": "Light",
+  "prepAhead": null,
+  "pairsWith": [
+   "Pasta"
+  ]
+ },
+ {
+  "id": "cheese-omelette-with-toast",
+  "name": "Cheese Omelette with Toast",
+  "hindi": "चीज़ ऑमलेट और टोस्ट",
+  "slots": [
+   "Breakfast"
+  ],
+  "category": "Breakfast",
+  "diet": "Egg",
+  "region": "Continental",
+  "cookTime": 15,
+  "difficulty": "Easy",
+  "ingredients": [
+   "Eggs",
+   "cheese",
+   "bread",
+   "butter"
+  ],
+  "jain": false,
+  "noOnionGarlic": true,
+  "vrat": false,
+  "tiffin": true,
+  "kidFavourite": true,
+  "season": "All",
+  "heaviness": "Light",
+  "prepAhead": null,
+  "pairsWith": [
+   "Coffee"
+  ]
+ },
+ {
+  "id": "pancakes-with-honey",
+  "name": "Pancakes with Honey",
+  "hindi": "हनी पैनकेक",
+  "slots": [
+   "Breakfast"
+  ],
+  "category": "Breakfast",
+  "diet": "Veg",
+  "region": "Continental",
+  "cookTime": 25,
+  "difficulty": "Easy",
+  "ingredients": [
+   "Maida",
+   "milk",
+   "butter",
+   "honey",
+   "banana"
+  ],
+  "jain": true,
+  "noOnionGarlic": true,
+  "vrat": false,
+  "tiffin": false,
+  "kidFavourite": true,
+  "season": "All",
+  "heaviness": "Medium",
+  "prepAhead": null,
+  "pairsWith": [
+   "Fruit"
+  ]
+ },
+ {
+  "id": "french-toast",
+  "name": "French Toast",
+  "hindi": "फ्रेंच टोस्ट",
+  "slots": [
+   "Breakfast"
+  ],
+  "category": "Breakfast",
+  "diet": "Egg",
+  "region": "Continental",
+  "cookTime": 15,
+  "difficulty": "Easy",
+  "ingredients": [
+   "Bread",
+   "eggs",
+   "milk",
+   "sugar"
+  ],
+  "jain": false,
+  "noOnionGarlic": true,
+  "vrat": false,
+  "tiffin": true,
+  "kidFavourite": true,
+  "season": "All",
+  "heaviness": "Light",
+  "prepAhead": null,
+  "pairsWith": [
+   "Fruit"
+  ]
+ },
+ {
+  "id": "overnight-oats-with-fruit",
+  "name": "Overnight Oats with Fruit",
+  "hindi": "ओवरनाइट ओट्स",
+  "slots": [
+   "Breakfast"
+  ],
+  "category": "Breakfast",
+  "diet": "Veg",
+  "region": "Continental",
+  "cookTime": 10,
+  "difficulty": "Easy",
+  "ingredients": [
+   "Oats",
+   "milk",
+   "curd",
+   "banana",
+   "honey"
+  ],
+  "jain": true,
+  "noOnionGarlic": true,
+  "vrat": false,
+  "tiffin": true,
+  "kidFavourite": false,
+  "season": "Summer",
+  "heaviness": "Light",
+  "prepAhead": "Soak oats overnight",
+  "pairsWith": []
+ },
+ {
+  "id": "veg-cheese-grilled-sandwich",
+  "name": "Veg Cheese Grilled Sandwich",
+  "hindi": "वेज चीज़ ग्रिल्ड सैंडविच",
+  "slots": [
+   "Breakfast",
+   "Snack"
+  ],
+  "category": "Breakfast",
+  "diet": "Veg",
+  "region": "Continental",
+  "cookTime": 20,
+  "difficulty": "Easy",
+  "ingredients": [
+   "Bread",
+   "cheese",
+   "capsicum",
+   "tomato",
+   "butter"
+  ],
+  "jain": true,
+  "noOnionGarlic": true,
+  "vrat": false,
+  "tiffin": true,
+  "kidFavourite": true,
+  "season": "All",
+  "heaviness": "Medium",
+  "prepAhead": null,
+  "pairsWith": [
+   "Ketchup"
+  ]
+ },
+ {
+  "id": "baked-vegetables-in-white-sauce",
+  "name": "Baked Vegetables in White Sauce",
+  "hindi": "बेक्ड वेजिटेबल्स",
+  "slots": [
+   "Dinner"
+  ],
+  "category": "World Main",
+  "diet": "Veg",
+  "region": "Continental",
+  "cookTime": 50,
+  "difficulty": "Medium",
+  "ingredients": [
+   "Mixed vegetables",
+   "milk",
+   "butter",
+   "maida",
+   "cheese"
+  ],
+  "jain": false,
+  "noOnionGarlic": true,
+  "vrat": false,
+  "tiffin": false,
+  "kidFavourite": true,
+  "season": "Winter",
+  "heaviness": "Heavy",
+  "prepAhead": null,
+  "pairsWith": [
+   "Garlic bread"
+  ]
+ },
+ {
+  "id": "grilled-paneer-with-saut-ed-vegetables",
+  "name": "Grilled Paneer with Sautéed Vegetables",
+  "hindi": "ग्रिल्ड पनीर और सब्ज़ियाँ",
+  "slots": [
+   "Dinner"
+  ],
+  "category": "World Main",
+  "diet": "Veg",
+  "region": "Continental",
+  "cookTime": 35,
+  "difficulty": "Medium",
+  "ingredients": [
+   "Paneer",
+   "mixed vegetables",
+   "butter",
+   "herbs"
+  ],
+  "jain": true,
+  "noOnionGarlic": true,
+  "vrat": false,
+  "tiffin": false,
+  "kidFavourite": true,
+  "season": "All",
+  "heaviness": "Medium",
+  "prepAhead": "Marinate 30 min",
+  "pairsWith": [
+   "Soup"
+  ]
+ },
+ {
+  "id": "grilled-chicken-with-saut-ed-vegetables",
+  "name": "Grilled Chicken with Sautéed Vegetables",
+  "hindi": "ग्रिल्ड चिकन और सब्ज़ियाँ",
+  "slots": [
+   "Dinner"
+  ],
+  "category": "World Main",
+  "diet": "Non-Veg",
+  "region": "Continental",
+  "cookTime": 45,
+  "difficulty": "Medium",
+  "ingredients": [
+   "Chicken",
+   "mixed vegetables",
+   "butter",
+   "herbs",
+   "garlic"
+  ],
+  "jain": false,
+  "noOnionGarlic": false,
+  "vrat": false,
+  "tiffin": false,
+  "kidFavourite": false,
+  "season": "All",
+  "heaviness": "Light",
+  "prepAhead": "Marinate 1 hr",
+  "pairsWith": [
+   "Soup"
+  ]
+ },
+ {
+  "id": "lemon-butter-fish-with-mash",
+  "name": "Lemon Butter Fish with Mash",
+  "hindi": "लेमन बटर फिश",
+  "slots": [
+   "Dinner"
+  ],
+  "category": "World Main",
+  "diet": "Non-Veg",
+  "region": "Continental",
+  "cookTime": 35,
+  "difficulty": "Medium",
+  "ingredients": [
+   "Fish",
+   "butter",
+   "lemon",
+   "garlic",
+   "potato"
+  ],
+  "jain": false,
+  "noOnionGarlic": false,
+  "vrat": false,
+  "tiffin": false,
+  "kidFavourite": false,
+  "season": "All",
+  "heaviness": "Medium",
+  "prepAhead": null,
+  "pairsWith": [
+   "Salad"
+  ]
+ },
+ {
+  "id": "veg-burger",
+  "name": "Veg Burger",
+  "hindi": "वेज बर्गर",
+  "slots": [
+   "Dinner",
+   "Snack"
+  ],
+  "category": "World Main",
+  "diet": "Veg",
+  "region": "Continental",
+  "cookTime": 40,
+  "difficulty": "Medium",
+  "ingredients": [
+   "Burger buns",
+   "potato",
+   "peas",
+   "cheese",
+   "cabbage"
+  ],
+  "jain": false,
+  "noOnionGarlic": true,
+  "vrat": false,
+  "tiffin": false,
+  "kidFavourite": true,
+  "season": "All",
+  "heaviness": "Heavy",
+  "prepAhead": "Boil potatoes",
+  "pairsWith": [
+   "Fries"
+  ]
+ },
+ {
+  "id": "cream-of-tomato-soup",
+  "name": "Cream of Tomato Soup",
+  "hindi": "क्रीम ऑफ़ टोमैटो सूप",
+  "slots": [
+   "Dinner"
+  ],
+  "category": "World Side",
+  "diet": "Veg",
+  "region": "Continental",
+  "cookTime": 25,
+  "difficulty": "Easy",
+  "ingredients": [
+   "Tomato",
+   "butter",
+   "cream"
+  ],
+  "jain": true,
+  "noOnionGarlic": true,
+  "vrat": false,
+  "tiffin": false,
+  "kidFavourite": true,
+  "season": "Winter",
+  "heaviness": "Light",
+  "prepAhead": null,
+  "pairsWith": [
+   "Garlic bread"
+  ]
+ },
+ {
+  "id": "cream-of-mushroom-soup",
+  "name": "Cream of Mushroom Soup",
+  "hindi": "क्रीम ऑफ़ मशरूम सूप",
+  "slots": [
+   "Dinner"
+  ],
+  "category": "World Side",
+  "diet": "Veg",
+  "region": "Continental",
+  "cookTime": 25,
+  "difficulty": "Easy",
+  "ingredients": [
+   "Mushroom",
+   "milk",
+   "butter"
+  ],
+  "jain": false,
+  "noOnionGarlic": true,
+  "vrat": false,
+  "tiffin": false,
+  "kidFavourite": false,
+  "season": "Winter",
+  "heaviness": "Light",
+  "prepAhead": null,
+  "pairsWith": [
+   "Garlic bread"
+  ]
+ },
+ {
+  "id": "russian-salad",
+  "name": "Russian Salad",
+  "hindi": "रशियन सलाद",
+  "slots": [
+   "Side"
+  ],
+  "category": "World Side",
+  "diet": "Veg",
+  "region": "Continental",
+  "cookTime": 20,
+  "difficulty": "Easy",
+  "ingredients": [
+   "Potato",
+   "carrot",
+   "peas",
+   "pineapple",
+   "mayonnaise"
+  ],
+  "jain": false,
+  "noOnionGarlic": true,
+  "vrat": false,
+  "tiffin": false,
+  "kidFavourite": true,
+  "season": "Summer",
+  "heaviness": "Medium",
+  "prepAhead": "Boil potatoes",
+  "pairsWith": [
+   "Sandwich"
+  ]
+ },
+ {
+  "id": "veg-burrito-bowl",
+  "name": "Veg Burrito Bowl",
+  "hindi": "वेज बरिटो बाउल",
+  "slots": [
+   "Lunch",
+   "Dinner"
+  ],
+  "category": "World Main",
+  "diet": "Veg",
+  "region": "Mexican",
+  "cookTime": 40,
+  "difficulty": "Medium",
+  "ingredients": [
+   "Rice",
+   "kidney beans",
+   "sweet corn",
+   "capsicum",
+   "salsa",
+   "cheese"
+  ],
+  "jain": true,
+  "noOnionGarlic": true,
+  "vrat": false,
+  "tiffin": true,
+  "kidFavourite": true,
+  "season": "All",
+  "heaviness": "Medium",
+  "prepAhead": "Soak kidney beans overnight",
+  "pairsWith": [
+   "Nachos"
+  ]
+ },
+ {
+  "id": "veg-quesadilla",
+  "name": "Veg Quesadilla",
+  "hindi": "वेज केसडिया",
+  "slots": [
+   "Dinner",
+   "Snack"
+  ],
+  "category": "World Main",
+  "diet": "Veg",
+  "region": "Mexican",
+  "cookTime": 25,
+  "difficulty": "Easy",
+  "ingredients": [
+   "Tortilla",
+   "cheese",
+   "kidney beans",
+   "capsicum",
+   "sweet corn"
+  ],
+  "jain": true,
+  "noOnionGarlic": true,
+  "vrat": false,
+  "tiffin": true,
+  "kidFavourite": true,
+  "season": "All",
+  "heaviness": "Medium",
+  "prepAhead": null,
+  "pairsWith": [
+   "Salsa"
+  ]
+ },
+ {
+  "id": "bean-tacos",
+  "name": "Bean Tacos",
+  "hindi": "बीन टैकोज़",
+  "slots": [
+   "Dinner"
+  ],
+  "category": "World Main",
+  "diet": "Veg",
+  "region": "Mexican",
+  "cookTime": 35,
+  "difficulty": "Medium",
+  "ingredients": [
+   "Taco shells",
+   "kidney beans",
+   "lettuce",
+   "tomato",
+   "cheese"
+  ],
+  "jain": true,
+  "noOnionGarlic": true,
+  "vrat": false,
+  "tiffin": false,
+  "kidFavourite": true,
+  "season": "All",
+  "heaviness": "Medium",
+  "prepAhead": "Soak kidney beans overnight",
+  "pairsWith": [
+   "Salsa"
+  ]
+ },
+ {
+  "id": "chicken-burrito",
+  "name": "Chicken Burrito",
+  "hindi": "चिकन बरिटो",
+  "slots": [
+   "Dinner"
+  ],
+  "category": "World Main",
+  "diet": "Non-Veg",
+  "region": "Mexican",
+  "cookTime": 40,
+  "difficulty": "Medium",
+  "ingredients": [
+   "Tortilla",
+   "chicken",
+   "rice",
+   "kidney beans",
+   "cheese"
+  ],
+  "jain": false,
+  "noOnionGarlic": false,
+  "vrat": false,
+  "tiffin": true,
+  "kidFavourite": true,
+  "season": "All",
+  "heaviness": "Heavy",
+  "prepAhead": "Marinate 30 min",
+  "pairsWith": [
+   "Salsa"
+  ]
+ },
+ {
+  "id": "nachos-with-salsa",
+  "name": "Nachos with Salsa",
+  "hindi": "नाचोज़ और सालसा",
+  "slots": [
+   "Snack",
+   "Dinner"
+  ],
+  "category": "World Side",
+  "diet": "Veg",
+  "region": "Mexican",
+  "cookTime": 15,
+  "difficulty": "Easy",
+  "ingredients": [
+   "Nachos",
+   "tomato",
+   "onion",
+   "cheese",
+   "jalapeño"
+  ],
+  "jain": false,
+  "noOnionGarlic": true,
+  "vrat": false,
+  "tiffin": false,
+  "kidFavourite": true,
+  "season": "All",
+  "heaviness": "Medium",
+  "prepAhead": null,
+  "pairsWith": [
+   "Burrito bowl"
+  ]
+ },
+ {
+  "id": "mexican-corn-salad",
+  "name": "Mexican Corn Salad",
+  "hindi": "मैक्सिकन कॉर्न सलाद",
+  "slots": [
+   "Side"
+  ],
+  "category": "World Side",
+  "diet": "Veg",
+  "region": "Mexican",
+  "cookTime": 10,
+  "difficulty": "Easy",
+  "ingredients": [
+   "Sweet corn",
+   "capsicum",
+   "tomato",
+   "lemon"
+  ],
+  "jain": true,
+  "noOnionGarlic": true,
+  "vrat": false,
+  "tiffin": true,
+  "kidFavourite": true,
+  "season": "Summer",
+  "heaviness": "Light",
+  "prepAhead": null,
+  "pairsWith": [
+   "Quesadilla"
+  ]
+ },
+ {
+  "id": "thai-green-curry-with-rice",
+  "name": "Thai Green Curry with Rice",
+  "hindi": "थाई ग्रीन करी और चावल",
+  "slots": [
+   "Dinner"
+  ],
+  "category": "World Main",
+  "diet": "Veg",
+  "region": "Thai",
+  "cookTime": 40,
+  "difficulty": "Medium",
+  "ingredients": [
+   "Coconut milk",
+   "green curry paste",
+   "mixed vegetables",
+   "rice"
+  ],
+  "jain": false,
+  "noOnionGarlic": false,
+  "vrat": false,
+  "tiffin": false,
+  "kidFavourite": false,
+  "season": "All",
+  "heaviness": "Medium",
+  "prepAhead": null,
+  "pairsWith": [
+   "Spring rolls"
+  ]
+ },
+ {
+  "id": "thai-red-curry-chicken-with-rice",
+  "name": "Thai Red Curry Chicken with Rice",
+  "hindi": "थाई रेड करी चिकन और चावल",
+  "slots": [
+   "Dinner"
+  ],
+  "category": "World Main",
+  "diet": "Non-Veg",
+  "region": "Thai",
+  "cookTime": 40,
+  "difficulty": "Medium",
+  "ingredients": [
+   "Chicken",
+   "coconut milk",
+   "red curry paste",
+   "rice"
+  ],
+  "jain": false,
+  "noOnionGarlic": false,
+  "vrat": false,
+  "tiffin": false,
+  "kidFavourite": false,
+  "season": "All",
+  "heaviness": "Medium",
+  "prepAhead": null,
+  "pairsWith": [
+   "Papaya salad"
+  ]
+ },
+ {
+  "id": "veg-pad-thai",
+  "name": "Veg Pad Thai",
+  "hindi": "वेज पैड थाई",
+  "slots": [
+   "Dinner"
+  ],
+  "category": "World Main",
+  "diet": "Veg",
+  "region": "Thai",
+  "cookTime": 30,
+  "difficulty": "Medium",
+  "ingredients": [
+   "Rice noodles",
+   "peanuts",
+   "paneer",
+   "bean sprouts",
+   "tamarind"
+  ],
+  "jain": false,
+  "noOnionGarlic": false,
+  "vrat": false,
+  "tiffin": true,
+  "kidFavourite": true,
+  "season": "All",
+  "heaviness": "Medium",
+  "prepAhead": null,
+  "pairsWith": [
+   "Tom yum soup"
+  ]
+ },
+ {
+  "id": "tom-yum-soup",
+  "name": "Tom Yum Soup",
+  "hindi": "टॉम यम सूप",
+  "slots": [
+   "Dinner"
+  ],
+  "category": "World Side",
+  "diet": "Veg",
+  "region": "Thai",
+  "cookTime": 25,
+  "difficulty": "Easy",
+  "ingredients": [
+   "Mushroom",
+   "lemongrass",
+   "galangal",
+   "chilli",
+   "lime"
+  ],
+  "jain": false,
+  "noOnionGarlic": false,
+  "vrat": false,
+  "tiffin": false,
+  "kidFavourite": false,
+  "season": "Monsoon",
+  "heaviness": "Light",
+  "prepAhead": null,
+  "pairsWith": [
+   "Thai curry"
+  ]
+ },
+ {
+  "id": "raw-papaya-salad",
+  "name": "Raw Papaya Salad",
+  "hindi": "कच्चे पपीते का थाई सलाद",
+  "slots": [
+   "Side"
+  ],
+  "category": "World Side",
+  "diet": "Veg",
+  "region": "Thai",
+  "cookTime": 15,
+  "difficulty": "Easy",
+  "ingredients": [
+   "Raw papaya",
+   "peanuts",
+   "tomato",
+   "lime"
+  ],
+  "jain": true,
+  "noOnionGarlic": true,
+  "vrat": false,
+  "tiffin": false,
+  "kidFavourite": false,
+  "season": "Summer",
+  "heaviness": "Light",
+  "prepAhead": null,
+  "pairsWith": [
+   "Thai curry"
+  ]
+ },
+ {
+  "id": "falafel-wrap-with-hummus",
+  "name": "Falafel Wrap with Hummus",
+  "hindi": "फलाफल रैप",
+  "slots": [
+   "Dinner"
+  ],
+  "category": "World Main",
+  "diet": "Veg",
+  "region": "Middle Eastern",
+  "cookTime": 45,
+  "difficulty": "Medium",
+  "ingredients": [
+   "Chickpeas",
+   "pita",
+   "cucumber",
+   "tomato",
+   "sesame"
+  ],
+  "jain": false,
+  "noOnionGarlic": false,
+  "vrat": false,
+  "tiffin": true,
+  "kidFavourite": false,
+  "season": "All",
+  "heaviness": "Medium",
+  "prepAhead": "Soak chickpeas overnight",
+  "pairsWith": [
+   "Salad"
+  ]
+ },
+ {
+  "id": "paneer-shawarma-wrap",
+  "name": "Paneer Shawarma Wrap",
+  "hindi": "पनीर शवर्मा रैप",
+  "slots": [
+   "Dinner"
+  ],
+  "category": "World Main",
+  "diet": "Veg",
+  "region": "Middle Eastern",
+  "cookTime": 35,
+  "difficulty": "Medium",
+  "ingredients": [
+   "Paneer",
+   "pita",
+   "garlic",
+   "cabbage",
+   "curd"
+  ],
+  "jain": false,
+  "noOnionGarlic": false,
+  "vrat": false,
+  "tiffin": true,
+  "kidFavourite": true,
+  "season": "All",
+  "heaviness": "Medium",
+  "prepAhead": "Marinate 30 min",
+  "pairsWith": [
+   "Hummus"
+  ]
+ },
+ {
+  "id": "chicken-shawarma",
+  "name": "Chicken Shawarma",
+  "hindi": "चिकन शवर्मा",
+  "slots": [
+   "Dinner"
+  ],
+  "category": "World Main",
+  "diet": "Non-Veg",
+  "region": "Middle Eastern",
+  "cookTime": 40,
+  "difficulty": "Medium",
+  "ingredients": [
+   "Chicken",
+   "pita",
+   "garlic",
+   "cucumber",
+   "curd"
+  ],
+  "jain": false,
+  "noOnionGarlic": false,
+  "vrat": false,
+  "tiffin": true,
+  "kidFavourite": true,
+  "season": "All",
+  "heaviness": "Medium",
+  "prepAhead": "Marinate 2 hrs",
+  "pairsWith": [
+   "Hummus"
+  ]
+ },
+ {
+  "id": "hummus-with-pita",
+  "name": "Hummus with Pita",
+  "hindi": "हम्मस और पीटा",
+  "slots": [
+   "Snack",
+   "Dinner"
+  ],
+  "category": "World Side",
+  "diet": "Veg",
+  "region": "Middle Eastern",
+  "cookTime": 20,
+  "difficulty": "Easy",
+  "ingredients": [
+   "Chickpeas",
+   "sesame",
+   "garlic",
+   "lemon",
+   "pita"
+  ],
+  "jain": false,
+  "noOnionGarlic": false,
+  "vrat": false,
+  "tiffin": true,
+  "kidFavourite": false,
+  "season": "All",
+  "heaviness": "Light",
+  "prepAhead": "Soak chickpeas overnight",
+  "pairsWith": [
+   "Falafel"
+  ]
+ },
+ {
+  "id": "fattoush-salad",
+  "name": "Fattoush Salad",
+  "hindi": "फतूश सलाद",
+  "slots": [
+   "Side"
+  ],
+  "category": "World Side",
+  "diet": "Veg",
+  "region": "Middle Eastern",
+  "cookTime": 15,
+  "difficulty": "Easy",
+  "ingredients": [
+   "Cucumber",
+   "tomato",
+   "lettuce",
+   "pita",
+   "lemon"
+  ],
+  "jain": true,
+  "noOnionGarlic": true,
+  "vrat": false,
+  "tiffin": false,
+  "kidFavourite": false,
+  "season": "Summer",
+  "heaviness": "Light",
+  "prepAhead": null,
+  "pairsWith": [
+   "Wrap"
+  ]
  }
 ]

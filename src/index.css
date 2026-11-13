@@ -175,6 +175,7 @@ button { cursor: pointer; }
 .chip-today { background: var(--primary); border-color: var(--primary); color: var(--on-primary); }
 .chip-vrat { background: var(--vrat-soft); border-color: transparent; color: var(--vrat); }
 .chip-nonveg { color: var(--nonveg); }
+.chip-world { background: var(--primary-soft); border-color: transparent; color: var(--primary); }
 .chip-prep { background: var(--accent-soft); border-color: transparent; color: var(--accent-ink); }
 .chip-toggle { cursor: pointer; min-height: 34px; padding: 4px 12px; font-size: 0.85rem; }
 .chip-toggle.is-on { background: var(--primary); border-color: var(--primary); color: var(--on-primary); }
@@ -259,6 +260,8 @@ button { cursor: pointer; }
   width: 100%; min-height: 46px; padding: 10px 14px; border-radius: 12px;
   border: 1px solid var(--line); background: var(--surface-2); font-size: 1rem;
 }
+.select-wrap { display: flex; align-items: center; gap: 10px; font-weight: 600; font-size: 0.9rem; }
+.select-wrap select { flex: 1; min-height: 42px; padding: 6px 12px; border-radius: 12px; border: 1px solid var(--line); background: var(--surface-2); color: var(--ink); font: inherit; }
 .seg { display: flex; flex-wrap: wrap; gap: 4px; padding: 4px; background: var(--surface-2); border-radius: 12px; border: 1px solid var(--line); }
 .seg-btn { flex: 1 1 auto; min-height: 36px; padding: 4px 10px; border: 0; border-radius: 9px; background: none; font-weight: 600; font-size: 0.88rem; color: var(--muted); }
 .seg-btn.is-on { background: var(--surface); color: var(--primary); box-shadow: var(--shadow); }

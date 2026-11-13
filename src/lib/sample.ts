@@ -8,7 +8,8 @@ export const SAMPLE_PROFILE: FamilyProfile = {
   jain: false,
   noOnionGarlic: false,
   fastDays: [1], // Tuesday vrat
-  cuisines: ['North', 'West'],
+  cuisines: ['North', 'West', 'Chinese', 'Italian'],
+  worldMealsPerWeek: 2,
   hasKids: true,
   packsTiffin: true,
   weekdayMaxCookTime: 45,
@@ -25,6 +26,7 @@ export const BLANK_PROFILE: FamilyProfile = {
   noOnionGarlic: false,
   fastDays: [],
   cuisines: [],
+  worldMealsPerWeek: 1,
   hasKids: false,
   packsTiffin: false,
   weekdayMaxCookTime: 45,
@@ -37,6 +39,15 @@ export const CUISINES: { key: CuisineGroup; label: string; hint: string }[] = [
   { key: 'West', label: 'West Indian', hint: 'Gujarati, Maharashtrian, Goan' },
   { key: 'South', label: 'South Indian', hint: 'Tamil, Kannada, Kerala, Andhra' },
   { key: 'East', label: 'East Indian', hint: 'Bengali, Odia, Bihari, North-East' },
+];
+
+export const WORLD_CUISINE_OPTIONS: { key: CuisineGroup; label: string; hint: string }[] = [
+  { key: 'Chinese', label: 'Chinese', hint: 'Indo-Chinese: noodles, manchurian, fried rice' },
+  { key: 'Italian', label: 'Italian', hint: 'Pasta, pizza, risotto, garlic bread' },
+  { key: 'Continental', label: 'Continental', hint: 'Soups, bakes, grills, pancakes' },
+  { key: 'Mexican', label: 'Mexican', hint: 'Burrito bowls, tacos, quesadillas' },
+  { key: 'Thai', label: 'Thai', hint: 'Green curry, pad thai, tom yum' },
+  { key: 'Middle Eastern', label: 'Middle Eastern', hint: 'Falafel, shawarma, hummus' },
 ];
 
 export const DIET_LABEL: Record<FamilyProfile['diet'], string> = {

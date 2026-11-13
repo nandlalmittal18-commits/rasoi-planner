@@ -21,10 +21,10 @@ export interface GroceryItem {
 // Checked in order: the first match wins ("coconut milk" is not dairy, "rice flour" is a flour).
 const RULES: [RegExp, GroceryGroup][] = [
   [/chicken|mutton|fish|prawn|egg|minced/, 'Meat, fish & eggs'],
-  [/coconut|cashew|peanut|poppy|sesame|jaggery|sugar|saffron|tamarind|kokum|amchur|cumin|pepper|spice|masala|sauce|ajwain|fennel|^chilli$|kashmiri|mustard seeds|mustard oil|cardamom|sev|farsan|boondi|chutney|fox nut|roasted/, 'Spices, nuts & others'],
-  [/paneer|curd|milk|butter|ghee|cream|cheese|khoya/, 'Dairy'],
-  [/dal|rice|flour|semolina|oats|wheat|maida|sago|chickpea|kidney|chana|moong|urad|lentil|black-eyed|moth|batter|noodle|pasta|vermicelli|bread|pav|millet|sattu|soya|gram/, 'Dals, grains & flours'],
-  [/potato|onion|tomato|cauliflower|cabbage|peas|carrot|beans|okra|gourd|spinach|fenugreek|greens|brinjal|capsicum|cucumber|pumpkin|banana|papaya|drumstick|colocasia|yam|papdi|mushroom|coriander|curry leaves|green chilli|ginger|garlic|lemon|dill|mint|corn|veg|muthia/, 'Vegetables & herbs'],
+  [/coconut|cashew|peanut|poppy|sesame|jaggery|sugar|saffron|tamarind|kokum|amchur|cumin|pepper|spice|masala|sauce|ajwain|fennel|^chilli$|kashmiri|mustard seeds|mustard oil|cardamom|sev|farsan|boondi|chutney|fox nut|roasted|olive oil|paste/, 'Spices, nuts & others'],
+  [/paneer|curd|milk|butter|ghee|cream|cheese|khoya|mozzarella|tofu/, 'Dairy'],
+  [/dal|rice|flour|semolina|oats|wheat|maida|sago|chickpea|kidney|chana|moong|urad|lentil|black-eyed|moth|batter|noodle|pasta|vermicelli|bread|pav|millet|sattu|soya|gram|pizza base|tortilla|taco|nacho|lasagne|sheets|pita|bun/, 'Dals, grains & flours'],
+  [/potato|onion|tomato|cauliflower|cabbage|peas|carrot|beans|okra|gourd|spinach|fenugreek|greens|brinjal|capsicum|cucumber|pumpkin|banana|papaya|drumstick|colocasia|yam|papdi|mushroom|coriander|curry leaves|green chilli|ginger|garlic|lemon|dill|mint|corn|veg|muthia|lettuce|basil|lemongrass|galangal|lime|jalape|sprouts|pineapple|fruit|herbs/, 'Vegetables & herbs'],
 ];
 
 function groupFor(name: string): GroceryGroup {

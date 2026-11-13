@@ -37,7 +37,7 @@ export function weightedOrder<T>(items: T[], weight: (item: T) => number, rng: R
   const out: T[] = [];
   while (left.length) {
     const pick = weightedPick(left, weight, rng);
-    if (!pick) break;
+    if (pick === null) break;
     out.push(pick);
     left.splice(left.indexOf(pick), 1);
   }

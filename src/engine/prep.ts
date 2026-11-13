@@ -43,6 +43,9 @@ const PREP_HI: Record<string, string> = {
   'Sprout moong 1-2 days': 'मूंग 1-2 दिन पहले अंकुरित करें',
   'Sprout moth beans 1-2 days': 'मोठ 1-2 दिन पहले अंकुरित करें',
   'Use leftover rice': 'एक दिन पहले थोड़ा ज़्यादा चावल बना लें',
+  'Soak chickpeas overnight': 'काबुली चने रात भर भिगो दें',
+  'Soak kidney beans overnight': 'राजमा रात भर भिगो दें',
+  'Soak oats overnight': 'ओट्स को रात भर दूध में भिगो दें',
 };
 
 /**

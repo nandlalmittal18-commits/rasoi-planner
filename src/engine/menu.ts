@@ -4,12 +4,16 @@
 //  1. Hard rules are never broken: diet, non-veg days, Jain, no onion-garlic,
 //     vrat days and dishes the family dislikes.
 //  2. Soft rules are kept when possible and relaxed one by one only if nothing
-//     fits: no dish twice in a week, in-season only, weekday cooking time,
-//     tiffin-friendly lunch, at most one heavy dish a day.
+//     fits, in this order: in-season only, then weekday cooking time, then
+//     no dish twice in a week, and last tiffin-friendly lunch and at most one
+//     heavy dish a day.
 //  3. Among the dishes that fit, preferred cuisines, kid favourites and
 //     seasonal dishes are more likely to be picked.
+//  4. World food (Chinese, Italian, Continental…) appears only on the
+//     family's chosen number of "world-food dinners", plus the odd
+//     continental breakfast, and never on vrat days.
 
-import { ALL_DISHES, REGION_GROUP, getDish, isRiceStaple, isStaple } from './dishes';
+import { ALL_DISHES, cuisineOf, getDish, isRiceStaple, isStaple, isWorldCuisine, isWorldDish } from './dishes';
 import type { DayPlan, Dish, FamilyProfile, Meal, MealItem, MealType, RoleKey, Season, WeekPlan } from './types';
 import {
   addDays,
@@ -35,8 +39,10 @@ interface Ctx {
   tiffin: boolean;
   /** Non-staple dishes already planned this week */
   used: Set<string>;
-  /** A heavy dish is already planned today */
+  /** A heavy dish is already planned today (including earlier in this meal) */
   dayHeavy: boolean;
+  /** dayHeavy before this meal started */
+  heavyBeforeMeal: boolean;
   /** Dishes already in this meal */
   inMeal: Set<string>;
 }
@@ -49,9 +55,9 @@ const ROLE_MATCH: Record<Exclude<RoleKey, 'base'>, (d: Dish, meal: MealType) => 
   dal: (d, m) => d.category === 'Dal / Legume' && d.slots.includes(m),
   sabzi: (d, m) => d.category.startsWith('Sabzi') && d.slots.includes(m),
   paneer: (d, m) => d.category === 'Paneer' && d.slots.includes(m),
-  nonveg: (d, m) => d.category === 'Non-Veg Main' && d.slots.includes(m),
+  nonveg: (d, m) => d.category === 'Non-Veg Main' && d.slots.includes(m) && !isWorldDish(d),
   riceDish: (d, m) =>
-    (d.category === 'One-Pot Meal' || (d.category === 'Rice' && !isRiceStaple(d))) && d.slots.includes(m),
+    (d.category === 'One-Pot Meal' || (d.category === 'Rice' && !isRiceStaple(d))) && d.slots.includes(m) && !isWorldDish(d),
   combo: (d, m) => d.category === 'Combo Meal' && d.slots.includes(m),
   lightDinner: (d) => d.category === 'Breakfast' && d.slots.includes('Dinner'),
   side: (d) => d.category === 'Side',
@@ -59,6 +65,9 @@ const ROLE_MATCH: Record<Exclude<RoleKey, 'base'>, (d: Dish, meal: MealType) => 
   vratMain: (d) => d.vrat && (d.category === 'Breakfast' || d.category === 'Rice'),
   vratSide: (d) => d.vrat && d.category.startsWith('Sabzi'),
   vratExtra: (d) => d.vrat && (d.category === 'Snack' || d.category === 'Sweet'),
+  worldMain: (d, m) =>
+    isWorldDish(d) && d.slots.includes(m) && ['World Main', 'Rice', 'One-Pot Meal', 'Non-Veg Main'].includes(d.category),
+  worldSide: (d) => d.category === 'World Side',
   any: (d, m) => (d.slots.includes(m) || d.vrat) && d.category !== 'Bread' && d.category !== 'Side',
 };
 
@@ -111,6 +120,14 @@ const FAST_TEMPLATES: Record<MealType, Template[]> = {
   ],
 };
 
+/** Used only on the family's world-food nights. The side always matches the main's cuisine. */
+const WORLD_TEMPLATE: Template = {
+  key: 'world',
+  label: 'World food night',
+  roles: [r('worldMain'), r('worldSide', true)],
+  weight: () => 1,
+};
+
 /** Last resort when no pattern fits (very strict profiles). */
 const FALLBACK: Template = { key: 'simple', label: 'Simple meal', roles: [r('any')], weight: () => 1 };
 
@@ -118,9 +135,12 @@ const FALLBACK: Template = { key: 'simple', label: 'Simple meal', roles: [r('any
 
 /**
  * Can this dish be served here?
- * level 0 = all rules; 1 = allow weekly repeats; 2 = also ignore season;
- * 3 = also ignore cooking time, tiffin and heaviness. Hard rules never relax.
+ * level 0 = all rules; 1 = ignore season; 2 = also ignore weekday cooking time;
+ * 3 = also allow weekly repeats; 4 = also ignore tiffin and heaviness.
+ * Hard rules never relax.
  */
+const MAX_LEVEL = 4;
+
 function passes(d: Dish, c: Ctx, level: number): boolean {
   const p = c.profile;
   if (p.dislikes.includes(d.id) || c.inMeal.has(d.id)) return false;
@@ -129,11 +149,12 @@ function passes(d: Dish, c: Ctx, level: number): boolean {
   if (p.jain && !d.jain) return false;
   if (p.noOnionGarlic && !d.noOnionGarlic) return false;
   if (c.isFast && !d.vrat) return false;
+  if ((p.worldMealsPerWeek ?? 1) === 0 && isWorldDish(d)) return false;
 
-  if (level < 1 && !isStaple(d) && c.used.has(d.id)) return false;
-  if (level < 2 && d.season !== 'All' && d.season !== c.season) return false;
-  if (level < 3) {
-    if (!c.isWeekend && d.cookTime > p.weekdayMaxCookTime) return false;
+  if (level < 1 && d.season !== 'All' && d.season !== c.season) return false;
+  if (level < 2 && !c.isWeekend && d.cookTime > p.weekdayMaxCookTime) return false;
+  if (level < 3 && !isStaple(d) && c.used.has(d.id)) return false;
+  if (level < 4) {
     if (c.tiffin && !d.tiffin) return false;
     if (d.heaviness === 'Heavy' && (c.dayHeavy || (c.meal === 'Breakfast' && !c.isWeekend))) return false;
   }
@@ -142,8 +163,15 @@ function passes(d: Dish, c: Ctx, level: number): boolean {
 
 function weight(d: Dish, c: Ctx): number {
   let w = 1;
-  const group = REGION_GROUP[d.region] ?? null;
-  if (c.profile.cuisines.length) w *= group === null ? 1.5 : c.profile.cuisines.includes(group) ? 3 : 0.25;
+  const group = cuisineOf(d);
+  const prefs = c.profile.cuisines;
+  if (isWorldCuisine(group)) {
+    const worldPrefs = prefs.filter(isWorldCuisine);
+    w *= worldPrefs.length ? (worldPrefs.includes(group) ? 3 : 0.1) : 0.4;
+  } else {
+    const indianPrefs = prefs.filter((g) => !isWorldCuisine(g));
+    if (indianPrefs.length) w *= group === null ? 1.5 : indianPrefs.includes(group) ? 3 : 0.25;
+  }
   if (d.season !== 'All' && d.season === c.season) w *= 1.6;
   if (c.profile.hasKids && d.kidFavourite) w *= 1.5;
   if (c.isWeekend && (d.heaviness === 'Heavy' || d.difficulty === 'Hard')) w *= 1.8;
@@ -157,11 +185,12 @@ function pickForRole(
   c: Ctx,
   rng: Rng,
   exclude?: Set<string>,
-  maxLevel = 3,
+  maxLevel = MAX_LEVEL,
+  extra?: (d: Dish) => boolean,
 ): Dish | null {
   for (let level = 0; level <= maxLevel; level++) {
     const pool = ALL_DISHES.filter(
-      (d) => ROLE_MATCH[role](d, c.meal) && !exclude?.has(d.id) && passes(d, c, level),
+      (d) => ROLE_MATCH[role](d, c.meal) && !exclude?.has(d.id) && (!extra || extra(d)) && passes(d, c, level),
     );
     const pick = weightedPick(pool, (d) => weight(d, c), rng);
     if (pick) return pick;
@@ -207,7 +236,7 @@ function breadWeight(d: Dish, c: Ctx): number {
 }
 
 function pickBread(c: Ctx, rng: Rng, exclude?: Set<string>): Dish | null {
-  for (const level of [0, 3]) {
+  for (const level of [0, MAX_LEVEL]) {
     const pool = ALL_DISHES.filter(
       (d) => d.category === 'Bread' && d.slots.includes(c.meal) && !exclude?.has(d.id) && passes(d, c, level),
     );
@@ -218,7 +247,7 @@ function pickBread(c: Ctx, rng: Rng, exclude?: Set<string>): Dish | null {
 }
 
 function pickRice(c: Ctx, rng: Rng, exclude?: Set<string>): Dish | null {
-  for (const level of [0, 3]) {
+  for (const level of [0, MAX_LEVEL]) {
     const pool = ALL_DISHES.filter((d) => isRiceStaple(d) && !exclude?.has(d.id) && passes(d, c, level));
     const pick = weightedPick(pool, (d) => (d.id === 'steamed-rice' ? 5 : c.isWeekend ? 2 : 1), rng);
     if (pick) return pick;
@@ -248,6 +277,7 @@ function pickBases(main: Dish, c: Ctx, rng: Rng): Dish[] {
 
 function fillTemplate(t: Template, c: Ctx, rng: Rng, maxLevel: number): MealItem[] | null {
   c.inMeal = new Set();
+  c.dayHeavy = c.heavyBeforeMeal;
   const items: MealItem[] = [];
   const chosen: Dish[] = [];
   for (const { role, optional } of t.roles) {
@@ -260,7 +290,8 @@ function fillTemplate(t: Template, c: Ctx, rng: Rng, maxLevel: number): MealItem
       continue;
     }
     if (optional && rng() < 0.4) continue;
-    const d = pickForRole(role, c, rng, undefined, maxLevel);
+    const extra = role === 'worldSide' && chosen[0] ? sameCuisine(chosen[0]) : undefined;
+    const d = pickForRole(role, c, rng, undefined, maxLevel, extra);
     if (!d) {
       if (optional) continue;
       return null;
@@ -268,15 +299,24 @@ function fillTemplate(t: Template, c: Ctx, rng: Rng, maxLevel: number): MealItem
     items.push({ dishId: d.id, role });
     chosen.push(d);
     c.inMeal.add(d.id);
+    if (d.heaviness === 'Heavy') c.dayHeavy = true;
   }
   return items.length ? items : null;
 }
 
-function buildMeal(c: Ctx, rng: Rng): Meal {
+const sameCuisine = (main: Dish) => (d: Dish) => cuisineOf(d) === cuisineOf(main);
+
+function buildMeal(c: Ctx, rng: Rng, world = false): Meal {
+  if (world && c.meal === 'Dinner' && !c.isFast) {
+    for (let maxLevel = 0; maxLevel <= MAX_LEVEL; maxLevel++) {
+      const items = fillTemplate(WORLD_TEMPLATE, c, rng, maxLevel);
+      if (items) return { type: c.meal, label: WORLD_TEMPLATE.label, tiffin: false, items };
+    }
+  }
   const templates = (c.isFast ? FAST_TEMPLATES : TEMPLATES)[c.meal];
   const order = [...weightedOrder(templates, (t) => t.weight(c), rng), FALLBACK];
   // Try every meal pattern with all rules first; relax rules only if no pattern fits.
-  for (let maxLevel = 0; maxLevel <= 3; maxLevel++) {
+  for (let maxLevel = 0; maxLevel <= MAX_LEVEL; maxLevel++) {
     for (const t of order) {
       const items = fillTemplate(t, c, rng, maxLevel);
       if (items) return { type: c.meal, label: c.tiffin ? `${t.label} · tiffin` : t.label, tiffin: c.tiffin, items };
@@ -309,6 +349,7 @@ function makeCtx(profile: FamilyProfile, day: DayPlan, meal: MealType, used: Set
     tiffin: profile.packsTiffin && meal === 'Lunch' && !f.isWeekend && !f.isFast,
     used,
     dayHeavy,
+    heavyBeforeMeal: dayHeavy,
     inMeal: new Set(),
   };
 }
@@ -321,7 +362,7 @@ function rememberMeal(m: Meal, used: Set<string>) {
   for (const i of m.items) if (!isStaple(getDish(i.dishId))) used.add(i.dishId);
 }
 
-function buildDay(profile: FamilyProfile, date: Date, used: Set<string>, rng: Rng): DayPlan {
+function buildDay(profile: FamilyProfile, date: Date, used: Set<string>, rng: Rng, worldDinner = false): DayPlan {
   const f = dayFlags(profile, date);
   const day: DayPlan = {
     date: toISODate(date),
@@ -332,11 +373,12 @@ function buildDay(profile: FamilyProfile, date: Date, used: Set<string>, rng: Rn
   };
   let dayHeavy = false;
   for (const meal of MEAL_TYPES) {
-    const m = buildMeal(makeCtx(profile, day, meal, used, dayHeavy), rng);
+    const m = buildMeal(makeCtx(profile, day, meal, used, dayHeavy), rng, worldDinner && meal === 'Dinner');
     rememberMeal(m, used);
     dayHeavy ||= isHeavyMeal(m);
     day.meals.push(m);
   }
+  day.worldDinner = day.meals[2].items.some((i) => i.role === 'worldMain');
   return day;
 }
 
@@ -346,7 +388,13 @@ function buildDay(profile: FamilyProfile, date: Date, used: Set<string>, rng: Rn
 export function generateWeek(profile: FamilyProfile, start: Date, seed: number): WeekPlan {
   const rng = makeRng(seed);
   const used = new Set<string>();
-  const days = Array.from({ length: 7 }, (_, i) => buildDay(profile, addDays(start, i), used, rng));
+  // Pick which evenings are world-food nights: never a vrat day, weekends a little more likely.
+  const dates = Array.from({ length: 7 }, (_, i) => addDays(start, i));
+  const open = dates.map((_, i) => i).filter((i) => !profile.fastDays.includes(mondayIndex(dates[i])));
+  const worldNights = new Set(
+    weightedOrder(open, (i) => (mondayIndex(dates[i]) >= 5 ? 2 : 1), rng).slice(0, Math.max(0, profile.worldMealsPerWeek ?? 1)),
+  );
+  const days = dates.map((date, i) => buildDay(profile, date, used, rng, worldNights.has(i)));
   return { startDate: toISODate(start), createdAt: new Date().toISOString(), days };
 }
 
@@ -366,7 +414,8 @@ function usedExcept(plan: WeekPlan, skip: (d: number, m: number, i: number) => b
 export function regenerateDay(plan: WeekPlan, profile: FamilyProfile, dayIndex: number, seed: number): WeekPlan {
   const used = usedExcept(plan, (d) => d === dayIndex);
   const next = structuredClone(plan);
-  next.days[dayIndex] = buildDay(profile, parseISODate(plan.days[dayIndex].date), used, makeRng(seed));
+  const world = plan.days[dayIndex].worldDinner ?? false;
+  next.days[dayIndex] = buildDay(profile, parseISODate(plan.days[dayIndex].date), used, makeRng(seed), world);
   return next;
 }
 
@@ -404,9 +453,22 @@ export function swapItem(
     return next;
   }
 
-  const alt = pickForRole(item.role, c, rng, exclude);
+  const main = meal.items.find((i) => i.role === 'worldMain');
+  const extra = item.role === 'worldSide' && main ? sameCuisine(getDish(main.dishId)) : undefined;
+  const alt = pickForRole(item.role, c, rng, exclude, MAX_LEVEL, extra);
   if (!alt) return plan;
   items[itemIndex] = { dishId: alt.id, role: item.role };
+
+  // A new world main needs a soup or side from the same cuisine.
+  if (item.role === 'worldMain') {
+    const sideIndex = items.findIndex((i) => i.role === 'worldSide');
+    if (sideIndex >= 0 && cuisineOf(getDish(items[sideIndex].dishId)) !== cuisineOf(alt)) {
+      c.inMeal = new Set([alt.id]);
+      const side = pickForRole('worldSide', c, rng, undefined, MAX_LEVEL, sameCuisine(alt));
+      if (side) items[sideIndex] = { dishId: side.id, role: 'worldSide' };
+      else items.splice(sideIndex, 1);
+    }
+  }
 
   // If the main dish changed, pick roti/rice that suits the new one.
   const mainIndex = items.findIndex((i) => i.role !== 'base');

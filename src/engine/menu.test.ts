@@ -1,6 +1,8 @@
 import { describe, expect, it } from 'vitest';
 import {
   DISHES,
+  cuisineOf,
+  isWorldDish,
   cookMessage,
   dayMessage,
   generateWeek,
@@ -24,6 +26,7 @@ const base: FamilyProfile = {
   noOnionGarlic: false,
   fastDays: [],
   cuisines: ['North', 'West'],
+  worldMealsPerWeek: 2,
   hasKids: true,
   packsTiffin: true,
   weekdayMaxCookTime: 45,
@@ -38,9 +41,9 @@ function everyItem(plan: WeekPlan) {
 }
 
 describe('dish data', () => {
-  it('has 153 dishes with unique ids and Hindi names', () => {
-    expect(DISHES).toHaveLength(153);
-    expect(new Set(DISHES.map((d) => d.id)).size).toBe(153);
+  it('has 200 dishes with unique ids and Hindi names', () => {
+    expect(DISHES).toHaveLength(200);
+    expect(new Set(DISHES.map((d) => d.id)).size).toBe(200);
     expect(DISHES.every((d) => d.hindi.length > 0)).toBe(true);
   });
 });
@@ -91,7 +94,8 @@ describe('generateWeek', () => {
         jain: r(10) > 0.8,
         noOnionGarlic: r(11) > 0.8,
         fastDays: r(12) > 0.6 ? [Math.floor(r(13) * 7)] : [],
-        cuisines: (['North', 'West', 'South', 'East'] as const).filter((_, i) => r(20 + i) > 0.5),
+        cuisines: (['North', 'West', 'South', 'East', 'Chinese', 'Italian', 'Thai'] as const).filter((_, i) => r(20 + i) > 0.5),
+        worldMealsPerWeek: Math.floor(r(40) * 5),
         hasKids: r(30) > 0.5,
         packsTiffin: r(31) > 0.5,
         weekdayMaxCookTime: [30, 45, 60][Math.floor(r(32) * 3)],
@@ -107,6 +111,7 @@ describe('generateWeek', () => {
         if (profile.jain) expect(dish.jain, dish.name).toBe(true);
         if (profile.noOnionGarlic) expect(dish.noOnionGarlic, dish.name).toBe(true);
         if (day.isFast) expect(dish.vrat, `${dish.name} on vrat day`).toBe(true);
+        if (profile.worldMealsPerWeek === 0) expect(isWorldDish(dish), `${dish.name} for an Indian-only family`).toBe(false);
         expect(meal.items.length).toBeGreaterThan(0);
       }
     }
@@ -127,6 +132,66 @@ describe('generateWeek', () => {
     const tuesday = plan.days.find((d) => d.weekday === 1)!;
     expect(tuesday.isFast).toBe(true);
     for (const meal of tuesday.meals) for (const i of meal.items) expect(getDish(i.dishId).vrat).toBe(true);
+  });
+});
+
+describe('world-food nights', () => {
+  const lover: FamilyProfile = { ...base, cuisines: ['North', 'Italian', 'Chinese'], worldMealsPerWeek: 3, fastDays: [1] };
+
+  it('plans exactly the chosen number of world dinners, never on vrat days', () => {
+    for (let seed = 1; seed <= 40; seed++) {
+      const plan = generateWeek(lover, START, seed);
+      const nights = plan.days.filter((d) => d.worldDinner);
+      expect(nights.length, `seed ${seed}`).toBe(3);
+      expect(nights.every((d) => !d.isFast)).toBe(true);
+      for (const day of plan.days) {
+        const dinner = day.meals[2];
+        const main = dinner.items.find((i) => i.role === 'worldMain');
+        if (!day.worldDinner) {
+          expect(main).toBeUndefined();
+          continue;
+        }
+        const mainDish = getDish(main!.dishId);
+        expect(isWorldDish(mainDish)).toBe(true);
+        for (const side of dinner.items.filter((i) => i.role === 'worldSide'))
+          expect(cuisineOf(getDish(side.dishId)), `${getDish(side.dishId).name} with ${mainDish.name}`).toBe(cuisineOf(mainDish));
+      }
+    }
+  });
+
+  it('mostly picks the cuisines the family likes', () => {
+    let liked = 0;
+    let total = 0;
+    for (let seed = 1; seed <= 40; seed++) {
+      const plan = generateWeek(lover, START, seed);
+      for (const d of plan.days.filter((x) => x.worldDinner)) {
+        total++;
+        const g = cuisineOf(getDish(d.meals[2].items[0].dishId));
+        if (g === 'Italian' || g === 'Chinese') liked++;
+      }
+    }
+    expect(liked / total).toBeGreaterThan(0.85);
+  });
+
+  it('keeps lunch and other dinners Indian', () => {
+    const plan = generateWeek(lover, START, 9);
+    for (const day of plan.days)
+      for (const meal of day.meals.slice(1))
+        if (!(meal.type === 'Dinner' && day.worldDinner))
+          for (const i of meal.items) expect(isWorldDish(getDish(i.dishId)), getDish(i.dishId).name).toBe(false);
+  });
+
+  it('swapping a world main keeps the soup or side in the same cuisine', () => {
+    for (let seed = 1; seed <= 30; seed++) {
+      const plan = generateWeek(lover, START, seed);
+      const d = plan.days.findIndex((x) => x.worldDinner && x.meals[2].items.some((i) => i.role === 'worldSide'));
+      if (d < 0) continue;
+      const next = swapItem(plan, lover, d, 2, 0, seed * 7);
+      const items = next.days[d].meals[2].items;
+      const main = getDish(items[0].dishId);
+      expect(isWorldDish(main)).toBe(true);
+      for (const s of items.filter((i) => i.role === 'worldSide')) expect(cuisineOf(getDish(s.dishId))).toBe(cuisineOf(main));
+    }
   });
 });
 
@@ -172,7 +237,7 @@ describe('prep, grocery and messages', () => {
       { dishId: 'rajma', role: 'dal' },
       { dishId: 'steamed-rice', role: 'base' },
     ];
-    const prep = prepForDay(plan.days[0]);
+    const prep = prepForDay(plan.days[0]).filter((p) => p.dish.id === 'rajma');
     expect(prep).toEqual([expect.objectContaining({ when: 'night', noteHi: 'रात भर भिगो दें' })]);
     expect(dayMessage(plan.days[0], base)).toContain('Night before');
     expect(cookMessage({ ...plan.days[0] }, { ...base, cookName: 'Sunita' })).toContain('Sunita जी');

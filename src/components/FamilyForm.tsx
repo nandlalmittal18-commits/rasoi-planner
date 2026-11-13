@@ -1,6 +1,6 @@
 import { useState } from 'react';
-import { WEEKDAYS_SHORT, type Diet, type FamilyProfile } from '../engine';
-import { CUISINES } from '../lib/sample';
+import { WEEKDAYS_SHORT, type CuisineGroup, type Diet, type FamilyProfile } from '../engine';
+import { CUISINES, WORLD_CUISINE_OPTIONS } from '../lib/sample';
 
 interface Props {
   initial: FamilyProfile;
@@ -73,19 +73,27 @@ export function FamilyForm({ initial, isNew, onSave, onReset }: Props) {
       </fieldset>
 
       <fieldset className="card field">
-        <legend>Favourite cuisines</legend>
+        <legend>Favourite Indian cuisines</legend>
         <p className="field-help">We’ll suggest these more often. Leave all off for a mix from across India.</p>
-        <div className="cuisine-grid">
-          {CUISINES.map((c) => {
-            const on = p.cuisines.includes(c.key);
-            return (
-              <button type="button" key={c.key} className={`cuisine${on ? ' is-on' : ''}`} aria-pressed={on} onClick={() => set('cuisines', toggleIn(p.cuisines, c.key))}>
-                <span className="cuisine-name">{c.label}</span>
-                <span className="cuisine-hint">{c.hint}</span>
-              </button>
-            );
-          })}
+        <CuisineGrid options={CUISINES} value={p.cuisines} onToggle={(k) => set('cuisines', toggleIn(p.cuisines, k))} />
+      </fieldset>
+
+      <fieldset className="card field">
+        <legend>World food</legend>
+        <p className="field-help">How many dinners a week should be Chinese, Italian, Continental or similar? “None” keeps every meal Indian.</p>
+        <div className="seg" role="radiogroup" aria-label="World-food dinners per week">
+          {[0, 1, 2, 3, 4].map((n) => (
+            <button type="button" key={n} role="radio" aria-checked={p.worldMealsPerWeek === n} className={`seg-btn${p.worldMealsPerWeek === n ? ' is-on' : ''}`} onClick={() => set('worldMealsPerWeek', n)}>
+              {n === 0 ? 'None' : n}
+            </button>
+          ))}
         </div>
+        {p.worldMealsPerWeek > 0 && (
+          <>
+            <p className="field-help">Which cuisines does your family enjoy? Leave all off for a mix.</p>
+            <CuisineGrid options={WORLD_CUISINE_OPTIONS} value={p.cuisines} onToggle={(k) => set('cuisines', toggleIn(p.cuisines, k))} />
+          </>
+        )}
       </fieldset>
 
       <fieldset className="card field">
@@ -141,6 +149,30 @@ export function FamilyForm({ initial, isNew, onSave, onReset }: Props) {
           ))}
       </div>
     </form>
+  );
+}
+
+function CuisineGrid({
+  options,
+  value,
+  onToggle,
+}: {
+  options: { key: CuisineGroup; label: string; hint: string }[];
+  value: CuisineGroup[];
+  onToggle: (key: CuisineGroup) => void;
+}) {
+  return (
+    <div className="cuisine-grid">
+      {options.map((c) => {
+        const on = value.includes(c.key);
+        return (
+          <button type="button" key={c.key} className={`cuisine${on ? ' is-on' : ''}`} aria-pressed={on} onClick={() => onToggle(c.key)}>
+            <span className="cuisine-name">{c.label}</span>
+            <span className="cuisine-hint">{c.hint}</span>
+          </button>
+        );
+      })}
+    </div>
   );
 }
 

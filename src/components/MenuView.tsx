@@ -136,6 +136,7 @@ function DayDetail({
           {isToday && <span className="chip chip-today">Today</span>}
           {day.isFast && <span className="chip chip-vrat">Vrat day</span>}
           {day.nonVegAllowed && <span className="chip chip-nonveg">{profile.diet === 'Egg' ? 'Egg day' : 'Non-veg day'}</span>}
+          {day.worldDinner && <span className="chip chip-world">World food night</span>}
           {day.weekday >= 5 && <span className="chip">Weekend</span>}
         </div>
       </div>
