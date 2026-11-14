@@ -13,10 +13,10 @@ const KEYS = {
   profile: 'rasoi.profile.v1',
   plan: 'rasoi.plan.v1',
   grocery: 'rasoi.grocery.v1',
+  /** Old Wikipedia photo list; no longer used, cleared on start */
   photos: 'rasoi.photos.v1',
 };
 
-const PHOTO_CACHE_DAYS = 14;
 
 interface Ticked {
   plan: string;
@@ -59,6 +59,9 @@ function remove(key: string) {
     /* ignore */
   }
 }
+
+// The app used to keep a copy of Wikipedia photo links on the phone. Clear it.
+remove(KEYS.photos);
 
 /** Profiles saved before a setting existed get its default here. */
 function withDefaults(p: FamilyProfile): FamilyProfile {
@@ -185,18 +188,7 @@ export const storage = {
     if (plan) cloud((uid) => db().from('week_plans').upsert({ user_id: uid, plan, grocery, updated_at: now() }));
   },
 
-  /** Dish photos found on Wikipedia, kept for two weeks. Not personal data, so never sent online. */
-  loadPhotoCache<T>(version: string): T | null {
-    const saved = read<{ version: string; savedAt: number; photos: T }>(KEYS.photos);
-    if (!saved || saved.version !== version) return null;
-    if (Date.now() - saved.savedAt > PHOTO_CACHE_DAYS * 86_400_000) return null;
-    return saved.photos;
-  },
-  savePhotoCache(version: string, photos: unknown) {
-    write(KEYS.photos, { version, savedAt: Date.now(), photos });
-  },
-
-  /** Removes the family's data from this phone (used on sign-out). Dish photos stay. */
+  /** Removes the family's data from this phone (used on sign-out). */
   clearLocal: () => [KEYS.profile, KEYS.plan, KEYS.grocery].forEach(remove),
 
   /** "Start over": removes this phone's copy and, if signed in, the online copy. */

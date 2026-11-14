@@ -14,6 +14,7 @@ A startup product that plans weekly menus for Indian households. Users: urban wo
 - `src/data/recipes.json` is generated from `scripts/recipes/*.json` by `python3 scripts/build_recipes.py`. Every dish needs a recipe with the same number of English and Hindi steps.
 - `src/data/nutrition.json` is generated from `scripts/nutrition/ingredients.psv` + `servings.psv` by `python3 scripts/build_nutrition.py`. Every dish needs a serving line. Values are approximate; always show them with the "not medical advice" note.
 - Design: indigo blue (#1f3a9e) & white with a haldi-yellow accent, light only (no dark mode). Photo-first dish cards, Outfit font (Hind for Hindi). Colour tokens are at the top of `src/index.css`.
+- Dish photos: our own pictures only, in `public/photos/<dish id>.jpg`, listed in `src/data/photos.json`. No photo credits are shown. Prompts for new pictures: `python3 scripts/photo_prompts.py`.
 - All saving goes through `src/lib/storage.ts` (phone copy + Supabase when signed in). Don't call localStorage or Supabase tables anywhere else.
 - Supabase: project `arwkorwglqcuosngfubv`. The URL and publishable key in `src/lib/supabase.ts` are public by design. Database changes go in `supabase/schema.sql` (keep it re-runnable) and every table needs row level security.
 - Hard rules (diet, non-veg days, Jain, no onion-garlic, vrat days, dislikes) must never be relaxed.

@@ -81,17 +81,11 @@ Values are approximate, for one standard home serving, worked out from typical i
 
 ### Dish photos
 
-Photos come from Wikipedia / Wikimedia Commons (free to use with credit). The app fetches them itself the first time it opens and keeps them on the phone for two weeks.
+All dish photos are our own (made with AI or taken at home). A dish without a photo shows its drawn picture.
 
-- `src/data/photo-sources.json`: for each dish, the Wikipedia article(s) to take the photo from. The first with a free photo wins. Vegetarian dishes only use articles about that exact dish, so no meat photo appears (a test checks this).
-- `src/data/photos.json`: your own overrides. Add your own or bought photos, or hide a wrong one:
-
-```json
-"poha": { "src": "https://…/poha.jpg", "credit": "Your name", "license": "Own photo" },
-"tinda-masala": { "hide": true }
-```
-
-The photographer and licence show on each dish's detail screen. A dish without a photo shows its drawn picture.
+1. `python3 scripts/photo_prompts.py` writes `scripts/photo-prompts.csv`: one ready-to-paste AI prompt per dish that has no photo yet. Each prompt uses a different background, a fitting serving dish and camera angle. The same prompts are in the "Photo prompts" tab of the dish sheet.
+2. Save each picture as `public/photos/<dish id>.jpg` (about 1200 px wide, landscape 3:2).
+3. Add it to `src/data/photos.json`: `"poha": { "src": "photos/poha.jpg", "source": "own" }`. Nothing about where it came from is shown in the app.
 
 ## How the menu engine decides
 
