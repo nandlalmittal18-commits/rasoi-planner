@@ -12,6 +12,8 @@ export interface Photo {
   credit?: string;
   license?: string;
   page?: string;
+  /** Where an own photo came from, for our records only (never shown in the app) */
+  source?: string;
   /** Set in photos.json to keep the drawn picture for this dish */
   hide?: boolean;
 }
