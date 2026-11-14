@@ -12,6 +12,8 @@
     "dishes": "python3 scripts/build_dishes.py"
   },
   "dependencies": {
+    "@fontsource/hind": "^5.3.0",
+    "@fontsource/outfit": "^5.3.0",
     "@supabase/supabase-js": "^2.119.0",
     "react": "^19.3.1",
     "react-dom": "^19.3.1"

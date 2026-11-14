@@ -1,10 +1,24 @@
 import { useMemo, useState } from 'react';
 import { DISHES, WORLD_CUISINES, cuisineOf, getNutrition, isWorldDish, proteinLevel, type Dish, type FamilyProfile } from '../engine';
 import { DishPicture } from './DishPicture';
+import { getDish } from '../engine';
 import { FoodMark } from './icons';
 import { ProteinPill } from './ProteinPill';
 
 const MEALS = ['All', 'Breakfast', 'Lunch', 'Dinner', 'Snack', 'Dessert'] as const;
+
+/** Quick picks at the top of the library, each shown with a dish that has a good photo. */
+const CRAVINGS: { key: string; label: string; dish: string; test: (d: Dish) => boolean }[] = [
+  { key: 'north', label: 'North Indian', dish: 'chole-chana-masala', test: (d) => cuisineOf(d) === 'North' },
+  { key: 'south', label: 'South Indian', dish: 'masala-dosa', test: (d) => cuisineOf(d) === 'South' },
+  { key: 'protein', label: 'High protein', dish: 'kabuli-chana-chaat', test: (d) => proteinLevel(d.id) === 'high' },
+  { key: 'quick', label: 'Ready in 20 min', dish: 'poha', test: (d) => d.cookTime <= 20 },
+  { key: 'vrat', label: 'Vrat food', dish: 'sabudana-khichdi', test: (d) => d.vrat },
+  { key: 'snacks', label: 'Snacks', dish: 'samosa', test: (d) => d.slots.includes('Snack') },
+  { key: 'chinese', label: 'Chinese', dish: 'schezwan-noodles', test: (d) => cuisineOf(d) === 'Chinese' },
+  { key: 'italian', label: 'Italian', dish: 'veggie-pizza', test: (d) => cuisineOf(d) === 'Italian' },
+  { key: 'sweets', label: 'Sweets', dish: 'gulab-jamun', test: (d) => d.category === 'Sweet' },
+];
 const FLAGS: { key: keyof Dish; label: string }[] = [
   { key: 'jain', label: 'Jain' },
   { key: 'noOnionGarlic', label: 'No onion-garlic' },
@@ -28,6 +42,7 @@ export function DishLibrary({
   const [flags, setFlags] = useState<Set<keyof Dish>>(new Set());
   const [cuisine, setCuisine] = useState<string>('All');
   const [proteinOnly, setProteinOnly] = useState(false);
+  const [craving, setCraving] = useState<string | null>(null);
 
   const shown = useMemo(() => {
     const q = query.trim().toLowerCase();
@@ -38,11 +53,12 @@ export function DishLibrary({
         (!vegOnly || d.diet === 'Veg') &&
         (cuisine === 'All' || (cuisine === 'Indian' ? !isWorldDish(d) : cuisineOf(d) === cuisine)) &&
         [...flags].every((f) => d[f] === true) &&
-        (!proteinOnly || proteinLevel(d.id) !== null),
+        (!proteinOnly || proteinLevel(d.id) !== null) &&
+        (!craving || CRAVINGS.find((c) => c.key === craving)!.test(d)),
     );
     // With the protein filter on, show the most protein first.
     return proteinOnly ? list.sort((a, b) => (getNutrition(b.id)?.protein ?? 0) - (getNutrition(a.id)?.protein ?? 0)) : list;
-  }, [query, meal, vegOnly, flags, cuisine, proteinOnly]);
+  }, [query, meal, vegOnly, flags, cuisine, proteinOnly, craving]);
 
   const toggleFlag = (f: keyof Dish) => {
     const next = new Set(flags);
@@ -59,6 +75,18 @@ export function DishLibrary({
           <h1>Dish library</h1>
         </div>
       </div>
+
+      <section className="cravings" aria-labelledby="crave-title">
+        <h2 id="crave-title">What are you in the mood for?</h2>
+        <div className="crave-row">
+          {CRAVINGS.map((c) => (
+            <button key={c.key} className={`crave${craving === c.key ? ' is-on' : ''}`} aria-pressed={craving === c.key} onClick={() => setCraving(craving === c.key ? null : c.key)}>
+              <DishPicture dish={getDish(c.dish)} size={104} />
+              <span>{c.label}</span>
+            </button>
+          ))}
+        </div>
+      </section>
 
       <div className="card filters">
         <label className="visually-hidden" htmlFor="dish-search">

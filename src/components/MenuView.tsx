@@ -74,7 +74,10 @@ export function MenuView({ plan, profile, isSample, onSwap, onShuffleDay, onNewW
   const day = plan.days[Math.min(selected, plan.days.length - 1)];
 
   return (
-    <div className="stack">
+    <div className="stack menu-page">
+
+      <NextUp plan={plan} profile={profile} now={now} todayIndex={todayIndex} onOpenDish={onOpenDish} onPickDay={setSelected} />
+
       {isSample && (
         <div className="sample-banner">
           <p>
@@ -93,62 +96,66 @@ export function MenuView({ plan, profile, isSample, onSwap, onShuffleDay, onNewW
         </div>
       )}
 
-      <NextUp plan={plan} profile={profile} now={now} todayIndex={todayIndex} onOpenDish={onOpenDish} onPickDay={setSelected} />
+      <div className="menu-grid">
+        <div className="menu-main stack">
 
-      <div className="week-head">
-        <div>
-          <p className="eyebrow">Week of {formatDate(plan.startDate)}</p>
-          <h1>{profile.familyName ? `${profile.familyName} family menu` : 'Your weekly menu'}</h1>
-        </div>
-        <button className="btn btn-quiet" onClick={onNewWeek}>
-          <ShuffleIcon /> New week
-        </button>
-      </div>
-
-      <nav className="day-strip" aria-label="Choose a day">
-        {plan.days.map((d, i) => (
-          <button
-            key={d.date}
-            className={`day-pill${i === selected ? ' is-active' : ''}${d.date === todayIso ? ' is-today' : ''}`}
-            aria-pressed={i === selected}
-            onClick={() => setSelected(i)}
-          >
-            <span className="day-pill-name">{WEEKDAYS_SHORT[d.weekday]}</span>
-            <span className="day-pill-date">{parseISODate(d.date).getDate()}</span>
-            <span className="day-pill-marks" aria-hidden="true">
-              {d.isFast && <span className="dot dot-vrat" />}
-              {d.nonVegAllowed && <span className="dot dot-nonveg" />}
-              {d.worldDinner && <span className="dot dot-world" />}
-            </span>
+        <div className="week-head">
+          <div>
+            <p className="eyebrow">Week of {formatDate(plan.startDate)}</p>
+            <h1>{profile.familyName ? `${profile.familyName} family menu` : 'Your weekly menu'}</h1>
+          </div>
+          <button className="btn btn-quiet" onClick={onNewWeek}>
+            <ShuffleIcon /> New week
           </button>
-        ))}
-      </nav>
-
-      <div key={day.date} className="fade-in stack">
-        <DayDetail
-          day={day}
-          dayIndex={selected}
-          isToday={day.date === todayIso}
-          profile={profile}
-          onSwap={onSwap}
-          onShuffleDay={onShuffleDay}
-          onOpenDish={onOpenDish}
-          notify={notify}
-        />
-      </div>
-
-      <WeekGlance plan={plan} selected={selected} onSelect={setSelected} />
-
-      <ProteinWeek plan={plan} selected={selected} onSelect={setSelected} />
-
-      <div className="card share-week">
-        <div>
-          <h3>Share the whole week</h3>
-          <p className="muted small">One message with every day’s main dishes.</p>
         </div>
-        <a className="btn btn-wa" href={whatsappLink(weekMessage(plan, profile))} target="_blank" rel="noopener noreferrer">
-          <WhatsAppIcon /> Share week
-        </a>
+
+        <nav className="day-strip" aria-label="Choose a day">
+          {plan.days.map((d, i) => (
+            <button
+              key={d.date}
+              className={`day-pill${i === selected ? ' is-active' : ''}${d.date === todayIso ? ' is-today' : ''}`}
+              aria-pressed={i === selected}
+              onClick={() => setSelected(i)}
+            >
+              <span className="day-pill-name">{WEEKDAYS_SHORT[d.weekday]}</span>
+              <span className="day-pill-date">{parseISODate(d.date).getDate()}</span>
+              <span className="day-pill-marks" aria-hidden="true">
+                {d.isFast && <span className="dot dot-vrat" />}
+                {d.nonVegAllowed && <span className="dot dot-nonveg" />}
+                {d.worldDinner && <span className="dot dot-world" />}
+              </span>
+            </button>
+          ))}
+        </nav>
+
+        <div key={day.date} className="fade-in stack">
+          <DayDetail
+            day={day}
+            dayIndex={selected}
+            isToday={day.date === todayIso}
+            profile={profile}
+            onSwap={onSwap}
+            onShuffleDay={onShuffleDay}
+            onOpenDish={onOpenDish}
+            notify={notify}
+          />
+        </div>
+
+          <WeekGlance plan={plan} selected={selected} onSelect={setSelected} />
+        </div>
+
+        <aside className="menu-side stack" aria-label="This week">
+          <ProteinWeek plan={plan} selected={selected} onSelect={setSelected} />
+          <div className="card share-week">
+            <div>
+              <h3>Share the whole week</h3>
+              <p className="muted small">One message with every day’s main dishes.</p>
+            </div>
+            <a className="btn btn-wa" href={whatsappLink(weekMessage(plan, profile))} target="_blank" rel="noopener noreferrer">
+              <WhatsAppIcon /> Share week
+            </a>
+          </div>
+        </aside>
       </div>
     </div>
   );
@@ -176,31 +183,42 @@ function NextUp({
   const main = mainItem(meal);
   if (!main) return null;
   const dish = getDish(main.dishId);
-  const names = meal.items.map((i) => getDish(i.dishId).name).join(' · ');
+  // The main dish first, then the others (roti/rice last), at most three plates.
+  const plates = [main, ...meal.items.filter((i) => i !== main && i.role !== 'base'), ...meal.items.filter((i) => i !== main && i.role === 'base')]
+    .slice(0, 3)
+    .map((i) => getDish(i.dishId));
+  const names = meal.items.map((i) => getDish(i.dishId).name);
   const when = todayIndex < 0 ? WEEKDAYS[day.weekday] : next.tomorrow ? 'Tomorrow' : 'Today';
+  const longest = Math.max(...meal.items.map((i) => getDish(i.dishId).cookTime));
   return (
-    <section className={`next-up meal-${meal.type.toLowerCase()}`} aria-label="Next meal">
-      <div className="next-text">
-        <p className="next-greet">
-          {greeting(now)}
-          {profile.familyName ? `, ${profile.familyName} family` : ''}!
-        </p>
-        <p className="next-label">
-          {when}’s {MEAL_NAME[meal.type].toLowerCase()}
-        </p>
-        <h2 className="next-dish">{names}</h2>
-        <div className="btn-row">
-          <button className="btn btn-light" onClick={() => onOpenDish(dish.id)}>
-            See recipe
-          </button>
-          <button className="btn btn-ghost-light" onClick={() => onPickDay(dayIndex)}>
-            Full day
-          </button>
+    <section className={`hero meal-${meal.type.toLowerCase()}`} aria-label="Next meal">
+      <div className="hero-inner">
+        <div className="hero-text">
+          <p className="hero-greet">
+            {greeting(now)}
+            {profile.familyName ? `, ${profile.familyName} family` : ''}
+          </p>
+          <p className="hero-when">
+            {when}’s {MEAL_NAME[meal.type].toLowerCase()}, ready in about {longest} min
+          </p>
+          <h2 className="hero-dish">{names.length > 1 ? `${names.slice(0, -1).join(', ')} and ${names[names.length - 1]}` : names[0]}</h2>
+          <div className="btn-row">
+            <button className="btn btn-light" onClick={() => onOpenDish(dish.id)}>
+              How to make {dish.name}
+            </button>
+            <button className="btn btn-ghost-light" onClick={() => onPickDay(dayIndex)}>
+              See the full day
+            </button>
+          </div>
+        </div>
+        <div className={`hero-plates plates-${plates.length}`}>
+          {plates.map((d, i) => (
+            <button key={d.id} className={`plate plate-${i}`} onClick={() => onOpenDish(d.id)} aria-label={`Open ${d.name}`}>
+              <DishPicture dish={d} size={i === 0 ? 260 : 130} cover />
+            </button>
+          ))}
         </div>
       </div>
-      <button className="next-art" onClick={() => onOpenDish(dish.id)} aria-label={`Open ${dish.name}`}>
-        <DishPicture dish={dish} size={112} />
-      </button>
     </section>
   );
 }
@@ -339,7 +357,7 @@ function MealCard({ meal, onSwap, onOpenDish }: { meal: Meal; onSwap: (item: num
           return (
             <li key={`${item.dishId}-${i}`} className={`dish-row pop-in${isBase ? ' is-base' : ''}`}>
               <button className="dish-open" onClick={() => onOpenDish(d.id)} aria-label={`${d.name}: see recipe and details`}>
-                <DishPicture dish={d} size={isBase ? 44 : 58} />
+                <DishPicture dish={d} size={isBase ? 52 : 76} />
                 <span className="dish-text">
                   <span className="dish-name">
                     <FoodMark diet={d.diet} /> {d.name}

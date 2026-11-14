@@ -219,6 +219,7 @@ export default function App() {
   return (
     <div className="app">
       <header className="topbar">
+        <div className="topbar-inner">
         <Logo />
         <div className="brand">
           <span className="brand-name">Rasoi Planner</span>
@@ -228,9 +229,18 @@ export default function App() {
             {account && !isSample ? ' · Saved online' : ''}
           </span>
         </div>
+        <nav className="topnav" aria-label="Sections">
+          {TABS.map((t) => (
+            <button key={t.key} className={`topnav-link${tab === t.key ? ' is-active' : ''}`} aria-current={tab === t.key ? 'page' : undefined} onClick={() => go(t.key)}>
+              {t.icon}
+              <span>{t.label}</span>
+            </button>
+          ))}
+        </nav>
+        </div>
       </header>
 
-      <main className="content" id="main">
+      <main className={`content content-${tab}`} id="main">
         {tab === 'menu' && (
           <MenuView
             plan={plan}
