@@ -58,5 +58,9 @@
   "credit": "FOX / Pexels",
   "license": "Pexels License",
   "page": "https://www.pexels.com/photo/photograph-of-fried-noodles-with-vegetables-1815898/"
+ },
+ "aloo-matar": {
+  "src": "photos/aloo-matar.jpg",
+  "credit": "AI-generated image"
  }
 }
