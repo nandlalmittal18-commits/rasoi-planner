@@ -1,9 +1,8 @@
 import { useMemo, useState } from 'react';
 import { DISHES, WORLD_CUISINES, cuisineOf, getNutrition, isWorldDish, proteinLevel, type Dish, type FamilyProfile } from '../engine';
+import { DishCard } from './DishCard';
 import { DishPicture } from './DishPicture';
 import { getDish } from '../engine';
-import { FoodMark } from './icons';
-import { ProteinPill } from './ProteinPill';
 
 const MEALS = ['All', 'Breakfast', 'Lunch', 'Dinner', 'Snack', 'Dessert'] as const;
 
@@ -137,42 +136,25 @@ export function DishLibrary({
         </p>
       </div>
 
-      <ul className="library">
+      <div className="dcard-grid library">
         {shown.map((d) => {
           const disliked = profile.dislikes.includes(d.id);
           return (
-            <li key={d.id} className={`card lib-row${disliked ? ' is-disliked' : ''}`}>
-              <button className="lib-main" onClick={() => onOpenDish(d.id)} aria-label={`${d.name}: see recipe and details`}>
-                <DishPicture dish={d} size={72} />
-                <span className="dish-text">
-                  <span className="dish-name">
-                    <FoodMark diet={d.diet} /> {d.name}
-                  </span>
-                  <span className="dish-hindi" lang="hi">
-                    {d.hindi}
-                  </span>
-                  <span className="dish-meta">
-                    {d.category} · {d.region} · {d.cookTime} min · {d.difficulty} <ProteinPill dishId={d.id} />
-                  </span>
-                  <span className="lib-recipe-link">See recipe →</span>
-                </span>
-              </button>
-              <div className="lib-foot">
-                <div className="chips">
-                  {d.jain && <span className="chip chip-sm">Jain</span>}
-                  {d.vrat && <span className="chip chip-sm chip-vrat">Vrat</span>}
-                  {d.tiffin && <span className="chip chip-sm">Tiffin</span>}
-                  {d.season !== 'All' && <span className="chip chip-sm">{d.season}</span>}
-                  {d.prepAhead && <span className="chip chip-sm chip-prep">{d.prepAhead}</span>}
-                </div>
-                <button className={`btn btn-small ${disliked ? 'btn-primary' : 'btn-quiet'}`} onClick={() => onToggleDislike(d.id)} aria-pressed={disliked}>
+            <DishCard
+              key={d.id}
+              dish={d}
+              onOpen={onOpenDish}
+              dimmed={disliked}
+              action={
+                <button className={`photo-btn${disliked ? ' is-on' : ''}`} onClick={() => onToggleDislike(d.id)} aria-pressed={disliked}>
                   {disliked ? 'Suggest again' : 'Never suggest'}
                 </button>
-              </div>
-            </li>
+              }
+              note={d.prepAhead ? <span className="chip chip-sm chip-prep">{d.prepAhead}</span> : undefined}
+            />
           );
         })}
-      </ul>
+      </div>
       {shown.length === 0 && <p className="muted">No dish matches. Remove a filter or change the search.</p>}
     </div>
   );

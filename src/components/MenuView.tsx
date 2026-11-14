@@ -21,10 +21,10 @@ import {
   type WeekPlan,
 } from '../engine';
 import { copyText } from '../lib/clipboard';
+import { DishCard } from './DishCard';
 import { DishPicture } from './DishPicture';
-import { ProteinPill } from './ProteinPill';
 import { ProteinWeek } from './ProteinWeek';
-import { ChaiIcon, CopyIcon, FoodMark, MoonIcon, ShuffleIcon, SunIcon, SunriseIcon, SwapIcon, WhatsAppIcon } from './icons';
+import { ChaiIcon, CopyIcon, MoonIcon, ShuffleIcon, SunIcon, SunriseIcon, SwapIcon, WhatsAppIcon } from './icons';
 
 interface Props {
   plan: WeekPlan;
@@ -337,50 +337,52 @@ function DayDetail({
 function MealCard({ meal, onSwap, onOpenDish }: { meal: Meal; onSwap: (item: number) => void; onOpenDish: (id: string) => void }) {
   const dishes = meal.items.map((i) => getDish(i.dishId));
   const longest = Math.max(0, ...dishes.map((d) => d.cookTime));
+  const mains = meal.items.map((item, i) => ({ item, i, d: dishes[i] })).filter((x) => x.item.role !== 'base');
+  const bases = meal.items.map((item, i) => ({ item, i, d: dishes[i] })).filter((x) => x.item.role === 'base');
   return (
-    <article className={`card meal meal-${meal.type.toLowerCase()}`}>
+    <section className={`meal meal-${meal.type.toLowerCase()}`} aria-label={MEAL_NAME[meal.type]}>
       <header className="meal-head">
         <span className="meal-icon" aria-hidden="true">
           {MEAL_ICON[meal.type]}
         </span>
         <div className="meal-title">
           <h3>{MEAL_NAME[meal.type]}</h3>
-          {meal.label !== meal.type && <span className="meal-label">{meal.label}</span>}
+          <span className="meal-label">
+            {meal.label !== meal.type ? `${meal.label}, ` : ''}about {longest} min
+          </span>
         </div>
-        {longest > 0 && <span className="meal-time">⏱ {longest} min</span>}
       </header>
       {meal.items.length === 0 && <p className="muted">No dish fits all your rules for this meal. Try loosening a rule in Family.</p>}
-      <ul className="dish-list">
-        {meal.items.map((item, i) => {
-          const d = dishes[i];
-          const isBase = item.role === 'base';
-          return (
-            <li key={`${item.dishId}-${i}`} className={`dish-row pop-in${isBase ? ' is-base' : ''}`}>
-              <button className="dish-open" onClick={() => onOpenDish(d.id)} aria-label={`${d.name}: see recipe and details`}>
-                <DishPicture dish={d} size={isBase ? 52 : 76} />
-                <span className="dish-text">
-                  <span className="dish-name">
-                    <FoodMark diet={d.diet} /> {d.name}
-                  </span>
-                  <span className="dish-hindi" lang="hi">
-                    {d.hindi}
-                  </span>
-                  {!isBase && (
-                    <span className="dish-meta">
-                      {d.cookTime} min · {d.heaviness}
-                      {d.region !== 'Pan-India' && d.region !== 'Modern' ? ` · ${d.region}` : ''} <ProteinPill dishId={d.id} />
-                    </span>
-                  )}
-                </span>
+      <div className="dcard-grid">
+        {mains.map(({ i, d }) => (
+          <DishCard
+            key={`${d.id}-${i}`}
+            dish={d}
+            onOpen={onOpenDish}
+            action={
+              <button className="photo-btn" onClick={() => onSwap(i)} aria-label={`Swap ${d.name}`} title={`Swap ${d.name}`}>
+                <SwapIcon /> Swap
               </button>
-              <button className="icon-btn swap-btn" onClick={() => onSwap(i)} aria-label={`Swap ${d.name}`} title={`Swap ${d.name}`}>
+            }
+          />
+        ))}
+      </div>
+      {bases.length > 0 && (
+        <p className="served-with">
+          <span>Served with</span>
+          {bases.map(({ i, d }) => (
+            <span key={`${d.id}-${i}`} className="base-chip">
+              <button className="base-open" onClick={() => onOpenDish(d.id)}>
+                <DishPicture dish={d} size={32} /> {d.name}
+              </button>
+              <button className="base-swap" onClick={() => onSwap(i)} aria-label={`Swap ${d.name}`} title={`Swap ${d.name}`}>
                 <SwapIcon />
               </button>
-            </li>
-          );
-        })}
-      </ul>
-    </article>
+            </span>
+          ))}
+        </p>
+      )}
+    </section>
   );
 }
 
