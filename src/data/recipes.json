@@ -1057,6 +1057,48 @@
    "2 मिनट जल्दी-जल्दी मिलाकर गरम परोसें।"
   ]
  },
+ "cheese-khakhra-chaat": {
+  "en": [
+   "Lay plain or masala khakhras on a plate.",
+   "Spread a little green chutney and sweet tamarind chutney on each.",
+   "Top with chopped onion, tomato and a pinch of chaat masala.",
+   "Grate cheese over it, add sev and coriander, and serve at once while crisp."
+  ],
+  "hi": [
+   "सादे या मसाला खाखरे प्लेट में रखें।",
+   "हर खाखरे पर थोड़ी हरी चटनी और मीठी इमली की चटनी लगाएं।",
+   "ऊपर से कटा प्याज़, टमाटर और एक चुटकी चाट मसाला डालें।",
+   "ऊपर चीज़ कद्दूकस करें, सेव और धनिया डालें और कुरकुरा रहते ही परोसें।"
+  ]
+ },
+ "crispy-crunchy-potatoes": {
+  "en": [
+   "Boil baby potatoes in salted water till just soft; drain and cool.",
+   "Press each potato lightly to crack it, then toss with cornflour, salt and chilli flakes.",
+   "Bake at 220°C for 20 minutes or air-fry at 200°C for 15 minutes till golden and crunchy.",
+   "Toss with garlic fried in a little oil, mixed herbs and lemon; serve hot with ketchup or green chutney."
+  ],
+  "hi": [
+   "छोटे आलू नमक वाले पानी में बस नरम होने तक उबालें; पानी निकालकर ठंडा करें।",
+   "हर आलू को हल्का दबाकर तोड़ें, फिर कॉर्नफ्लोर, नमक और चिली फ्लेक्स में लपेटें।",
+   "220°C पर 20 मिनट बेक करें या 200°C पर 15 मिनट एयर-फ्राई करें, सुनहरा और कुरकुरा होने तक।",
+   "थोड़े तेल में भुना लहसुन, मिक्स हर्ब्स और नींबू मिलाएं; केचप या हरी चटनी के साथ गरम परोसें।"
+  ]
+ },
+ "khari-biscuit-pie": {
+  "en": [
+   "Arrange khari biscuits on a baking tray.",
+   "Spread green chutney on each khari.",
+   "Top with finely chopped onion, tomato and capsicum, a pinch of salt and chaat masala.",
+   "Cover with grated cheese and bake at 200°C for 6–8 minutes till the cheese melts; serve hot with tea."
+  ],
+  "hi": [
+   "खारी बिस्किट बेकिंग ट्रे पर लगाएं।",
+   "हर खारी पर हरी चटनी लगाएं।",
+   "ऊपर से बारीक कटा प्याज़, टमाटर और शिमला मिर्च, एक चुटकी नमक और चाट मसाला डालें।",
+   "ऊपर कद्दूकस चीज़ डालें और 200°C पर 6–8 मिनट चीज़ पिघलने तक बेक करें; चाय के साथ गरम परोसें।"
+  ]
+ },
  "aloo-gobi": {
   "en": [
    "Cut potato and cauliflower into equal pieces.",
@@ -2485,6 +2527,34 @@
    "खीरा, टमाटर और लेट्यूस काटें।",
    "नींबू, ऑलिव ऑयल, नमक और चुटकी सुमाक या चाट मसाला डालें।",
    "परोसने से ठीक पहले पीटा डालें।"
+  ]
+ },
+ "peanut-butter-jam-sandwich": {
+  "en": [
+   "Spread peanut butter on one slice of bread and jam on the other.",
+   "Close the sandwich and lightly butter the outside.",
+   "Toast on a tawa or in a sandwich maker till golden on both sides.",
+   "Cut in half and serve with milk or fruit."
+  ],
+  "hi": [
+   "ब्रेड के एक स्लाइस पर पीनट बटर और दूसरे पर जैम लगाएं।",
+   "सैंडविच बंद करें और बाहर की तरफ़ हल्का मक्खन लगाएं।",
+   "तवे या सैंडविच मेकर में दोनों तरफ़ सुनहरा होने तक सेकें।",
+   "बीच से काटें और दूध या फल के साथ परोसें।"
+  ]
+ },
+ "whole-wheat-spaghetti": {
+  "en": [
+   "Boil whole wheat spaghetti in salted water till just cooked; keep a cup of the water.",
+   "Sauté garlic and chilli flakes in olive oil, add chopped vegetables and cook for 3 minutes.",
+   "Add tomato purée, salt and oregano; simmer for 5 minutes.",
+   "Toss the spaghetti in the sauce with a little pasta water; finish with basil and grated cheese."
+  ],
+  "hi": [
+   "होल व्हीट स्पेगेटी नमक वाले पानी में पकने तक उबालें; एक कप पानी बचा लें।",
+   "ऑलिव ऑयल में लहसुन और चिली फ्लेक्स भूनें, कटी सब्ज़ियां डालकर 3 मिनट पकाएं।",
+   "टमाटर प्यूरी, नमक और ऑरिगैनो डालें; 5 मिनट धीमी आंच पर पकाएं।",
+   "स्पेगेटी को थोड़े पास्ता पानी के साथ सॉस में मिलाएं; ऊपर से तुलसी और कद्दूकस चीज़ डालें।"
   ]
  },
  "sattu-shake": {

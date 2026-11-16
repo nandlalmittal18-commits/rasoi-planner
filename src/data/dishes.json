@@ -5774,5 +5774,164 @@
   "heaviness": "Light",
   "prepAhead": null,
   "pairsWith": []
+ },
+ {
+  "id": "cheese-khakhra-chaat",
+  "name": "Cheese Khakhra Chaat",
+  "hindi": "चीज़ खाखरा चाट",
+  "slots": [
+   "Snack"
+  ],
+  "category": "Snack",
+  "diet": "Veg",
+  "region": "Gujarat",
+  "cookTime": 10,
+  "difficulty": "Easy",
+  "ingredients": [
+   "Khakhra",
+   "cheese",
+   "onion",
+   "tomato",
+   "sev",
+   "chutneys"
+  ],
+  "jain": false,
+  "noOnionGarlic": false,
+  "vrat": false,
+  "tiffin": false,
+  "kidFavourite": true,
+  "season": "All",
+  "heaviness": "Light",
+  "prepAhead": null,
+  "pairsWith": []
+ },
+ {
+  "id": "crispy-crunchy-potatoes",
+  "name": "Crispy Crunchy Potatoes",
+  "hindi": "क्रिस्पी क्रंची आलू",
+  "slots": [
+   "Snack"
+  ],
+  "category": "Snack",
+  "diet": "Veg",
+  "region": "Modern",
+  "cookTime": 30,
+  "difficulty": "Easy",
+  "ingredients": [
+   "Baby potatoes",
+   "cornflour",
+   "garlic",
+   "chilli flakes",
+   "herbs"
+  ],
+  "jain": false,
+  "noOnionGarlic": false,
+  "vrat": false,
+  "tiffin": false,
+  "kidFavourite": true,
+  "season": "All",
+  "heaviness": "Medium",
+  "prepAhead": null,
+  "pairsWith": [
+   "Ketchup",
+   "green chutney"
+  ]
+ },
+ {
+  "id": "khari-biscuit-pie",
+  "name": "Khari Biscuit Pie",
+  "hindi": "खारी बिस्किट पाई",
+  "slots": [
+   "Snack"
+  ],
+  "category": "Snack",
+  "diet": "Veg",
+  "region": "Modern",
+  "cookTime": 20,
+  "difficulty": "Easy",
+  "ingredients": [
+   "Khari biscuits",
+   "green chutney",
+   "onion",
+   "tomato",
+   "capsicum",
+   "cheese"
+  ],
+  "jain": false,
+  "noOnionGarlic": false,
+  "vrat": false,
+  "tiffin": false,
+  "kidFavourite": true,
+  "season": "All",
+  "heaviness": "Medium",
+  "prepAhead": null,
+  "pairsWith": [
+   "Tea"
+  ]
+ },
+ {
+  "id": "peanut-butter-jam-sandwich",
+  "name": "Peanut Butter Jam Sandwich",
+  "hindi": "पीनट बटर जैम सैंडविच",
+  "slots": [
+   "Breakfast",
+   "Snack"
+  ],
+  "category": "Breakfast",
+  "diet": "Veg",
+  "region": "Continental",
+  "cookTime": 10,
+  "difficulty": "Easy",
+  "ingredients": [
+   "Bread",
+   "peanut butter",
+   "jam",
+   "butter"
+  ],
+  "jain": true,
+  "noOnionGarlic": true,
+  "vrat": false,
+  "tiffin": true,
+  "kidFavourite": true,
+  "season": "All",
+  "heaviness": "Medium",
+  "prepAhead": null,
+  "pairsWith": [
+   "Milk",
+   "fruit"
+  ]
+ },
+ {
+  "id": "whole-wheat-spaghetti",
+  "name": "Whole Wheat Spaghetti",
+  "hindi": "होल व्हीट स्पेगेटी",
+  "slots": [
+   "Lunch",
+   "Dinner"
+  ],
+  "category": "World Main",
+  "diet": "Veg",
+  "region": "Italian",
+  "cookTime": 25,
+  "difficulty": "Easy",
+  "ingredients": [
+   "Whole wheat spaghetti",
+   "tomato",
+   "garlic",
+   "olive oil",
+   "basil",
+   "vegetables"
+  ],
+  "jain": true,
+  "noOnionGarlic": true,
+  "vrat": false,
+  "tiffin": true,
+  "kidFavourite": true,
+  "season": "All",
+  "heaviness": "Medium",
+  "prepAhead": null,
+  "pairsWith": [
+   "Garlic bread"
+  ]
  }
 ]

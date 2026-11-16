@@ -1542,5 +1542,45 @@
   "carbs": 31.5,
   "fat": 4.2,
   "fibre": 5.2
+ },
+ "cheese-khakhra-chaat": {
+  "serving": "1 plate",
+  "kcal": 296,
+  "protein": 10.8,
+  "carbs": 34.1,
+  "fat": 13.1,
+  "fibre": 4.8
+ },
+ "crispy-crunchy-potatoes": {
+  "serving": "1 plate",
+  "kcal": 264,
+  "protein": 3.0,
+  "carbs": 34.6,
+  "fat": 12.2,
+  "fibre": 3.4
+ },
+ "khari-biscuit-pie": {
+  "serving": "4 pieces",
+  "kcal": 286,
+  "protein": 7.9,
+  "carbs": 25.1,
+  "fat": 17.3,
+  "fibre": 1.5
+ },
+ "peanut-butter-jam-sandwich": {
+  "serving": "1 sandwich",
+  "kcal": 381,
+  "protein": 11.8,
+  "carbs": 44.2,
+  "fat": 18.5,
+  "fibre": 3.3
+ },
+ "whole-wheat-spaghetti": {
+  "serving": "1 plate",
+  "kcal": 429,
+  "protein": 13.8,
+  "carbs": 64.8,
+  "fat": 13.7,
+  "fibre": 10.1
  }
 }

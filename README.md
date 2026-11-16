@@ -12,7 +12,7 @@ A balanced weekly menu for Indian homes: breakfast, lunch and dinner planned aro
 | --- | --- |
 | **Menu** | 7-day menu, one day at a time: breakfast, lunch, an evening snack (optional) and dinner. Each day shows its rough protein and calories, and a "Protein this week" chart compares every day with the ICMR-NIN adult guide (about 46–54 g). Swap any dish with one tap, shuffle a day or the whole week. "Plan ahead" shows what to soak, ferment or marinate the night before. Share the day on WhatsApp in English (family) or Hindi (cook). |
 | **Shopping** | Main ingredients for the week, grouped like a shop list. Tick what you have; send the rest on WhatsApp. |
-| **Dishes** | All 192 dishes (152 Indian, 40 world), all vegetarian, with a picture, search and filters (cuisine, meal, protein-rich, Jain, vrat, tiffin, kids). Mark "Never suggest". |
+| **Dishes** | All 197 dishes (155 Indian, 42 world), all vegetarian, with a picture, search and filters (cuisine, meal, protein-rich, Jain, vrat, tiffin, kids). Mark "Never suggest". |
 | **Dish details** | Tap any dish: picture, cooking time, difficulty, heaviness, season, tags (Jain, vrat, tiffin, kids), nutrition for one home serving (calories, protein, carbs, fat, fibre), prep-ahead, main ingredients, what it goes with, and a short recipe in English or Hindi. "Send recipe to cook" shares the Hindi recipe on WhatsApp. |
 | **Account** | "Continue with Google" saves the family and menu online (Supabase), so the same menu shows on every phone. Without signing in, everything stays on the phone. |
 | **Family** | Jain, no onion-garlic, weekly vrat, Indian cuisines, world-food dinners per week and which world cuisines, weekday cooking time, kids, tiffin, evening snack, protein focus, cook's name. |

@@ -53,9 +53,9 @@ function everyItem(plan: WeekPlan) {
 }
 
 describe('dish data', () => {
-  it('has 192 dishes with unique, plain ids and Hindi names', () => {
-    expect(DISHES).toHaveLength(192);
-    expect(new Set(DISHES.map((d) => d.id)).size).toBe(192);
+  it('has 197 dishes with unique, plain ids and Hindi names', () => {
+    expect(DISHES).toHaveLength(197);
+    expect(new Set(DISHES.map((d) => d.id)).size).toBe(197);
     expect(DISHES.every((d) => /^[a-z0-9-]+$/.test(d.id))).toBe(true);
     expect(DISHES.every((d) => d.hindi.length > 0)).toBe(true);
   });

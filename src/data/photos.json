@@ -39,12 +39,20 @@
   "src": "photos/chaas-masala-buttermilk.jpg",
   "source": "own"
  },
+ "cheese-khakhra-chaat": {
+  "src": "photos/cheese-khakhra-chaat.jpg",
+  "source": "own"
+ },
  "chilli-paneer-with-fried-rice": {
   "src": "photos/chilli-paneer-with-fried-rice.jpg",
   "source": "own"
  },
  "chole-bhature": {
   "src": "photos/chole-bhature.jpg",
+  "source": "own"
+ },
+ "crispy-crunchy-potatoes": {
+  "src": "photos/crispy-crunchy-potatoes.jpg",
   "source": "own"
  },
  "cucumber-raita": {
@@ -127,6 +135,10 @@
   "src": "photos/khandvi.jpg",
   "source": "own"
  },
+ "khari-biscuit-pie": {
+  "src": "photos/khari-biscuit-pie.jpg",
+  "source": "own"
+ },
  "makki-ki-roti": {
   "src": "photos/makki-ki-roti.jpg",
   "source": "own"
@@ -203,6 +215,10 @@
   "src": "photos/pav-bhaji.jpg",
   "source": "own"
  },
+ "peanut-butter-jam-sandwich": {
+  "src": "photos/peanut-butter-jam-sandwich.jpg",
+  "source": "own"
+ },
  "peanut-chaat": {
   "src": "photos/peanut-chaat.jpg",
   "source": "own"
@@ -271,6 +287,10 @@
   "src": "photos/veg-biryani.jpg",
   "source": "own"
  },
+ "veg-burrito-bowl": {
+  "src": "photos/veg-burrito-bowl.jpg",
+  "source": "own"
+ },
  "veg-cheese-grilled-sandwich": {
   "src": "photos/veg-cheese-grilled-sandwich.jpg",
   "source": "own"
@@ -321,6 +341,10 @@
  },
  "white-sauce-pasta": {
   "src": "photos/white-sauce-pasta.jpg",
+  "source": "own"
+ },
+ "whole-wheat-spaghetti": {
+  "src": "photos/whole-wheat-spaghetti.jpg",
   "source": "own"
  }
 }
