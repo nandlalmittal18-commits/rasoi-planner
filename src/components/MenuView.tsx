@@ -121,7 +121,6 @@ export function MenuView({ plan, profile, isSample, onSwap, onShuffleDay, onNewW
               <span className="day-pill-date">{parseISODate(d.date).getDate()}</span>
               <span className="day-pill-marks" aria-hidden="true">
                 {d.isFast && <span className="dot dot-vrat" />}
-                {d.nonVegAllowed && <span className="dot dot-nonveg" />}
                 {d.worldDinner && <span className="dot dot-world" />}
               </span>
             </button>
@@ -257,7 +256,6 @@ function DayDetail({
         <div className="chips">
           {isToday && <span className="chip chip-today">Today</span>}
           {day.isFast && <span className="chip chip-vrat">Vrat day</span>}
-          {day.nonVegAllowed && <span className="chip chip-nonveg">{profile.diet === 'Egg' ? 'Egg day' : 'Non-veg day'}</span>}
           {day.worldDinner && <span className="chip chip-world">World food night</span>}
           {day.weekday >= 5 && <span className="chip">Weekend</span>}
         </div>

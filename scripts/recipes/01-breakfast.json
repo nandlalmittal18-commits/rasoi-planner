@@ -1,92 +1,584 @@
 {
-"poha": {"en": ["Rinse poha in a sieve and let it soften for 5 minutes.", "Heat oil; add mustard seeds, curry leaves, green chilli and peanuts.", "Add chopped onion and cook till soft; add turmeric and salt.", "Mix in the poha gently and cook covered for 2 minutes.", "Finish with lemon juice, coriander and sev."],
- "hi": ["पोहे को छलनी में धोकर 5 मिनट रख दें।", "तेल गरम करें; राई, करी पत्ता, हरी मिर्च और मूंगफली डालें।", "कटा प्याज़ नरम होने तक भूनें; हल्दी और नमक डालें।", "पोहा डालकर हल्के हाथ से मिलाएं, 2 मिनट ढककर पकाएं।", "नींबू, धनिया और सेव डालकर परोसें।"]},
-"upma": {"en": ["Dry-roast semolina till lightly golden; keep aside.", "Heat oil; add mustard seeds, urad dal, curry leaves, ginger and chilli.", "Add onion and chopped vegetables; cook for 3 minutes.", "Add 2½ cups water per cup of semolina with salt and bring to a boil.", "Add semolina slowly while stirring; cover and cook 2 minutes."],
- "hi": ["सूजी को हल्का सुनहरा होने तक सूखा भून लें।", "तेल में राई, उड़द दाल, करी पत्ता, अदरक और मिर्च डालें।", "प्याज़ और कटी सब्ज़ियाँ डालकर 3 मिनट पकाएं।", "एक कप सूजी पर ढाई कप पानी और नमक डालकर उबालें।", "सूजी धीरे-धीरे डालते हुए चलाएं; ढककर 2 मिनट पकाएं।"]},
-"aloo-paratha": {"en": ["Boil, peel and mash potatoes with chilli, coriander, salt and spices.", "Knead a soft wheat dough and rest it for 15 minutes.", "Fill a dough ball with the potato filling, seal and roll gently.", "Cook on a hot tawa, flipping once; brush ghee on both sides.", "Serve hot with curd, pickle and butter."],
- "hi": ["आलू उबालकर छीलें, मिर्च, धनिया, नमक और मसाले मिलाकर मैश करें।", "नरम आटा गूंधकर 15 मिनट रखें।", "लोई में आलू भरकर बंद करें और हल्के हाथ से बेलें।", "गरम तवे पर दोनों तरफ घी लगाकर सेकें।", "दही, अचार और मक्खन के साथ गरम परोसें।"]},
-"gobi-paratha": {"en": ["Grate cauliflower, add salt, rest 10 minutes and squeeze out the water.", "Mix with chilli, ginger, coriander, ajwain and garam masala.", "Fill dough balls with the mixture, seal and roll gently.", "Cook on a hot tawa with ghee till golden on both sides."],
- "hi": ["गोभी कद्दूकस करें, नमक डालकर 10 मिनट बाद पानी निचोड़ लें।", "मिर्च, अदरक, धनिया, अजवाइन और गरम मसाला मिलाएं।", "लोई में भरावन भरकर बंद करें और हल्के से बेलें।", "गरम तवे पर घी लगाकर दोनों तरफ सुनहरा सेकें।"]},
-"paneer-paratha": {"en": ["Crumble paneer; mix with chilli, coriander, salt and a pinch of garam masala.", "Knead a soft wheat dough and rest it for 10 minutes.", "Stuff dough balls with paneer, seal and roll gently.", "Cook on a hot tawa with ghee till golden spots appear."],
- "hi": ["पनीर मसलकर मिर्च, धनिया, नमक और थोड़ा गरम मसाला मिलाएं।", "नरम आटा गूंधकर 10 मिनट रखें।", "लोई में पनीर भरें, बंद करें और हल्के से बेलें।", "गरम तवे पर घी लगाकर सुनहरे होने तक सेकें।"]},
-"methi-thepla": {"en": ["Mix wheat flour with chopped methi, curd, turmeric, chilli, salt and oil.", "Knead a soft dough with a little water; rest 10 minutes.", "Roll thin rounds.", "Cook on a hot tawa with a little oil till light brown spots appear."],
- "hi": ["आटे में कटी मेथी, दही, हल्दी, मिर्च, नमक और तेल मिलाएं।", "थोड़ा पानी डालकर नरम आटा गूंधें; 10 मिनट रखें।", "पतले थेपले बेलें।", "गरम तवे पर थोड़ा तेल लगाकर हल्के भूरे धब्बे आने तक सेकें।"]},
-"idli-sambar": {"en": ["Soak rice and urad dal separately for 6 hours; grind and mix.", "Add salt and leave the batter overnight to ferment.", "Pour batter into greased idli moulds and steam for 10–12 minutes.", "Meanwhile cook toor dal with vegetables, tamarind and sambar powder.", "Temper the sambar with mustard seeds and curry leaves; serve with idli."],
- "hi": ["चावल और उड़द दाल अलग-अलग 6 घंटे भिगोकर पीसें और मिलाएं।", "नमक डालकर बैटर रात भर खमीर के लिए रखें।", "चिकने इडली सांचे में बैटर डालकर 10–12 मिनट भाप में पकाएं।", "तब तक अरहर दाल, सब्ज़ी, इमली और सांभर मसाले से सांभर बनाएं।", "राई और करी पत्ते का तड़का लगाकर इडली के साथ परोसें।"]},
-"masala-dosa": {"en": ["Boil and mash potatoes; cook with onion, mustard seeds, curry leaves and turmeric.", "Heat a tawa and spread a ladle of dosa batter in a thin circle.", "Drizzle oil and cook till crisp and golden.", "Place potato masala in the centre, fold and serve with sambar and chutney."],
- "hi": ["आलू उबालकर मसलें; प्याज़, राई, करी पत्ता और हल्दी के साथ पकाएं।", "गरम तवे पर एक करछी बैटर पतला गोल फैलाएं।", "किनारों पर तेल डालकर कुरकुरा और सुनहरा सेकें।", "बीच में आलू मसाला रखें, मोड़ें और सांभर-चटनी के साथ परोसें।"]},
-"uttapam": {"en": ["Chop onion, tomato, capsicum and green chilli finely.", "Spread a thick round of dosa batter on a hot tawa.", "Sprinkle the vegetables on top and press lightly.", "Drizzle oil, cook till the base is golden, then flip briefly."],
- "hi": ["प्याज़, टमाटर, शिमला मिर्च और हरी मिर्च बारीक काटें।", "गरम तवे पर डोसा बैटर मोटा गोल फैलाएं।", "ऊपर सब्ज़ियाँ डालकर हल्के से दबाएं।", "तेल डालें, नीचे से सुनहरा होने पर पलटकर थोड़ा सेकें।"]},
-"rava-dosa": {"en": ["Mix semolina, rice flour, a little maida and curd with plenty of water.", "Add cumin, pepper, chilli, ginger and salt; rest 20 minutes.", "Pour the thin batter from a height onto a very hot tawa.", "Drizzle oil and cook till crisp; fold and serve."],
- "hi": ["सूजी, चावल का आटा, थोड़ा मैदा और दही में खूब पानी मिलाएं।", "जीरा, काली मिर्च, मिर्च, अदरक और नमक डालकर 20 मिनट रखें।", "बहुत गरम तवे पर ऊपर से पतला बैटर डालें।", "तेल डालकर कुरकुरा होने तक सेकें; मोड़कर परोसें।"]},
-"medu-vada": {"en": ["Soak urad dal 4 hours; grind to a thick, fluffy batter with very little water.", "Mix in pepper, chopped curry leaves, ginger, chilli and salt.", "With wet hands, shape a round vada with a hole in the middle.", "Deep-fry in medium-hot oil till crisp and golden."],
- "hi": ["उड़द दाल 4 घंटे भिगोकर कम पानी में गाढ़ा फूला बैटर पीसें।", "काली मिर्च, करी पत्ता, अदरक, मिर्च और नमक मिलाएं।", "गीले हाथ से गोल वड़ा बनाकर बीच में छेद करें।", "मध्यम गरम तेल में कुरकुरा सुनहरा होने तक तलें।"]},
-"ven-pongal": {"en": ["Dry-roast moong dal lightly.", "Pressure-cook rice and moong dal with 4 times the water till very soft.", "Heat ghee; add pepper, cumin, ginger, curry leaves and cashews.", "Pour the tempering over the pongal, add salt and mix well."],
- "hi": ["मूंग दाल को हल्का सूखा भून लें।", "चावल और मूंग दाल को चार गुना पानी में बहुत नरम होने तक कुकर में पकाएं।", "घी में काली मिर्च, जीरा, अदरक, करी पत्ता और काजू डालें।", "यह तड़का पोंगल पर डालें, नमक मिलाकर अच्छी तरह चलाएं।"]},
-"pesarattu": {"en": ["Soak whole green moong for 6 hours.", "Grind with ginger, green chilli, cumin and salt to a smooth batter.", "Spread thin on a hot tawa; sprinkle chopped onion if you like.", "Drizzle oil and cook till crisp; serve with ginger chutney."],
- "hi": ["साबुत हरी मूंग 6 घंटे भिगो दें।", "अदरक, हरी मिर्च, जीरा और नमक के साथ बारीक पीस लें।", "गरम तवे पर पतला फैलाएं; चाहें तो कटा प्याज़ डालें।", "तेल डालकर कुरकुरा सेकें; अदरक चटनी के साथ परोसें।"]},
-"neer-dosa": {"en": ["Soak rice for 4 hours; grind with grated coconut to a smooth paste.", "Add water and salt to make a very thin, watery batter.", "Pour a ladle onto a hot greased tawa and swirl to spread.", "Cover and cook 1 minute without flipping; fold and serve."],
- "hi": ["चावल 4 घंटे भिगोकर कद्दूकस नारियल के साथ बारीक पीसें।", "पानी और नमक डालकर बहुत पतला बैटर बनाएं।", "चिकने गरम तवे पर एक करछी डालकर घुमाकर फैलाएं।", "ढककर 1 मिनट पकाएं, पलटें नहीं; मोड़कर परोसें।"]},
-"akki-roti": {"en": ["Mix rice flour with chopped onion, dill, grated coconut, chilli and salt.", "Add warm water and knead a soft dough.", "Pat a thin round directly on a greased tawa with wet fingers.", "Cook covered on both sides with a little oil till spotted brown."],
- "hi": ["चावल के आटे में प्याज़, सोआ पत्ता, नारियल, मिर्च और नमक मिलाएं।", "गुनगुने पानी से नरम आटा गूंधें।", "चिकने तवे पर गीली उंगलियों से पतली रोटी थपथपाएं।", "थोड़ा तेल डालकर ढककर दोनों तरफ सेकें।"]},
-"appam-with-veg-stew": {"en": ["Ferment the rice-coconut appam batter overnight; add a pinch of sugar and salt.", "Pour a ladle into a hot appam pan and swirl to coat the sides.", "Cover and cook till the edges are crisp and the centre is spongy.", "For the stew, simmer potato, carrot and beans in coconut milk with whole spices."],
- "hi": ["चावल-नारियल का अप्पम बैटर रात भर खमीर करें; चुटकी चीनी और नमक डालें।", "गरम अप्पम कढ़ाई में एक करछी डालकर घुमाएं।", "ढककर पकाएं जब तक किनारे कुरकुरे और बीच नरम हो जाए।", "स्टू के लिए आलू, गाजर, बीन्स को नारियल दूध और साबुत मसालों में पकाएं।"]},
-"puttu-kadala-curry": {"en": ["Soak black chana overnight and pressure-cook till soft.", "Cook the chana with onion, tomato, coconut paste and spices into a thick curry.", "Sprinkle salted water on rice flour till it feels like wet sand.", "Layer the flour and grated coconut in a puttu maker and steam for 8 minutes."],
- "hi": ["काले चने रात भर भिगोकर कुकर में नरम पका लें।", "प्याज़, टमाटर, नारियल पेस्ट और मसालों के साथ गाढ़ी करी बनाएं।", "चावल के आटे में नमक वाला पानी छिड़ककर गीली रेत जैसा करें।", "पुट्टू मेकर में आटा और नारियल की परतें डालकर 8 मिनट भाप दें।"]},
-"besan-chilla": {"en": ["Whisk besan with water to a smooth, pourable batter.", "Add chopped onion, tomato, chilli, coriander, ajwain and salt.", "Spread a ladle thin on a hot greased tawa.", "Cook with a little oil on both sides till golden."],
- "hi": ["बेसन में पानी मिलाकर चिकना पतला घोल बनाएं।", "कटा प्याज़, टमाटर, मिर्च, धनिया, अजवाइन और नमक मिलाएं।", "चिकने गरम तवे पर एक करछी पतला फैलाएं।", "थोड़ा तेल डालकर दोनों तरफ सुनहरा सेकें।"]},
-"moong-dal-chilla": {"en": ["Soak yellow moong dal 4 hours; grind with ginger and chilli.", "Add salt, cumin and chopped coriander.", "Spread thin on a hot greased tawa.", "Cook both sides with a little oil; add grated paneer on top if you like."],
- "hi": ["पीली मूंग दाल 4 घंटे भिगोकर अदरक और मिर्च के साथ पीसें।", "नमक, जीरा और कटा धनिया मिलाएं।", "चिकने गरम तवे पर पतला फैलाएं।", "थोड़े तेल में दोनों तरफ सेकें; चाहें तो ऊपर पनीर डालें।"]},
-"vegetable-dalia": {"en": ["Roast broken wheat in a little ghee for 3 minutes.", "Add cumin, onion and chopped vegetables; sauté for 2 minutes.", "Add 3 cups water per cup of dalia, with salt and turmeric.", "Pressure-cook for 2 whistles; serve with curd."],
- "hi": ["दलिया को थोड़े घी में 3 मिनट भूनें।", "जीरा, प्याज़ और कटी सब्ज़ियाँ डालकर 2 मिनट भूनें।", "एक कप दलिया पर तीन कप पानी, नमक और हल्दी डालें।", "कुकर में 2 सीटी लगाएं; दही के साथ परोसें।"]},
-"masala-oats": {"en": ["Heat oil; add cumin, onion and green chilli.", "Add tomato, peas, turmeric and salt; cook for 2 minutes.", "Add oats and 2 cups of water.", "Simmer 3–4 minutes till thick; top with coriander."],
- "hi": ["तेल में जीरा, प्याज़ और हरी मिर्च डालें।", "टमाटर, मटर, हल्दी और नमक डालकर 2 मिनट पकाएं।", "ओट्स और दो कप पानी डालें।", "3–4 मिनट गाढ़ा होने तक पकाएं; धनिया डालें।"]},
-"puri-bhaji": {"en": ["Knead a stiff wheat dough with a little oil and salt.", "Cook boiled potatoes with cumin, tomato, turmeric, chilli and a little water.", "Roll small puris and deep-fry in hot oil till they puff up.", "Serve the hot puris with the aloo bhaji."],
- "hi": ["आटे में थोड़ा तेल और नमक डालकर सख्त गूंधें।", "उबले आलू को जीरा, टमाटर, हल्दी, मिर्च और थोड़े पानी में पकाएं।", "छोटी पूरियां बेलकर गरम तेल में फूलने तक तलें।", "गरम पूरियां आलू भाजी के साथ परोसें।"]},
-"chole-bhature": {"en": ["Soak chickpeas overnight; pressure-cook with a tea bag till soft.", "Cook onion, ginger-garlic and tomato with chole masala; add the chickpeas and simmer.", "Knead maida with curd, a pinch of soda and salt; rest for 2 hours.", "Roll the bhature and deep-fry in very hot oil till puffed."],
- "hi": ["छोले रात भर भिगोकर चायपत्ती की पोटली के साथ कुकर में नरम करें।", "प्याज़, अदरक-लहसुन, टमाटर और छोले मसाला भूनकर छोले डालें और पकाएं।", "मैदा में दही, चुटकी सोडा और नमक डालकर गूंधें; 2 घंटे रखें।", "भटूरे बेलकर बहुत गरम तेल में फूलने तक तलें।"]},
-"misal-pav": {"en": ["Sprout moth beans for 1–2 days; pressure-cook for 1 whistle.", "Make a spicy gravy with onion, coconut, tomato and misal masala.", "Add the sprouts and water; simmer into a thin, spicy curry.", "Serve topped with farsan, onion and lemon, with pav."],
- "hi": ["मोठ 1–2 दिन अंकुरित करें; कुकर में 1 सीटी लगाएं।", "प्याज़, नारियल, टमाटर और मिसल मसाले से तीखी ग्रेवी बनाएं।", "अंकुरित मोठ और पानी डालकर पतली तीखी करी पकाएं।", "ऊपर फरसाण, प्याज़ और नींबू डालकर पाव के साथ परोसें।"]},
-"luchi-with-cholar-dal": {"en": ["Soak chana dal 2 hours; boil till soft but still whole.", "Temper ghee with bay leaf, cumin, ginger and coconut bits; add the dal, a little sugar and salt.", "Knead maida with ghee and water into a soft dough.", "Roll small rounds and deep-fry till puffed and pale."],
- "hi": ["चना दाल 2 घंटे भिगोकर नरम लेकिन साबुत उबालें।", "घी में तेजपत्ता, जीरा, अदरक और नारियल के टुकड़े डालें; दाल, थोड़ी चीनी और नमक मिलाएं।", "मैदे में घी और पानी डालकर नरम आटा गूंधें।", "छोटी लूची बेलकर फूलने तक तलें।"]},
-"thalipeeth": {"en": ["Mix thalipeeth flour with onion, coriander, chilli, sesame and salt.", "Add water to make a soft dough.", "Pat a thin round on a greased tawa and make a few holes in it.", "Pour oil into the holes; cook covered on both sides till crisp."],
- "hi": ["थालीपीठ आटे में प्याज़, धनिया, मिर्च, तिल और नमक मिलाएं।", "पानी डालकर नरम आटा बनाएं।", "चिकने तवे पर पतला थपथपाएं और कुछ छेद करें।", "छेदों में तेल डालें; ढककर दोनों तरफ कुरकुरा सेकें।"]},
-"dal-pakwan": {"en": ["Soak chana dal 2 hours; cook till soft with turmeric and salt.", "Temper with cumin, chilli and amchur; top with onion and tamarind chutney.", "Knead maida with ajwain, oil and salt into a stiff dough.", "Roll thin, prick with a fork and deep-fry till crisp."],
- "hi": ["चना दाल 2 घंटे भिगोकर हल्दी-नमक के साथ नरम पकाएं।", "जीरा, मिर्च और अमचूर का तड़का दें; ऊपर प्याज़ और इमली चटनी डालें।", "मैदे में अजवाइन, तेल और नमक डालकर सख्त आटा गूंधें।", "पतला बेलें, कांटे से छेद करें और कुरकुरा तलें।"]},
-"khaman-dhokla": {"en": ["Whisk besan, curd, water, ginger-chilli paste, sugar and salt; rest 10 minutes.", "Add fruit salt (Eno), mix and pour into a greased tin.", "Steam for 15 minutes; cool slightly and cut into squares.", "Temper mustard seeds, sesame, chilli and curry leaves with a little water and sugar; pour over."],
- "hi": ["बेसन, दही, पानी, अदरक-मिर्च, चीनी और नमक फेंटकर 10 मिनट रखें।", "ईनो डालकर मिलाएं और चिकने बर्तन में डालें।", "15 मिनट भाप में पकाएं; थोड़ा ठंडा कर टुकड़े काटें।", "राई, तिल, मिर्च, करी पत्ते का तड़का थोड़े पानी-चीनी के साथ ऊपर डालें।"]},
-"handvo": {"en": ["Soak rice and dals; grind coarsely with curd and ferment overnight.", "Mix in grated lauki, ginger-chilli, turmeric, salt and a pinch of soda.", "Temper mustard seeds, sesame and curry leaves; pour in the batter.", "Cook covered on low heat, or bake, till golden on both sides."],
- "hi": ["चावल और दालें भिगोकर दही के साथ दरदरा पीसें; रात भर खमीर करें।", "कद्दूकस लौकी, अदरक-मिर्च, हल्दी, नमक और चुटकी सोडा मिलाएं।", "राई, तिल, करी पत्ते का तड़का लगाकर बैटर डालें।", "धीमी आंच पर ढककर या ओवन में दोनों तरफ सुनहरा पकाएं।"]},
-"vegetable-sandwich": {"en": ["Spread butter and green chutney on bread slices.", "Layer sliced boiled potato, cucumber, tomato and onion.", "Sprinkle chaat masala and salt; cover with another slice.", "Eat as it is, or toast till crisp."],
- "hi": ["ब्रेड पर मक्खन और हरी चटनी लगाएं।", "उबले आलू, खीरा, टमाटर और प्याज़ के स्लाइस रखें।", "चाट मसाला और नमक छिड़ककर दूसरा स्लाइस रखें।", "ऐसे ही खाएं या कुरकुरा टोस्ट करें।"]},
-"bread-omelette": {"en": ["Beat eggs with chopped onion, chilli, coriander and salt.", "Pour into a hot buttered pan.", "Place bread slices on top, flip and cook the other side.", "Fold and serve with ketchup."],
- "hi": ["अंडे फेंटकर कटा प्याज़, मिर्च, धनिया और नमक मिलाएं।", "गरम पैन में मक्खन लगाकर अंडा डालें।", "ऊपर ब्रेड रखें, पलटकर दूसरी तरफ सेकें।", "मोड़कर केचप के साथ परोसें।"]},
-"egg-bhurji": {"en": ["Heat butter or oil; cook onion and green chilli till soft.", "Add tomato, turmeric, chilli powder and salt; cook till soft.", "Break in the eggs and stir continuously till just set.", "Add coriander; serve with pav or roti."],
- "hi": ["मक्खन या तेल में प्याज़ और हरी मिर्च नरम करें।", "टमाटर, हल्दी, मिर्च पाउडर और नमक डालकर पकाएं।", "अंडे तोड़कर डालें और लगातार चलाते हुए पकाएं।", "धनिया डालकर पाव या रोटी के साथ परोसें।"]},
-"sabudana-khichdi": {"en": ["Soak sabudana overnight in just enough water to cover it.", "Mix in coarse peanut powder and rock salt.", "Heat ghee; add cumin, green chilli and boiled potato cubes.", "Add the sabudana and stir on low heat till the pearls turn clear; add lemon."],
- "hi": ["साबूदाना रात भर बस डूबने भर पानी में भिगो दें।", "दरदरी मूंगफली और सेंधा नमक मिलाएं।", "घी में जीरा, हरी मिर्च और उबले आलू के टुकड़े डालें।", "साबूदाना डालकर धीमी आंच पर पारदर्शी होने तक चलाएं; नींबू डालें।"]},
-"kuttu-puri-with-aloo": {"en": ["Knead kuttu flour with boiled mashed potato, rock salt and a little water.", "Roll small puris between two plastic sheets.", "Deep-fry in hot ghee or oil till crisp.", "Serve with jeera aloo made in ghee with rock salt."],
- "hi": ["कुट्टू आटे में उबला मसला आलू, सेंधा नमक और थोड़ा पानी डालकर गूंधें।", "दो प्लास्टिक शीट के बीच रखकर छोटी पूरियां बेलें।", "गरम घी या तेल में कुरकुरी तलें।", "सेंधा नमक वाले जीरा आलू के साथ परोसें।"]},
-"rajgira-paratha": {"en": ["Mix rajgira flour with mashed boiled potato, rock salt and green chilli.", "Knead into a soft dough with a little water.", "Roll thick parathas gently, dusting with flour.", "Cook on a tawa with ghee till golden."],
- "hi": ["राजगिरा आटे में उबला आलू, सेंधा नमक और हरी मिर्च मिलाएं।", "थोड़ा पानी डालकर नरम आटा गूंधें।", "सूखा आटा लगाकर मोटे पराठे हल्के हाथ से बेलें।", "तवे पर घी लगाकर सुनहरा सेकें।"]},
-"sprouts-chaat": {"en": ["Steam the sprouted moong for 5 minutes, or use it raw.", "Add chopped onion, tomato, cucumber and green chilli.", "Season with chaat masala, salt and lemon juice.", "Top with coriander and serve fresh."],
- "hi": ["अंकुरित मूंग 5 मिनट भाप दें या कच्चा लें।", "कटा प्याज़, टमाटर, खीरा और हरी मिर्च मिलाएं।", "चाट मसाला, नमक और नींबू डालें।", "धनिया डालकर ताज़ा परोसें।"]},
-"vermicelli-upma": {"en": ["If the vermicelli is not pre-roasted, roast it in a little ghee till golden.", "Heat oil; add mustard seeds, urad dal, curry leaves, chilli and onion.", "Add peas, salt and 1½ cups water per cup of vermicelli; bring to a boil.", "Add the vermicelli, cover and cook till the water is absorbed; add lemon."],
- "hi": ["सेवई भुनी न हो तो थोड़े घी में सुनहरी भून लें।", "तेल में राई, उड़द दाल, करी पत्ता, मिर्च और प्याज़ डालें।", "मटर, नमक और एक कप सेवई पर डेढ़ कप पानी डालकर उबालें।", "सेवई डालें, ढककर पानी सूखने तक पकाएं; नींबू डालें।"]},
-"meethi-sevaiyan": {"en": ["Heat ghee and roast the vermicelli till golden.", "Add 1 cup water or milk per cup of vermicelli; cook till soft and dry.", "Add sugar and cardamom; stir till the sugar melts.", "Top with chopped dry fruits and serve warm."],
- "hi": ["घी गरम कर सेवई सुनहरी भूनें।", "एक कप सेवई पर एक कप पानी या दूध डालकर नरम और सूखा होने तक पकाएं।", "चीनी और इलायची डालकर चीनी घुलने तक चलाएं।", "ऊपर कटे मेवे डालकर गरम परोसें।"]},
-"lemon-shavige": {"en": ["Soak or boil the rice vermicelli as the packet says; drain.", "Heat oil; add mustard seeds, chana dal, peanuts, curry leaves and chilli.", "Add turmeric and salt, then the vermicelli; toss gently.", "Turn off the heat and add lemon juice and coriander."],
- "hi": ["चावल की सेवई पैकेट के अनुसार भिगोएं या उबालें; पानी निकालें।", "तेल में राई, चना दाल, मूंगफली, करी पत्ता और मिर्च डालें।", "हल्दी, नमक और फिर सेवई डालकर हल्के से मिलाएं।", "आंच बंद करें, नींबू और धनिया डालें।"]},
-"idiyappam-with-veg-stew": {"en": ["Boil water with salt and oil; pour over rice flour and knead a soft dough.", "Press the dough through an idiyappam press onto greased plates.", "Steam for 8–10 minutes.", "Serve with a mild vegetable stew cooked in coconut milk."],
- "hi": ["नमक और तेल वाला पानी उबालकर चावल के आटे में डालें, नरम गूंधें।", "इडियप्पम प्रेस से आटे को चिकनी प्लेटों पर निकालें।", "8–10 मिनट भाप में पकाएं।", "नारियल दूध वाले हल्के वेज स्टू के साथ परोसें।"]},
-"cheese-omelette-with-toast": {"en": ["Beat eggs with salt and pepper.", "Pour into a hot buttered pan and let it set.", "Sprinkle grated cheese on one half and fold.", "Serve with buttered toast."],
- "hi": ["अंडे में नमक और काली मिर्च डालकर फेंटें।", "गरम मक्खन वाले पैन में डालकर जमने दें।", "आधे हिस्से पर चीज़ डालकर मोड़ें।", "मक्खन लगे टोस्ट के साथ परोसें।"]},
-"pancakes-with-honey": {"en": ["Mix maida, a pinch of baking powder, sugar and salt.", "Whisk in milk and melted butter to a thick, smooth batter.", "Pour small rounds on a buttered pan; flip when bubbles appear.", "Serve with honey and sliced banana."],
- "hi": ["मैदा, चुटकी बेकिंग पाउडर, चीनी और नमक मिलाएं।", "दूध और पिघला मक्खन डालकर गाढ़ा चिकना घोल बनाएं।", "मक्खन वाले पैन पर छोटे गोल डालें; बुलबुले आने पर पलटें।", "शहद और केले के टुकड़ों के साथ परोसें।"]},
-"french-toast": {"en": ["Beat eggs with milk, a little sugar and a pinch of cinnamon.", "Dip bread slices in the mixture on both sides.", "Cook on a buttered pan till golden on both sides.", "Serve warm with fruit or honey."],
- "hi": ["अंडे, दूध, थोड़ी चीनी और चुटकी दालचीनी फेंटें।", "ब्रेड को दोनों तरफ इस घोल में डुबोएं।", "मक्खन वाले पैन पर दोनों तरफ सुनहरा सेकें।", "फल या शहद के साथ गरम परोसें।"]},
-"overnight-oats-with-fruit": {"en": ["Mix oats with equal parts milk and curd in a jar.", "Add honey and a pinch of cardamom; stir well.", "Cover and keep in the fridge overnight.", "In the morning, top with banana and other fruit."],
- "hi": ["जार में ओट्स के साथ बराबर दूध और दही मिलाएं।", "शहद और चुटकी इलायची डालकर चलाएं।", "ढककर रात भर फ्रिज में रखें।", "सुबह ऊपर केला और फल डालकर खाएं।"]},
-"veg-cheese-grilled-sandwich": {"en": ["Butter the bread slices and spread green chutney.", "Add sliced capsicum, tomato and grated cheese; sprinkle salt and pepper.", "Close and grill, or toast on a tawa, till golden and the cheese melts.", "Cut diagonally and serve with ketchup."],
- "hi": ["ब्रेड पर मक्खन और हरी चटनी लगाएं।", "शिमला मिर्च, टमाटर और चीज़ डालें; नमक-काली मिर्च छिड़कें।", "बंद करके ग्रिल या तवे पर सुनहरा और चीज़ पिघलने तक सेकें।", "तिरछा काटकर केचप के साथ परोसें।"]}
+ "poha": {
+  "en": [
+   "Rinse poha in a sieve and let it soften for 5 minutes.",
+   "Heat oil; add mustard seeds, curry leaves, green chilli and peanuts.",
+   "Add chopped onion and cook till soft; add turmeric and salt.",
+   "Mix in the poha gently and cook covered for 2 minutes.",
+   "Finish with lemon juice, coriander and sev."
+  ],
+  "hi": [
+   "पोहे को छलनी में धोकर 5 मिनट रख दें।",
+   "तेल गरम करें; राई, करी पत्ता, हरी मिर्च और मूंगफली डालें।",
+   "कटा प्याज़ नरम होने तक भूनें; हल्दी और नमक डालें।",
+   "पोहा डालकर हल्के हाथ से मिलाएं, 2 मिनट ढककर पकाएं।",
+   "नींबू, धनिया और सेव डालकर परोसें।"
+  ]
+ },
+ "upma": {
+  "en": [
+   "Dry-roast semolina till lightly golden; keep aside.",
+   "Heat oil; add mustard seeds, urad dal, curry leaves, ginger and chilli.",
+   "Add onion and chopped vegetables; cook for 3 minutes.",
+   "Add 2½ cups water per cup of semolina with salt and bring to a boil.",
+   "Add semolina slowly while stirring; cover and cook 2 minutes."
+  ],
+  "hi": [
+   "सूजी को हल्का सुनहरा होने तक सूखा भून लें।",
+   "तेल में राई, उड़द दाल, करी पत्ता, अदरक और मिर्च डालें।",
+   "प्याज़ और कटी सब्ज़ियाँ डालकर 3 मिनट पकाएं।",
+   "एक कप सूजी पर ढाई कप पानी और नमक डालकर उबालें।",
+   "सूजी धीरे-धीरे डालते हुए चलाएं; ढककर 2 मिनट पकाएं।"
+  ]
+ },
+ "aloo-paratha": {
+  "en": [
+   "Boil, peel and mash potatoes with chilli, coriander, salt and spices.",
+   "Knead a soft wheat dough and rest it for 15 minutes.",
+   "Fill a dough ball with the potato filling, seal and roll gently.",
+   "Cook on a hot tawa, flipping once; brush ghee on both sides.",
+   "Serve hot with curd, pickle and butter."
+  ],
+  "hi": [
+   "आलू उबालकर छीलें, मिर्च, धनिया, नमक और मसाले मिलाकर मैश करें।",
+   "नरम आटा गूंधकर 15 मिनट रखें।",
+   "लोई में आलू भरकर बंद करें और हल्के हाथ से बेलें।",
+   "गरम तवे पर दोनों तरफ घी लगाकर सेकें।",
+   "दही, अचार और मक्खन के साथ गरम परोसें।"
+  ]
+ },
+ "gobi-paratha": {
+  "en": [
+   "Grate cauliflower, add salt, rest 10 minutes and squeeze out the water.",
+   "Mix with chilli, ginger, coriander, ajwain and garam masala.",
+   "Fill dough balls with the mixture, seal and roll gently.",
+   "Cook on a hot tawa with ghee till golden on both sides."
+  ],
+  "hi": [
+   "गोभी कद्दूकस करें, नमक डालकर 10 मिनट बाद पानी निचोड़ लें।",
+   "मिर्च, अदरक, धनिया, अजवाइन और गरम मसाला मिलाएं।",
+   "लोई में भरावन भरकर बंद करें और हल्के से बेलें।",
+   "गरम तवे पर घी लगाकर दोनों तरफ सुनहरा सेकें।"
+  ]
+ },
+ "paneer-paratha": {
+  "en": [
+   "Crumble paneer; mix with chilli, coriander, salt and a pinch of garam masala.",
+   "Knead a soft wheat dough and rest it for 10 minutes.",
+   "Stuff dough balls with paneer, seal and roll gently.",
+   "Cook on a hot tawa with ghee till golden spots appear."
+  ],
+  "hi": [
+   "पनीर मसलकर मिर्च, धनिया, नमक और थोड़ा गरम मसाला मिलाएं।",
+   "नरम आटा गूंधकर 10 मिनट रखें।",
+   "लोई में पनीर भरें, बंद करें और हल्के से बेलें।",
+   "गरम तवे पर घी लगाकर सुनहरे होने तक सेकें।"
+  ]
+ },
+ "methi-thepla": {
+  "en": [
+   "Mix wheat flour with chopped methi, curd, turmeric, chilli, salt and oil.",
+   "Knead a soft dough with a little water; rest 10 minutes.",
+   "Roll thin rounds.",
+   "Cook on a hot tawa with a little oil till light brown spots appear."
+  ],
+  "hi": [
+   "आटे में कटी मेथी, दही, हल्दी, मिर्च, नमक और तेल मिलाएं।",
+   "थोड़ा पानी डालकर नरम आटा गूंधें; 10 मिनट रखें।",
+   "पतले थेपले बेलें।",
+   "गरम तवे पर थोड़ा तेल लगाकर हल्के भूरे धब्बे आने तक सेकें।"
+  ]
+ },
+ "idli-sambar": {
+  "en": [
+   "Soak rice and urad dal separately for 6 hours; grind and mix.",
+   "Add salt and leave the batter overnight to ferment.",
+   "Pour batter into greased idli moulds and steam for 10–12 minutes.",
+   "Meanwhile cook toor dal with vegetables, tamarind and sambar powder.",
+   "Temper the sambar with mustard seeds and curry leaves; serve with idli."
+  ],
+  "hi": [
+   "चावल और उड़द दाल अलग-अलग 6 घंटे भिगोकर पीसें और मिलाएं।",
+   "नमक डालकर बैटर रात भर खमीर के लिए रखें।",
+   "चिकने इडली सांचे में बैटर डालकर 10–12 मिनट भाप में पकाएं।",
+   "तब तक अरहर दाल, सब्ज़ी, इमली और सांभर मसाले से सांभर बनाएं।",
+   "राई और करी पत्ते का तड़का लगाकर इडली के साथ परोसें।"
+  ]
+ },
+ "masala-dosa": {
+  "en": [
+   "Boil and mash potatoes; cook with onion, mustard seeds, curry leaves and turmeric.",
+   "Heat a tawa and spread a ladle of dosa batter in a thin circle.",
+   "Drizzle oil and cook till crisp and golden.",
+   "Place potato masala in the centre, fold and serve with sambar and chutney."
+  ],
+  "hi": [
+   "आलू उबालकर मसलें; प्याज़, राई, करी पत्ता और हल्दी के साथ पकाएं।",
+   "गरम तवे पर एक करछी बैटर पतला गोल फैलाएं।",
+   "किनारों पर तेल डालकर कुरकुरा और सुनहरा सेकें।",
+   "बीच में आलू मसाला रखें, मोड़ें और सांभर-चटनी के साथ परोसें।"
+  ]
+ },
+ "uttapam": {
+  "en": [
+   "Chop onion, tomato, capsicum and green chilli finely.",
+   "Spread a thick round of dosa batter on a hot tawa.",
+   "Sprinkle the vegetables on top and press lightly.",
+   "Drizzle oil, cook till the base is golden, then flip briefly."
+  ],
+  "hi": [
+   "प्याज़, टमाटर, शिमला मिर्च और हरी मिर्च बारीक काटें।",
+   "गरम तवे पर डोसा बैटर मोटा गोल फैलाएं।",
+   "ऊपर सब्ज़ियाँ डालकर हल्के से दबाएं।",
+   "तेल डालें, नीचे से सुनहरा होने पर पलटकर थोड़ा सेकें।"
+  ]
+ },
+ "rava-dosa": {
+  "en": [
+   "Mix semolina, rice flour, a little maida and curd with plenty of water.",
+   "Add cumin, pepper, chilli, ginger and salt; rest 20 minutes.",
+   "Pour the thin batter from a height onto a very hot tawa.",
+   "Drizzle oil and cook till crisp; fold and serve."
+  ],
+  "hi": [
+   "सूजी, चावल का आटा, थोड़ा मैदा और दही में खूब पानी मिलाएं।",
+   "जीरा, काली मिर्च, मिर्च, अदरक और नमक डालकर 20 मिनट रखें।",
+   "बहुत गरम तवे पर ऊपर से पतला बैटर डालें।",
+   "तेल डालकर कुरकुरा होने तक सेकें; मोड़कर परोसें।"
+  ]
+ },
+ "medu-vada": {
+  "en": [
+   "Soak urad dal 4 hours; grind to a thick, fluffy batter with very little water.",
+   "Mix in pepper, chopped curry leaves, ginger, chilli and salt.",
+   "With wet hands, shape a round vada with a hole in the middle.",
+   "Deep-fry in medium-hot oil till crisp and golden."
+  ],
+  "hi": [
+   "उड़द दाल 4 घंटे भिगोकर कम पानी में गाढ़ा फूला बैटर पीसें।",
+   "काली मिर्च, करी पत्ता, अदरक, मिर्च और नमक मिलाएं।",
+   "गीले हाथ से गोल वड़ा बनाकर बीच में छेद करें।",
+   "मध्यम गरम तेल में कुरकुरा सुनहरा होने तक तलें।"
+  ]
+ },
+ "ven-pongal": {
+  "en": [
+   "Dry-roast moong dal lightly.",
+   "Pressure-cook rice and moong dal with 4 times the water till very soft.",
+   "Heat ghee; add pepper, cumin, ginger, curry leaves and cashews.",
+   "Pour the tempering over the pongal, add salt and mix well."
+  ],
+  "hi": [
+   "मूंग दाल को हल्का सूखा भून लें।",
+   "चावल और मूंग दाल को चार गुना पानी में बहुत नरम होने तक कुकर में पकाएं।",
+   "घी में काली मिर्च, जीरा, अदरक, करी पत्ता और काजू डालें।",
+   "यह तड़का पोंगल पर डालें, नमक मिलाकर अच्छी तरह चलाएं।"
+  ]
+ },
+ "pesarattu": {
+  "en": [
+   "Soak whole green moong for 6 hours.",
+   "Grind with ginger, green chilli, cumin and salt to a smooth batter.",
+   "Spread thin on a hot tawa; sprinkle chopped onion if you like.",
+   "Drizzle oil and cook till crisp; serve with ginger chutney."
+  ],
+  "hi": [
+   "साबुत हरी मूंग 6 घंटे भिगो दें।",
+   "अदरक, हरी मिर्च, जीरा और नमक के साथ बारीक पीस लें।",
+   "गरम तवे पर पतला फैलाएं; चाहें तो कटा प्याज़ डालें।",
+   "तेल डालकर कुरकुरा सेकें; अदरक चटनी के साथ परोसें।"
+  ]
+ },
+ "neer-dosa": {
+  "en": [
+   "Soak rice for 4 hours; grind with grated coconut to a smooth paste.",
+   "Add water and salt to make a very thin, watery batter.",
+   "Pour a ladle onto a hot greased tawa and swirl to spread.",
+   "Cover and cook 1 minute without flipping; fold and serve."
+  ],
+  "hi": [
+   "चावल 4 घंटे भिगोकर कद्दूकस नारियल के साथ बारीक पीसें।",
+   "पानी और नमक डालकर बहुत पतला बैटर बनाएं।",
+   "चिकने गरम तवे पर एक करछी डालकर घुमाकर फैलाएं।",
+   "ढककर 1 मिनट पकाएं, पलटें नहीं; मोड़कर परोसें।"
+  ]
+ },
+ "akki-roti": {
+  "en": [
+   "Mix rice flour with chopped onion, dill, grated coconut, chilli and salt.",
+   "Add warm water and knead a soft dough.",
+   "Pat a thin round directly on a greased tawa with wet fingers.",
+   "Cook covered on both sides with a little oil till spotted brown."
+  ],
+  "hi": [
+   "चावल के आटे में प्याज़, सोआ पत्ता, नारियल, मिर्च और नमक मिलाएं।",
+   "गुनगुने पानी से नरम आटा गूंधें।",
+   "चिकने तवे पर गीली उंगलियों से पतली रोटी थपथपाएं।",
+   "थोड़ा तेल डालकर ढककर दोनों तरफ सेकें।"
+  ]
+ },
+ "appam-with-veg-stew": {
+  "en": [
+   "Ferment the rice-coconut appam batter overnight; add a pinch of sugar and salt.",
+   "Pour a ladle into a hot appam pan and swirl to coat the sides.",
+   "Cover and cook till the edges are crisp and the centre is spongy.",
+   "For the stew, simmer potato, carrot and beans in coconut milk with whole spices."
+  ],
+  "hi": [
+   "चावल-नारियल का अप्पम बैटर रात भर खमीर करें; चुटकी चीनी और नमक डालें।",
+   "गरम अप्पम कढ़ाई में एक करछी डालकर घुमाएं।",
+   "ढककर पकाएं जब तक किनारे कुरकुरे और बीच नरम हो जाए।",
+   "स्टू के लिए आलू, गाजर, बीन्स को नारियल दूध और साबुत मसालों में पकाएं।"
+  ]
+ },
+ "puttu-kadala-curry": {
+  "en": [
+   "Soak black chana overnight and pressure-cook till soft.",
+   "Cook the chana with onion, tomato, coconut paste and spices into a thick curry.",
+   "Sprinkle salted water on rice flour till it feels like wet sand.",
+   "Layer the flour and grated coconut in a puttu maker and steam for 8 minutes."
+  ],
+  "hi": [
+   "काले चने रात भर भिगोकर कुकर में नरम पका लें।",
+   "प्याज़, टमाटर, नारियल पेस्ट और मसालों के साथ गाढ़ी करी बनाएं।",
+   "चावल के आटे में नमक वाला पानी छिड़ककर गीली रेत जैसा करें।",
+   "पुट्टू मेकर में आटा और नारियल की परतें डालकर 8 मिनट भाप दें।"
+  ]
+ },
+ "besan-chilla": {
+  "en": [
+   "Whisk besan with water to a smooth, pourable batter.",
+   "Add chopped onion, tomato, chilli, coriander, ajwain and salt.",
+   "Spread a ladle thin on a hot greased tawa.",
+   "Cook with a little oil on both sides till golden."
+  ],
+  "hi": [
+   "बेसन में पानी मिलाकर चिकना पतला घोल बनाएं।",
+   "कटा प्याज़, टमाटर, मिर्च, धनिया, अजवाइन और नमक मिलाएं।",
+   "चिकने गरम तवे पर एक करछी पतला फैलाएं।",
+   "थोड़ा तेल डालकर दोनों तरफ सुनहरा सेकें।"
+  ]
+ },
+ "moong-dal-chilla": {
+  "en": [
+   "Soak yellow moong dal 4 hours; grind with ginger and chilli.",
+   "Add salt, cumin and chopped coriander.",
+   "Spread thin on a hot greased tawa.",
+   "Cook both sides with a little oil; add grated paneer on top if you like."
+  ],
+  "hi": [
+   "पीली मूंग दाल 4 घंटे भिगोकर अदरक और मिर्च के साथ पीसें।",
+   "नमक, जीरा और कटा धनिया मिलाएं।",
+   "चिकने गरम तवे पर पतला फैलाएं।",
+   "थोड़े तेल में दोनों तरफ सेकें; चाहें तो ऊपर पनीर डालें।"
+  ]
+ },
+ "vegetable-dalia": {
+  "en": [
+   "Roast broken wheat in a little ghee for 3 minutes.",
+   "Add cumin, onion and chopped vegetables; sauté for 2 minutes.",
+   "Add 3 cups water per cup of dalia, with salt and turmeric.",
+   "Pressure-cook for 2 whistles; serve with curd."
+  ],
+  "hi": [
+   "दलिया को थोड़े घी में 3 मिनट भूनें।",
+   "जीरा, प्याज़ और कटी सब्ज़ियाँ डालकर 2 मिनट भूनें।",
+   "एक कप दलिया पर तीन कप पानी, नमक और हल्दी डालें।",
+   "कुकर में 2 सीटी लगाएं; दही के साथ परोसें।"
+  ]
+ },
+ "masala-oats": {
+  "en": [
+   "Heat oil; add cumin, onion and green chilli.",
+   "Add tomato, peas, turmeric and salt; cook for 2 minutes.",
+   "Add oats and 2 cups of water.",
+   "Simmer 3–4 minutes till thick; top with coriander."
+  ],
+  "hi": [
+   "तेल में जीरा, प्याज़ और हरी मिर्च डालें।",
+   "टमाटर, मटर, हल्दी और नमक डालकर 2 मिनट पकाएं।",
+   "ओट्स और दो कप पानी डालें।",
+   "3–4 मिनट गाढ़ा होने तक पकाएं; धनिया डालें।"
+  ]
+ },
+ "puri-bhaji": {
+  "en": [
+   "Knead a stiff wheat dough with a little oil and salt.",
+   "Cook boiled potatoes with cumin, tomato, turmeric, chilli and a little water.",
+   "Roll small puris and deep-fry in hot oil till they puff up.",
+   "Serve the hot puris with the aloo bhaji."
+  ],
+  "hi": [
+   "आटे में थोड़ा तेल और नमक डालकर सख्त गूंधें।",
+   "उबले आलू को जीरा, टमाटर, हल्दी, मिर्च और थोड़े पानी में पकाएं।",
+   "छोटी पूरियां बेलकर गरम तेल में फूलने तक तलें।",
+   "गरम पूरियां आलू भाजी के साथ परोसें।"
+  ]
+ },
+ "chole-bhature": {
+  "en": [
+   "Soak chickpeas overnight; pressure-cook with a tea bag till soft.",
+   "Cook onion, ginger-garlic and tomato with chole masala; add the chickpeas and simmer.",
+   "Knead maida with curd, a pinch of soda and salt; rest for 2 hours.",
+   "Roll the bhature and deep-fry in very hot oil till puffed."
+  ],
+  "hi": [
+   "छोले रात भर भिगोकर चायपत्ती की पोटली के साथ कुकर में नरम करें।",
+   "प्याज़, अदरक-लहसुन, टमाटर और छोले मसाला भूनकर छोले डालें और पकाएं।",
+   "मैदा में दही, चुटकी सोडा और नमक डालकर गूंधें; 2 घंटे रखें।",
+   "भटूरे बेलकर बहुत गरम तेल में फूलने तक तलें।"
+  ]
+ },
+ "misal-pav": {
+  "en": [
+   "Sprout moth beans for 1–2 days; pressure-cook for 1 whistle.",
+   "Make a spicy gravy with onion, coconut, tomato and misal masala.",
+   "Add the sprouts and water; simmer into a thin, spicy curry.",
+   "Serve topped with farsan, onion and lemon, with pav."
+  ],
+  "hi": [
+   "मोठ 1–2 दिन अंकुरित करें; कुकर में 1 सीटी लगाएं।",
+   "प्याज़, नारियल, टमाटर और मिसल मसाले से तीखी ग्रेवी बनाएं।",
+   "अंकुरित मोठ और पानी डालकर पतली तीखी करी पकाएं।",
+   "ऊपर फरसाण, प्याज़ और नींबू डालकर पाव के साथ परोसें।"
+  ]
+ },
+ "luchi-with-cholar-dal": {
+  "en": [
+   "Soak chana dal 2 hours; boil till soft but still whole.",
+   "Temper ghee with bay leaf, cumin, ginger and coconut bits; add the dal, a little sugar and salt.",
+   "Knead maida with ghee and water into a soft dough.",
+   "Roll small rounds and deep-fry till puffed and pale."
+  ],
+  "hi": [
+   "चना दाल 2 घंटे भिगोकर नरम लेकिन साबुत उबालें।",
+   "घी में तेजपत्ता, जीरा, अदरक और नारियल के टुकड़े डालें; दाल, थोड़ी चीनी और नमक मिलाएं।",
+   "मैदे में घी और पानी डालकर नरम आटा गूंधें।",
+   "छोटी लूची बेलकर फूलने तक तलें।"
+  ]
+ },
+ "thalipeeth": {
+  "en": [
+   "Mix thalipeeth flour with onion, coriander, chilli, sesame and salt.",
+   "Add water to make a soft dough.",
+   "Pat a thin round on a greased tawa and make a few holes in it.",
+   "Pour oil into the holes; cook covered on both sides till crisp."
+  ],
+  "hi": [
+   "थालीपीठ आटे में प्याज़, धनिया, मिर्च, तिल और नमक मिलाएं।",
+   "पानी डालकर नरम आटा बनाएं।",
+   "चिकने तवे पर पतला थपथपाएं और कुछ छेद करें।",
+   "छेदों में तेल डालें; ढककर दोनों तरफ कुरकुरा सेकें।"
+  ]
+ },
+ "dal-pakwan": {
+  "en": [
+   "Soak chana dal 2 hours; cook till soft with turmeric and salt.",
+   "Temper with cumin, chilli and amchur; top with onion and tamarind chutney.",
+   "Knead maida with ajwain, oil and salt into a stiff dough.",
+   "Roll thin, prick with a fork and deep-fry till crisp."
+  ],
+  "hi": [
+   "चना दाल 2 घंटे भिगोकर हल्दी-नमक के साथ नरम पकाएं।",
+   "जीरा, मिर्च और अमचूर का तड़का दें; ऊपर प्याज़ और इमली चटनी डालें।",
+   "मैदे में अजवाइन, तेल और नमक डालकर सख्त आटा गूंधें।",
+   "पतला बेलें, कांटे से छेद करें और कुरकुरा तलें।"
+  ]
+ },
+ "khaman-dhokla": {
+  "en": [
+   "Whisk besan, curd, water, ginger-chilli paste, sugar and salt; rest 10 minutes.",
+   "Add fruit salt (Eno), mix and pour into a greased tin.",
+   "Steam for 15 minutes; cool slightly and cut into squares.",
+   "Temper mustard seeds, sesame, chilli and curry leaves with a little water and sugar; pour over."
+  ],
+  "hi": [
+   "बेसन, दही, पानी, अदरक-मिर्च, चीनी और नमक फेंटकर 10 मिनट रखें।",
+   "ईनो डालकर मिलाएं और चिकने बर्तन में डालें।",
+   "15 मिनट भाप में पकाएं; थोड़ा ठंडा कर टुकड़े काटें।",
+   "राई, तिल, मिर्च, करी पत्ते का तड़का थोड़े पानी-चीनी के साथ ऊपर डालें।"
+  ]
+ },
+ "handvo": {
+  "en": [
+   "Soak rice and dals; grind coarsely with curd and ferment overnight.",
+   "Mix in grated lauki, ginger-chilli, turmeric, salt and a pinch of soda.",
+   "Temper mustard seeds, sesame and curry leaves; pour in the batter.",
+   "Cook covered on low heat, or bake, till golden on both sides."
+  ],
+  "hi": [
+   "चावल और दालें भिगोकर दही के साथ दरदरा पीसें; रात भर खमीर करें।",
+   "कद्दूकस लौकी, अदरक-मिर्च, हल्दी, नमक और चुटकी सोडा मिलाएं।",
+   "राई, तिल, करी पत्ते का तड़का लगाकर बैटर डालें।",
+   "धीमी आंच पर ढककर या ओवन में दोनों तरफ सुनहरा पकाएं।"
+  ]
+ },
+ "vegetable-sandwich": {
+  "en": [
+   "Spread butter and green chutney on bread slices.",
+   "Layer sliced boiled potato, cucumber, tomato and onion.",
+   "Sprinkle chaat masala and salt; cover with another slice.",
+   "Eat as it is, or toast till crisp."
+  ],
+  "hi": [
+   "ब्रेड पर मक्खन और हरी चटनी लगाएं।",
+   "उबले आलू, खीरा, टमाटर और प्याज़ के स्लाइस रखें।",
+   "चाट मसाला और नमक छिड़ककर दूसरा स्लाइस रखें।",
+   "ऐसे ही खाएं या कुरकुरा टोस्ट करें।"
+  ]
+ },
+ "sabudana-khichdi": {
+  "en": [
+   "Soak sabudana overnight in just enough water to cover it.",
+   "Mix in coarse peanut powder and rock salt.",
+   "Heat ghee; add cumin, green chilli and boiled potato cubes.",
+   "Add the sabudana and stir on low heat till the pearls turn clear; add lemon."
+  ],
+  "hi": [
+   "साबूदाना रात भर बस डूबने भर पानी में भिगो दें।",
+   "दरदरी मूंगफली और सेंधा नमक मिलाएं।",
+   "घी में जीरा, हरी मिर्च और उबले आलू के टुकड़े डालें।",
+   "साबूदाना डालकर धीमी आंच पर पारदर्शी होने तक चलाएं; नींबू डालें।"
+  ]
+ },
+ "kuttu-puri-with-aloo": {
+  "en": [
+   "Knead kuttu flour with boiled mashed potato, rock salt and a little water.",
+   "Roll small puris between two plastic sheets.",
+   "Deep-fry in hot ghee or oil till crisp.",
+   "Serve with jeera aloo made in ghee with rock salt."
+  ],
+  "hi": [
+   "कुट्टू आटे में उबला मसला आलू, सेंधा नमक और थोड़ा पानी डालकर गूंधें।",
+   "दो प्लास्टिक शीट के बीच रखकर छोटी पूरियां बेलें।",
+   "गरम घी या तेल में कुरकुरी तलें।",
+   "सेंधा नमक वाले जीरा आलू के साथ परोसें।"
+  ]
+ },
+ "rajgira-paratha": {
+  "en": [
+   "Mix rajgira flour with mashed boiled potato, rock salt and green chilli.",
+   "Knead into a soft dough with a little water.",
+   "Roll thick parathas gently, dusting with flour.",
+   "Cook on a tawa with ghee till golden."
+  ],
+  "hi": [
+   "राजगिरा आटे में उबला आलू, सेंधा नमक और हरी मिर्च मिलाएं।",
+   "थोड़ा पानी डालकर नरम आटा गूंधें।",
+   "सूखा आटा लगाकर मोटे पराठे हल्के हाथ से बेलें।",
+   "तवे पर घी लगाकर सुनहरा सेकें।"
+  ]
+ },
+ "sprouts-chaat": {
+  "en": [
+   "Steam the sprouted moong for 5 minutes, or use it raw.",
+   "Add chopped onion, tomato, cucumber and green chilli.",
+   "Season with chaat masala, salt and lemon juice.",
+   "Top with coriander and serve fresh."
+  ],
+  "hi": [
+   "अंकुरित मूंग 5 मिनट भाप दें या कच्चा लें।",
+   "कटा प्याज़, टमाटर, खीरा और हरी मिर्च मिलाएं।",
+   "चाट मसाला, नमक और नींबू डालें।",
+   "धनिया डालकर ताज़ा परोसें।"
+  ]
+ },
+ "vermicelli-upma": {
+  "en": [
+   "If the vermicelli is not pre-roasted, roast it in a little ghee till golden.",
+   "Heat oil; add mustard seeds, urad dal, curry leaves, chilli and onion.",
+   "Add peas, salt and 1½ cups water per cup of vermicelli; bring to a boil.",
+   "Add the vermicelli, cover and cook till the water is absorbed; add lemon."
+  ],
+  "hi": [
+   "सेवई भुनी न हो तो थोड़े घी में सुनहरी भून लें।",
+   "तेल में राई, उड़द दाल, करी पत्ता, मिर्च और प्याज़ डालें।",
+   "मटर, नमक और एक कप सेवई पर डेढ़ कप पानी डालकर उबालें।",
+   "सेवई डालें, ढककर पानी सूखने तक पकाएं; नींबू डालें।"
+  ]
+ },
+ "meethi-sevaiyan": {
+  "en": [
+   "Heat ghee and roast the vermicelli till golden.",
+   "Add 1 cup water or milk per cup of vermicelli; cook till soft and dry.",
+   "Add sugar and cardamom; stir till the sugar melts.",
+   "Top with chopped dry fruits and serve warm."
+  ],
+  "hi": [
+   "घी गरम कर सेवई सुनहरी भूनें।",
+   "एक कप सेवई पर एक कप पानी या दूध डालकर नरम और सूखा होने तक पकाएं।",
+   "चीनी और इलायची डालकर चीनी घुलने तक चलाएं।",
+   "ऊपर कटे मेवे डालकर गरम परोसें।"
+  ]
+ },
+ "lemon-shavige": {
+  "en": [
+   "Soak or boil the rice vermicelli as the packet says; drain.",
+   "Heat oil; add mustard seeds, chana dal, peanuts, curry leaves and chilli.",
+   "Add turmeric and salt, then the vermicelli; toss gently.",
+   "Turn off the heat and add lemon juice and coriander."
+  ],
+  "hi": [
+   "चावल की सेवई पैकेट के अनुसार भिगोएं या उबालें; पानी निकालें।",
+   "तेल में राई, चना दाल, मूंगफली, करी पत्ता और मिर्च डालें।",
+   "हल्दी, नमक और फिर सेवई डालकर हल्के से मिलाएं।",
+   "आंच बंद करें, नींबू और धनिया डालें।"
+  ]
+ },
+ "idiyappam-with-veg-stew": {
+  "en": [
+   "Boil water with salt and oil; pour over rice flour and knead a soft dough.",
+   "Press the dough through an idiyappam press onto greased plates.",
+   "Steam for 8–10 minutes.",
+   "Serve with a mild vegetable stew cooked in coconut milk."
+  ],
+  "hi": [
+   "नमक और तेल वाला पानी उबालकर चावल के आटे में डालें, नरम गूंधें।",
+   "इडियप्पम प्रेस से आटे को चिकनी प्लेटों पर निकालें।",
+   "8–10 मिनट भाप में पकाएं।",
+   "नारियल दूध वाले हल्के वेज स्टू के साथ परोसें।"
+  ]
+ },
+ "pancakes-with-honey": {
+  "en": [
+   "Mix maida, a pinch of baking powder, sugar and salt.",
+   "Whisk in milk and melted butter to a thick, smooth batter.",
+   "Pour small rounds on a buttered pan; flip when bubbles appear.",
+   "Serve with honey and sliced banana."
+  ],
+  "hi": [
+   "मैदा, चुटकी बेकिंग पाउडर, चीनी और नमक मिलाएं।",
+   "दूध और पिघला मक्खन डालकर गाढ़ा चिकना घोल बनाएं।",
+   "मक्खन वाले पैन पर छोटे गोल डालें; बुलबुले आने पर पलटें।",
+   "शहद और केले के टुकड़ों के साथ परोसें।"
+  ]
+ },
+ "overnight-oats-with-fruit": {
+  "en": [
+   "Mix oats with equal parts milk and curd in a jar.",
+   "Add honey and a pinch of cardamom; stir well.",
+   "Cover and keep in the fridge overnight.",
+   "In the morning, top with banana and other fruit."
+  ],
+  "hi": [
+   "जार में ओट्स के साथ बराबर दूध और दही मिलाएं।",
+   "शहद और चुटकी इलायची डालकर चलाएं।",
+   "ढककर रात भर फ्रिज में रखें।",
+   "सुबह ऊपर केला और फल डालकर खाएं।"
+  ]
+ },
+ "veg-cheese-grilled-sandwich": {
+  "en": [
+   "Butter the bread slices and spread green chutney.",
+   "Add sliced capsicum, tomato and grated cheese; sprinkle salt and pepper.",
+   "Close and grill, or toast on a tawa, till golden and the cheese melts.",
+   "Cut diagonally and serve with ketchup."
+  ],
+  "hi": [
+   "ब्रेड पर मक्खन और हरी चटनी लगाएं।",
+   "शिमला मिर्च, टमाटर और चीज़ डालें; नमक-काली मिर्च छिड़कें।",
+   "बंद करके ग्रिल या तवे पर सुनहरा और चीज़ पिघलने तक सेकें।",
+   "तिरछा काटकर केचप के साथ परोसें।"
+  ]
+ }
 }

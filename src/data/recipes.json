@@ -427,34 +427,6 @@
    "ऐसे ही खाएं या कुरकुरा टोस्ट करें।"
   ]
  },
- "bread-omelette": {
-  "en": [
-   "Beat eggs with chopped onion, chilli, coriander and salt.",
-   "Pour into a hot buttered pan.",
-   "Place bread slices on top, flip and cook the other side.",
-   "Fold and serve with ketchup."
-  ],
-  "hi": [
-   "अंडे फेंटकर कटा प्याज़, मिर्च, धनिया और नमक मिलाएं।",
-   "गरम पैन में मक्खन लगाकर अंडा डालें।",
-   "ऊपर ब्रेड रखें, पलटकर दूसरी तरफ सेकें।",
-   "मोड़कर केचप के साथ परोसें।"
-  ]
- },
- "egg-bhurji": {
-  "en": [
-   "Heat butter or oil; cook onion and green chilli till soft.",
-   "Add tomato, turmeric, chilli powder and salt; cook till soft.",
-   "Break in the eggs and stir continuously till just set.",
-   "Add coriander; serve with pav or roti."
-  ],
-  "hi": [
-   "मक्खन या तेल में प्याज़ और हरी मिर्च नरम करें।",
-   "टमाटर, हल्दी, मिर्च पाउडर और नमक डालकर पकाएं।",
-   "अंडे तोड़कर डालें और लगातार चलाते हुए पकाएं।",
-   "धनिया डालकर पाव या रोटी के साथ परोसें।"
-  ]
- },
  "sabudana-khichdi": {
   "en": [
    "Soak sabudana overnight in just enough water to cover it.",
@@ -567,20 +539,6 @@
    "नारियल दूध वाले हल्के वेज स्टू के साथ परोसें।"
   ]
  },
- "cheese-omelette-with-toast": {
-  "en": [
-   "Beat eggs with salt and pepper.",
-   "Pour into a hot buttered pan and let it set.",
-   "Sprinkle grated cheese on one half and fold.",
-   "Serve with buttered toast."
-  ],
-  "hi": [
-   "अंडे में नमक और काली मिर्च डालकर फेंटें।",
-   "गरम मक्खन वाले पैन में डालकर जमने दें।",
-   "आधे हिस्से पर चीज़ डालकर मोड़ें।",
-   "मक्खन लगे टोस्ट के साथ परोसें।"
-  ]
- },
  "pancakes-with-honey": {
   "en": [
    "Mix maida, a pinch of baking powder, sugar and salt.",
@@ -593,20 +551,6 @@
    "दूध और पिघला मक्खन डालकर गाढ़ा चिकना घोल बनाएं।",
    "मक्खन वाले पैन पर छोटे गोल डालें; बुलबुले आने पर पलटें।",
    "शहद और केले के टुकड़ों के साथ परोसें।"
-  ]
- },
- "french-toast": {
-  "en": [
-   "Beat eggs with milk, a little sugar and a pinch of cinnamon.",
-   "Dip bread slices in the mixture on both sides.",
-   "Cook on a buttered pan till golden on both sides.",
-   "Serve warm with fruit or honey."
-  ],
-  "hi": [
-   "अंडे, दूध, थोड़ी चीनी और चुटकी दालचीनी फेंटें।",
-   "ब्रेड को दोनों तरफ इस घोल में डुबोएं।",
-   "मक्खन वाले पैन पर दोनों तरफ सुनहरा सेकें।",
-   "फल या शहद के साथ गरम परोसें।"
   ]
  },
  "overnight-oats-with-fruit": {
@@ -1759,20 +1703,6 @@
    "ढककर पकाएं; कुटी मूंगफली और धनिया डालें।"
   ]
  },
- "egg-fried-rice": {
-  "en": [
-   "Use cold cooked rice.",
-   "Scramble the eggs in a hot wok; push to one side.",
-   "Add garlic and spring onion, then the rice, soy sauce, pepper and salt.",
-   "Toss everything together on high heat for 2 minutes."
-  ],
-  "hi": [
-   "ठंडे पके चावल लें।",
-   "गरम कढ़ाई में अंडे भुर्जी की तरह पकाकर एक तरफ करें।",
-   "लहसुन और हरा प्याज़, फिर चावल, सोया सॉस, काली मिर्च और नमक डालें।",
-   "तेज़ आंच पर 2 मिनट सब मिलाएं।"
-  ]
- },
  "phulka-roti": {
   "en": [
    "Knead wheat flour with water and a pinch of salt into a soft dough; rest 15 minutes.",
@@ -1869,230 +1799,6 @@
    "रागी आटा ढेर की तरह डालें; 2 मिनट बिना चलाए पकने दें।",
    "लकड़ी की डंडी से ज़ोर से चलाकर चिकना करें।",
    "गीले हाथों से गोले बनाकर सांभर के साथ परोसें।"
-  ]
- },
- "home-style-chicken-curry": {
-  "en": [
-   "Marinate chicken with curd, turmeric, chilli and salt for 20 minutes.",
-   "Heat oil with whole spices; fry onion till brown, then ginger-garlic.",
-   "Add tomato, coriander powder and garam masala; cook till oil separates.",
-   "Add chicken and a little water; cook covered for 25 minutes till tender."
-  ],
-  "hi": [
-   "चिकन को दही, हल्दी, मिर्च और नमक में 20 मिनट मैरिनेट करें।",
-   "तेल में साबुत मसाले डालकर प्याज़ भूरा भूनें, फिर अदरक-लहसुन डालें।",
-   "टमाटर, धनिया पाउडर और गरम मसाला डालकर तेल छूटने तक पकाएं।",
-   "चिकन और थोड़ा पानी डालकर ढककर 25 मिनट नरम होने तक पकाएं।"
-  ]
- },
- "butter-chicken": {
-  "en": [
-   "Marinate chicken in curd, ginger-garlic, chilli and salt for 2 hours; grill or pan-fry.",
-   "Cook tomato, cashews, ginger and garlic; blend smooth.",
-   "Simmer the sauce in butter with Kashmiri chilli, a little sugar and kasuri methi.",
-   "Add the chicken and cream; simmer 5 minutes."
-  ],
-  "hi": [
-   "चिकन को दही, अदरक-लहसुन, मिर्च और नमक में 2 घंटे मैरिनेट कर ग्रिल या पैन में सेकें।",
-   "टमाटर, काजू, अदरक और लहसुन पकाकर चिकना पीसें।",
-   "मक्खन में कश्मीरी मिर्च, थोड़ी चीनी और कसूरी मेथी के साथ सॉस पकाएं।",
-   "चिकन और क्रीम डालकर 5 मिनट पकाएं।"
-  ]
- },
- "chicken-biryani": {
-  "en": [
-   "Marinate chicken in curd, biryani masala, ginger-garlic, mint and fried onion for 2 hours.",
-   "Par-boil basmati rice with whole spices till 70% done.",
-   "Layer the rice over the raw chicken; add saffron milk, ghee and fried onion.",
-   "Seal and cook on high for 5 minutes, then very low (dum) for 30 minutes."
-  ],
-  "hi": [
-   "चिकन को दही, बिरयानी मसाला, अदरक-लहसुन, पुदीना और तले प्याज़ में 2 घंटे मैरिनेट करें।",
-   "बासमती चावल साबुत मसालों के साथ 70% उबालें।",
-   "कच्चे चिकन पर चावल की परत लगाएं; केसर दूध, घी और तला प्याज़ डालें।",
-   "ढक्कन बंद कर 5 मिनट तेज़, फिर 30 मिनट बहुत धीमी आंच पर दम दें।"
-  ]
- },
- "chicken-tikka": {
-  "en": [
-   "Mix thick curd with ginger-garlic, Kashmiri chilli, garam masala, lemon, oil and salt.",
-   "Coat boneless chicken pieces and marinate for at least 2 hours.",
-   "Thread onto skewers or lay on a tray.",
-   "Grill or bake at 220°C for 15–18 minutes till charred; serve with mint chutney."
-  ],
-  "hi": [
-   "गाढ़े दही में अदरक-लहसुन, कश्मीरी मिर्च, गरम मसाला, नींबू, तेल और नमक मिलाएं।",
-   "बोनलेस चिकन पर लगाकर कम से कम 2 घंटे रखें।",
-   "सींख में लगाएं या ट्रे पर रखें।",
-   "220°C पर 15–18 मिनट ग्रिल या बेक करें; पुदीना चटनी के साथ परोसें।"
-  ]
- },
- "chicken-chettinad": {
-  "en": [
-   "Dry-roast pepper, fennel, cumin, coriander seeds, dry chilli and coconut; grind.",
-   "Heat oil; add curry leaves, onion and ginger-garlic.",
-   "Add tomato, turmeric, salt and the ground masala; cook 5 minutes.",
-   "Add chicken and water; cook covered till tender and thick."
-  ],
-  "hi": [
-   "काली मिर्च, सौंफ, जीरा, साबुत धनिया, सूखी मिर्च और नारियल भूनकर पीसें।",
-   "तेल में करी पत्ता, प्याज़ और अदरक-लहसुन डालें।",
-   "टमाटर, हल्दी, नमक और पिसा मसाला डालकर 5 मिनट पकाएं।",
-   "चिकन और पानी डालकर ढककर नरम और गाढ़ा पकाएं।"
-  ]
- },
- "kerala-chicken-stew": {
-  "en": [
-   "Heat coconut oil with whole spices, ginger, green chilli and curry leaves.",
-   "Add sliced onion and cook till soft (not brown).",
-   "Add chicken, potato and thin coconut milk; cook till tender.",
-   "Add thick coconut milk and pepper; heat gently without boiling."
-  ],
-  "hi": [
-   "नारियल तेल में साबुत मसाले, अदरक, हरी मिर्च और करी पत्ता डालें।",
-   "कटा प्याज़ नरम होने तक पकाएं (भूरा न करें)।",
-   "चिकन, आलू और पतला नारियल दूध डालकर नरम पकाएं।",
-   "गाढ़ा नारियल दूध और काली मिर्च डालकर बिना उबाले गरम करें।"
-  ]
- },
- "chilli-chicken": {
-  "en": [
-   "Coat chicken in cornflour, egg, soy sauce, salt and pepper; deep-fry till crisp.",
-   "Stir-fry garlic, green chilli, onion and capsicum squares on high heat.",
-   "Add soy sauce, chilli sauce, vinegar and a little cornflour slurry.",
-   "Toss in the fried chicken and spring onion."
-  ],
-  "hi": [
-   "चिकन पर कॉर्नफ्लोर, अंडा, सोया सॉस, नमक और काली मिर्च लगाकर कुरकुरा तलें।",
-   "तेज़ आंच पर लहसुन, हरी मिर्च, प्याज़ और शिमला मिर्च भूनें।",
-   "सोया सॉस, चिली सॉस, सिरका और थोड़ा कॉर्नफ्लोर घोल डालें।",
-   "तला चिकन और हरा प्याज़ डालकर मिलाएं।"
-  ]
- },
- "chicken-kathi-roll": {
-  "en": [
-   "Marinate chicken strips in curd and tikka spices for 1 hour; pan-fry till done.",
-   "Cook a paratha; pour a beaten egg on it and flip to set.",
-   "Place chicken, sliced onion, green chutney and chaat masala on the egg side.",
-   "Roll tightly and wrap in paper."
-  ],
-  "hi": [
-   "चिकन की पट्टियां दही और टिक्का मसालों में 1 घंटा मैरिनेट कर पैन में पकाएं।",
-   "पराठा सेकें; उस पर फेंटा अंडा डालकर पलटें।",
-   "अंडे वाली तरफ चिकन, प्याज़, हरी चटनी और चाट मसाला रखें।",
-   "कसकर रोल करें और कागज़ में लपेटें।"
-  ]
- },
- "chicken-soup": {
-  "en": [
-   "Simmer chicken pieces with water, onion, garlic, ginger, pepper and salt for 30 minutes.",
-   "Take out the chicken, shred it and return to the pot.",
-   "Add chopped carrot, beans and sweet corn; cook 10 minutes.",
-   "Finish with pepper, lemon and coriander."
-  ],
-  "hi": [
-   "चिकन को पानी, प्याज़, लहसुन, अदरक, काली मिर्च और नमक के साथ 30 मिनट उबालें।",
-   "चिकन निकालकर रेशे करें और वापस डालें।",
-   "कटी गाजर, बीन्स और स्वीट कॉर्न डालकर 10 मिनट पकाएं।",
-   "काली मिर्च, नींबू और धनिया डालें।"
-  ]
- },
- "egg-curry": {
-  "en": [
-   "Hard-boil eggs, peel and make small slits; fry lightly with turmeric.",
-   "Cook onion, ginger-garlic and tomato with chilli, coriander powder and salt.",
-   "Add water and simmer to a gravy.",
-   "Add the eggs and garam masala; simmer 5 minutes."
-  ],
-  "hi": [
-   "अंडे उबालकर छीलें, हल्के चीरे लगाएं और हल्दी के साथ हल्का तलें।",
-   "प्याज़, अदरक-लहसुन और टमाटर को मिर्च, धनिया पाउडर और नमक के साथ पकाएं।",
-   "पानी डालकर ग्रेवी पकाएं।",
-   "अंडे और गरम मसाला डालकर 5 मिनट पकाएं।"
-  ]
- },
- "mutton-rogan-josh": {
-  "en": [
-   "Heat mustard oil with hing, cloves, cardamom, cinnamon and bay leaf.",
-   "Add mutton and sear on high heat.",
-   "Add whisked curd with Kashmiri chilli, fennel powder and ginger powder; stir well.",
-   "Add water and cook on low heat (or 5–6 whistles) till very tender."
-  ],
-  "hi": [
-   "सरसों तेल में हींग, लौंग, इलायची, दालचीनी और तेजपत्ता डालें।",
-   "मटन डालकर तेज़ आंच पर भूनें।",
-   "कश्मीरी मिर्च, सौंफ पाउडर और सोंठ वाला फेंटा दही डालकर अच्छी तरह चलाएं।",
-   "पानी डालकर धीमी आंच पर (या कुकर में 5–6 सीटी) बहुत नरम पकाएं।"
-  ]
- },
- "keema-matar": {
-  "en": [
-   "Heat oil with whole spices; fry onion till golden, then ginger-garlic.",
-   "Add keema and cook on high till it changes colour.",
-   "Add tomato, chilli, coriander powder, garam masala and salt; cook 10 minutes.",
-   "Add peas and a little water; cook covered for 15 minutes."
-  ],
-  "hi": [
-   "तेल में साबुत मसाले डालकर प्याज़ सुनहरा भूनें, फिर अदरक-लहसुन डालें।",
-   "कीमा डालकर तेज़ आंच पर रंग बदलने तक भूनें।",
-   "टमाटर, मिर्च, धनिया पाउडर, गरम मसाला और नमक डालकर 10 मिनट पकाएं।",
-   "मटर और थोड़ा पानी डालकर ढककर 15 मिनट पकाएं।"
-  ]
- },
- "macher-jhol": {
-  "en": [
-   "Rub fish pieces with turmeric and salt; fry lightly in mustard oil.",
-   "In the same oil, add nigella seeds, green chilli and potato wedges.",
-   "Add turmeric, cumin-ginger paste, salt and water; cook till the potatoes are soft.",
-   "Add the fish and simmer 5 minutes; add coriander."
-  ],
-  "hi": [
-   "मछली पर हल्दी और नमक लगाकर सरसों तेल में हल्का तलें।",
-   "उसी तेल में कलौंजी, हरी मिर्च और आलू के टुकड़े डालें।",
-   "हल्दी, जीरा-अदरक पेस्ट, नमक और पानी डालकर आलू नरम होने तक पकाएं।",
-   "मछली डालकर 5 मिनट पकाएं; धनिया डालें।"
-  ]
- },
- "goan-fish-curry": {
-  "en": [
-   "Grind coconut with Kashmiri chillies, coriander seeds, cumin, turmeric, garlic and tamarind.",
-   "Heat oil; cook onion till soft, then add the paste and water.",
-   "Simmer 5 minutes; add salt and kokum.",
-   "Add fish pieces and cook gently for 6–8 minutes."
-  ],
-  "hi": [
-   "नारियल, कश्मीरी मिर्च, साबुत धनिया, जीरा, हल्दी, लहसुन और इमली पीसें।",
-   "तेल में प्याज़ नरम करें, फिर पेस्ट और पानी डालें।",
-   "5 मिनट पकाएं; नमक और कोकम डालें।",
-   "मछली डालकर धीमी आंच पर 6–8 मिनट पकाएं।"
-  ]
- },
- "masala-fish-fry": {
-  "en": [
-   "Mix chilli powder, turmeric, ginger-garlic, lemon and salt into a paste.",
-   "Coat fish slices and rest for 30 minutes.",
-   "Dust with rice flour or rava.",
-   "Shallow-fry on a hot tawa till crisp on both sides."
-  ],
-  "hi": [
-   "मिर्च पाउडर, हल्दी, अदरक-लहसुन, नींबू और नमक का पेस्ट बनाएं।",
-   "मछली पर लगाकर 30 मिनट रखें।",
-   "चावल के आटे या रवे में लपेटें।",
-   "गरम तवे पर दोनों तरफ कुरकुरी सेकें।"
-  ]
- },
- "prawn-masala": {
-  "en": [
-   "Clean prawns; rub with turmeric and salt.",
-   "Cook onion, ginger-garlic and tomato with chilli and coriander powder.",
-   "Add a little coconut milk or grated coconut paste.",
-   "Add prawns and cook 5–6 minutes till just curled; don't overcook."
-  ],
-  "hi": [
-   "झींगे साफ कर हल्दी और नमक लगाएं।",
-   "प्याज़, अदरक-लहसुन और टमाटर को मिर्च और धनिया पाउडर के साथ भूनें।",
-   "थोड़ा नारियल दूध या नारियल पेस्ट डालें।",
-   "झींगे डालकर 5–6 मिनट मुड़ने तक पकाएं; ज़्यादा न पकाएं।"
   ]
  },
  "sooji-halwa": {
@@ -2333,20 +2039,6 @@
    "नूडल्स डालकर 2 मिनट मिलाएं; हरा प्याज़ डालें।"
   ]
  },
- "chicken-hakka-noodles": {
-  "en": [
-   "Boil noodles; rinse in cold water and toss with oil.",
-   "Stir-fry thin chicken strips with garlic till cooked.",
-   "Add cabbage, carrot and capsicum; toss on high heat.",
-   "Add noodles, soy sauce, vinegar, pepper and salt; mix well."
-  ],
-  "hi": [
-   "नूडल्स उबालकर ठंडे पानी से धोएं और तेल लगाएं।",
-   "चिकन की पतली पट्टियां लहसुन के साथ पकने तक भूनें।",
-   "पत्ता गोभी, गाजर और शिमला मिर्च डालकर तेज़ आंच पर भूनें।",
-   "नूडल्स, सोया सॉस, सिरका, काली मिर्च और नमक डालकर मिलाएं।"
-  ]
- },
  "red-sauce-pasta": {
   "en": [
    "Boil pasta in salted water; keep a cup of the water.",
@@ -2431,20 +2123,6 @@
    "मशरूम, चीज़, मक्खन, नमक और काली मिर्च मिलाएं।"
   ]
  },
- "creamy-chicken-pasta": {
-  "en": [
-   "Boil pasta; drain.",
-   "Cook seasoned chicken strips in butter till done.",
-   "Add garlic, then cream, a little milk, salt, pepper and herbs; simmer 3 minutes.",
-   "Toss in the pasta and top with cheese."
-  ],
-  "hi": [
-   "पास्ता उबालकर पानी निकालें।",
-   "मसाले लगे चिकन की पट्टियां मक्खन में पकाएं।",
-   "लहसुन, फिर क्रीम, थोड़ा दूध, नमक, काली मिर्च और हर्ब्स डालकर 3 मिनट पकाएं।",
-   "पास्ता मिलाएं और ऊपर चीज़ डालें।"
-  ]
- },
  "baked-vegetables-in-white-sauce": {
   "en": [
    "Boil mixed vegetables till just tender.",
@@ -2471,34 +2149,6 @@
    "गरम पैन पर दोनों तरफ निशान आने तक सेकें।",
    "ब्रोकली, बीन्स, गाजर और शिमला मिर्च को मक्खन, लहसुन, नमक और काली मिर्च में भूनें।",
    "पनीर सब्ज़ियों के ऊपर रखकर परोसें।"
-  ]
- },
- "grilled-chicken-with-sauteed-vegetables": {
-  "en": [
-   "Marinate chicken breasts in oil, garlic, lemon, herbs, salt and pepper for 1 hour.",
-   "Grill on a hot pan for 6–7 minutes per side till cooked through.",
-   "Sauté mixed vegetables in butter with garlic, salt and pepper.",
-   "Rest the chicken 5 minutes, slice and serve with the vegetables."
-  ],
-  "hi": [
-   "चिकन ब्रेस्ट को तेल, लहसुन, नींबू, हर्ब्स, नमक और काली मिर्च में 1 घंटा रखें।",
-   "गरम पैन पर हर तरफ 6–7 मिनट पूरी तरह पकाएं।",
-   "मिली सब्ज़ियाँ मक्खन, लहसुन, नमक और काली मिर्च में भूनें।",
-   "चिकन 5 मिनट रखकर काटें और सब्ज़ियों के साथ परोसें।"
-  ]
- },
- "lemon-butter-fish-with-mash": {
-  "en": [
-   "Boil potatoes and mash with butter, milk, salt and pepper.",
-   "Season fish fillets with salt and pepper; pan-fry in butter for 3 minutes per side.",
-   "Add garlic, lemon juice and a little more butter to the pan; spoon over the fish.",
-   "Serve the fish on the mash with the lemon butter."
-  ],
-  "hi": [
-   "आलू उबालकर मक्खन, दूध, नमक और काली मिर्च के साथ मैश करें।",
-   "मछली पर नमक और काली मिर्च लगाकर मक्खन में हर तरफ 3 मिनट सेकें।",
-   "पैन में लहसुन, नींबू और थोड़ा मक्खन डालकर मछली पर डालें।",
-   "मैश के ऊपर मछली रखकर लेमन बटर के साथ परोसें।"
   ]
  },
  "veg-burger": {
@@ -2557,20 +2207,6 @@
    "ऊपर चीज़ और सालसा डालें।"
   ]
  },
- "chicken-burrito": {
-  "en": [
-   "Marinate chicken strips in lime, cumin, chilli and garlic for 30 minutes; cook till done.",
-   "Warm a large tortilla.",
-   "Fill with rice, beans, chicken, cheese and salsa.",
-   "Fold in the sides, roll tightly and toast seam-side down."
-  ],
-  "hi": [
-   "चिकन की पट्टियां नींबू, जीरा, मिर्च और लहसुन में 30 मिनट रखकर पकाएं।",
-   "बड़ी टॉर्टिला गरम करें।",
-   "चावल, राजमा, चिकन, चीज़ और सालसा भरें।",
-   "किनारे मोड़कर कसकर रोल करें और जोड़ वाली तरफ नीचे रखकर सेकें।"
-  ]
- },
  "thai-green-curry-with-rice": {
   "en": [
    "Fry green curry paste in a little oil for 1 minute.",
@@ -2582,20 +2218,6 @@
    "थोड़े तेल में ग्रीन करी पेस्ट 1 मिनट भूनें।",
    "नारियल दूध डालकर हल्का उबाल लाएं।",
    "सब्ज़ियाँ (या पनीर) डालकर हल्की नरम पकाएं।",
-   "नमक, थोड़ी चीनी और नींबू डालें; चावल के साथ परोसें।"
-  ]
- },
- "thai-red-curry-chicken-with-rice": {
-  "en": [
-   "Fry red curry paste in a little oil for 1 minute.",
-   "Add chicken pieces and cook 3 minutes.",
-   "Add coconut milk and simmer till the chicken is cooked (12–15 minutes).",
-   "Season with salt, a little sugar and lime; serve with rice."
-  ],
-  "hi": [
-   "थोड़े तेल में रेड करी पेस्ट 1 मिनट भूनें।",
-   "चिकन डालकर 3 मिनट पकाएं।",
-   "नारियल दूध डालकर चिकन पकने तक 12–15 मिनट पकाएं।",
    "नमक, थोड़ी चीनी और नींबू डालें; चावल के साथ परोसें।"
   ]
  },
@@ -2639,20 +2261,6 @@
    "गरम पैन पर किनारे भूरे होने तक सेकें।",
    "दही में लहसुन और नमक मिलाकर गार्लिक सॉस बनाएं।",
    "पीटा या रोटी में पनीर, पत्ता गोभी और गार्लिक सॉस भरकर रोल करें।"
-  ]
- },
- "chicken-shawarma": {
-  "en": [
-   "Marinate chicken strips in curd, garlic, lemon, paprika, cumin and salt for 2 hours.",
-   "Cook on a very hot pan till charred and cooked through.",
-   "Make a garlic sauce of curd, garlic, lemon and salt.",
-   "Wrap in pita with cucumber, tomato and the garlic sauce."
-  ],
-  "hi": [
-   "चिकन की पट्टियां दही, लहसुन, नींबू, पैपरिका, जीरा और नमक में 2 घंटे रखें।",
-   "बहुत गरम पैन पर भूरा होने और पूरी तरह पकने तक सेकें।",
-   "दही, लहसुन, नींबू और नमक से गार्लिक सॉस बनाएं।",
-   "पीटा में खीरा, टमाटर और गार्लिक सॉस के साथ लपेटें।"
   ]
  },
  "hot-sour-soup": {
@@ -3069,22 +2677,6 @@
    "कटा प्याज़, टमाटर, हरी मिर्च और धनिया डालें।",
    "चाट मसाला और नींबू डालकर अच्छे से मिलाएं।",
    "गरम या सामान्य तापमान पर परोसें।"
-  ]
- },
- "egg-white-bhurji": {
-  "en": [
-   "Separate the whites of 4 eggs into a bowl; add salt and pepper and beat lightly.",
-   "Heat 1 tsp oil; cook onion and green chilli till soft.",
-   "Add tomato, capsicum, turmeric and cook for 2 minutes.",
-   "Pour in the egg whites and stir gently on low heat till just set.",
-   "Finish with coriander; serve with toast or roti."
-  ],
-  "hi": [
-   "4 अंडों की सफ़ेदी अलग करें; नमक और काली मिर्च डालकर हल्का फेंटें।",
-   "1 छोटा चम्मच तेल में प्याज़ और हरी मिर्च नरम होने तक भूनें।",
-   "टमाटर, शिमला मिर्च और हल्दी डालकर 2 मिनट पकाएं।",
-   "अंडे की सफ़ेदी डालें और धीमी आंच पर हल्के हाथ से चलाते हुए पकने तक पकाएं।",
-   "धनिया डालें; टोस्ट या रोटी के साथ परोसें।"
   ]
  },
  "moong-usal": {

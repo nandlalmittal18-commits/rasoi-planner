@@ -422,7 +422,7 @@
   "prepAhead": "Soak rice 4 hrs",
   "pairsWith": [
    "Coconut chutney",
-   "chicken curry"
+   "veg kurma"
   ]
  },
  {
@@ -904,68 +904,6 @@
   ]
  },
  {
-  "id": "bread-omelette",
-  "name": "Bread Omelette",
-  "hindi": "ब्रेड ऑमलेट",
-  "slots": [
-   "Breakfast"
-  ],
-  "category": "Breakfast",
-  "diet": "Egg",
-  "region": "Pan-India",
-  "cookTime": 15,
-  "difficulty": "Easy",
-  "ingredients": [
-   "Eggs",
-   "bread",
-   "onion",
-   "green chilli"
-  ],
-  "jain": false,
-  "noOnionGarlic": true,
-  "vrat": false,
-  "tiffin": true,
-  "kidFavourite": true,
-  "season": "All",
-  "heaviness": "Light",
-  "prepAhead": null,
-  "pairsWith": [
-   "Ketchup",
-   "tea"
-  ]
- },
- {
-  "id": "egg-bhurji",
-  "name": "Egg Bhurji",
-  "hindi": "अंडा भुर्जी",
-  "slots": [
-   "Breakfast",
-   "Dinner"
-  ],
-  "category": "Breakfast",
-  "diet": "Egg",
-  "region": "Maharashtra",
-  "cookTime": 15,
-  "difficulty": "Easy",
-  "ingredients": [
-   "Eggs",
-   "onion",
-   "tomato"
-  ],
-  "jain": false,
-  "noOnionGarlic": true,
-  "vrat": false,
-  "tiffin": true,
-  "kidFavourite": true,
-  "season": "All",
-  "heaviness": "Light",
-  "prepAhead": null,
-  "pairsWith": [
-   "Pav",
-   "roti"
-  ]
- },
- {
   "id": "sabudana-khichdi",
   "name": "Sabudana Khichdi",
   "hindi": "साबूदाना खिचड़ी",
@@ -1199,7 +1137,7 @@
   "heaviness": "Light",
   "prepAhead": null,
   "pairsWith": [
-   "Egg curry"
+   "Veg stew"
   ]
  },
  {
@@ -3209,36 +3147,6 @@
   ]
  },
  {
-  "id": "egg-fried-rice",
-  "name": "Egg Fried Rice",
-  "hindi": "एग फ्राइड राइस",
-  "slots": [
-   "Dinner"
-  ],
-  "category": "Rice",
-  "diet": "Egg",
-  "region": "Indo-Chinese",
-  "cookTime": 20,
-  "difficulty": "Easy",
-  "ingredients": [
-   "Rice",
-   "eggs",
-   "spring onion",
-   "soy sauce"
-  ],
-  "jain": false,
-  "noOnionGarlic": false,
-  "vrat": false,
-  "tiffin": true,
-  "kidFavourite": true,
-  "season": "All",
-  "heaviness": "Medium",
-  "prepAhead": "Use leftover rice",
-  "pairsWith": [
-   "Chilli sauce"
-  ]
- },
- {
   "id": "veg-hakka-noodles",
   "name": "Veg Hakka Noodles",
   "hindi": "वेज हक्का नूडल्स",
@@ -3497,497 +3405,6 @@
   "pairsWith": [
    "Bassaru",
    "sambar"
-  ]
- },
- {
-  "id": "home-style-chicken-curry",
-  "name": "Home-Style Chicken Curry",
-  "hindi": "घर वाली चिकन करी",
-  "slots": [
-   "Lunch",
-   "Dinner"
-  ],
-  "category": "Non-Veg Main",
-  "diet": "Non-Veg",
-  "region": "North",
-  "cookTime": 50,
-  "difficulty": "Medium",
-  "ingredients": [
-   "Chicken",
-   "onion",
-   "tomato",
-   "garam masala"
-  ],
-  "jain": false,
-  "noOnionGarlic": false,
-  "vrat": false,
-  "tiffin": false,
-  "kidFavourite": true,
-  "season": "All",
-  "heaviness": "Medium",
-  "prepAhead": null,
-  "pairsWith": [
-   "Rice",
-   "roti"
-  ]
- },
- {
-  "id": "butter-chicken",
-  "name": "Butter Chicken",
-  "hindi": "बटर चिकन",
-  "slots": [
-   "Dinner"
-  ],
-  "category": "Non-Veg Main",
-  "diet": "Non-Veg",
-  "region": "Punjab",
-  "cookTime": 60,
-  "difficulty": "Medium",
-  "ingredients": [
-   "Chicken",
-   "butter",
-   "tomato",
-   "cream"
-  ],
-  "jain": false,
-  "noOnionGarlic": false,
-  "vrat": false,
-  "tiffin": false,
-  "kidFavourite": true,
-  "season": "All",
-  "heaviness": "Heavy",
-  "prepAhead": "Marinate 2 hrs",
-  "pairsWith": [
-   "Naan",
-   "jeera rice"
-  ]
- },
- {
-  "id": "chicken-biryani",
-  "name": "Chicken Biryani",
-  "hindi": "चिकन बिरयानी",
-  "slots": [
-   "Lunch",
-   "Dinner"
-  ],
-  "category": "Non-Veg Main",
-  "diet": "Non-Veg",
-  "region": "Telangana",
-  "cookTime": 90,
-  "difficulty": "Hard",
-  "ingredients": [
-   "Chicken",
-   "basmati rice",
-   "curd",
-   "fried onion"
-  ],
-  "jain": false,
-  "noOnionGarlic": false,
-  "vrat": false,
-  "tiffin": false,
-  "kidFavourite": true,
-  "season": "All",
-  "heaviness": "Heavy",
-  "prepAhead": "Marinate 2+ hrs",
-  "pairsWith": [
-   "Raita",
-   "salan"
-  ]
- },
- {
-  "id": "chicken-tikka",
-  "name": "Chicken Tikka",
-  "hindi": "चिकन टिक्का",
-  "slots": [
-   "Snack",
-   "Dinner"
-  ],
-  "category": "Non-Veg Main",
-  "diet": "Non-Veg",
-  "region": "Punjab",
-  "cookTime": 45,
-  "difficulty": "Medium",
-  "ingredients": [
-   "Chicken",
-   "curd",
-   "spices"
-  ],
-  "jain": false,
-  "noOnionGarlic": false,
-  "vrat": false,
-  "tiffin": true,
-  "kidFavourite": true,
-  "season": "All",
-  "heaviness": "Medium",
-  "prepAhead": "Marinate 2+ hrs",
-  "pairsWith": [
-   "Mint chutney",
-   "onion"
-  ]
- },
- {
-  "id": "chicken-chettinad",
-  "name": "Chicken Chettinad",
-  "hindi": "चिकन चेट्टीनाड",
-  "slots": [
-   "Dinner"
-  ],
-  "category": "Non-Veg Main",
-  "diet": "Non-Veg",
-  "region": "Tamil Nadu",
-  "cookTime": 60,
-  "difficulty": "Medium",
-  "ingredients": [
-   "Chicken",
-   "black pepper",
-   "coconut",
-   "fennel"
-  ],
-  "jain": false,
-  "noOnionGarlic": false,
-  "vrat": false,
-  "tiffin": false,
-  "kidFavourite": false,
-  "season": "All",
-  "heaviness": "Medium",
-  "prepAhead": null,
-  "pairsWith": [
-   "Parotta",
-   "rice"
-  ]
- },
- {
-  "id": "kerala-chicken-stew",
-  "name": "Kerala Chicken Stew",
-  "hindi": "केरल चिकन स्टू",
-  "slots": [
-   "Breakfast",
-   "Dinner"
-  ],
-  "category": "Non-Veg Main",
-  "diet": "Non-Veg",
-  "region": "Kerala",
-  "cookTime": 45,
-  "difficulty": "Medium",
-  "ingredients": [
-   "Chicken",
-   "coconut milk",
-   "potato"
-  ],
-  "jain": false,
-  "noOnionGarlic": false,
-  "vrat": false,
-  "tiffin": false,
-  "kidFavourite": true,
-  "season": "All",
-  "heaviness": "Light",
-  "prepAhead": null,
-  "pairsWith": [
-   "Appam"
-  ]
- },
- {
-  "id": "chilli-chicken",
-  "name": "Chilli Chicken",
-  "hindi": "चिली चिकन",
-  "slots": [
-   "Dinner"
-  ],
-  "category": "Non-Veg Main",
-  "diet": "Non-Veg",
-  "region": "Indo-Chinese",
-  "cookTime": 40,
-  "difficulty": "Medium",
-  "ingredients": [
-   "Chicken",
-   "capsicum",
-   "soy sauce"
-  ],
-  "jain": false,
-  "noOnionGarlic": false,
-  "vrat": false,
-  "tiffin": false,
-  "kidFavourite": true,
-  "season": "All",
-  "heaviness": "Medium",
-  "prepAhead": null,
-  "pairsWith": [
-   "Fried rice",
-   "noodles"
-  ]
- },
- {
-  "id": "chicken-kathi-roll",
-  "name": "Chicken Kathi Roll",
-  "hindi": "चिकन काठी रोल",
-  "slots": [
-   "Dinner",
-   "Snack"
-  ],
-  "category": "Non-Veg Main",
-  "diet": "Non-Veg",
-  "region": "West Bengal",
-  "cookTime": 40,
-  "difficulty": "Medium",
-  "ingredients": [
-   "Chicken",
-   "paratha",
-   "onion",
-   "egg"
-  ],
-  "jain": false,
-  "noOnionGarlic": false,
-  "vrat": false,
-  "tiffin": true,
-  "kidFavourite": true,
-  "season": "All",
-  "heaviness": "Medium",
-  "prepAhead": "Marinate 1 hr",
-  "pairsWith": [
-   "Ketchup"
-  ]
- },
- {
-  "id": "chicken-soup",
-  "name": "Chicken Soup",
-  "hindi": "चिकन सूप",
-  "slots": [
-   "Dinner"
-  ],
-  "category": "Non-Veg Main",
-  "diet": "Non-Veg",
-  "region": "Pan-India",
-  "cookTime": 40,
-  "difficulty": "Easy",
-  "ingredients": [
-   "Chicken",
-   "vegetables",
-   "pepper"
-  ],
-  "jain": false,
-  "noOnionGarlic": false,
-  "vrat": false,
-  "tiffin": false,
-  "kidFavourite": true,
-  "season": "Winter",
-  "heaviness": "Light",
-  "prepAhead": null,
-  "pairsWith": [
-   "Toast"
-  ]
- },
- {
-  "id": "egg-curry",
-  "name": "Egg Curry",
-  "hindi": "अंडा करी",
-  "slots": [
-   "Lunch",
-   "Dinner"
-  ],
-  "category": "Non-Veg Main",
-  "diet": "Egg",
-  "region": "Pan-India",
-  "cookTime": 35,
-  "difficulty": "Easy",
-  "ingredients": [
-   "Boiled eggs",
-   "onion",
-   "tomato"
-  ],
-  "jain": false,
-  "noOnionGarlic": true,
-  "vrat": false,
-  "tiffin": false,
-  "kidFavourite": true,
-  "season": "All",
-  "heaviness": "Medium",
-  "prepAhead": null,
-  "pairsWith": [
-   "Rice",
-   "roti"
-  ]
- },
- {
-  "id": "mutton-rogan-josh",
-  "name": "Mutton Rogan Josh",
-  "hindi": "मटन रोगन जोश",
-  "slots": [
-   "Lunch"
-  ],
-  "category": "Non-Veg Main",
-  "diet": "Non-Veg",
-  "region": "Kashmir",
-  "cookTime": 90,
-  "difficulty": "Hard",
-  "ingredients": [
-   "Mutton",
-   "curd",
-   "Kashmiri chilli",
-   "fennel"
-  ],
-  "jain": false,
-  "noOnionGarlic": true,
-  "vrat": false,
-  "tiffin": false,
-  "kidFavourite": false,
-  "season": "Winter",
-  "heaviness": "Heavy",
-  "prepAhead": null,
-  "pairsWith": [
-   "Rice"
-  ]
- },
- {
-  "id": "keema-matar",
-  "name": "Keema Matar",
-  "hindi": "कीमा मटर",
-  "slots": [
-   "Lunch",
-   "Dinner"
-  ],
-  "category": "Non-Veg Main",
-  "diet": "Non-Veg",
-  "region": "North",
-  "cookTime": 45,
-  "difficulty": "Medium",
-  "ingredients": [
-   "Minced mutton",
-   "peas",
-   "onion"
-  ],
-  "jain": false,
-  "noOnionGarlic": false,
-  "vrat": false,
-  "tiffin": true,
-  "kidFavourite": true,
-  "season": "Winter",
-  "heaviness": "Medium",
-  "prepAhead": null,
-  "pairsWith": [
-   "Roti",
-   "pav"
-  ]
- },
- {
-  "id": "macher-jhol",
-  "name": "Macher Jhol",
-  "hindi": "माछेर झोल",
-  "slots": [
-   "Lunch"
-  ],
-  "category": "Non-Veg Main",
-  "diet": "Non-Veg",
-  "region": "West Bengal",
-  "cookTime": 40,
-  "difficulty": "Medium",
-  "ingredients": [
-   "Fish (rohu)",
-   "potato",
-   "mustard oil"
-  ],
-  "jain": false,
-  "noOnionGarlic": true,
-  "vrat": false,
-  "tiffin": false,
-  "kidFavourite": false,
-  "season": "All",
-  "heaviness": "Light",
-  "prepAhead": null,
-  "pairsWith": [
-   "Rice"
-  ]
- },
- {
-  "id": "goan-fish-curry",
-  "name": "Goan Fish Curry",
-  "hindi": "गोअन फिश करी",
-  "slots": [
-   "Lunch",
-   "Dinner"
-  ],
-  "category": "Non-Veg Main",
-  "diet": "Non-Veg",
-  "region": "Goa",
-  "cookTime": 40,
-  "difficulty": "Medium",
-  "ingredients": [
-   "Fish",
-   "coconut",
-   "kokum"
-  ],
-  "jain": false,
-  "noOnionGarlic": false,
-  "vrat": false,
-  "tiffin": false,
-  "kidFavourite": false,
-  "season": "All",
-  "heaviness": "Medium",
-  "prepAhead": null,
-  "pairsWith": [
-   "Rice"
-  ]
- },
- {
-  "id": "masala-fish-fry",
-  "name": "Masala Fish Fry",
-  "hindi": "मसाला फिश फ्राई",
-  "slots": [
-   "Lunch",
-   "Dinner"
-  ],
-  "category": "Non-Veg Main",
-  "diet": "Non-Veg",
-  "region": "Coastal",
-  "cookTime": 30,
-  "difficulty": "Easy",
-  "ingredients": [
-   "Fish",
-   "chilli",
-   "turmeric",
-   "rice flour"
-  ],
-  "jain": false,
-  "noOnionGarlic": true,
-  "vrat": false,
-  "tiffin": false,
-  "kidFavourite": true,
-  "season": "All",
-  "heaviness": "Medium",
-  "prepAhead": "Marinate 30 min",
-  "pairsWith": [
-   "Rice",
-   "dal"
-  ]
- },
- {
-  "id": "prawn-masala",
-  "name": "Prawn Masala",
-  "hindi": "झींगा मसाला",
-  "slots": [
-   "Dinner"
-  ],
-  "category": "Non-Veg Main",
-  "diet": "Non-Veg",
-  "region": "Coastal",
-  "cookTime": 35,
-  "difficulty": "Medium",
-  "ingredients": [
-   "Prawns",
-   "onion",
-   "tomato",
-   "coconut"
-  ],
-  "jain": false,
-  "noOnionGarlic": false,
-  "vrat": false,
-  "tiffin": false,
-  "kidFavourite": false,
-  "season": "All",
-  "heaviness": "Medium",
-  "prepAhead": null,
-  "pairsWith": [
-   "Rice",
-   "neer dosa"
   ]
  },
  {
@@ -4793,36 +4210,6 @@
   ]
  },
  {
-  "id": "chicken-hakka-noodles",
-  "name": "Chicken Hakka Noodles",
-  "hindi": "चिकन हक्का नूडल्स",
-  "slots": [
-   "Dinner"
-  ],
-  "category": "World Main",
-  "diet": "Non-Veg",
-  "region": "Indo-Chinese",
-  "cookTime": 30,
-  "difficulty": "Easy",
-  "ingredients": [
-   "Noodles",
-   "chicken",
-   "cabbage",
-   "soy sauce"
-  ],
-  "jain": false,
-  "noOnionGarlic": false,
-  "vrat": false,
-  "tiffin": true,
-  "kidFavourite": true,
-  "season": "All",
-  "heaviness": "Medium",
-  "prepAhead": null,
-  "pairsWith": [
-   "Chilli chicken"
-  ]
- },
- {
   "id": "hot-sour-soup",
   "name": "Hot & Sour Soup",
   "hindi": "हॉट एंड सॉर सूप",
@@ -5133,36 +4520,6 @@
   ]
  },
  {
-  "id": "creamy-chicken-pasta",
-  "name": "Creamy Chicken Pasta",
-  "hindi": "क्रीमी चिकन पास्ता",
-  "slots": [
-   "Dinner"
-  ],
-  "category": "World Main",
-  "diet": "Non-Veg",
-  "region": "Italian",
-  "cookTime": 35,
-  "difficulty": "Medium",
-  "ingredients": [
-   "Pasta",
-   "chicken",
-   "cream",
-   "garlic"
-  ],
-  "jain": false,
-  "noOnionGarlic": false,
-  "vrat": false,
-  "tiffin": true,
-  "kidFavourite": true,
-  "season": "All",
-  "heaviness": "Heavy",
-  "prepAhead": null,
-  "pairsWith": [
-   "Garlic bread"
-  ]
- },
- {
   "id": "garlic-bread",
   "name": "Garlic Bread",
   "hindi": "गार्लिक ब्रेड",
@@ -5255,36 +4612,6 @@
   ]
  },
  {
-  "id": "cheese-omelette-with-toast",
-  "name": "Cheese Omelette with Toast",
-  "hindi": "चीज़ ऑमलेट और टोस्ट",
-  "slots": [
-   "Breakfast"
-  ],
-  "category": "Breakfast",
-  "diet": "Egg",
-  "region": "Continental",
-  "cookTime": 15,
-  "difficulty": "Easy",
-  "ingredients": [
-   "Eggs",
-   "cheese",
-   "bread",
-   "butter"
-  ],
-  "jain": false,
-  "noOnionGarlic": true,
-  "vrat": false,
-  "tiffin": true,
-  "kidFavourite": true,
-  "season": "All",
-  "heaviness": "Light",
-  "prepAhead": null,
-  "pairsWith": [
-   "Coffee"
-  ]
- },
- {
   "id": "pancakes-with-honey",
   "name": "Pancakes with Honey",
   "hindi": "हनी पैनकेक",
@@ -5310,36 +4637,6 @@
   "kidFavourite": true,
   "season": "All",
   "heaviness": "Medium",
-  "prepAhead": null,
-  "pairsWith": [
-   "Fruit"
-  ]
- },
- {
-  "id": "french-toast",
-  "name": "French Toast",
-  "hindi": "फ्रेंच टोस्ट",
-  "slots": [
-   "Breakfast"
-  ],
-  "category": "Breakfast",
-  "diet": "Egg",
-  "region": "Continental",
-  "cookTime": 15,
-  "difficulty": "Easy",
-  "ingredients": [
-   "Bread",
-   "eggs",
-   "milk",
-   "sugar"
-  ],
-  "jain": false,
-  "noOnionGarlic": true,
-  "vrat": false,
-  "tiffin": true,
-  "kidFavourite": true,
-  "season": "All",
-  "heaviness": "Light",
   "prepAhead": null,
   "pairsWith": [
    "Fruit"
@@ -5465,68 +4762,6 @@
   "prepAhead": "Marinate 30 min",
   "pairsWith": [
    "Soup"
-  ]
- },
- {
-  "id": "grilled-chicken-with-sauteed-vegetables",
-  "name": "Grilled Chicken with Sautéed Vegetables",
-  "hindi": "ग्रिल्ड चिकन और सब्ज़ियाँ",
-  "slots": [
-   "Dinner"
-  ],
-  "category": "World Main",
-  "diet": "Non-Veg",
-  "region": "Continental",
-  "cookTime": 45,
-  "difficulty": "Medium",
-  "ingredients": [
-   "Chicken",
-   "mixed vegetables",
-   "butter",
-   "herbs",
-   "garlic"
-  ],
-  "jain": false,
-  "noOnionGarlic": false,
-  "vrat": false,
-  "tiffin": false,
-  "kidFavourite": false,
-  "season": "All",
-  "heaviness": "Light",
-  "prepAhead": "Marinate 1 hr",
-  "pairsWith": [
-   "Soup"
-  ]
- },
- {
-  "id": "lemon-butter-fish-with-mash",
-  "name": "Lemon Butter Fish with Mash",
-  "hindi": "लेमन बटर फिश",
-  "slots": [
-   "Dinner"
-  ],
-  "category": "World Main",
-  "diet": "Non-Veg",
-  "region": "Continental",
-  "cookTime": 35,
-  "difficulty": "Medium",
-  "ingredients": [
-   "Fish",
-   "butter",
-   "lemon",
-   "garlic",
-   "potato"
-  ],
-  "jain": false,
-  "noOnionGarlic": false,
-  "vrat": false,
-  "tiffin": false,
-  "kidFavourite": false,
-  "season": "All",
-  "heaviness": "Medium",
-  "prepAhead": null,
-  "pairsWith": [
-   "Salad"
   ]
  },
  {
@@ -5747,37 +4982,6 @@
   ]
  },
  {
-  "id": "chicken-burrito",
-  "name": "Chicken Burrito",
-  "hindi": "चिकन बरिटो",
-  "slots": [
-   "Dinner"
-  ],
-  "category": "World Main",
-  "diet": "Non-Veg",
-  "region": "Mexican",
-  "cookTime": 40,
-  "difficulty": "Medium",
-  "ingredients": [
-   "Tortilla",
-   "chicken",
-   "rice",
-   "kidney beans",
-   "cheese"
-  ],
-  "jain": false,
-  "noOnionGarlic": false,
-  "vrat": false,
-  "tiffin": true,
-  "kidFavourite": true,
-  "season": "All",
-  "heaviness": "Heavy",
-  "prepAhead": "Marinate 30 min",
-  "pairsWith": [
-   "Salsa"
-  ]
- },
- {
   "id": "nachos-with-salsa",
   "name": "Nachos with Salsa",
   "hindi": "नाचोज़ और सालसा",
@@ -5867,36 +5071,6 @@
   "prepAhead": null,
   "pairsWith": [
    "Spring rolls"
-  ]
- },
- {
-  "id": "thai-red-curry-chicken-with-rice",
-  "name": "Thai Red Curry Chicken with Rice",
-  "hindi": "थाई रेड करी चिकन और चावल",
-  "slots": [
-   "Dinner"
-  ],
-  "category": "World Main",
-  "diet": "Non-Veg",
-  "region": "Thai",
-  "cookTime": 40,
-  "difficulty": "Medium",
-  "ingredients": [
-   "Chicken",
-   "coconut milk",
-   "red curry paste",
-   "rice"
-  ],
-  "jain": false,
-  "noOnionGarlic": false,
-  "vrat": false,
-  "tiffin": false,
-  "kidFavourite": false,
-  "season": "All",
-  "heaviness": "Medium",
-  "prepAhead": null,
-  "pairsWith": [
-   "Papaya salad"
   ]
  },
  {
@@ -6049,37 +5223,6 @@
   "season": "All",
   "heaviness": "Medium",
   "prepAhead": "Marinate 30 min",
-  "pairsWith": [
-   "Hummus"
-  ]
- },
- {
-  "id": "chicken-shawarma",
-  "name": "Chicken Shawarma",
-  "hindi": "चिकन शवर्मा",
-  "slots": [
-   "Dinner"
-  ],
-  "category": "World Main",
-  "diet": "Non-Veg",
-  "region": "Middle Eastern",
-  "cookTime": 40,
-  "difficulty": "Medium",
-  "ingredients": [
-   "Chicken",
-   "pita",
-   "garlic",
-   "cucumber",
-   "curd"
-  ],
-  "jain": false,
-  "noOnionGarlic": false,
-  "vrat": false,
-  "tiffin": true,
-  "kidFavourite": true,
-  "season": "All",
-  "heaviness": "Medium",
-  "prepAhead": "Marinate 2 hrs",
   "pairsWith": [
    "Hummus"
   ]
@@ -6539,38 +5682,6 @@
   "heaviness": "Light",
   "prepAhead": null,
   "pairsWith": []
- },
- {
-  "id": "egg-white-bhurji",
-  "name": "Egg White Bhurji",
-  "hindi": "एग व्हाइट भुर्जी",
-  "slots": [
-   "Breakfast",
-   "Dinner"
-  ],
-  "category": "Breakfast",
-  "diet": "Egg",
-  "region": "Modern",
-  "cookTime": 15,
-  "difficulty": "Easy",
-  "ingredients": [
-   "Egg whites",
-   "onion",
-   "tomato",
-   "capsicum"
-  ],
-  "jain": false,
-  "noOnionGarlic": true,
-  "vrat": false,
-  "tiffin": true,
-  "kidFavourite": false,
-  "season": "All",
-  "heaviness": "Light",
-  "prepAhead": null,
-  "pairsWith": [
-   "Toast",
-   "roti"
-  ]
  },
  {
   "id": "moong-usal",

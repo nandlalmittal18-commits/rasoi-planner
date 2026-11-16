@@ -239,22 +239,6 @@
   "fat": 9.8,
   "fibre": 4.1
  },
- "bread-omelette": {
-  "serving": "1 plate",
-  "kcal": 390,
-  "protein": 18.3,
-  "carbs": 31.9,
-  "fat": 20.5,
-  "fibre": 2.0
- },
- "egg-bhurji": {
-  "serving": "1 plate (2 eggs)",
-  "kcal": 231,
-  "protein": 13.2,
-  "carbs": 4.6,
-  "fat": 17.6,
-  "fibre": 0.9
- },
  "sabudana-khichdi": {
   "serving": "1 plate",
   "kcal": 427,
@@ -847,14 +831,6 @@
   "fat": 14.6,
   "fibre": 8.2
  },
- "egg-fried-rice": {
-  "serving": "1 plate",
-  "kcal": 459,
-  "protein": 17.8,
-  "carbs": 50.7,
-  "fat": 19.9,
-  "fibre": 1.8
- },
  "veg-hakka-noodles": {
   "serving": "1 plate",
   "kcal": 404,
@@ -934,134 +910,6 @@
   "carbs": 46.8,
   "fat": 0.3,
   "fibre": 0.6
- },
- "home-style-chicken-curry": {
-  "serving": "1 katori",
-  "kcal": 271,
-  "protein": 22.8,
-  "carbs": 5.2,
-  "fat": 17.8,
-  "fibre": 1.2
- },
- "butter-chicken": {
-  "serving": "1 katori",
-  "kcal": 321,
-  "protein": 23.8,
-  "carbs": 4.4,
-  "fat": 23.5,
-  "fibre": 0.9
- },
- "chicken-biryani": {
-  "serving": "1 plate",
-  "kcal": 554,
-  "protein": 26.2,
-  "carbs": 58.7,
-  "fat": 23.3,
-  "fibre": 1.2
- },
- "chicken-tikka": {
-  "serving": "6 pieces",
-  "kcal": 289,
-  "protein": 31.0,
-  "carbs": 1.4,
-  "fat": 17.5,
-  "fibre": 0.0
- },
- "chicken-chettinad": {
-  "serving": "1 katori",
-  "kcal": 339,
-  "protein": 23.4,
-  "carbs": 7.8,
-  "fat": 24.4,
-  "fibre": 2.8
- },
- "kerala-chicken-stew": {
-  "serving": "1 katori",
-  "kcal": 427,
-  "protein": 23.6,
-  "carbs": 15.3,
-  "fat": 31.3,
-  "fibre": 3.6
- },
- "chilli-chicken": {
-  "serving": "1 plate",
-  "kcal": 381,
-  "protein": 25.0,
-  "carbs": 17.0,
-  "fat": 23.6,
-  "fibre": 1.7
- },
- "chicken-kathi-roll": {
-  "serving": "1 roll",
-  "kcal": 513,
-  "protein": 29.2,
-  "carbs": 46.0,
-  "fat": 23.2,
-  "fibre": 4.6
- },
- "chicken-soup": {
-  "serving": "1 bowl",
-  "kcal": 150,
-  "protein": 14.0,
-  "carbs": 6.4,
-  "fat": 7.4,
-  "fibre": 2.4
- },
- "egg-curry": {
-  "serving": "1 katori (2 eggs)",
-  "kcal": 256,
-  "protein": 13.5,
-  "carbs": 6.2,
-  "fat": 19.6,
-  "fibre": 1.3
- },
- "mutton-rogan-josh": {
-  "serving": "1 katori",
-  "kcal": 351,
-  "protein": 21.9,
-  "carbs": 3.6,
-  "fat": 27.9,
-  "fibre": 0.3
- },
- "keema-matar": {
-  "serving": "1 katori",
-  "kcal": 320,
-  "protein": 21.5,
-  "carbs": 11.0,
-  "fat": 21.6,
-  "fibre": 3.2
- },
- "macher-jhol": {
-  "serving": "1 katori",
-  "kcal": 248,
-  "protein": 22.1,
-  "carbs": 9.3,
-  "fat": 12.8,
-  "fibre": 1.3
- },
- "goan-fish-curry": {
-  "serving": "1 katori",
-  "kcal": 282,
-  "protein": 22.1,
-  "carbs": 6.3,
-  "fat": 18.7,
-  "fibre": 3.0
- },
- "masala-fish-fry": {
-  "serving": "2 pieces",
-  "kcal": 269,
-  "protein": 23.4,
-  "carbs": 8.0,
-  "fat": 15.1,
-  "fibre": 0.2
- },
- "prawn-masala": {
-  "serving": "1 katori",
-  "kcal": 263,
-  "protein": 22.2,
-  "carbs": 8.0,
-  "fat": 16.4,
-  "fibre": 2.5
  },
  "samosa": {
   "serving": "2 samosas",
@@ -1287,14 +1135,6 @@
   "fat": 15.7,
   "fibre": 4.2
  },
- "chicken-hakka-noodles": {
-  "serving": "1 plate",
-  "kcal": 490,
-  "protein": 23.6,
-  "carbs": 56.9,
-  "fat": 18.4,
-  "fibre": 3.5
- },
  "hot-sour-soup": {
   "serving": "1 bowl",
   "kcal": 77,
@@ -1375,14 +1215,6 @@
   "fat": 18.0,
   "fibre": 1.8
  },
- "creamy-chicken-pasta": {
-  "serving": "1 plate",
-  "kcal": 523,
-  "protein": 27.0,
-  "carbs": 61.1,
-  "fat": 18.4,
-  "fibre": 2.4
- },
  "garlic-bread": {
   "serving": "4 pieces",
   "kcal": 320,
@@ -1407,14 +1239,6 @@
   "fat": 10.3,
   "fibre": 2.5
  },
- "cheese-omelette-with-toast": {
-  "serving": "1 plate",
-  "kcal": 440,
-  "protein": 22.3,
-  "carbs": 30.5,
-  "fat": 24.7,
-  "fibre": 1.6
- },
  "pancakes-with-honey": {
   "serving": "3 pancakes",
   "kcal": 476,
@@ -1422,14 +1246,6 @@
   "carbs": 77.2,
   "fat": 13.7,
   "fibre": 2.9
- },
- "french-toast": {
-  "serving": "2 slices",
-  "kcal": 344,
-  "protein": 13.1,
-  "carbs": 39.7,
-  "fat": 14.4,
-  "fibre": 1.6
  },
  "overnight-oats-with-fruit": {
   "serving": "1 bowl",
@@ -1462,22 +1278,6 @@
   "carbs": 13.4,
   "fat": 33.5,
   "fibre": 4.5
- },
- "grilled-chicken-with-sauteed-vegetables": {
-  "serving": "1 plate",
-  "kcal": 357,
-  "protein": 33.8,
-  "carbs": 12.0,
-  "fat": 19.0,
-  "fibre": 4.5
- },
- "lemon-butter-fish-with-mash": {
-  "serving": "1 plate",
-  "kcal": 403,
-  "protein": 32.6,
-  "carbs": 27.0,
-  "fat": 17.0,
-  "fibre": 3.3
  },
  "veg-burger": {
   "serving": "1 burger",
@@ -1535,14 +1335,6 @@
   "fat": 20.6,
   "fibre": 10.1
  },
- "chicken-burrito": {
-  "serving": "1 burrito",
-  "kcal": 675,
-  "protein": 35.9,
-  "carbs": 82.7,
-  "fat": 21.0,
-  "fibre": 6.2
- },
  "nachos-with-salsa": {
   "serving": "1 plate",
   "kcal": 344,
@@ -1566,14 +1358,6 @@
   "carbs": 63.0,
   "fat": 34.5,
   "fibre": 6.6
- },
- "thai-red-curry-chicken-with-rice": {
-  "serving": "1 plate",
-  "kcal": 693,
-  "protein": 28.0,
-  "carbs": 56.6,
-  "fat": 41.2,
-  "fibre": 4.2
  },
  "veg-pad-thai": {
   "serving": "1 plate",
@@ -1614,14 +1398,6 @@
   "carbs": 40.5,
   "fat": 28.4,
   "fibre": 2.5
- },
- "chicken-shawarma": {
-  "serving": "1 wrap",
-  "kcal": 441,
-  "protein": 27.5,
-  "carbs": 38.8,
-  "fat": 18.8,
-  "fibre": 1.9
  },
  "hummus-with-pita": {
   "serving": "1 plate",
@@ -1742,14 +1518,6 @@
   "carbs": 9.8,
   "fat": 19.7,
   "fibre": 4.2
- },
- "egg-white-bhurji": {
-  "serving": "1 plate (4 whites)",
-  "kcal": 137,
-  "protein": 15.2,
-  "carbs": 6.3,
-  "fat": 5.4,
-  "fibre": 1.4
  },
  "moong-usal": {
   "serving": "1 katori",

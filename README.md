@@ -2,7 +2,9 @@
 
 **Live app:** https://rasoi-planner-eta.vercel.app
 
-A balanced weekly menu for Indian homes: breakfast, lunch and dinner planned around the family's diet, fasting days, favourite cuisines, tiffin and cooking time, plus as many world-food dinners (Chinese, Italian, Continental, Mexican, Thai, Middle Eastern) as the family wants. It also gives night-before prep reminders, a shopping list, and WhatsApp messages for the family and, in Hindi, for the cook.
+A balanced weekly menu for Indian homes: breakfast, lunch and dinner planned around the family's food rules, fasting days, favourite cuisines, tiffin and cooking time, plus as many world-food dinners (Chinese, Italian, Continental, Mexican, Thai, Middle Eastern) as the family wants. It also gives night-before prep reminders, a shopping list, and WhatsApp messages for the family and, in Hindi, for the cook.
+
+**Rasoi Planner is fully vegetarian.** There are no meat, fish or egg dishes.
 
 ## What's in version 1
 
@@ -10,10 +12,10 @@ A balanced weekly menu for Indian homes: breakfast, lunch and dinner planned aro
 | --- | --- |
 | **Menu** | 7-day menu, one day at a time: breakfast, lunch, an evening snack (optional) and dinner. Each day shows its rough protein and calories, and a "Protein this week" chart compares every day with the ICMR-NIN adult guide (about 46–54 g). Swap any dish with one tap, shuffle a day or the whole week. "Plan ahead" shows what to soak, ferment or marinate the night before. Share the day on WhatsApp in English (family) or Hindi (cook). |
 | **Shopping** | Main ingredients for the week, grouped like a shop list. Tick what you have; send the rest on WhatsApp. |
-| **Dishes** | All 221 dishes (174 Indian, 47 world) with a picture, search and filters (cuisine, meal, veg, protein-rich, Jain, vrat, tiffin, kids). Mark "Never suggest". |
+| **Dishes** | All 192 dishes (152 Indian, 40 world), all vegetarian, with a picture, search and filters (cuisine, meal, protein-rich, Jain, vrat, tiffin, kids). Mark "Never suggest". |
 | **Dish details** | Tap any dish: picture, cooking time, difficulty, heaviness, season, tags (Jain, vrat, tiffin, kids), nutrition for one home serving (calories, protein, carbs, fat, fibre), prep-ahead, main ingredients, what it goes with, and a short recipe in English or Hindi. "Send recipe to cook" shares the Hindi recipe on WhatsApp. |
 | **Account** | "Continue with Google" saves the family and menu online (Supabase), so the same menu shows on every phone. Without signing in, everything stays on the phone. |
-| **Family** | Diet and non-veg days, Jain, no onion-garlic, weekly vrat, Indian cuisines, world-food dinners per week and which world cuisines, weekday cooking time, kids, tiffin, evening snack, protein focus, cook's name. |
+| **Family** | Jain, no onion-garlic, weekly vrat, Indian cuisines, world-food dinners per week and which world cuisines, weekday cooking time, kids, tiffin, evening snack, protein focus, cook's name. |
 
 ## Run it on your computer
 
@@ -89,12 +91,12 @@ All dish photos are our own (made with AI or taken at home). A dish without a ph
 
 ## How the menu engine decides
 
-1. **Never broken:** diet, non-veg days, Jain, no onion-garlic, vrat days, "never suggest" dishes.
+1. **Never broken:** vegetarian only, Jain, no onion-garlic, vrat days, "never suggest" dishes.
 2. **Kept whenever possible**, relaxed one at a time only if nothing fits, in this order: in-season dishes only, then the weekday cooking-time limit, then no dish twice in a week, and last a tiffin-friendly weekday lunch and at most one heavy dish a day (no heavy breakfast on weekdays).
-3. **Preferred:** chosen cuisines, kid favourites, seasonal dishes; bigger dishes at the weekend. With **Protein focus** on, protein-rich dishes and meal patterns with a dal, paneer or non-veg dish come up more often (about 5 g more protein a day for one person).
+3. **Preferred:** chosen cuisines, kid favourites, seasonal dishes; bigger dishes at the weekend. With **Protein focus** on, protein-rich dishes and meal patterns with a dal, paneer or chana dish come up more often (about 5 g more protein a day for one person).
 4. **World food** appears only on the chosen number of world-food dinners a week (never on a vrat day; weekends slightly more likely), with a soup or side from the same cuisine. Liked world cuisines are picked about 30 times more often than others. "None" keeps every meal Indian.
 5. **Evening snack:** one quick, light Indian snack (chaat, dhokla, tikki, shake…). No heavy or slow snacks on weekdays; vrat days get a vrat snack.
-6. Meals follow familiar patterns: dal + sabzi + roti/rice, rice meal, paneer meal, non-veg meal, one-pot dinner, dosa-style dinner, weekend special. Roti or rice is chosen from what the main dish is usually eaten with.
+6. Meals follow familiar patterns: dal + sabzi + roti/rice, rice meal, paneer meal, one-pot dinner, dosa-style dinner, weekend special. Roti or rice is chosen from what the main dish is usually eaten with.
 
 ## Roadmap
 

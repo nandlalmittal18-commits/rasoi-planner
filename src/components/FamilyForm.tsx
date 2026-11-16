@@ -1,5 +1,5 @@
 import { useState, type ReactNode } from 'react';
-import { WEEKDAYS_SHORT, type CuisineGroup, type Diet, type FamilyProfile } from '../engine';
+import { WEEKDAYS_SHORT, type CuisineGroup, type FamilyProfile } from '../engine';
 import { CUISINES, WORLD_CUISINE_OPTIONS } from '../lib/sample';
 
 interface Props {
@@ -11,11 +11,6 @@ interface Props {
   onReset: () => void;
 }
 
-const DIETS: { key: Diet; label: string }[] = [
-  { key: 'Veg', label: 'Vegetarian' },
-  { key: 'Egg', label: 'Veg + eggs' },
-  { key: 'Non-Veg', label: 'Non-veg' },
-];
 const TIMES = [30, 45, 60, 90];
 
 export function FamilyForm({ initial, isNew, account, onSave, onReset }: Props) {
@@ -50,20 +45,8 @@ export function FamilyForm({ initial, isNew, account, onSave, onReset }: Props) 
       </fieldset>
 
       <fieldset className="card field">
-        <legend>What does your family eat?</legend>
-        <div className="seg" role="radiogroup" aria-label="Diet">
-          {DIETS.map((d) => (
-            <button type="button" key={d.key} role="radio" aria-checked={p.diet === d.key} className={`seg-btn${p.diet === d.key ? ' is-on' : ''}`} onClick={() => set('diet', d.key)}>
-              {d.label}
-            </button>
-          ))}
-        </div>
-        {p.diet !== 'Veg' && (
-          <>
-            <p className="field-help">On which days do you cook {p.diet === 'Egg' ? 'eggs' : 'non-veg'}?</p>
-            <DayPicker id="nonveg-days" value={p.nonVegDays} onChange={(v) => set('nonVegDays', v)} />
-          </>
-        )}
+        <legend>Food rules</legend>
+        <p className="field-help">Every dish in Rasoi Planner is vegetarian. No meat, fish or eggs.</p>
         <div className="toggles">
           <Toggle id="jain" label="Jain food" help="No onion, garlic, potato or other root vegetables" checked={p.jain} onChange={(v) => set('jain', v)} />
           <Toggle id="nog" label="No onion or garlic" help="Satvik cooking" checked={p.noOnionGarlic} onChange={(v) => set('noOnionGarlic', v)} />
@@ -117,7 +100,7 @@ export function FamilyForm({ initial, isNew, account, onSave, onReset }: Props) 
           <Toggle
             id="protein"
             label="Protein focus"
-            help="More dal, paneer, chana, sprouts and eggs (as your diet allows)"
+            help="More dal, paneer, chana, soya and sprouts"
             checked={p.proteinFocus}
             onChange={(v) => set('proteinFocus', v)}
           />

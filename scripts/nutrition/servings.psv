@@ -31,8 +31,6 @@ dal-pakwan|1 plate|chanadal:40 maida:50 oil:15 onion:10
 khaman-dhokla|4 pieces|besan:50 curd:15 oil:8 sugar:5
 handvo|2 pieces|rice:35 chanadal:15 toor:10 gourd:40 sesame:4 curd:15 oil:10
 vegetable-sandwich|2 sandwiches|bread:100 cucumber:30 tomato:30 potato:40 butter:8
-bread-omelette|1 plate|egg:100 bread:60 onion:20 oil:5 butter:5
-egg-bhurji|1 plate (2 eggs)|egg:100 onion:30 tomato:30 oil:8
 sabudana-khichdi|1 plate|sabudana:60 peanut:20 potato:40 ghee:8
 kuttu-puri-with-aloo|3 puris + aloo|kuttu:50 oil:18 potato:100
 rajgira-paratha|2 parathas|rajgira:50 potato:50 ghee:8
@@ -107,7 +105,6 @@ coconut-rice|1 plate|rice:60 coconut:25 cashew:5 oil:5
 tomato-rice|1 plate|rice:60 tomato:70 onion:25 oil:7
 veg-fried-rice|1 plate|rice:60 cabbage:40 capsicum:30 carrot:20 oil:10
 samak-rice-pulao|1 plate|samak:60 potato:40 peanut:15 ghee:6
-egg-fried-rice|1 plate|rice:60 egg:100 veg:40 oil:10
 veg-hakka-noodles|1 plate|noodles:75 cabbage:50 capsicum:30 carrot:20 oil:12
 masala-pasta|1 plate|pasta:75 tomato:60 capsicum:30 onion:20 cheese:15 oil:8
 phulka-roti|2 phulkas|atta:60
@@ -118,22 +115,6 @@ bajra-roti|2 rotis|bajra:70 ghee:5
 jowar-bhakri|2 bhakris|jowar:70
 ragi-mudde|2 balls|ragi:70
 steamed-rice|1 plate|rice:60
-home-style-chicken-curry|1 katori|chicken:110 onion:40 tomato:40 oil:10
-butter-chicken|1 katori|chicken:110 tomato:60 butter:12 cream:15 cashew:5
-chicken-biryani|1 plate|chicken:100 rice:70 curd:30 onion:30 ghee:10 oil:5
-chicken-tikka|6 pieces|chicken:150 curd:30 oil:6
-chicken-chettinad|1 katori|chicken:110 coconut:20 onion:40 tomato:30 oil:10
-kerala-chicken-stew|1 katori|chicken:100 coconutmilk:80 potato:50 veg:30 oil:5
-chilli-chicken|1 plate|chicken:120 cornflour:12 capsicum:50 onion:40 oil:15
-chicken-kathi-roll|1 roll|chicken:80 atta:30 maida:30 egg:50 onion:30 oil:12
-chicken-soup|1 bowl|chicken:60 veg:80 oil:3
-egg-curry|1 katori (2 eggs)|egg:100 onion:40 tomato:50 oil:10
-mutton-rogan-josh|1 katori|mutton:110 curd:40 onion:20 oil:12
-keema-matar|1 katori|mutton:100 peas:40 onion:40 tomato:40 oil:8
-macher-jhol|1 katori|fish:110 potato:50 tomato:20 oil:10
-goan-fish-curry|1 katori|fish:110 coconut:30 onion:20 oil:6
-masala-fish-fry|2 pieces|fish:120 riceflour:10 oil:12
-prawn-masala|1 katori|prawns:110 onion:40 tomato:40 coconut:15 oil:10
 samosa|2 samosas|maida:50 potato:80 peas:15 oil:25
 onion-pakora|1 plate|onion:80 besan:40 oil:20
 aloo-tikki-chaat|1 plate|potato:120 curd:50 sugar:8 oil:12
@@ -162,7 +143,6 @@ chaas-masala-buttermilk|1 glass|curd:100
 chilli-paneer-with-fried-rice|1 plate|paneer:80 cornflour:10 capsicum:40 onion:30 rice:60 veg:30 oil:15
 veg-manchurian-with-fried-rice|1 plate|cabbage:80 carrot:20 cornflour:20 maida:10 rice:60 veg:30 oil:20
 schezwan-noodles|1 plate|noodles:80 capsicum:30 cabbage:50 oil:14
-chicken-hakka-noodles|1 plate|noodles:75 chicken:70 cabbage:50 oil:12
 hot-sour-soup|1 bowl|cabbage:30 carrot:20 mushroom:20 cornflour:8 oil:3
 sweet-corn-soup|1 bowl|corn:50 carrot:20 cornflour:8 oil:2
 veg-spring-rolls|4 rolls|maida:40 cabbage:50 carrot:20 capsicum:20 oil:18
@@ -173,19 +153,14 @@ margherita-pizza|3 slices (medium)|bread:120 tomato:40 mozzarella:60 oil:5
 veggie-pizza|3 slices (medium)|bread:120 tomato:40 mozzarella:55 capsicum:25 onion:20 corn:20 oil:5
 vegetable-lasagne|1 portion|pasta:60 tomato:80 milk:100 butter:10 maida:8 veg:80 cheese:30
 mushroom-risotto|1 plate|rice:70 mushroom:80 onion:20 butter:15 cheese:20
-creamy-chicken-pasta|1 plate|pasta:80 chicken:80 cream:30 butter:5
 garlic-bread|4 pieces|bread:80 butter:15
 minestrone-soup|1 bowl|veg:80 tomato:50 pasta:15 rajma:10 oil:4
 bruschetta|4 pieces|bread:70 tomato:50 oil:8
-cheese-omelette-with-toast|1 plate|egg:100 cheese:20 bread:60 butter:10
 pancakes-with-honey|3 pancakes|maida:60 milk:80 egg:25 butter:10 honey:15 banana:50 sugar:5
-french-toast|2 slices|bread:60 egg:50 milk:40 sugar:8 butter:8
 overnight-oats-with-fruit|1 bowl|oats:45 milk:120 curd:50 banana:60 honey:8
 veg-cheese-grilled-sandwich|2 sandwiches|bread:100 cheese:30 capsicum:20 tomato:30 butter:10
 baked-vegetables-in-white-sauce|1 portion|veg:150 milk:150 butter:15 maida:12 cheese:30
 grilled-paneer-with-sauteed-vegetables|1 plate|paneer:120 veg:150 butter:10
-grilled-chicken-with-sauteed-vegetables|1 plate|chicken:150 veg:150 butter:10
-lemon-butter-fish-with-mash|1 plate|fish:150 potato:150 milk:30 butter:15
 veg-burger|1 burger|bread:70 potato:70 peas:20 cheese:20 cabbage:20 mayonnaise:10 oil:12
 cream-of-tomato-soup|1 bowl|tomato:200 butter:8 cream:15
 cream-of-mushroom-soup|1 bowl|mushroom:100 milk:120 butter:10 maida:8
@@ -193,17 +168,14 @@ russian-salad|1 bowl|potato:60 carrot:30 peas:30 pineapple:30 mayonnaise:25
 veg-burrito-bowl|1 bowl|rice:60 rajma:30 corn:40 capsicum:30 tomato:40 cheese:20 oil:5
 veg-quesadilla|1 quesadilla|flatbread:80 cheese:40 rajma:25 capsicum:25 corn:25 oil:5
 bean-tacos|3 tacos|tacoshell:40 rajma:40 leafy:20 tomato:30 cheese:25 oil:4
-chicken-burrito|1 burrito|flatbread:90 chicken:80 rice:30 rajma:20 cheese:25 oil:5
 nachos-with-salsa|1 plate|tacoshell:50 tomato:50 onion:20 cheese:25
 mexican-corn-salad|1 bowl|corn:100 capsicum:30 tomato:40
 thai-green-curry-with-rice|1 plate|coconutmilk:120 veg:120 rice:60 oil:5
-thai-red-curry-chicken-with-rice|1 plate|chicken:100 coconutmilk:120 veg:40 rice:60 oil:5
 veg-pad-thai|1 plate|ricevermicelli:80 peanut:15 paneer:40 beansprouts:40 sugar:8 oil:12
 tom-yum-soup|1 bowl|mushroom:60 tomato:30 veg:30
 raw-papaya-salad|1 bowl|rawpapaya:120 peanut:15 tomato:30 sugar:5
 falafel-wrap-with-hummus|1 wrap|chickpea:45 flatbread:70 cucumber:30 tomato:30 sesame:8 oil:15
 paneer-shawarma-wrap|1 wrap|paneer:80 flatbread:70 cabbage:30 curd:30 oil:8
-chicken-shawarma|1 wrap|chicken:100 flatbread:70 cucumber:30 curd:30 oil:8
 hummus-with-pita|1 plate|chickpea:30 sesame:10 flatbread:60 oil:10
 fattoush-salad|1 bowl|cucumber:60 tomato:50 leafy:30 flatbread:25 oil:10
 sattu-shake|1 glass|sattu:40 milk:250 banana:60 nuts:10 honey:10
@@ -219,7 +191,6 @@ paneer-salad|1 bowl|paneer:80 cucumber:50 tomato:40 capsicum:30
 paneer-stuffed-besan-chilla|2 chillas|besan:50 paneer:50 onion:20 tomato:20 oil:8
 masoor-dal-tikki|4 tikkis|masoor:50 besan:10 onion:25 oil:10
 peanut-chaat|1 bowl|peanut:40 onion:25 tomato:30
-egg-white-bhurji|1 plate (4 whites)|eggwhite:130 onion:30 tomato:30 capsicum:30 oil:5
 moong-usal|1 katori|sprouts:120 onion:25 tomato:25 coconut:10 jaggery:4 oil:6
 fruit-chaat|1 bowl|banana:60 fruit:140
 shakarkandi-chaat|1 bowl|yam:150 ghee:4

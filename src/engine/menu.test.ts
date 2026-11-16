@@ -53,9 +53,9 @@ function everyItem(plan: WeekPlan) {
 }
 
 describe('dish data', () => {
-  it('has 221 dishes with unique, plain ids and Hindi names', () => {
-    expect(DISHES).toHaveLength(221);
-    expect(new Set(DISHES.map((d) => d.id)).size).toBe(221);
+  it('has 192 dishes with unique, plain ids and Hindi names', () => {
+    expect(DISHES).toHaveLength(192);
+    expect(new Set(DISHES.map((d) => d.id)).size).toBe(192);
     expect(DISHES.every((d) => /^[a-z0-9-]+$/.test(d.id))).toBe(true);
     expect(DISHES.every((d) => d.hindi.length > 0)).toBe(true);
   });
@@ -149,12 +149,12 @@ describe('generateWeek', () => {
     expect(checked).toBeGreaterThan(3000);
   });
 
-  it('cooks non-veg only on the chosen days', () => {
-    const profile: FamilyProfile = { ...base, diet: 'Non-Veg', nonVegDays: [2, 5, 6] };
-    const plan = generateWeek(profile, START, 7);
-    const nonVegDays = new Set(everyItem(plan).filter((x) => x.dish.diet !== 'Veg').map((x) => x.day.weekday));
-    for (const d of nonVegDays) expect([2, 5, 6]).toContain(d);
-    expect(nonVegDays.size).toBeGreaterThan(0);
+  it('is a fully vegetarian app: every dish is veg, whatever an old saved profile says', () => {
+    expect(DISHES.every((d) => d.diet === 'Veg')).toBe(true);
+    const old: FamilyProfile = { ...base, diet: 'Non-Veg', nonVegDays: [0, 1, 2, 3, 4, 5, 6] };
+    for (let seed = 1; seed <= 10; seed++) {
+      for (const { dish } of everyItem(generateWeek(old, START, seed))) expect(dish.diet, dish.name).toBe('Veg');
+    }
   });
 
   it('plans only vrat food on fasting days', () => {
@@ -300,7 +300,7 @@ describe('nutrition and protein focus', () => {
   });
 
   it('marks the new protein dishes as protein-rich', () => {
-    for (const id of ['sattu-shake', 'soya-keema', 'tofu-bhurji', 'paneer-stuffed-besan-chilla', 'masoor-dal-tikki', 'egg-white-bhurji']) {
+    for (const id of ['sattu-shake', 'soya-keema', 'tofu-bhurji', 'paneer-stuffed-besan-chilla', 'masoor-dal-tikki']) {
       expect(proteinLevel(id), id).toBe('high');
     }
     expect(proteinLevel('dal-makhani')).toBe('good');

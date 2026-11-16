@@ -8,7 +8,7 @@ import { FamilyForm } from './components/FamilyForm';
 import { GroceryView } from './components/GroceryView';
 import { BookIcon, CalendarIcon, CartIcon, FamilyIcon, Logo } from './components/icons';
 import { MenuView } from './components/MenuView';
-import { BLANK_PROFILE, DIET_LABEL, SAMPLE_PROFILE } from './lib/sample';
+import { BLANK_PROFILE, SAMPLE_PROFILE } from './lib/sample';
 import { storage, type SyncState } from './lib/storage';
 import { signInWithGoogle, signOut, supabase } from './lib/supabase';
 
@@ -224,7 +224,7 @@ export default function App() {
         <div className="brand">
           <span className="brand-name">Rasoi Planner</span>
           <span className="brand-sub">
-            {isSample ? 'Sample family' : profile.familyName ? `${profile.familyName} family` : 'Your family'} · {DIET_LABEL[profile.diet]}
+            {isSample ? 'Sample family' : profile.familyName ? `${profile.familyName} family` : 'Your family'} · Pure veg
             {profile.jain ? ' · Jain' : ''}
             {account && !isSample ? ' · Saved online' : ''}
           </span>

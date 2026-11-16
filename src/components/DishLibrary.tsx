@@ -37,7 +37,6 @@ export function DishLibrary({
 }) {
   const [query, setQuery] = useState('');
   const [meal, setMeal] = useState<(typeof MEALS)[number]>('All');
-  const [vegOnly, setVegOnly] = useState(false);
   const [flags, setFlags] = useState<Set<keyof Dish>>(new Set());
   const [cuisine, setCuisine] = useState<string>('All');
   const [proteinOnly, setProteinOnly] = useState(false);
@@ -49,7 +48,6 @@ export function DishLibrary({
       (d) =>
         (!q || d.name.toLowerCase().includes(q) || d.hindi.includes(q) || d.ingredients.some((i) => i.toLowerCase().includes(q)) || d.region.toLowerCase().includes(q)) &&
         (meal === 'All' || d.slots.includes(meal)) &&
-        (!vegOnly || d.diet === 'Veg') &&
         (cuisine === 'All' || (cuisine === 'Indian' ? !isWorldDish(d) : cuisineOf(d) === cuisine)) &&
         [...flags].every((f) => d[f] === true) &&
         (!proteinOnly || proteinLevel(d.id) !== null) &&
@@ -57,7 +55,7 @@ export function DishLibrary({
     );
     // With the protein filter on, show the most protein first.
     return proteinOnly ? list.sort((a, b) => (getNutrition(b.id)?.protein ?? 0) - (getNutrition(a.id)?.protein ?? 0)) : list;
-  }, [query, meal, vegOnly, flags, cuisine, proteinOnly, craving]);
+  }, [query, meal, flags, cuisine, proteinOnly, craving]);
 
   const toggleFlag = (f: keyof Dish) => {
     const next = new Set(flags);
@@ -119,9 +117,6 @@ export function DishLibrary({
           ))}
         </div>
         <div className="chips" role="group" aria-label="Filters">
-          <button className={`chip chip-toggle${vegOnly ? ' is-on' : ''}`} aria-pressed={vegOnly} onClick={() => setVegOnly(!vegOnly)}>
-            Veg only
-          </button>
           <button className={`chip chip-toggle${proteinOnly ? ' is-on' : ''}`} aria-pressed={proteinOnly} onClick={() => setProteinOnly(!proteinOnly)}>
             Protein-rich
           </button>

@@ -3,8 +3,8 @@ import type { CuisineGroup, FamilyProfile } from '../engine';
 /** Shown on first visit so the app opens with a real menu, clearly marked as a sample. */
 export const SAMPLE_PROFILE: FamilyProfile = {
   familyName: 'Sharma',
-  diet: 'Non-Veg',
-  nonVegDays: [2, 5, 6], // Wed, Sat, Sun
+  diet: 'Veg',
+  nonVegDays: [],
   jain: false,
   noOnionGarlic: false,
   fastDays: [1], // Tuesday vrat
@@ -23,7 +23,7 @@ export const SAMPLE_PROFILE: FamilyProfile = {
 export const BLANK_PROFILE: FamilyProfile = {
   familyName: '',
   diet: 'Veg',
-  nonVegDays: [2, 4, 5, 6],
+  nonVegDays: [],
   jain: false,
   noOnionGarlic: false,
   fastDays: [],
@@ -54,8 +54,3 @@ export const WORLD_CUISINE_OPTIONS: { key: CuisineGroup; label: string; hint: st
   { key: 'Middle Eastern', label: 'Middle Eastern', hint: 'Falafel, shawarma, hummus' },
 ];
 
-export const DIET_LABEL: Record<FamilyProfile['diet'], string> = {
-  Veg: 'Vegetarian',
-  Egg: 'Veg + eggs',
-  'Non-Veg': 'Non-veg',
-};
