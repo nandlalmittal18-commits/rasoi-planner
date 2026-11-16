@@ -31,6 +31,18 @@
   "src": "photos/boondi-raita.jpg",
   "source": "own"
  },
+ "bruschetta": {
+  "src": "photos/bruschetta.jpg",
+  "source": "own"
+ },
+ "chaas-masala-buttermilk": {
+  "src": "photos/chaas-masala-buttermilk.jpg",
+  "source": "own"
+ },
+ "chilli-paneer-with-fried-rice": {
+  "src": "photos/chilli-paneer-with-fried-rice.jpg",
+  "source": "own"
+ },
  "chole-bhature": {
   "src": "photos/chole-bhature.jpg",
   "source": "own"
@@ -55,8 +67,24 @@
   "src": "photos/dal-tadka.jpg",
   "source": "own"
  },
+ "falafel-wrap-with-hummus": {
+  "src": "photos/falafel-wrap-with-hummus.jpg",
+  "source": "own"
+ },
  "gajar-halwa": {
   "src": "photos/gajar-halwa.jpg",
+  "source": "own"
+ },
+ "garlic-bread": {
+  "src": "photos/garlic-bread.jpg",
+  "source": "own"
+ },
+ "gobi-manchurian": {
+  "src": "photos/gobi-manchurian.jpg",
+  "source": "own"
+ },
+ "grilled-paneer-with-sauteed-vegetables": {
+  "src": "photos/grilled-paneer-with-sauteed-vegetables.jpg",
   "source": "own"
  },
  "gulab-jamun": {
@@ -65,6 +93,10 @@
  },
  "hara-bhara-kabab": {
   "src": "photos/hara-bhara-kabab.jpg",
+  "source": "own"
+ },
+ "hummus-with-pita": {
+  "src": "photos/hummus-with-pita.jpg",
   "source": "own"
  },
  "idli-sambar": {
@@ -135,16 +167,32 @@
   "src": "photos/moong-dal-halwa.jpg",
   "source": "own"
  },
+ "nachos-with-salsa": {
+  "src": "photos/nachos-with-salsa.jpg",
+  "source": "own"
+ },
  "onion-pakora": {
   "src": "photos/onion-pakora.jpg",
+  "source": "own"
+ },
+ "overnight-oats-with-fruit": {
+  "src": "photos/overnight-oats-with-fruit.jpg",
   "source": "own"
  },
  "palak-paneer": {
   "src": "photos/palak-paneer.jpg",
   "source": "own"
  },
+ "pancakes-with-honey": {
+  "src": "photos/pancakes-with-honey.jpg",
+  "source": "own"
+ },
  "paneer-butter-masala": {
   "src": "photos/paneer-butter-masala.jpg",
+  "source": "own"
+ },
+ "paneer-shawarma-wrap": {
+  "src": "photos/paneer-shawarma-wrap.jpg",
   "source": "own"
  },
  "paneer-tikka": {
@@ -153,6 +201,10 @@
  },
  "pav-bhaji": {
   "src": "photos/pav-bhaji.jpg",
+  "source": "own"
+ },
+ "peanut-chaat": {
+  "src": "photos/peanut-chaat.jpg",
   "source": "own"
  },
  "phulka-roti": {
@@ -191,6 +243,14 @@
   "src": "photos/sprouts-chaat.jpg",
   "source": "own"
  },
+ "steamed-rice": {
+  "src": "photos/steamed-rice.jpg",
+  "source": "own"
+ },
+ "thai-green-curry-with-rice": {
+  "src": "photos/thai-green-curry-with-rice.jpg",
+  "source": "own"
+ },
  "thalipeeth": {
   "src": "photos/thalipeeth.jpg",
   "source": "own"
@@ -223,12 +283,28 @@
   "src": "photos/veg-hakka-noodles.jpg",
   "source": "own"
  },
+ "veg-manchurian-with-fried-rice": {
+  "src": "photos/veg-manchurian-with-fried-rice.jpg",
+  "source": "own"
+ },
  "veg-momos": {
   "src": "photos/veg-momos.jpg",
   "source": "own"
  },
  "veg-pulao": {
   "src": "photos/veg-pulao.jpg",
+  "source": "own"
+ },
+ "veg-quesadilla": {
+  "src": "photos/veg-quesadilla.jpg",
+  "source": "own"
+ },
+ "veg-spring-rolls": {
+  "src": "photos/veg-spring-rolls.jpg",
+  "source": "own"
+ },
+ "vegetable-lasagne": {
+  "src": "photos/vegetable-lasagne.jpg",
   "source": "own"
  },
  "vegetable-sandwich": {
@@ -241,6 +317,10 @@
  },
  "vermicelli-upma": {
   "src": "photos/vermicelli-upma.jpg",
+  "source": "own"
+ },
+ "white-sauce-pasta": {
+  "src": "photos/white-sauce-pasta.jpg",
   "source": "own"
  }
 }
