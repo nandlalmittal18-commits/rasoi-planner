@@ -1,10 +1,246 @@
 {
+ "aloo-gobi": {
+  "src": "photos/aloo-gobi.jpg",
+  "source": "own"
+ },
  "aloo-matar": {
   "src": "photos/aloo-matar.jpg",
   "source": "own"
  },
+ "aloo-paratha": {
+  "src": "photos/aloo-paratha.jpg",
+  "source": "own"
+ },
+ "aloo-tikki-chaat": {
+  "src": "photos/aloo-tikki-chaat.jpg",
+  "source": "own"
+ },
+ "besan-chilla": {
+  "src": "photos/besan-chilla.jpg",
+  "source": "own"
+ },
+ "bhel-puri": {
+  "src": "photos/bhel-puri.jpg",
+  "source": "own"
+ },
+ "bhindi-masala": {
+  "src": "photos/bhindi-masala.jpg",
+  "source": "own"
+ },
+ "boondi-raita": {
+  "src": "photos/boondi-raita.jpg",
+  "source": "own"
+ },
+ "chole-bhature": {
+  "src": "photos/chole-bhature.jpg",
+  "source": "own"
+ },
+ "cucumber-raita": {
+  "src": "photos/cucumber-raita.jpg",
+  "source": "own"
+ },
+ "dal-baati-churma": {
+  "src": "photos/dal-baati-churma.jpg",
+  "source": "own"
+ },
+ "dal-makhani": {
+  "src": "photos/dal-makhani.jpg",
+  "source": "own"
+ },
+ "dal-pakwan": {
+  "src": "photos/dal-pakwan.jpg",
+  "source": "own"
+ },
+ "dal-tadka": {
+  "src": "photos/dal-tadka.jpg",
+  "source": "own"
+ },
+ "gajar-halwa": {
+  "src": "photos/gajar-halwa.jpg",
+  "source": "own"
+ },
+ "gulab-jamun": {
+  "src": "photos/gulab-jamun.jpg",
+  "source": "own"
+ },
+ "hara-bhara-kabab": {
+  "src": "photos/hara-bhara-kabab.jpg",
+  "source": "own"
+ },
+ "idli-sambar": {
+  "src": "photos/idli-sambar.jpg",
+  "source": "own"
+ },
+ "jeera-aloo": {
+  "src": "photos/jeera-aloo.jpg",
+  "source": "own"
+ },
+ "jeera-rice": {
+  "src": "photos/jeera-rice.jpg",
+  "source": "own"
+ },
+ "kabuli-chana-chaat": {
+  "src": "photos/kabuli-chana-chaat.jpg",
+  "source": "own"
+ },
+ "kadai-paneer": {
+  "src": "photos/kadai-paneer.jpg",
+  "source": "own"
+ },
+ "khaman-dhokla": {
+  "src": "photos/khaman-dhokla.jpg",
+  "source": "own"
+ },
+ "khandvi": {
+  "src": "photos/khandvi.jpg",
+  "source": "own"
+ },
+ "makki-ki-roti": {
+  "src": "photos/makki-ki-roti.jpg",
+  "source": "own"
+ },
+ "margherita-pizza": {
+  "src": "photos/margherita-pizza.jpg",
+  "source": "own"
+ },
+ "masala-corn": {
+  "src": "photos/masala-corn.jpg",
+  "source": "own"
+ },
+ "masala-oats": {
+  "src": "photos/masala-oats.jpg",
+  "source": "own"
+ },
+ "medu-vada": {
+  "src": "photos/medu-vada.jpg",
+  "source": "own"
+ },
+ "methi-thepla": {
+  "src": "photos/methi-thepla.jpg",
+  "source": "own"
+ },
+ "misal-pav": {
+  "src": "photos/misal-pav.jpg",
+  "source": "own"
+ },
+ "missi-roti": {
+  "src": "photos/missi-roti.jpg",
+  "source": "own"
+ },
+ "moong-dal-chilla": {
+  "src": "photos/moong-dal-chilla.jpg",
+  "source": "own"
+ },
+ "moong-dal-halwa": {
+  "src": "photos/moong-dal-halwa.jpg",
+  "source": "own"
+ },
+ "onion-pakora": {
+  "src": "photos/onion-pakora.jpg",
+  "source": "own"
+ },
+ "palak-paneer": {
+  "src": "photos/palak-paneer.jpg",
+  "source": "own"
+ },
+ "paneer-butter-masala": {
+  "src": "photos/paneer-butter-masala.jpg",
+  "source": "own"
+ },
+ "paneer-tikka": {
+  "src": "photos/paneer-tikka.jpg",
+  "source": "own"
+ },
+ "pav-bhaji": {
+  "src": "photos/pav-bhaji.jpg",
+  "source": "own"
+ },
+ "phulka-roti": {
+  "src": "photos/phulka-roti.jpg",
+  "source": "own"
+ },
+ "poha": {
+  "src": "photos/poha.jpg",
+  "source": "own"
+ },
  "red-sauce-pasta": {
   "src": "photos/red-sauce-pasta.jpg",
+  "source": "own"
+ },
+ "sabudana-vada": {
+  "src": "photos/sabudana-vada.jpg",
+  "source": "own"
+ },
+ "samosa": {
+  "src": "photos/samosa.jpg",
+  "source": "own"
+ },
+ "schezwan-noodles": {
+  "src": "photos/schezwan-noodles.jpg",
+  "source": "own"
+ },
+ "shakarkandi-chaat": {
+  "src": "photos/shakarkandi-chaat.jpg",
+  "source": "own"
+ },
+ "sooji-halwa": {
+  "src": "photos/sooji-halwa.jpg",
+  "source": "own"
+ },
+ "sprouts-chaat": {
+  "src": "photos/sprouts-chaat.jpg",
+  "source": "own"
+ },
+ "thalipeeth": {
+  "src": "photos/thalipeeth.jpg",
+  "source": "own"
+ },
+ "upma": {
+  "src": "photos/upma.jpg",
+  "source": "own"
+ },
+ "uttapam": {
+  "src": "photos/uttapam.jpg",
+  "source": "own"
+ },
+ "vada-pav": {
+  "src": "photos/vada-pav.jpg",
+  "source": "own"
+ },
+ "veg-biryani": {
+  "src": "photos/veg-biryani.jpg",
+  "source": "own"
+ },
+ "veg-cheese-grilled-sandwich": {
+  "src": "photos/veg-cheese-grilled-sandwich.jpg",
+  "source": "own"
+ },
+ "veg-fried-rice": {
+  "src": "photos/veg-fried-rice.jpg",
+  "source": "own"
+ },
+ "veg-hakka-noodles": {
+  "src": "photos/veg-hakka-noodles.jpg",
+  "source": "own"
+ },
+ "veg-momos": {
+  "src": "photos/veg-momos.jpg",
+  "source": "own"
+ },
+ "veg-pulao": {
+  "src": "photos/veg-pulao.jpg",
+  "source": "own"
+ },
+ "vegetable-sandwich": {
+  "src": "photos/vegetable-sandwich.jpg",
+  "source": "own"
+ },
+ "veggie-pizza": {
+  "src": "photos/veggie-pizza.jpg",
+  "source": "own"
+ },
+ "vermicelli-upma": {
+  "src": "photos/vermicelli-upma.jpg",
   "source": "own"
  }
 }
