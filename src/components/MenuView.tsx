@@ -1,6 +1,7 @@
-import { useCallback, useState, type ReactNode } from 'react';
+import { useCallback, useEffect, useState, type ReactNode } from 'react';
 import {
   MEAL_NAME,
+  cookSpeech,
   dayNote,
   MEAL_TYPES,
   WEEKDAYS,
@@ -24,6 +25,7 @@ import {
 } from '../engine';
 import { copyText } from '../lib/clipboard';
 import { shareWeekImage } from '../lib/weekImage';
+import { speakHindi, stopSpeaking } from '../lib/speak';
 import { DishCard } from './DishCard';
 import { DishPicker, type PickTarget } from './DishPicker';
 import { RateButtons } from './RateButtons';
@@ -32,7 +34,7 @@ import { TiffinCard, TiffinPlanner } from './Tiffin';
 import { FestivalCard, FestivalNudge, FestivalSheet, type SaveFestival } from './Festivals';
 import { DishPicture } from './DishPicture';
 import { ProteinWeek } from './ProteinWeek';
-import { ChaiIcon, CopyIcon, EditIcon, ImageIcon, MoonIcon, ShuffleIcon, SunIcon, SunriseIcon, SwapIcon, WhatsAppIcon } from './icons';
+import { ChaiIcon, CopyIcon, EditIcon, SpeakerIcon, ImageIcon, MoonIcon, ShuffleIcon, SunIcon, SunriseIcon, SwapIcon, WhatsAppIcon } from './icons';
 
 interface Props {
   plan: WeekPlan;
@@ -303,6 +305,33 @@ function NextUp({
   );
 }
 
+/** Reads the day's menu aloud in Hindi, so the cook can listen. */
+function ListenButton({ day, profile, isToday, notify }: { day: DayPlan; profile: FamilyProfile; isToday: boolean; notify: Props['notify'] }) {
+  const [speaking, setSpeaking] = useState(false);
+  useEffect(() => () => stopSpeaking(), [day.date]);
+  const tomorrow = toISODate(new Date(Date.now() + 864e5)) === day.date;
+  return (
+    <button
+      type="button"
+      className="btn btn-quiet"
+      aria-pressed={speaking}
+      onClick={() => {
+        if (speaking) {
+          stopSpeaking();
+          setSpeaking(false);
+          return;
+        }
+        const r = speakHindi(cookSpeech(day, profile, isToday ? 'आज' : tomorrow ? 'कल' : ''), () => setSpeaking(false));
+        if (r === 'unsupported') return notify('This browser can’t read aloud. Try Chrome on your phone.');
+        setSpeaking(true);
+        if (r === 'no-hindi-voice') notify('No Hindi voice on this device, so it may sound odd. On Android, add Hindi in Settings → Text-to-speech.');
+      }}
+    >
+      <SpeakerIcon /> {speaking ? 'Stop' : 'Listen in Hindi'}
+    </button>
+  );
+}
+
 function DayDetail({
   day,
   dayIndex,
@@ -401,6 +430,7 @@ function DayDetail({
           >
             <CopyIcon /> Copy Hindi message
           </button>
+          <ListenButton day={day} profile={profile} isToday={isToday} notify={notify} />
           <button className="btn btn-quiet" onClick={() => onShuffleDay(dayIndex)}>
             <ShuffleIcon /> Shuffle this day
           </button>

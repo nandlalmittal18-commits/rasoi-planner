@@ -81,6 +81,12 @@ export interface FamilyProfile {
   dislikes: string[];
   /** Optional: used to greet the cook in the Hindi message */
   cookName: string;
+  /** Cook's WhatsApp number with country code, digits only (e.g. 919812345678) */
+  cookPhone?: string;
+  /** Send tomorrow's menu to the cook every evening */
+  dailyCook?: boolean;
+  /** The family confirmed the cook agreed to get these messages */
+  cookConsent?: boolean;
   /** Thumbs up (1) or down (-1) per dish id. Liked dishes come up more often, others less; never a hard rule. */
   ratings?: Record<string, 1 | -1>;
   /** Festival days the family keeps (vrat, satvik or Jain food on those dates) */

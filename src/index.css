@@ -777,3 +777,11 @@ body { background: #fff; }
 .party-shop-group li strong { color: var(--primary); white-space: nowrap; }
 .party-shop > .btn { margin-top: 14px; }
 .fruit-chip { align-self: flex-start; margin-top: 3px; font-size: 0.78rem; font-weight: 700; padding: 2px 10px; border-radius: 999px; background: var(--breakfast-soft); color: #6b4300; }
+
+/* ---------- cook's daily WhatsApp ---------- */
+.phone-row { display: flex; align-items: center; gap: 8px; }
+.phone-cc { font-weight: 700; padding: 0 4px; color: var(--muted); }
+.phone-row .text-input { flex: 1; }
+.field-error { color: var(--vrat); font-size: 0.85rem; margin: 4px 0 0; }
+.consent { display: flex; align-items: flex-start; gap: 10px; font-size: 0.9rem; margin-top: 6px; cursor: pointer; }
+.consent input { width: 18px; height: 18px; margin-top: 2px; accent-color: var(--primary); flex: none; }

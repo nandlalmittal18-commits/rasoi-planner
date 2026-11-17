@@ -7,16 +7,20 @@ interface Props {
   isNew: boolean;
   /** Sign-in card, shown under the heading */
   account?: ReactNode;
+  /** Signed in with Google, so the server can send the daily cook message */
+  signedIn?: boolean;
   onSave: (p: FamilyProfile) => void;
   onReset: () => void;
 }
 
 const TIMES = [30, 45, 60, 90];
 
-export function FamilyForm({ initial, isNew, account, onSave, onReset }: Props) {
+export function FamilyForm({ initial, isNew, account, signedIn = false, onSave, onReset }: Props) {
   const [p, setP] = useState<FamilyProfile>(initial);
   const [confirmReset, setConfirmReset] = useState(false);
   const set = <K extends keyof FamilyProfile>(key: K, value: FamilyProfile[K]) => setP({ ...p, [key]: value });
+  const phoneDigits = (p.cookPhone ?? '').replace(/^91/, '');
+  const phoneOk = /^[6-9]\d{9}$/.test(phoneDigits);
   const toggleIn = <T,>(list: T[], v: T) => (list.includes(v) ? list.filter((x) => x !== v) : [...list, v]);
 
   return (
@@ -130,6 +134,45 @@ export function FamilyForm({ initial, isNew, account, onSave, onReset }: Props) 
           Cook’s name
         </label>
         <input id="cook-name" className="text-input" placeholder="e.g. Sunita" value={p.cookName} onChange={(e) => set('cookName', e.target.value)} />
+      </fieldset>
+
+      <fieldset className="card field">
+        <legend>Daily WhatsApp to the cook</legend>
+        <p className="field-help">Every evening at about 8 pm, your cook gets tomorrow’s menu and tonight’s soaking reminders in Hindi, from Rasoi Planner’s WhatsApp number.</p>
+        <label htmlFor="cook-phone" className="small">
+          Cook’s WhatsApp number
+        </label>
+        <div className="phone-row">
+          <span className="phone-cc">+91</span>
+          <input
+            id="cook-phone"
+            className="text-input"
+            inputMode="numeric"
+            autoComplete="off"
+            placeholder="10-digit mobile number"
+            value={phoneDigits}
+            onChange={(e) => setP({ ...p, cookPhone: e.target.value.replace(/\D/g, '').slice(0, 10) ? `91${e.target.value.replace(/\D/g, '').slice(0, 10)}` : '' })}
+          />
+        </div>
+        {phoneDigits && !phoneOk && <p className="field-error">Enter a 10-digit mobile number.</p>}
+        <div className="toggles">
+          <Toggle
+            id="daily-cook"
+            label="Send tomorrow’s menu every evening"
+            help={signedIn ? 'You can turn this off any time.' : 'Sign in above first, so the menu can be sent when the app is closed.'}
+            checked={!!p.dailyCook}
+            onChange={(v) => set('dailyCook', v)}
+          />
+        </div>
+        {p.dailyCook && (
+          <label className="consent">
+            <input type="checkbox" checked={!!p.cookConsent} onChange={(e) => set('cookConsent', e.target.checked)} />
+            <span>My cook has agreed to get these WhatsApp messages. They can reply STOP to end them.</span>
+          </label>
+        )}
+        {p.dailyCook && (!phoneOk || !p.cookConsent || !signedIn) && (
+          <p className="field-help">Messages start once {[!signedIn && 'you sign in', !phoneOk && 'the number is filled in', !p.cookConsent && 'the box above is ticked'].filter(Boolean).join(', ').replace(/, ([^,]*)$/, ' and $1')}.</p>
+        )}
       </fieldset>
 
       {p.dislikes.length > 0 && (

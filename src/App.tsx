@@ -310,6 +310,7 @@ export default function App() {
             initial={isSample ? BLANK_PROFILE : profile}
             isNew={isSample}
             account={accountCard}
+            signedIn={!!account}
             onSave={onSaveProfile}
             onReset={onReset}
           />

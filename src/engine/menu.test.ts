@@ -28,6 +28,8 @@ import {
   weekMessage,
   weekTable,
   FESTIVALS,
+  cookTemplateParams,
+  cookSpeech,
   kidsTiffinWeek,
   swapTiffinDay,
   tiffinMessage,
@@ -643,5 +645,32 @@ describe("kids' tiffin week", () => {
     expect(next[0]).toEqual(week[0]);
     expect(tiffinMessage(week, base)).toContain('*Mon 16 Nov:*');
     expect(tiffinCookMessage(week, { ...base, cookName: 'Sunita' })).toContain('फल:');
+  });
+});
+
+describe('daily message to the cook', () => {
+  it('fills the WhatsApp template with clean, non-empty Hindi values', () => {
+    const p = planFestival({ ...base, cookName: 'Sunita' }, 'ekadashi', ['2026-11-18'], ['2026-11-18'], 'vrat');
+    for (let seed = 1; seed <= 6; seed++) {
+      const plan = generateWeek(p, START, seed);
+      for (const day of plan.days) {
+        const v = cookTemplateParams(day, p);
+        expect(v).toHaveLength(7);
+        for (const x of v) {
+          expect(x.length).toBeGreaterThan(0);
+          expect(x).not.toMatch(/[\n\t]| {5}/);
+        }
+        expect(v[0]).toBe('Sunita');
+      }
+      expect(cookTemplateParams(plan.days[2], p)[1]).toBe('बुधवार, 18 नवंबर (एकादशी)');
+    }
+  });
+
+  it('reads the day aloud in plain Hindi', () => {
+    const plan = generateWeek({ ...base, cookName: 'Sunita' }, START, 1);
+    const text = cookSpeech(plan.days[0], { ...base, cookName: 'Sunita' });
+    expect(text.startsWith('नमस्ते Sunita जी।')).toBe(true);
+    expect(text).toContain('नाश्ते में');
+    expect(text).not.toMatch(/[*_🙏]/u);
   });
 });

@@ -20,4 +20,5 @@ A startup product that plans weekly menus for Indian households. Users: urban wo
 - Hard rules (vegetarian only, Jain, no onion-garlic, vrat days, festival days the family keeps, dislikes) must never be relaxed. Thumbs up/down ratings are soft.
 - Festival dates live in `src/engine/festivals.ts` (Nov 2026 to Dec 2027). Add the next year's dates before December 2027.
 - User-facing text: short, plain English. Hindi strings are for the cook's WhatsApp message.
+- Daily cook WhatsApp: `server/cook-daily.ts` (uses `src/engine/cook.ts`) is bundled into `api/cook-daily.js` by `npm run api`; run it after changing either and commit both. Schedule in `vercel.json`. Setup and secret keys: `docs/whatsapp-setup.md`.
 - Never commit secrets. Put keys in `.env.local` (already git-ignored) and in Vercel's environment variables.
