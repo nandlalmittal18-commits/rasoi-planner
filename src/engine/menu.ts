@@ -204,6 +204,10 @@ function weight(d: Dish, c: Ctx): number {
     const level = proteinLevel(d.id);
     w *= level === 'high' ? 3 : level === 'good' ? 1.8 : 1;
   }
+  // The family's thumbs up / down: a strong nudge, not a rule.
+  const rating = c.profile.ratings?.[d.id];
+  if (rating === 1) w *= 3;
+  else if (rating === -1) w *= 0.2;
   if (c.isWeekend && (d.heaviness === 'Heavy' || d.difficulty === 'Hard')) w *= 1.8;
   if (!c.isWeekend && d.difficulty === 'Hard') w *= 0.4;
   if (c.meal === 'Dinner' && d.heaviness === 'Heavy') w *= 0.4;
@@ -647,4 +651,12 @@ export function setMainDish(
   day.meals[mealIndex] = { type: meal.type, label: meal.tiffin ? `${t.label} · tiffin` : t.label, tiffin: meal.tiffin, items };
   day.worldDinner = day.meals.some((m) => m.type === 'Dinner' && m.items.some((i) => i.role === 'worldMain'));
   return next;
+}
+
+/** Thumbs up (1), thumbs down (-1), or clear (0) for one dish. */
+export function rateDish(profile: FamilyProfile, dishId: string, value: 1 | -1 | 0): FamilyProfile {
+  const ratings = { ...(profile.ratings ?? {}) };
+  if (value === 0) delete ratings[dishId];
+  else ratings[dishId] = value;
+  return { ...profile, ratings };
 }

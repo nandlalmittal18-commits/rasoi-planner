@@ -78,6 +78,8 @@ export interface FamilyProfile {
   dislikes: string[];
   /** Optional: used to greet the cook in the Hindi message */
   cookName: string;
+  /** Thumbs up (1) or down (-1) per dish id. Liked dishes come up more often, others less; never a hard rule. */
+  ratings?: Record<string, 1 | -1>;
   /** Festival days the family keeps (vrat, satvik or Jain food on those dates) */
   festivalDays?: FestivalDay[];
 }

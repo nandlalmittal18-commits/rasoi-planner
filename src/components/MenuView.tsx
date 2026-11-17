@@ -25,6 +25,7 @@ import { copyText } from '../lib/clipboard';
 import { shareWeekImage } from '../lib/weekImage';
 import { DishCard } from './DishCard';
 import { DishPicker, type PickTarget } from './DishPicker';
+import { RateButtons } from './RateButtons';
 import { FestivalCard, FestivalNudge, FestivalSheet, type SaveFestival } from './Festivals';
 import { DishPicture } from './DishPicture';
 import { ProteinWeek } from './ProteinWeek';
@@ -35,6 +36,8 @@ interface Props {
   profile: FamilyProfile;
   isSample: boolean;
   onSwap: (day: number, meal: number, item: number) => void;
+  /** Thumbs up (1), down (-1) or clear (0) for a dish */
+  onRate: (dishId: string, v: 1 | -1 | 0) => void;
   /** Save which days of a festival the family keeps */
   onPlanFestival: SaveFestival;
   /** A person picked this dish as the main dish of a meal */
@@ -74,7 +77,7 @@ function greeting(now: Date): string {
   return h < 12 ? 'Good morning' : h < 17 ? 'Good afternoon' : 'Good evening';
 }
 
-export function MenuView({ plan, profile, isSample, onSwap, onChoose, onPlanFestival, onShuffleDay, onNewWeek, onSetUp, onOpenDish, onSignIn, notify }: Props) {
+export function MenuView({ plan, profile, isSample, onSwap, onChoose, onRate, onPlanFestival, onShuffleDay, onNewWeek, onSetUp, onOpenDish, onSignIn, notify }: Props) {
   const now = new Date();
   const todayIso = toISODate(now);
   const todayIndex = plan.days.findIndex((d) => d.date === todayIso);
@@ -162,6 +165,7 @@ export function MenuView({ plan, profile, isSample, onSwap, onChoose, onPlanFest
             isToday={day.date === todayIso}
             profile={profile}
             onSwap={onSwap}
+            onRate={onRate}
             onShuffleDay={onShuffleDay}
             onOpenDish={onOpenDish}
             notify={notify}
@@ -289,6 +293,7 @@ function DayDetail({
   isToday,
   profile,
   onSwap,
+  onRate,
   onShuffleDay,
   onOpenDish,
   notify,
@@ -298,6 +303,7 @@ function DayDetail({
   isToday: boolean;
   profile: FamilyProfile;
   onSwap: Props['onSwap'];
+  onRate: Props['onRate'];
   onShuffleDay: Props['onShuffleDay'];
   onOpenDish: Props['onOpenDish'];
   notify: Props['notify'];
@@ -357,7 +363,7 @@ function DayDetail({
       )}
 
       {day.meals.map((meal, m) => (
-        <MealCard key={meal.type} meal={meal} onSwap={(i) => onSwap(dayIndex, m, i)} onOpenDish={onOpenDish} />
+        <MealCard key={meal.type} meal={meal} ratings={profile.ratings} onRate={onRate} onSwap={(i) => onSwap(dayIndex, m, i)} onOpenDish={onOpenDish} />
       ))}
 
       <DayNutrition day={day} />
@@ -393,7 +399,19 @@ function DayDetail({
   );
 }
 
-function MealCard({ meal, onSwap, onOpenDish }: { meal: Meal; onSwap: (item: number) => void; onOpenDish: (id: string) => void }) {
+function MealCard({
+  meal,
+  ratings,
+  onSwap,
+  onRate,
+  onOpenDish,
+}: {
+  meal: Meal;
+  ratings?: FamilyProfile['ratings'];
+  onSwap: (item: number) => void;
+  onRate: (dishId: string, v: 1 | -1 | 0) => void;
+  onOpenDish: (id: string) => void;
+}) {
   const dishes = meal.items.map((i) => getDish(i.dishId));
   const longest = Math.max(0, ...dishes.map((d) => d.cookTime));
   const mains = meal.items.map((item, i) => ({ item, i, d: dishes[i] })).filter((x) => x.item.role !== 'base');
@@ -423,6 +441,7 @@ function MealCard({ meal, onSwap, onOpenDish }: { meal: Meal; onSwap: (item: num
                 <SwapIcon /> Swap
               </button>
             }
+            note={<RateButtons name={d.name} value={ratings?.[d.id]} onRate={(v) => onRate(d.id, v)} />}
           />
         ))}
       </div>

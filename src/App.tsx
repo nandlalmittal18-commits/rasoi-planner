@@ -1,6 +1,6 @@
 import { useCallback, useEffect, useRef, useState, type ReactNode } from 'react';
 import type { User } from '@supabase/supabase-js';
-import { MEAL_NAME, RULE_LABEL, WEEKDAYS_SHORT, festivalOn, formatDate, generateWeek, getDish, getFestival, planFestival, isPlanUsable, randomSeed, regenerateDay, setMainDish, swapItem, toISODate, type FamilyProfile, type FestivalRule, type WeekPlan } from './engine';
+import { MEAL_NAME, RULE_LABEL, WEEKDAYS_SHORT, festivalOn, formatDate, generateWeek, getDish, getFestival, planFestival, rateDish, isPlanUsable, randomSeed, regenerateDay, setMainDish, swapItem, toISODate, type FamilyProfile, type FestivalRule, type WeekPlan } from './engine';
 import { AccountCard, type Account } from './components/AccountCard';
 import { DishLibrary } from './components/DishLibrary';
 import { DishSheet } from './components/DishSheet';
@@ -187,6 +187,14 @@ export default function App() {
     notify(`${WEEKDAYS_SHORT[day.weekday]} ${MEAL_NAME[day.meals[m].type].toLowerCase()}: ${getDish(dishId).name}`);
   };
 
+  const onRate = (dishId: string, v: 1 | -1 | 0) => {
+    const next = rateDish(profile, dishId, v);
+    setProfile(next);
+    if (!isSample) storage.saveProfile(next);
+    const name = getDish(dishId).name;
+    notify(v === 1 ? `Noted. ${name} will come up more often.` : v === -1 ? `Noted. ${name} will come up less often.` : `Rating for ${name} cleared`);
+  };
+
   const onPlanFestival = (id: string, offered: string[], chosen: string[], rule: FestivalRule) => {
     const next = planFestival(profile, id, offered, chosen, rule);
     setProfile(next);
@@ -277,6 +285,7 @@ export default function App() {
             onSwap={onSwap}
             onChoose={onChoose}
             onPlanFestival={onPlanFestival}
+            onRate={onRate}
             onShuffleDay={(d) => setPlan(regenerateDay(plan, profile, d, randomSeed()))}
             onNewWeek={() => {
               setPlan(generateWeek(profile, today(), randomSeed()));

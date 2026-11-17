@@ -20,6 +20,7 @@ import {
   regenerateDay,
   swapItem,
   setMainDish,
+  rateDish,
   mainChoices,
   weekMessage,
   weekTable,
@@ -492,5 +493,30 @@ describe('festivals the family keeps', () => {
       { date: '2026-12-20', festival: 'ekadashi', rule: 'satvik' },
       { date: '2027-03-06', festival: 'maha-shivratri', rule: 'vrat' },
     ]);
+  });
+});
+
+describe('thumbs up / down', () => {
+  const count = (p: FamilyProfile, ids: string[]) => {
+    let n = 0;
+    for (let seed = 1; seed <= 30; seed++) for (const { dish } of everyItem(generateWeek(p, START, seed))) if (ids.includes(dish.id)) n++;
+    return n;
+  };
+
+  it('brings liked dishes more often and disliked ones less, without breaking rules', () => {
+    const liked = ['rajma', 'poha', 'paneer-butter-masala'];
+    const disliked = ['dal-tadka', 'jeera-aloo', 'upma'];
+    let p: FamilyProfile = base;
+    for (const id of liked) p = rateDish(p, id, 1);
+    for (const id of disliked) p = rateDish(p, id, -1);
+    expect(count(p, liked)).toBeGreaterThan(count(base, liked) * 1.5);
+    expect(count(p, disliked)).toBeLessThan(count(base, disliked) * 0.6);
+    // A thumbs up never beats a hard rule: Jain families still get no root vegetables.
+    const jain = rateDish({ ...base, jain: true }, 'aloo-paratha', 1);
+    for (const { dish } of everyItem(generateWeek(jain, START, 3))) expect(dish.jain, dish.name).toBe(true);
+  });
+
+  it('clears a rating', () => {
+    expect(rateDish(rateDish(base, 'rajma', 1), 'rajma', 0).ratings).toEqual({});
   });
 });

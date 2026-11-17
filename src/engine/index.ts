@@ -2,7 +2,7 @@
 // and the WhatsApp bot (next phase) will import the same functions.
 export * from './types';
 export { DISHES, getDish, hasDish, isStaple, REGION_GROUP, WORLD_CUISINES, isWorldCuisine, isWorldDish, cuisineOf } from './dishes';
-export { generateWeek, regenerateDay, swapItem, setMainDish, mainChoices, mealDishes, isPlanUsable, MEAL_TYPES, mealsFor, type DishChoice } from './menu';
+export { generateWeek, regenerateDay, swapItem, setMainDish, rateDish, mainChoices, mealDishes, isPlanUsable, MEAL_TYPES, mealsFor, type DishChoice } from './menu';
 export {
   getNutrition,
   proteinLevel,

@@ -711,3 +711,14 @@ body { background: #fff; }
 .day-check input { accent-color: var(--primary); width: 16px; height: 16px; margin: 0; }
 .day-check.is-on { border-color: var(--primary); background: var(--primary-soft); color: var(--primary); }
 .day-check:focus-within { outline: 2px solid var(--primary); outline-offset: 1px; }
+
+/* ---------- thumbs up / down ---------- */
+.rate { display: flex; gap: 6px; padding-top: 2px; }
+.rate-btn {
+  display: inline-flex; align-items: center; gap: 5px; min-height: 32px; padding: 4px 10px; border-radius: 999px;
+  border: 1.5px solid var(--line); background: #fff; color: var(--muted); font: inherit; font-size: 0.82rem; font-weight: 650; cursor: pointer;
+}
+.rate-btn:hover { border-color: var(--primary); color: var(--primary); }
+.rate-btn:focus-visible { outline: 2px solid var(--primary); outline-offset: 1px; }
+.rate-btn.is-up { border-color: var(--veg); background: #e7f6ec; color: var(--veg); }
+.rate-btn.is-down { border-color: var(--vrat); background: var(--vrat-soft); color: var(--vrat); }
