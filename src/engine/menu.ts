@@ -17,7 +17,7 @@
 import { festivalOn } from './festivals';
 import { proteinLevel } from './nutrition';
 import { ALL_DISHES, cuisineOf, getDish, hasDish, isRiceStaple, isStaple, isWorldCuisine, isWorldDish } from './dishes';
-import type { DayPlan, Dish, FamilyProfile, Meal, MealItem, MealType, RoleKey, Season, WeekPlan } from './types';
+import type { DayPlan, Dish, FamilyProfile, Meal, MealItem, MealType, RoleKey, Season, TiffinDay, WeekPlan } from './types';
 import {
   addDays,
   makeRng,
@@ -767,4 +767,83 @@ export function swapPartyCourse(menu: PartyMenu, profile: FamilyProfile, index: 
   if (!d) return menu;
   const courses = menu.courses.map((x, i) => (i === index ? { ...x, dishId: d.id } : x));
   return { ...menu, courses };
+}
+
+// ---------------------------------------------------------------- kids' tiffin week
+
+/** Fruits for the tiffin, by season, with Hindi names for the cook. */
+export const TIFFIN_FRUITS: Record<Exclude<Season, 'All'>, { en: string; hi: string }[]> = {
+  Winter: [
+    { en: 'Apple', hi: 'सेब' }, { en: 'Orange', hi: 'संतरा' }, { en: 'Guava', hi: 'अमरूद' }, { en: 'Banana', hi: 'केला' },
+    { en: 'Grapes', hi: 'अंगूर' }, { en: 'Pomegranate', hi: 'अनार' }, { en: 'Chikoo', hi: 'चीकू' },
+  ],
+  Summer: [
+    { en: 'Mango', hi: 'आम' }, { en: 'Watermelon', hi: 'तरबूज़' }, { en: 'Banana', hi: 'केला' }, { en: 'Grapes', hi: 'अंगूर' },
+    { en: 'Muskmelon', hi: 'खरबूजा' }, { en: 'Apple', hi: 'सेब' },
+  ],
+  Monsoon: [
+    { en: 'Apple', hi: 'सेब' }, { en: 'Banana', hi: 'केला' }, { en: 'Pear', hi: 'नाशपाती' }, { en: 'Pomegranate', hi: 'अनार' },
+    { en: 'Papaya', hi: 'पपीता' },
+  ],
+};
+
+export function fruitHindi(en: string): string {
+  for (const list of Object.values(TIFFIN_FRUITS)) for (const f of list) if (f.en === en) return f.hi;
+  return en;
+}
+
+/** Quick in the morning, travels well, not heavy; a dry sabzi goes with roti or paratha. */
+const tiffinMain = (d: Dish) =>
+  d.tiffin && d.heaviness !== 'Heavy' && d.cookTime <= 30 && !isStaple(d) &&
+  (['Breakfast', 'Rice', 'One-Pot Meal', 'Paneer', 'World Main'].includes(d.category) || d.category === 'Sabzi (Dry)') &&
+  (d.slots.includes('Breakfast') || d.slots.includes('Lunch'));
+
+function tiffinCtx(plan: WeekPlan, profile: FamilyProfile, dayIndex: number, used: Set<string>): Ctx {
+  const c = makeCtx(profile, plan.days[dayIndex], 'Lunch', used, false);
+  // Children usually don't keep the family's vrat; Jain or satvik days still apply.
+  return { ...c, isFast: false, tiffin: true, isWeekend: false };
+}
+
+function pickTiffin(plan: WeekPlan, profile: FamilyProfile, dayIndex: number, used: Set<string>, rng: Rng, exclude: Set<string>): Omit<TiffinDay, 'fruit' | 'date'> | null {
+  const c = tiffinCtx(plan, profile, dayIndex, used);
+  // Not the same dish the family eats that day.
+  c.inMeal = new Set(plan.days[dayIndex].meals.flatMap((m) => m.items.map((i) => i.dishId)));
+  for (let level = 0; level <= MAX_LEVEL; level++) {
+    const pool = ALL_DISHES.filter((d) => tiffinMain(d) && !exclude.has(d.id) && passes(d, c, level));
+    const d = weightedPick(pool, (x) => weight(x, c) * (x.kidFavourite ? 3 : 1), rng);
+    if (!d) continue;
+    if (d.category !== 'Sabzi (Dry)') return { dishId: d.id };
+    const bread = ALL_DISHES.filter((b) => (b.id === 'plain-paratha' || b.id === 'phulka-roti') && passes(b, c, MAX_LEVEL));
+    const withDish = weightedPick(bread, (b) => (b.id === 'plain-paratha' ? 2 : 1), rng);
+    return { dishId: d.id, withId: withDish?.id };
+  }
+  return null;
+}
+
+/** A tiffin for each school day (Monday to Friday) in this week's plan, with a fruit of the season. */
+export function kidsTiffinWeek(plan: WeekPlan, profile: FamilyProfile, seed: number): TiffinDay[] {
+  const rng = makeRng(seed);
+  const used = new Set<string>();
+  const out: TiffinDay[] = [];
+  plan.days.forEach((day, i) => {
+    if (day.weekday > 4) return;
+    const fruits = TIFFIN_FRUITS[seasonFor(parseISODate(day.date))];
+    const pick = pickTiffin(plan, profile, i, used, rng, new Set());
+    if (!pick) return;
+    used.add(pick.dishId);
+    const fruit = fruits[(out.length + Math.floor(rng() * fruits.length)) % fruits.length].en;
+    out.push({ date: day.date, ...pick, fruit: out.some((t) => t.fruit === fruit) ? fruits[(out.length * 3) % fruits.length].en : fruit });
+  });
+  return out;
+}
+
+/** Another tiffin for one school day. */
+export function swapTiffinDay(plan: WeekPlan, profile: FamilyProfile, tiffin: TiffinDay[], index: number, seed: number): TiffinDay[] {
+  const t = tiffin[index];
+  const dayIndex = plan.days.findIndex((d) => d.date === t.date);
+  if (dayIndex < 0) return tiffin;
+  const used = new Set(tiffin.filter((_, i) => i !== index).map((x) => x.dishId));
+  const pick = pickTiffin(plan, profile, dayIndex, used, makeRng(seed), new Set([t.dishId]));
+  if (!pick) return tiffin;
+  return tiffin.map((x, i) => (i === index ? { date: x.date, ...pick, fruit: x.fruit } : x));
 }

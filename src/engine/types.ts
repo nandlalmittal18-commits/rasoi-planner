@@ -139,8 +139,21 @@ export interface DayPlan {
   meals: Meal[];
 }
 
+/** One school day's tiffin for the children. */
+export interface TiffinDay {
+  /** YYYY-MM-DD */
+  date: string;
+  dishId: string;
+  /** Roti or paratha packed with a dry sabzi */
+  withId?: string;
+  /** Fruit of the day (English name, see TIFFIN_FRUITS) */
+  fruit: string;
+}
+
 export interface WeekPlan {
   startDate: string;
   createdAt: string;
   days: DayPlan[];
+  /** Kids' tiffin for the school days of this week, once the family plans it */
+  kidsTiffin?: TiffinDay[];
 }

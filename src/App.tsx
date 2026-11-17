@@ -1,6 +1,6 @@
 import { useCallback, useEffect, useRef, useState, type ReactNode } from 'react';
 import type { User } from '@supabase/supabase-js';
-import { MEAL_NAME, RULE_LABEL, WEEKDAYS_SHORT, festivalOn, formatDate, generateWeek, getDish, getFestival, planFestival, rateDish, isPlanUsable, randomSeed, regenerateDay, setMainDish, swapItem, toISODate, type FamilyProfile, type FestivalRule, type WeekPlan } from './engine';
+import { MEAL_NAME, RULE_LABEL, WEEKDAYS_SHORT, festivalOn, formatDate, generateWeek, getDish, getFestival, planFestival, rateDish, isPlanUsable, randomSeed, regenerateDay, setMainDish, swapItem, toISODate, type FamilyProfile, type FestivalRule, type TiffinDay, type WeekPlan } from './engine';
 import { AccountCard, type Account } from './components/AccountCard';
 import { DishLibrary } from './components/DishLibrary';
 import { DishSheet } from './components/DishSheet';
@@ -187,6 +187,8 @@ export default function App() {
     notify(`${WEEKDAYS_SHORT[day.weekday]} ${MEAL_NAME[day.meals[m].type].toLowerCase()}: ${getDish(dishId).name}`);
   };
 
+  const onSetTiffin = useCallback((t: TiffinDay[]) => setPlan({ ...plan, kidsTiffin: t }), [plan]); // eslint-disable-line react-hooks/exhaustive-deps
+
   const onRate = (dishId: string, v: 1 | -1 | 0) => {
     const next = rateDish(profile, dishId, v);
     setProfile(next);
@@ -286,6 +288,7 @@ export default function App() {
             onChoose={onChoose}
             onPlanFestival={onPlanFestival}
             onRate={onRate}
+            onSetTiffin={onSetTiffin}
             onShuffleDay={(d) => setPlan(regenerateDay(plan, profile, d, randomSeed()))}
             onNewWeek={() => {
               setPlan(generateWeek(profile, today(), randomSeed()));

@@ -19,6 +19,7 @@ import {
   type FamilyProfile,
   type Meal,
   type MealType,
+  type TiffinDay,
   type WeekPlan,
 } from '../engine';
 import { copyText } from '../lib/clipboard';
@@ -27,6 +28,7 @@ import { DishCard } from './DishCard';
 import { DishPicker, type PickTarget } from './DishPicker';
 import { RateButtons } from './RateButtons';
 import { PartyCard, PartyPlanner } from './Party';
+import { TiffinCard, TiffinPlanner } from './Tiffin';
 import { FestivalCard, FestivalNudge, FestivalSheet, type SaveFestival } from './Festivals';
 import { DishPicture } from './DishPicture';
 import { ProteinWeek } from './ProteinWeek';
@@ -37,6 +39,8 @@ interface Props {
   profile: FamilyProfile;
   isSample: boolean;
   onSwap: (day: number, meal: number, item: number) => void;
+  /** Save this week's kids' tiffin plan */
+  onSetTiffin: (t: TiffinDay[]) => void;
   /** Thumbs up (1), down (-1) or clear (0) for a dish */
   onRate: (dishId: string, v: 1 | -1 | 0) => void;
   /** Save which days of a festival the family keeps */
@@ -78,7 +82,7 @@ function greeting(now: Date): string {
   return h < 12 ? 'Good morning' : h < 17 ? 'Good afternoon' : 'Good evening';
 }
 
-export function MenuView({ plan, profile, isSample, onSwap, onChoose, onRate, onPlanFestival, onShuffleDay, onNewWeek, onSetUp, onOpenDish, onSignIn, notify }: Props) {
+export function MenuView({ plan, profile, isSample, onSwap, onChoose, onSetTiffin, onRate, onPlanFestival, onShuffleDay, onNewWeek, onSetUp, onOpenDish, onSignIn, notify }: Props) {
   const now = new Date();
   const todayIso = toISODate(now);
   const todayIndex = plan.days.findIndex((d) => d.date === todayIso);
@@ -88,6 +92,9 @@ export function MenuView({ plan, profile, isSample, onSwap, onChoose, onRate, on
   const [making, setMaking] = useState(false);
   const [festivalOpen, setFestivalOpen] = useState<string | null>(null);
   const [partyOpen, setPartyOpen] = useState(false);
+  const [tiffinOpen, setTiffinOpen] = useState(false);
+  const closeTiffin = useCallback(() => setTiffinOpen(false), []);
+  const hasKids = (profile.kids ?? (profile.hasKids ? 1 : 0)) > 0;
   const closeParty = useCallback(() => setPartyOpen(false), []);
   const closeFestival = useCallback(() => setFestivalOpen(null), []);
 
@@ -181,6 +188,7 @@ export function MenuView({ plan, profile, isSample, onSwap, onChoose, onRate, on
         <aside className="menu-side stack" aria-label="This week">
           <ProteinWeek plan={plan} selected={selected} onSelect={setSelected} />
           <FestivalCard profile={profile} today={todayIso} onOpen={setFestivalOpen} />
+          {hasKids && <TiffinCard plan={plan} onOpen={() => setTiffinOpen(true)} />}
           <PartyCard onOpen={() => setPartyOpen(true)} />
           <div className="card share-week">
             <div>
@@ -198,6 +206,8 @@ export function MenuView({ plan, profile, isSample, onSwap, onChoose, onRate, on
           </div>
         </aside>
       </div>
+
+      <TiffinPlanner open={tiffinOpen} plan={plan} profile={profile} onSave={onSetTiffin} onClose={closeTiffin} onOpenDish={onOpenDish} />
 
       <PartyPlanner open={partyOpen} profile={profile} onClose={closeParty} onOpenDish={onOpenDish} />
 

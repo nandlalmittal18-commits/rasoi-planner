@@ -3,11 +3,11 @@
 import { getDish } from './dishes';
 import { getFestival } from './festivals';
 import { groceryForDishes } from './grocery';
-import type { PartyMenu } from './menu';
+import { fruitHindi, type PartyMenu } from './menu';
 import type { GroceryItem } from './grocery';
 import { GROCERY_GROUPS } from './grocery';
 import { prepForDay } from './prep';
-import type { DayPlan, FamilyProfile, MealType, WeekPlan } from './types';
+import type { DayPlan, FamilyProfile, MealType, TiffinDay, WeekPlan } from './types';
 import { WEEKDAYS, WEEKDAYS_HI, WEEKDAYS_SHORT, parseISODate } from './util';
 
 /** How each meal is named for people (English). */
@@ -181,6 +181,32 @@ export function partyCookMessage(menu: PartyMenu, profile: FamilyProfile, when?:
   const meal = menu.meal === 'Lunch' ? 'दोपहर का खाना' : 'रात का खाना';
   const lines = [`🎉 *${greet}${when ? `${when} ` : ''}${menu.guests} लोगों का ${meal}*`, ''];
   for (const [label, names] of partyLines(menu, (id) => getDish(id).hindi)) lines.push(`*${COURSE_HI[label] ?? label}:* ${names.join(', ')}`);
+  lines.push('', 'धन्यवाद 🙏');
+  return lines.join('\n');
+}
+
+/** The kids' tiffin for the week, in English, for the family. */
+export function tiffinMessage(tiffin: TiffinDay[], profile: FamilyProfile): string {
+  const who = profile.familyName.trim() ? `${profile.familyName.trim()} kids’` : 'Kids’';
+  const lines = [`🍱 *${who} tiffin this week*`, ''];
+  for (const t of tiffin) {
+    const day = parseISODate(t.date);
+    const food = [getDish(t.dishId).name, t.withId ? getDish(t.withId).name : ''].filter(Boolean).join(' + ');
+    lines.push(`*${WEEKDAYS_SHORT[(day.getDay() + 6) % 7]} ${formatDate(t.date)}:* ${food} · ${t.fruit}`);
+  }
+  lines.push('', '_Planned with Rasoi Planner_');
+  return lines.join('\n');
+}
+
+/** The same tiffin week in Hindi, for the cook. */
+export function tiffinCookMessage(tiffin: TiffinDay[], profile: FamilyProfile): string {
+  const greet = profile.cookName.trim() ? `${profile.cookName.trim()} जी, ` : '';
+  const lines = [`🍱 *${greet}इस हफ़्ते बच्चों का टिफ़िन*`, ''];
+  for (const t of tiffin) {
+    const day = parseISODate(t.date);
+    const food = [getDish(t.dishId).hindi, t.withId ? getDish(t.withId).hindi : ''].filter(Boolean).join(' + ');
+    lines.push(`*${WEEKDAYS_HI[(day.getDay() + 6) % 7]}:* ${food}, फल: ${fruitHindi(t.fruit)}`);
+  }
   lines.push('', 'धन्यवाद 🙏');
   return lines.join('\n');
 }

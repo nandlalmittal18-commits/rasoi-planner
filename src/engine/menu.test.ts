@@ -28,6 +28,10 @@ import {
   weekMessage,
   weekTable,
   FESTIVALS,
+  kidsTiffinWeek,
+  swapTiffinDay,
+  tiffinMessage,
+  tiffinCookMessage,
   partyMenu,
   swapPartyCourse,
   partyMessage,
@@ -609,5 +613,35 @@ describe('guest / party menu', () => {
     const big = partyShopping(m);
     const item = big.find((i) => i.grams)!;
     expect(item.grams! / small.find((x) => x.key === item.key)!.grams!).toBeCloseTo(2, 5);
+  });
+});
+
+describe("kids' tiffin week", () => {
+  it('packs a quick, tiffin-friendly dish and a fruit each school day, no repeats', () => {
+    const jain: FamilyProfile = { ...base, jain: true, fastDays: [1] };
+    for (let seed = 1; seed <= 8; seed++) {
+      const plan = generateWeek(jain, START, seed);
+      const week = kidsTiffinWeek(plan, jain, seed);
+      expect(week.map((t) => t.date)).toEqual(plan.days.filter((d) => d.weekday <= 4).map((d) => d.date));
+      expect(new Set(week.map((t) => t.dishId)).size).toBe(week.length);
+      for (const t of week) {
+        const d = getDish(t.dishId);
+        expect(d.tiffin, d.name).toBe(true);
+        expect(d.jain, d.name).toBe(true);
+        expect(d.cookTime).toBeLessThanOrEqual(30);
+        expect(t.fruit).toBeTruthy();
+        if (d.category === 'Sabzi (Dry)') expect(t.withId).toBeTruthy();
+      }
+    }
+  });
+
+  it('swaps one day and writes the messages', () => {
+    const plan = generateWeek(base, START, 3);
+    const week = kidsTiffinWeek(plan, base, 3);
+    const next = swapTiffinDay(plan, base, week, 2, 5);
+    expect(next[2].dishId).not.toBe(week[2].dishId);
+    expect(next[0]).toEqual(week[0]);
+    expect(tiffinMessage(week, base)).toContain('*Mon 16 Nov:*');
+    expect(tiffinCookMessage(week, { ...base, cookName: 'Sunita' })).toContain('फल:');
   });
 });
