@@ -641,3 +641,43 @@ body { background: #fff; }
   .library .dcard-action { opacity: 0; transition: opacity 0.15s; }
   .library .dcard:hover .dcard-action, .library .dcard:focus-within .dcard-action, .library .dcard.is-dimmed .dcard-action { opacity: 1; }
 }
+
+/* ---------- week at a glance: change a dish ---------- */
+.glance-head { display: flex; align-items: baseline; justify-content: space-between; gap: 12px; flex-wrap: wrap; margin-bottom: 8px; }
+.glance-head h3 { margin: 0; }
+.glance-dish {
+  display: inline-flex; align-items: flex-start; gap: 5px; width: 100%; text-align: left;
+  font: inherit; color: var(--ink); background: none; border: 0; padding: 4px 6px; margin: -4px -6px;
+  border-radius: 8px; cursor: pointer; overflow-wrap: anywhere;
+}
+.glance-dish svg { flex: none; margin-top: 3px; color: var(--primary); opacity: 0.35; transition: opacity 0.15s; }
+.glance-dish:hover { background: var(--primary-soft); color: var(--primary); }
+.glance-dish:hover svg, .glance-dish:focus-visible svg { opacity: 1; }
+.glance-dish:focus-visible { outline: 2px solid var(--primary); outline-offset: 1px; }
+@media (pointer: coarse) { .glance-dish svg { opacity: 0.7; } }
+
+/* ---------- dish picker ---------- */
+.picker { display: flex; flex-direction: column; overflow: hidden; }
+.picker-head { display: flex; justify-content: space-between; align-items: flex-start; gap: 12px; padding: 20px 18px 10px; }
+.picker-head h2 { font-size: 1.45rem; margin: 2px 0 4px; }
+.sheet-close.static { position: static; flex: none; background: var(--surface-2); box-shadow: none; }
+.picker-tools { display: flex; gap: 8px; padding: 0 18px 12px; border-bottom: 1px solid var(--line); }
+.picker-tools .search { flex: 1; min-width: 0; }
+.picker-tools .btn { flex: none; white-space: nowrap; }
+.picker-body { overflow-y: auto; overscroll-behavior: contain; padding: 8px 18px 24px; display: flex; flex-direction: column; gap: 18px; }
+.picker-body h3 { font-size: 0.95rem; margin: 8px 0 4px; }
+.pick-list { list-style: none; margin: 6px 0 0; padding: 0; display: grid; gap: 4px; }
+.pick-row {
+  display: flex; align-items: center; gap: 12px; width: 100%; text-align: left; font: inherit; color: var(--ink);
+  background: none; border: 0; border-radius: 14px; padding: 6px; cursor: pointer;
+}
+.pick-row:hover { background: var(--surface-2); }
+.pick-row:focus-visible { outline: 2px solid var(--primary); }
+.pick-row .dish-photo-wrap, .pick-row .dish-art { flex: none; border-radius: 12px; overflow: hidden; }
+.pick-text { display: flex; flex-direction: column; gap: 2px; min-width: 0; }
+.pick-name { display: flex; align-items: center; gap: 6px; font-weight: 700; }
+.pick-meta { color: var(--muted); font-size: 0.82rem; }
+.share-week { flex-direction: column; align-items: stretch; }
+.share-week-actions { display: flex; gap: 8px; flex-wrap: wrap; }
+.share-week-actions .btn { flex: 1 1 auto; justify-content: center; }
+@media (min-width: 1000px) { .picker { max-height: 82vh; } }

@@ -19,6 +19,10 @@ import {
   prepForDay,
   regenerateDay,
   swapItem,
+  setMainDish,
+  mainChoices,
+  weekMessage,
+  weekTable,
   type FamilyProfile,
   type WeekPlan,
 } from './index';
@@ -376,5 +380,70 @@ describe('evening snack', () => {
     expect(next.days[0].meals[2].items[0].dishId).not.toBe(plan.days[0].meals[2].items[0].dishId);
     expect(dayMessage(plan.days[0], base)).toContain(`*${MEAL_NAME.Snack}:*`);
     expect(cookMessage(plan.days[0], base)).toContain('शाम का नाश्ता');
+  });
+});
+
+describe('choosing a dish by hand', () => {
+  const LUNCH = 1;
+
+  it('offers only dishes that keep every hard rule, best fits first', () => {
+    const strict: FamilyProfile = { ...base, jain: true, fastDays: [1], dislikes: ['rajma'] };
+    const plan = generateWeek(strict, START, 3);
+    for (const dayIndex of [0, 1]) {
+      for (let m = 0; m < plan.days[dayIndex].meals.length; m++) {
+        const choices = mainChoices(plan, strict, dayIndex, m);
+        const current = plan.days[dayIndex].meals[m].items.find((i) => i.role !== 'base')?.dishId;
+        // A Jain vrat day can have just one dish that fits, and it is already planned.
+        if (!plan.days[dayIndex].isFast) expect(choices.length, `day ${dayIndex} meal ${m}`).toBeGreaterThan(0);
+        for (const { dish } of choices) {
+          expect(dish.jain, dish.name).toBe(true);
+          expect(dish.id).not.toBe('rajma');
+          expect(dish.id).not.toBe(current);
+          if (plan.days[dayIndex].isFast) expect(dish.vrat, dish.name).toBe(true);
+        }
+        const firstMisfit = choices.findIndex((c) => !c.fits);
+        if (firstMisfit >= 0) expect(choices.slice(firstMisfit).every((c) => !c.fits)).toBe(true);
+      }
+    }
+  });
+
+  it('puts the chosen dish in the meal, re-picks roti/rice and leaves other days alone', () => {
+    const plan = generateWeek(base, START, 5);
+    const pick = mainChoices(plan, base, 2, LUNCH).find((c) => c.dish.category === 'Paneer')!;
+    const next = setMainDish(plan, base, 2, LUNCH, pick.dish.id, 1);
+    const meal = next.days[2].meals[LUNCH];
+    expect(meal.items[0].dishId).toBe(pick.dish.id);
+    expect(meal.items.some((i) => i.role === 'base')).toBe(true);
+    expect(meal.tiffin).toBe(plan.days[2].meals[LUNCH].tiffin);
+    for (const d of [0, 1, 3, 4, 5, 6]) expect(next.days[d]).toEqual(plan.days[d]);
+  });
+
+  it('can turn any dinner into a world-food dinner with a side of the same cuisine', () => {
+    const plan = generateWeek(base, START, 6);
+    const day = plan.days.findIndex((d) => !d.worldDinner);
+    const pasta = getDish('red-sauce-pasta');
+    const next = setMainDish(plan, base, day, DINNER, pasta.id, 2);
+    expect(next.days[day].meals[DINNER].items[0].dishId).toBe(pasta.id);
+    expect(next.days[day].worldDinner).toBe(true);
+    for (const i of next.days[day].meals[DINNER].items) expect(cuisineOf(getDish(i.dishId))).toBe(cuisineOf(pasta));
+  });
+
+  it('refuses a dish that breaks a hard rule', () => {
+    const jain: FamilyProfile = { ...base, jain: true };
+    const plan = generateWeek(jain, START, 7);
+    expect(setMainDish(plan, jain, 0, LUNCH, 'aloo-gobi', 1)).toBe(plan);
+  });
+
+  it('sends the week with every meal on its own line', () => {
+    const plan = generateWeek(base, START, 8);
+    const text = weekMessage(plan, base);
+    const table = weekTable(plan);
+    expect(table.meals).toEqual(['Breakfast', 'Lunch', 'Snack', 'Dinner']);
+    expect(table.rows).toHaveLength(7);
+    expect(text).toContain('*Mon 16 Nov*');
+    expect(text.match(/🍳 Breakfast:/g)).toHaveLength(7);
+    expect(text.match(/☕ Evening snack:/g)).toHaveLength(7);
+    expect(text.match(/🌙 Dinner:/g)).toHaveLength(7);
+    expect(text).not.toContain('\uFE0F');
   });
 });

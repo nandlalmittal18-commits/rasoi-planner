@@ -520,3 +520,115 @@ export function isPlanUsable(plan: WeekPlan | null | undefined): plan is WeekPla
 export function mealDishes(meal: Meal): Dish[] {
   return meal.items.map((i) => getDish(i.dishId));
 }
+
+// ---------------------------------------------------------------- choosing a dish by hand
+
+/** A dish the family could pick for a meal. `fits` is false when it bends a soft rule (repeat, long cook time…). */
+export interface DishChoice {
+  dish: Dish;
+  fits: boolean;
+}
+
+/** The meal patterns a person may pick from for this meal. Hard rules stay; weekday-only weights do not matter here. */
+function choosableTemplates(c: Ctx): Template[] {
+  if (c.isFast) return FAST_TEMPLATES[c.meal];
+  const list = TEMPLATES[c.meal].filter((t) => t.key !== 'nonveg' || canNonVeg(c));
+  if (c.meal === 'Lunch' || c.meal === 'Dinner') list.push(WORLD_TEMPLATE);
+  return list;
+}
+
+function mealCtx(plan: WeekPlan, profile: FamilyProfile, dayIndex: number, mealIndex: number): Ctx {
+  const day = plan.days[dayIndex];
+  const used = usedExcept(plan, (d, m) => d === dayIndex && m === mealIndex);
+  const dayHeavy = day.meals.some((m, i) => i !== mealIndex && isHeavyMeal(m));
+  return makeCtx(profile, day, day.meals[mealIndex].type, used, dayHeavy);
+}
+
+/** The main dish of a meal (not the roti or rice). */
+function mainOf(meal: Meal): MealItem | undefined {
+  return meal.items.find((i) => i.role !== 'base') ?? meal.items[0];
+}
+
+/**
+ * Every dish that could be the main dish of this meal.
+ * Hard rules (diet, Jain, no onion-garlic, vrat, "never suggest") are never relaxed.
+ * Dishes that keep every soft rule come first (`fits`), then the rest, each group A to Z.
+ */
+export function mainChoices(plan: WeekPlan, profile: FamilyProfile, dayIndex: number, mealIndex: number): DishChoice[] {
+  const c = mealCtx(plan, profile, dayIndex, mealIndex);
+  const current = mainOf(plan.days[dayIndex].meals[mealIndex])?.dishId;
+  const roles = new Set(choosableTemplates(c).map((t) => t.roles[0].role).filter((r) => r !== 'base')) as Set<Exclude<RoleKey, 'base'>>;
+  const out: DishChoice[] = [];
+  for (const d of ALL_DISHES) {
+    if (d.id === current || isStaple(d)) continue;
+    if (![...roles].some((role) => ROLE_MATCH[role](d, c.meal))) continue;
+    if (!passes(d, c, MAX_LEVEL)) continue;
+    out.push({ dish: d, fits: passes(d, c, 0) });
+  }
+  return out.sort((a, b) => Number(b.fits) - Number(a.fits) || a.dish.name.localeCompare(b.dish.name));
+}
+
+/**
+ * Make `dishId` the main dish of a meal, chosen by a person.
+ * The rest of the meal is rebuilt around it: the same dal or sabzi is kept where it still fits,
+ * roti/rice is re-picked to suit the new dish, and a world dish gets a side of its own cuisine.
+ * Returns the same plan if the dish breaks a hard rule here.
+ */
+export function setMainDish(
+  plan: WeekPlan,
+  profile: FamilyProfile,
+  dayIndex: number,
+  mealIndex: number,
+  dishId: string,
+  seed: number,
+): WeekPlan {
+  if (!hasDish(dishId)) return plan;
+  const dish = getDish(dishId);
+  const c = mealCtx(plan, profile, dayIndex, mealIndex);
+  if (!passes(dish, c, MAX_LEVEL)) return plan;
+  const rng = makeRng(seed);
+  const meal = plan.days[dayIndex].meals[mealIndex];
+  const currentRole = mainOf(meal)?.role;
+
+  const matching = choosableTemplates(c).filter((t) => t.roles[0].role !== 'base' && ROLE_MATCH[t.roles[0].role as Exclude<RoleKey, 'base'>](dish, c.meal));
+  if (!matching.length) return plan;
+  // Keep the meal's current pattern when the new dish does the same job; otherwise the most usual pattern for it.
+  const t =
+    matching.find((x) => x.roles[0].role === currentRole && meal.label.startsWith(x.label)) ??
+    matching.find((x) => x.roles[0].role === currentRole) ??
+    [...matching].sort((a, b) => Math.max(b.weight(c), 0.1) - Math.max(a.weight(c), 0.1))[0];
+
+  const first = t.roles[0].role;
+  const items: MealItem[] = [{ dishId, role: first }];
+  c.inMeal = new Set([dishId]);
+  c.dayHeavy = c.heavyBeforeMeal || dish.heaviness === 'Heavy';
+  for (const { role, optional } of t.roles.slice(1)) {
+    if (role === 'base') {
+      for (const b of pickBases(dish, c, rng)) {
+        items.push({ dishId: b.id, role: 'base' });
+        c.inMeal.add(b.id);
+      }
+      continue;
+    }
+    const extra = role === 'worldSide' ? sameCuisine(dish) : undefined;
+    // Keep what was already planned for this part of the meal if it still fits.
+    const kept = meal.items.find((i) => i.role === role && !c.inMeal.has(i.dishId));
+    const keptDish = kept && getDish(kept.dishId);
+    const d =
+      keptDish && passes(keptDish, c, MAX_LEVEL) && (!extra || extra(keptDish))
+        ? keptDish
+        : optional && !kept
+          ? null
+          : pickForRole(role, c, rng, undefined, MAX_LEVEL, extra);
+    if (!d) continue;
+    items.push({ dishId: d.id, role });
+    c.inMeal.add(d.id);
+    if (d.heaviness === 'Heavy') c.dayHeavy = true;
+  }
+
+  const next = structuredClone(plan);
+  const day = next.days[dayIndex];
+  day.meals[mealIndex] = { type: meal.type, label: meal.tiffin ? `${t.label} · tiffin` : t.label, tiffin: meal.tiffin, items };
+  day.worldDinner = day.meals.some((m) => m.type === 'Dinner' && m.items.some((i) => i.role === 'worldMain'));
+  return next;
+}

@@ -51,17 +51,58 @@ export function cookMessage(day: DayPlan, profile: FamilyProfile): string {
   return lines.join('\n');
 }
 
-/** The whole week in one short message. */
-export function weekMessage(plan: WeekPlan, profile: FamilyProfile): string {
-  const who = profile.familyName.trim() ? `${profile.familyName.trim()} family` : 'This';
-  const lines = [`🗓️ *${who} week menu*`];
-  for (const day of plan.days) {
-    const main = (t: MealType) => {
+/** One cell of the week table: the main dish, and what is served with it. */
+export interface WeekCell {
+  main: string;
+  with: string[];
+  tiffin: boolean;
+}
+
+/** The week as rows of a table (one per day), with a column for each meal the family plans. */
+export interface WeekTable {
+  meals: MealType[];
+  rows: { day: string; isFast: boolean; cells: (WeekCell | null)[] }[];
+}
+
+export function weekTable(plan: WeekPlan): WeekTable {
+  const order: MealType[] = ['Breakfast', 'Lunch', 'Snack', 'Dinner'];
+  const meals = order.filter((t) => plan.days.some((d) => d.meals.some((m) => m.type === t)));
+  const rows = plan.days.map((day) => ({
+    day: `${WEEKDAYS_SHORT[day.weekday]} ${formatDate(day.date)}`,
+    isFast: day.isFast,
+    cells: meals.map((t): WeekCell | null => {
       const meal = day.meals.find((m) => m.type === t);
-      const first = meal?.items.find((i) => i.role !== 'base') ?? meal?.items[0];
-      return first ? getDish(first.dishId).name : '–';
-    };
-    lines.push(`*${WEEKDAYS_SHORT[day.weekday]} ${formatDate(day.date)}${day.isFast ? ' 🙏' : ''}:* ${main('Breakfast')} · ${main('Lunch')} · ${main('Dinner')}`);
+      if (!meal?.items.length) return null;
+      const main = meal.items.find((i) => i.role !== 'base') ?? meal.items[0];
+      return {
+        main: getDish(main.dishId).name,
+        with: meal.items.filter((i) => i !== main).map((i) => getDish(i.dishId).name),
+        tiffin: meal.tiffin,
+      };
+    }),
+  }));
+  return { meals, rows };
+}
+
+/** Emoji with no variation selector, so they show the same on every phone and on WhatsApp Web. */
+const MEAL_EMOJI: Record<MealType, string> = { Breakfast: '🍳', Lunch: '🍛', Snack: '☕', Dinner: '🌙' };
+
+/** The whole week for WhatsApp: one block per day, every meal on its own line. */
+export function weekMessage(plan: WeekPlan, profile: FamilyProfile): string {
+  const who = profile.familyName.trim() ? `${profile.familyName.trim()} family` : 'Our';
+  const table = weekTable(plan);
+  const first = table.rows[0]?.day;
+  const last = table.rows[table.rows.length - 1]?.day;
+  const lines = [`📅 *${who} – week menu*`];
+  if (first && last) lines.push(`${first} to ${last}`);
+  for (const row of table.rows) {
+    lines.push('', `*${row.day}*${row.isFast ? '  🙏 vrat' : ''}`);
+    table.meals.forEach((t, i) => {
+      const cell = row.cells[i];
+      if (!cell) return;
+      const dishes = [cell.main, ...cell.with].join(', ');
+      lines.push(`${MEAL_EMOJI[t]} ${MEAL_NAME[t]}: ${dishes}${cell.tiffin ? ' _(tiffin)_' : ''}`);
+    });
   }
   lines.push('', '_Planned with Rasoi Planner_');
   return lines.join('\n');

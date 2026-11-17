@@ -2,7 +2,7 @@
 // and the WhatsApp bot (next phase) will import the same functions.
 export * from './types';
 export { DISHES, getDish, hasDish, isStaple, REGION_GROUP, WORLD_CUISINES, isWorldCuisine, isWorldDish, cuisineOf } from './dishes';
-export { generateWeek, regenerateDay, swapItem, mealDishes, isPlanUsable, MEAL_TYPES, mealsFor } from './menu';
+export { generateWeek, regenerateDay, swapItem, setMainDish, mainChoices, mealDishes, isPlanUsable, MEAL_TYPES, mealsFor, type DishChoice } from './menu';
 export {
   getNutrition,
   proteinLevel,
@@ -21,5 +21,5 @@ export {
 export { getRecipe, recipeMessage, type Recipe } from './recipes';
 export { prepForDay, prepTiming, type PrepReminder } from './prep';
 export { groceryList, GROCERY_GROUPS, type GroceryItem, type GroceryGroup } from './grocery';
-export { MEAL_NAME, dayMessage, cookMessage, weekMessage, groceryMessage, whatsappLink, formatDate } from './share';
+export { MEAL_NAME, dayMessage, cookMessage, weekMessage, weekTable, groceryMessage, whatsappLink, formatDate, type WeekTable, type WeekCell } from './share';
 export { randomSeed, toISODate, parseISODate, WEEKDAYS, WEEKDAYS_SHORT, WEEKDAYS_HI } from './util';

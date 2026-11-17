@@ -20,6 +20,10 @@ export const FamilyIcon = ({ size = 22 }: P) =>
   svg(size, <><circle cx="8.5" cy="8" r="2.8" /><circle cx="16.5" cy="9.5" r="2.2" /><path d="M3.5 19c.6-3.2 2.6-5 5-5s4.4 1.8 5 5M13.5 19c.4-2.4 1.6-3.7 3-3.7s2.7 1.3 3.2 3.7" /></>);
 export const ShuffleIcon = ({ size = 18 }: P) =>
   svg(size, <><path d="M4 7h3.5c4 0 5 10 9 10H20M17 14l3 3-3 3" /><path d="M4 17h3.5c1.4 0 2.4-1.2 3.2-2.7M13.3 9.7C14.1 8.2 15.1 7 16.5 7H20M17 4l3 3-3 3" /></>);
+export const EditIcon = ({ size = 14 }: P) =>
+  svg(size, <><path d="M4 20h4L19 9l-4-4L4 16v4z" /><path d="M13.5 6.5l4 4" /></>);
+export const ImageIcon = ({ size = 18 }: P) =>
+  svg(size, <><rect x="3" y="4" width="18" height="16" rx="2.5" /><circle cx="9" cy="10" r="1.8" /><path d="M21 16l-5-5-9 9" /></>);
 export const MoonIcon = ({ size = 16 }: P) => svg(size, <path d="M19 14.5A7.5 7.5 0 0 1 9.5 5a7.5 7.5 0 1 0 9.5 9.5z" />);
 export const SunIcon = ({ size = 16 }: P) =>
   svg(size, <><circle cx="12" cy="12" r="3.5" /><path d="M12 3v2M12 19v2M3 12h2M19 12h2M5.6 5.6l1.4 1.4M17 17l1.4 1.4M5.6 18.4 7 17M17 7l1.4-1.4" /></>);

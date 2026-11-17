@@ -1,6 +1,6 @@
 import { useCallback, useEffect, useRef, useState, type ReactNode } from 'react';
 import type { User } from '@supabase/supabase-js';
-import { generateWeek, isPlanUsable, randomSeed, regenerateDay, swapItem, toISODate, type FamilyProfile, type WeekPlan } from './engine';
+import { MEAL_NAME, WEEKDAYS_SHORT, generateWeek, getDish, isPlanUsable, randomSeed, regenerateDay, setMainDish, swapItem, toISODate, type FamilyProfile, type WeekPlan } from './engine';
 import { AccountCard, type Account } from './components/AccountCard';
 import { DishLibrary } from './components/DishLibrary';
 import { DishSheet } from './components/DishSheet';
@@ -179,6 +179,14 @@ export default function App() {
     else setPlan(next);
   };
 
+  const onChoose = (d: number, m: number, dishId: string) => {
+    const next = setMainDish(plan, profile, d, m, dishId, randomSeed());
+    if (next === plan) return notify('That dish doesn’t fit your family’s food rules here');
+    setPlan(next);
+    const day = next.days[d];
+    notify(`${WEEKDAYS_SHORT[day.weekday]} ${MEAL_NAME[day.meals[m].type].toLowerCase()}: ${getDish(dishId).name}`);
+  };
+
   const onSaveProfile = (p: FamilyProfile) => {
     storage.saveProfile(p);
     setProfile(p);
@@ -247,6 +255,7 @@ export default function App() {
             profile={profile}
             isSample={isSample}
             onSwap={onSwap}
+            onChoose={onChoose}
             onShuffleDay={(d) => setPlan(regenerateDay(plan, profile, d, randomSeed()))}
             onNewWeek={() => {
               setPlan(generateWeek(profile, today(), randomSeed()));

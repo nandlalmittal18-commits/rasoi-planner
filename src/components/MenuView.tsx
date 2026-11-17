@@ -1,4 +1,4 @@
-import { useState, type ReactNode } from 'react';
+import { useCallback, useState, type ReactNode } from 'react';
 import {
   MEAL_NAME,
   MEAL_TYPES,
@@ -21,16 +21,20 @@ import {
   type WeekPlan,
 } from '../engine';
 import { copyText } from '../lib/clipboard';
+import { shareWeekImage } from '../lib/weekImage';
 import { DishCard } from './DishCard';
+import { DishPicker, type PickTarget } from './DishPicker';
 import { DishPicture } from './DishPicture';
 import { ProteinWeek } from './ProteinWeek';
-import { ChaiIcon, CopyIcon, MoonIcon, ShuffleIcon, SunIcon, SunriseIcon, SwapIcon, WhatsAppIcon } from './icons';
+import { ChaiIcon, CopyIcon, EditIcon, ImageIcon, MoonIcon, ShuffleIcon, SunIcon, SunriseIcon, SwapIcon, WhatsAppIcon } from './icons';
 
 interface Props {
   plan: WeekPlan;
   profile: FamilyProfile;
   isSample: boolean;
   onSwap: (day: number, meal: number, item: number) => void;
+  /** A person picked this dish as the main dish of a meal */
+  onChoose: (day: number, meal: number, dishId: string) => void;
   onShuffleDay: (day: number) => void;
   onNewWeek: () => void;
   onSetUp: () => void;
@@ -66,11 +70,27 @@ function greeting(now: Date): string {
   return h < 12 ? 'Good morning' : h < 17 ? 'Good afternoon' : 'Good evening';
 }
 
-export function MenuView({ plan, profile, isSample, onSwap, onShuffleDay, onNewWeek, onSetUp, onOpenDish, onSignIn, notify }: Props) {
+export function MenuView({ plan, profile, isSample, onSwap, onChoose, onShuffleDay, onNewWeek, onSetUp, onOpenDish, onSignIn, notify }: Props) {
   const now = new Date();
   const todayIso = toISODate(now);
   const todayIndex = plan.days.findIndex((d) => d.date === todayIso);
   const [selected, setSelected] = useState(Math.max(0, todayIndex));
+  const [picking, setPicking] = useState<PickTarget | null>(null);
+  const closePicker = useCallback(() => setPicking(null), []);
+  const [making, setMaking] = useState(false);
+
+  const sharePicture = async () => {
+    setMaking(true);
+    try {
+      const result = await shareWeekImage(plan, profile);
+      if (result === 'copied') notify('Picture copied. Open WhatsApp, pick a chat and press Ctrl + V to paste it.');
+      if (result === 'downloaded') notify('Picture saved to your downloads. Attach it in WhatsApp.');
+    } catch {
+      notify('Could not make the picture. Please try again.');
+    } finally {
+      setMaking(false);
+    }
+  };
   const day = plan.days[Math.min(selected, plan.days.length - 1)];
 
   return (
@@ -140,7 +160,7 @@ export function MenuView({ plan, profile, isSample, onSwap, onShuffleDay, onNewW
           />
         </div>
 
-          <WeekGlance plan={plan} selected={selected} onSelect={setSelected} />
+          <WeekGlance plan={plan} selected={selected} onSelect={setSelected} onChange={(day, meal) => setPicking({ day, meal })} />
         </div>
 
         <aside className="menu-side stack" aria-label="This week">
@@ -148,14 +168,35 @@ export function MenuView({ plan, profile, isSample, onSwap, onShuffleDay, onNewW
           <div className="card share-week">
             <div>
               <h3>Share the whole week</h3>
-              <p className="muted small">One message with every day’s main dishes.</p>
+              <p className="muted small">Send it as a message, or as a picture of the full table.</p>
             </div>
-            <a className="btn btn-wa" href={whatsappLink(weekMessage(plan, profile))} target="_blank" rel="noopener noreferrer">
-              <WhatsAppIcon /> Share week
-            </a>
+            <div className="share-week-actions">
+              <a className="btn btn-wa" href={whatsappLink(weekMessage(plan, profile))} target="_blank" rel="noopener noreferrer">
+                <WhatsAppIcon /> Send as message
+              </a>
+              <button type="button" className="btn btn-quiet" onClick={sharePicture} disabled={making}>
+                <ImageIcon /> {making ? 'Making picture…' : 'Share as picture'}
+              </button>
+            </div>
           </div>
         </aside>
       </div>
+
+      <DishPicker
+        target={picking}
+        plan={plan}
+        profile={profile}
+        onClose={closePicker}
+        onPick={(t, dishId) => {
+          setPicking(null);
+          onChoose(t.day, t.meal, dishId);
+        }}
+        onSurprise={(t) => {
+          setPicking(null);
+          const meal = plan.days[t.day].meals[t.meal];
+          onSwap(t.day, t.meal, Math.max(0, meal.items.findIndex((i) => i.role !== 'base')));
+        }}
+      />
     </div>
   );
 }
@@ -384,16 +425,26 @@ function MealCard({ meal, onSwap, onOpenDish }: { meal: Meal; onSwap: (item: num
   );
 }
 
-function WeekGlance({ plan, selected, onSelect }: { plan: WeekPlan; selected: number; onSelect: (i: number) => void }) {
-  const mainOf = (meal: Meal | undefined) => {
-    const item = meal && mainItem(meal);
-    return item ? getDish(item.dishId).name : '–';
-  };
+function WeekGlance({
+  plan,
+  selected,
+  onSelect,
+  onChange,
+}: {
+  plan: WeekPlan;
+  selected: number;
+  onSelect: (i: number) => void;
+  /** Open the dish chooser for one meal */
+  onChange: (day: number, meal: number) => void;
+}) {
   // Columns follow the meals in the plan (the evening snack only if the family plans one).
   const types = MEAL_TYPES.filter((t) => plan.days.some((d) => d.meals.some((m) => m.type === t)));
   return (
     <section className="card glance" aria-labelledby="glance-title">
-      <h3 id="glance-title">Week at a glance</h3>
+      <div className="glance-head">
+        <h3 id="glance-title">Week at a glance</h3>
+        <p className="muted small">Tap a dish to change it.</p>
+      </div>
       <div className="glance-scroll">
         <table>
           <thead>
@@ -415,9 +466,25 @@ function WeekGlance({ plan, selected, onSelect }: { plan: WeekPlan; selected: nu
                   </button>
                   {d.isFast && <span className="dot dot-vrat" aria-label="Vrat day" />}
                 </th>
-                {types.map((t) => (
-                  <td key={t}>{mainOf(d.meals.find((m) => m.type === t))}</td>
-                ))}
+                {types.map((t) => {
+                  const m = d.meals.findIndex((x) => x.type === t);
+                  const item = m >= 0 ? mainItem(d.meals[m]) : undefined;
+                  if (!item) return <td key={t}>–</td>;
+                  const name = getDish(item.dishId).name;
+                  return (
+                    <td key={t}>
+                      <button
+                        type="button"
+                        className="glance-dish"
+                        onClick={() => onChange(i, m)}
+                        aria-label={`${WEEKDAYS_SHORT[d.weekday]} ${MEAL_NAME[t]}: ${name}. Change`}
+                      >
+                        <span>{name}</span>
+                        <EditIcon />
+                      </button>
+                    </td>
+                  );
+                })}
               </tr>
             ))}
           </tbody>
