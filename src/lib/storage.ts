@@ -13,6 +13,8 @@ const KEYS = {
   profile: 'rasoi.profile.v1',
   plan: 'rasoi.plan.v1',
   grocery: 'rasoi.grocery.v1',
+  /** Grocery app chosen on the Shopping screen */
+  shopApp: 'rasoi.shopApp.v1',
   /** Old Wikipedia photo list; no longer used, cleared on start */
   photos: 'rasoi.photos.v1',
 };
@@ -147,6 +149,12 @@ export const storage = {
   },
 
   /** Ticked shopping items, keyed by the plan they belong to */
+  /** Grocery app the family orders from (kept on this phone only) */
+  loadShopApp: () => read<string>(KEYS.shopApp),
+  saveShopApp(app: string) {
+    write(KEYS.shopApp, app);
+  },
+
   loadTicked(planKey: string) {
     const saved = read<Ticked>(KEYS.grocery);
     return new Set(saved?.plan === planKey ? saved.keys : []);

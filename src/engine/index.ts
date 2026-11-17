@@ -20,7 +20,7 @@ export {
 } from './nutrition';
 export { getRecipe, recipeMessage, type Recipe } from './recipes';
 export { prepForDay, prepTiming, type PrepReminder } from './prep';
-export { groceryList, GROCERY_GROUPS, type GroceryItem, type GroceryGroup } from './grocery';
+export { groceryList, servingsFor, formatAmount, GROCERY_GROUPS, type GroceryItem, type GroceryGroup } from './grocery';
 export { MEAL_NAME, dayNote, dayMessage, cookMessage, weekMessage, weekTable, groceryMessage, whatsappLink, formatDate, type WeekTable, type WeekCell } from './share';
 export { randomSeed, toISODate, parseISODate, WEEKDAYS, WEEKDAYS_SHORT, WEEKDAYS_HI } from './util';
 export { FESTIVALS, RULE_LABEL, getFestival, upcomingFestivals, festivalOn, planFestival, type Festival } from './festivals';

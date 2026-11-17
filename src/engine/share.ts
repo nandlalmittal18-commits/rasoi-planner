@@ -133,7 +133,7 @@ export function groceryMessage(items: GroceryItem[], checked: Set<string>): stri
   const lines = ['🛒 *This week’s shopping list*'];
   for (const group of GROCERY_GROUPS) {
     const left = items.filter((i) => i.group === group && !checked.has(i.key));
-    if (left.length) lines.push('', `*${group}*`, ...left.map((i) => `• ${i.name}`));
+    if (left.length) lines.push('', `*${group}*`, ...left.map((i) => `• ${i.name}${i.amount ? ` – ${i.amount}` : ''}`));
   }
   return lines.join('\n');
 }

@@ -45,6 +45,22 @@ export function FamilyForm({ initial, isNew, account, onSave, onReset }: Props) 
       </fieldset>
 
       <fieldset className="card field">
+        <legend>Who eats at home?</legend>
+        <p className="field-help">Used for shopping amounts. Children count as a little over half a serving.</p>
+        <div className="steppers">
+          <Stepper id="adults" label="Adults" value={p.adults ?? 2} min={1} max={12} onChange={(v) => set('adults', v)} />
+          <Stepper
+            id="kids-count"
+            label="Children"
+            value={p.kids ?? (p.hasKids ? 1 : 0)}
+            min={0}
+            max={10}
+            onChange={(v) => setP({ ...p, kids: v, hasKids: v > 0 })}
+          />
+        </div>
+      </fieldset>
+
+      <fieldset className="card field">
         <legend>Food rules</legend>
         <p className="field-help">Every dish in Rasoi Planner is vegetarian. No meat, fish or eggs.</p>
         <div className="toggles">
@@ -94,7 +110,7 @@ export function FamilyForm({ initial, isNew, account, onSave, onReset }: Props) 
           ))}
         </div>
         <div className="toggles">
-          <Toggle id="kids" label="Children at home" help="Kid favourites come up more often" checked={p.hasKids} onChange={(v) => set('hasKids', v)} />
+          <Toggle id="kids" label="Children at home" help="Kid favourites come up more often" checked={p.hasKids} onChange={(v) => setP({ ...p, hasKids: v, kids: v ? Math.max(1, p.kids ?? 1) : 0 })} />
           <Toggle id="tiffin" label="Pack tiffin on weekdays" help="Weekday lunch will travel well in a lunchbox" checked={p.packsTiffin} onChange={(v) => set('packsTiffin', v)} />
           <Toggle id="snack" label="Evening snack" help="Plan a light chai-time snack every day" checked={p.eveningSnack} onChange={(v) => set('eveningSnack', v)} />
           <Toggle
@@ -186,6 +202,25 @@ function DayPicker({ id, value, onChange }: { id: string; value: number[]; onCha
           </button>
         );
       })}
+    </div>
+  );
+}
+
+function Stepper({ id, label, value, min, max, onChange }: { id: string; label: string; value: number; min: number; max: number; onChange: (v: number) => void }) {
+  return (
+    <div className="stepper" role="group" aria-labelledby={`${id}-label`}>
+      <span id={`${id}-label`} className="stepper-label">
+        {label}
+      </span>
+      <button type="button" className="stepper-btn" onClick={() => onChange(Math.max(min, value - 1))} disabled={value <= min} aria-label={`Fewer ${label.toLowerCase()}`}>
+        −
+      </button>
+      <output className="stepper-value" aria-live="polite">
+        {value}
+      </output>
+      <button type="button" className="stepper-btn" onClick={() => onChange(Math.min(max, value + 1))} disabled={value >= max} aria-label={`More ${label.toLowerCase()}`}>
+        +
+      </button>
     </div>
   );
 }

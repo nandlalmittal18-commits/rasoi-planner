@@ -66,6 +66,9 @@ export interface FamilyProfile {
   /** World-food dinners each week (Chinese, Italian…). 0 = Indian food only */
   worldMealsPerWeek: number;
   hasKids: boolean;
+  /** People who eat at home, for shopping amounts. Default 2 adults; children default to 1 if hasKids */
+  adults?: number;
+  kids?: number;
   /** Plan an evening (chai-time) snack every day */
   eveningSnack: boolean;
   /** Prefer protein-rich dishes (dals, paneer, eggs, sprouts…) */

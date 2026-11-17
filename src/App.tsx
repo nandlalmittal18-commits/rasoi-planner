@@ -297,7 +297,7 @@ export default function App() {
             notify={notify}
           />
         )}
-        {tab === 'grocery' && <GroceryView key={plan.createdAt} plan={plan} notify={notify} />}
+        {tab === 'grocery' && <GroceryView key={plan.createdAt} plan={plan} profile={profile} notify={notify} onEditFamily={() => go('family')} />}
         {tab === 'dishes' && (
           <DishLibrary profile={profile} plan={plan} today={toISODate(new Date())} onToggleDislike={onToggleDislike} onOpenDish={setOpenDish} onChoose={onChoose} />
         )}

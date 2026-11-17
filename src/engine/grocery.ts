@@ -1,5 +1,12 @@
+import amountsRaw from '../data/amounts.json';
 import { getDish } from './dishes';
-import type { WeekPlan } from './types';
+import type { FamilyProfile, WeekPlan } from './types';
+
+/** Grams (or ml) of each named ingredient in one adult serving, per dish. Built from scripts/nutrition. */
+const AMOUNTS = amountsRaw as Record<string, Record<string, number>>;
+
+/** Sold by volume, so shown in ml / L. */
+const LIQUIDS = new Set(['milk', 'buttermilk', 'coconut milk', 'cream']);
 
 export const GROCERY_GROUPS = [
   'Vegetables & herbs',
@@ -16,6 +23,26 @@ export interface GroceryItem {
   group: GroceryGroup;
   /** Names of the dishes this week that use it */
   dishes: string[];
+  /** Rough amount for the week for the whole family, in grams (ml for liquids). Missing for spices, sauces and batters. */
+  grams?: number;
+  /** The same amount, rounded up and written for a shop: "750 g", "1.5 kg", "500 ml" */
+  amount?: string;
+}
+
+/** Servings to plan per dish: adults count 1, children about 0.6. */
+export function servingsFor(profile: Pick<FamilyProfile, 'adults' | 'kids' | 'hasKids'>): number {
+  const adults = profile.adults ?? 2;
+  const kids = profile.kids ?? (profile.hasKids ? 1 : 0);
+  return Math.max(1, adults + 0.6 * kids);
+}
+
+/** Round up to an amount a shop sells, and write it with a unit. */
+export function formatAmount(grams: number, liquid = false): string {
+  const step = grams < 250 ? 50 : grams < 1000 ? 100 : 250;
+  const g = Math.max(step, Math.ceil(grams / step) * step);
+  if (g < 1000) return `${g} ${liquid ? 'ml' : 'g'}`;
+  const big = (g / 1000).toFixed(2).replace(/\.?0+$/, '');
+  return `${big} ${liquid ? 'L' : 'kg'}`;
 }
 
 // Checked in order: the first match wins ("coconut milk" is not dairy, "rice flour" is a flour).
@@ -38,8 +65,8 @@ function tidy(name: string): string {
   return n.charAt(0).toUpperCase() + n.slice(1);
 }
 
-/** Key ingredients for the whole week, merged and grouped like a shopping list. */
-export function groceryList(plan: WeekPlan): GroceryItem[] {
+/** Key ingredients for the whole week, merged and grouped like a shopping list, with rough amounts for `servings` people. */
+export function groceryList(plan: WeekPlan, servings = 1): GroceryItem[] {
   const map = new Map<string, GroceryItem>();
   for (const day of plan.days)
     for (const meal of day.meals)
@@ -49,9 +76,12 @@ export function groceryList(plan: WeekPlan): GroceryItem[] {
           const key = ing.toLowerCase().trim();
           const entry = map.get(key) ?? { key, name: tidy(ing), group: groupFor(ing), dishes: [] };
           if (!entry.dishes.includes(dish.name)) entry.dishes.push(dish.name);
+          const g = AMOUNTS[dish.id]?.[key];
+          if (g) entry.grams = (entry.grams ?? 0) + g * servings;
           map.set(key, entry);
         }
       }
+  for (const e of map.values()) if (e.grams) e.amount = formatAmount(e.grams, LIQUIDS.has(e.key));
   const order = (g: GroceryGroup) => GROCERY_GROUPS.indexOf(g);
   return [...map.values()].sort((a, b) => order(a.group) - order(b.group) || a.name.localeCompare(b.name));
 }

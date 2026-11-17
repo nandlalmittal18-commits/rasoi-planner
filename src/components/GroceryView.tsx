@@ -1,11 +1,31 @@
 import { useMemo, useState } from 'react';
-import { GROCERY_GROUPS, groceryList, groceryMessage, whatsappLink, type WeekPlan } from '../engine';
+import { GROCERY_GROUPS, groceryList, groceryMessage, servingsFor, whatsappLink, type FamilyProfile, type WeekPlan } from '../engine';
 import { copyText } from '../lib/clipboard';
 import { storage } from '../lib/storage';
 import { CopyIcon, WhatsAppIcon } from './icons';
 
-export function GroceryView({ plan, notify }: { plan: WeekPlan; notify: (msg: string) => void }) {
-  const items = useMemo(() => groceryList(plan), [plan]);
+/** Grocery apps with a search page we can open for one item. */
+const SHOPS = [
+  { key: 'blinkit', label: 'Blinkit', url: (q: string) => `https://blinkit.com/s/?q=${encodeURIComponent(q)}` },
+  { key: 'zepto', label: 'Zepto', url: (q: string) => `https://www.zepto.com/search?query=${encodeURIComponent(q)}` },
+  { key: 'bigbasket', label: 'BigBasket', url: (q: string) => `https://www.bigbasket.com/ps/?q=${encodeURIComponent(q)}` },
+];
+
+function peopleText(profile: FamilyProfile): string {
+  const adults = profile.adults ?? 2;
+  const kids = profile.kids ?? (profile.hasKids ? 1 : 0);
+  return `${adults} ${adults === 1 ? 'adult' : 'adults'}${kids ? ` and ${kids} ${kids === 1 ? 'child' : 'children'}` : ''}`;
+}
+
+export function GroceryView({ plan, profile, notify, onEditFamily }: { plan: WeekPlan; profile: FamilyProfile; notify: (msg: string) => void; onEditFamily: () => void }) {
+  const servings = servingsFor(profile);
+  const items = useMemo(() => groceryList(plan, servings), [plan, servings]);
+  const [shop, setShop] = useState(() => storage.loadShopApp() ?? 'blinkit');
+  const shopInfo = SHOPS.find((x) => x.key === shop) ?? SHOPS[0];
+  const pickShop = (k: string) => {
+    setShop(k);
+    storage.saveShopApp(k);
+  };
   const planKey = plan.createdAt;
   const [ticked, setTicked] = useState(() => storage.loadTicked(planKey));
   const left = items.filter((i) => !ticked.has(i.key)).length;
@@ -52,7 +72,23 @@ export function GroceryView({ plan, notify }: { plan: WeekPlan; notify: (msg: st
             </button>
           )}
         </div>
-        <p className="muted small">Main ingredients only. Tick what you already have at home; ticked items are left out of the list you send.</p>
+        <p className="muted small">
+          Rough amounts for {peopleText(profile)}, one serving each per dish (
+          <button type="button" className="link-btn" onClick={onEditFamily}>
+            change
+          </button>
+          ). Main ingredients only; spices and oil are left out. Tick what you already have at home; ticked items are left out of the list you send.
+        </p>
+        <div className="shop-pick">
+          <span className="small">Order from</span>
+          <div className="seg" role="radiogroup" aria-label="Order from">
+            {SHOPS.map((x) => (
+              <button type="button" key={x.key} role="radio" aria-checked={shop === x.key} className={`seg-btn${shop === x.key ? ' is-on' : ''}`} onClick={() => pickShop(x.key)}>
+                {x.label}
+              </button>
+            ))}
+          </div>
+        </div>
       </div>
 
       {GROCERY_GROUPS.map((group) => {
@@ -63,14 +99,22 @@ export function GroceryView({ plan, notify }: { plan: WeekPlan; notify: (msg: st
             <h3 id={`g-${group}`}>{group}</h3>
             <ul>
               {rows.map((i) => (
-                <li key={i.key}>
+                <li key={i.key} className="grocery-row">
                   <label className={`tick${ticked.has(i.key) ? ' is-ticked' : ''}`}>
                     <input type="checkbox" id={`tick-${i.key}`} checked={ticked.has(i.key)} onChange={() => toggle(i.key)} />
-                    <span className="tick-name">{i.name}</span>
+                    <span className="tick-name">
+                      {i.name}
+                      {i.amount && <span className="tick-amount">{i.amount}</span>}
+                    </span>
                     <span className="tick-for" title={i.dishes.join(', ')}>
                       {i.dishes.length === 1 ? i.dishes[0] : `${i.dishes.length} dishes`}
                     </span>
                   </label>
+                  {!ticked.has(i.key) && (
+                    <a className="buy-link" href={shopInfo.url(i.name)} target="_blank" rel="noopener noreferrer" aria-label={`Buy ${i.name} on ${shopInfo.label}`}>
+                      Buy
+                    </a>
+                  )}
                 </li>
               ))}
             </ul>

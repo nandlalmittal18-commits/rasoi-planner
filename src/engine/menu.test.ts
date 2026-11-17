@@ -15,6 +15,9 @@ import {
   generateWeek,
   getDish,
   groceryList,
+  servingsFor,
+  formatAmount,
+  groceryMessage,
   isStaple,
   prepForDay,
   regenerateDay,
@@ -292,6 +295,25 @@ describe('prep, grocery and messages', () => {
     expect(new Set(list.map((i) => i.key)).size).toBe(list.length);
     const potato = list.find((i) => i.key === 'potato');
     if (potato) expect(potato.group).toBe('Vegetables & herbs');
+  });
+
+  it('gives rough amounts for the family size, rounded to shop sizes', () => {
+    const plan = generateWeek(base, START, 2);
+    const one = groceryList(plan, 1);
+    const four = groceryList(plan, servingsFor({ adults: 3, kids: 2, hasKids: true }));
+    const withAmount = one.filter((i) => i.grams);
+    expect(withAmount.length).toBeGreaterThan(one.length / 2);
+    for (const i of withAmount) {
+      const big = four.find((x) => x.key === i.key)!;
+      expect(big.grams! / i.grams!).toBeCloseTo(4.2, 5);
+      expect(big.amount).toMatch(/^\d+(\.\d+)? (g|kg|ml|L)$/);
+    }
+    expect(formatAmount(120)).toBe('150 g');
+    expect(formatAmount(730)).toBe('800 g');
+    expect(formatAmount(1320)).toBe('1.5 kg');
+    expect(formatAmount(2060, true)).toBe('2.25 L');
+    expect(servingsFor({ hasKids: false })).toBe(2);
+    expect(groceryMessage(four, new Set())).toMatch(/• \w.* – \d/);
   });
 });
 

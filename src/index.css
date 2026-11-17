@@ -740,3 +740,21 @@ body { background: #fff; }
 .add-meal:hover { border-color: var(--primary); background: var(--primary-soft); }
 .add-meal:focus-visible { outline: 2px solid var(--primary); outline-offset: 1px; }
 .chip-more { cursor: pointer; min-height: 36px; padding: 4px 14px; border: 1.5px dashed var(--line); background: none; color: var(--primary); font-weight: 700; }
+
+/* ---------- shopping amounts & order ---------- */
+.grocery-row { display: flex; align-items: center; gap: 8px; }
+.grocery-row .tick { flex: 1; min-width: 0; }
+.tick-amount { margin-left: 8px; font-weight: 800; color: var(--primary); white-space: nowrap; }
+.buy-link {
+  flex: none; font-size: 0.8rem; font-weight: 700; color: var(--primary); text-decoration: none;
+  border: 1.5px solid var(--primary-soft); background: var(--primary-soft); border-radius: 999px; padding: 4px 12px;
+}
+.buy-link:hover { border-color: var(--primary); }
+.shop-pick { display: flex; align-items: center; gap: 10px; flex-wrap: wrap; }
+.steppers { display: flex; gap: 12px; flex-wrap: wrap; }
+.stepper { display: flex; align-items: center; gap: 8px; padding: 6px 8px 6px 14px; border: 1.5px solid var(--line); border-radius: 999px; background: #fff; }
+.stepper-label { font-weight: 650; margin-right: 4px; }
+.stepper-btn { width: 34px; height: 34px; border-radius: 50%; border: 0; background: var(--surface-2); font-size: 1.15rem; font-weight: 700; color: var(--ink); cursor: pointer; }
+.stepper-btn:disabled { opacity: 0.35; cursor: default; }
+.stepper-btn:focus-visible { outline: 2px solid var(--primary); }
+.stepper-value { min-width: 1.6ch; text-align: center; font-weight: 800; font-size: 1.05rem; }
