@@ -26,6 +26,7 @@ import { shareWeekImage } from '../lib/weekImage';
 import { DishCard } from './DishCard';
 import { DishPicker, type PickTarget } from './DishPicker';
 import { RateButtons } from './RateButtons';
+import { PartyCard, PartyPlanner } from './Party';
 import { FestivalCard, FestivalNudge, FestivalSheet, type SaveFestival } from './Festivals';
 import { DishPicture } from './DishPicture';
 import { ProteinWeek } from './ProteinWeek';
@@ -86,6 +87,8 @@ export function MenuView({ plan, profile, isSample, onSwap, onChoose, onRate, on
   const closePicker = useCallback(() => setPicking(null), []);
   const [making, setMaking] = useState(false);
   const [festivalOpen, setFestivalOpen] = useState<string | null>(null);
+  const [partyOpen, setPartyOpen] = useState(false);
+  const closeParty = useCallback(() => setPartyOpen(false), []);
   const closeFestival = useCallback(() => setFestivalOpen(null), []);
 
   const sharePicture = async () => {
@@ -178,6 +181,7 @@ export function MenuView({ plan, profile, isSample, onSwap, onChoose, onRate, on
         <aside className="menu-side stack" aria-label="This week">
           <ProteinWeek plan={plan} selected={selected} onSelect={setSelected} />
           <FestivalCard profile={profile} today={todayIso} onOpen={setFestivalOpen} />
+          <PartyCard onOpen={() => setPartyOpen(true)} />
           <div className="card share-week">
             <div>
               <h3>Share the whole week</h3>
@@ -194,6 +198,8 @@ export function MenuView({ plan, profile, isSample, onSwap, onChoose, onRate, on
           </div>
         </aside>
       </div>
+
+      <PartyPlanner open={partyOpen} profile={profile} onClose={closeParty} onOpenDish={onOpenDish} />
 
       <FestivalSheet
         festivalId={festivalOpen}

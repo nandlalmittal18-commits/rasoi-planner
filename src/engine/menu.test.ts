@@ -28,6 +28,11 @@ import {
   weekMessage,
   weekTable,
   FESTIVALS,
+  partyMenu,
+  swapPartyCourse,
+  partyMessage,
+  partyCookMessage,
+  partyShopping,
   cookFromFridge,
   placesFor,
   planFestival,
@@ -569,5 +574,40 @@ describe("what's in my fridge", () => {
     const places = placesFor(plan, base, 'kadai-paneer', plan.days[0].date);
     expect(places.length).toBeGreaterThan(0);
     for (const p of places) expect(['Lunch', 'Dinner']).toContain(p.type);
+  });
+});
+
+describe('guest / party menu', () => {
+  it('plans starters, mains, rice, roti, raita and a sweet, keeping food rules', () => {
+    const jain: FamilyProfile = { ...base, jain: true };
+    for (let seed = 1; seed <= 10; seed++) {
+      const m = partyMenu(jain, 12, 'Dinner', 'usual', seed);
+      const keys = m.courses.map((c) => c.key);
+      expect(keys.filter((k) => k === 'starter')).toHaveLength(2);
+      for (const k of ['paneer', 'dal', 'rice', 'bread', 'sweet']) expect(keys, `seed ${seed}`).toContain(k);
+      expect(new Set(m.courses.map((c) => c.dishId)).size).toBe(m.courses.length);
+      for (const c of m.courses) expect(getDish(c.dishId).jain, c.dishId).toBe(true);
+    }
+  });
+
+  it('makes a South Indian party without roti, and swaps one course', () => {
+    const m = partyMenu(base, 8, 'Lunch', 'South', 4);
+    const keys = m.courses.map((c) => c.key);
+    expect(keys).not.toContain('bread');
+    expect(m.courses.find((c) => c.label === 'Sambar or rasam')).toBeTruthy();
+    const i = m.courses.findIndex((c) => c.key === 'sweet');
+    const next = swapPartyCourse(m, base, i, 9);
+    expect(next.courses[i].dishId).not.toBe(m.courses[i].dishId);
+    expect(next.courses[i].label).toBe('Sweet');
+  });
+
+  it('shares the menu and scales shopping to the guests', () => {
+    const m = partyMenu(base, 10, 'Dinner', 'North', 2);
+    expect(partyMessage(m, base)).toContain('dinner for 10');
+    expect(partyCookMessage(m, { ...base, cookName: 'Sunita' })).toContain('Sunita जी');
+    const small = partyShopping({ ...m, guests: 5 });
+    const big = partyShopping(m);
+    const item = big.find((i) => i.grams)!;
+    expect(item.grams! / small.find((x) => x.key === item.key)!.grams!).toBeCloseTo(2, 5);
   });
 });

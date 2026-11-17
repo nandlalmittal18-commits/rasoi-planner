@@ -758,3 +758,21 @@ body { background: #fff; }
 .stepper-btn:disabled { opacity: 0.35; cursor: default; }
 .stepper-btn:focus-visible { outline: 2px solid var(--primary); }
 .stepper-value { min-width: 1.6ch; text-align: center; font-weight: 800; font-size: 1.05rem; }
+
+/* ---------- party menu ---------- */
+.party-card { display: flex; flex-direction: column; gap: 10px; align-items: flex-start; }
+.party-card h3 { margin: 0 0 2px; }
+.party-settings { display: flex; gap: 12px; flex-wrap: wrap; align-items: center; }
+.party-courses { list-style: none; margin: 0; padding: 0; display: grid; gap: 4px; }
+.party-course { display: flex; align-items: center; gap: 8px; }
+.party-dish { flex: 1; min-width: 0; display: flex; align-items: center; gap: 12px; text-align: left; font: inherit; color: var(--ink); background: none; border: 0; border-radius: 14px; padding: 6px; cursor: pointer; }
+.party-dish:hover { background: var(--surface-2); }
+.party-dish:focus-visible { outline: 2px solid var(--primary); }
+.party-dish .dish-photo-wrap, .party-dish .dish-art { flex: none; border-radius: 12px; overflow: hidden; }
+.party-shop { border-top: 1px solid var(--line); padding-top: 12px; }
+.party-shop summary { font-weight: 700; cursor: pointer; }
+.party-shop-group h4 { font-size: 0.88rem; margin: 12px 0 4px; color: var(--muted); }
+.party-shop-group ul { list-style: none; margin: 0; padding: 0; }
+.party-shop-group li { display: flex; justify-content: space-between; gap: 12px; padding: 5px 0; border-bottom: 1px solid var(--line); font-size: 0.92rem; }
+.party-shop-group li strong { color: var(--primary); white-space: nowrap; }
+.party-shop > .btn { margin-top: 14px; }

@@ -67,20 +67,23 @@ function tidy(name: string): string {
 
 /** Key ingredients for the whole week, merged and grouped like a shopping list, with rough amounts for `servings` people. */
 export function groceryList(plan: WeekPlan, servings = 1): GroceryItem[] {
+  return groceryForDishes(plan.days.flatMap((d) => d.meals.flatMap((m) => m.items.map((i) => i.dishId))), servings);
+}
+
+/** Shopping list for any set of dishes (each listed once per time it is cooked), for `servings` people. */
+export function groceryForDishes(dishIds: string[], servings = 1): GroceryItem[] {
   const map = new Map<string, GroceryItem>();
-  for (const day of plan.days)
-    for (const meal of day.meals)
-      for (const item of meal.items) {
-        const dish = getDish(item.dishId);
-        for (const ing of dish.ingredients) {
-          const key = ing.toLowerCase().trim();
-          const entry = map.get(key) ?? { key, name: tidy(ing), group: groupFor(ing), dishes: [] };
-          if (!entry.dishes.includes(dish.name)) entry.dishes.push(dish.name);
-          const g = AMOUNTS[dish.id]?.[key];
-          if (g) entry.grams = (entry.grams ?? 0) + g * servings;
-          map.set(key, entry);
-        }
-      }
+  for (const id of dishIds) {
+    const dish = getDish(id);
+    for (const ing of dish.ingredients) {
+      const key = ing.toLowerCase().trim();
+      const entry = map.get(key) ?? { key, name: tidy(ing), group: groupFor(ing), dishes: [] };
+      if (!entry.dishes.includes(dish.name)) entry.dishes.push(dish.name);
+      const g = AMOUNTS[dish.id]?.[key];
+      if (g) entry.grams = (entry.grams ?? 0) + g * servings;
+      map.set(key, entry);
+    }
+  }
   for (const e of map.values()) if (e.grams) e.amount = formatAmount(e.grams, LIQUIDS.has(e.key));
   const order = (g: GroceryGroup) => GROCERY_GROUPS.indexOf(g);
   return [...map.values()].sort((a, b) => order(a.group) - order(b.group) || a.name.localeCompare(b.name));

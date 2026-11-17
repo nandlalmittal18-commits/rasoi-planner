@@ -660,3 +660,111 @@ export function rateDish(profile: FamilyProfile, dishId: string, value: 1 | -1 |
   else ratings[dishId] = value;
   return { ...profile, ratings };
 }
+
+// ---------------------------------------------------------------- guests / party menu
+
+export type PartyStyle = 'usual' | 'North' | 'South' | 'West';
+export type PartyMeal = 'Lunch' | 'Dinner';
+
+export interface PartyCourse {
+  key: string;
+  /** Shown to people, e.g. "Starter" */
+  label: string;
+  dishId: string;
+}
+
+export interface PartyMenu {
+  guests: number;
+  meal: PartyMeal;
+  style: PartyStyle;
+  courses: PartyCourse[];
+}
+
+/** Snacks that work as party starters (not drinks or everyday chaats). */
+const PARTY_STARTERS = new Set([
+  'samosa', 'onion-pakora', 'aloo-tikki-chaat', 'hara-bhara-kabab', 'veg-momos', 'khandvi', 'paneer-tikka', 'masoor-dal-tikki',
+  'cheese-khakhra-chaat', 'crispy-crunchy-potatoes', 'khari-biscuit-pie', 'bhel-puri', 'masala-corn', 'veg-spring-rolls',
+  'gobi-manchurian', 'medu-vada', 'khaman-dhokla', 'chana-sundal', 'kabuli-chana-chaat',
+]);
+
+interface CourseRule {
+  key: string;
+  label: string;
+  test: (d: Dish, meal: PartyMeal) => boolean;
+}
+
+const notWorldMain = (d: Dish) => !isWorldDish(d) || PARTY_STARTERS.has(d.id);
+const COURSE_RULES: Record<string, CourseRule> = {
+  starter: { key: 'starter', label: 'Starter', test: (d) => PARTY_STARTERS.has(d.id) },
+  paneer: { key: 'paneer', label: 'Paneer', test: (d) => d.category === 'Paneer' && !['paneer-bhurji', 'tofu-bhurji', 'paneer-tikka'].includes(d.id) },
+  sabzi: { key: 'sabzi', label: 'Sabzi', test: (d, m) => d.category.startsWith('Sabzi') && d.slots.includes(m) },
+  dal: { key: 'dal', label: 'Dal', test: (d, m) => d.category === 'Dal / Legume' && d.slots.includes(m) },
+  rice: { key: 'rice', label: 'Rice', test: (d) => d.category === 'Rice' && !d.vrat && notWorldMain(d) && d.id !== 'curd-rice' },
+  bread: { key: 'bread', label: 'Roti', test: (d) => d.category === 'Bread' && d.id !== 'ragi-mudde' },
+  side: { key: 'side', label: 'Raita or salad', test: (d) => d.category === 'Side' && d.id !== 'chaas-masala-buttermilk' },
+  sweet: { key: 'sweet', label: 'Sweet', test: (d) => d.category === 'Sweet' && !d.vrat },
+  southRice: { key: 'rice', label: 'Rice dish', test: (d) => ['bisi-bele-bath', 'lemon-rice', 'puliyogare-tamarind-rice', 'coconut-rice', 'tomato-rice'].includes(d.id) },
+  curdRice: { key: 'curdRice', label: 'Curd rice', test: (d) => d.id === 'curd-rice' },
+  sambar: { key: 'dal', label: 'Sambar or rasam', test: (d) => d.id === 'sambar' || d.id === 'rasam' },
+};
+
+const PARTY_COURSES: Record<'default' | 'south', string[]> = {
+  default: ['starter', 'starter', 'paneer', 'sabzi', 'dal', 'rice', 'bread', 'side', 'sweet'],
+  south: ['starter', 'starter', 'southRice', 'sambar', 'sabzi', 'curdRice', 'sweet'],
+};
+
+function partyCtx(profile: FamilyProfile, style: PartyStyle, meal: PartyMeal): Ctx {
+  const cuisines = style === 'usual' ? profile.cuisines : [style];
+  return {
+    profile: { ...profile, cuisines, proteinFocus: false },
+    meal,
+    isWeekend: true, // festive dishes are welcome
+    isFast: false,
+    jain: profile.jain,
+    noOnionGarlic: profile.noOnionGarlic,
+    nonVegAllowed: false,
+    season: seasonFor(new Date()),
+    tiffin: false,
+    used: new Set(),
+    dayHeavy: false,
+    heavyBeforeMeal: false,
+    inMeal: new Set(),
+  };
+}
+
+function pickCourse(rule: CourseRule, c: Ctx, meal: PartyMeal, rng: Rng, exclude: Set<string>): Dish | null {
+  // Hard rules always (Jain, no onion-garlic, never suggest); soft rules don't matter for a party.
+  const pool = ALL_DISHES.filter((d) => rule.test(d, meal) && !exclude.has(d.id) && passes(d, c, MAX_LEVEL));
+  // Rich, festive dishes are a little more likely; South dishes for a South Indian party.
+  return weightedPick(pool, (d) => weight(d, c) * (d.heaviness === 'Heavy' ? 1.5 : 1) * (d.id === 'phulka-roti' ? 0.5 : 1), rng);
+}
+
+/** A menu for guests: starters, mains, rice, roti, raita and a sweet, keeping the family's food rules. */
+export function partyMenu(profile: FamilyProfile, guests: number, meal: PartyMeal, style: PartyStyle, seed: number): PartyMenu {
+  const rng = makeRng(seed);
+  const c = partyCtx(profile, style, meal);
+  const chosen = new Set<string>();
+  const courses: PartyCourse[] = [];
+  for (const key of PARTY_COURSES[style === 'South' ? 'south' : 'default']) {
+    const rule = COURSE_RULES[key];
+    const d = pickCourse(rule, c, meal, rng, chosen);
+    if (!d) continue;
+    chosen.add(d.id);
+    courses.push({ key: rule.key, label: rule.label, dishId: d.id });
+  }
+  return { guests, meal, style, courses };
+}
+
+/** Another dish for one course of a party menu. Returns the same menu if nothing else fits. */
+export function swapPartyCourse(menu: PartyMenu, profile: FamilyProfile, index: number, seed: number): PartyMenu {
+  const course = menu.courses[index];
+  const keys = PARTY_COURSES[menu.style === 'South' ? 'south' : 'default'];
+  const ruleKey = keys.find((k) => COURSE_RULES[k].key === course.key && COURSE_RULES[k].label === course.label) ?? course.key;
+  const rule = COURSE_RULES[ruleKey];
+  if (!rule) return menu;
+  const c = partyCtx(profile, menu.style, menu.meal);
+  const d = pickCourse(rule, c, menu.meal, makeRng(seed), new Set(menu.courses.map((x) => x.dishId)));
+  if (!d) return menu;
+  const courses = menu.courses.map((x, i) => (i === index ? { ...x, dishId: d.id } : x));
+  return { ...menu, courses };
+}

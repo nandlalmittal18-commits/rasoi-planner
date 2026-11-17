@@ -2,6 +2,8 @@
 
 import { getDish } from './dishes';
 import { getFestival } from './festivals';
+import { groceryForDishes } from './grocery';
+import type { PartyMenu } from './menu';
 import type { GroceryItem } from './grocery';
 import { GROCERY_GROUPS } from './grocery';
 import { prepForDay } from './prep';
@@ -140,4 +142,45 @@ export function groceryMessage(items: GroceryItem[], checked: Set<string>): stri
 
 export function whatsappLink(text: string): string {
   return `https://wa.me/?text=${encodeURIComponent(text)}`;
+}
+
+/** Guests eat a little less of each dish when there are many dishes. */
+export const PARTY_PORTION = 0.7;
+
+/** Shopping for a party menu, for all the guests (family included in the count). */
+export function partyShopping(menu: PartyMenu): GroceryItem[] {
+  return groceryForDishes(
+    menu.courses.map((c) => c.dishId),
+    menu.guests * PARTY_PORTION,
+  );
+}
+
+function partyLines(menu: PartyMenu, name: (id: string) => string): Map<string, string[]> {
+  const byLabel = new Map<string, string[]>();
+  for (const c of menu.courses) byLabel.set(c.label, [...(byLabel.get(c.label) ?? []), name(c.dishId)]);
+  return byLabel;
+}
+
+/** The party menu for family and guests, in English. */
+export function partyMessage(menu: PartyMenu, profile: FamilyProfile, when?: string): string {
+  const who = profile.familyName.trim() ? `${profile.familyName.trim()} family` : 'Our';
+  const lines = [`🎉 *${who} – ${menu.meal.toLowerCase()} for ${menu.guests}*${when ? `, ${when}` : ''}`, ''];
+  for (const [label, names] of partyLines(menu, (id) => getDish(id).name)) lines.push(`*${label}${names.length > 1 ? 's' : ''}:* ${names.join(', ')}`);
+  lines.push('', '_Planned with Rasoi Planner_');
+  return lines.join('\n');
+}
+
+const COURSE_HI: Record<string, string> = {
+  Starter: 'स्टार्टर', Paneer: 'पनीर', Sabzi: 'सब्ज़ी', Dal: 'दाल', Rice: 'चावल', Roti: 'रोटी', 'Raita or salad': 'रायता / सलाद',
+  Sweet: 'मीठा', 'Rice dish': 'चावल', 'Curd rice': 'दही चावल', 'Sambar or rasam': 'सांभर / रसम',
+};
+
+/** The same party menu in Hindi, for the cook, with the shopping amounts. */
+export function partyCookMessage(menu: PartyMenu, profile: FamilyProfile, when?: string): string {
+  const greet = profile.cookName.trim() ? `${profile.cookName.trim()} जी, ` : '';
+  const meal = menu.meal === 'Lunch' ? 'दोपहर का खाना' : 'रात का खाना';
+  const lines = [`🎉 *${greet}${when ? `${when} ` : ''}${menu.guests} लोगों का ${meal}*`, ''];
+  for (const [label, names] of partyLines(menu, (id) => getDish(id).hindi)) lines.push(`*${COURSE_HI[label] ?? label}:* ${names.join(', ')}`);
+  lines.push('', 'धन्यवाद 🙏');
+  return lines.join('\n');
 }
