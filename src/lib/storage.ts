@@ -65,7 +65,7 @@ remove(KEYS.photos);
 
 /** Profiles saved before a setting existed get its default here. */
 function withDefaults(p: FamilyProfile): FamilyProfile {
-  return { ...p, diet: 'Veg', nonVegDays: [], worldMealsPerWeek: p.worldMealsPerWeek ?? 1, eveningSnack: p.eveningSnack ?? true, proteinFocus: p.proteinFocus ?? false };
+  return { ...p, diet: 'Veg', nonVegDays: [], festivalDays: p.festivalDays ?? [], worldMealsPerWeek: p.worldMealsPerWeek ?? 1, eveningSnack: p.eveningSnack ?? true, proteinFocus: p.proteinFocus ?? false };
 }
 
 // ---------------------------------------------------------------- online copy

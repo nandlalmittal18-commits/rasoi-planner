@@ -2,7 +2,7 @@
 //
 // How it decides, in plain words:
 //  1. Hard rules are never broken: diet, non-veg days, Jain, no onion-garlic,
-//     vrat days and dishes the family dislikes.
+//     vrat days, festival days the family keeps and dishes the family dislikes.
 //  2. Soft rules are kept when possible and relaxed one by one only if nothing
 //     fits, in this order: in-season only, then weekday cooking time, then
 //     no dish twice in a week, and last tiffin-friendly lunch and at most one
@@ -14,6 +14,7 @@
 //     family's chosen number of "world-food dinners", plus the odd
 //     continental breakfast, and never on vrat days.
 
+import { festivalOn } from './festivals';
 import { proteinLevel } from './nutrition';
 import { ALL_DISHES, cuisineOf, getDish, hasDish, isRiceStaple, isStaple, isWorldCuisine, isWorldDish } from './dishes';
 import type { DayPlan, Dish, FamilyProfile, Meal, MealItem, MealType, RoleKey, Season, WeekPlan } from './types';
@@ -41,6 +42,10 @@ interface Ctx {
   meal: MealType;
   isWeekend: boolean;
   isFast: boolean;
+  /** Jain rules today (always, or for a festival like Paryushan) */
+  jain: boolean;
+  /** No onion or garlic today (always, or for a satvik festival day) */
+  noOnionGarlic: boolean;
   nonVegAllowed: boolean;
   season: Season;
   tiffin: boolean;
@@ -165,8 +170,8 @@ function passes(d: Dish, c: Ctx, level: number): boolean {
   if (p.dislikes.includes(d.id) || c.inMeal.has(d.id)) return false;
   if (d.diet === 'Egg' && !(p.diet !== 'Veg' && c.nonVegAllowed)) return false;
   if (d.diet === 'Non-Veg' && !(p.diet === 'Non-Veg' && c.nonVegAllowed)) return false;
-  if (p.jain && !d.jain) return false;
-  if (p.noOnionGarlic && !d.noOnionGarlic) return false;
+  if (c.jain && !d.jain) return false;
+  if (c.noOnionGarlic && !d.noOnionGarlic) return false;
   if (c.isFast && !d.vrat) return false;
   if ((p.worldMealsPerWeek ?? 1) === 0 && isWorldDish(d)) return false;
 
@@ -354,11 +359,16 @@ function buildMeal(c: Ctx, rng: Rng, world = false): Meal {
 
 function dayFlags(profile: FamilyProfile, date: Date) {
   const weekday = mondayIndex(date);
-  const isFast = profile.fastDays.includes(weekday);
+  // A festival the family keeps can only add rules for the day, never remove them.
+  const festival = festivalOn(profile, toISODate(date));
+  const isFast = profile.fastDays.includes(weekday) || festival?.rule === 'vrat';
   return {
     weekday,
     isWeekend: weekday >= 5,
     isFast,
+    festival,
+    jain: profile.jain || festival?.rule === 'jain',
+    noOnionGarlic: profile.noOnionGarlic || festival?.rule === 'satvik',
     nonVegAllowed: profile.diet !== 'Veg' && profile.nonVegDays.includes(weekday) && !isFast,
     season: seasonFor(date),
   };
@@ -371,6 +381,8 @@ function makeCtx(profile: FamilyProfile, day: DayPlan, meal: MealType, used: Set
     meal,
     isWeekend: f.isWeekend,
     isFast: f.isFast,
+    jain: f.jain,
+    noOnionGarlic: f.noOnionGarlic,
     nonVegAllowed: f.nonVegAllowed,
     season: f.season,
     tiffin: profile.packsTiffin && meal === 'Lunch' && !f.isWeekend && !f.isFast,
@@ -398,6 +410,10 @@ function buildDay(profile: FamilyProfile, date: Date, used: Set<string>, rng: Rn
     nonVegAllowed: f.nonVegAllowed,
     meals: [],
   };
+  if (f.festival) {
+    day.festival = f.festival.festival;
+    day.festivalRule = f.festival.rule;
+  }
   let dayHeavy = false;
   for (const meal of mealsFor(profile)) {
     const m = buildMeal(makeCtx(profile, day, meal, used, dayHeavy), rng, worldDinner && meal === 'Dinner');
@@ -417,7 +433,7 @@ export function generateWeek(profile: FamilyProfile, start: Date, seed: number):
   const used = new Set<string>();
   // Pick which evenings are world-food nights: never a vrat day, weekends a little more likely.
   const dates = Array.from({ length: 7 }, (_, i) => addDays(start, i));
-  const open = dates.map((_, i) => i).filter((i) => !profile.fastDays.includes(mondayIndex(dates[i])));
+  const open = dates.map((_, i) => i).filter((i) => !dayFlags(profile, dates[i]).isFast);
   const worldNights = new Set(
     weightedOrder(open, (i) => (mondayIndex(dates[i]) >= 5 ? 2 : 1), rng).slice(0, Math.max(0, profile.worldMealsPerWeek ?? 1)),
   );

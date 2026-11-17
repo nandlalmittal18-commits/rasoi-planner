@@ -681,3 +681,33 @@ body { background: #fff; }
 .share-week-actions { display: flex; gap: 8px; flex-wrap: wrap; }
 .share-week-actions .btn { flex: 1 1 auto; justify-content: center; }
 @media (min-width: 1000px) { .picker { max-height: 82vh; } }
+
+/* ---------- festivals ---------- */
+.festivals h3 { margin-bottom: 2px; }
+.festival-list { list-style: none; margin: 10px 0 0; padding: 0; display: grid; gap: 2px; }
+.festival-row {
+  display: flex; align-items: center; justify-content: space-between; gap: 10px; width: 100%;
+  text-align: left; font: inherit; color: var(--ink); background: none; border: 0; border-radius: 12px; padding: 8px; margin: 0 -8px; cursor: pointer;
+}
+.festival-row:hover { background: var(--surface-2); }
+.festival-row:focus-visible { outline: 2px solid var(--primary); }
+.festival-text { display: flex; flex-direction: column; gap: 1px; min-width: 0; }
+.festival-name { font-weight: 700; }
+.festival-hi { font-family: Hind, Outfit, sans-serif; font-weight: 500; color: var(--muted); font-size: 0.9em; margin-left: 4px; }
+.festival-status { flex: none; font-size: 0.8rem; font-weight: 700; padding: 4px 10px; border-radius: 999px; background: var(--primary-soft); color: var(--primary); }
+.festival-status.is-on { background: var(--vrat-soft); color: var(--vrat); }
+.festival-nudge {
+  display: flex; align-items: center; justify-content: space-between; gap: 12px; flex-wrap: wrap;
+  padding: 12px 14px; border-radius: 16px; background: var(--breakfast-soft); color: var(--ink);
+}
+.festival-nudge p { margin: 0; }
+.festival-field { border: 0; padding: 0; margin: 0; }
+.festival-field legend { font-weight: 700; margin-bottom: 8px; padding: 0; }
+.day-checks { display: flex; flex-wrap: wrap; gap: 8px; }
+.day-check {
+  display: inline-flex; align-items: center; gap: 8px; padding: 8px 14px; border-radius: 999px;
+  border: 1.5px solid var(--line); background: #fff; font-weight: 600; cursor: pointer;
+}
+.day-check input { accent-color: var(--primary); width: 16px; height: 16px; margin: 0; }
+.day-check.is-on { border-color: var(--primary); background: var(--primary-soft); color: var(--primary); }
+.day-check:focus-within { outline: 2px solid var(--primary); outline-offset: 1px; }

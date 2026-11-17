@@ -23,6 +23,9 @@ import {
   mainChoices,
   weekMessage,
   weekTable,
+  FESTIVALS,
+  planFestival,
+  upcomingFestivals,
   type FamilyProfile,
   type WeekPlan,
 } from './index';
@@ -445,5 +448,49 @@ describe('choosing a dish by hand', () => {
     expect(text.match(/☕ Evening snack:/g)).toHaveLength(7);
     expect(text.match(/🌙 Dinner:/g)).toHaveLength(7);
     expect(text).not.toContain('\uFE0F');
+  });
+});
+
+describe('festivals the family keeps', () => {
+  it('has festival dates in order, all real dates', () => {
+    for (const f of FESTIVALS) {
+      expect(f.dates.length, f.id).toBeGreaterThan(0);
+      expect([...f.dates].sort()).toEqual(f.dates);
+      for (const d of f.dates) expect(d).toMatch(/^202[6-9]-\d\d-\d\d$/);
+    }
+    const soon = upcomingFestivals('2026-11-17', 30);
+    expect(soon[0].festival.id).toBe('ekadashi');
+    expect(soon[0].dates).toEqual(['2026-12-04']);
+  });
+
+  it('makes chosen days vrat, satvik or Jain, and leaves other days alone', () => {
+    let p = planFestival(base, 'ekadashi', ['2026-11-18'], ['2026-11-18'], 'vrat'); // Wednesday
+    p = planFestival(p, 'karwa-chauth', ['2026-11-19'], ['2026-11-19'], 'satvik'); // Thursday
+    p = planFestival(p, 'paryushan', ['2026-11-20'], ['2026-11-20'], 'jain'); // Friday
+    for (let seed = 1; seed <= 5; seed++) {
+      const plan = generateWeek(p, START, seed);
+      const [, , wed, thu, fri] = plan.days;
+      expect(wed.isFast).toBe(true);
+      expect(wed.festival).toBe('ekadashi');
+      expect(wed.worldDinner).toBe(false);
+      for (const m of wed.meals) for (const i of m.items) expect(getDish(i.dishId).vrat, i.dishId).toBe(true);
+      for (const m of thu.meals) for (const i of m.items) expect(getDish(i.dishId).noOnionGarlic, i.dishId).toBe(true);
+      for (const m of fri.meals) for (const i of m.items) expect(getDish(i.dishId).jain, i.dishId).toBe(true);
+      expect(plan.days[0].isFast).toBe(false);
+    }
+    const plan = generateWeek(p, START, 1);
+    expect(dayMessage(plan.days[2], p)).toContain('🙏 Ekadashi');
+    expect(cookMessage(plan.days[4], p)).toContain('पर्युषण');
+    expect(weekMessage(plan, p)).toContain('🙏 Karwa Chauth (satvik, no onion-garlic)');
+  });
+
+  it('unticking a day removes it, and other festivals stay', () => {
+    let p = planFestival(base, 'ekadashi', ['2026-12-04', '2026-12-20'], ['2026-12-04', '2026-12-20'], 'vrat');
+    p = planFestival(p, 'maha-shivratri', ['2027-03-06'], ['2027-03-06'], 'vrat');
+    p = planFestival(p, 'ekadashi', ['2026-12-04', '2026-12-20'], ['2026-12-20'], 'satvik');
+    expect(p.festivalDays).toEqual([
+      { date: '2026-12-20', festival: 'ekadashi', rule: 'satvik' },
+      { date: '2027-03-06', festival: 'maha-shivratri', rule: 'vrat' },
+    ]);
   });
 });

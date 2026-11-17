@@ -39,6 +39,18 @@ export interface Dish {
 }
 
 /** Everything the planner needs to know about one household. */
+/** How the food changes on a festival day the family keeps. */
+export type FestivalRule = 'vrat' | 'satvik' | 'jain';
+
+/** One festival day the family chose to plan for. */
+export interface FestivalDay {
+  /** YYYY-MM-DD */
+  date: string;
+  /** Festival id, e.g. 'ekadashi' */
+  festival: string;
+  rule: FestivalRule;
+}
+
 export interface FamilyProfile {
   familyName: string;
   /** 'Egg' means vegetarian plus eggs */
@@ -66,6 +78,8 @@ export interface FamilyProfile {
   dislikes: string[];
   /** Optional: used to greet the cook in the Hindi message */
   cookName: string;
+  /** Festival days the family keeps (vrat, satvik or Jain food on those dates) */
+  festivalDays?: FestivalDay[];
 }
 
 /** The job a dish does inside a meal. Swaps keep the same role. */
@@ -113,6 +127,10 @@ export interface DayPlan {
   nonVegAllowed: boolean;
   /** Dinner this day is a world-food night */
   worldDinner?: boolean;
+  /** A festival the family keeps today (festival id) */
+  festival?: string;
+  /** The food rule for that festival */
+  festivalRule?: FestivalRule;
   meals: Meal[];
 }
 

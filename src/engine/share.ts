@@ -1,6 +1,7 @@
 // Ready-to-send WhatsApp messages: English for the family, Hindi for the cook.
 
 import { getDish } from './dishes';
+import { getFestival } from './festivals';
 import type { GroceryItem } from './grocery';
 import { GROCERY_GROUPS } from './grocery';
 import { prepForDay } from './prep';
@@ -11,6 +12,22 @@ import { WEEKDAYS, WEEKDAYS_HI, WEEKDAYS_SHORT, parseISODate } from './util';
 export const MEAL_NAME: Record<MealType, string> = { Breakfast: 'Breakfast', Lunch: 'Lunch', Snack: 'Evening snack', Dinner: 'Dinner' };
 const MEAL_HI: Record<MealType, string> = { Breakfast: 'नाश्ता', Lunch: 'दोपहर का खाना', Snack: 'शाम का नाश्ता', Dinner: 'रात का खाना' };
 
+const RULE_EN = { vrat: 'vrat', satvik: 'satvik, no onion-garlic', jain: 'Jain food' } as const;
+const RULE_HI = { vrat: 'व्रत', satvik: 'बिना प्याज़-लहसुन', jain: 'जैन खाना' } as const;
+
+/** A short note for the day: the festival the family keeps, or "Vrat". Empty on ordinary days. */
+export function dayNote(day: DayPlan): string {
+  const f = day.festival ? getFestival(day.festival) : undefined;
+  if (f && day.festivalRule) return day.festivalRule === 'vrat' ? f.name : `${f.name} (${RULE_EN[day.festivalRule]})`;
+  return day.isFast ? 'Vrat' : '';
+}
+
+function dayNoteHi(day: DayPlan): string {
+  const f = day.festival ? getFestival(day.festival) : undefined;
+  if (f && day.festivalRule) return `आज ${f.hindi} है (${RULE_HI[day.festivalRule]})`;
+  return day.isFast ? 'आज व्रत है' : '';
+}
+
 export function formatDate(iso: string): string {
   return parseISODate(iso).toLocaleDateString('en-IN', { day: 'numeric', month: 'short' });
 }
@@ -19,7 +36,8 @@ export function formatDate(iso: string): string {
 export function dayMessage(day: DayPlan, profile: FamilyProfile): string {
   const who = profile.familyName.trim() ? `${profile.familyName.trim()} family` : 'Our';
   const lines = [`🍽️ *${who} menu – ${WEEKDAYS[day.weekday]}, ${formatDate(day.date)}*`];
-  if (day.isFast) lines.push('🙏 Vrat day');
+  const note = dayNote(day);
+  if (note) lines.push(`🙏 ${note === 'Vrat' ? 'Vrat day' : note}`);
   for (const meal of day.meals) {
     const names = meal.items.map((i) => getDish(i.dishId).name).join(', ');
     lines.push(`*${MEAL_NAME[meal.type]}${meal.tiffin ? ' (tiffin)' : ''}:* ${names}`);
@@ -37,7 +55,8 @@ export function dayMessage(day: DayPlan, profile: FamilyProfile): string {
 export function cookMessage(day: DayPlan, profile: FamilyProfile): string {
   const greet = profile.cookName.trim() ? `${profile.cookName.trim()} जी, ` : '';
   const lines = [`🍽️ *${greet}${WEEKDAYS_HI[day.weekday]} (${formatDate(day.date)}) का खाना*`];
-  if (day.isFast) lines.push('🙏 आज व्रत है');
+  const noteHi = dayNoteHi(day);
+  if (noteHi) lines.push(`🙏 ${noteHi}`);
   for (const meal of day.meals) {
     const names = meal.items.map((i) => getDish(i.dishId).hindi).join(', ');
     lines.push(`*${MEAL_HI[meal.type]}${meal.tiffin ? ' (टिफ़िन)' : ''}:* ${names}`);
@@ -61,7 +80,8 @@ export interface WeekCell {
 /** The week as rows of a table (one per day), with a column for each meal the family plans. */
 export interface WeekTable {
   meals: MealType[];
-  rows: { day: string; isFast: boolean; cells: (WeekCell | null)[] }[];
+  /** `note` is the festival name or "Vrat"; empty on ordinary days */
+  rows: { day: string; isFast: boolean; note: string; cells: (WeekCell | null)[] }[];
 }
 
 export function weekTable(plan: WeekPlan): WeekTable {
@@ -70,6 +90,7 @@ export function weekTable(plan: WeekPlan): WeekTable {
   const rows = plan.days.map((day) => ({
     day: `${WEEKDAYS_SHORT[day.weekday]} ${formatDate(day.date)}`,
     isFast: day.isFast,
+    note: dayNote(day),
     cells: meals.map((t): WeekCell | null => {
       const meal = day.meals.find((m) => m.type === t);
       if (!meal?.items.length) return null;
@@ -96,7 +117,7 @@ export function weekMessage(plan: WeekPlan, profile: FamilyProfile): string {
   const lines = [`📅 *${who} – week menu*`];
   if (first && last) lines.push(`${first} to ${last}`);
   for (const row of table.rows) {
-    lines.push('', `*${row.day}*${row.isFast ? '  🙏 vrat' : ''}`);
+    lines.push('', `*${row.day}*${row.note ? `  🙏 ${row.note}` : ''}`);
     table.meals.forEach((t, i) => {
       const cell = row.cells[i];
       if (!cell) return;

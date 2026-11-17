@@ -58,7 +58,7 @@ export async function weekImage(plan: WeekPlan, profile: FamilyProfile): Promise
       return { main, with: rest };
     });
     const h = Math.max(
-      row.isFast ? 120 : 92,
+      row.note ? 120 + Math.max(0, Math.ceil(row.note.length / 12) - 1) * 24 : 92,
       ...cells.map((c) => CELL_PAD * 2 + c.main.length * (MAIN + 8) + (c.with.length ? 6 + c.with.length * (WITH + 7) : 0)),
     );
     return { row, cells, h };
@@ -99,7 +99,7 @@ export async function weekImage(plan: WeekPlan, profile: FamilyProfile): Promise
 
   // Rows
   laid.forEach(({ row, cells, h }, r) => {
-    ctx.fillStyle = row.isFast ? C.vratSoft : r % 2 ? C.stripe : C.white;
+    ctx.fillStyle = row.isFast || row.note ? C.vratSoft : r % 2 ? C.stripe : C.white;
     ctx.fillRect(PAD, y, W - PAD * 2, h);
     ctx.fillStyle = C.line;
     ctx.fillRect(PAD, y, W - PAD * 2, 2);
@@ -111,10 +111,10 @@ export async function weekImage(plan: WeekPlan, profile: FamilyProfile): Promise
     ctx.fillStyle = C.muted;
     ctx.font = `500 21px ${FONT}`;
     ctx.fillText(date.join(' '), PAD + CELL_PAD, y + CELL_PAD + 58);
-    if (row.isFast) {
+    if (row.note) {
       ctx.fillStyle = '#8a5a00';
       ctx.font = `700 19px ${FONT}`;
-      ctx.fillText('Vrat', PAD + CELL_PAD, y + CELL_PAD + 86);
+      wrap(ctx, row.note, DAY_COL - CELL_PAD - 6).forEach((l, k) => ctx.fillText(l, PAD + CELL_PAD, y + CELL_PAD + 86 + k * 24));
     }
 
     cells.forEach((c, i) => {

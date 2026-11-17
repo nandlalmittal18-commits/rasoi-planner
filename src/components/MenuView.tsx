@@ -1,6 +1,7 @@
 import { useCallback, useState, type ReactNode } from 'react';
 import {
   MEAL_NAME,
+  dayNote,
   MEAL_TYPES,
   WEEKDAYS,
   WEEKDAYS_SHORT,
@@ -24,6 +25,7 @@ import { copyText } from '../lib/clipboard';
 import { shareWeekImage } from '../lib/weekImage';
 import { DishCard } from './DishCard';
 import { DishPicker, type PickTarget } from './DishPicker';
+import { FestivalCard, FestivalNudge, FestivalSheet, type SaveFestival } from './Festivals';
 import { DishPicture } from './DishPicture';
 import { ProteinWeek } from './ProteinWeek';
 import { ChaiIcon, CopyIcon, EditIcon, ImageIcon, MoonIcon, ShuffleIcon, SunIcon, SunriseIcon, SwapIcon, WhatsAppIcon } from './icons';
@@ -33,6 +35,8 @@ interface Props {
   profile: FamilyProfile;
   isSample: boolean;
   onSwap: (day: number, meal: number, item: number) => void;
+  /** Save which days of a festival the family keeps */
+  onPlanFestival: SaveFestival;
   /** A person picked this dish as the main dish of a meal */
   onChoose: (day: number, meal: number, dishId: string) => void;
   onShuffleDay: (day: number) => void;
@@ -70,7 +74,7 @@ function greeting(now: Date): string {
   return h < 12 ? 'Good morning' : h < 17 ? 'Good afternoon' : 'Good evening';
 }
 
-export function MenuView({ plan, profile, isSample, onSwap, onChoose, onShuffleDay, onNewWeek, onSetUp, onOpenDish, onSignIn, notify }: Props) {
+export function MenuView({ plan, profile, isSample, onSwap, onChoose, onPlanFestival, onShuffleDay, onNewWeek, onSetUp, onOpenDish, onSignIn, notify }: Props) {
   const now = new Date();
   const todayIso = toISODate(now);
   const todayIndex = plan.days.findIndex((d) => d.date === todayIso);
@@ -78,6 +82,8 @@ export function MenuView({ plan, profile, isSample, onSwap, onChoose, onShuffleD
   const [picking, setPicking] = useState<PickTarget | null>(null);
   const closePicker = useCallback(() => setPicking(null), []);
   const [making, setMaking] = useState(false);
+  const [festivalOpen, setFestivalOpen] = useState<string | null>(null);
+  const closeFestival = useCallback(() => setFestivalOpen(null), []);
 
   const sharePicture = async () => {
     setMaking(true);
@@ -129,6 +135,8 @@ export function MenuView({ plan, profile, isSample, onSwap, onChoose, onShuffleD
           </button>
         </div>
 
+        <FestivalNudge plan={plan} profile={profile} today={todayIso} onOpen={setFestivalOpen} />
+
         <nav className="day-strip" aria-label="Choose a day">
           {plan.days.map((d, i) => (
             <button
@@ -140,7 +148,7 @@ export function MenuView({ plan, profile, isSample, onSwap, onChoose, onShuffleD
               <span className="day-pill-name">{WEEKDAYS_SHORT[d.weekday]}</span>
               <span className="day-pill-date">{parseISODate(d.date).getDate()}</span>
               <span className="day-pill-marks" aria-hidden="true">
-                {d.isFast && <span className="dot dot-vrat" />}
+                {(d.isFast || d.festival) && <span className="dot dot-vrat" />}
                 {d.worldDinner && <span className="dot dot-world" />}
               </span>
             </button>
@@ -165,6 +173,7 @@ export function MenuView({ plan, profile, isSample, onSwap, onChoose, onShuffleD
 
         <aside className="menu-side stack" aria-label="This week">
           <ProteinWeek plan={plan} selected={selected} onSelect={setSelected} />
+          <FestivalCard profile={profile} today={todayIso} onOpen={setFestivalOpen} />
           <div className="card share-week">
             <div>
               <h3>Share the whole week</h3>
@@ -181,6 +190,17 @@ export function MenuView({ plan, profile, isSample, onSwap, onChoose, onShuffleD
           </div>
         </aside>
       </div>
+
+      <FestivalSheet
+        festivalId={festivalOpen}
+        profile={profile}
+        today={todayIso}
+        onClose={closeFestival}
+        onSave={(id, offered, chosen, rule) => {
+          setFestivalOpen(null);
+          onPlanFestival(id, offered, chosen, rule);
+        }}
+      />
 
       <DishPicker
         target={picking}
@@ -296,7 +316,7 @@ function DayDetail({
         </h2>
         <div className="chips">
           {isToday && <span className="chip chip-today">Today</span>}
-          {day.isFast && <span className="chip chip-vrat">Vrat day</span>}
+          {dayNote(day) && <span className="chip chip-vrat">{dayNote(day) === 'Vrat' ? 'Vrat day' : dayNote(day)}</span>}
           {day.worldDinner && <span className="chip chip-world">World food night</span>}
           {day.weekday >= 5 && <span className="chip">Weekend</span>}
         </div>
@@ -464,7 +484,7 @@ function WeekGlance({
                   <button className="link-btn" onClick={() => onSelect(i)}>
                     {WEEKDAYS_SHORT[d.weekday]} {parseISODate(d.date).getDate()}
                   </button>
-                  {d.isFast && <span className="dot dot-vrat" aria-label="Vrat day" />}
+                  {(d.isFast || d.festival) && <span className="dot dot-vrat" aria-label={dayNote(d)} title={dayNote(d)} />}
                 </th>
                 {types.map((t) => {
                   const m = d.meals.findIndex((x) => x.type === t);

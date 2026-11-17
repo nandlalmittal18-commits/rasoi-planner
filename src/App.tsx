@@ -1,6 +1,6 @@
 import { useCallback, useEffect, useRef, useState, type ReactNode } from 'react';
 import type { User } from '@supabase/supabase-js';
-import { MEAL_NAME, WEEKDAYS_SHORT, generateWeek, getDish, isPlanUsable, randomSeed, regenerateDay, setMainDish, swapItem, toISODate, type FamilyProfile, type WeekPlan } from './engine';
+import { MEAL_NAME, RULE_LABEL, WEEKDAYS_SHORT, festivalOn, formatDate, generateWeek, getDish, getFestival, planFestival, isPlanUsable, randomSeed, regenerateDay, setMainDish, swapItem, toISODate, type FamilyProfile, type FestivalRule, type WeekPlan } from './engine';
 import { AccountCard, type Account } from './components/AccountCard';
 import { DishLibrary } from './components/DishLibrary';
 import { DishSheet } from './components/DishSheet';
@@ -187,6 +187,26 @@ export default function App() {
     notify(`${WEEKDAYS_SHORT[day.weekday]} ${MEAL_NAME[day.meals[m].type].toLowerCase()}: ${getDish(dishId).name}`);
   };
 
+  const onPlanFestival = (id: string, offered: string[], chosen: string[], rule: FestivalRule) => {
+    const next = planFestival(profile, id, offered, chosen, rule);
+    setProfile(next);
+    if (!isSample) storage.saveProfile(next);
+    // Re-plan only the days of this week whose festival plan changed.
+    let p = plan;
+    plan.days.forEach((d, i) => {
+      if (JSON.stringify(festivalOn(profile, d.date)) !== JSON.stringify(festivalOn(next, d.date))) p = regenerateDay(p, next, i, randomSeed());
+    });
+    if (p !== plan) setPlan(p);
+    const name = getFestival(id)?.name ?? 'Festival';
+    if (!chosen.length) return notify(`${name} removed from your plan`);
+    const inWeek = chosen.filter((d) => plan.days.some((x) => x.date === d));
+    notify(
+      inWeek.length
+        ? `${name}: ${RULE_LABEL[rule].toLowerCase()} on ${inWeek.map(formatDate).join(', ')}`
+        : `${name} saved. Those days get ${RULE_LABEL[rule].toLowerCase()} when that week is planned.`,
+    );
+  };
+
   const onSaveProfile = (p: FamilyProfile) => {
     storage.saveProfile(p);
     setProfile(p);
@@ -256,6 +276,7 @@ export default function App() {
             isSample={isSample}
             onSwap={onSwap}
             onChoose={onChoose}
+            onPlanFestival={onPlanFestival}
             onShuffleDay={(d) => setPlan(regenerateDay(plan, profile, d, randomSeed()))}
             onNewWeek={() => {
               setPlan(generateWeek(profile, today(), randomSeed()));
