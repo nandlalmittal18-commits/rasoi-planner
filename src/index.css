@@ -722,3 +722,21 @@ body { background: #fff; }
 .rate-btn:focus-visible { outline: 2px solid var(--primary); outline-offset: 1px; }
 .rate-btn.is-up { border-color: var(--veg); background: #e7f6ec; color: var(--veg); }
 .rate-btn.is-down { border-color: var(--vrat); background: var(--vrat-soft); color: var(--vrat); }
+
+/* ---------- what's in my fridge ---------- */
+.fridge { display: flex; flex-direction: column; gap: 14px; }
+.fridge-head { display: flex; justify-content: space-between; align-items: flex-start; gap: 12px; }
+.fridge-head h2 { font-size: 1.3rem; margin: 0 0 2px; }
+.fridge-items { display: flex; flex-wrap: wrap; gap: 8px; }
+.fridge-results { margin-top: 6px; }
+.fridge-note { margin: 0; font-size: 0.84rem; line-height: 1.35; }
+.fridge-uses { color: var(--veg); font-weight: 700; }
+.add-day h3 { font-size: 0.95rem; margin: 4px 0 8px; }
+.add-meals { display: flex; flex-wrap: wrap; gap: 8px; }
+.add-meal {
+  display: flex; flex-direction: column; align-items: flex-start; gap: 2px; padding: 10px 14px; border-radius: 14px;
+  border: 1.5px solid var(--line); background: #fff; font: inherit; color: var(--ink); text-align: left; cursor: pointer; min-width: 140px;
+}
+.add-meal:hover { border-color: var(--primary); background: var(--primary-soft); }
+.add-meal:focus-visible { outline: 2px solid var(--primary); outline-offset: 1px; }
+.chip-more { cursor: pointer; min-height: 36px; padding: 4px 14px; border: 1.5px dashed var(--line); background: none; color: var(--primary); font-weight: 700; }

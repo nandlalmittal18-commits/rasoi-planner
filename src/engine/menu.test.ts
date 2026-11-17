@@ -25,6 +25,8 @@ import {
   weekMessage,
   weekTable,
   FESTIVALS,
+  cookFromFridge,
+  placesFor,
   planFestival,
   upcomingFestivals,
   type FamilyProfile,
@@ -518,5 +520,32 @@ describe('thumbs up / down', () => {
 
   it('clears a rating', () => {
     expect(rateDish(rateDish(base, 'rajma', 1), 'rajma', 0).ratings).toEqual({});
+  });
+});
+
+describe("what's in my fridge", () => {
+  it('finds dishes that use what you have, most matches first', () => {
+    const found = cookFromFridge(['paneer', 'capsicum'], base);
+    expect(found.length).toBeGreaterThan(5);
+    expect(found[0].uses).toEqual(['Paneer', 'Capsicum']);
+    expect(found.map((f) => f.dish.id)).toContain('kadai-paneer');
+    for (const f of found) expect(f.uses.length).toBeGreaterThan(0);
+    expect(found.find((f) => f.dish.id === 'palak-paneer')?.needs).toEqual(['spinach', 'cream']);
+  });
+
+  it('keeps the family rules and nothing when nothing is chosen', () => {
+    const jain: FamilyProfile = { ...base, jain: true, dislikes: ['kadai-paneer'] };
+    for (const f of cookFromFridge(['paneer', 'tomato'], jain)) {
+      expect(f.dish.jain, f.dish.name).toBe(true);
+      expect(f.dish.id).not.toBe('kadai-paneer');
+    }
+    expect(cookFromFridge([], base)).toEqual([]);
+  });
+
+  it('says where in the week a dish can go', () => {
+    const plan = generateWeek(base, START, 9);
+    const places = placesFor(plan, base, 'kadai-paneer', plan.days[0].date);
+    expect(places.length).toBeGreaterThan(0);
+    for (const p of places) expect(['Lunch', 'Dinner']).toContain(p.type);
   });
 });

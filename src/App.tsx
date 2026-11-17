@@ -298,7 +298,9 @@ export default function App() {
           />
         )}
         {tab === 'grocery' && <GroceryView key={plan.createdAt} plan={plan} notify={notify} />}
-        {tab === 'dishes' && <DishLibrary profile={profile} onToggleDislike={onToggleDislike} onOpenDish={setOpenDish} />}
+        {tab === 'dishes' && (
+          <DishLibrary profile={profile} plan={plan} today={toISODate(new Date())} onToggleDislike={onToggleDislike} onOpenDish={setOpenDish} onChoose={onChoose} />
+        )}
         {tab === 'family' && (
           <FamilyForm
             key={isSample ? 'new' : `edit-${account?.id ?? 'phone'}`}

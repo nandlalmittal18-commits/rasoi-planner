@@ -1,6 +1,7 @@
 import { useMemo, useState } from 'react';
-import { DISHES, WORLD_CUISINES, cuisineOf, getNutrition, isWorldDish, proteinLevel, type Dish, type FamilyProfile } from '../engine';
+import { DISHES, WORLD_CUISINES, cuisineOf, getNutrition, isWorldDish, proteinLevel, type Dish, type FamilyProfile, type WeekPlan } from '../engine';
 import { DishCard } from './DishCard';
+import { FridgeFinder } from './Fridge';
 import { DishPicture } from './DishPicture';
 import { getDish } from '../engine';
 
@@ -28,12 +29,18 @@ const FLAGS: { key: keyof Dish; label: string }[] = [
 
 export function DishLibrary({
   profile,
+  plan,
+  today,
   onToggleDislike,
   onOpenDish,
+  onChoose,
 }: {
   profile: FamilyProfile;
+  plan: WeekPlan;
+  today: string;
   onToggleDislike: (id: string) => void;
   onOpenDish: (id: string) => void;
+  onChoose: (day: number, meal: number, dishId: string) => void;
 }) {
   const [query, setQuery] = useState('');
   const [meal, setMeal] = useState<(typeof MEALS)[number]>('All');
@@ -72,6 +79,8 @@ export function DishLibrary({
           <h1>Dish library</h1>
         </div>
       </div>
+
+      <FridgeFinder profile={profile} plan={plan} today={today} onOpenDish={onOpenDish} onChoose={onChoose} />
 
       <section className="cravings" aria-labelledby="crave-title">
         <h2 id="crave-title">What are you in the mood for?</h2>
