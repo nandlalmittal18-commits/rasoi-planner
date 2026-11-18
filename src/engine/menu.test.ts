@@ -28,6 +28,11 @@ import {
   weekMessage,
   weekTable,
   FESTIVALS,
+  DRINKS,
+  DRINK_TAGS,
+  drinkFits,
+  drinkOfTheDay,
+  drinkCookMessage,
   cookTemplateParams,
   cookSpeech,
   kidsTiffinWeek,
@@ -672,5 +677,48 @@ describe('daily message to the cook', () => {
     expect(text.startsWith('नमस्ते Sunita जी।')).toBe(true);
     expect(text).toContain('नाश्ते में');
     expect(text).not.toMatch(/[*_🙏]/u);
+  });
+});
+
+describe('juices and drinks', () => {
+  it('has complete drinks: benefits, cautions, Hindi steps, known tags', () => {
+    expect(DRINKS.length).toBeGreaterThanOrEqual(30);
+    expect(new Set(DRINKS.map((d) => d.id)).size).toBe(DRINKS.length);
+    for (const d of DRINKS) {
+      expect(d.benefits.length, d.id).toBeGreaterThanOrEqual(2);
+      expect(d.caution.length, d.id).toBeGreaterThan(0);
+      expect(d.steps.en.length, d.id).toBe(d.steps.hi.length);
+      for (const t of d.tags) expect(DRINK_TAGS).toContain(t);
+    }
+    // The bitter-lauki warning must always be there.
+    expect(DRINKS.find((d) => d.id === 'lauki-juice')!.caution[0]).toMatch(/bitter/i);
+  });
+
+  it('keeps Jain, satvik and vrat rules', () => {
+    const jain: FamilyProfile = { ...base, jain: true };
+    expect(drinkFits(DRINKS.find((d) => d.id === 'beetroot-juice')!, jain)).toBe(false);
+    expect(drinkFits(DRINKS.find((d) => d.id === 'sol-kadhi')!, { ...base, noOnionGarlic: true })).toBe(false);
+    const tuesdayVrat: FamilyProfile = { ...base, fastDays: [1] };
+    const tue = new Date(2026, 10, 17);
+    expect(drinkFits(DRINKS.find((d) => d.id === 'sattu-sharbat')!, tuesdayVrat, tue)).toBe(false);
+    expect(drinkFits(DRINKS.find((d) => d.id === 'coconut-water')!, tuesdayVrat, tue)).toBe(true);
+  });
+
+  it('suggests a different, in-season drink each day that keeps the rules', () => {
+    const p: FamilyProfile = { ...base, jain: true, fastDays: [1] };
+    const week = Array.from({ length: 7 }, (_, i) => drinkOfTheDay(p, new Date(2026, 10, 16 + i))!);
+    expect(new Set(week.map((d) => d.id)).size).toBeGreaterThanOrEqual(6);
+    week.forEach((d, i) => {
+      const date = new Date(2026, 10, 16 + i);
+      expect(drinkFits(d, p, date), d.id).toBe(true);
+      expect(['Winter', 'All']).toContain(d.season);
+    });
+  });
+
+  it('writes the recipe for the cook in Hindi, with the lauki warning', () => {
+    const msg = drinkCookMessage(DRINKS.find((d) => d.id === 'lauki-juice')!, { ...base, cookName: 'Sunita' });
+    expect(msg).toContain('Sunita जी');
+    expect(msg).toContain('विधि');
+    expect(msg).toContain('कड़वी');
   });
 });

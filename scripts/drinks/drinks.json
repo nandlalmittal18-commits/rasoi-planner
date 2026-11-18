@@ -1,0 +1,1758 @@
+[
+ {
+  "id": "amla-juice",
+  "name": "Amla Juice",
+  "hindi": "आंवला जूस",
+  "kind": "Juice",
+  "color": "#9cc94a",
+  "tags": [
+   "Immunity",
+   "Low sugar"
+  ],
+  "season": "Winter",
+  "time": "Morning",
+  "minutes": 10,
+  "serving": "1 glass (200 ml)",
+  "vrat": true,
+  "jain": true,
+  "noOnionGarlic": true,
+  "benefits": [
+   "Amla is one of the richest sources of vitamin C, which the immune system needs",
+   "Vitamin C helps the body take up iron from dal, greens and roti",
+   "Very low in sugar when made without sweetener"
+  ],
+  "nutrients": [
+   "Vitamin C",
+   "Polyphenols",
+   "Fibre (if not strained)"
+  ],
+  "caution": [
+   "It is sour and acidic: always dilute it with water and avoid it on a very empty stomach if you get acidity",
+   "Amla may lower blood sugar a little; if you take diabetes medicines, check with your doctor before drinking it daily"
+  ],
+  "ingredients": [
+   {
+    "en": "2 fresh amla (Indian gooseberry)",
+    "hi": "2 ताज़े आंवले"
+   },
+   {
+    "en": "1 glass water",
+    "hi": "1 गिलास पानी"
+   },
+   {
+    "en": "A pinch of black salt or a little honey",
+    "hi": "चुटकी भर काला नमक या थोड़ा शहद"
+   }
+  ],
+  "steps": {
+   "en": [
+    "Wash the amla, cut into pieces and remove the seeds.",
+    "Blend with a glass of water till smooth.",
+    "Strain if you like, add a pinch of black salt, and drink fresh."
+   ],
+   "hi": [
+    "आंवले धोकर टुकड़े करें और गुठली निकाल दें।",
+    "एक गिलास पानी के साथ मिक्सी में चिकना पीस लें।",
+    "चाहें तो छान लें, चुटकी भर काला नमक डालें और ताज़ा पिएं।"
+   ]
+  }
+ },
+ {
+  "id": "nimbu-pani",
+  "name": "Nimbu Pani (Shikanji)",
+  "hindi": "नींबू पानी (शिकंजी)",
+  "kind": "Cooler",
+  "color": "#f5e663",
+  "tags": [
+   "Hydration",
+   "Immunity",
+   "Cooling"
+  ],
+  "season": "Summer",
+  "time": "Any time",
+  "minutes": 5,
+  "serving": "1 glass (200 ml)",
+  "vrat": true,
+  "jain": true,
+  "noOnionGarlic": true,
+  "benefits": [
+   "Replaces water and salt lost in sweat on hot days",
+   "Lemon adds vitamin C",
+   "Cheap, quick and easy on the stomach"
+  ],
+  "nutrients": [
+   "Vitamin C",
+   "Sodium (from salt)"
+  ],
+  "caution": [
+   "Add little or no sugar; the drink is good without it.",
+   "Lemon is acidic and can wear tooth enamel; rinse your mouth with plain water after"
+  ],
+  "ingredients": [
+   {
+    "en": "1 lemon",
+    "hi": "1 नींबू"
+   },
+   {
+    "en": "1 glass cold water",
+    "hi": "1 गिलास ठंडा पानी"
+   },
+   {
+    "en": "A pinch of salt and roasted cumin powder",
+    "hi": "चुटकी भर नमक और भुना जीरा पाउडर"
+   },
+   {
+    "en": "1 tsp sugar or jaggery (optional)",
+    "hi": "1 छोटा चम्मच चीनी या गुड़ (चाहें तो)"
+   }
+  ],
+  "steps": {
+   "en": [
+    "Squeeze the lemon into the water.",
+    "Add salt, roasted cumin and a little sugar if you like.",
+    "Stir well and serve cool. On vrat days use sendha namak."
+   ],
+   "hi": [
+    "नींबू को पानी में निचोड़ें।",
+    "नमक, भुना जीरा और चाहें तो थोड़ी चीनी डालें।",
+    "अच्छी तरह मिलाकर ठंडा परोसें। व्रत के दिन सेंधा नमक डालें।"
+   ]
+  }
+ },
+ {
+  "id": "coconut-water",
+  "name": "Coconut Water",
+  "hindi": "नारियल पानी",
+  "kind": "Cooler",
+  "color": "#e9f3df",
+  "tags": [
+   "Hydration",
+   "Cooling",
+   "Low sugar"
+  ],
+  "season": "Summer",
+  "time": "Any time",
+  "minutes": 2,
+  "serving": "1 glass (200 ml)",
+  "vrat": true,
+  "jain": true,
+  "noOnionGarlic": true,
+  "benefits": [
+   "Natural electrolytes, mostly potassium, help after sweating, a long day out or loose motions",
+   "Light, low in calories and naturally a little sweet",
+   "Ready to drink, nothing to cook"
+  ],
+  "nutrients": [
+   "Potassium",
+   "Magnesium",
+   "Natural sugars"
+  ],
+  "caution": [
+   "It is high in potassium (about 600 mg in a big glass). People with kidney disease or on potassium-saving medicines should ask their doctor first",
+   "Packed coconut water may have added sugar; read the label"
+  ],
+  "ingredients": [
+   {
+    "en": "1 tender green coconut",
+    "hi": "1 हरा नारियल"
+   }
+  ],
+  "steps": {
+   "en": [
+    "Ask the seller to open a fresh tender coconut.",
+    "Pour the water into a clean glass.",
+    "Drink within an hour; scoop out the soft malai too."
+   ],
+   "hi": [
+    "ताज़ा हरा नारियल खुलवाएं।",
+    "पानी साफ़ गिलास में डालें।",
+    "एक घंटे के अंदर पी लें; नरम मलाई भी खा लें।"
+   ]
+  }
+ },
+ {
+  "id": "masala-chaas",
+  "name": "Masala Chaas",
+  "hindi": "मसाला छाछ",
+  "kind": "Fermented",
+  "color": "#eef3f6",
+  "tags": [
+   "Digestion",
+   "Cooling",
+   "Hydration",
+   "Calcium"
+  ],
+  "season": "Summer",
+  "time": "After meals",
+  "minutes": 5,
+  "serving": "1 glass (200 ml)",
+  "vrat": true,
+  "jain": true,
+  "noOnionGarlic": true,
+  "benefits": [
+   "Home-made curd has live cultures that are good for the gut",
+   "Cooling and light after a heavy lunch",
+   "Gives some calcium and protein with very few calories"
+  ],
+  "nutrients": [
+   "Calcium",
+   "Protein",
+   "Probiotics (home-made curd)"
+  ],
+  "caution": [
+   "Use salt lightly if you have high blood pressure"
+  ],
+  "ingredients": [
+   {
+    "en": "½ cup curd",
+    "hi": "आधा कप दही"
+   },
+   {
+    "en": "1 cup cold water",
+    "hi": "1 कप ठंडा पानी"
+   },
+   {
+    "en": "Roasted cumin, black salt, a few mint or coriander leaves",
+    "hi": "भुना जीरा, काला नमक, थोड़े पुदीना या धनिया पत्ते"
+   }
+  ],
+  "steps": {
+   "en": [
+    "Whisk the curd with cold water till smooth.",
+    "Add roasted cumin, black salt and chopped mint or coriander.",
+    "Stir and serve cool after a meal. On vrat days use sendha namak."
+   ],
+   "hi": [
+    "दही में ठंडा पानी डालकर अच्छी तरह फेंट लें।",
+    "भुना जीरा, काला नमक और कटा पुदीना या धनिया डालें।",
+    "मिलाकर खाने के बाद ठंडी परोसें। व्रत में सेंधा नमक डालें।"
+   ]
+  }
+ },
+ {
+  "id": "sattu-sharbat",
+  "name": "Sattu Sharbat",
+  "hindi": "सत्तू शरबत",
+  "kind": "Cooler",
+  "color": "#d9c39a",
+  "tags": [
+   "Protein",
+   "Energy",
+   "Cooling"
+  ],
+  "season": "Summer",
+  "time": "Morning",
+  "minutes": 5,
+  "serving": "1 glass (200 ml)",
+  "vrat": false,
+  "jain": true,
+  "noOnionGarlic": true,
+  "benefits": [
+   "Roasted chana flour gives plant protein and fibre that keep you full",
+   "A traditional summer drink in Bihar and UP for long, hot days",
+   "Slow energy, without much sugar"
+  ],
+  "nutrients": [
+   "Protein",
+   "Fibre",
+   "Iron"
+  ],
+  "caution": [
+   "Drink it fresh; sattu thickens if kept"
+  ],
+  "ingredients": [
+   {
+    "en": "2 tbsp sattu (roasted chana flour)",
+    "hi": "2 बड़े चम्मच सत्तू"
+   },
+   {
+    "en": "1 glass cold water",
+    "hi": "1 गिलास ठंडा पानी"
+   },
+   {
+    "en": "Lemon, black salt and roasted cumin",
+    "hi": "नींबू, काला नमक और भुना जीरा"
+   }
+  ],
+  "steps": {
+   "en": [
+    "Mix the sattu in a little water to make a smooth paste.",
+    "Add the rest of the water, lemon juice, black salt and cumin.",
+    "Stir well and drink straight away."
+   ],
+   "hi": [
+    "सत्तू को थोड़े पानी में घोलकर चिकना पेस्ट बनाएं।",
+    "बाकी पानी, नींबू का रस, काला नमक और जीरा डालें।",
+    "अच्छी तरह मिलाकर तुरंत पिएं।"
+   ]
+  }
+ },
+ {
+  "id": "beetroot-juice",
+  "name": "Beetroot Juice",
+  "hindi": "चुकंदर का जूस",
+  "kind": "Juice",
+  "color": "#a3204d",
+  "tags": [
+   "Heart",
+   "Energy"
+  ],
+  "season": "Winter",
+  "time": "Morning",
+  "minutes": 10,
+  "serving": "1 glass (200 ml)",
+  "vrat": false,
+  "jain": false,
+  "noOnionGarlic": true,
+  "benefits": [
+   "Rich in natural nitrates; in studies a daily glass lowered blood pressure a little (about 3–4 points)",
+   "The same nitrates may help stamina during exercise",
+   "Gives folate and some iron"
+  ],
+  "nutrients": [
+   "Nitrates",
+   "Folate",
+   "Potassium"
+  ],
+  "caution": [
+   "It can turn urine or stool pink or red; this is harmless",
+   "Beetroot is high in oxalates; if you have had kidney stones, ask your doctor",
+   "If you take blood pressure medicines, tell your doctor before drinking it daily"
+  ],
+  "ingredients": [
+   {
+    "en": "1 medium beetroot",
+    "hi": "1 मीडियम चुकंदर"
+   },
+   {
+    "en": "½ apple or a small piece of ginger",
+    "hi": "आधा सेब या छोटा टुकड़ा अदरक"
+   },
+   {
+    "en": "½ glass water and a squeeze of lemon",
+    "hi": "आधा गिलास पानी और थोड़ा नींबू"
+   }
+  ],
+  "steps": {
+   "en": [
+    "Peel the beetroot and cut into small pieces.",
+    "Blend with the apple or ginger and water.",
+    "Strain, add lemon and drink fresh."
+   ],
+   "hi": [
+    "चुकंदर छीलकर छोटे टुकड़े करें।",
+    "सेब या अदरक और पानी के साथ मिक्सी में पीस लें।",
+    "छान लें, नींबू डालें और ताज़ा पिएं।"
+   ]
+  }
+ },
+ {
+  "id": "carrot-juice",
+  "name": "Carrot Juice",
+  "hindi": "गाजर का जूस",
+  "kind": "Juice",
+  "color": "#f08a24",
+  "tags": [
+   "Eyes & skin",
+   "Immunity",
+   "Kids"
+  ],
+  "season": "Winter",
+  "time": "Morning",
+  "minutes": 10,
+  "serving": "1 glass (200 ml)",
+  "vrat": false,
+  "jain": false,
+  "noOnionGarlic": true,
+  "benefits": [
+   "Carrots are full of beta-carotene, which the body turns into vitamin A for healthy eyes and skin",
+   "Naturally sweet, so children usually like it",
+   "Best with a few drops of oil or with a meal, which helps the body absorb vitamin A"
+  ],
+  "nutrients": [
+   "Beta-carotene (vitamin A)",
+   "Potassium",
+   "Vitamin K"
+  ],
+  "caution": [
+   "Juice has less fibre than whole carrots; one small glass is plenty"
+  ],
+  "ingredients": [
+   {
+    "en": "3 carrots (red winter carrots are best)",
+    "hi": "3 गाजर (सर्दी की लाल गाजर सबसे अच्छी)"
+   },
+   {
+    "en": "A small piece of ginger",
+    "hi": "छोटा टुकड़ा अदरक"
+   },
+   {
+    "en": "½ glass water, lemon",
+    "hi": "आधा गिलास पानी, नींबू"
+   }
+  ],
+  "steps": {
+   "en": [
+    "Wash, peel and chop the carrots.",
+    "Blend with ginger and water till smooth.",
+    "Strain, add a squeeze of lemon and drink fresh."
+   ],
+   "hi": [
+    "गाजर धोकर, छीलकर काट लें।",
+    "अदरक और पानी के साथ चिकना पीस लें।",
+    "छान लें, थोड़ा नींबू डालें और ताज़ा पिएं।"
+   ]
+  }
+ },
+ {
+  "id": "abc-juice",
+  "name": "ABC Juice (Apple, Beetroot, Carrot)",
+  "hindi": "एबीसी जूस (सेब, चुकंदर, गाजर)",
+  "kind": "Juice",
+  "color": "#c43b3b",
+  "tags": [
+   "Immunity",
+   "Eyes & skin",
+   "Heart"
+  ],
+  "season": "Winter",
+  "time": "Morning",
+  "minutes": 10,
+  "serving": "1 glass (200 ml)",
+  "vrat": false,
+  "jain": false,
+  "noOnionGarlic": true,
+  "benefits": [
+   "Brings together beta-carotene from carrot, nitrates from beetroot and the sweetness of apple",
+   "A friendlier taste for people who find plain beetroot juice too earthy",
+   "Gives vitamin A, folate and potassium in one glass"
+  ],
+  "nutrients": [
+   "Beta-carotene",
+   "Nitrates",
+   "Folate",
+   "Vitamin C"
+  ],
+  "caution": [
+   "Apple adds natural sugar; keep it to one small glass",
+   "Same cautions as beetroot juice for kidney stones and blood pressure medicines"
+  ],
+  "ingredients": [
+   {
+    "en": "1 apple",
+    "hi": "1 सेब"
+   },
+   {
+    "en": "½ beetroot",
+    "hi": "आधा चुकंदर"
+   },
+   {
+    "en": "1 carrot",
+    "hi": "1 गाजर"
+   },
+   {
+    "en": "½ glass water, lemon",
+    "hi": "आधा गिलास पानी, नींबू"
+   }
+  ],
+  "steps": {
+   "en": [
+    "Wash and chop the apple, beetroot and carrot.",
+    "Blend with water till smooth.",
+    "Strain, add lemon and drink fresh."
+   ],
+   "hi": [
+    "सेब, चुकंदर और गाजर धोकर काट लें।",
+    "पानी के साथ चिकना पीस लें।",
+    "छान लें, नींबू डालें और ताज़ा पिएं।"
+   ]
+  }
+ },
+ {
+  "id": "lauki-juice",
+  "name": "Lauki Juice",
+  "hindi": "लौकी का जूस",
+  "kind": "Juice",
+  "color": "#c8e0a8",
+  "tags": [
+   "Hydration",
+   "Low sugar",
+   "Cooling"
+  ],
+  "season": "Summer",
+  "time": "Morning",
+  "minutes": 10,
+  "serving": "1 glass (200 ml)",
+  "vrat": true,
+  "jain": true,
+  "noOnionGarlic": true,
+  "benefits": [
+   "Mostly water, very low in calories and sugar",
+   "Light and cooling in hot weather",
+   "Gives some potassium and vitamin C"
+  ],
+  "nutrients": [
+   "Potassium",
+   "Vitamin C",
+   "Water"
+  ],
+  "caution": [
+   "IMPORTANT: taste a small piece of the raw lauki first. If it is bitter, throw it away. Bitter lauki juice can cause severe vomiting and has caused deaths in India",
+   "Never mix lauki juice with karela juice",
+   "Drink it fresh; don't keep it for later"
+  ],
+  "ingredients": [
+   {
+    "en": "1 small fresh lauki (bottle gourd), taste-tested",
+    "hi": "1 छोटी ताज़ी लौकी (पहले चखकर देखें)"
+   },
+   {
+    "en": "A few mint leaves",
+    "hi": "कुछ पुदीना पत्ते"
+   },
+   {
+    "en": "½ glass water, lemon, black salt",
+    "hi": "आधा गिलास पानी, नींबू, काला नमक"
+   }
+  ],
+  "steps": {
+   "en": [
+    "Cut a small piece of the lauki and taste it. If it is bitter, do not use it.",
+    "Peel and chop the lauki, then blend with mint and water.",
+    "Strain, add lemon and black salt, and drink at once."
+   ],
+   "hi": [
+    "लौकी का छोटा टुकड़ा काटकर चखें। कड़वी हो तो बिल्कुल इस्तेमाल न करें।",
+    "लौकी छीलकर काटें, पुदीना और पानी के साथ पीस लें।",
+    "छान लें, नींबू और काला नमक डालें और तुरंत पिएं।"
+   ]
+  }
+ },
+ {
+  "id": "karela-juice",
+  "name": "Karela Juice",
+  "hindi": "करेले का जूस",
+  "kind": "Juice",
+  "color": "#5e8c31",
+  "tags": [
+   "Low sugar"
+  ],
+  "season": "Monsoon",
+  "time": "Morning",
+  "minutes": 10,
+  "serving": "1 small cup (100 ml)",
+  "vrat": false,
+  "jain": true,
+  "noOnionGarlic": true,
+  "benefits": [
+   "Traditionally taken to help manage blood sugar; some studies show a small effect",
+   "Very low in sugar and calories",
+   "Gives vitamin C"
+  ],
+  "nutrients": [
+   "Vitamin C",
+   "Polyphenols"
+  ],
+  "caution": [
+   "If you take insulin or diabetes tablets, it can push sugar too low; ask your doctor and check your sugar",
+   "Avoid in pregnancy",
+   "Drink only a small cup; too much can upset the stomach",
+   "Never mix with lauki juice"
+  ],
+  "ingredients": [
+   {
+    "en": "1 karela (bitter gourd)",
+    "hi": "1 करेला"
+   },
+   {
+    "en": "½ glass water",
+    "hi": "आधा गिलास पानी"
+   },
+   {
+    "en": "Lemon and a pinch of salt",
+    "hi": "नींबू और चुटकी भर नमक"
+   }
+  ],
+  "steps": {
+   "en": [
+    "Wash the karela, scrape lightly, remove seeds and chop.",
+    "Blend with water till smooth and strain.",
+    "Add lemon and salt; drink a small cup."
+   ],
+   "hi": [
+    "करेला धोकर हल्का छील लें, बीज निकालकर काट लें।",
+    "पानी के साथ पीसकर छान लें।",
+    "नींबू और नमक डालें; छोटा कप ही पिएं।"
+   ]
+  }
+ },
+ {
+  "id": "haldi-doodh",
+  "name": "Haldi Doodh (Turmeric Milk)",
+  "hindi": "हल्दी दूध",
+  "kind": "Warm drink",
+  "color": "#f3c13a",
+  "tags": [
+   "Warming",
+   "Calcium",
+   "Protein",
+   "Sleep"
+  ],
+  "season": "Winter",
+  "time": "Night",
+  "minutes": 10,
+  "serving": "1 glass (200 ml)",
+  "vrat": true,
+  "jain": true,
+  "noOnionGarlic": true,
+  "benefits": [
+   "Milk gives calcium and protein",
+   "Turmeric's curcumin is studied for calming inflammation; a pinch of black pepper helps the body absorb it",
+   "A warm, soothing drink at bedtime in winter"
+  ],
+  "nutrients": [
+   "Calcium",
+   "Protein",
+   "Curcumin"
+  ],
+  "caution": [
+   "Add little or no sugar; the drink is good without it.",
+   "Turmeric in food amounts is safe; large supplement doses are different, so ask your doctor if you take blood thinners"
+  ],
+  "ingredients": [
+   {
+    "en": "1 glass milk",
+    "hi": "1 गिलास दूध"
+   },
+   {
+    "en": "½ tsp haldi (turmeric powder)",
+    "hi": "आधा छोटा चम्मच हल्दी"
+   },
+   {
+    "en": "A pinch of black pepper",
+    "hi": "चुटकी भर काली मिर्च"
+   },
+   {
+    "en": "Jaggery to taste (optional)",
+    "hi": "स्वाद के लिए गुड़ (चाहें तो)"
+   }
+  ],
+  "steps": {
+   "en": [
+    "Heat the milk with turmeric and black pepper.",
+    "Let it simmer for 3–4 minutes, stirring.",
+    "Add a little jaggery off the heat and drink warm."
+   ],
+   "hi": [
+    "दूध में हल्दी और काली मिर्च डालकर गरम करें।",
+    "3–4 मिनट हिलाते हुए धीमी आंच पर पकाएं।",
+    "आंच से उतारकर थोड़ा गुड़ डालें और गुनगुना पिएं।"
+   ]
+  }
+ },
+ {
+  "id": "jeera-water",
+  "name": "Jeera Water",
+  "hindi": "जीरा पानी",
+  "kind": "Water",
+  "color": "#e6d7a8",
+  "tags": [
+   "Digestion",
+   "Low sugar"
+  ],
+  "season": "All",
+  "time": "Morning",
+  "minutes": 10,
+  "serving": "1 glass (200 ml)",
+  "vrat": true,
+  "jain": true,
+  "noOnionGarlic": true,
+  "benefits": [
+   "Traditionally taken for digestion and bloating",
+   "A tasty way to drink more water with no sugar",
+   "Almost no calories"
+  ],
+  "nutrients": [
+   "Water",
+   "Small amounts of iron"
+  ],
+  "caution": [
+   "Benefits are mostly traditional; it is not a weight-loss cure"
+  ],
+  "ingredients": [
+   {
+    "en": "1 tsp jeera (cumin seeds)",
+    "hi": "1 छोटा चम्मच जीरा"
+   },
+   {
+    "en": "1½ glasses water",
+    "hi": "डेढ़ गिलास पानी"
+   }
+  ],
+  "steps": {
+   "en": [
+    "Soak the jeera in water overnight, or boil it for 5 minutes.",
+    "Strain.",
+    "Drink warm or at room temperature."
+   ],
+   "hi": [
+    "जीरा रात भर पानी में भिगो दें, या 5 मिनट उबाल लें।",
+    "छान लें।",
+    "गुनगुना या सामान्य तापमान पर पिएं।"
+   ]
+  }
+ },
+ {
+  "id": "ajwain-water",
+  "name": "Ajwain Water",
+  "hindi": "अजवाइन का पानी",
+  "kind": "Water",
+  "color": "#d8cfa0",
+  "tags": [
+   "Digestion",
+   "Warming"
+  ],
+  "season": "Winter",
+  "time": "After meals",
+  "minutes": 10,
+  "serving": "1 glass (200 ml)",
+  "vrat": false,
+  "jain": true,
+  "noOnionGarlic": true,
+  "benefits": [
+   "A traditional home remedy for gas and indigestion after a heavy meal",
+   "Warm and comforting in winter",
+   "No sugar, almost no calories"
+  ],
+  "nutrients": [
+   "Water",
+   "Plant compounds (thymol)"
+  ],
+  "caution": [
+   "Benefits are mostly traditional",
+   "Avoid large amounts in pregnancy; ask your doctor"
+  ],
+  "ingredients": [
+   {
+    "en": "½ tsp ajwain (carom seeds)",
+    "hi": "आधा छोटा चम्मच अजवाइन"
+   },
+   {
+    "en": "1½ glasses water",
+    "hi": "डेढ़ गिलास पानी"
+   }
+  ],
+  "steps": {
+   "en": [
+    "Boil the ajwain in water for 5 minutes.",
+    "Strain and let it cool a little.",
+    "Sip warm after a meal."
+   ],
+   "hi": [
+    "अजवाइन को पानी में 5 मिनट उबालें।",
+    "छानकर थोड़ा ठंडा होने दें।",
+    "खाने के बाद गुनगुना घूंट-घूंट पिएं।"
+   ]
+  }
+ },
+ {
+  "id": "methi-water",
+  "name": "Methi Water",
+  "hindi": "मेथी का पानी",
+  "kind": "Water",
+  "color": "#d9c27a",
+  "tags": [
+   "Low sugar",
+   "Digestion"
+  ],
+  "season": "Winter",
+  "time": "Morning",
+  "minutes": 5,
+  "serving": "1 glass (200 ml)",
+  "vrat": false,
+  "jain": true,
+  "noOnionGarlic": true,
+  "benefits": [
+   "Methi seeds are rich in soluble fibre, which slows how fast sugar enters the blood",
+   "Traditionally taken in the morning for digestion",
+   "No added sugar"
+  ],
+  "nutrients": [
+   "Soluble fibre",
+   "Iron"
+  ],
+  "caution": [
+   "If you take diabetes medicines, ask your doctor; it can add to their effect",
+   "Avoid in pregnancy unless your doctor agrees"
+  ],
+  "ingredients": [
+   {
+    "en": "1 tsp methi dana (fenugreek seeds)",
+    "hi": "1 छोटा चम्मच मेथी दाना"
+   },
+   {
+    "en": "1 glass water",
+    "hi": "1 गिलास पानी"
+   }
+  ],
+  "steps": {
+   "en": [
+    "Soak the methi seeds in water overnight.",
+    "In the morning, strain the water.",
+    "Drink it; the soaked seeds can be chewed or added to dal."
+   ],
+   "hi": [
+    "मेथी दाना रात भर पानी में भिगो दें।",
+    "सुबह पानी छान लें।",
+    "पानी पी लें; भीगे दाने चबा सकते हैं या दाल में डाल सकते हैं।"
+   ]
+  }
+ },
+ {
+  "id": "aam-panna",
+  "name": "Aam Panna",
+  "hindi": "आम पन्ना",
+  "kind": "Cooler",
+  "color": "#c9d96b",
+  "tags": [
+   "Cooling",
+   "Hydration",
+   "Immunity"
+  ],
+  "season": "Summer",
+  "time": "Any time",
+  "minutes": 25,
+  "serving": "1 glass (makes 4)",
+  "vrat": true,
+  "jain": true,
+  "noOnionGarlic": true,
+  "benefits": [
+   "The classic drink to beat summer heat, made from raw mango",
+   "Raw mango gives vitamin C",
+   "With salt and cumin it helps replace what you lose in sweat"
+  ],
+  "nutrients": [
+   "Vitamin C",
+   "Potassium",
+   "Sodium"
+  ],
+  "caution": [
+   "Traditional recipes use a lot of sugar or jaggery; use half"
+  ],
+  "ingredients": [
+   {
+    "en": "2 raw mangoes",
+    "hi": "2 कच्चे आम"
+   },
+   {
+    "en": "2 tbsp jaggery or sugar",
+    "hi": "2 बड़े चम्मच गुड़ या चीनी"
+   },
+   {
+    "en": "Roasted cumin, black salt, a few mint leaves",
+    "hi": "भुना जीरा, काला नमक, कुछ पुदीना पत्ते"
+   },
+   {
+    "en": "4 glasses cold water",
+    "hi": "4 गिलास ठंडा पानी"
+   }
+  ],
+  "steps": {
+   "en": [
+    "Boil or roast the raw mangoes till soft, cool and squeeze out the pulp.",
+    "Blend the pulp with jaggery, roasted cumin, black salt and mint.",
+    "Mix 3–4 spoons of this with a glass of cold water and serve."
+   ],
+   "hi": [
+    "कच्चे आम उबालकर या भूनकर नरम करें, ठंडा करके गूदा निकालें।",
+    "गूदे को गुड़, भुना जीरा, काला नमक और पुदीने के साथ पीस लें।",
+    "एक गिलास ठंडे पानी में 3–4 चम्मच मिलाकर परोसें।"
+   ]
+  }
+ },
+ {
+  "id": "kokum-sharbat",
+  "name": "Kokum Sharbat",
+  "hindi": "कोकम शरबत",
+  "kind": "Cooler",
+  "color": "#7d1f4d",
+  "tags": [
+   "Cooling",
+   "Digestion"
+  ],
+  "season": "Summer",
+  "time": "Any time",
+  "minutes": 10,
+  "serving": "1 glass (makes 2)",
+  "vrat": true,
+  "jain": true,
+  "noOnionGarlic": true,
+  "benefits": [
+   "A Konkan favourite that cools the body on hot days",
+   "Traditionally taken for acidity and digestion",
+   "Kokum has plant compounds (garcinol, anthocyanins) being studied for their effects"
+  ],
+  "nutrients": [
+   "Antioxidants",
+   "Vitamin C"
+  ],
+  "caution": [
+   "Ready-made kokum syrup is very sugary; dilute well or make it at home"
+  ],
+  "ingredients": [
+   {
+    "en": "6–8 dried kokum petals",
+    "hi": "6–8 सूखे कोकम"
+   },
+   {
+    "en": "1 tbsp jaggery or sugar",
+    "hi": "1 बड़ा चम्मच गुड़ या चीनी"
+   },
+   {
+    "en": "Roasted cumin, black salt",
+    "hi": "भुना जीरा, काला नमक"
+   },
+   {
+    "en": "2 glasses water",
+    "hi": "2 गिलास पानी"
+   }
+  ],
+  "steps": {
+   "en": [
+    "Soak the kokum in a cup of warm water for 1 hour, then squeeze and strain.",
+    "Add jaggery, roasted cumin and black salt.",
+    "Mix with cold water and serve."
+   ],
+   "hi": [
+    "कोकम को एक कप गुनगुने पानी में 1 घंटा भिगोएं, फिर मसलकर छान लें।",
+    "गुड़, भुना जीरा और काला नमक डालें।",
+    "ठंडे पानी में मिलाकर परोसें।"
+   ]
+  }
+ },
+ {
+  "id": "bel-sharbat",
+  "name": "Bel Sharbat",
+  "hindi": "बेल का शरबत",
+  "kind": "Cooler",
+  "color": "#e2a64b",
+  "tags": [
+   "Digestion",
+   "Cooling"
+  ],
+  "season": "Summer",
+  "time": "Morning",
+  "minutes": 15,
+  "serving": "1 glass (makes 2)",
+  "vrat": true,
+  "jain": true,
+  "noOnionGarlic": true,
+  "benefits": [
+   "Bel (wood apple) pulp is rich in fibre and is a traditional summer drink for the stomach",
+   "Cooling in the hottest months",
+   "Gives vitamin C and some minerals"
+  ],
+  "nutrients": [
+   "Fibre",
+   "Vitamin C",
+   "Potassium"
+  ],
+  "caution": [
+   "Add little or no sugar; the drink is good without it."
+  ],
+  "ingredients": [
+   {
+    "en": "1 ripe bel (wood apple)",
+    "hi": "1 पका बेल"
+   },
+   {
+    "en": "1 tbsp jaggery (optional)",
+    "hi": "1 बड़ा चम्मच गुड़ (चाहें तो)"
+   },
+   {
+    "en": "2 glasses cold water",
+    "hi": "2 गिलास ठंडा पानी"
+   }
+  ],
+  "steps": {
+   "en": [
+    "Break the bel and scoop out the pulp.",
+    "Soak it in a glass of water for 20 minutes, mash and strain out the seeds and fibres.",
+    "Add jaggery and the rest of the water; serve cool."
+   ],
+   "hi": [
+    "बेल तोड़कर गूदा निकालें।",
+    "एक गिलास पानी में 20 मिनट भिगोएं, मसलकर बीज और रेशे छान लें।",
+    "गुड़ और बाकी पानी डालकर ठंडा परोसें।"
+   ]
+  }
+ },
+ {
+  "id": "jaljeera",
+  "name": "Jaljeera",
+  "hindi": "जलजीरा",
+  "kind": "Cooler",
+  "color": "#7a8a3a",
+  "tags": [
+   "Digestion",
+   "Cooling",
+   "Hydration"
+  ],
+  "season": "Summer",
+  "time": "Before meals",
+  "minutes": 5,
+  "serving": "1 glass (makes 2)",
+  "vrat": false,
+  "jain": true,
+  "noOnionGarlic": true,
+  "benefits": [
+   "Cumin, mint and amchur make a tangy drink that is traditionally taken to whet the appetite",
+   "Helps you drink more water on hot days",
+   "Little or no sugar"
+  ],
+  "nutrients": [
+   "Water",
+   "Sodium"
+  ],
+  "caution": [
+   "Ready-made jaljeera powder is salty; go easy if you have high blood pressure"
+  ],
+  "ingredients": [
+   {
+    "en": "1 tsp roasted cumin powder",
+    "hi": "1 छोटा चम्मच भुना जीरा पाउडर"
+   },
+   {
+    "en": "A handful of mint leaves",
+    "hi": "मुट्ठी भर पुदीना"
+   },
+   {
+    "en": "½ tsp amchur, black salt, lemon",
+    "hi": "आधा छोटा चम्मच अमचूर, काला नमक, नींबू"
+   },
+   {
+    "en": "2 glasses cold water",
+    "hi": "2 गिलास ठंडा पानी"
+   }
+  ],
+  "steps": {
+   "en": [
+    "Grind the mint with a little water to a paste.",
+    "Mix in cumin, amchur, black salt and lemon.",
+    "Add cold water, stir and serve with a few boondi if you like."
+   ],
+   "hi": [
+    "पुदीना थोड़े पानी के साथ पीसकर पेस्ट बनाएं।",
+    "जीरा, अमचूर, काला नमक और नींबू मिलाएं।",
+    "ठंडा पानी डालकर मिलाएं, चाहें तो थोड़ी बूंदी डालकर परोसें।"
+   ]
+  }
+ },
+ {
+  "id": "sugarcane-juice",
+  "name": "Sugarcane Juice",
+  "hindi": "गन्ने का रस",
+  "kind": "Juice",
+  "color": "#b8c96a",
+  "tags": [
+   "Energy",
+   "Cooling"
+  ],
+  "season": "Summer",
+  "time": "Any time",
+  "minutes": 5,
+  "serving": "1 glass (200 ml)",
+  "vrat": true,
+  "jain": true,
+  "noOnionGarlic": true,
+  "benefits": [
+   "Quick energy on a hot afternoon",
+   "Fresh juice with ginger and lemon is a classic Indian summer drink",
+   "Gives some potassium"
+  ],
+  "nutrients": [
+   "Natural sugars",
+   "Potassium"
+  ],
+  "caution": [
+   "It is very high in sugar; people with diabetes should avoid it",
+   "Drink only from clean stalls that use fresh cane and clean ice, or skip the ice"
+  ],
+  "ingredients": [
+   {
+    "en": "Fresh sugarcane juice from a clean stall",
+    "hi": "साफ़ ठेले से ताज़ा गन्ने का रस"
+   },
+   {
+    "en": "A little lemon (and ginger, if not Jain)",
+    "hi": "थोड़ा नींबू (जैन न हों तो अदरक भी)"
+   }
+  ],
+  "steps": {
+   "en": [
+    "Buy from a clean stall and ask for lemon (and ginger, if you like) to be pressed in.",
+    "Ask for no ice, or ice made from clean water.",
+    "Drink at once; it darkens quickly."
+   ],
+   "hi": [
+    "साफ़ ठेले से लें और नींबू (चाहें तो अदरक भी) डलवाएं।",
+    "बर्फ़ न डलवाएं, या साफ़ पानी की बर्फ़ ही लें।",
+    "तुरंत पिएं; रस जल्दी काला पड़ जाता है।"
+   ]
+  }
+ },
+ {
+  "id": "watermelon-juice",
+  "name": "Watermelon Juice",
+  "hindi": "तरबूज़ का जूस",
+  "kind": "Juice",
+  "color": "#f05a6b",
+  "tags": [
+   "Hydration",
+   "Cooling",
+   "Kids"
+  ],
+  "season": "Summer",
+  "time": "Any time",
+  "minutes": 5,
+  "serving": "1 glass (200 ml)",
+  "vrat": true,
+  "jain": true,
+  "noOnionGarlic": true,
+  "benefits": [
+   "More than 90% water, so it is great for staying hydrated",
+   "Gives lycopene, the red plant pigment also found in tomatoes",
+   "Naturally sweet with no added sugar needed"
+  ],
+  "nutrients": [
+   "Water",
+   "Lycopene",
+   "Vitamin C"
+  ],
+  "caution": [
+   "Whole watermelon pieces are even better: they keep you full longer"
+  ],
+  "ingredients": [
+   {
+    "en": "2 cups watermelon pieces",
+    "hi": "2 कप तरबूज़ के टुकड़े"
+   },
+   {
+    "en": "A few mint leaves and lemon",
+    "hi": "कुछ पुदीना पत्ते और नींबू"
+   }
+  ],
+  "steps": {
+   "en": [
+    "Remove the seeds and blend the watermelon with mint.",
+    "Strain if you like and add a squeeze of lemon.",
+    "Serve straight away."
+   ],
+   "hi": [
+    "बीज निकालकर तरबूज़ को पुदीने के साथ पीस लें।",
+    "चाहें तो छान लें और थोड़ा नींबू निचोड़ें।",
+    "तुरंत परोसें।"
+   ]
+  }
+ },
+ {
+  "id": "pomegranate-juice",
+  "name": "Pomegranate Juice",
+  "hindi": "अनार का जूस",
+  "kind": "Juice",
+  "color": "#b3123a",
+  "tags": [
+   "Heart",
+   "Immunity"
+  ],
+  "season": "Winter",
+  "time": "Morning",
+  "minutes": 10,
+  "serving": "1 small glass (150 ml)",
+  "vrat": true,
+  "jain": true,
+  "noOnionGarlic": true,
+  "benefits": [
+   "Rich in polyphenols (plant antioxidants) that are studied for heart health",
+   "Gives vitamin C and potassium",
+   "Fresh home-made juice has no added sugar"
+  ],
+  "nutrients": [
+   "Polyphenols",
+   "Vitamin C",
+   "Potassium"
+  ],
+  "caution": [
+   "Packed 'pomegranate drinks' are often mostly sugar; fresh is best",
+   "If you take blood thinners or many regular medicines, ask your doctor before drinking it daily"
+  ],
+  "ingredients": [
+   {
+    "en": "1 large pomegranate",
+    "hi": "1 बड़ा अनार"
+   },
+   {
+    "en": "¼ glass water (optional)",
+    "hi": "चौथाई गिलास पानी (चाहें तो)"
+   }
+  ],
+  "steps": {
+   "en": [
+    "Take out the seeds (arils).",
+    "Pulse in a mixer for a few seconds only, so the white seeds don't crush.",
+    "Strain and drink fresh."
+   ],
+   "hi": [
+    "अनार के दाने निकाल लें।",
+    "मिक्सी में बस कुछ सेकंड चलाएं ताकि बीज न पिसें।",
+    "छानकर ताज़ा पिएं।"
+   ]
+  }
+ },
+ {
+  "id": "mosambi-juice",
+  "name": "Mosambi Juice",
+  "hindi": "मौसमी का जूस",
+  "kind": "Juice",
+  "color": "#f2c94c",
+  "tags": [
+   "Immunity",
+   "Hydration"
+  ],
+  "season": "Winter",
+  "time": "Morning",
+  "minutes": 10,
+  "serving": "1 small glass (150 ml)",
+  "vrat": true,
+  "jain": true,
+  "noOnionGarlic": true,
+  "benefits": [
+   "Sweet lime is a good source of vitamin C",
+   "Gentle on the stomach; often given when someone is unwell and not eating much",
+   "Hydrating"
+  ],
+  "nutrients": [
+   "Vitamin C",
+   "Potassium"
+  ],
+  "caution": [
+   "Eating the whole fruit gives you the fibre too; keep juice to one small glass"
+  ],
+  "ingredients": [
+   {
+    "en": "3 mosambi (sweet lime)",
+    "hi": "3 मौसमी"
+   },
+   {
+    "en": "A pinch of black salt (optional)",
+    "hi": "चुटकी भर काला नमक (चाहें तो)"
+   }
+  ],
+  "steps": {
+   "en": [
+    "Cut the mosambi in half.",
+    "Squeeze in a citrus press.",
+    "Add a pinch of black salt and drink at once."
+   ],
+   "hi": [
+    "मौसमी को बीच से काटें।",
+    "जूसर या हाथ के प्रेस से रस निकालें।",
+    "चुटकी भर काला नमक डालें और तुरंत पिएं।"
+   ]
+  }
+ },
+ {
+  "id": "tulsi-adrak-kadha",
+  "name": "Tulsi Adrak Kadha",
+  "hindi": "तुलसी अदरक काढ़ा",
+  "kind": "Warm drink",
+  "color": "#9b6a3c",
+  "tags": [
+   "Warming",
+   "Immunity"
+  ],
+  "season": "Winter",
+  "time": "Evening",
+  "minutes": 15,
+  "serving": "1 cup",
+  "vrat": true,
+  "jain": false,
+  "noOnionGarlic": true,
+  "benefits": [
+   "A warm traditional drink many families take in cold weather",
+   "Ginger and the steam soothe a scratchy throat",
+   "Made with spices you already have"
+  ],
+  "nutrients": [
+   "Plant compounds from ginger, tulsi and spices"
+  ],
+  "caution": [
+   "It soothes; it doesn't cure a cold or fever. See a doctor for high fever, trouble breathing or a cough that lasts",
+   "Strong kadha every day can cause acidity; keep it mild"
+  ],
+  "ingredients": [
+   {
+    "en": "8–10 tulsi leaves",
+    "hi": "8–10 तुलसी पत्ते"
+   },
+   {
+    "en": "1-inch piece of ginger, crushed",
+    "hi": "1 इंच अदरक, कुटा हुआ"
+   },
+   {
+    "en": "2 black peppercorns, 1 clove, a small piece of cinnamon",
+    "hi": "2 काली मिर्च, 1 लौंग, छोटा टुकड़ा दालचीनी"
+   },
+   {
+    "en": "2 cups water, jaggery to taste",
+    "hi": "2 कप पानी, स्वाद के लिए गुड़"
+   }
+  ],
+  "steps": {
+   "en": [
+    "Boil the water with tulsi, ginger and the spices.",
+    "Simmer for 8–10 minutes till it reduces to about one cup.",
+    "Strain, add a little jaggery and sip warm."
+   ],
+   "hi": [
+    "पानी में तुलसी, अदरक और मसाले डालकर उबालें।",
+    "8–10 मिनट धीमी आंच पर पकाएं जब तक एक कप रह जाए।",
+    "छान लें, थोड़ा गुड़ डालें और गुनगुना पिएं।"
+   ]
+  }
+ },
+ {
+  "id": "green-juice",
+  "name": "Green Juice (Palak, Kheera, Pudina)",
+  "hindi": "हरा जूस (पालक, खीरा, पुदीना)",
+  "kind": "Juice",
+  "color": "#4f9d4a",
+  "tags": [
+   "Immunity",
+   "Low sugar",
+   "Hydration"
+  ],
+  "season": "Winter",
+  "time": "Morning",
+  "minutes": 10,
+  "serving": "1 glass (200 ml)",
+  "vrat": false,
+  "jain": true,
+  "noOnionGarlic": true,
+  "benefits": [
+   "Spinach gives folate, vitamin K and some iron",
+   "Cucumber and mint make it light and fresh",
+   "Much less sugar than fruit juices"
+  ],
+  "nutrients": [
+   "Folate",
+   "Vitamin K",
+   "Vitamin C",
+   "Iron"
+  ],
+  "caution": [
+   "If you take blood thinners like warfarin, keep the amount of greens steady and ask your doctor",
+   "Spinach is high in oxalates; if you have had kidney stones, ask your doctor"
+  ],
+  "ingredients": [
+   {
+    "en": "A handful of spinach (palak)",
+    "hi": "मुट्ठी भर पालक"
+   },
+   {
+    "en": "1 cucumber",
+    "hi": "1 खीरा"
+   },
+   {
+    "en": "A few mint leaves, ½ apple, lemon",
+    "hi": "कुछ पुदीना पत्ते, आधा सेब, नींबू"
+   },
+   {
+    "en": "½ glass water",
+    "hi": "आधा गिलास पानी"
+   }
+  ],
+  "steps": {
+   "en": [
+    "Wash the spinach and mint well; chop the cucumber and apple.",
+    "Blend everything with water.",
+    "Strain if you like, add lemon and drink fresh."
+   ],
+   "hi": [
+    "पालक और पुदीना अच्छी तरह धोएं; खीरा और सेब काट लें।",
+    "सब कुछ पानी के साथ पीस लें।",
+    "चाहें तो छान लें, नींबू डालें और ताज़ा पिएं।"
+   ]
+  }
+ },
+ {
+  "id": "badam-milk",
+  "name": "Badam Milk",
+  "hindi": "बादाम दूध",
+  "kind": "Milk drink",
+  "color": "#efe0c2",
+  "tags": [
+   "Protein",
+   "Calcium",
+   "Kids",
+   "Energy"
+  ],
+  "season": "Winter",
+  "time": "Night",
+  "minutes": 15,
+  "serving": "1 glass (200 ml)",
+  "vrat": true,
+  "jain": true,
+  "noOnionGarlic": true,
+  "benefits": [
+   "Milk and almonds give protein, calcium and vitamin E",
+   "Filling and comforting; good for growing children",
+   "A healthier choice than packed flavoured milk"
+  ],
+  "nutrients": [
+   "Protein",
+   "Calcium",
+   "Vitamin E",
+   "Healthy fats"
+  ],
+  "caution": [
+   "Add little or no sugar; the drink is good without it.",
+   "Not for anyone with a nut allergy"
+  ],
+  "ingredients": [
+   {
+    "en": "1 glass milk",
+    "hi": "1 गिलास दूध"
+   },
+   {
+    "en": "8–10 almonds, soaked overnight and peeled",
+    "hi": "8–10 बादाम, रात भर भीगे और छिले"
+   },
+   {
+    "en": "A pinch of cardamom and saffron",
+    "hi": "चुटकी भर इलायची और केसर"
+   },
+   {
+    "en": "1 tsp sugar or jaggery (optional)",
+    "hi": "1 छोटा चम्मच चीनी या गुड़ (चाहें तो)"
+   }
+  ],
+  "steps": {
+   "en": [
+    "Grind the soaked almonds with a little milk to a smooth paste.",
+    "Boil the rest of the milk, add the paste, cardamom and saffron, and simmer for 5 minutes.",
+    "Sweeten lightly and serve warm or chilled."
+   ],
+   "hi": [
+    "भीगे बादाम थोड़े दूध के साथ चिकना पीस लें।",
+    "बाकी दूध उबालें, पेस्ट, इलायची और केसर डालकर 5 मिनट पकाएं।",
+    "हल्का मीठा करें और गरम या ठंडा परोसें।"
+   ]
+  }
+ },
+ {
+  "id": "ragi-malt",
+  "name": "Ragi Malt (Ragi Java)",
+  "hindi": "रागी माल्ट (रागी जावा)",
+  "kind": "Milk drink",
+  "color": "#8a5a44",
+  "tags": [
+   "Calcium",
+   "Energy",
+   "Kids"
+  ],
+  "season": "All",
+  "time": "Morning",
+  "minutes": 10,
+  "serving": "1 glass (200 ml)",
+  "vrat": false,
+  "jain": true,
+  "noOnionGarlic": true,
+  "benefits": [
+   "Ragi (finger millet) is one of the best plant sources of calcium",
+   "Fibre and slow energy for the morning",
+   "A South Indian favourite for children and elders"
+  ],
+  "nutrients": [
+   "Calcium",
+   "Fibre",
+   "Iron"
+  ],
+  "caution": [
+   "Cook it well so it isn't raw-tasting; stir to avoid lumps"
+  ],
+  "ingredients": [
+   {
+    "en": "2 tbsp ragi flour",
+    "hi": "2 बड़े चम्मच रागी आटा"
+   },
+   {
+    "en": "1 glass water or milk",
+    "hi": "1 गिलास पानी या दूध"
+   },
+   {
+    "en": "Jaggery, or salt and buttermilk for the savoury version",
+    "hi": "गुड़, या नमकीन के लिए नमक और छाछ"
+   }
+  ],
+  "steps": {
+   "en": [
+    "Mix the ragi flour in a little cold water so there are no lumps.",
+    "Pour into boiling water or milk and cook, stirring, for 5 minutes till it thickens.",
+    "Add jaggery (sweet) or let it cool and add buttermilk and salt (savoury)."
+   ],
+   "hi": [
+    "रागी आटा थोड़े ठंडे पानी में घोलें ताकि गांठें न रहें।",
+    "उबलते पानी या दूध में डालकर 5 मिनट हिलाते हुए गाढ़ा होने तक पकाएं।",
+    "मीठे के लिए गुड़ डालें, या ठंडा करके छाछ और नमक डालें (नमकीन)।"
+   ]
+  }
+ },
+ {
+  "id": "thandai",
+  "name": "Thandai",
+  "hindi": "ठंडाई",
+  "kind": "Milk drink",
+  "color": "#efd9b8",
+  "tags": [
+   "Cooling",
+   "Energy",
+   "Protein"
+  ],
+  "season": "Summer",
+  "time": "Any time",
+  "minutes": 20,
+  "serving": "1 small glass (makes 3)",
+  "vrat": true,
+  "jain": true,
+  "noOnionGarlic": true,
+  "benefits": [
+   "Almonds, melon seeds and fennel in milk make a rich, cooling festive drink (Holi, Maha Shivratri)",
+   "Gives protein, calcium and healthy fats",
+   "Fennel and cardamom are traditionally taken for digestion"
+  ],
+  "nutrients": [
+   "Protein",
+   "Calcium",
+   "Healthy fats"
+  ],
+  "caution": [
+   "It is rich and usually sweet; one small glass is enough",
+   "Not for anyone with a nut allergy"
+  ],
+  "ingredients": [
+   {
+    "en": "2 glasses milk",
+    "hi": "2 गिलास दूध"
+   },
+   {
+    "en": "10 almonds, 1 tbsp melon seeds, 1 tsp fennel (saunf), 1 tsp poppy seeds",
+    "hi": "10 बादाम, 1 बड़ा चम्मच मगज़, 1 छोटा चम्मच सौंफ, 1 छोटा चम्मच खसखस"
+   },
+   {
+    "en": "4 black peppercorns, 3 cardamoms, a few rose petals",
+    "hi": "4 काली मिर्च, 3 इलायची, कुछ गुलाब की पंखुड़ियां"
+   },
+   {
+    "en": "2 tbsp sugar",
+    "hi": "2 बड़े चम्मच चीनी"
+   }
+  ],
+  "steps": {
+   "en": [
+    "Soak the nuts, seeds and spices in water for 2 hours.",
+    "Grind to a fine paste with a little milk.",
+    "Mix into chilled milk with sugar, strain and serve cold."
+   ],
+   "hi": [
+    "मेवे, बीज और मसाले 2 घंटे पानी में भिगोएं।",
+    "थोड़े दूध के साथ बारीक पीस लें।",
+    "ठंडे दूध में चीनी के साथ मिलाएं, छानकर ठंडा परोसें।"
+   ]
+  }
+ },
+ {
+  "id": "kanji",
+  "name": "Kanji (Black Carrot)",
+  "hindi": "काली गाजर की कांजी",
+  "kind": "Fermented",
+  "color": "#5b1a3a",
+  "tags": [
+   "Digestion",
+   "Immunity"
+  ],
+  "season": "Winter",
+  "time": "Before meals",
+  "minutes": 15,
+  "serving": "1 small glass",
+  "vrat": false,
+  "jain": false,
+  "noOnionGarlic": true,
+  "benefits": [
+   "A tangy fermented winter drink from North India",
+   "Fermentation makes it a natural source of good bacteria for the gut",
+   "Black carrots are rich in anthocyanins, the same purple pigments as in jamun"
+  ],
+  "nutrients": [
+   "Probiotics",
+   "Anthocyanins"
+  ],
+  "caution": [
+   "It is salty; go easy if you have high blood pressure",
+   "Use a clean glass jar and throw it away if it smells bad or grows mould"
+  ],
+  "ingredients": [
+   {
+    "en": "3 black carrots",
+    "hi": "3 काली गाजर"
+   },
+   {
+    "en": "1 small beetroot (optional)",
+    "hi": "1 छोटा चुकंदर (चाहें तो)"
+   },
+   {
+    "en": "1 tbsp mustard seeds (rai), coarsely ground",
+    "hi": "1 बड़ा चम्मच राई, दरदरी पिसी"
+   },
+   {
+    "en": "1 tsp salt, ½ tsp red chilli",
+    "hi": "1 छोटा चम्मच नमक, आधा छोटा चम्मच लाल मिर्च"
+   },
+   {
+    "en": "1 litre water",
+    "hi": "1 लीटर पानी"
+   }
+  ],
+  "steps": {
+   "en": [
+    "Cut the carrots (and beetroot) into sticks and put them in a clean glass jar.",
+    "Add the mustard, salt, chilli and water; cover with a cloth.",
+    "Keep in the sun for 3–4 days, stirring daily, till tangy. Strain and serve."
+   ],
+   "hi": [
+    "गाजर (और चुकंदर) को लंबे टुकड़ों में काटकर साफ़ कांच के जार में डालें।",
+    "राई, नमक, मिर्च और पानी डालें; ऊपर कपड़ा बांधें।",
+    "3–4 दिन धूप में रखें, रोज़ हिलाएं, जब तक खट्टी न हो जाए। छानकर परोसें।"
+   ]
+  }
+ },
+ {
+  "id": "sol-kadhi",
+  "name": "Sol Kadhi",
+  "hindi": "सोल कढ़ी",
+  "kind": "Cooler",
+  "color": "#d98aa3",
+  "tags": [
+   "Digestion",
+   "Cooling"
+  ],
+  "season": "Summer",
+  "time": "After meals",
+  "minutes": 15,
+  "serving": "1 small glass",
+  "vrat": false,
+  "jain": false,
+  "noOnionGarlic": false,
+  "benefits": [
+   "A Konkan drink of kokum and coconut milk, taken after spicy meals",
+   "Traditionally used to settle acidity and help digestion",
+   "Cooling on hot days"
+  ],
+  "nutrients": [
+   "Healthy fats",
+   "Antioxidants"
+  ],
+  "caution": [
+   "Coconut milk is rich; one small glass is enough"
+  ],
+  "ingredients": [
+   {
+    "en": "6 kokum petals, soaked",
+    "hi": "6 कोकम, भीगे हुए"
+   },
+   {
+    "en": "1 cup coconut milk",
+    "hi": "1 कप नारियल का दूध"
+   },
+   {
+    "en": "1 small garlic clove, 1 green chilli",
+    "hi": "1 छोटी लहसुन की कली, 1 हरी मिर्च"
+   },
+   {
+    "en": "Salt, coriander leaves",
+    "hi": "नमक, धनिया पत्ते"
+   }
+  ],
+  "steps": {
+   "en": [
+    "Squeeze the soaked kokum and strain the pink water.",
+    "Crush the garlic and green chilli and add with salt to the coconut milk.",
+    "Mix in the kokum water, add coriander and serve cool."
+   ],
+   "hi": [
+    "भीगे कोकम मसलकर गुलाबी पानी छान लें।",
+    "लहसुन और हरी मिर्च कूटकर नमक के साथ नारियल के दूध में डालें।",
+    "कोकम का पानी मिलाएं, धनिया डालकर ठंडा परोसें।"
+   ]
+  }
+ },
+ {
+  "id": "sweet-lassi",
+  "name": "Lassi",
+  "hindi": "लस्सी",
+  "kind": "Fermented",
+  "color": "#f6efe0",
+  "tags": [
+   "Calcium",
+   "Protein",
+   "Cooling",
+   "Kids"
+  ],
+  "season": "Summer",
+  "time": "Any time",
+  "minutes": 5,
+  "serving": "1 glass (200 ml)",
+  "vrat": true,
+  "jain": true,
+  "noOnionGarlic": true,
+  "benefits": [
+   "Curd gives protein and calcium",
+   "Home-made curd brings live cultures that are good for the gut",
+   "Filling and cooling in summer"
+  ],
+  "nutrients": [
+   "Calcium",
+   "Protein",
+   "Probiotics (home-made curd)"
+  ],
+  "caution": [
+   "Shop lassi is often very sweet; make it at home with little sugar"
+  ],
+  "ingredients": [
+   {
+    "en": "1 cup thick curd",
+    "hi": "1 कप गाढ़ा दही"
+   },
+   {
+    "en": "½ cup cold water or milk",
+    "hi": "आधा कप ठंडा पानी या दूध"
+   },
+   {
+    "en": "1–2 tsp sugar, a pinch of cardamom",
+    "hi": "1–2 छोटे चम्मच चीनी, चुटकी भर इलायची"
+   }
+  ],
+  "steps": {
+   "en": [
+    "Whisk the curd till smooth.",
+    "Add water or milk, sugar and cardamom and whisk till frothy.",
+    "Serve cold."
+   ],
+   "hi": [
+    "दही को चिकना होने तक फेंटें।",
+    "पानी या दूध, चीनी और इलायची डालकर झागदार होने तक फेंटें।",
+    "ठंडी परोसें।"
+   ]
+  }
+ }
+]

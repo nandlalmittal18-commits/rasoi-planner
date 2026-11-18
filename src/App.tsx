@@ -6,17 +6,19 @@ import { DishLibrary } from './components/DishLibrary';
 import { DishSheet } from './components/DishSheet';
 import { FamilyForm } from './components/FamilyForm';
 import { GroceryView } from './components/GroceryView';
-import { BookIcon, CalendarIcon, CartIcon, FamilyIcon, Logo } from './components/icons';
+import { BookIcon, CalendarIcon, CartIcon, FamilyIcon, GlassIcon, Logo } from './components/icons';
+import { DrinkSheet, DrinksView } from './components/DrinksView';
 import { MenuView } from './components/MenuView';
 import { BLANK_PROFILE, SAMPLE_PROFILE } from './lib/sample';
 import { storage, type SyncState } from './lib/storage';
 import { signInWithGoogle, signOut, supabase } from './lib/supabase';
 
-type Tab = 'menu' | 'grocery' | 'dishes' | 'family';
+type Tab = 'menu' | 'grocery' | 'dishes' | 'drinks' | 'family';
 const TABS: { key: Tab; label: string; icon: ReactNode }[] = [
   { key: 'menu', label: 'Menu', icon: <CalendarIcon /> },
   { key: 'grocery', label: 'Shopping', icon: <CartIcon /> },
   { key: 'dishes', label: 'Dishes', icon: <BookIcon /> },
+  { key: 'drinks', label: 'Drinks', icon: <GlassIcon /> },
   { key: 'family', label: 'Family', icon: <FamilyIcon /> },
 ];
 
@@ -68,6 +70,8 @@ export default function App() {
   const [sync, setSync] = useState<SyncState>(storage.getSync());
   const [openDish, setOpenDish] = useState<string | null>(null);
   const closeDish = useCallback(() => setOpenDish(null), []);
+  const [openDrink, setOpenDrink] = useState<string | null>(null);
+  const closeDrink = useCallback(() => setOpenDrink(null), []);
   const toastTimer = useRef<number | undefined>(undefined);
   const signedInAs = useRef<string | null>(null);
 
@@ -296,6 +300,7 @@ export default function App() {
             }}
             onSetUp={() => go('family')}
             onOpenDish={setOpenDish}
+            onOpenDrink={setOpenDrink}
             onSignIn={online && authReady && !account ? onSignIn : undefined}
             notify={notify}
           />
@@ -304,6 +309,7 @@ export default function App() {
         {tab === 'dishes' && (
           <DishLibrary profile={profile} plan={plan} today={toISODate(new Date())} onToggleDislike={onToggleDislike} onOpenDish={setOpenDish} onChoose={onChoose} />
         )}
+        {tab === 'drinks' && <DrinksView profile={profile} onOpen={setOpenDrink} />}
         {tab === 'family' && (
           <FamilyForm
             key={isSample ? 'new' : `edit-${account?.id ?? 'phone'}`}
@@ -327,6 +333,7 @@ export default function App() {
       </nav>
 
       <DishSheet dishId={openDish} onClose={closeDish} notify={notify} />
+      <DrinkSheet drinkId={openDrink} profile={profile} onClose={closeDrink} notify={notify} />
 
       <div className={`toast${toast ? ' is-on' : ''}`} role="status" aria-live="polite">
         {toast}

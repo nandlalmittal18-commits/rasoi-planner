@@ -31,6 +31,7 @@ import { DishPicker, type PickTarget } from './DishPicker';
 import { RateButtons } from './RateButtons';
 import { PartyCard, PartyPlanner } from './Party';
 import { TiffinCard, TiffinPlanner } from './Tiffin';
+import { DrinkTodayCard } from './DrinksView';
 import { FestivalCard, FestivalNudge, FestivalSheet, type SaveFestival } from './Festivals';
 import { DishPicture } from './DishPicture';
 import { ProteinWeek } from './ProteinWeek';
@@ -53,6 +54,8 @@ interface Props {
   onNewWeek: () => void;
   onSetUp: () => void;
   onOpenDish: (id: string) => void;
+  /** Open a drink's details */
+  onOpenDrink: (id: string) => void;
   /** Present when the visitor can sign in with Google */
   onSignIn?: () => void;
   notify: (msg: string) => void;
@@ -84,7 +87,7 @@ function greeting(now: Date): string {
   return h < 12 ? 'Good morning' : h < 17 ? 'Good afternoon' : 'Good evening';
 }
 
-export function MenuView({ plan, profile, isSample, onSwap, onChoose, onSetTiffin, onRate, onPlanFestival, onShuffleDay, onNewWeek, onSetUp, onOpenDish, onSignIn, notify }: Props) {
+export function MenuView({ plan, profile, isSample, onSwap, onChoose, onSetTiffin, onRate, onPlanFestival, onOpenDrink, onShuffleDay, onNewWeek, onSetUp, onOpenDish, onSignIn, notify }: Props) {
   const now = new Date();
   const todayIso = toISODate(now);
   const todayIndex = plan.days.findIndex((d) => d.date === todayIso);
@@ -189,6 +192,7 @@ export function MenuView({ plan, profile, isSample, onSwap, onChoose, onSetTiffi
 
         <aside className="menu-side stack" aria-label="This week">
           <ProteinWeek plan={plan} selected={selected} onSelect={setSelected} />
+          <DrinkTodayCard profile={profile} onOpen={onOpenDrink} />
           <FestivalCard profile={profile} today={todayIso} onOpen={setFestivalOpen} />
           {hasKids && <TiffinCard plan={plan} onOpen={() => setTiffinOpen(true)} />}
           <PartyCard onOpen={() => setPartyOpen(true)} />

@@ -30,6 +30,8 @@ export const ThumbDownIcon = ({ size = 16 }: P) =>
   svg(size, <><path d="M17 14V4h3v10h-3z" /><path d="M17 14l-4 7c-1.4 0-2.3-1.2-2-2.6l.6-3.4H6a2 2 0 0 1-2-2.3l1.1-6.6A2.5 2.5 0 0 1 7.6 4H17" /></>);
 export const SpeakerIcon = ({ size = 18 }: P) =>
   svg(size, <><path d="M4 9.5v5h3.5L12 19V5L7.5 9.5H4z" /><path d="M15.5 9a4 4 0 0 1 0 6" /><path d="M18 6.5a7.5 7.5 0 0 1 0 11" /></>);
+export const GlassIcon = ({ size = 22 }: P) =>
+  svg(size, <><path d="M6 4h12l-1.6 15.2A2 2 0 0 1 14.4 21H9.6a2 2 0 0 1-2-1.8z" /><path d="M6.6 9.5h10.8" /><path d="M15 4l2-2.5" /></>);
 export const MoonIcon = ({ size = 16 }: P) => svg(size, <path d="M19 14.5A7.5 7.5 0 0 1 9.5 5a7.5 7.5 0 1 0 9.5 9.5z" />);
 export const SunIcon = ({ size = 16 }: P) =>
   svg(size, <><circle cx="12" cy="12" r="3.5" /><path d="M12 3v2M12 19v2M3 12h2M19 12h2M5.6 5.6l1.4 1.4M17 17l1.4 1.4M5.6 18.4 7 17M17 7l1.4-1.4" /></>);
