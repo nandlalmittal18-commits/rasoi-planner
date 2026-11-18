@@ -13,6 +13,7 @@ KINDS = {"Juice", "Cooler", "Milk drink", "Warm drink", "Fermented", "Water"}
 TAGS = {"Immunity", "Hydration", "Digestion", "Energy", "Protein", "Calcium", "Cooling", "Warming",
         "Low sugar", "Kids", "Heart", "Eyes & skin", "Sleep"}
 SEASONS = {"All", "Winter", "Summer", "Monsoon"}
+GROUPS = {"Mixed juices", "Juices", "Traditional drinks"}
 TIMES = {"Morning", "Any time", "Evening", "Night", "After meals", "Before meals"}
 
 problems, seen = [], set()
@@ -24,6 +25,7 @@ for n, d in enumerate(drinks, 1):
     for key in ("name", "hindi", "serving"):
         if not d.get(key): problems.append(f"{where}: missing {key}")
     if d.get("kind") not in KINDS: problems.append(f"{where}: kind must be one of {sorted(KINDS)}")
+    if d.get("group") not in GROUPS: problems.append(f"{where}: group must be one of {sorted(GROUPS)}")
     if d.get("season") not in SEASONS: problems.append(f"{where}: season must be one of {sorted(SEASONS)}")
     if d.get("time") not in TIMES: problems.append(f"{where}: time must be one of {sorted(TIMES)}")
     if not re.fullmatch(r"#[0-9a-fA-F]{6}", d.get("color", "")): problems.append(f"{where}: color must look like #a1b2c3")

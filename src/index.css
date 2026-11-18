@@ -842,3 +842,8 @@ body { background: #fff; }
 .drink-today-pic { flex: none; width: 96px; height: 96px; border-radius: 18px; overflow: hidden; border: 0; padding: 0; cursor: pointer; }
 .drink-link { color: var(--primary); margin-top: 6px; }
 .benefit-list + .drink-tags { margin-top: 12px; }
+
+.drink-groups { margin-bottom: 4px; }
+.drink-section { display: flex; flex-direction: column; gap: 14px; margin-top: 8px; }
+.drink-section-head h2 { font-size: 1.35rem; margin: 0; }
+.drink-section-head p { margin: 2px 0 0; }

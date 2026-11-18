@@ -9,11 +9,22 @@ export type DrinkTag =
   | 'Immunity' | 'Hydration' | 'Digestion' | 'Energy' | 'Protein' | 'Calcium' | 'Cooling' | 'Warming'
   | 'Low sugar' | 'Kids' | 'Heart' | 'Eyes & skin' | 'Sleep';
 
+export type DrinkGroup = 'Mixed juices' | 'Juices' | 'Traditional drinks';
+
+/** Sections of the Drinks screen, in order, with the heading people see. */
+export const DRINK_GROUPS: { key: DrinkGroup; label: string; note: string }[] = [
+  { key: 'Mixed juices', label: 'Mixed juices', note: 'Fruits and vegetables that work well together' },
+  { key: 'Juices', label: 'Fruit and vegetable juices', note: 'One fruit or vegetable, made fresh' },
+  { key: 'Traditional drinks', label: 'Traditional drinks', note: 'Chaas, sharbats, milk drinks and home remedies' },
+];
+
 export interface Drink {
   id: string;
   name: string;
   hindi: string;
   kind: 'Juice' | 'Cooler' | 'Milk drink' | 'Warm drink' | 'Fermented' | 'Water';
+  /** Section on the Drinks screen */
+  group: DrinkGroup;
   /** Colour of the drink, for the glass picture */
   color: string;
   tags: DrinkTag[];
@@ -67,7 +78,9 @@ export function drinkOfTheDay(profile: FamilyProfile, date: Date): Drink | undef
   const season = seasonFor(date);
   const fits = DRINKS.filter((d) => drinkFits(d, profile, date));
   const inSeason = fits.filter((d) => d.season === season || d.season === 'All');
-  const pool = inSeason.length ? inSeason : fits;
+  // Fresh fruit and vegetable juices first; traditional drinks only if no juice fits today.
+  const juices = inSeason.filter((d) => d.group !== 'Traditional drinks');
+  const pool = juices.length ? juices : inSeason.length ? inSeason : fits;
   if (!pool.length) return undefined;
   const day = Math.floor(Date.UTC(date.getFullYear(), date.getMonth(), date.getDate()) / 864e5);
   // A fixed shuffle step (coprime with most pool sizes) so neighbouring days don't get similar drinks.

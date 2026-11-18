@@ -1,6 +1,7 @@
 import { useEffect, useMemo, useState } from 'react';
 import {
   DRINKS,
+  DRINK_GROUPS,
   DRINK_NOTE,
   DRINK_TAGS,
   drinkCookMessage,
@@ -9,6 +10,7 @@ import {
   getDrink,
   whatsappLink,
   type Drink,
+  type DrinkGroup,
   type DrinkTag,
   type FamilyProfile,
 } from '../engine';
@@ -33,7 +35,7 @@ function DrinkCard({ drink, onOpen, fits }: { drink: Drink; onOpen: (id: string)
     <button type="button" className={`drink-card${fits ? '' : ' is-dimmed'}`} onClick={() => onOpen(drink.id)}>
       <span className="drink-card-media">
         <DrinkPicture drink={drink} />
-        <span className="drink-kind">{drink.kind}</span>
+        {drink.group === 'Traditional drinks' && <span className="drink-kind">{drink.kind}</span>}
       </span>
       <span className="drink-card-body">
         <span className="drink-name">{drink.name}</span>
@@ -61,23 +63,25 @@ export function DrinksView({ profile, onOpen }: { profile: FamilyProfile; onOpen
   const [tag, setTag] = useState<DrinkTag | null>(null);
   const [when, setWhen] = useState<(typeof SEASONS)[number] | 'Now'>('Now');
   const [query, setQuery] = useState('');
+  const [group, setGroup] = useState<DrinkGroup | 'All'>('All');
   const today = drinkOfTheDay(profile, now);
 
   const shown = useMemo(() => {
     const q = query.trim().toLowerCase();
     return DRINKS.filter(
       (d) =>
+        (group === 'All' || d.group === group) &&
         (!tag || d.tags.includes(tag)) &&
         (when === 'All year' ? true : when === 'Now' ? d.season === season || d.season === 'All' : d.season === when || d.season === 'All') &&
         (!q || `${d.name} ${d.hindi} ${d.benefits.join(' ')} ${d.ingredients.map((i) => i.en).join(' ')}`.toLowerCase().includes(q)),
     ).sort((a, b) => Number(drinkFits(b, profile)) - Number(drinkFits(a, profile)));
-  }, [tag, when, query, season, profile]);
+  }, [tag, when, query, season, profile, group]);
 
   return (
     <div className="stack">
       <div className="week-head">
         <div>
-          <p className="eyebrow">{DRINKS.length} healthy Indian drinks</p>
+          <p className="eyebrow">{DRINKS.filter((d) => d.group !== 'Traditional drinks').length} fresh juices and {DRINKS.filter((d) => d.group === 'Traditional drinks').length} traditional drinks</p>
           <h1>Juices and drinks</h1>
         </div>
       </div>
@@ -106,6 +110,13 @@ export function DrinksView({ profile, onOpen }: { profile: FamilyProfile; onOpen
       )}
 
       <section className="card drink-filters" aria-label="Find a drink">
+        <div className="seg drink-groups" role="radiogroup" aria-label="Kind of drink">
+          {([{ key: 'All', label: 'All drinks' }, ...DRINK_GROUPS] as { key: DrinkGroup | 'All'; label: string }[]).map((g) => (
+            <button type="button" key={g.key} role="radio" aria-checked={group === g.key} className={`seg-btn${group === g.key ? ' is-on' : ''}`} onClick={() => setGroup(g.key)}>
+              {g.label}
+            </button>
+          ))}
+        </div>
         <h2 className="filters-title">What is it good for?</h2>
         <div className="chips">
           {DRINK_TAGS.map((t) => (
@@ -130,11 +141,25 @@ export function DrinksView({ profile, onOpen }: { profile: FamilyProfile; onOpen
       </section>
 
       {shown.length === 0 && <p className="muted">No drink matches. Try another filter or “All year”.</p>}
-      <div className="drink-grid">
-        {shown.map((d) => (
-          <DrinkCard key={d.id} drink={d} onOpen={onOpen} fits={drinkFits(d, profile)} />
-        ))}
-      </div>
+      {DRINK_GROUPS.map((g) => {
+        const list = shown.filter((d) => d.group === g.key);
+        if (!list.length) return null;
+        return (
+          <section key={g.key} className="drink-section" aria-labelledby={`dg-${g.key}`}>
+            <div className="drink-section-head">
+              <h2 id={`dg-${g.key}`}>
+                {g.label} <span className="muted">({list.length})</span>
+              </h2>
+              <p className="muted small">{g.note}</p>
+            </div>
+            <div className="drink-grid">
+              {list.map((d) => (
+                <DrinkCard key={d.id} drink={d} onOpen={onOpen} fits={drinkFits(d, profile)} />
+              ))}
+            </div>
+          </section>
+        );
+      })}
 
       <p className="drink-note small">{DRINK_NOTE}</p>
     </div>

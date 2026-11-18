@@ -682,7 +682,8 @@ describe('daily message to the cook', () => {
 
 describe('juices and drinks', () => {
   it('has complete drinks: benefits, cautions, Hindi steps, known tags', () => {
-    expect(DRINKS.length).toBeGreaterThanOrEqual(30);
+    expect(DRINKS.length).toBeGreaterThanOrEqual(50);
+    expect(DRINKS.filter((d) => d.group === 'Mixed juices').length).toBeGreaterThanOrEqual(12);
     expect(new Set(DRINKS.map((d) => d.id)).size).toBe(DRINKS.length);
     for (const d of DRINKS) {
       expect(d.benefits.length, d.id).toBeGreaterThanOrEqual(2);
@@ -692,6 +693,8 @@ describe('juices and drinks', () => {
     }
     // The bitter-lauki warning must always be there.
     expect(DRINKS.find((d) => d.id === 'lauki-juice')!.caution[0]).toMatch(/bitter/i);
+    expect(DRINKS.find((d) => d.id === 'ash-gourd-juice')!.caution[0]).toMatch(/bitter/i);
+    expect(DRINKS.find((d) => d.id === 'papaya-juice')!.caution.join(' ')).toMatch(/pregnancy/i);
   });
 
   it('keeps Jain, satvik and vrat rules', () => {
@@ -712,6 +715,7 @@ describe('juices and drinks', () => {
       const date = new Date(2026, 10, 16 + i);
       expect(drinkFits(d, p, date), d.id).toBe(true);
       expect(['Winter', 'All']).toContain(d.season);
+      expect(d.group).not.toBe('Traditional drinks');
     });
   });
 

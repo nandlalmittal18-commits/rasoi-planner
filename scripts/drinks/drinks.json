@@ -1,9 +1,947 @@
 [
  {
+  "id": "abc-juice",
+  "name": "ABC Juice (Apple, Beetroot, Carrot)",
+  "hindi": "एबीसी जूस (सेब, चुकंदर, गाजर)",
+  "kind": "Juice",
+  "group": "Mixed juices",
+  "color": "#c43b3b",
+  "tags": [
+   "Immunity",
+   "Eyes & skin",
+   "Heart"
+  ],
+  "season": "Winter",
+  "time": "Morning",
+  "minutes": 10,
+  "serving": "1 glass (200 ml)",
+  "vrat": false,
+  "jain": false,
+  "noOnionGarlic": true,
+  "benefits": [
+   "Brings together beta-carotene from carrot, nitrates from beetroot and the sweetness of apple",
+   "A friendlier taste for people who find plain beetroot juice too earthy",
+   "Gives vitamin A, folate and potassium in one glass"
+  ],
+  "nutrients": [
+   "Beta-carotene",
+   "Nitrates",
+   "Folate",
+   "Vitamin C"
+  ],
+  "caution": [
+   "Apple adds natural sugar; keep it to one small glass",
+   "Same cautions as beetroot juice for kidney stones and blood pressure medicines"
+  ],
+  "ingredients": [
+   {
+    "en": "1 apple",
+    "hi": "1 सेब"
+   },
+   {
+    "en": "½ beetroot",
+    "hi": "आधा चुकंदर"
+   },
+   {
+    "en": "1 carrot",
+    "hi": "1 गाजर"
+   },
+   {
+    "en": "½ glass water, lemon",
+    "hi": "आधा गिलास पानी, नींबू"
+   }
+  ],
+  "steps": {
+   "en": [
+    "Wash and chop the apple, beetroot and carrot.",
+    "Blend with water till smooth.",
+    "Strain, add lemon and drink fresh."
+   ],
+   "hi": [
+    "सेब, चुकंदर और गाजर धोकर काट लें।",
+    "पानी के साथ चिकना पीस लें।",
+    "छान लें, नींबू डालें और ताज़ा पिएं।"
+   ]
+  }
+ },
+ {
+  "id": "green-juice",
+  "name": "Green Juice (Palak, Kheera, Pudina)",
+  "hindi": "हरा जूस (पालक, खीरा, पुदीना)",
+  "kind": "Juice",
+  "group": "Mixed juices",
+  "color": "#4f9d4a",
+  "tags": [
+   "Immunity",
+   "Low sugar",
+   "Hydration"
+  ],
+  "season": "Winter",
+  "time": "Morning",
+  "minutes": 10,
+  "serving": "1 glass (200 ml)",
+  "vrat": false,
+  "jain": true,
+  "noOnionGarlic": true,
+  "benefits": [
+   "Spinach gives folate, vitamin K and some iron",
+   "Cucumber and mint make it light and fresh",
+   "Much less sugar than fruit juices"
+  ],
+  "nutrients": [
+   "Folate",
+   "Vitamin K",
+   "Vitamin C",
+   "Iron"
+  ],
+  "caution": [
+   "If you take blood thinners like warfarin, keep the amount of greens steady and ask your doctor",
+   "Spinach is high in oxalates; if you have had kidney stones, ask your doctor"
+  ],
+  "ingredients": [
+   {
+    "en": "A handful of spinach (palak)",
+    "hi": "मुट्ठी भर पालक"
+   },
+   {
+    "en": "1 cucumber",
+    "hi": "1 खीरा"
+   },
+   {
+    "en": "A few mint leaves, ½ apple, lemon",
+    "hi": "कुछ पुदीना पत्ते, आधा सेब, नींबू"
+   },
+   {
+    "en": "½ glass water",
+    "hi": "आधा गिलास पानी"
+   }
+  ],
+  "steps": {
+   "en": [
+    "Wash the spinach and mint well; chop the cucumber and apple.",
+    "Blend everything with water.",
+    "Strain if you like, add lemon and drink fresh."
+   ],
+   "hi": [
+    "पालक और पुदीना अच्छी तरह धोएं; खीरा और सेब काट लें।",
+    "सब कुछ पानी के साथ पीस लें।",
+    "चाहें तो छान लें, नींबू डालें और ताज़ा पिएं।"
+   ]
+  }
+ },
+ {
+  "id": "beet-carrot-amla",
+  "name": "Beetroot, Carrot & Amla",
+  "hindi": "चुकंदर, गाजर और आंवला",
+  "kind": "Juice",
+  "group": "Mixed juices",
+  "color": "#b0234a",
+  "tags": [
+   "Immunity",
+   "Heart",
+   "Eyes & skin"
+  ],
+  "season": "Winter",
+  "time": "Morning",
+  "minutes": 10,
+  "serving": "1 glass (200 ml)",
+  "vrat": false,
+  "jain": false,
+  "noOnionGarlic": true,
+  "benefits": [
+   "Three winter favourites in one glass: nitrates from beetroot, beta-carotene from carrot and lots of vitamin C from amla",
+   "Amla's vitamin C helps the body use the iron in beetroot and greens",
+   "Less sweet than fruit-based juices"
+  ],
+  "nutrients": [
+   "Nitrates",
+   "Beta-carotene",
+   "Vitamin C",
+   "Folate"
+  ],
+  "caution": [
+   "Beetroot can turn urine pink (harmless). If you have had kidney stones or take BP medicines, ask your doctor",
+   "Drink it within 15 minutes of making; vitamin C fades as juice stands."
+  ],
+  "ingredients": [
+   {
+    "en": "½ beetroot",
+    "hi": "आधा चुकंदर"
+   },
+   {
+    "en": "2 carrots",
+    "hi": "2 गाजर"
+   },
+   {
+    "en": "1 amla",
+    "hi": "1 आंवला"
+   },
+   {
+    "en": "A small piece of ginger, ½ glass water",
+    "hi": "छोटा टुकड़ा अदरक, आधा गिलास पानी"
+   }
+  ],
+  "steps": {
+   "en": [
+    "Peel and chop the beetroot and carrots; deseed the amla.",
+    "Blend everything with ginger and water.",
+    "Strain and drink fresh."
+   ],
+   "hi": [
+    "चुकंदर और गाजर छीलकर काटें; आंवले की गुठली निकालें।",
+    "अदरक और पानी के साथ सब पीस लें।",
+    "छानकर ताज़ा पिएं।"
+   ]
+  }
+ },
+ {
+  "id": "orange-carrot-ginger",
+  "name": "Orange, Carrot & Ginger",
+  "hindi": "संतरा, गाजर और अदरक",
+  "kind": "Juice",
+  "group": "Mixed juices",
+  "color": "#f38a1f",
+  "tags": [
+   "Immunity",
+   "Eyes & skin",
+   "Kids"
+  ],
+  "season": "Winter",
+  "time": "Morning",
+  "minutes": 10,
+  "serving": "1 glass (200 ml)",
+  "vrat": false,
+  "jain": false,
+  "noOnionGarlic": true,
+  "benefits": [
+   "Vitamin C from orange and beta-carotene from carrot make a strong winter pair",
+   "Ginger adds warmth; it is also known to ease mild nausea",
+   "Kids usually like the sweet-tangy taste"
+  ],
+  "nutrients": [
+   "Vitamin C",
+   "Beta-carotene",
+   "Potassium"
+  ],
+  "caution": [
+   "Acidic; skip it if you get reflux",
+   "Drink it within 15 minutes of making; vitamin C fades as juice stands."
+  ],
+  "ingredients": [
+   {
+    "en": "2 oranges",
+    "hi": "2 संतरे"
+   },
+   {
+    "en": "2 carrots",
+    "hi": "2 गाजर"
+   },
+   {
+    "en": "A small piece of ginger",
+    "hi": "छोटा टुकड़ा अदरक"
+   },
+   {
+    "en": "¼ glass water",
+    "hi": "चौथाई गिलास पानी"
+   }
+  ],
+  "steps": {
+   "en": [
+    "Peel the oranges and remove seeds; peel and chop the carrots.",
+    "Blend the carrots and ginger with water, then add the orange and blend a few seconds more.",
+    "Strain and drink fresh."
+   ],
+   "hi": [
+    "संतरे छीलकर बीज निकालें; गाजर छीलकर काटें।",
+    "गाजर और अदरक को पानी के साथ पीसें, फिर संतरा डालकर कुछ सेकंड और चलाएं।",
+    "छानकर ताज़ा पिएं।"
+   ]
+  }
+ },
+ {
+  "id": "carrot-apple-ginger",
+  "name": "Carrot, Apple & Ginger",
+  "hindi": "गाजर, सेब और अदरक",
+  "kind": "Juice",
+  "group": "Mixed juices",
+  "color": "#f0a030",
+  "tags": [
+   "Eyes & skin",
+   "Kids",
+   "Immunity"
+  ],
+  "season": "Winter",
+  "time": "Morning",
+  "minutes": 10,
+  "serving": "1 glass (200 ml)",
+  "vrat": false,
+  "jain": false,
+  "noOnionGarlic": true,
+  "benefits": [
+   "Beta-carotene from carrots for eyes and skin",
+   "Apple makes it naturally sweet without sugar",
+   "Ginger gives a gentle warm kick in winter"
+  ],
+  "nutrients": [
+   "Beta-carotene",
+   "Vitamin C",
+   "Potassium"
+  ],
+  "caution": [
+   "Juice has less fibre than the whole fruit and vegetables; one small glass is plenty",
+   "Drink it within 15 minutes of making; vitamin C fades as juice stands."
+  ],
+  "ingredients": [
+   {
+    "en": "3 carrots",
+    "hi": "3 गाजर"
+   },
+   {
+    "en": "1 apple",
+    "hi": "1 सेब"
+   },
+   {
+    "en": "A small piece of ginger",
+    "hi": "छोटा टुकड़ा अदरक"
+   },
+   {
+    "en": "½ glass water, lemon",
+    "hi": "आधा गिलास पानी, नींबू"
+   }
+  ],
+  "steps": {
+   "en": [
+    "Wash, peel and chop the carrots and apple.",
+    "Blend with ginger and water.",
+    "Strain, add lemon and drink fresh."
+   ],
+   "hi": [
+    "गाजर और सेब धोकर, छीलकर काटें।",
+    "अदरक और पानी के साथ पीसें।",
+    "छानकर नींबू डालें और ताज़ा पिएं।"
+   ]
+  }
+ },
+ {
+  "id": "pineapple-cucumber-mint",
+  "name": "Pineapple, Cucumber & Mint",
+  "hindi": "अनानास, खीरा और पुदीना",
+  "kind": "Juice",
+  "group": "Mixed juices",
+  "color": "#c9e265",
+  "tags": [
+   "Hydration",
+   "Cooling",
+   "Digestion"
+  ],
+  "season": "Summer",
+  "time": "Any time",
+  "minutes": 10,
+  "serving": "1 glass (200 ml)",
+  "vrat": true,
+  "jain": true,
+  "noOnionGarlic": true,
+  "benefits": [
+   "Cucumber makes it light and hydrating; pineapple adds vitamin C",
+   "Fresh pineapple's bromelain and mint make it a nice drink after a meal",
+   "Less sugar than plain pineapple juice"
+  ],
+  "nutrients": [
+   "Vitamin C",
+   "Manganese",
+   "Water"
+  ],
+  "caution": [
+   "Pineapple can sting mouth ulcers",
+   "Drink it within 15 minutes of making; vitamin C fades as juice stands."
+  ],
+  "ingredients": [
+   {
+    "en": "1 cup pineapple pieces",
+    "hi": "1 कप अनानास के टुकड़े"
+   },
+   {
+    "en": "1 cucumber",
+    "hi": "1 खीरा"
+   },
+   {
+    "en": "A handful of mint leaves",
+    "hi": "मुट्ठी भर पुदीना"
+   },
+   {
+    "en": "Lemon, a pinch of black salt",
+    "hi": "नींबू, चुटकी भर काला नमक"
+   }
+  ],
+  "steps": {
+   "en": [
+    "Peel and chop the pineapple and cucumber.",
+    "Blend with mint and a little water.",
+    "Strain, add lemon and black salt, and serve cool."
+   ],
+   "hi": [
+    "अनानास और खीरा छीलकर काटें।",
+    "पुदीना और थोड़े पानी के साथ पीसें।",
+    "छानकर नींबू और काला नमक डालें और ठंडा परोसें।"
+   ]
+  }
+ },
+ {
+  "id": "papaya-pineapple-orange",
+  "name": "Papaya, Pineapple & Orange",
+  "hindi": "पपीता, अनानास और संतरा",
+  "kind": "Juice",
+  "group": "Mixed juices",
+  "color": "#f7952e",
+  "tags": [
+   "Immunity",
+   "Digestion",
+   "Eyes & skin"
+  ],
+  "season": "All",
+  "time": "Morning",
+  "minutes": 10,
+  "serving": "1 small glass (150 ml)",
+  "vrat": true,
+  "jain": true,
+  "noOnionGarlic": true,
+  "benefits": [
+   "A tropical mix full of vitamin C",
+   "Papaya adds beta-carotene, folate and fibre",
+   "Papaya and fresh pineapple both have natural enzymes (papain, bromelain)"
+  ],
+  "nutrients": [
+   "Vitamin C",
+   "Beta-carotene",
+   "Folate",
+   "Fibre"
+  ],
+  "caution": [
+   "Use only ripe papaya, especially in pregnancy",
+   "Naturally sweet; keep to one small glass if you have diabetes"
+  ],
+  "ingredients": [
+   {
+    "en": "1 cup ripe papaya",
+    "hi": "1 कप पका पपीता"
+   },
+   {
+    "en": "½ cup pineapple",
+    "hi": "आधा कप अनानास"
+   },
+   {
+    "en": "1 orange, peeled and seeded",
+    "hi": "1 संतरा, छिला और बीज निकाला"
+   },
+   {
+    "en": "¼ glass water",
+    "hi": "चौथाई गिलास पानी"
+   }
+  ],
+  "steps": {
+   "en": [
+    "Cut the papaya and pineapple into pieces; peel and deseed the orange.",
+    "Blend everything with water till smooth.",
+    "Serve without straining, so you keep the fibre."
+   ],
+   "hi": [
+    "पपीता और अनानास के टुकड़े करें; संतरा छीलकर बीज निकालें।",
+    "सब कुछ पानी के साथ चिकना पीसें।",
+    "बिना छाने परोसें ताकि रेशा बना रहे।"
+   ]
+  }
+ },
+ {
+  "id": "tomato-carrot-beet",
+  "name": "Tomato, Carrot & Beetroot (Veg Juice)",
+  "hindi": "टमाटर, गाजर और चुकंदर (सब्ज़ी जूस)",
+  "kind": "Juice",
+  "group": "Mixed juices",
+  "color": "#c23a2e",
+  "tags": [
+   "Heart",
+   "Low sugar",
+   "Eyes & skin"
+  ],
+  "season": "Winter",
+  "time": "Morning",
+  "minutes": 10,
+  "serving": "1 glass (200 ml)",
+  "vrat": false,
+  "jain": false,
+  "noOnionGarlic": true,
+  "benefits": [
+   "A vegetable juice with far less sugar than fruit juices",
+   "Lycopene from tomato, beta-carotene from carrot and nitrates from beetroot",
+   "A good choice for people watching their sugar"
+  ],
+  "nutrients": [
+   "Lycopene",
+   "Beta-carotene",
+   "Nitrates",
+   "Potassium"
+  ],
+  "caution": [
+   "Keep salt low",
+   "Same cautions as beetroot juice for kidney stones and BP medicines"
+  ],
+  "ingredients": [
+   {
+    "en": "2 tomatoes",
+    "hi": "2 टमाटर"
+   },
+   {
+    "en": "1 carrot",
+    "hi": "1 गाजर"
+   },
+   {
+    "en": "½ small beetroot",
+    "hi": "आधा छोटा चुकंदर"
+   },
+   {
+    "en": "Lemon, black pepper, a few coriander leaves",
+    "hi": "नींबू, काली मिर्च, थोड़े धनिया पत्ते"
+   }
+  ],
+  "steps": {
+   "en": [
+    "Wash and chop the vegetables.",
+    "Blend with a little water and coriander.",
+    "Strain, add lemon and pepper, and drink fresh."
+   ],
+   "hi": [
+    "सब्ज़ियां धोकर काटें।",
+    "थोड़े पानी और धनिये के साथ पीसें।",
+    "छान लें, नींबू और काली मिर्च डालें और ताज़ा पिएं।"
+   ]
+  }
+ },
+ {
+  "id": "pomegranate-beet",
+  "name": "Pomegranate & Beetroot",
+  "hindi": "अनार और चुकंदर",
+  "kind": "Juice",
+  "group": "Mixed juices",
+  "color": "#9e1638",
+  "tags": [
+   "Heart",
+   "Energy"
+  ],
+  "season": "Winter",
+  "time": "Morning",
+  "minutes": 10,
+  "serving": "1 small glass (150 ml)",
+  "vrat": false,
+  "jain": false,
+  "noOnionGarlic": true,
+  "benefits": [
+   "Pomegranate polyphenols plus beetroot nitrates: a heart-friendly pair",
+   "Pomegranate makes beetroot taste much better",
+   "Gives folate and potassium"
+  ],
+  "nutrients": [
+   "Polyphenols",
+   "Nitrates",
+   "Folate",
+   "Potassium"
+  ],
+  "caution": [
+   "If you take blood pressure or blood-thinning medicines, ask your doctor before drinking it daily",
+   "Beetroot can turn urine pink (harmless)"
+  ],
+  "ingredients": [
+   {
+    "en": "1 cup pomegranate seeds",
+    "hi": "1 कप अनार के दाने"
+   },
+   {
+    "en": "½ beetroot",
+    "hi": "आधा चुकंदर"
+   },
+   {
+    "en": "¼ glass water, lemon",
+    "hi": "चौथाई गिलास पानी, नींबू"
+   }
+  ],
+  "steps": {
+   "en": [
+    "Peel and chop the beetroot.",
+    "Blend with the pomegranate seeds and water for a few seconds.",
+    "Strain, add lemon and drink fresh."
+   ],
+   "hi": [
+    "चुकंदर छीलकर काटें।",
+    "अनार के दानों और पानी के साथ कुछ सेकंड पीसें।",
+    "छान लें, नींबू डालें और ताज़ा पिएं।"
+   ]
+  }
+ },
+ {
+  "id": "cucumber-mint-lemon",
+  "name": "Cucumber, Mint & Lemon",
+  "hindi": "खीरा, पुदीना और नींबू",
+  "kind": "Juice",
+  "group": "Mixed juices",
+  "color": "#bfe0a0",
+  "tags": [
+   "Hydration",
+   "Cooling",
+   "Low sugar"
+  ],
+  "season": "Summer",
+  "time": "Any time",
+  "minutes": 5,
+  "serving": "1 glass (200 ml)",
+  "vrat": true,
+  "jain": true,
+  "noOnionGarlic": true,
+  "benefits": [
+   "Almost no sugar and very few calories",
+   "Very hydrating on hot days",
+   "Lemon adds vitamin C"
+  ],
+  "nutrients": [
+   "Water",
+   "Vitamin C",
+   "Vitamin K"
+  ],
+  "caution": [
+   "Cut off and taste the ends of the cucumber; skip it if very bitter"
+  ],
+  "ingredients": [
+   {
+    "en": "2 cucumbers",
+    "hi": "2 खीरे"
+   },
+   {
+    "en": "A handful of mint leaves",
+    "hi": "मुट्ठी भर पुदीना"
+   },
+   {
+    "en": "1 lemon, a pinch of black salt",
+    "hi": "1 नींबू, चुटकी भर काला नमक"
+   }
+  ],
+  "steps": {
+   "en": [
+    "Peel and chop the cucumbers.",
+    "Blend with mint and a little cold water.",
+    "Strain, add lemon and black salt, and serve cold."
+   ],
+   "hi": [
+    "खीरे छीलकर काटें।",
+    "पुदीना और थोड़े ठंडे पानी के साथ पीसें।",
+    "छान लें, नींबू और काला नमक डालें और ठंडा परोसें।"
+   ]
+  }
+ },
+ {
+  "id": "mosambi-pomegranate",
+  "name": "Mosambi & Pomegranate",
+  "hindi": "मौसमी और अनार",
+  "kind": "Juice",
+  "group": "Mixed juices",
+  "color": "#e05a5a",
+  "tags": [
+   "Immunity",
+   "Heart"
+  ],
+  "season": "Winter",
+  "time": "Morning",
+  "minutes": 10,
+  "serving": "1 small glass (150 ml)",
+  "vrat": true,
+  "jain": true,
+  "noOnionGarlic": true,
+  "benefits": [
+   "Vitamin C from mosambi and polyphenols from pomegranate",
+   "Gentle on the stomach; a common choice when someone is recovering",
+   "Fresh, with no added sugar"
+  ],
+  "nutrients": [
+   "Vitamin C",
+   "Polyphenols",
+   "Potassium"
+  ],
+  "caution": [
+   "Whole fruit gives more fibre; keep juice to one small glass",
+   "Drink it within 15 minutes of making; vitamin C fades as juice stands."
+  ],
+  "ingredients": [
+   {
+    "en": "2 mosambi",
+    "hi": "2 मौसमी"
+   },
+   {
+    "en": "½ cup pomegranate seeds",
+    "hi": "आधा कप अनार के दाने"
+   }
+  ],
+  "steps": {
+   "en": [
+    "Squeeze the mosambi.",
+    "Pulse the pomegranate seeds for a few seconds and strain.",
+    "Mix both juices and drink fresh."
+   ],
+   "hi": [
+    "मौसमी का रस निकालें।",
+    "अनार के दाने कुछ सेकंड पीसकर छान लें।",
+    "दोनों रस मिलाकर ताज़ा पिएं।"
+   ]
+  }
+ },
+ {
+  "id": "palak-amla-apple",
+  "name": "Spinach, Amla & Apple",
+  "hindi": "पालक, आंवला और सेब",
+  "kind": "Juice",
+  "group": "Mixed juices",
+  "color": "#5a9e3a",
+  "tags": [
+   "Immunity",
+   "Low sugar"
+  ],
+  "season": "Winter",
+  "time": "Morning",
+  "minutes": 10,
+  "serving": "1 glass (200 ml)",
+  "vrat": false,
+  "jain": true,
+  "noOnionGarlic": true,
+  "benefits": [
+   "Spinach gives folate and vitamin K; amla adds plenty of vitamin C",
+   "Vitamin C helps the body take up the iron from spinach",
+   "Apple softens the green taste"
+  ],
+  "nutrients": [
+   "Folate",
+   "Vitamin C",
+   "Vitamin K",
+   "Iron"
+  ],
+  "caution": [
+   "If you take blood thinners like warfarin, keep greens steady and ask your doctor",
+   "Spinach is high in oxalates; ask your doctor if you have had kidney stones"
+  ],
+  "ingredients": [
+   {
+    "en": "A handful of spinach",
+    "hi": "मुट्ठी भर पालक"
+   },
+   {
+    "en": "1 amla",
+    "hi": "1 आंवला"
+   },
+   {
+    "en": "1 apple",
+    "hi": "1 सेब"
+   },
+   {
+    "en": "½ glass water, lemon",
+    "hi": "आधा गिलास पानी, नींबू"
+   }
+  ],
+  "steps": {
+   "en": [
+    "Wash the spinach well; deseed the amla and chop the apple.",
+    "Blend everything with water.",
+    "Strain if you like, add lemon and drink fresh."
+   ],
+   "hi": [
+    "पालक अच्छी तरह धोएं; आंवले की गुठली निकालें और सेब काटें।",
+    "सब कुछ पानी के साथ पीसें।",
+    "चाहें तो छान लें, नींबू डालें और ताज़ा पिएं।"
+   ]
+  }
+ },
+ {
+  "id": "kiwi-apple",
+  "name": "Kiwi & Green Apple",
+  "hindi": "कीवी और हरा सेब",
+  "kind": "Juice",
+  "group": "Mixed juices",
+  "color": "#9ccc52",
+  "tags": [
+   "Immunity",
+   "Digestion"
+  ],
+  "season": "Winter",
+  "time": "Morning",
+  "minutes": 5,
+  "serving": "1 glass (200 ml)",
+  "vrat": true,
+  "jain": true,
+  "noOnionGarlic": true,
+  "benefits": [
+   "Kiwi is very rich in vitamin C and fibre",
+   "Blended with its pulp, it helps keep you regular",
+   "Green apple adds tang with less sugar than red"
+  ],
+  "nutrients": [
+   "Vitamin C",
+   "Fibre",
+   "Vitamin K"
+  ],
+  "caution": [
+   "Kiwi allergy can cause an itchy mouth; stop if this happens",
+   "Don't strain it; keep the pulp"
+  ],
+  "ingredients": [
+   {
+    "en": "2 kiwis",
+    "hi": "2 कीवी"
+   },
+   {
+    "en": "1 green apple",
+    "hi": "1 हरा सेब"
+   },
+   {
+    "en": "½ glass water, mint",
+    "hi": "आधा गिलास पानी, पुदीना"
+   }
+  ],
+  "steps": {
+   "en": [
+    "Peel the kiwis; core and chop the apple.",
+    "Blend with water and mint for a few seconds.",
+    "Pour without straining and drink fresh."
+   ],
+   "hi": [
+    "कीवी छीलें; सेब का बीच निकालकर काटें।",
+    "पानी और पुदीने के साथ कुछ सेकंड पीसें।",
+    "बिना छाने डालें और ताज़ा पिएं।"
+   ]
+  }
+ },
+ {
+  "id": "strawberry-orange",
+  "name": "Strawberry & Orange",
+  "hindi": "स्ट्रॉबेरी और संतरा",
+  "kind": "Juice",
+  "group": "Mixed juices",
+  "color": "#e8463c",
+  "tags": [
+   "Immunity",
+   "Kids"
+  ],
+  "season": "Winter",
+  "time": "Any time",
+  "minutes": 10,
+  "serving": "1 glass (200 ml)",
+  "vrat": true,
+  "jain": true,
+  "noOnionGarlic": true,
+  "benefits": [
+   "Strawberries and oranges are both rich in vitamin C",
+   "Strawberries add folate and plant pigments (anthocyanins)",
+   "A sweet seasonal treat in strawberry season (December to March)"
+  ],
+  "nutrients": [
+   "Vitamin C",
+   "Folate",
+   "Anthocyanins"
+  ],
+  "caution": [
+   "Wash strawberries well just before using",
+   "Some people are allergic to strawberries"
+  ],
+  "ingredients": [
+   {
+    "en": "1 cup strawberries",
+    "hi": "1 कप स्ट्रॉबेरी"
+   },
+   {
+    "en": "2 oranges, peeled and seeded",
+    "hi": "2 संतरे, छिले और बीज निकाले"
+   },
+   {
+    "en": "¼ glass water",
+    "hi": "चौथाई गिलास पानी"
+   }
+  ],
+  "steps": {
+   "en": [
+    "Wash and hull the strawberries.",
+    "Blend with the orange segments and water.",
+    "Strain if you like and serve fresh."
+   ],
+   "hi": [
+    "स्ट्रॉबेरी धोकर ऊपर का हरा हिस्सा हटाएं।",
+    "संतरे की फांकों और पानी के साथ पीसें।",
+    "चाहें तो छान लें और ताज़ा परोसें।"
+   ]
+  }
+ },
+ {
+  "id": "amla-ginger-haldi-shot",
+  "name": "Amla, Ginger & Haldi Shot",
+  "hindi": "आंवला, अदरक और हल्दी शॉट",
+  "kind": "Juice",
+  "group": "Mixed juices",
+  "color": "#d9a41e",
+  "tags": [
+   "Immunity",
+   "Warming"
+  ],
+  "season": "Winter",
+  "time": "Morning",
+  "minutes": 10,
+  "serving": "1 shot (50 ml)",
+  "vrat": false,
+  "jain": false,
+  "noOnionGarlic": true,
+  "benefits": [
+   "A small, strong winter shot: vitamin C from amla, warmth from ginger",
+   "Turmeric with a pinch of black pepper (which helps the body absorb it)",
+   "Very low in sugar"
+  ],
+  "nutrients": [
+   "Vitamin C",
+   "Curcumin",
+   "Gingerol"
+  ],
+  "caution": [
+   "Strong and acidic; dilute it and don't take it on an empty stomach if you get acidity",
+   "Avoid large amounts if you take blood thinners or have gallstones; ask your doctor",
+   "Take a small shot, not a big glass"
+  ],
+  "ingredients": [
+   {
+    "en": "2 amla",
+    "hi": "2 आंवले"
+   },
+   {
+    "en": "1-inch piece of ginger",
+    "hi": "1 इंच अदरक"
+   },
+   {
+    "en": "¼ tsp haldi and a pinch of black pepper",
+    "hi": "चौथाई छोटा चम्मच हल्दी और चुटकी भर काली मिर्च"
+   },
+   {
+    "en": "½ cup water, a little honey (optional)",
+    "hi": "आधा कप पानी, थोड़ा शहद (चाहें तो)"
+   }
+  ],
+  "steps": {
+   "en": [
+    "Deseed the amla and chop with the ginger.",
+    "Blend with haldi, pepper and water; strain.",
+    "Drink a small shot (about 50 ml); keep the rest in the fridge for one day only."
+   ],
+   "hi": [
+    "आंवले की गुठली निकालें और अदरक के साथ काटें।",
+    "हल्दी, काली मिर्च और पानी के साथ पीसकर छान लें।",
+    "एक छोटा शॉट (लगभग 50 मिली) पिएं; बाकी फ्रिज में बस एक दिन रखें।"
+   ]
+  }
+ },
+ {
   "id": "amla-juice",
   "name": "Amla Juice",
   "hindi": "आंवला जूस",
   "kind": "Juice",
+  "group": "Juices",
   "color": "#9cc94a",
   "tags": [
    "Immunity",
@@ -58,10 +996,1066 @@
   }
  },
  {
+  "id": "beetroot-juice",
+  "name": "Beetroot Juice",
+  "hindi": "चुकंदर का जूस",
+  "kind": "Juice",
+  "group": "Juices",
+  "color": "#a3204d",
+  "tags": [
+   "Heart",
+   "Energy"
+  ],
+  "season": "Winter",
+  "time": "Morning",
+  "minutes": 10,
+  "serving": "1 glass (200 ml)",
+  "vrat": false,
+  "jain": false,
+  "noOnionGarlic": true,
+  "benefits": [
+   "Rich in natural nitrates; in studies a daily glass lowered blood pressure a little (about 3–4 points)",
+   "The same nitrates may help stamina during exercise",
+   "Gives folate and some iron"
+  ],
+  "nutrients": [
+   "Nitrates",
+   "Folate",
+   "Potassium"
+  ],
+  "caution": [
+   "It can turn urine or stool pink or red; this is harmless",
+   "Beetroot is high in oxalates; if you have had kidney stones, ask your doctor",
+   "If you take blood pressure medicines, tell your doctor before drinking it daily"
+  ],
+  "ingredients": [
+   {
+    "en": "1 medium beetroot",
+    "hi": "1 मीडियम चुकंदर"
+   },
+   {
+    "en": "½ apple or a small piece of ginger",
+    "hi": "आधा सेब या छोटा टुकड़ा अदरक"
+   },
+   {
+    "en": "½ glass water and a squeeze of lemon",
+    "hi": "आधा गिलास पानी और थोड़ा नींबू"
+   }
+  ],
+  "steps": {
+   "en": [
+    "Peel the beetroot and cut into small pieces.",
+    "Blend with the apple or ginger and water.",
+    "Strain, add lemon and drink fresh."
+   ],
+   "hi": [
+    "चुकंदर छीलकर छोटे टुकड़े करें।",
+    "सेब या अदरक और पानी के साथ मिक्सी में पीस लें।",
+    "छान लें, नींबू डालें और ताज़ा पिएं।"
+   ]
+  }
+ },
+ {
+  "id": "carrot-juice",
+  "name": "Carrot Juice",
+  "hindi": "गाजर का जूस",
+  "kind": "Juice",
+  "group": "Juices",
+  "color": "#f08a24",
+  "tags": [
+   "Eyes & skin",
+   "Immunity",
+   "Kids"
+  ],
+  "season": "Winter",
+  "time": "Morning",
+  "minutes": 10,
+  "serving": "1 glass (200 ml)",
+  "vrat": false,
+  "jain": false,
+  "noOnionGarlic": true,
+  "benefits": [
+   "Carrots are full of beta-carotene, which the body turns into vitamin A for healthy eyes and skin",
+   "Naturally sweet, so children usually like it",
+   "Best with a few drops of oil or with a meal, which helps the body absorb vitamin A"
+  ],
+  "nutrients": [
+   "Beta-carotene (vitamin A)",
+   "Potassium",
+   "Vitamin K"
+  ],
+  "caution": [
+   "Juice has less fibre than whole carrots; one small glass is plenty"
+  ],
+  "ingredients": [
+   {
+    "en": "3 carrots (red winter carrots are best)",
+    "hi": "3 गाजर (सर्दी की लाल गाजर सबसे अच्छी)"
+   },
+   {
+    "en": "A small piece of ginger",
+    "hi": "छोटा टुकड़ा अदरक"
+   },
+   {
+    "en": "½ glass water, lemon",
+    "hi": "आधा गिलास पानी, नींबू"
+   }
+  ],
+  "steps": {
+   "en": [
+    "Wash, peel and chop the carrots.",
+    "Blend with ginger and water till smooth.",
+    "Strain, add a squeeze of lemon and drink fresh."
+   ],
+   "hi": [
+    "गाजर धोकर, छीलकर काट लें।",
+    "अदरक और पानी के साथ चिकना पीस लें।",
+    "छान लें, थोड़ा नींबू डालें और ताज़ा पिएं।"
+   ]
+  }
+ },
+ {
+  "id": "lauki-juice",
+  "name": "Lauki Juice",
+  "hindi": "लौकी का जूस",
+  "kind": "Juice",
+  "group": "Juices",
+  "color": "#c8e0a8",
+  "tags": [
+   "Hydration",
+   "Low sugar",
+   "Cooling"
+  ],
+  "season": "Summer",
+  "time": "Morning",
+  "minutes": 10,
+  "serving": "1 glass (200 ml)",
+  "vrat": true,
+  "jain": true,
+  "noOnionGarlic": true,
+  "benefits": [
+   "Mostly water, very low in calories and sugar",
+   "Light and cooling in hot weather",
+   "Gives some potassium and vitamin C"
+  ],
+  "nutrients": [
+   "Potassium",
+   "Vitamin C",
+   "Water"
+  ],
+  "caution": [
+   "IMPORTANT: taste a small piece of the raw lauki first. If it is bitter, throw it away. Bitter lauki juice can cause severe vomiting and has caused deaths in India",
+   "Never mix lauki juice with karela juice",
+   "Drink it fresh; don't keep it for later"
+  ],
+  "ingredients": [
+   {
+    "en": "1 small fresh lauki (bottle gourd), taste-tested",
+    "hi": "1 छोटी ताज़ी लौकी (पहले चखकर देखें)"
+   },
+   {
+    "en": "A few mint leaves",
+    "hi": "कुछ पुदीना पत्ते"
+   },
+   {
+    "en": "½ glass water, lemon, black salt",
+    "hi": "आधा गिलास पानी, नींबू, काला नमक"
+   }
+  ],
+  "steps": {
+   "en": [
+    "Cut a small piece of the lauki and taste it. If it is bitter, do not use it.",
+    "Peel and chop the lauki, then blend with mint and water.",
+    "Strain, add lemon and black salt, and drink at once."
+   ],
+   "hi": [
+    "लौकी का छोटा टुकड़ा काटकर चखें। कड़वी हो तो बिल्कुल इस्तेमाल न करें।",
+    "लौकी छीलकर काटें, पुदीना और पानी के साथ पीस लें।",
+    "छान लें, नींबू और काला नमक डालें और तुरंत पिएं।"
+   ]
+  }
+ },
+ {
+  "id": "karela-juice",
+  "name": "Karela Juice",
+  "hindi": "करेले का जूस",
+  "kind": "Juice",
+  "group": "Juices",
+  "color": "#5e8c31",
+  "tags": [
+   "Low sugar"
+  ],
+  "season": "Monsoon",
+  "time": "Morning",
+  "minutes": 10,
+  "serving": "1 small cup (100 ml)",
+  "vrat": false,
+  "jain": true,
+  "noOnionGarlic": true,
+  "benefits": [
+   "Traditionally taken to help manage blood sugar; some studies show a small effect",
+   "Very low in sugar and calories",
+   "Gives vitamin C"
+  ],
+  "nutrients": [
+   "Vitamin C",
+   "Polyphenols"
+  ],
+  "caution": [
+   "If you take insulin or diabetes tablets, it can push sugar too low; ask your doctor and check your sugar",
+   "Avoid in pregnancy",
+   "Drink only a small cup; too much can upset the stomach",
+   "Never mix with lauki juice"
+  ],
+  "ingredients": [
+   {
+    "en": "1 karela (bitter gourd)",
+    "hi": "1 करेला"
+   },
+   {
+    "en": "½ glass water",
+    "hi": "आधा गिलास पानी"
+   },
+   {
+    "en": "Lemon and a pinch of salt",
+    "hi": "नींबू और चुटकी भर नमक"
+   }
+  ],
+  "steps": {
+   "en": [
+    "Wash the karela, scrape lightly, remove seeds and chop.",
+    "Blend with water till smooth and strain.",
+    "Add lemon and salt; drink a small cup."
+   ],
+   "hi": [
+    "करेला धोकर हल्का छील लें, बीज निकालकर काट लें।",
+    "पानी के साथ पीसकर छान लें।",
+    "नींबू और नमक डालें; छोटा कप ही पिएं।"
+   ]
+  }
+ },
+ {
+  "id": "sugarcane-juice",
+  "name": "Sugarcane Juice",
+  "hindi": "गन्ने का रस",
+  "kind": "Juice",
+  "group": "Juices",
+  "color": "#b8c96a",
+  "tags": [
+   "Energy",
+   "Cooling"
+  ],
+  "season": "Summer",
+  "time": "Any time",
+  "minutes": 5,
+  "serving": "1 glass (200 ml)",
+  "vrat": true,
+  "jain": true,
+  "noOnionGarlic": true,
+  "benefits": [
+   "Quick energy on a hot afternoon",
+   "Fresh juice with ginger and lemon is a classic Indian summer drink",
+   "Gives some potassium"
+  ],
+  "nutrients": [
+   "Natural sugars",
+   "Potassium"
+  ],
+  "caution": [
+   "It is very high in sugar; people with diabetes should avoid it",
+   "Drink only from clean stalls that use fresh cane and clean ice, or skip the ice"
+  ],
+  "ingredients": [
+   {
+    "en": "Fresh sugarcane juice from a clean stall",
+    "hi": "साफ़ ठेले से ताज़ा गन्ने का रस"
+   },
+   {
+    "en": "A little lemon (and ginger, if not Jain)",
+    "hi": "थोड़ा नींबू (जैन न हों तो अदरक भी)"
+   }
+  ],
+  "steps": {
+   "en": [
+    "Buy from a clean stall and ask for lemon (and ginger, if you like) to be pressed in.",
+    "Ask for no ice, or ice made from clean water.",
+    "Drink at once; it darkens quickly."
+   ],
+   "hi": [
+    "साफ़ ठेले से लें और नींबू (चाहें तो अदरक भी) डलवाएं।",
+    "बर्फ़ न डलवाएं, या साफ़ पानी की बर्फ़ ही लें।",
+    "तुरंत पिएं; रस जल्दी काला पड़ जाता है।"
+   ]
+  }
+ },
+ {
+  "id": "watermelon-juice",
+  "name": "Watermelon Juice",
+  "hindi": "तरबूज़ का जूस",
+  "kind": "Juice",
+  "group": "Juices",
+  "color": "#f05a6b",
+  "tags": [
+   "Hydration",
+   "Cooling",
+   "Kids"
+  ],
+  "season": "Summer",
+  "time": "Any time",
+  "minutes": 5,
+  "serving": "1 glass (200 ml)",
+  "vrat": true,
+  "jain": true,
+  "noOnionGarlic": true,
+  "benefits": [
+   "More than 90% water, so it is great for staying hydrated",
+   "Gives lycopene, the red plant pigment also found in tomatoes",
+   "Naturally sweet with no added sugar needed"
+  ],
+  "nutrients": [
+   "Water",
+   "Lycopene",
+   "Vitamin C"
+  ],
+  "caution": [
+   "Whole watermelon pieces are even better: they keep you full longer"
+  ],
+  "ingredients": [
+   {
+    "en": "2 cups watermelon pieces",
+    "hi": "2 कप तरबूज़ के टुकड़े"
+   },
+   {
+    "en": "A few mint leaves and lemon",
+    "hi": "कुछ पुदीना पत्ते और नींबू"
+   }
+  ],
+  "steps": {
+   "en": [
+    "Remove the seeds and blend the watermelon with mint.",
+    "Strain if you like and add a squeeze of lemon.",
+    "Serve straight away."
+   ],
+   "hi": [
+    "बीज निकालकर तरबूज़ को पुदीने के साथ पीस लें।",
+    "चाहें तो छान लें और थोड़ा नींबू निचोड़ें।",
+    "तुरंत परोसें।"
+   ]
+  }
+ },
+ {
+  "id": "pomegranate-juice",
+  "name": "Pomegranate Juice",
+  "hindi": "अनार का जूस",
+  "kind": "Juice",
+  "group": "Juices",
+  "color": "#b3123a",
+  "tags": [
+   "Heart",
+   "Immunity"
+  ],
+  "season": "Winter",
+  "time": "Morning",
+  "minutes": 10,
+  "serving": "1 small glass (150 ml)",
+  "vrat": true,
+  "jain": true,
+  "noOnionGarlic": true,
+  "benefits": [
+   "Rich in polyphenols (plant antioxidants) that are studied for heart health",
+   "Gives vitamin C and potassium",
+   "Fresh home-made juice has no added sugar"
+  ],
+  "nutrients": [
+   "Polyphenols",
+   "Vitamin C",
+   "Potassium"
+  ],
+  "caution": [
+   "Packed 'pomegranate drinks' are often mostly sugar; fresh is best",
+   "If you take blood thinners or many regular medicines, ask your doctor before drinking it daily"
+  ],
+  "ingredients": [
+   {
+    "en": "1 large pomegranate",
+    "hi": "1 बड़ा अनार"
+   },
+   {
+    "en": "¼ glass water (optional)",
+    "hi": "चौथाई गिलास पानी (चाहें तो)"
+   }
+  ],
+  "steps": {
+   "en": [
+    "Take out the seeds (arils).",
+    "Pulse in a mixer for a few seconds only, so the white seeds don't crush.",
+    "Strain and drink fresh."
+   ],
+   "hi": [
+    "अनार के दाने निकाल लें।",
+    "मिक्सी में बस कुछ सेकंड चलाएं ताकि बीज न पिसें।",
+    "छानकर ताज़ा पिएं।"
+   ]
+  }
+ },
+ {
+  "id": "mosambi-juice",
+  "name": "Mosambi Juice",
+  "hindi": "मौसमी का जूस",
+  "kind": "Juice",
+  "group": "Juices",
+  "color": "#f2c94c",
+  "tags": [
+   "Immunity",
+   "Hydration"
+  ],
+  "season": "Winter",
+  "time": "Morning",
+  "minutes": 10,
+  "serving": "1 small glass (150 ml)",
+  "vrat": true,
+  "jain": true,
+  "noOnionGarlic": true,
+  "benefits": [
+   "Sweet lime is a good source of vitamin C",
+   "Gentle on the stomach; often given when someone is unwell and not eating much",
+   "Hydrating"
+  ],
+  "nutrients": [
+   "Vitamin C",
+   "Potassium"
+  ],
+  "caution": [
+   "Eating the whole fruit gives you the fibre too; keep juice to one small glass"
+  ],
+  "ingredients": [
+   {
+    "en": "3 mosambi (sweet lime)",
+    "hi": "3 मौसमी"
+   },
+   {
+    "en": "A pinch of black salt (optional)",
+    "hi": "चुटकी भर काला नमक (चाहें तो)"
+   }
+  ],
+  "steps": {
+   "en": [
+    "Cut the mosambi in half.",
+    "Squeeze in a citrus press.",
+    "Add a pinch of black salt and drink at once."
+   ],
+   "hi": [
+    "मौसमी को बीच से काटें।",
+    "जूसर या हाथ के प्रेस से रस निकालें।",
+    "चुटकी भर काला नमक डालें और तुरंत पिएं।"
+   ]
+  }
+ },
+ {
+  "id": "orange-juice",
+  "name": "Orange Juice",
+  "hindi": "संतरे का जूस",
+  "kind": "Juice",
+  "group": "Juices",
+  "color": "#f7a21b",
+  "tags": [
+   "Immunity",
+   "Hydration",
+   "Kids"
+  ],
+  "season": "Winter",
+  "time": "Morning",
+  "minutes": 10,
+  "serving": "1 small glass (150 ml)",
+  "vrat": true,
+  "jain": true,
+  "noOnionGarlic": true,
+  "benefits": [
+   "A good source of vitamin C, which the immune system and skin need",
+   "Gives folate and potassium",
+   "Fresh juice has no added sugar, unlike packed 'orange drinks'"
+  ],
+  "nutrients": [
+   "Vitamin C",
+   "Folate",
+   "Potassium"
+  ],
+  "caution": [
+   "It is acidic; skip it if it gives you acidity or reflux",
+   "Whole oranges keep the fibre; one small glass of juice a day is plenty",
+   "Drink it within 15 minutes of making; vitamin C fades as juice stands."
+  ],
+  "ingredients": [
+   {
+    "en": "3 oranges (kinnow or nagpur)",
+    "hi": "3 संतरे (किन्नू या नागपुरी)"
+   },
+   {
+    "en": "A pinch of black salt (optional)",
+    "hi": "चुटकी भर काला नमक (चाहें तो)"
+   }
+  ],
+  "steps": {
+   "en": [
+    "Peel the oranges and remove the seeds.",
+    "Squeeze in a citrus press, or blend the segments briefly and strain.",
+    "Add a pinch of black salt if you like and drink at once."
+   ],
+   "hi": [
+    "संतरे छीलकर बीज निकाल दें।",
+    "हाथ के प्रेस से रस निकालें, या फांकें हल्का पीसकर छान लें।",
+    "चाहें तो चुटकी भर काला नमक डालें और तुरंत पिएं।"
+   ]
+  }
+ },
+ {
+  "id": "pineapple-juice",
+  "name": "Pineapple Juice",
+  "hindi": "अनानास का जूस",
+  "kind": "Juice",
+  "group": "Juices",
+  "color": "#f4d03f",
+  "tags": [
+   "Immunity",
+   "Digestion"
+  ],
+  "season": "Summer",
+  "time": "Any time",
+  "minutes": 10,
+  "serving": "1 small glass (150 ml)",
+  "vrat": true,
+  "jain": true,
+  "noOnionGarlic": true,
+  "benefits": [
+   "Rich in vitamin C and manganese",
+   "Fresh pineapple has bromelain, an enzyme that breaks down protein; it is lost in tinned juice",
+   "Sweet and tangy, so it mixes well with vegetable juices"
+  ],
+  "nutrients": [
+   "Vitamin C",
+   "Manganese",
+   "Bromelain"
+  ],
+  "caution": [
+   "It is acidic and can sting mouth ulcers",
+   "It is naturally sweet; people with diabetes should keep it small",
+   "Drink it within 15 minutes of making; vitamin C fades as juice stands."
+  ],
+  "ingredients": [
+   {
+    "en": "2 cups ripe pineapple pieces",
+    "hi": "2 कप पके अनानास के टुकड़े"
+   },
+   {
+    "en": "A few mint leaves",
+    "hi": "कुछ पुदीना पत्ते"
+   },
+   {
+    "en": "½ glass water",
+    "hi": "आधा गिलास पानी"
+   }
+  ],
+  "steps": {
+   "en": [
+    "Peel the pineapple, remove the hard core and cut into pieces.",
+    "Blend with mint and water.",
+    "Strain and serve fresh."
+   ],
+   "hi": [
+    "अनानास छीलकर बीच का सख्त हिस्सा निकालें और टुकड़े करें।",
+    "पुदीना और पानी के साथ पीस लें।",
+    "छानकर ताज़ा परोसें।"
+   ]
+  }
+ },
+ {
+  "id": "guava-juice",
+  "name": "Guava Juice",
+  "hindi": "अमरूद का जूस",
+  "kind": "Juice",
+  "group": "Juices",
+  "color": "#f28b9a",
+  "tags": [
+   "Immunity",
+   "Digestion",
+   "Low sugar"
+  ],
+  "season": "Winter",
+  "time": "Morning",
+  "minutes": 10,
+  "serving": "1 glass (200 ml)",
+  "vrat": true,
+  "jain": true,
+  "noOnionGarlic": true,
+  "benefits": [
+   "Guava is one of the richest fruits in vitamin C, about four times more than orange by weight",
+   "Blended (not strained too much) it keeps a lot of fibre",
+   "Lower in sugar than most fruit juices"
+  ],
+  "nutrients": [
+   "Vitamin C",
+   "Fibre",
+   "Folate",
+   "Potassium"
+  ],
+  "caution": [
+   "Strain out the hard seeds if they bother you",
+   "Drink it within 15 minutes of making; vitamin C fades as juice stands."
+  ],
+  "ingredients": [
+   {
+    "en": "2 ripe guavas (pink or white)",
+    "hi": "2 पके अमरूद (गुलाबी या सफ़ेद)"
+   },
+   {
+    "en": "1 glass water",
+    "hi": "1 गिलास पानी"
+   },
+   {
+    "en": "Lemon, black salt and a pinch of chaat masala",
+    "hi": "नींबू, काला नमक और चुटकी भर चाट मसाला"
+   }
+  ],
+  "steps": {
+   "en": [
+    "Wash the guavas and cut into pieces.",
+    "Blend with water till smooth and pass through a strainer to remove the seeds.",
+    "Add lemon, black salt and chaat masala; drink fresh."
+   ],
+   "hi": [
+    "अमरूद धोकर टुकड़े करें।",
+    "पानी के साथ चिकना पीसें और छलनी से बीज निकाल दें।",
+    "नींबू, काला नमक और चाट मसाला डालें; ताज़ा पिएं।"
+   ]
+  }
+ },
+ {
+  "id": "papaya-juice",
+  "name": "Papaya Juice",
+  "hindi": "पपीते का जूस",
+  "kind": "Juice",
+  "group": "Juices",
+  "color": "#f39c4a",
+  "tags": [
+   "Digestion",
+   "Eyes & skin",
+   "Immunity"
+  ],
+  "season": "All",
+  "time": "Morning",
+  "minutes": 10,
+  "serving": "1 glass (200 ml)",
+  "vrat": true,
+  "jain": true,
+  "noOnionGarlic": true,
+  "benefits": [
+   "Ripe papaya gives vitamin C, beta-carotene (vitamin A) and folate",
+   "Blended with its pulp, it keeps the fibre that helps regular digestion",
+   "Naturally sweet; no sugar needed"
+  ],
+  "nutrients": [
+   "Vitamin C",
+   "Beta-carotene",
+   "Folate",
+   "Fibre"
+  ],
+  "caution": [
+   "Use only fully ripe papaya. Unripe papaya is not safe in pregnancy",
+   "People with a latex allergy may react to papaya"
+  ],
+  "ingredients": [
+   {
+    "en": "2 cups ripe papaya pieces",
+    "hi": "2 कप पके पपीते के टुकड़े"
+   },
+   {
+    "en": "½ glass water or milk",
+    "hi": "आधा गिलास पानी या दूध"
+   },
+   {
+    "en": "A squeeze of lemon",
+    "hi": "थोड़ा नींबू"
+   }
+  ],
+  "steps": {
+   "en": [
+    "Peel the papaya, remove the seeds and cut into pieces.",
+    "Blend with water (or milk for a smoothie) till smooth.",
+    "Add lemon and serve; no need to strain."
+   ],
+   "hi": [
+    "पपीता छीलकर बीज निकालें और टुकड़े करें।",
+    "पानी (या स्मूदी के लिए दूध) के साथ चिकना पीसें।",
+    "नींबू डालकर परोसें; छानने की ज़रूरत नहीं।"
+   ]
+  }
+ },
+ {
+  "id": "tomato-juice",
+  "name": "Tomato Juice (Unsalted)",
+  "hindi": "टमाटर का जूस (बिना नमक)",
+  "kind": "Juice",
+  "group": "Juices",
+  "color": "#d9412b",
+  "tags": [
+   "Heart",
+   "Low sugar",
+   "Eyes & skin"
+  ],
+  "season": "Winter",
+  "time": "Morning",
+  "minutes": 10,
+  "serving": "1 small glass (150 ml)",
+  "vrat": false,
+  "jain": true,
+  "noOnionGarlic": true,
+  "benefits": [
+   "Rich in lycopene, the red plant pigment linked to heart health",
+   "In a year-long Japanese study, unsalted tomato juice was linked to slightly lower blood pressure in people with raised BP",
+   "Much lower in sugar than fruit juices"
+  ],
+  "nutrients": [
+   "Lycopene",
+   "Potassium",
+   "Vitamin C"
+  ],
+  "caution": [
+   "Keep it unsalted or very lightly salted; packed tomato juice is often salty",
+   "Skip it if tomatoes give you acidity",
+   "High in potassium; people with kidney disease should ask their doctor"
+  ],
+  "ingredients": [
+   {
+    "en": "4 ripe red tomatoes",
+    "hi": "4 पके लाल टमाटर"
+   },
+   {
+    "en": "A few drops of olive oil or a pinch of black pepper",
+    "hi": "कुछ बूंदें ऑलिव ऑयल या चुटकी भर काली मिर्च"
+   },
+   {
+    "en": "A squeeze of lemon",
+    "hi": "थोड़ा नींबू"
+   }
+  ],
+  "steps": {
+   "en": [
+    "Wash and chop the tomatoes; for a smoother taste blanch them in hot water for 2 minutes and peel.",
+    "Blend and strain.",
+    "Add lemon, pepper and a few drops of oil (it helps the body take up lycopene); drink fresh."
+   ],
+   "hi": [
+    "टमाटर धोकर काटें; चिकने स्वाद के लिए 2 मिनट गरम पानी में डालकर छील लें।",
+    "पीसकर छान लें।",
+    "नींबू, काली मिर्च और कुछ बूंदें तेल डालें (इससे लाइकोपीन अच्छे से मिलता है); ताज़ा पिएं।"
+   ]
+  }
+ },
+ {
+  "id": "kiwi-juice",
+  "name": "Kiwi Juice",
+  "hindi": "कीवी का जूस",
+  "kind": "Juice",
+  "group": "Juices",
+  "color": "#7cb342",
+  "tags": [
+   "Immunity",
+   "Digestion"
+  ],
+  "season": "Winter",
+  "time": "Morning",
+  "minutes": 5,
+  "serving": "1 small glass (150 ml)",
+  "vrat": true,
+  "jain": true,
+  "noOnionGarlic": true,
+  "benefits": [
+   "Green kiwi is very rich in vitamin C",
+   "In trials, two green kiwis a day eased constipation; blend with the pulp to keep the fibre",
+   "Gives vitamin K and vitamin E"
+  ],
+  "nutrients": [
+   "Vitamin C",
+   "Fibre",
+   "Vitamin K",
+   "Vitamin E"
+  ],
+  "caution": [
+   "Some people are allergic to kiwi (itchy mouth); stop if this happens",
+   "Don't strain it; the pulp is the useful part"
+  ],
+  "ingredients": [
+   {
+    "en": "2 ripe green kiwis",
+    "hi": "2 पकी हरी कीवी"
+   },
+   {
+    "en": "½ glass water",
+    "hi": "आधा गिलास पानी"
+   },
+   {
+    "en": "A few mint leaves, a little honey or jaggery (optional)",
+    "hi": "कुछ पुदीना पत्ते, थोड़ा शहद या गुड़ (चाहें तो)"
+   }
+  ],
+  "steps": {
+   "en": [
+    "Peel the kiwis and cut into pieces.",
+    "Blend with water and mint for a few seconds only, so the black seeds don't turn bitter.",
+    "Pour without straining and drink fresh."
+   ],
+   "hi": [
+    "कीवी छीलकर टुकड़े करें।",
+    "पानी और पुदीने के साथ बस कुछ सेकंड पीसें ताकि काले बीज कड़वे न हों।",
+    "बिना छाने डालें और ताज़ा पिएं।"
+   ]
+  }
+ },
+ {
+  "id": "black-grape-juice",
+  "name": "Black Grape Juice",
+  "hindi": "काले अंगूर का जूस",
+  "kind": "Juice",
+  "group": "Juices",
+  "color": "#5b2a6e",
+  "tags": [
+   "Heart",
+   "Energy"
+  ],
+  "season": "Winter",
+  "time": "Any time",
+  "minutes": 10,
+  "serving": "1 small glass (150 ml)",
+  "vrat": true,
+  "jain": true,
+  "noOnionGarlic": true,
+  "benefits": [
+   "Dark grape skins are rich in polyphenols (such as resveratrol) studied for heart health",
+   "Gives potassium and quick energy",
+   "Fresh home-made juice keeps more of the skin's goodness than packed juice"
+  ],
+  "nutrients": [
+   "Polyphenols",
+   "Potassium",
+   "Vitamin K"
+  ],
+  "caution": [
+   "It is high in natural sugar; people with diabetes should avoid it or take just a few sips",
+   "Wash grapes very well; soak in water with a little salt for 10 minutes"
+  ],
+  "ingredients": [
+   {
+    "en": "2 cups black grapes",
+    "hi": "2 कप काले अंगूर"
+   },
+   {
+    "en": "½ glass water",
+    "hi": "आधा गिलास पानी"
+   },
+   {
+    "en": "Lemon and a pinch of black salt",
+    "hi": "नींबू और चुटकी भर काला नमक"
+   }
+  ],
+  "steps": {
+   "en": [
+    "Soak the grapes in salted water for 10 minutes and rinse well.",
+    "Blend with water and strain.",
+    "Add lemon and black salt; drink fresh."
+   ],
+   "hi": [
+    "अंगूर 10 मिनट नमक वाले पानी में भिगोकर अच्छी तरह धो लें।",
+    "पानी के साथ पीसकर छान लें।",
+    "नींबू और काला नमक डालें; ताज़ा पिएं।"
+   ]
+  }
+ },
+ {
+  "id": "jamun-juice",
+  "name": "Jamun Juice",
+  "hindi": "जामुन का जूस",
+  "kind": "Juice",
+  "group": "Juices",
+  "color": "#4a1f5c",
+  "tags": [
+   "Low sugar",
+   "Heart"
+  ],
+  "season": "Monsoon",
+  "time": "Any time",
+  "minutes": 15,
+  "serving": "1 glass (200 ml)",
+  "vrat": true,
+  "jain": true,
+  "noOnionGarlic": true,
+  "benefits": [
+   "Jamun is rich in anthocyanins, the deep purple plant pigments",
+   "Traditionally used for blood sugar; human studies are few, so treat it as a healthy seasonal fruit, not a medicine",
+   "Low in sugar for a fruit drink"
+  ],
+  "nutrients": [
+   "Anthocyanins",
+   "Vitamin C",
+   "Iron"
+  ],
+  "caution": [
+   "If you take diabetes medicines, ask your doctor before drinking it daily",
+   "It stains clothes and teeth; rinse your mouth after"
+  ],
+  "ingredients": [
+   {
+    "en": "1½ cups ripe jamun",
+    "hi": "डेढ़ कप पके जामुन"
+   },
+   {
+    "en": "1 glass water",
+    "hi": "1 गिलास पानी"
+   },
+   {
+    "en": "Black salt, roasted cumin and lemon",
+    "hi": "काला नमक, भुना जीरा और नींबू"
+   }
+  ],
+  "steps": {
+   "en": [
+    "Wash the jamun and remove the seeds by pressing each one.",
+    "Blend the pulp with water and strain.",
+    "Add black salt, roasted cumin and lemon; serve cool."
+   ],
+   "hi": [
+    "जामुन धोकर हर एक को दबाकर गुठली निकाल दें।",
+    "गूदे को पानी के साथ पीसकर छान लें।",
+    "काला नमक, भुना जीरा और नींबू डालकर ठंडा परोसें।"
+   ]
+  }
+ },
+ {
+  "id": "ash-gourd-juice",
+  "name": "Ash Gourd Juice (Petha)",
+  "hindi": "पेठे (सफ़ेद कद्दू) का जूस",
+  "kind": "Juice",
+  "group": "Juices",
+  "color": "#dfe8d0",
+  "tags": [
+   "Hydration",
+   "Low sugar",
+   "Cooling"
+  ],
+  "season": "Summer",
+  "time": "Morning",
+  "minutes": 10,
+  "serving": "1 glass (200 ml)",
+  "vrat": false,
+  "jain": true,
+  "noOnionGarlic": true,
+  "benefits": [
+   "Mostly water and very low in calories and sugar",
+   "A popular light, cooling morning drink",
+   "Gives some vitamin C and potassium"
+  ],
+  "nutrients": [
+   "Water",
+   "Potassium",
+   "Vitamin C"
+  ],
+  "caution": [
+   "Like lauki, taste a small raw piece first; if it is bitter, throw it away",
+   "Most health claims about it are traditional; enjoy it as a light drink",
+   "Drink it fresh"
+  ],
+  "ingredients": [
+   {
+    "en": "1 cup ash gourd (white petha) pieces, taste-tested",
+    "hi": "1 कप पेठे के टुकड़े (पहले चखकर देखें)"
+   },
+   {
+    "en": "½ glass water",
+    "hi": "आधा गिलास पानी"
+   },
+   {
+    "en": "Lemon and a pinch of black salt",
+    "hi": "नींबू और चुटकी भर काला नमक"
+   }
+  ],
+  "steps": {
+   "en": [
+    "Taste a small raw piece; if it is bitter, do not use it.",
+    "Peel, remove the seeds and blend with water.",
+    "Strain, add lemon and black salt, and drink at once."
+   ],
+   "hi": [
+    "एक छोटा कच्चा टुकड़ा चखें; कड़वा हो तो इस्तेमाल न करें।",
+    "छीलकर बीज निकालें और पानी के साथ पीसें।",
+    "छान लें, नींबू और काला नमक डालें और तुरंत पिएं।"
+   ]
+  }
+ },
+ {
+  "id": "muskmelon-juice",
+  "name": "Muskmelon Juice",
+  "hindi": "खरबूजे का जूस",
+  "kind": "Juice",
+  "group": "Juices",
+  "color": "#f6b26b",
+  "tags": [
+   "Hydration",
+   "Cooling",
+   "Eyes & skin"
+  ],
+  "season": "Summer",
+  "time": "Any time",
+  "minutes": 10,
+  "serving": "1 glass (200 ml)",
+  "vrat": true,
+  "jain": true,
+  "noOnionGarlic": true,
+  "benefits": [
+   "Mostly water, so it keeps you hydrated in summer",
+   "Orange flesh gives beta-carotene (vitamin A) and vitamin C",
+   "Naturally sweet; no sugar needed"
+  ],
+  "nutrients": [
+   "Beta-carotene",
+   "Vitamin C",
+   "Potassium"
+  ],
+  "caution": [
+   "Wash the outside well before cutting; germs on the rind can get into the fruit",
+   "Cut melon spoils fast; make and drink it fresh"
+  ],
+  "ingredients": [
+   {
+    "en": "2 cups ripe muskmelon pieces",
+    "hi": "2 कप पके खरबूजे के टुकड़े"
+   },
+   {
+    "en": "A few mint leaves",
+    "hi": "कुछ पुदीना पत्ते"
+   },
+   {
+    "en": "¼ glass cold water or milk",
+    "hi": "चौथाई गिलास ठंडा पानी या दूध"
+   }
+  ],
+  "steps": {
+   "en": [
+    "Scrub the melon under running water, then cut it and remove the seeds.",
+    "Blend with mint and a little water (or milk for a shake).",
+    "Serve cold straight away."
+   ],
+   "hi": [
+    "खरबूजे को बहते पानी में रगड़कर धोएं, फिर काटकर बीज निकालें।",
+    "पुदीना और थोड़े पानी (या शेक के लिए दूध) के साथ पीसें।",
+    "तुरंत ठंडा परोसें।"
+   ]
+  }
+ },
+ {
   "id": "nimbu-pani",
   "name": "Nimbu Pani (Shikanji)",
   "hindi": "नींबू पानी (शिकंजी)",
   "kind": "Cooler",
+  "group": "Traditional drinks",
   "color": "#f5e663",
   "tags": [
    "Hydration",
@@ -124,6 +2118,7 @@
   "name": "Coconut Water",
   "hindi": "नारियल पानी",
   "kind": "Cooler",
+  "group": "Traditional drinks",
   "color": "#e9f3df",
   "tags": [
    "Hydration",
@@ -175,6 +2170,7 @@
   "name": "Masala Chaas",
   "hindi": "मसाला छाछ",
   "kind": "Fermented",
+  "group": "Traditional drinks",
   "color": "#eef3f6",
   "tags": [
    "Digestion",
@@ -234,6 +2230,7 @@
   "name": "Sattu Sharbat",
   "hindi": "सत्तू शरबत",
   "kind": "Cooler",
+  "group": "Traditional drinks",
   "color": "#d9c39a",
   "tags": [
    "Protein",
@@ -288,309 +2285,11 @@
   }
  },
  {
-  "id": "beetroot-juice",
-  "name": "Beetroot Juice",
-  "hindi": "चुकंदर का जूस",
-  "kind": "Juice",
-  "color": "#a3204d",
-  "tags": [
-   "Heart",
-   "Energy"
-  ],
-  "season": "Winter",
-  "time": "Morning",
-  "minutes": 10,
-  "serving": "1 glass (200 ml)",
-  "vrat": false,
-  "jain": false,
-  "noOnionGarlic": true,
-  "benefits": [
-   "Rich in natural nitrates; in studies a daily glass lowered blood pressure a little (about 3–4 points)",
-   "The same nitrates may help stamina during exercise",
-   "Gives folate and some iron"
-  ],
-  "nutrients": [
-   "Nitrates",
-   "Folate",
-   "Potassium"
-  ],
-  "caution": [
-   "It can turn urine or stool pink or red; this is harmless",
-   "Beetroot is high in oxalates; if you have had kidney stones, ask your doctor",
-   "If you take blood pressure medicines, tell your doctor before drinking it daily"
-  ],
-  "ingredients": [
-   {
-    "en": "1 medium beetroot",
-    "hi": "1 मीडियम चुकंदर"
-   },
-   {
-    "en": "½ apple or a small piece of ginger",
-    "hi": "आधा सेब या छोटा टुकड़ा अदरक"
-   },
-   {
-    "en": "½ glass water and a squeeze of lemon",
-    "hi": "आधा गिलास पानी और थोड़ा नींबू"
-   }
-  ],
-  "steps": {
-   "en": [
-    "Peel the beetroot and cut into small pieces.",
-    "Blend with the apple or ginger and water.",
-    "Strain, add lemon and drink fresh."
-   ],
-   "hi": [
-    "चुकंदर छीलकर छोटे टुकड़े करें।",
-    "सेब या अदरक और पानी के साथ मिक्सी में पीस लें।",
-    "छान लें, नींबू डालें और ताज़ा पिएं।"
-   ]
-  }
- },
- {
-  "id": "carrot-juice",
-  "name": "Carrot Juice",
-  "hindi": "गाजर का जूस",
-  "kind": "Juice",
-  "color": "#f08a24",
-  "tags": [
-   "Eyes & skin",
-   "Immunity",
-   "Kids"
-  ],
-  "season": "Winter",
-  "time": "Morning",
-  "minutes": 10,
-  "serving": "1 glass (200 ml)",
-  "vrat": false,
-  "jain": false,
-  "noOnionGarlic": true,
-  "benefits": [
-   "Carrots are full of beta-carotene, which the body turns into vitamin A for healthy eyes and skin",
-   "Naturally sweet, so children usually like it",
-   "Best with a few drops of oil or with a meal, which helps the body absorb vitamin A"
-  ],
-  "nutrients": [
-   "Beta-carotene (vitamin A)",
-   "Potassium",
-   "Vitamin K"
-  ],
-  "caution": [
-   "Juice has less fibre than whole carrots; one small glass is plenty"
-  ],
-  "ingredients": [
-   {
-    "en": "3 carrots (red winter carrots are best)",
-    "hi": "3 गाजर (सर्दी की लाल गाजर सबसे अच्छी)"
-   },
-   {
-    "en": "A small piece of ginger",
-    "hi": "छोटा टुकड़ा अदरक"
-   },
-   {
-    "en": "½ glass water, lemon",
-    "hi": "आधा गिलास पानी, नींबू"
-   }
-  ],
-  "steps": {
-   "en": [
-    "Wash, peel and chop the carrots.",
-    "Blend with ginger and water till smooth.",
-    "Strain, add a squeeze of lemon and drink fresh."
-   ],
-   "hi": [
-    "गाजर धोकर, छीलकर काट लें।",
-    "अदरक और पानी के साथ चिकना पीस लें।",
-    "छान लें, थोड़ा नींबू डालें और ताज़ा पिएं।"
-   ]
-  }
- },
- {
-  "id": "abc-juice",
-  "name": "ABC Juice (Apple, Beetroot, Carrot)",
-  "hindi": "एबीसी जूस (सेब, चुकंदर, गाजर)",
-  "kind": "Juice",
-  "color": "#c43b3b",
-  "tags": [
-   "Immunity",
-   "Eyes & skin",
-   "Heart"
-  ],
-  "season": "Winter",
-  "time": "Morning",
-  "minutes": 10,
-  "serving": "1 glass (200 ml)",
-  "vrat": false,
-  "jain": false,
-  "noOnionGarlic": true,
-  "benefits": [
-   "Brings together beta-carotene from carrot, nitrates from beetroot and the sweetness of apple",
-   "A friendlier taste for people who find plain beetroot juice too earthy",
-   "Gives vitamin A, folate and potassium in one glass"
-  ],
-  "nutrients": [
-   "Beta-carotene",
-   "Nitrates",
-   "Folate",
-   "Vitamin C"
-  ],
-  "caution": [
-   "Apple adds natural sugar; keep it to one small glass",
-   "Same cautions as beetroot juice for kidney stones and blood pressure medicines"
-  ],
-  "ingredients": [
-   {
-    "en": "1 apple",
-    "hi": "1 सेब"
-   },
-   {
-    "en": "½ beetroot",
-    "hi": "आधा चुकंदर"
-   },
-   {
-    "en": "1 carrot",
-    "hi": "1 गाजर"
-   },
-   {
-    "en": "½ glass water, lemon",
-    "hi": "आधा गिलास पानी, नींबू"
-   }
-  ],
-  "steps": {
-   "en": [
-    "Wash and chop the apple, beetroot and carrot.",
-    "Blend with water till smooth.",
-    "Strain, add lemon and drink fresh."
-   ],
-   "hi": [
-    "सेब, चुकंदर और गाजर धोकर काट लें।",
-    "पानी के साथ चिकना पीस लें।",
-    "छान लें, नींबू डालें और ताज़ा पिएं।"
-   ]
-  }
- },
- {
-  "id": "lauki-juice",
-  "name": "Lauki Juice",
-  "hindi": "लौकी का जूस",
-  "kind": "Juice",
-  "color": "#c8e0a8",
-  "tags": [
-   "Hydration",
-   "Low sugar",
-   "Cooling"
-  ],
-  "season": "Summer",
-  "time": "Morning",
-  "minutes": 10,
-  "serving": "1 glass (200 ml)",
-  "vrat": true,
-  "jain": true,
-  "noOnionGarlic": true,
-  "benefits": [
-   "Mostly water, very low in calories and sugar",
-   "Light and cooling in hot weather",
-   "Gives some potassium and vitamin C"
-  ],
-  "nutrients": [
-   "Potassium",
-   "Vitamin C",
-   "Water"
-  ],
-  "caution": [
-   "IMPORTANT: taste a small piece of the raw lauki first. If it is bitter, throw it away. Bitter lauki juice can cause severe vomiting and has caused deaths in India",
-   "Never mix lauki juice with karela juice",
-   "Drink it fresh; don't keep it for later"
-  ],
-  "ingredients": [
-   {
-    "en": "1 small fresh lauki (bottle gourd), taste-tested",
-    "hi": "1 छोटी ताज़ी लौकी (पहले चखकर देखें)"
-   },
-   {
-    "en": "A few mint leaves",
-    "hi": "कुछ पुदीना पत्ते"
-   },
-   {
-    "en": "½ glass water, lemon, black salt",
-    "hi": "आधा गिलास पानी, नींबू, काला नमक"
-   }
-  ],
-  "steps": {
-   "en": [
-    "Cut a small piece of the lauki and taste it. If it is bitter, do not use it.",
-    "Peel and chop the lauki, then blend with mint and water.",
-    "Strain, add lemon and black salt, and drink at once."
-   ],
-   "hi": [
-    "लौकी का छोटा टुकड़ा काटकर चखें। कड़वी हो तो बिल्कुल इस्तेमाल न करें।",
-    "लौकी छीलकर काटें, पुदीना और पानी के साथ पीस लें।",
-    "छान लें, नींबू और काला नमक डालें और तुरंत पिएं।"
-   ]
-  }
- },
- {
-  "id": "karela-juice",
-  "name": "Karela Juice",
-  "hindi": "करेले का जूस",
-  "kind": "Juice",
-  "color": "#5e8c31",
-  "tags": [
-   "Low sugar"
-  ],
-  "season": "Monsoon",
-  "time": "Morning",
-  "minutes": 10,
-  "serving": "1 small cup (100 ml)",
-  "vrat": false,
-  "jain": true,
-  "noOnionGarlic": true,
-  "benefits": [
-   "Traditionally taken to help manage blood sugar; some studies show a small effect",
-   "Very low in sugar and calories",
-   "Gives vitamin C"
-  ],
-  "nutrients": [
-   "Vitamin C",
-   "Polyphenols"
-  ],
-  "caution": [
-   "If you take insulin or diabetes tablets, it can push sugar too low; ask your doctor and check your sugar",
-   "Avoid in pregnancy",
-   "Drink only a small cup; too much can upset the stomach",
-   "Never mix with lauki juice"
-  ],
-  "ingredients": [
-   {
-    "en": "1 karela (bitter gourd)",
-    "hi": "1 करेला"
-   },
-   {
-    "en": "½ glass water",
-    "hi": "आधा गिलास पानी"
-   },
-   {
-    "en": "Lemon and a pinch of salt",
-    "hi": "नींबू और चुटकी भर नमक"
-   }
-  ],
-  "steps": {
-   "en": [
-    "Wash the karela, scrape lightly, remove seeds and chop.",
-    "Blend with water till smooth and strain.",
-    "Add lemon and salt; drink a small cup."
-   ],
-   "hi": [
-    "करेला धोकर हल्का छील लें, बीज निकालकर काट लें।",
-    "पानी के साथ पीसकर छान लें।",
-    "नींबू और नमक डालें; छोटा कप ही पिएं।"
-   ]
-  }
- },
- {
   "id": "haldi-doodh",
   "name": "Haldi Doodh (Turmeric Milk)",
   "hindi": "हल्दी दूध",
   "kind": "Warm drink",
+  "group": "Traditional drinks",
   "color": "#f3c13a",
   "tags": [
    "Warming",
@@ -655,6 +2354,7 @@
   "name": "Jeera Water",
   "hindi": "जीरा पानी",
   "kind": "Water",
+  "group": "Traditional drinks",
   "color": "#e6d7a8",
   "tags": [
    "Digestion",
@@ -707,6 +2407,7 @@
   "name": "Ajwain Water",
   "hindi": "अजवाइन का पानी",
   "kind": "Water",
+  "group": "Traditional drinks",
   "color": "#d8cfa0",
   "tags": [
    "Digestion",
@@ -760,6 +2461,7 @@
   "name": "Methi Water",
   "hindi": "मेथी का पानी",
   "kind": "Water",
+  "group": "Traditional drinks",
   "color": "#d9c27a",
   "tags": [
    "Low sugar",
@@ -813,6 +2515,7 @@
   "name": "Aam Panna",
   "hindi": "आम पन्ना",
   "kind": "Cooler",
+  "group": "Traditional drinks",
   "color": "#c9d96b",
   "tags": [
    "Cooling",
@@ -875,6 +2578,7 @@
   "name": "Kokum Sharbat",
   "hindi": "कोकम शरबत",
   "kind": "Cooler",
+  "group": "Traditional drinks",
   "color": "#7d1f4d",
   "tags": [
    "Cooling",
@@ -935,6 +2639,7 @@
   "name": "Bel Sharbat",
   "hindi": "बेल का शरबत",
   "kind": "Cooler",
+  "group": "Traditional drinks",
   "color": "#e2a64b",
   "tags": [
    "Digestion",
@@ -992,6 +2697,7 @@
   "name": "Jaljeera",
   "hindi": "जलजीरा",
   "kind": "Cooler",
+  "group": "Traditional drinks",
   "color": "#7a8a3a",
   "tags": [
    "Digestion",
@@ -1049,223 +2755,11 @@
   }
  },
  {
-  "id": "sugarcane-juice",
-  "name": "Sugarcane Juice",
-  "hindi": "गन्ने का रस",
-  "kind": "Juice",
-  "color": "#b8c96a",
-  "tags": [
-   "Energy",
-   "Cooling"
-  ],
-  "season": "Summer",
-  "time": "Any time",
-  "minutes": 5,
-  "serving": "1 glass (200 ml)",
-  "vrat": true,
-  "jain": true,
-  "noOnionGarlic": true,
-  "benefits": [
-   "Quick energy on a hot afternoon",
-   "Fresh juice with ginger and lemon is a classic Indian summer drink",
-   "Gives some potassium"
-  ],
-  "nutrients": [
-   "Natural sugars",
-   "Potassium"
-  ],
-  "caution": [
-   "It is very high in sugar; people with diabetes should avoid it",
-   "Drink only from clean stalls that use fresh cane and clean ice, or skip the ice"
-  ],
-  "ingredients": [
-   {
-    "en": "Fresh sugarcane juice from a clean stall",
-    "hi": "साफ़ ठेले से ताज़ा गन्ने का रस"
-   },
-   {
-    "en": "A little lemon (and ginger, if not Jain)",
-    "hi": "थोड़ा नींबू (जैन न हों तो अदरक भी)"
-   }
-  ],
-  "steps": {
-   "en": [
-    "Buy from a clean stall and ask for lemon (and ginger, if you like) to be pressed in.",
-    "Ask for no ice, or ice made from clean water.",
-    "Drink at once; it darkens quickly."
-   ],
-   "hi": [
-    "साफ़ ठेले से लें और नींबू (चाहें तो अदरक भी) डलवाएं।",
-    "बर्फ़ न डलवाएं, या साफ़ पानी की बर्फ़ ही लें।",
-    "तुरंत पिएं; रस जल्दी काला पड़ जाता है।"
-   ]
-  }
- },
- {
-  "id": "watermelon-juice",
-  "name": "Watermelon Juice",
-  "hindi": "तरबूज़ का जूस",
-  "kind": "Juice",
-  "color": "#f05a6b",
-  "tags": [
-   "Hydration",
-   "Cooling",
-   "Kids"
-  ],
-  "season": "Summer",
-  "time": "Any time",
-  "minutes": 5,
-  "serving": "1 glass (200 ml)",
-  "vrat": true,
-  "jain": true,
-  "noOnionGarlic": true,
-  "benefits": [
-   "More than 90% water, so it is great for staying hydrated",
-   "Gives lycopene, the red plant pigment also found in tomatoes",
-   "Naturally sweet with no added sugar needed"
-  ],
-  "nutrients": [
-   "Water",
-   "Lycopene",
-   "Vitamin C"
-  ],
-  "caution": [
-   "Whole watermelon pieces are even better: they keep you full longer"
-  ],
-  "ingredients": [
-   {
-    "en": "2 cups watermelon pieces",
-    "hi": "2 कप तरबूज़ के टुकड़े"
-   },
-   {
-    "en": "A few mint leaves and lemon",
-    "hi": "कुछ पुदीना पत्ते और नींबू"
-   }
-  ],
-  "steps": {
-   "en": [
-    "Remove the seeds and blend the watermelon with mint.",
-    "Strain if you like and add a squeeze of lemon.",
-    "Serve straight away."
-   ],
-   "hi": [
-    "बीज निकालकर तरबूज़ को पुदीने के साथ पीस लें।",
-    "चाहें तो छान लें और थोड़ा नींबू निचोड़ें।",
-    "तुरंत परोसें।"
-   ]
-  }
- },
- {
-  "id": "pomegranate-juice",
-  "name": "Pomegranate Juice",
-  "hindi": "अनार का जूस",
-  "kind": "Juice",
-  "color": "#b3123a",
-  "tags": [
-   "Heart",
-   "Immunity"
-  ],
-  "season": "Winter",
-  "time": "Morning",
-  "minutes": 10,
-  "serving": "1 small glass (150 ml)",
-  "vrat": true,
-  "jain": true,
-  "noOnionGarlic": true,
-  "benefits": [
-   "Rich in polyphenols (plant antioxidants) that are studied for heart health",
-   "Gives vitamin C and potassium",
-   "Fresh home-made juice has no added sugar"
-  ],
-  "nutrients": [
-   "Polyphenols",
-   "Vitamin C",
-   "Potassium"
-  ],
-  "caution": [
-   "Packed 'pomegranate drinks' are often mostly sugar; fresh is best",
-   "If you take blood thinners or many regular medicines, ask your doctor before drinking it daily"
-  ],
-  "ingredients": [
-   {
-    "en": "1 large pomegranate",
-    "hi": "1 बड़ा अनार"
-   },
-   {
-    "en": "¼ glass water (optional)",
-    "hi": "चौथाई गिलास पानी (चाहें तो)"
-   }
-  ],
-  "steps": {
-   "en": [
-    "Take out the seeds (arils).",
-    "Pulse in a mixer for a few seconds only, so the white seeds don't crush.",
-    "Strain and drink fresh."
-   ],
-   "hi": [
-    "अनार के दाने निकाल लें।",
-    "मिक्सी में बस कुछ सेकंड चलाएं ताकि बीज न पिसें।",
-    "छानकर ताज़ा पिएं।"
-   ]
-  }
- },
- {
-  "id": "mosambi-juice",
-  "name": "Mosambi Juice",
-  "hindi": "मौसमी का जूस",
-  "kind": "Juice",
-  "color": "#f2c94c",
-  "tags": [
-   "Immunity",
-   "Hydration"
-  ],
-  "season": "Winter",
-  "time": "Morning",
-  "minutes": 10,
-  "serving": "1 small glass (150 ml)",
-  "vrat": true,
-  "jain": true,
-  "noOnionGarlic": true,
-  "benefits": [
-   "Sweet lime is a good source of vitamin C",
-   "Gentle on the stomach; often given when someone is unwell and not eating much",
-   "Hydrating"
-  ],
-  "nutrients": [
-   "Vitamin C",
-   "Potassium"
-  ],
-  "caution": [
-   "Eating the whole fruit gives you the fibre too; keep juice to one small glass"
-  ],
-  "ingredients": [
-   {
-    "en": "3 mosambi (sweet lime)",
-    "hi": "3 मौसमी"
-   },
-   {
-    "en": "A pinch of black salt (optional)",
-    "hi": "चुटकी भर काला नमक (चाहें तो)"
-   }
-  ],
-  "steps": {
-   "en": [
-    "Cut the mosambi in half.",
-    "Squeeze in a citrus press.",
-    "Add a pinch of black salt and drink at once."
-   ],
-   "hi": [
-    "मौसमी को बीच से काटें।",
-    "जूसर या हाथ के प्रेस से रस निकालें।",
-    "चुटकी भर काला नमक डालें और तुरंत पिएं।"
-   ]
-  }
- },
- {
   "id": "tulsi-adrak-kadha",
   "name": "Tulsi Adrak Kadha",
   "hindi": "तुलसी अदरक काढ़ा",
   "kind": "Warm drink",
+  "group": "Traditional drinks",
   "color": "#9b6a3c",
   "tags": [
    "Warming",
@@ -1322,74 +2816,11 @@
   }
  },
  {
-  "id": "green-juice",
-  "name": "Green Juice (Palak, Kheera, Pudina)",
-  "hindi": "हरा जूस (पालक, खीरा, पुदीना)",
-  "kind": "Juice",
-  "color": "#4f9d4a",
-  "tags": [
-   "Immunity",
-   "Low sugar",
-   "Hydration"
-  ],
-  "season": "Winter",
-  "time": "Morning",
-  "minutes": 10,
-  "serving": "1 glass (200 ml)",
-  "vrat": false,
-  "jain": true,
-  "noOnionGarlic": true,
-  "benefits": [
-   "Spinach gives folate, vitamin K and some iron",
-   "Cucumber and mint make it light and fresh",
-   "Much less sugar than fruit juices"
-  ],
-  "nutrients": [
-   "Folate",
-   "Vitamin K",
-   "Vitamin C",
-   "Iron"
-  ],
-  "caution": [
-   "If you take blood thinners like warfarin, keep the amount of greens steady and ask your doctor",
-   "Spinach is high in oxalates; if you have had kidney stones, ask your doctor"
-  ],
-  "ingredients": [
-   {
-    "en": "A handful of spinach (palak)",
-    "hi": "मुट्ठी भर पालक"
-   },
-   {
-    "en": "1 cucumber",
-    "hi": "1 खीरा"
-   },
-   {
-    "en": "A few mint leaves, ½ apple, lemon",
-    "hi": "कुछ पुदीना पत्ते, आधा सेब, नींबू"
-   },
-   {
-    "en": "½ glass water",
-    "hi": "आधा गिलास पानी"
-   }
-  ],
-  "steps": {
-   "en": [
-    "Wash the spinach and mint well; chop the cucumber and apple.",
-    "Blend everything with water.",
-    "Strain if you like, add lemon and drink fresh."
-   ],
-   "hi": [
-    "पालक और पुदीना अच्छी तरह धोएं; खीरा और सेब काट लें।",
-    "सब कुछ पानी के साथ पीस लें।",
-    "चाहें तो छान लें, नींबू डालें और ताज़ा पिएं।"
-   ]
-  }
- },
- {
   "id": "badam-milk",
   "name": "Badam Milk",
   "hindi": "बादाम दूध",
   "kind": "Milk drink",
+  "group": "Traditional drinks",
   "color": "#efe0c2",
   "tags": [
    "Protein",
@@ -1455,6 +2886,7 @@
   "name": "Ragi Malt (Ragi Java)",
   "hindi": "रागी माल्ट (रागी जावा)",
   "kind": "Milk drink",
+  "group": "Traditional drinks",
   "color": "#8a5a44",
   "tags": [
    "Calcium",
@@ -1513,6 +2945,7 @@
   "name": "Thandai",
   "hindi": "ठंडाई",
   "kind": "Milk drink",
+  "group": "Traditional drinks",
   "color": "#efd9b8",
   "tags": [
    "Cooling",
@@ -1576,6 +3009,7 @@
   "name": "Kanji (Black Carrot)",
   "hindi": "काली गाजर की कांजी",
   "kind": "Fermented",
+  "group": "Traditional drinks",
   "color": "#5b1a3a",
   "tags": [
    "Digestion",
@@ -1641,6 +3075,7 @@
   "name": "Sol Kadhi",
   "hindi": "सोल कढ़ी",
   "kind": "Cooler",
+  "group": "Traditional drinks",
   "color": "#d98aa3",
   "tags": [
    "Digestion",
@@ -1701,6 +3136,7 @@
   "name": "Lassi",
   "hindi": "लस्सी",
   "kind": "Fermented",
+  "group": "Traditional drinks",
   "color": "#f6efe0",
   "tags": [
    "Calcium",
