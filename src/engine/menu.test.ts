@@ -686,6 +686,14 @@ describe('juices and drinks', () => {
     expect(DRINKS.filter((d) => d.group === 'Mixed juices').length).toBeGreaterThanOrEqual(12);
     expect(new Set(DRINKS.map((d) => d.id)).size).toBe(DRINKS.length);
     for (const d of DRINKS) {
+      if (d.group === 'Mocktails') {
+        // Party drinks make no health claims.
+        expect(d.benefits, d.id).toEqual([]);
+        expect(d.tags, d.id).toEqual([]);
+        expect(d.highlights!.length, d.id).toBeGreaterThanOrEqual(2);
+        expect(d.steps.en.length, d.id).toBe(d.steps.hi.length);
+        continue;
+      }
       expect(d.benefits.length, d.id).toBeGreaterThanOrEqual(2);
       expect(d.caution.length, d.id).toBeGreaterThan(0);
       expect(d.steps.en.length, d.id).toBe(d.steps.hi.length);
@@ -716,7 +724,11 @@ describe('juices and drinks', () => {
       expect(drinkFits(d, p, date), d.id).toBe(true);
       expect(['Winter', 'All']).toContain(d.season);
       expect(d.group).not.toBe('Traditional drinks');
+      expect(d.group).not.toBe('Mocktails');
     });
+    // Over a whole year, never a mocktail as the drink of the day.
+    for (let i = 0; i < 365; i += 3) expect(drinkOfTheDay(base, new Date(2026, 0, 1 + i))!.group).not.toBe('Mocktails');
+    expect(DRINKS.filter((d) => d.group === 'Mocktails').length).toBeGreaterThanOrEqual(15);
   });
 
   it('writes the recipe for the cook in Hindi, with the lauki warning', () => {

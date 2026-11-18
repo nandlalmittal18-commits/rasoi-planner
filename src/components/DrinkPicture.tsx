@@ -42,6 +42,14 @@ function DrinkArt({ drink, cover }: { drink: Drink; cover: boolean }) {
             </g>
           )}
           {drink.kind === 'Juice' && <circle cx="84" cy="38" r="9" fill="#9bd36a" stroke="#fff" strokeWidth="2" />}
+          {drink.kind === 'Mocktail' && (
+            <g>
+              <circle cx="84" cy="38" r="10" fill="#d7f08a" stroke="#fff" strokeWidth="2" />
+              <path d="M84 30v16M76 38h16M78 32l12 12M90 32L78 44" stroke="#b5d35a" strokeWidth="1.2" />
+              <path d="M52 46c-6-8 2-14 8-10-2 6-4 8-8 10zM62 44c2-9 11-9 12-3-5 3-8 4-12 3z" fill="#3f9b4b" />
+              <circle cx="58" cy="78" r="2" fill="#fff" opacity="0.8" /><circle cx="66" cy="68" r="1.6" fill="#fff" opacity="0.8" /><circle cx="54" cy="88" r="1.4" fill="#fff" opacity="0.8" />
+            </g>
+          )}
         </g>
       )}
     </svg>

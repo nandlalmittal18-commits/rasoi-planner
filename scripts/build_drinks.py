@@ -9,11 +9,12 @@ from pathlib import Path
 root = Path(__file__).resolve().parent.parent
 drinks = json.loads((root / "scripts/drinks/drinks.json").read_text(encoding="utf-8"))
 
-KINDS = {"Juice", "Cooler", "Milk drink", "Warm drink", "Fermented", "Water"}
+KINDS = {"Mocktail", "Juice", "Cooler", "Milk drink", "Warm drink", "Fermented", "Water"}
 TAGS = {"Immunity", "Hydration", "Digestion", "Energy", "Protein", "Calcium", "Cooling", "Warming",
         "Low sugar", "Kids", "Heart", "Eyes & skin", "Sleep"}
 SEASONS = {"All", "Winter", "Summer", "Monsoon"}
-GROUPS = {"Mixed juices", "Juices", "Traditional drinks"}
+GROUPS = {"Mixed juices", "Juices", "Traditional drinks", "Mocktails"}
+STYLES = {"Mojito", "Fizzy", "Fruity", "Creamy", "Spiced"}
 TIMES = {"Morning", "Any time", "Evening", "Night", "After meals", "Before meals"}
 
 problems, seen = [], set()
@@ -29,9 +30,15 @@ for n, d in enumerate(drinks, 1):
     if d.get("season") not in SEASONS: problems.append(f"{where}: season must be one of {sorted(SEASONS)}")
     if d.get("time") not in TIMES: problems.append(f"{where}: time must be one of {sorted(TIMES)}")
     if not re.fullmatch(r"#[0-9a-fA-F]{6}", d.get("color", "")): problems.append(f"{where}: color must look like #a1b2c3")
-    bad = [t for t in d.get("tags", []) if t not in TAGS]
-    if bad or not d.get("tags"): problems.append(f"{where}: tags must be from {sorted(TAGS)} (bad: {bad})")
-    if len(d.get("benefits", [])) < 2: problems.append(f"{where}: needs at least 2 benefits")
+    if d.get("group") == "Mocktails":
+        # Party drinks: no health claims, just what they are like.
+        if d.get("benefits") or d.get("tags"): problems.append(f"{where}: mocktails must not have health benefits or health tags")
+        if len(d.get("highlights", [])) < 2: problems.append(f"{where}: needs at least 2 highlights (what it is like)")
+        if d.get("style") not in STYLES: problems.append(f"{where}: style must be one of {sorted(STYLES)}")
+    else:
+        bad = [t for t in d.get("tags", []) if t not in TAGS]
+        if bad or not d.get("tags"): problems.append(f"{where}: tags must be from {sorted(TAGS)} (bad: {bad})")
+        if len(d.get("benefits", [])) < 2: problems.append(f"{where}: needs at least 2 benefits")
     if not d.get("caution"): problems.append(f"{where}: needs at least one caution or tip")
     for i in d.get("ingredients", []):
         if not i.get("en") or not i.get("hi"): problems.append(f"{where}: every ingredient needs en and hi")
@@ -58,6 +65,7 @@ SETTINGS = [
     "on a sunny balcony table with green plants softly blurred behind",
 ]
 def vessel(d):
+    if d.get("group") == "Mocktails": return "a tall party glass" if d.get("style") != "Creamy" else "a chilled glass with a straw"
     if d["kind"] == "Warm drink" or d["id"] == "haldi-doodh": return "a ceramic cup with a little steam rising"
     if d["id"] in ("masala-chaas", "sweet-lassi", "jaljeera", "thandai", "sol-kadhi"): return "a traditional steel or brass tumbler"
     if d["id"] == "coconut-water": return "a fresh green tender coconut with a paper straw, plus a glass of coconut water beside it"
@@ -66,6 +74,7 @@ def vessel(d):
 rows = []
 for i, d in enumerate(drinks):
     if d["id"] in photos: continue
+    party = d.get("group") == "Mocktails"
     def clean(t):
         t = re.sub(r"\(.*?\)", "", t.lower())
         t = re.sub(r"^[\d½¼¾\-–\s]+", "", t)
@@ -77,7 +86,8 @@ for i, d in enumerate(drinks):
     picks = [p for p in picks if p and not any(w in p for w in skip)][:2]
     props = " and ".join(picks) if picks else "a few fresh ingredients"
     cold = "with condensation on the glass, " if "Cooling" in d["tags"] and d["kind"] != "Warm drink" else ""
-    prompt = (f"Realistic, refreshing food photograph of {d['name']} ({d['hindi']}), an Indian drink, served in {vessel(d)} {SETTINGS[(i * 3) % len(SETTINGS)]}, "
+    kind = "a non-alcoholic party mocktail with ice, garnished nicely" if party else "an Indian drink"
+    prompt = (f"Realistic, refreshing food photograph of {d['name']} ({d['hindi']}), {kind}, served in {vessel(d)} {SETTINGS[(i * 3) % len(SETTINGS)]}, "
               f"{cold}the drink's true natural colour, with {props} placed casually nearby, slightly out of focus. "
               "Shot at a 30-degree angle with a 50mm lens, shallow depth of field, natural colours, looks home-made and real, not glossy or artificial. "
               "Landscape 3:2 (1536 x 1024). Keep the drink in the centre with empty space around it. No text, no labels, no logos, no hands, no people.")

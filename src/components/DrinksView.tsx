@@ -3,6 +3,9 @@ import {
   DRINKS,
   DRINK_GROUPS,
   DRINK_NOTE,
+  MOCKTAIL_NOTE,
+  MOCKTAIL_STYLES,
+  isMocktail,
   DRINK_TAGS,
   drinkCookMessage,
   drinkFits,
@@ -11,6 +14,7 @@ import {
   whatsappLink,
   type Drink,
   type DrinkGroup,
+  type MocktailStyle,
   type DrinkTag,
   type FamilyProfile,
 } from '../engine';
@@ -42,13 +46,20 @@ function DrinkCard({ drink, onOpen, fits }: { drink: Drink; onOpen: (id: string)
         <span className="drink-hi" lang="hi">
           {drink.hindi}
         </span>
-        <span className="drink-benefit">{drink.benefits[0]}</span>
+        <span className="drink-benefit">{drink.benefits[0] ?? drink.highlights?.[0]}</span>
         <span className="drink-tags">
-          {drink.tags.slice(0, 3).map((t) => (
-            <span key={t} className="drink-tag">
-              {t}
-            </span>
-          ))}
+          {isMocktail(drink) ? (
+            <>
+              <span className="drink-tag is-party">{drink.style}</span>
+              <span className="drink-tag is-party">No alcohol</span>
+            </>
+          ) : (
+            drink.tags.slice(0, 3).map((t) => (
+              <span key={t} className="drink-tag">
+                {t}
+              </span>
+            ))
+          )}
         </span>
         {!fits && <span className="muted small">Doesn’t fit your family’s food rules</span>}
       </span>
@@ -64,6 +75,8 @@ export function DrinksView({ profile, onOpen }: { profile: FamilyProfile; onOpen
   const [when, setWhen] = useState<(typeof SEASONS)[number] | 'Now'>('Now');
   const [query, setQuery] = useState('');
   const [group, setGroup] = useState<DrinkGroup | 'All'>('All');
+  const [style, setStyle] = useState<MocktailStyle | null>(null);
+  const party = group === 'Mocktails';
   const today = drinkOfTheDay(profile, now);
 
   const shown = useMemo(() => {
@@ -71,17 +84,20 @@ export function DrinksView({ profile, onOpen }: { profile: FamilyProfile; onOpen
     return DRINKS.filter(
       (d) =>
         (group === 'All' || d.group === group) &&
-        (!tag || d.tags.includes(tag)) &&
+        (party ? !style || d.style === style : !tag || d.tags.includes(tag)) &&
         (when === 'All year' ? true : when === 'Now' ? d.season === season || d.season === 'All' : d.season === when || d.season === 'All') &&
-        (!q || `${d.name} ${d.hindi} ${d.benefits.join(' ')} ${d.ingredients.map((i) => i.en).join(' ')}`.toLowerCase().includes(q)),
+        (!q || `${d.name} ${d.hindi} ${d.benefits.join(' ')} ${(d.highlights ?? []).join(' ')} ${d.style ?? ''} ${d.ingredients.map((i) => i.en).join(' ')}`.toLowerCase().includes(q)),
     ).sort((a, b) => Number(drinkFits(b, profile)) - Number(drinkFits(a, profile)));
-  }, [tag, when, query, season, profile, group]);
+  }, [tag, when, query, season, profile, group, party, style]);
 
   return (
     <div className="stack">
       <div className="week-head">
         <div>
-          <p className="eyebrow">{DRINKS.filter((d) => d.group !== 'Traditional drinks').length} fresh juices and {DRINKS.filter((d) => d.group === 'Traditional drinks').length} traditional drinks</p>
+          <p className="eyebrow">
+            {DRINKS.filter((d) => d.group === 'Juices' || d.group === 'Mixed juices').length} fresh juices, {DRINKS.filter((d) => d.group === 'Traditional drinks').length} traditional drinks and{' '}
+            {DRINKS.filter(isMocktail).length} mocktails
+          </p>
           <h1>Juices and drinks</h1>
         </div>
       </div>
@@ -117,14 +133,29 @@ export function DrinksView({ profile, onOpen }: { profile: FamilyProfile; onOpen
             </button>
           ))}
         </div>
-        <h2 className="filters-title">What is it good for?</h2>
-        <div className="chips">
-          {DRINK_TAGS.map((t) => (
-            <button key={t} type="button" className={`chip chip-toggle${tag === t ? ' is-on' : ''}`} aria-pressed={tag === t} onClick={() => setTag(tag === t ? null : t)}>
-              {t}
-            </button>
-          ))}
-        </div>
+        {party ? (
+          <>
+            <h2 className="filters-title">What kind?</h2>
+            <div className="chips">
+              {MOCKTAIL_STYLES.map((t) => (
+                <button key={t} type="button" className={`chip chip-toggle${style === t ? ' is-on' : ''}`} aria-pressed={style === t} onClick={() => setStyle(style === t ? null : t)}>
+                  {t}
+                </button>
+              ))}
+            </div>
+          </>
+        ) : (
+          <>
+            <h2 className="filters-title">What is it good for?</h2>
+            <div className="chips">
+              {DRINK_TAGS.map((t) => (
+                <button key={t} type="button" className={`chip chip-toggle${tag === t ? ' is-on' : ''}`} aria-pressed={tag === t} onClick={() => setTag(tag === t ? null : t)}>
+                  {t}
+                </button>
+              ))}
+            </div>
+          </>
+        )}
         <div className="drink-filter-row">
           <div className="seg" role="radiogroup" aria-label="Season">
             {(['Now', ...SEASONS] as const).map((s) => (
@@ -145,13 +176,14 @@ export function DrinksView({ profile, onOpen }: { profile: FamilyProfile; onOpen
         const list = shown.filter((d) => d.group === g.key);
         if (!list.length) return null;
         return (
-          <section key={g.key} className="drink-section" aria-labelledby={`dg-${g.key}`}>
+          <section key={g.key} className={`drink-section${g.key === 'Mocktails' ? ' is-party' : ''}`} aria-labelledby={`dg-${g.key}`}>
             <div className="drink-section-head">
               <h2 id={`dg-${g.key}`}>
                 {g.label} <span className="muted">({list.length})</span>
               </h2>
               <p className="muted small">{g.note}</p>
             </div>
+            {g.key === 'Mocktails' && <p className="drink-note small">{MOCKTAIL_NOTE}</p>}
             <div className="drink-grid">
               {list.map((d) => (
                 <DrinkCard key={d.id} drink={d} onOpen={onOpen} fits={drinkFits(d, profile)} />
@@ -186,13 +218,16 @@ export function DrinkSheet({ drinkId, profile, onClose, notify }: { drinkId: str
   if (!d) return null;
   const cookText = drinkCookMessage(d, profile);
   const fits = drinkFits(d, profile);
+  const mock = isMocktail(d);
   const facts = [
     d.kind,
+    mock && d.style,
+    mock && 'No alcohol',
     d.season === 'All' ? 'All year' : `${d.season} drink`,
     TIME_TEXT[d.time],
     `${d.minutes} min`,
     d.serving,
-    d.vrat && 'Vrat OK',
+    !mock && d.vrat && 'Vrat OK',
     d.jain && 'Jain OK',
   ].filter(Boolean) as string[];
   const lauki = d.id === 'lauki-juice';
@@ -222,21 +257,32 @@ export function DrinkSheet({ drinkId, profile, onClose, notify }: { drinkId: str
             {!fits && <p className="field-error">This drink doesn’t fit your family’s food rules (Jain or no onion-garlic).</p>}
           </div>
 
-          <section>
-            <h3>Health benefits</h3>
-            <ul className="benefit-list">
-              {d.benefits.map((b) => (
-                <li key={b}>{b}</li>
-              ))}
-            </ul>
-            <div className="drink-tags">
-              {d.nutrients.map((n) => (
-                <span key={n} className="drink-tag">
-                  {n}
-                </span>
-              ))}
-            </div>
-          </section>
+          {mock ? (
+            <section>
+              <h3>What it’s like</h3>
+              <ul className="benefit-list is-party">
+                {(d.highlights ?? []).map((b) => (
+                  <li key={b}>{b}</li>
+                ))}
+              </ul>
+            </section>
+          ) : (
+            <section>
+              <h3>Health benefits</h3>
+              <ul className="benefit-list">
+                {d.benefits.map((b) => (
+                  <li key={b}>{b}</li>
+                ))}
+              </ul>
+              <div className="drink-tags">
+                {d.nutrients.map((n) => (
+                  <span key={n} className="drink-tag">
+                    {n}
+                  </span>
+                ))}
+              </div>
+            </section>
+          )}
 
           <section className={`drink-caution${lauki ? ' is-danger' : ''}`}>
             <h3>Good to know</h3>
@@ -278,7 +324,7 @@ export function DrinkSheet({ drinkId, profile, onClose, notify }: { drinkId: str
               <CopyIcon /> Copy Hindi recipe
             </button>
           </div>
-          <p className="drink-note small">{DRINK_NOTE}</p>
+          <p className="drink-note small">{mock ? MOCKTAIL_NOTE : DRINK_NOTE}</p>
         </div>
       </div>
     </div>

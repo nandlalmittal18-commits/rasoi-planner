@@ -847,3 +847,8 @@ body { background: #fff; }
 .drink-section { display: flex; flex-direction: column; gap: 14px; margin-top: 8px; }
 .drink-section-head h2 { font-size: 1.35rem; margin: 0; }
 .drink-section-head p { margin: 2px 0 0; }
+
+/* mocktails */
+.drink-tag.is-party { background: #fde6ef; color: #b0185a; }
+.drink-section.is-party { background: linear-gradient(180deg, #fff3f7, #ffffff 240px); border-radius: 26px; padding: 18px 16px 8px; margin-top: 16px; }
+.benefit-list.is-party li::before { background: #e0457b; }

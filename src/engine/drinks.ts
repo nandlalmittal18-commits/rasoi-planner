@@ -9,20 +9,33 @@ export type DrinkTag =
   | 'Immunity' | 'Hydration' | 'Digestion' | 'Energy' | 'Protein' | 'Calcium' | 'Cooling' | 'Warming'
   | 'Low sugar' | 'Kids' | 'Heart' | 'Eyes & skin' | 'Sleep';
 
-export type DrinkGroup = 'Mixed juices' | 'Juices' | 'Traditional drinks';
+export type DrinkGroup = 'Mixed juices' | 'Juices' | 'Traditional drinks' | 'Mocktails';
+
+/** Kinds of mocktail, for the filter in the Mocktails section. */
+export type MocktailStyle = 'Mojito' | 'Fizzy' | 'Fruity' | 'Creamy' | 'Spiced';
+export const MOCKTAIL_STYLES: MocktailStyle[] = ['Mojito', 'Fizzy', 'Fruity', 'Creamy', 'Spiced'];
+
+/** Shown with mocktails: they are treats, not health drinks. */
+export const MOCKTAIL_NOTE =
+  'Mocktails are party treats with no alcohol, not health drinks. Most have added sugar, so enjoy them now and then. Use less syrup, or plain soda instead of sweet soda.';
 
 /** Sections of the Drinks screen, in order, with the heading people see. */
 export const DRINK_GROUPS: { key: DrinkGroup; label: string; note: string }[] = [
   { key: 'Mixed juices', label: 'Mixed juices', note: 'Fruits and vegetables that work well together' },
   { key: 'Juices', label: 'Fruit and vegetable juices', note: 'One fruit or vegetable, made fresh' },
   { key: 'Traditional drinks', label: 'Traditional drinks', note: 'Chaas, sharbats, milk drinks and home remedies' },
+  { key: 'Mocktails', label: 'Mocktails & mojitos', note: 'Fun party drinks with no alcohol. Treats, not health drinks.' },
 ];
 
 export interface Drink {
   id: string;
   name: string;
   hindi: string;
-  kind: 'Juice' | 'Cooler' | 'Milk drink' | 'Warm drink' | 'Fermented' | 'Water';
+  kind: 'Juice' | 'Cooler' | 'Milk drink' | 'Warm drink' | 'Fermented' | 'Water' | 'Mocktail';
+  /** Mocktails only */
+  style?: MocktailStyle;
+  /** Mocktails only: what the drink is like (no health claims) */
+  highlights?: string[];
   /** Section on the Drinks screen */
   group: DrinkGroup;
   /** Colour of the drink, for the glass picture */
@@ -35,6 +48,7 @@ export interface Drink {
   vrat: boolean;
   jain: boolean;
   noOnionGarlic: boolean;
+  /** Health benefits; empty for mocktails */
   benefits: string[];
   nutrients: string[];
   /** Who should be careful, and simple tips */
@@ -73,10 +87,12 @@ export function drinkFits(drink: Drink, profile: FamilyProfile, date?: Date): bo
   return true;
 }
 
-/** One drink to suggest today: in season, keeps the family's rules, and changes every day. */
+export const isMocktail = (d: Drink) => d.group === 'Mocktails';
+
+/** One healthy drink to suggest today (never a mocktail): in season, keeps the family's rules, and changes every day. */
 export function drinkOfTheDay(profile: FamilyProfile, date: Date): Drink | undefined {
   const season = seasonFor(date);
-  const fits = DRINKS.filter((d) => drinkFits(d, profile, date));
+  const fits = DRINKS.filter((d) => !isMocktail(d) && drinkFits(d, profile, date));
   const inSeason = fits.filter((d) => d.season === season || d.season === 'All');
   // Fresh fruit and vegetable juices first; traditional drinks only if no juice fits today.
   const juices = inSeason.filter((d) => d.group !== 'Traditional drinks');

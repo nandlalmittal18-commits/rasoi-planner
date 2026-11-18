@@ -3190,5 +3190,1028 @@
     "ठंडी परोसें।"
    ]
   }
+ },
+ {
+  "id": "virgin-mojito",
+  "name": "Classic Virgin Mojito",
+  "hindi": "वर्जिन मोजीटो",
+  "kind": "Mocktail",
+  "group": "Mocktails",
+  "style": "Mojito",
+  "color": "#cfe9b0",
+  "tags": [],
+  "season": "All",
+  "time": "Any time",
+  "minutes": 5,
+  "serving": "1 glass (250 ml)",
+  "vrat": false,
+  "jain": true,
+  "noOnionGarlic": true,
+  "benefits": [],
+  "highlights": [
+   "Fresh lime, crushed mint and fizzy soda: the classic party cooler",
+   "Ready in five minutes with things you already have",
+   "Everyone can have it; there is no alcohol"
+  ],
+  "nutrients": [],
+  "caution": [
+   "A treat, not a health drink: it has added sugar. Use less syrup, or plain soda instead of sweet soda."
+  ],
+  "ingredients": [
+   {
+    "en": "1 lime, cut into wedges",
+    "hi": "1 नींबू, टुकड़ों में कटा"
+   },
+   {
+    "en": "10–12 mint leaves",
+    "hi": "10–12 पुदीना पत्ते"
+   },
+   {
+    "en": "2 tsp sugar or sugar syrup",
+    "hi": "2 छोटे चम्मच चीनी या चाशनी"
+   },
+   {
+    "en": "Crushed ice",
+    "hi": "कुटी हुई बर्फ़"
+   },
+   {
+    "en": "1 cup chilled soda or lemon-lime soda",
+    "hi": "1 कप ठंडा सोडा या लेमन सोडा"
+   }
+  ],
+  "steps": {
+   "en": [
+    "Put the lime wedges, mint leaves and sugar in a glass and press them with a muddler or the back of a spoon to release the juice and mint oils.",
+    "Fill the glass with crushed ice.",
+    "Top up with chilled soda, stir gently and garnish with a mint sprig and a lime wheel."
+   ],
+   "hi": [
+    "गिलास में नींबू के टुकड़े, पुदीना पत्ते और चीनी डालें और मडलर या चम्मच के पिछले हिस्से से दबाएं ताकि रस और पुदीने की खुशबू निकले।",
+    "गिलास में कुटी बर्फ़ भर दें।",
+    "ऊपर से ठंडा सोडा डालें, हल्का मिलाएं और पुदीने की टहनी व नींबू के गोल टुकड़े से सजाएं।"
+   ]
+  }
+ },
+ {
+  "id": "watermelon-mojito",
+  "name": "Watermelon Mojito",
+  "hindi": "तरबूज़ मोजीटो",
+  "kind": "Mocktail",
+  "group": "Mocktails",
+  "style": "Mojito",
+  "color": "#f26d7d",
+  "tags": [],
+  "season": "Summer",
+  "time": "Any time",
+  "minutes": 10,
+  "serving": "1 glass (250 ml)",
+  "vrat": false,
+  "jain": true,
+  "noOnionGarlic": true,
+  "benefits": [],
+  "highlights": [
+   "Sweet watermelon with lime and mint, pink and pretty",
+   "Very refreshing on a hot summer evening",
+   "Watermelon makes it naturally sweet, so it needs less sugar"
+  ],
+  "nutrients": [],
+  "caution": [
+   "A treat, not a health drink: it has added sugar. Use less syrup, or plain soda instead of sweet soda.",
+   "Use fresh watermelon the same day you cut it"
+  ],
+  "ingredients": [
+   {
+    "en": "1 cup watermelon pieces, seeds removed",
+    "hi": "1 कप तरबूज़ के टुकड़े, बीज निकाले"
+   },
+   {
+    "en": "½ lime, cut into wedges",
+    "hi": "आधा नींबू, टुकड़ों में"
+   },
+   {
+    "en": "8 mint leaves",
+    "hi": "8 पुदीना पत्ते"
+   },
+   {
+    "en": "1 tsp sugar",
+    "hi": "1 छोटा चम्मच चीनी"
+   },
+   {
+    "en": "Ice and ½ cup chilled soda",
+    "hi": "बर्फ़ और आधा कप ठंडा सोडा"
+   }
+  ],
+  "steps": {
+   "en": [
+    "Muddle the watermelon, lime, mint and sugar in a glass till juicy.",
+    "Add ice.",
+    "Top up with soda, stir and garnish with a small watermelon wedge."
+   ],
+   "hi": [
+    "गिलास में तरबूज़, नींबू, पुदीना और चीनी को दबाकर रसदार बनाएं।",
+    "बर्फ़ डालें।",
+    "ऊपर से सोडा डालें, मिलाएं और तरबूज़ के छोटे टुकड़े से सजाएं।"
+   ]
+  }
+ },
+ {
+  "id": "strawberry-mojito",
+  "name": "Strawberry Mojito",
+  "hindi": "स्ट्रॉबेरी मोजीटो",
+  "kind": "Mocktail",
+  "group": "Mocktails",
+  "style": "Mojito",
+  "color": "#e8455a",
+  "tags": [],
+  "season": "Winter",
+  "time": "Any time",
+  "minutes": 10,
+  "serving": "1 glass (250 ml)",
+  "vrat": false,
+  "jain": true,
+  "noOnionGarlic": true,
+  "benefits": [],
+  "highlights": [
+   "Juicy strawberries crushed with lime and mint",
+   "Bright red and great for parties in strawberry season",
+   "Kids love it"
+  ],
+  "nutrients": [],
+  "caution": [
+   "A treat, not a health drink: it has added sugar. Use less syrup, or plain soda instead of sweet soda.",
+   "Wash strawberries well just before using"
+  ],
+  "ingredients": [
+   {
+    "en": "5–6 strawberries",
+    "hi": "5–6 स्ट्रॉबेरी"
+   },
+   {
+    "en": "½ lime, cut into wedges",
+    "hi": "आधा नींबू, टुकड़ों में"
+   },
+   {
+    "en": "8 mint leaves",
+    "hi": "8 पुदीना पत्ते"
+   },
+   {
+    "en": "2 tsp sugar",
+    "hi": "2 छोटे चम्मच चीनी"
+   },
+   {
+    "en": "Ice and 1 cup chilled soda",
+    "hi": "बर्फ़ और 1 कप ठंडा सोडा"
+   }
+  ],
+  "steps": {
+   "en": [
+    "Hull and halve the strawberries.",
+    "Muddle them with lime, mint and sugar in a glass.",
+    "Add ice, top up with soda, stir and garnish with a strawberry."
+   ],
+   "hi": [
+    "स्ट्रॉबेरी का हरा हिस्सा हटाकर आधा काटें।",
+    "गिलास में नींबू, पुदीना और चीनी के साथ दबाएं।",
+    "बर्फ़ डालें, ऊपर से सोडा डालें, मिलाएं और स्ट्रॉबेरी से सजाएं।"
+   ]
+  }
+ },
+ {
+  "id": "kala-khatta-mojito",
+  "name": "Kala Khatta Mojito",
+  "hindi": "काला खट्टा मोजीटो",
+  "kind": "Mocktail",
+  "group": "Mocktails",
+  "style": "Mojito",
+  "color": "#3d1a4a",
+  "tags": [],
+  "season": "Summer",
+  "time": "Any time",
+  "minutes": 5,
+  "serving": "1 glass (250 ml)",
+  "vrat": false,
+  "jain": true,
+  "noOnionGarlic": true,
+  "benefits": [],
+  "highlights": [
+   "The tangy, purple taste of the street-side gola, as a fizzy mojito",
+   "A sprinkle of black salt and chaat masala gives it a desi kick",
+   "A guaranteed hit at kids' parties"
+  ],
+  "nutrients": [],
+  "caution": [
+   "A treat, not a health drink: it has added sugar. Use less syrup, or plain soda instead of sweet soda.",
+   "Kala khatta syrup is very sweet and coloured; use just a little"
+  ],
+  "ingredients": [
+   {
+    "en": "2 tbsp kala khatta syrup",
+    "hi": "2 बड़े चम्मच काला खट्टा सिरप"
+   },
+   {
+    "en": "½ lime, cut into wedges",
+    "hi": "आधा नींबू, टुकड़ों में"
+   },
+   {
+    "en": "8 mint leaves",
+    "hi": "8 पुदीना पत्ते"
+   },
+   {
+    "en": "A pinch of black salt and chaat masala",
+    "hi": "चुटकी भर काला नमक और चाट मसाला"
+   },
+   {
+    "en": "Crushed ice and 1 cup chilled soda",
+    "hi": "कुटी बर्फ़ और 1 कप ठंडा सोडा"
+   }
+  ],
+  "steps": {
+   "en": [
+    "Muddle the lime and mint in a glass.",
+    "Add the kala khatta syrup, black salt, chaat masala and crushed ice.",
+    "Top up with soda, stir and serve at once."
+   ],
+   "hi": [
+    "गिलास में नींबू और पुदीना दबाएं।",
+    "काला खट्टा सिरप, काला नमक, चाट मसाला और कुटी बर्फ़ डालें।",
+    "ऊपर से सोडा डालें, मिलाएं और तुरंत परोसें।"
+   ]
+  }
+ },
+ {
+  "id": "kiwi-mojito",
+  "name": "Kiwi Mojito",
+  "hindi": "कीवी मोजीटो",
+  "kind": "Mocktail",
+  "group": "Mocktails",
+  "style": "Mojito",
+  "color": "#8bc34a",
+  "tags": [],
+  "season": "Winter",
+  "time": "Any time",
+  "minutes": 10,
+  "serving": "1 glass (250 ml)",
+  "vrat": false,
+  "jain": true,
+  "noOnionGarlic": true,
+  "benefits": [],
+  "highlights": [
+   "Tangy green kiwi with lime and mint",
+   "Looks beautiful with the black kiwi seeds in the glass",
+   "Fresh and not too sweet"
+  ],
+  "nutrients": [],
+  "caution": [
+   "A treat, not a health drink: it has added sugar. Use less syrup, or plain soda instead of sweet soda."
+  ],
+  "ingredients": [
+   {
+    "en": "1 kiwi, peeled and chopped",
+    "hi": "1 कीवी, छिली और कटी"
+   },
+   {
+    "en": "½ lime, cut into wedges",
+    "hi": "आधा नींबू, टुकड़ों में"
+   },
+   {
+    "en": "8 mint leaves",
+    "hi": "8 पुदीना पत्ते"
+   },
+   {
+    "en": "2 tsp sugar",
+    "hi": "2 छोटे चम्मच चीनी"
+   },
+   {
+    "en": "Ice and 1 cup chilled soda",
+    "hi": "बर्फ़ और 1 कप ठंडा सोडा"
+   }
+  ],
+  "steps": {
+   "en": [
+    "Muddle the kiwi, lime, mint and sugar in a glass.",
+    "Add ice.",
+    "Top up with soda, stir and garnish with a kiwi slice."
+   ],
+   "hi": [
+    "गिलास में कीवी, नींबू, पुदीना और चीनी दबाएं।",
+    "बर्फ़ डालें।",
+    "ऊपर से सोडा डालें, मिलाएं और कीवी के टुकड़े से सजाएं।"
+   ]
+  }
+ },
+ {
+  "id": "green-apple-mojito",
+  "name": "Green Apple Mojito",
+  "hindi": "ग्रीन एप्पल मोजीटो",
+  "kind": "Mocktail",
+  "group": "Mocktails",
+  "style": "Mojito",
+  "color": "#b5d96a",
+  "tags": [],
+  "season": "All",
+  "time": "Any time",
+  "minutes": 10,
+  "serving": "1 glass (250 ml)",
+  "vrat": false,
+  "jain": true,
+  "noOnionGarlic": true,
+  "benefits": [],
+  "highlights": [
+   "Crisp, sour green apple with mint and lime",
+   "A café favourite you can make at home",
+   "Light green and very refreshing"
+  ],
+  "nutrients": [],
+  "caution": [
+   "A treat, not a health drink: it has added sugar. Use less syrup, or plain soda instead of sweet soda.",
+   "Green apple syrup is sugary; grated fresh green apple is a lighter choice"
+  ],
+  "ingredients": [
+   {
+    "en": "½ green apple, finely chopped (or 1 tbsp green apple syrup)",
+    "hi": "आधा हरा सेब, बारीक कटा (या 1 बड़ा चम्मच ग्रीन एप्पल सिरप)"
+   },
+   {
+    "en": "½ lime, cut into wedges",
+    "hi": "आधा नींबू, टुकड़ों में"
+   },
+   {
+    "en": "8 mint leaves",
+    "hi": "8 पुदीना पत्ते"
+   },
+   {
+    "en": "2 tsp sugar",
+    "hi": "2 छोटे चम्मच चीनी"
+   },
+   {
+    "en": "Ice and 1 cup chilled soda",
+    "hi": "बर्फ़ और 1 कप ठंडा सोडा"
+   }
+  ],
+  "steps": {
+   "en": [
+    "Muddle the apple, lime, mint and sugar in a glass.",
+    "Add ice.",
+    "Top up with soda, stir and garnish with thin apple slices."
+   ],
+   "hi": [
+    "गिलास में सेब, नींबू, पुदीना और चीनी दबाएं।",
+    "बर्फ़ डालें।",
+    "ऊपर से सोडा डालें, मिलाएं और सेब की पतली फांकों से सजाएं।"
+   ]
+  }
+ },
+ {
+  "id": "mango-mojito",
+  "name": "Mango Mojito",
+  "hindi": "मैंगो मोजीटो",
+  "kind": "Mocktail",
+  "group": "Mocktails",
+  "style": "Mojito",
+  "color": "#f7b733",
+  "tags": [],
+  "season": "Summer",
+  "time": "Any time",
+  "minutes": 10,
+  "serving": "1 glass (250 ml)",
+  "vrat": false,
+  "jain": true,
+  "noOnionGarlic": true,
+  "benefits": [],
+  "highlights": [
+   "Ripe mango pulp with lime and mint: summer in a glass",
+   "Thick, sweet and tangy at the same time",
+   "Use Alphonso or any sweet mango"
+  ],
+  "nutrients": [],
+  "caution": [
+   "A treat, not a health drink: it has added sugar. Use less syrup, or plain soda instead of sweet soda.",
+   "Ripe mango is already sweet; you may not need sugar"
+  ],
+  "ingredients": [
+   {
+    "en": "½ cup ripe mango pulp",
+    "hi": "आधा कप पके आम का गूदा"
+   },
+   {
+    "en": "½ lime, cut into wedges",
+    "hi": "आधा नींबू, टुकड़ों में"
+   },
+   {
+    "en": "8 mint leaves",
+    "hi": "8 पुदीना पत्ते"
+   },
+   {
+    "en": "1 tsp sugar (optional)",
+    "hi": "1 छोटा चम्मच चीनी (चाहें तो)"
+   },
+   {
+    "en": "Ice and ¾ cup chilled soda",
+    "hi": "बर्फ़ और पौना कप ठंडा सोडा"
+   }
+  ],
+  "steps": {
+   "en": [
+    "Muddle the lime, mint and sugar in a glass.",
+    "Add the mango pulp and ice.",
+    "Top up slowly with soda, stir and garnish with a mango slice."
+   ],
+   "hi": [
+    "गिलास में नींबू, पुदीना और चीनी दबाएं।",
+    "आम का गूदा और बर्फ़ डालें।",
+    "धीरे-धीरे सोडा डालें, मिलाएं और आम के टुकड़े से सजाएं।"
+   ]
+  }
+ },
+ {
+  "id": "anar-mojito",
+  "name": "Pomegranate (Anar) Mojito",
+  "hindi": "अनार मोजीटो",
+  "kind": "Mocktail",
+  "group": "Mocktails",
+  "style": "Mojito",
+  "color": "#b3123a",
+  "tags": [],
+  "season": "Winter",
+  "time": "Any time",
+  "minutes": 10,
+  "serving": "1 glass (250 ml)",
+  "vrat": false,
+  "jain": true,
+  "noOnionGarlic": true,
+  "benefits": [],
+  "highlights": [
+   "Ruby-red pomegranate with lime and mint",
+   "The seeds sparkle in the glass, perfect for festive evenings",
+   "Tart and lightly sweet"
+  ],
+  "nutrients": [],
+  "caution": [
+   "A treat, not a health drink: it has added sugar. Use less syrup, or plain soda instead of sweet soda."
+  ],
+  "ingredients": [
+   {
+    "en": "½ cup pomegranate seeds",
+    "hi": "आधा कप अनार के दाने"
+   },
+   {
+    "en": "½ lime, cut into wedges",
+    "hi": "आधा नींबू, टुकड़ों में"
+   },
+   {
+    "en": "8 mint leaves",
+    "hi": "8 पुदीना पत्ते"
+   },
+   {
+    "en": "2 tsp sugar",
+    "hi": "2 छोटे चम्मच चीनी"
+   },
+   {
+    "en": "Ice and 1 cup chilled soda",
+    "hi": "बर्फ़ और 1 कप ठंडा सोडा"
+   }
+  ],
+  "steps": {
+   "en": [
+    "Muddle most of the pomegranate seeds with lime, mint and sugar in a glass.",
+    "Add ice and the rest of the seeds.",
+    "Top up with soda and stir gently."
+   ],
+   "hi": [
+    "गिलास में ज़्यादातर अनार के दाने नींबू, पुदीना और चीनी के साथ दबाएं।",
+    "बर्फ़ और बचे हुए दाने डालें।",
+    "ऊपर से सोडा डालें और हल्का मिलाएं।"
+   ]
+  }
+ },
+ {
+  "id": "virgin-pina-colada",
+  "name": "Virgin Piña Colada",
+  "hindi": "वर्जिन पीना कोलाडा",
+  "kind": "Mocktail",
+  "group": "Mocktails",
+  "style": "Creamy",
+  "color": "#f7efc9",
+  "tags": [],
+  "season": "Summer",
+  "time": "Any time",
+  "minutes": 10,
+  "serving": "1 glass (250 ml)",
+  "vrat": false,
+  "jain": false,
+  "noOnionGarlic": true,
+  "benefits": [],
+  "highlights": [
+   "Pineapple and creamy coconut milk blended with ice",
+   "Tastes like a beach holiday",
+   "Thick, smooth and filling"
+  ],
+  "nutrients": [],
+  "caution": [
+   "A treat, not a health drink: it has added sugar. Use less syrup, or plain soda instead of sweet soda.",
+   "Coconut milk is rich; one glass is plenty"
+  ],
+  "ingredients": [
+   {
+    "en": "1 cup pineapple pieces",
+    "hi": "1 कप अनानास के टुकड़े"
+   },
+   {
+    "en": "½ cup coconut milk",
+    "hi": "आधा कप नारियल का दूध"
+   },
+   {
+    "en": "1 tbsp sugar or honey",
+    "hi": "1 बड़ा चम्मच चीनी या शहद"
+   },
+   {
+    "en": "1 cup ice",
+    "hi": "1 कप बर्फ़"
+   }
+  ],
+  "steps": {
+   "en": [
+    "Put pineapple, coconut milk, sugar and ice in a blender.",
+    "Blend till smooth and frothy.",
+    "Pour into a glass and garnish with a pineapple wedge."
+   ],
+   "hi": [
+    "अनानास, नारियल का दूध, चीनी और बर्फ़ मिक्सी में डालें।",
+    "चिकना और झागदार होने तक चलाएं।",
+    "गिलास में डालें और अनानास के टुकड़े से सजाएं।"
+   ]
+  }
+ },
+ {
+  "id": "blue-lagoon",
+  "name": "Blue Lagoon",
+  "hindi": "ब्लू लगून",
+  "kind": "Mocktail",
+  "group": "Mocktails",
+  "style": "Fizzy",
+  "color": "#2f8fd8",
+  "tags": [],
+  "season": "All",
+  "time": "Any time",
+  "minutes": 5,
+  "serving": "1 glass (250 ml)",
+  "vrat": false,
+  "jain": true,
+  "noOnionGarlic": true,
+  "benefits": [],
+  "highlights": [
+   "Bright blue and fizzy: it always gets a 'wow' at parties",
+   "Lemony and sweet",
+   "Takes two minutes"
+  ],
+  "nutrients": [],
+  "caution": [
+   "A treat, not a health drink: it has added sugar. Use less syrup, or plain soda instead of sweet soda.",
+   "Blue curaçao syrup (non-alcoholic) is mostly sugar and colour; keep it for parties"
+  ],
+  "ingredients": [
+   {
+    "en": "2 tbsp blue curaçao syrup (non-alcoholic)",
+    "hi": "2 बड़े चम्मच ब्लू कुराकाओ सिरप (बिना अल्कोहल)"
+   },
+   {
+    "en": "1 tbsp lemon juice",
+    "hi": "1 बड़ा चम्मच नींबू का रस"
+   },
+   {
+    "en": "Ice",
+    "hi": "बर्फ़"
+   },
+   {
+    "en": "1 cup chilled lemon-lime soda",
+    "hi": "1 कप ठंडा लेमन सोडा"
+   }
+  ],
+  "steps": {
+   "en": [
+    "Fill a glass with ice.",
+    "Add the blue syrup and lemon juice.",
+    "Pour the soda slowly, stir once and garnish with a lemon slice."
+   ],
+   "hi": [
+    "गिलास में बर्फ़ भरें।",
+    "ब्लू सिरप और नींबू का रस डालें।",
+    "धीरे-धीरे सोडा डालें, एक बार मिलाएं और नींबू के टुकड़े से सजाएं।"
+   ]
+  }
+ },
+ {
+  "id": "shirley-temple",
+  "name": "Shirley Temple",
+  "hindi": "शर्ली टेम्पल",
+  "kind": "Mocktail",
+  "group": "Mocktails",
+  "style": "Fizzy",
+  "color": "#f05a78",
+  "tags": [],
+  "season": "All",
+  "time": "Any time",
+  "minutes": 5,
+  "serving": "1 glass (250 ml)",
+  "vrat": false,
+  "jain": true,
+  "noOnionGarlic": true,
+  "benefits": [],
+  "highlights": [
+   "A classic pink mocktail with grenadine and fizzy ginger ale",
+   "Topped with a cherry, children love it",
+   "Sweet and sparkly"
+  ],
+  "nutrients": [],
+  "caution": [
+   "A treat, not a health drink: it has added sugar. Use less syrup, or plain soda instead of sweet soda."
+  ],
+  "ingredients": [
+   {
+    "en": "1 tbsp grenadine (pomegranate) syrup",
+    "hi": "1 बड़ा चम्मच ग्रेनाडीन (अनार) सिरप"
+   },
+   {
+    "en": "1 cup chilled ginger ale or lemon-lime soda",
+    "hi": "1 कप ठंडा जिंजर एल या लेमन सोडा"
+   },
+   {
+    "en": "Ice, a lime wedge, a cherry",
+    "hi": "बर्फ़, नींबू का टुकड़ा, चेरी"
+   }
+  ],
+  "steps": {
+   "en": [
+    "Fill a glass with ice and pour in the soda.",
+    "Slowly add the grenadine; it sinks and makes a pink sunset.",
+    "Squeeze in a little lime and top with a cherry."
+   ],
+   "hi": [
+    "गिलास में बर्फ़ भरें और सोडा डालें।",
+    "धीरे से ग्रेनाडीन डालें; वह नीचे बैठकर गुलाबी रंग बनाएगा।",
+    "थोड़ा नींबू निचोड़ें और ऊपर चेरी लगाएं।"
+   ]
+  }
+ },
+ {
+  "id": "fruit-punch",
+  "name": "Fruit Punch",
+  "hindi": "फ्रूट पंच",
+  "kind": "Mocktail",
+  "group": "Mocktails",
+  "style": "Fruity",
+  "color": "#f0743e",
+  "tags": [],
+  "season": "All",
+  "time": "Any time",
+  "minutes": 15,
+  "serving": "1 jug (serves 4)",
+  "vrat": false,
+  "jain": true,
+  "noOnionGarlic": true,
+  "benefits": [],
+  "highlights": [
+   "Orange, pineapple and pomegranate juices with fizz and chopped fruit",
+   "Made in a big jug for a crowd",
+   "Colourful and fruity"
+  ],
+  "nutrients": [],
+  "caution": [
+   "A treat, not a health drink: it has added sugar. Use less syrup, or plain soda instead of sweet soda.",
+   "Make it with fresh juices instead of packed ones to cut the sugar"
+  ],
+  "ingredients": [
+   {
+    "en": "1 cup orange juice",
+    "hi": "1 कप संतरे का रस"
+   },
+   {
+    "en": "1 cup pineapple juice",
+    "hi": "1 कप अनानास का रस"
+   },
+   {
+    "en": "½ cup pomegranate juice",
+    "hi": "आधा कप अनार का रस"
+   },
+   {
+    "en": "Chopped apple, grapes and mint",
+    "hi": "कटा सेब, अंगूर और पुदीना"
+   },
+   {
+    "en": "Ice and 1 cup chilled soda",
+    "hi": "बर्फ़ और 1 कप ठंडा सोडा"
+   }
+  ],
+  "steps": {
+   "en": [
+    "Mix the juices in a large jug.",
+    "Add the chopped fruit, mint and ice.",
+    "Just before serving, add soda and stir."
+   ],
+   "hi": [
+    "एक बड़े जग में सारे रस मिलाएं।",
+    "कटे फल, पुदीना और बर्फ़ डालें।",
+    "परोसने से ठीक पहले सोडा डालकर मिलाएं।"
+   ]
+  }
+ },
+ {
+  "id": "masala-soda",
+  "name": "Masala Soda (Banta Style)",
+  "hindi": "मसाला सोडा (बंटा)",
+  "kind": "Mocktail",
+  "group": "Mocktails",
+  "style": "Spiced",
+  "color": "#e5e9c5",
+  "tags": [],
+  "season": "Summer",
+  "time": "Any time",
+  "minutes": 5,
+  "serving": "1 glass (300 ml)",
+  "vrat": false,
+  "jain": true,
+  "noOnionGarlic": true,
+  "benefits": [],
+  "highlights": [
+   "The fizzy, salty-tangy street soda of Mumbai and Delhi",
+   "Lemon, black salt and jeera with soda; very little sugar",
+   "Great after a heavy meal"
+  ],
+  "nutrients": [],
+  "caution": [
+   "It is salty; go easy if you have high blood pressure"
+  ],
+  "ingredients": [
+   {
+    "en": "1 lemon",
+    "hi": "1 नींबू"
+   },
+   {
+    "en": "½ tsp roasted cumin powder",
+    "hi": "आधा छोटा चम्मच भुना जीरा पाउडर"
+   },
+   {
+    "en": "½ tsp black salt, a pinch of chaat masala",
+    "hi": "आधा छोटा चम्मच काला नमक, चुटकी भर चाट मसाला"
+   },
+   {
+    "en": "1 tsp sugar (optional)",
+    "hi": "1 छोटा चम्मच चीनी (चाहें तो)"
+   },
+   {
+    "en": "Ice and 1 bottle chilled soda",
+    "hi": "बर्फ़ और 1 बोतल ठंडा सोडा"
+   }
+  ],
+  "steps": {
+   "en": [
+    "Squeeze the lemon into a glass and add the masalas and sugar.",
+    "Add ice.",
+    "Pour in the soda (it will fizz up), stir and drink at once."
+   ],
+   "hi": [
+    "गिलास में नींबू निचोड़ें और मसाले व चीनी डालें।",
+    "बर्फ़ डालें।",
+    "सोडा डालें (झाग उठेगा), मिलाएं और तुरंत पिएं।"
+   ]
+  }
+ },
+ {
+  "id": "spicy-guava-mary",
+  "name": "Spicy Guava Mary",
+  "hindi": "स्पाइसी अमरूद मैरी",
+  "kind": "Mocktail",
+  "group": "Mocktails",
+  "style": "Spiced",
+  "color": "#f2909e",
+  "tags": [],
+  "season": "Winter",
+  "time": "Any time",
+  "minutes": 10,
+  "serving": "1 glass (250 ml)",
+  "vrat": false,
+  "jain": true,
+  "noOnionGarlic": true,
+  "benefits": [],
+  "highlights": [
+   "Pink guava juice with a red-chilli and salt rim, an Indian party favourite",
+   "Sweet, tangy and spicy in one sip",
+   "Uses fresh guava when it's in season"
+  ],
+  "nutrients": [],
+  "caution": [
+   "A treat, not a health drink: it has added sugar. Use less syrup, or fresh guava instead of packed juice.",
+   "The chilli rim is hot; skip it for children"
+  ],
+  "ingredients": [
+   {
+    "en": "1 cup guava juice",
+    "hi": "1 कप अमरूद का रस"
+   },
+   {
+    "en": "1 tbsp lemon juice",
+    "hi": "1 बड़ा चम्मच नींबू का रस"
+   },
+   {
+    "en": "A pinch of black salt and black pepper",
+    "hi": "चुटकी भर काला नमक और काली मिर्च"
+   },
+   {
+    "en": "Red chilli powder and salt for the rim",
+    "hi": "किनारे के लिए लाल मिर्च पाउडर और नमक"
+   },
+   {
+    "en": "Ice",
+    "hi": "बर्फ़"
+   }
+  ],
+  "steps": {
+   "en": [
+    "Rub lemon on the rim of a glass and dip it in chilli powder mixed with salt.",
+    "Fill with ice.",
+    "Mix guava juice, lemon, black salt and pepper, pour in and serve."
+   ],
+   "hi": [
+    "गिलास के किनारे पर नींबू लगाकर नमक मिली लाल मिर्च में डुबोएं।",
+    "बर्फ़ भरें।",
+    "अमरूद का रस, नींबू, काला नमक और काली मिर्च मिलाकर डालें और परोसें।"
+   ]
+  }
+ },
+ {
+  "id": "mango-tango",
+  "name": "Mango Tango",
+  "hindi": "मैंगो टैंगो",
+  "kind": "Mocktail",
+  "group": "Mocktails",
+  "style": "Fruity",
+  "color": "#f9a825",
+  "tags": [],
+  "season": "Summer",
+  "time": "Any time",
+  "minutes": 10,
+  "serving": "1 glass (250 ml)",
+  "vrat": false,
+  "jain": true,
+  "noOnionGarlic": true,
+  "benefits": [],
+  "highlights": [
+   "Mango and orange juice with a splash of soda",
+   "Golden, sunny and very fruity",
+   "A summer party crowd-pleaser"
+  ],
+  "nutrients": [],
+  "caution": [
+   "A treat, not a health drink: it has added sugar. Use less syrup, or plain soda instead of sweet soda."
+  ],
+  "ingredients": [
+   {
+    "en": "½ cup mango pulp",
+    "hi": "आधा कप आम का गूदा"
+   },
+   {
+    "en": "½ cup orange juice",
+    "hi": "आधा कप संतरे का रस"
+   },
+   {
+    "en": "1 tbsp lemon juice",
+    "hi": "1 बड़ा चम्मच नींबू का रस"
+   },
+   {
+    "en": "Ice and ½ cup chilled soda",
+    "hi": "बर्फ़ और आधा कप ठंडा सोडा"
+   }
+  ],
+  "steps": {
+   "en": [
+    "Whisk the mango pulp, orange juice and lemon juice together.",
+    "Pour over ice in a tall glass.",
+    "Top with soda and garnish with an orange slice."
+   ],
+   "hi": [
+    "आम का गूदा, संतरे का रस और नींबू का रस फेंटकर मिलाएं।",
+    "लंबे गिलास में बर्फ़ पर डालें।",
+    "ऊपर से सोडा डालें और संतरे के टुकड़े से सजाएं।"
+   ]
+  }
+ },
+ {
+  "id": "kokum-fizz",
+  "name": "Kokum Fizz",
+  "hindi": "कोकम फ़िज़",
+  "kind": "Mocktail",
+  "group": "Mocktails",
+  "style": "Fizzy",
+  "color": "#8e2453",
+  "tags": [],
+  "season": "Summer",
+  "time": "Any time",
+  "minutes": 5,
+  "serving": "1 glass (250 ml)",
+  "vrat": false,
+  "jain": true,
+  "noOnionGarlic": true,
+  "benefits": [],
+  "highlights": [
+   "Konkan kokum syrup made sparkly with soda and mint",
+   "Deep pink, tangy and cooling",
+   "A desi alternative to cola"
+  ],
+  "nutrients": [],
+  "caution": [
+   "A treat, not a health drink: it has added sugar. Use less syrup, or plain soda instead of sweet soda."
+  ],
+  "ingredients": [
+   {
+    "en": "2 tbsp kokum syrup (sharbat)",
+    "hi": "2 बड़े चम्मच कोकम शरबत"
+   },
+   {
+    "en": "A few mint leaves",
+    "hi": "कुछ पुदीना पत्ते"
+   },
+   {
+    "en": "A pinch of roasted cumin and black salt",
+    "hi": "चुटकी भर भुना जीरा और काला नमक"
+   },
+   {
+    "en": "Ice and 1 cup chilled soda",
+    "hi": "बर्फ़ और 1 कप ठंडा सोडा"
+   }
+  ],
+  "steps": {
+   "en": [
+    "Lightly crush the mint in a glass.",
+    "Add kokum syrup, cumin, black salt and ice.",
+    "Top with soda and stir."
+   ],
+   "hi": [
+    "गिलास में पुदीना हल्का दबाएं।",
+    "कोकम शरबत, जीरा, काला नमक और बर्फ़ डालें।",
+    "ऊपर से सोडा डालें और मिलाएं।"
+   ]
+  }
+ },
+ {
+  "id": "paan-cooler",
+  "name": "Paan Cooler",
+  "hindi": "पान कूलर",
+  "kind": "Mocktail",
+  "group": "Mocktails",
+  "style": "Creamy",
+  "color": "#5f9e42",
+  "tags": [],
+  "season": "All",
+  "time": "Any time",
+  "minutes": 10,
+  "serving": "1 glass (250 ml)",
+  "vrat": false,
+  "jain": true,
+  "noOnionGarlic": true,
+  "benefits": [],
+  "highlights": [
+   "All the flavour of a meetha paan, blended into a chilled drink",
+   "Betel leaf, gulkand and fennel: a perfect after-dinner treat",
+   "Unusual and memorable at parties"
+  ],
+  "nutrients": [],
+  "caution": [
+   "A treat, not a health drink: it has added sugar. Use less gulkand.",
+   "Use only fresh betel leaves; no tobacco, supari or lime (chuna)"
+  ],
+  "ingredients": [
+   {
+    "en": "2 fresh betel (paan) leaves",
+    "hi": "2 ताज़े पान के पत्ते"
+   },
+   {
+    "en": "1 tbsp gulkand",
+    "hi": "1 बड़ा चम्मच गुलकंद"
+   },
+   {
+    "en": "1 tsp fennel (saunf)",
+    "hi": "1 छोटा चम्मच सौंफ"
+   },
+   {
+    "en": "1 scoop vanilla ice cream or ½ cup cold milk",
+    "hi": "1 स्कूप वनीला आइसक्रीम या आधा कप ठंडा दूध"
+   },
+   {
+    "en": "½ cup ice",
+    "hi": "आधा कप बर्फ़"
+   }
+  ],
+  "steps": {
+   "en": [
+    "Tear the paan leaves and put them in a blender with gulkand, fennel and ice.",
+    "Add the ice cream or cold milk and blend till smooth.",
+    "Pour into a glass and garnish with tutti-frutti or rose petals."
+   ],
+   "hi": [
+    "पान के पत्ते तोड़कर गुलकंद, सौंफ और बर्फ़ के साथ मिक्सी में डालें।",
+    "आइसक्रीम या ठंडा दूध डालकर चिकना पीस लें।",
+    "गिलास में डालें और टूटी-फ्रूटी या गुलाब की पंखुड़ियों से सजाएं।"
+   ]
+  }
  }
 ]
