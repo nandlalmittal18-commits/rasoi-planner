@@ -64,10 +64,19 @@ def vessel(d):
 rows = []
 for i, d in enumerate(drinks):
     if d["id"] in photos: continue
-    props = ", ".join(x["en"].split("(")[0].strip().lower() for x in d["ingredients"][:2])
+    def clean(t):
+        t = re.sub(r"\(.*?\)", "", t.lower())
+        t = re.sub(r"^[\d½¼¾\-–\s]+", "", t)
+        t = re.sub(r"^(tbsp|tsp|cups?|glass(es)?|litre|inch|inch piece of|small piece of|a small piece of|a pinch of|a few|a handful of|a little|large|medium|small|fresh|ripe|tender|dried)\s+", "", t)
+        t = re.sub(r"^(of\s+)", "", t)
+        return t.split(",")[0].strip()
+    skip = ("water", "salt", "sugar", "jaggery", "ice")
+    picks = [clean(x["en"]) for x in d["ingredients"]]
+    picks = [p for p in picks if p and not any(w in p for w in skip)][:2]
+    props = " and ".join(picks) if picks else "a few fresh ingredients"
     cold = "with condensation on the glass, " if "Cooling" in d["tags"] and d["kind"] != "Warm drink" else ""
     prompt = (f"Realistic, refreshing food photograph of {d['name']} ({d['hindi']}), an Indian drink, served in {vessel(d)} {SETTINGS[(i * 3) % len(SETTINGS)]}, "
-              f"{cold}the drink's true natural colour, with fresh {props} placed casually nearby, slightly out of focus. "
+              f"{cold}the drink's true natural colour, with {props} placed casually nearby, slightly out of focus. "
               "Shot at a 30-degree angle with a 50mm lens, shallow depth of field, natural colours, looks home-made and real, not glossy or artificial. "
               "Landscape 3:2 (1536 x 1024). Keep the drink in the centre with empty space around it. No text, no labels, no logos, no hands, no people.")
     rows.append([d["name"], f"{d['id']}.jpg", prompt])
