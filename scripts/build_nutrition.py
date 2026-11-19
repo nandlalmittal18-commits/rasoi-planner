@@ -30,7 +30,7 @@ KEY_FOR = {
     "maida": ["maida"], "sooji": ["semolina"], "besan": ["gram flour", "gram flour dumplings"], "sattu": ["sattu"],
     "poha": ["flattened rice"], "oats": ["oats"], "dalia": ["broken wheat"], "vermicelli": ["vermicelli", "roasted vermicelli"],
     "ricevermicelli": ["rice vermicelli", "rice noodles"], "noodles": ["noodles"], "pasta": ["pasta", "lasagne sheets"],
-    "wwpasta": ["whole wheat spaghetti"], "bread": ["bread", "pav", "burger buns", "pizza base"], "flatbread": ["pita", "tortilla"],
+    "wwpasta": ["whole wheat spaghetti"], "bread": ["bread", "pav", "burger buns", "pizza base", "bread crumbs"], "flatbread": ["pita", "tortilla"],
     "tacoshell": ["taco shells", "nachos"], "maize": ["maize flour"], "bajra": ["pearl millet flour"], "jowar": ["sorghum flour"],
     "ragi": ["finger millet flour"], "kuttu": ["buckwheat flour"], "rajgira": ["amaranth flour"], "sabudana": ["sago"],
     "samak": ["barnyard millet"], "singhara": ["water chestnut flour"], "riceflour": ["rice flour"], "puffedrice": ["puffed rice"],
@@ -40,7 +40,7 @@ KEY_FOR = {
     "rajma": ["kidney beans", "rajma"], "lobia": ["black-eyed beans"], "soya": ["soya chunks", "soya granules"],
     "sprouts": ["sprouted moong", "sprouted moth beans"], "beansprouts": ["bean sprouts"], "tofu": ["tofu"],
     "peanut": ["peanuts", "boiled peanuts"], "peanutbutter": ["peanut butter"], "almond": ["almonds"], "cashew": ["cashew"],
-    "nuts": ["dry fruits"], "sesame": ["sesame"], "poppy": ["poppy seeds"], "coconut": ["coconut", "grated coconut"],
+    "nuts": ["dry fruits", "pistachios"], "sesame": ["sesame"], "poppy": ["poppy seeds"], "coconut": ["coconut", "grated coconut"],
     "coconutmilk": ["coconut milk"], "milk": ["milk"], "curd": ["curd", "buttermilk"], "hungcurd": ["hung curd"], "paneer": ["paneer"],
     "cheese": ["cheese"], "mozzarella": ["mozzarella"], "khoya": ["khoya"], "cream": ["cream"], "butter": ["butter"], "ghee": ["ghee"],
     "mayonnaise": ["mayonnaise"], "potato": ["potato", "baby potatoes", "sweet potato"], "yam": ["yam"], "arbi": ["colocasia"],
@@ -51,6 +51,8 @@ KEY_FOR = {
     "capsicum": ["capsicum"], "cucumber": ["cucumber"], "rawpapaya": ["raw papaya"], "banana": ["banana", "raw banana"],
     "pineapple": ["pineapple"], "fruit": ["apple", "papaya", "pomegranate"], "farsan": ["sev", "boondi", "farsan"],
     "sugar": ["sugar", "sugar syrup"], "jaggery": ["jaggery"], "honey": ["honey"], "khakhra": ["khakhra"], "khari": ["khari biscuits"], "jam": ["jam"],
+    "creamcheese": ["cream cheese"], "chocolate": ["dark chocolate"], "biscuit": ["biscuits", "biscoff biscuits"],
+    "condensedmilk": ["condensed milk"], "cornflakes": ["cornflakes"],
 }
 KEY_OF = {name: key for key, names in KEY_FOR.items() for name in names}
 for key in KEY_FOR:

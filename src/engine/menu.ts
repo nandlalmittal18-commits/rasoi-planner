@@ -685,6 +685,9 @@ const PARTY_STARTERS = new Set([
   'samosa', 'onion-pakora', 'aloo-tikki-chaat', 'hara-bhara-kabab', 'veg-momos', 'khandvi', 'paneer-tikka', 'masoor-dal-tikki',
   'cheese-khakhra-chaat', 'crispy-crunchy-potatoes', 'khari-biscuit-pie', 'bhel-puri', 'masala-corn', 'veg-spring-rolls',
   'gobi-manchurian', 'medu-vada', 'khaman-dhokla', 'chana-sundal', 'kabuli-chana-chaat',
+  // Trending party and street snacks
+  'kulhad-pizza', 'chilli-cheese-toast', 'dabeli', 'tandoori-momos', 'kurkure-momos', 'peri-peri-fries', 'cheese-corn-balls',
+  'paneer-popcorn', 'crispy-corn', 'honey-chilli-potato', 'korean-cream-cheese-garlic-bun', 'korean-cheese-corn-dog', 'pani-puri',
 ]);
 
 interface CourseRule {

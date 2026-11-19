@@ -2792,5 +2792,383 @@
    "सेंधा नमक, भुना जीरा पाउडर, काली मिर्च और नींबू डालें।",
    "अच्छे से मिलाएं, धनिया डालकर गरम परोसें।"
   ]
+ },
+ "kulhad-pizza": {
+  "en": [
+   "Cut the pizza base (or bread) into small cubes.",
+   "Mix sweet corn, capsicum, onion and paneer cubes with 3 tbsp pizza sauce, oregano and chilli flakes.",
+   "In each kulhad (clay cup), layer bread cubes, the vegetable mix and grated mozzarella; repeat once more and finish with cheese.",
+   "Bake at 180°C for 10–12 minutes, or keep the kulhads in a covered kadai on low heat for 15 minutes, till the cheese melts.",
+   "Serve hot in the kulhad with a spoon."
+  ],
+  "hi": [
+   "पिज़्ज़ा बेस (या ब्रेड) को छोटे टुकड़ों में काटें।",
+   "स्वीट कॉर्न, शिमला मिर्च, प्याज़ और पनीर के टुकड़ों में 3 बड़े चम्मच पिज़्ज़ा सॉस, ओरेगैनो और चिली फ्लेक्स मिलाएं।",
+   "हर कुल्हड़ में ब्रेड के टुकड़े, सब्ज़ी का मिश्रण और कसा मोज़रेला डालें; एक बार और दोहराएं और ऊपर चीज़ डालें।",
+   "180°C पर 10–12 मिनट बेक करें, या ढकी कड़ाही में धीमी आंच पर 15 मिनट रखें, जब तक चीज़ पिघल न जाए।",
+   "कुल्हड़ में ही चम्मच के साथ गरम परोसें।"
+  ]
+ },
+ "bread-pizza": {
+  "en": [
+   "Lightly butter the bread and toast one side on a tawa.",
+   "Spread pizza sauce on the toasted side.",
+   "Top with onion, capsicum, sweet corn and grated mozzarella; sprinkle oregano and chilli flakes.",
+   "Put it back on the tawa, cover and cook on low for 4–5 minutes till the base is crisp and the cheese melts (or bake at 200°C for 8 minutes).",
+   "Cut into halves and serve hot."
+  ],
+  "hi": [
+   "ब्रेड पर हल्का मक्खन लगाएं और एक तरफ़ से तवे पर सेकें।",
+   "सिकी हुई तरफ़ पिज़्ज़ा सॉस लगाएं।",
+   "ऊपर प्याज़, शिमला मिर्च, स्वीट कॉर्न और कसा मोज़रेला डालें; ओरेगैनो और चिली फ्लेक्स छिड़कें।",
+   "फिर तवे पर रखें, ढककर धीमी आंच पर 4–5 मिनट पकाएं, जब तक नीचे से कुरकुरा और चीज़ पिघल न जाए (या 200°C पर 8 मिनट बेक करें)।",
+   "आधा काटकर गरम परोसें।"
+  ]
+ },
+ "pink-sauce-pasta": {
+  "en": [
+   "Boil the pasta in salted water till just cooked; drain and keep half a cup of the water.",
+   "Red sauce: fry chopped garlic in butter, add tomato purée, chilli flakes, oregano and salt, and cook for 8 minutes.",
+   "White sauce: in another pan cook 1 tbsp butter with 1 tbsp maida for a minute, then whisk in the milk till thick and smooth.",
+   "Pour the white sauce into the red sauce to make it pink; add cream, capsicum and sweet corn and cook for 2 minutes.",
+   "Toss in the pasta, add a little pasta water if it is too thick, top with grated cheese and serve hot."
+  ],
+  "hi": [
+   "पास्ता को नमक वाले पानी में बस पकने तक उबालें; पानी निकालें और आधा कप पानी बचा लें।",
+   "रेड सॉस: मक्खन में कटा लहसुन भूनें, टमाटर प्यूरी, चिली फ्लेक्स, ओरेगैनो और नमक डालकर 8 मिनट पकाएं।",
+   "व्हाइट सॉस: दूसरे पैन में 1 बड़ा चम्मच मक्खन और 1 बड़ा चम्मच मैदा एक मिनट भूनें, फिर दूध डालते हुए गाढ़ा और चिकना होने तक फेंटें।",
+   "व्हाइट सॉस को रेड सॉस में डालें ताकि रंग गुलाबी हो जाए; क्रीम, शिमला मिर्च और स्वीट कॉर्न डालकर 2 मिनट पकाएं।",
+   "पास्ता मिलाएं, ज़्यादा गाढ़ा हो तो थोड़ा पास्ता का पानी डालें, ऊपर कसा चीज़ डालकर गरम परोसें।"
+  ]
+ },
+ "chilli-cheese-toast": {
+  "en": [
+   "Mix grated cheese with chopped green chilli, garlic, capsicum, coriander and a pinch of chilli flakes.",
+   "Butter the bread slices and spread the cheese mix thickly on top.",
+   "Cook on a covered tawa on low heat, or bake at 200°C for 6–8 minutes, till the cheese bubbles and the base is crisp.",
+   "Cut into triangles and serve hot with ketchup."
+  ],
+  "hi": [
+   "कसे चीज़ में कटी हरी मिर्च, लहसुन, शिमला मिर्च, धनिया और एक चुटकी चिली फ्लेक्स मिलाएं।",
+   "ब्रेड पर मक्खन लगाएं और ऊपर चीज़ का मिश्रण मोटा फैलाएं।",
+   "ढके तवे पर धीमी आंच पर, या 200°C पर 6–8 मिनट बेक करें, जब तक चीज़ बुलबुले न दे और नीचे से कुरकुरा न हो।",
+   "तिकोने काटें और केचप के साथ गरम परोसें।"
+  ]
+ },
+ "bombay-masala-toast": {
+  "en": [
+   "Potato masala: temper mustard seeds, curry leaves and green chilli in oil, add turmeric, the mashed boiled potatoes and salt; mix well.",
+   "Butter two bread slices and spread green chutney on both.",
+   "Spread the potato masala, then add thin slices of onion, tomato and cucumber, a pinch of chaat masala and grated cheese.",
+   "Close the sandwich, butter the outside and grill in a sandwich maker or on a tawa till golden and crisp.",
+   "Cut into four and serve with ketchup and green chutney."
+  ],
+  "hi": [
+   "आलू मसाला: तेल में राई, करी पत्ता और हरी मिर्च का तड़का लगाएं, हल्दी, मसले उबले आलू और नमक डालकर अच्छे से मिलाएं।",
+   "दो ब्रेड पर मक्खन और हरी चटनी लगाएं।",
+   "आलू मसाला फैलाएं, फिर प्याज़, टमाटर और खीरे के पतले टुकड़े, एक चुटकी चाट मसाला और कसा चीज़ डालें।",
+   "सैंडविच बंद करें, बाहर मक्खन लगाएं और सैंडविच मेकर या तवे पर सुनहरा और कुरकुरा होने तक सेकें।",
+   "चार टुकड़ों में काटकर केचप और हरी चटनी के साथ परोसें।"
+  ]
+ },
+ "dabeli": {
+  "en": [
+   "Cook the mashed boiled potatoes with dabeli masala, tamarind chutney, salt and a little water till thick.",
+   "Spread the potato on a plate and top with masala peanuts, pomegranate seeds and coriander.",
+   "Slit the pav, spread tamarind and garlic chutney inside, and fill with the potato, chopped onion, peanuts and pomegranate.",
+   "Toast the pav in butter on a tawa on both sides.",
+   "Press sev onto the open edges and serve hot."
+  ],
+  "hi": [
+   "मसले उबले आलू को दाबेली मसाला, इमली की चटनी, नमक और थोड़े पानी के साथ गाढ़ा होने तक पकाएं।",
+   "आलू को प्लेट में फैलाएं और ऊपर मसाला मूंगफली, अनार के दाने और धनिया डालें।",
+   "पाव को बीच से काटें, अंदर इमली और लहसुन की चटनी लगाएं, आलू, कटा प्याज़, मूंगफली और अनार भरें।",
+   "तवे पर मक्खन में पाव को दोनों तरफ़ से सेकें।",
+   "खुले किनारों पर सेव दबाकर लगाएं और गरम परोसें।"
+  ]
+ },
+ "tandoori-momos": {
+  "en": [
+   "Make and steam veg momos (or use ready frozen momos).",
+   "Mix thick curd with tandoori masala, Kashmiri chilli, ginger-garlic paste, salt, lemon juice and 1 tsp oil.",
+   "Coat the steamed momos in this marinade and leave for 15 minutes.",
+   "Roast on a hot tawa, in an air fryer or in the oven at 200°C for about 10 minutes with a little oil, turning, till they get charred spots.",
+   "Serve hot with mint mayo and onion rings."
+  ],
+  "hi": [
+   "वेज मोमोज़ बनाकर भाप में पकाएं (या तैयार फ्रोज़न मोमोज़ लें)।",
+   "गाढ़े दही में तंदूरी मसाला, कश्मीरी मिर्च, अदरक-लहसुन पेस्ट, नमक, नींबू का रस और 1 छोटा चम्मच तेल मिलाएं।",
+   "भाप वाले मोमोज़ को इस मसाले में लपेटकर 15 मिनट रखें।",
+   "गरम तवे, एयर फ्रायर या ओवन में 200°C पर लगभग 10 मिनट थोड़े तेल के साथ पलटते हुए सेकें, जब तक जले हुए निशान न आ जाएं।",
+   "पुदीना मेयो और प्याज़ के छल्लों के साथ गरम परोसें।"
+  ]
+ },
+ "kurkure-momos": {
+  "en": [
+   "Make and steam veg momos (or use ready frozen momos) and let them cool.",
+   "Make a thin batter of maida, cornflour, salt, pepper and water.",
+   "Crush cornflakes coarsely. Dip each momo in the batter and roll it in the cornflakes.",
+   "Deep-fry on medium heat till golden and very crisp.",
+   "Serve hot with red chutney and mayonnaise."
+  ],
+  "hi": [
+   "वेज मोमोज़ बनाकर भाप में पकाएं (या तैयार फ्रोज़न मोमोज़ लें) और ठंडा होने दें।",
+   "मैदा, कॉर्नफ्लोर, नमक, काली मिर्च और पानी से पतला घोल बनाएं।",
+   "कॉर्नफ्लेक्स को मोटा-मोटा कूट लें। हर मोमो को घोल में डुबोकर कॉर्नफ्लेक्स में लपेटें।",
+   "मध्यम आंच पर सुनहरा और खूब कुरकुरा होने तक तलें।",
+   "लाल चटनी और मेयोनीज़ के साथ गरम परोसें।"
+  ]
+ },
+ "peri-peri-fries": {
+  "en": [
+   "Cut potatoes into thin fingers, soak in cold water for 20 minutes, then drain and pat dry.",
+   "Boil them in salted water for 3–4 minutes till just soft; drain, cool and toss with cornflour.",
+   "Fry in medium-hot oil for 5 minutes till pale, take out, then fry again in hot oil till crisp and golden (or air-fry at 200°C for 15–18 minutes).",
+   "Peri peri masala: mix red chilli powder, salt, a pinch of sugar, oregano, amchur and garlic powder.",
+   "Toss the hot fries in the masala and serve at once."
+  ],
+  "hi": [
+   "आलू को पतली लंबी फांकों में काटें, 20 मिनट ठंडे पानी में भिगोएं, फिर पानी निकालकर सुखा लें।",
+   "नमक वाले पानी में 3–4 मिनट बस नरम होने तक उबालें; पानी निकालें, ठंडा करें और कॉर्नफ्लोर में लपेटें।",
+   "मध्यम गरम तेल में 5 मिनट हल्का तलें, निकालें, फिर तेज़ गरम तेल में कुरकुरा और सुनहरा होने तक दोबारा तलें (या एयर फ्रायर में 200°C पर 15–18 मिनट)।",
+   "पेरी पेरी मसाला: लाल मिर्च पाउडर, नमक, चुटकी भर चीनी, ओरेगैनो, अमचूर और लहसुन पाउडर मिलाएं।",
+   "गरम फ्राइज़ को मसाले में उछालें और तुरंत परोसें।"
+  ]
+ },
+ "cheese-corn-balls": {
+  "en": [
+   "Mash boiled potatoes with lightly crushed sweet corn, grated cheese, green chilli, coriander, oregano, salt and 2 tbsp bread crumbs.",
+   "Shape into small balls, pressing a small cube of cheese into the centre of each.",
+   "Dip in a thin cornflour slurry and roll in bread crumbs; chill for 15 minutes so they don't break.",
+   "Deep-fry on medium heat till golden (or air-fry at 190°C for 12 minutes).",
+   "Serve hot with ketchup."
+  ],
+  "hi": [
+   "उबले आलू में हल्का कुचला स्वीट कॉर्न, कसा चीज़, हरी मिर्च, धनिया, ओरेगैनो, नमक और 2 बड़े चम्मच ब्रेड क्रम्ब्स मिलाकर मसलें।",
+   "छोटी गोलियां बनाएं और हर एक के बीच में चीज़ का छोटा टुकड़ा दबाएं।",
+   "पतले कॉर्नफ्लोर घोल में डुबोकर ब्रेड क्रम्ब्स में लपेटें; 15 मिनट फ्रिज में रखें ताकि टूटें नहीं।",
+   "मध्यम आंच पर सुनहरा होने तक तलें (या एयर फ्रायर में 190°C पर 12 मिनट)।",
+   "केचप के साथ गरम परोसें।"
+  ]
+ },
+ "paneer-popcorn": {
+  "en": [
+   "Cut paneer into small 1 cm cubes and toss with salt, pepper, chilli powder and oregano.",
+   "Make a thick batter of maida, cornflour and water.",
+   "Dip the paneer cubes in the batter and roll them in bread crumbs.",
+   "Fry in hot oil for just 1–2 minutes till golden, so the paneer stays soft (or air-fry at 200°C for 8 minutes).",
+   "Sprinkle chaat masala and serve hot with mint mayo or ketchup."
+  ],
+  "hi": [
+   "पनीर को 1 सेमी के छोटे टुकड़ों में काटें और नमक, काली मिर्च, मिर्च पाउडर और ओरेगैनो में लपेटें।",
+   "मैदा, कॉर्नफ्लोर और पानी से गाढ़ा घोल बनाएं।",
+   "पनीर के टुकड़े घोल में डुबोकर ब्रेड क्रम्ब्स में लपेटें।",
+   "गरम तेल में बस 1–2 मिनट सुनहरा होने तक तलें ताकि पनीर नरम रहे (या एयर फ्रायर में 200°C पर 8 मिनट)।",
+   "चाट मसाला छिड़ककर पुदीना मेयो या केचप के साथ गरम परोसें।"
+  ]
+ },
+ "crispy-corn": {
+  "en": [
+   "Boil sweet corn for 3 minutes, drain and dry well on a cloth.",
+   "Toss with cornflour, rice flour, salt and pepper, sprinkling a little water so every kernel is coated.",
+   "Deep-fry in small batches till crisp (keep a lid half on: corn can pop).",
+   "Stir-fry garlic, onion and capsicum on high heat for a minute; add chilli flakes, salt, pepper and a pinch of sugar.",
+   "Toss in the fried corn with lemon juice and spring onion, and serve at once while crisp."
+  ],
+  "hi": [
+   "स्वीट कॉर्न को 3 मिनट उबालें, पानी निकालें और कपड़े पर अच्छे से सुखाएं।",
+   "कॉर्नफ्लोर, चावल का आटा, नमक और काली मिर्च में लपेटें, थोड़ा पानी छिड़कें ताकि हर दाने पर परत चढ़ जाए।",
+   "थोड़ा-थोड़ा करके कुरकुरा होने तक तलें (ढक्कन आधा रखें: कॉर्न उछल सकता है)।",
+   "तेज़ आंच पर लहसुन, प्याज़ और शिमला मिर्च एक मिनट भूनें; चिली फ्लेक्स, नमक, काली मिर्च और चुटकी भर चीनी डालें।",
+   "तले कॉर्न को नींबू के रस और हरे प्याज़ के साथ मिलाएं और कुरकुरा रहते ही तुरंत परोसें।"
+  ]
+ },
+ "honey-chilli-potato": {
+  "en": [
+   "Cut potatoes into fingers, soak for 15 minutes, boil for 3 minutes and pat dry.",
+   "Coat with cornflour, maida, salt and chilli powder; fry once, then fry again in hot oil till very crisp.",
+   "Sauce: stir-fry garlic, onion and capsicum, then add soy sauce, chilli sauce, ketchup, vinegar and a little cornflour slurry.",
+   "Turn off the heat, stir in the honey and toss in the potatoes.",
+   "Top with toasted sesame seeds and spring onion; serve at once."
+  ],
+  "hi": [
+   "आलू को लंबी फांकों में काटें, 15 मिनट भिगोएं, 3 मिनट उबालें और सुखा लें।",
+   "कॉर्नफ्लोर, मैदा, नमक और मिर्च पाउडर में लपेटें; एक बार तलें, फिर तेज़ गरम तेल में खूब कुरकुरा होने तक दोबारा तलें।",
+   "सॉस: लहसुन, प्याज़ और शिमला मिर्च भूनें, फिर सोया सॉस, चिली सॉस, केचप, सिरका और थोड़ा कॉर्नफ्लोर घोल डालें।",
+   "आंच बंद करें, शहद मिलाएं और आलू डालकर उछालें।",
+   "ऊपर भुने तिल और हरा प्याज़ डालकर तुरंत परोसें।"
+  ]
+ },
+ "chilli-garlic-noodles": {
+  "en": [
+   "Boil the noodles till just done, rinse in cold water and toss with a little oil.",
+   "Heat oil on high and fry plenty of chopped garlic with red chilli flakes till golden (don't let it burn).",
+   "Add cabbage, capsicum and carrot and stir-fry for 2 minutes on high heat.",
+   "Add the noodles, soy sauce, chilli sauce, vinegar, pepper and salt, and toss well.",
+   "Finish with spring onion and serve hot."
+  ],
+  "hi": [
+   "नूडल्स को बस पकने तक उबालें, ठंडे पानी से धोएं और थोड़ा तेल मिलाएं।",
+   "तेज़ आंच पर तेल गरम करें और खूब सारा कटा लहसुन चिली फ्लेक्स के साथ सुनहरा होने तक भूनें (जलने न दें)।",
+   "पत्ता गोभी, शिमला मिर्च और गाजर डालकर तेज़ आंच पर 2 मिनट भूनें।",
+   "नूडल्स, सोया सॉस, चिली सॉस, सिरका, काली मिर्च और नमक डालकर अच्छे से मिलाएं।",
+   "ऊपर हरा प्याज़ डालकर गरम परोसें।"
+  ]
+ },
+ "paneer-kathi-roll": {
+  "en": [
+   "Marinate paneer strips in curd, tikka masala, ginger-garlic paste and salt for 15 minutes.",
+   "Knead a soft dough of maida, salt, a little oil and water; rest for 10 minutes.",
+   "Roll thin parathas and cook them on a tawa with a little oil.",
+   "Cook the paneer with sliced onion and capsicum on high heat till lightly charred.",
+   "Place the filling on a paratha, add raw onion, green chutney, chaat masala and lemon, roll tightly and wrap in paper."
+  ],
+  "hi": [
+   "पनीर की पट्टियों को दही, टिक्का मसाला, अदरक-लहसुन पेस्ट और नमक में 15 मिनट रखें।",
+   "मैदा, नमक, थोड़ा तेल और पानी से नरम आटा गूंधें; 10 मिनट ढककर रखें।",
+   "पतले पराठे बेलें और तवे पर थोड़े तेल के साथ सेकें।",
+   "पनीर को कटे प्याज़ और शिमला मिर्च के साथ तेज़ आंच पर हल्का जलने तक पकाएं।",
+   "पराठे पर भरावन रखें, कच्चा प्याज़, हरी चटनी, चाट मसाला और नींबू डालें, कसकर रोल करें और कागज़ में लपेटें।"
+  ]
+ },
+ "korean-cream-cheese-garlic-bun": {
+  "en": [
+   "Cut a large round bun into 6 wedges, but not all the way through the base.",
+   "Beat cream cheese with sugar and a little cream till smooth, and fill the cuts with it.",
+   "Melt butter with lots of grated garlic, chopped parsley or coriander and a pinch of salt.",
+   "Brush or dip the whole bun in the garlic butter, including between the cuts.",
+   "Bake at 170°C for 12–15 minutes (or air-fry at 160°C for 8 minutes) till crisp outside; serve warm."
+  ],
+  "hi": [
+   "एक बड़े गोल बन को 6 हिस्सों में काटें, लेकिन नीचे से पूरा अलग न करें।",
+   "क्रीम चीज़ को चीनी और थोड़ी क्रीम के साथ चिकना होने तक फेंटें और कटों में भरें।",
+   "मक्खन पिघलाकर उसमें खूब सारा कसा लहसुन, कटा पार्सले या धनिया और चुटकी भर नमक मिलाएं।",
+   "पूरे बन पर, कटों के बीच भी, लहसुन वाला मक्खन लगाएं या उसमें डुबोएं।",
+   "170°C पर 12–15 मिनट बेक करें (या एयर फ्रायर में 160°C पर 8 मिनट), जब तक बाहर से कुरकुरा न हो; गुनगुना परोसें।"
+  ]
+ },
+ "korean-cheese-corn-dog": {
+  "en": [
+   "Push a thick block of mozzarella onto each skewer and freeze for 20 minutes.",
+   "Make a thick, sticky, eggless batter of maida, sugar, salt, baking powder and milk.",
+   "Coat each cheese stick in the batter, then roll it in small potato cubes or bread crumbs, pressing well.",
+   "Deep-fry on medium heat, turning, till deep golden all over.",
+   "Roll in a little sugar, drizzle ketchup and mustard sauce, and eat hot for the cheese pull."
+  ],
+  "hi": [
+   "हर सींक पर मोज़रेला का मोटा टुकड़ा लगाएं और 20 मिनट फ्रीज़र में रखें।",
+   "मैदा, चीनी, नमक, बेकिंग पाउडर और दूध से गाढ़ा, चिपचिपा, बिना अंडे का घोल बनाएं।",
+   "हर चीज़ स्टिक को घोल में लपेटें, फिर छोटे आलू के टुकड़ों या ब्रेड क्रम्ब्स में दबाकर लपेटें।",
+   "मध्यम आंच पर पलटते हुए चारों तरफ़ गहरा सुनहरा होने तक तलें।",
+   "थोड़ी चीनी में लपेटें, केचप और मस्टर्ड सॉस डालें, और चीज़ खिंचने के लिए गरम खाएं।"
+  ]
+ },
+ "cheese-masala-noodles": {
+  "en": [
+   "Fry chopped onion, tomato and capsicum in butter for 2 minutes with a pinch of chilli powder.",
+   "Add 1½ cups water and the noodle masala, and bring to a boil.",
+   "Add the noodles and cook for 2 minutes till most of the water is absorbed.",
+   "Stir in grated cheese, turn off the heat and serve hot with chilli flakes."
+  ],
+  "hi": [
+   "कटे प्याज़, टमाटर और शिमला मिर्च को मक्खन में चुटकी भर मिर्च पाउडर के साथ 2 मिनट भूनें।",
+   "1½ कप पानी और नूडल्स मसाला डालकर उबाल आने दें।",
+   "नूडल्स डालें और 2 मिनट पकाएं, जब तक ज़्यादातर पानी सूख न जाए।",
+   "कसा चीज़ मिलाएं, आंच बंद करें और चिली फ्लेक्स के साथ गरम परोसें।"
+  ]
+ },
+ "pani-puri": {
+  "en": [
+   "Pani: grind mint, coriander, green chilli, ginger and lemon juice; mix into 4 cups of cold, filtered drinking water with black salt, roasted cumin and pani puri masala. Chill.",
+   "Sweet chutney: boil tamarind with jaggery and a few dates, then strain.",
+   "Filling: mash boiled potatoes and chickpeas with salt, red chilli and chaat masala.",
+   "Crack a hole in each puri, fill with the potato mix, a little sweet chutney and boondi, dip in the chilled pani and eat at once."
+  ],
+  "hi": [
+   "पानी: पुदीना, धनिया, हरी मिर्च, अदरक और नींबू का रस पीस लें; 4 कप ठंडे, फ़िल्टर किए पीने के पानी में काला नमक, भुना जीरा और पानी पूरी मसाला मिलाएं। ठंडा करें।",
+   "मीठी चटनी: इमली को गुड़ और कुछ खजूर के साथ उबालें, फिर छान लें।",
+   "भरावन: उबले आलू और चने को नमक, लाल मिर्च और चाट मसाला के साथ मसलें।",
+   "हर पूरी में छेद करें, आलू मिश्रण, थोड़ी मीठी चटनी और बूंदी भरें, ठंडे पानी में डुबोकर तुरंत खाएं।"
+  ]
+ },
+ "dubai-chocolate-bar": {
+  "en": [
+   "Melt dark chocolate over a pan of hot water and coat the inside of a chocolate mould; set in the fridge for 10 minutes.",
+   "Fry kunafa (kataifi) pastry or roasted vermicelli in butter on low heat till golden and crisp; let it cool.",
+   "Blend pistachios with a little milk and sugar into a thick paste, then mix in the crisp kunafa.",
+   "Fill the mould with the pistachio mix, cover with more melted chocolate and smooth the top.",
+   "Set in the fridge for 1 hour, unmould and break a piece to show the green filling."
+  ],
+  "hi": [
+   "गरम पानी के बर्तन के ऊपर डार्क चॉकलेट पिघलाएं और चॉकलेट मोल्ड के अंदर परत लगाएं; 10 मिनट फ्रिज में जमने दें।",
+   "कुनाफ़ा (कटाइफ़ी) पेस्ट्री या भुनी सेवइयां मक्खन में धीमी आंच पर सुनहरा और कुरकुरा होने तक भूनें; ठंडा होने दें।",
+   "पिस्ता को थोड़े दूध और चीनी के साथ गाढ़ा पेस्ट बनाएं, फिर उसमें कुरकुरी कुनाफ़ा मिलाएं।",
+   "मोल्ड में पिस्ता मिश्रण भरें, ऊपर और पिघली चॉकलेट डालें और बराबर करें।",
+   "1 घंटा फ्रिज में जमाएं, मोल्ड से निकालें और एक टुकड़ा तोड़कर हरा भरावन दिखाएं।"
+  ]
+ },
+ "biscoff-cheesecake-jar": {
+  "en": [
+   "Crush the biscuits and mix with melted butter; press a layer into each jar.",
+   "Whip cold cream till soft peaks form.",
+   "Beat cream cheese with powdered sugar and a drop of vanilla till smooth, then gently fold in the whipped cream.",
+   "Spoon the cheesecake cream over the base, then top with warm biscuit spread and more crumbs.",
+   "Chill for 2 hours and serve cold."
+  ],
+  "hi": [
+   "बिस्कुट को कूटकर पिघले मक्खन में मिलाएं; हर जार में एक परत दबाकर बिछाएं।",
+   "ठंडी क्रीम को हल्की चोटियां बनने तक फेंटें।",
+   "क्रीम चीज़ को पिसी चीनी और एक बूंद वनीला के साथ चिकना होने तक फेंटें, फिर फेंटी क्रीम धीरे से मिलाएं।",
+   "बिस्कुट की परत पर चीज़केक क्रीम डालें, ऊपर गरम बिस्कुट स्प्रेड और और चूरा डालें।",
+   "2 घंटे फ्रिज में रखें और ठंडा परोसें।"
+  ]
+ },
+ "rasmalai-tres-leches": {
+  "en": [
+   "Eggless sponge: whisk half a tin of condensed milk, ½ cup milk, ¼ cup melted butter and 1 tsp vinegar; fold in 1¼ cups maida, 1 tsp baking powder and ½ tsp baking soda.",
+   "Bake at 180°C for 30–35 minutes (or in a covered kadai on low heat) till a toothpick comes out clean; let it cool.",
+   "Rasmalai milk: warm 1 cup milk with the rest of the condensed milk, ½ cup cream, saffron and cardamom; let it cool.",
+   "Poke holes all over the cake and slowly pour the milk over it; soak in the fridge for 4 hours.",
+   "Top with whipped cream, chopped pistachios and saffron, and serve cold."
+  ],
+  "hi": [
+   "बिना अंडे का स्पंज: आधा टिन कंडेंस्ड मिल्क, आधा कप दूध, ¼ कप पिघला मक्खन और 1 छोटा चम्मच सिरका फेंटें; 1¼ कप मैदा, 1 छोटा चम्मच बेकिंग पाउडर और ½ छोटा चम्मच बेकिंग सोडा मिलाएं।",
+   "180°C पर 30–35 मिनट बेक करें (या ढकी कड़ाही में धीमी आंच पर), जब तक सींक साफ़ न निकले; ठंडा होने दें।",
+   "रसमलाई दूध: 1 कप दूध में बाकी कंडेंस्ड मिल्क, आधा कप क्रीम, केसर और इलायची डालकर गुनगुना करें; ठंडा होने दें।",
+   "केक में चारों तरफ़ छेद करें और धीरे-धीरे दूध डालें; 4 घंटे फ्रिज में भीगने दें।",
+   "ऊपर फेंटी क्रीम, कटे पिस्ता और केसर डालकर ठंडा परोसें।"
+  ]
+ },
+ "chocolate-lava-cake": {
+  "en": [
+   "Melt dark chocolate and butter together.",
+   "Whisk curd and sugar till smooth, then add the melted chocolate and milk.",
+   "Fold in maida, a spoon of cocoa, ½ tsp baking powder and a pinch of baking soda; don't overmix.",
+   "Pour into greased cups, push a piece of chocolate into the middle of each, and bake at 200°C for 8–10 minutes till the edges set but the centre is soft.",
+   "Rest for 1 minute, turn out onto a plate and serve warm with vanilla ice cream."
+  ],
+  "hi": [
+   "डार्क चॉकलेट और मक्खन साथ में पिघलाएं।",
+   "दही और चीनी को चिकना होने तक फेंटें, फिर पिघली चॉकलेट और दूध मिलाएं।",
+   "मैदा, एक चम्मच कोको, ½ छोटा चम्मच बेकिंग पाउडर और चुटकी भर बेकिंग सोडा हल्के हाथ से मिलाएं; ज़्यादा न फेंटें।",
+   "चिकने किए कप में डालें, हर एक के बीच में चॉकलेट का टुकड़ा दबाएं, और 200°C पर 8–10 मिनट बेक करें, जब तक किनारे जम जाएं पर बीच नरम रहे।",
+   "1 मिनट रुकें, प्लेट पर पलटें और वनीला आइसक्रीम के साथ गरम परोसें।"
+  ]
+ },
+ "tiramisu-cups": {
+  "en": [
+   "Make strong coffee with 2 tsp instant coffee, ½ cup hot water and 1 tsp sugar; let it cool. (For children, use cold chocolate milk instead.)",
+   "Whip cold cream to soft peaks. Beat cream cheese (or mascarpone) with sugar and vanilla, then fold in the cream.",
+   "Dip biscuits quickly in the coffee and lay them in the cups.",
+   "Spoon the cream on top and repeat the layers once more.",
+   "Dust thickly with cocoa powder and chill for 4 hours before serving."
+  ],
+  "hi": [
+   "2 छोटे चम्मच इंस्टेंट कॉफ़ी, आधा कप गरम पानी और 1 छोटा चम्मच चीनी से तेज़ कॉफ़ी बनाकर ठंडी करें। (बच्चों के लिए इसकी जगह ठंडा चॉकलेट दूध लें।)",
+   "ठंडी क्रीम को हल्की चोटियां बनने तक फेंटें। क्रीम चीज़ (या मस्कारपोन) को चीनी और वनीला के साथ फेंटें, फिर क्रीम मिलाएं।",
+   "बिस्कुट को कॉफ़ी में जल्दी से डुबोकर कप में बिछाएं।",
+   "ऊपर क्रीम डालें और परतें एक बार और दोहराएं।",
+   "ऊपर खूब कोको पाउडर छिड़कें और परोसने से पहले 4 घंटे फ्रिज में रखें।"
+  ]
  }
 }

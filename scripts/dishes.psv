@@ -196,3 +196,27 @@ Crispy Crunchy Potatoes|Snack|Snack|Veg|Modern|30|Easy|Baby potatoes, cornflour,
 Khari Biscuit Pie|Snack|Snack|Veg|Modern|20|Easy|Khari biscuits, green chutney, onion, tomato, capsicum, cheese|N|N|N|N|Y|All|Medium||Tea|खारी बिस्किट पाई
 Peanut Butter Jam Sandwich|Breakfast / Snack|Breakfast|Veg|Continental|10|Easy|Bread, peanut butter, jam, butter|Y|Y|N|Y|Y|All|Medium||Milk, fruit|पीनट बटर जैम सैंडविच
 Whole Wheat Spaghetti|Lunch / Dinner|World Main|Veg|Italian|25|Easy|Whole wheat spaghetti, tomato, garlic, olive oil, basil, vegetables|Y|Y|N|Y|Y|All|Medium||Garlic bread|होल व्हीट स्पेगेटी
+Kulhad Pizza|Snack / Dinner|Snack|Veg|Modern|25|Easy|Pizza base, sweet corn, capsicum, onion, paneer, mozzarella|N|N|N|N|Y|All|Medium||Cold coffee|कुल्हड़ पिज़्ज़ा
+Bread Pizza|Breakfast / Snack|Snack|Veg|Modern|15|Easy|Bread, onion, capsicum, sweet corn, mozzarella, butter|N|N|N|Y|Y|All|Medium||Ketchup|ब्रेड पिज़्ज़ा
+Pink Sauce Pasta|Lunch / Dinner|World Main|Veg|Italian|30|Easy|Pasta, tomato, milk, cream, butter, garlic, capsicum, sweet corn, cheese|N|N|N|Y|Y|All|Heavy||Garlic bread|पिंक सॉस पास्ता
+Chilli Cheese Toast|Breakfast / Snack|Snack|Veg|Maharashtra|15|Easy|Bread, cheese, green chilli, garlic, capsicum, butter|N|N|N|Y|Y|All|Medium||Ketchup, tea|चिली चीज़ टोस्ट
+Bombay Masala Toast|Breakfast / Snack|Breakfast|Veg|Maharashtra|30|Easy|Bread, potato, onion, tomato, cucumber, cheese, butter, green chutney|N|N|N|Y|Y|All|Heavy|Boil potatoes|Ketchup|बॉम्बे मसाला टोस्ट
+Dabeli|Snack|Snack|Veg|Gujarat|35|Easy|Pav, potato, peanuts, pomegranate, sev, onion, butter|N|N|N|N|Y|All|Medium|Boil potatoes|Tamarind chutney|दाबेली
+Tandoori Momos|Snack / Dinner|Snack|Veg|North|45|Medium|Maida, cabbage, carrot, paneer, curd|N|N|N|N|Y|Winter|Medium|Steam momos ahead|Mint mayo|तंदूरी मोमोज़
+Kurkure Momos|Snack|Snack|Veg|North|45|Medium|Maida, cabbage, carrot, cornflour, cornflakes|N|N|N|N|Y|All|Heavy|Steam momos ahead|Red chutney, mayonnaise|कुरकुरे मोमोज़
+Peri Peri Fries|Snack|Snack|Veg|Modern|30|Easy|Potato, cornflour, peri peri masala|N|N|N|N|Y|All|Medium||Mayonnaise, ketchup|पेरी पेरी फ्राइज़
+Cheese Corn Balls|Snack|Snack|Veg|Modern|35|Medium|Sweet corn, potato, cheese, bread crumbs, cornflour, green chilli|N|Y|N|N|Y|All|Medium|Boil potatoes|Ketchup|चीज़ कॉर्न बॉल्स
+Paneer Popcorn|Snack|Snack|Veg|Modern|25|Easy|Paneer, cornflour, maida, bread crumbs, chilli flakes|Y|Y|N|Y|Y|All|Medium||Mint mayo, ketchup|पनीर पॉपकॉर्न
+Crispy Corn|Snack / Dinner|World Side|Veg|Indo-Chinese|20|Easy|Sweet corn, cornflour, rice flour, onion, capsicum, garlic|N|N|N|N|Y|Monsoon|Medium||Fried rice|क्रिस्पी कॉर्न
+Honey Chilli Potato|Snack / Dinner|World Side|Veg|Indo-Chinese|30|Medium|Potato, cornflour, maida, honey, sesame, garlic, onion, capsicum|N|N|N|N|Y|All|Heavy||Fried rice, noodles|हनी चिली पोटैटो
+Chilli Garlic Noodles|Dinner|One-Pot Meal|Veg|Indo-Chinese|25|Easy|Noodles, garlic, cabbage, capsicum, carrot, soy sauce|N|N|N|Y|Y|All|Medium||Manchurian|चिली गार्लिक नूडल्स
+Paneer Kathi Roll|Snack / Dinner|Snack|Veg|West Bengal|30|Medium|Paneer, maida, onion, capsicum, curd, green chutney|N|N|N|Y|Y|All|Heavy||Ketchup|पनीर काठी रोल
+Korean Cream Cheese Garlic Bun|Snack|Snack|Veg|Modern|30|Medium|Burger buns, cream cheese, cream, butter, garlic, sugar|N|N|N|N|Y|All|Heavy||Cold coffee|कोरियन क्रीम चीज़ गार्लिक बन
+Korean Cheese Corn Dog|Snack|Snack|Veg|Modern|40|Medium|Mozzarella, maida, milk, potato, bread crumbs, sugar|N|Y|N|N|Y|All|Heavy||Ketchup, mustard sauce|कोरियन चीज़ कॉर्न डॉग
+Cheese Masala Noodles|Snack|Snack|Veg|Modern|10|Easy|Noodles, onion, tomato, capsicum, cheese, butter|N|N|N|Y|Y|All|Medium||Tea|चीज़ मसाला नूडल्स
+Pani Puri|Snack|Snack|Veg|North|40|Medium|Puris, potato, boiled chickpeas, mint, tamarind, boondi|N|Y|N|N|Y|Summer|Light|Boil potatoes and chickpeas||पानी पूरी
+Dubai Chocolate Bar|Dessert|Sweet|Veg|Modern|40|Medium|Dark chocolate, pistachios, vermicelli, butter, milk|Y|Y|N|N|Y|All|Heavy|Set 1 hour in the fridge||दुबई चॉकलेट बार
+Biscoff Cheesecake Jar|Dessert|Sweet|Veg|Modern|20|Easy|Biscoff biscuits, cream cheese, cream, butter, sugar|Y|Y|N|N|Y|All|Heavy|Chill 2 hours||बिस्कॉफ़ चीज़केक जार
+Rasmalai Tres Leches|Dessert|Sweet|Veg|Modern|60|Medium|Maida, milk, condensed milk, cream, butter, pistachios|Y|Y|N|N|Y|All|Heavy|Bake and soak 4 hours ahead||रसमलाई ट्रेस लेचेस
+Chocolate Lava Cake|Dessert|Sweet|Veg|Continental|25|Medium|Maida, dark chocolate, butter, curd, sugar, milk|Y|Y|N|N|Y|All|Heavy||Vanilla ice cream|चॉकलेट लावा केक
+Tiramisu Cups|Dessert|Sweet|Veg|Italian|25|Easy|Biscuits, cream cheese, cream, sugar, coffee, cocoa|Y|Y|N|N|N|All|Heavy|Chill 4 hours||तिरामिसु कप

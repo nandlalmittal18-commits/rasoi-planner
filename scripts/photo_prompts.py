@@ -111,6 +111,30 @@ LOOKS = {
     "steamed-rice": "a mound of fluffy, separate long-grain white rice",
     "phulka-roti": "a small stack of soft puffed whole-wheat phulkas with brown spots, one brushed with ghee",
     "plain-paratha": "two layered golden whole-wheat parathas with flaky layers",
+    "kulhad-pizza": "small clay kulhad cups filled with layers of bread cubes, corn, capsicum and paneer, topped with bubbling golden melted mozzarella and oregano",
+    "bread-pizza": "slices of toasted bread topped with pizza sauce, onion, capsicum, sweet corn and melted stretchy mozzarella with chilli flakes",
+    "pink-sauce-pasta": "penne pasta in a creamy pale-pink tomato and white sauce with capsicum and sweet corn, topped with grated cheese",
+    "chilli-cheese-toast": "golden toast triangles topped with bubbling browned cheese flecked with green chilli, capsicum and coriander",
+    "bombay-masala-toast": "a Mumbai street-style grilled sandwich cut into four, golden with grill marks, showing layers of yellow potato masala, cucumber, tomato and green chutney",
+    "dabeli": "two soft buttered pav buns stuffed with sweet-spicy potato filling, masala peanuts and pomegranate seeds, edges coated in fine yellow sev",
+    "tandoori-momos": "steamed dumplings coated in a red-orange tandoori marinade with charred spots, with onion rings and green mint mayo",
+    "kurkure-momos": "dumplings coated in crushed cornflakes and fried till golden and very crunchy, with red chutney and mayonnaise",
+    "peri-peri-fries": "a heap of crisp golden French fries dusted with red peri peri masala, with a small bowl of mayonnaise",
+    "cheese-corn-balls": "crisp golden breaded balls, one broken open to show melted stretchy cheese and sweet corn inside, with ketchup",
+    "paneer-popcorn": "small bite-sized golden crumb-coated paneer cubes, crisp outside and white inside, sprinkled with chaat masala",
+    "crispy-corn": "crisp fried golden sweet corn kernels tossed with onion, capsicum, chilli flakes and spring onion",
+    "honey-chilli-potato": "crisp potato fingers in a glossy sticky red honey-chilli sauce, topped with sesame seeds and spring onion",
+    "chilli-garlic-noodles": "stir-fried noodles with lots of golden fried garlic, red chilli flakes, cabbage, capsicum and spring onion",
+    "paneer-kathi-roll": "a paratha roll wrapped in paper and cut in half, showing charred paneer tikka, onion and capsicum filling with green chutney",
+    "korean-cream-cheese-garlic-bun": "a large round golden bun cut into six wedges, the cuts filled with white cream cheese, glistening with garlic-herb butter",
+    "korean-cheese-corn-dog": "two golden crunchy battered sticks on skewers, coated in sugar with ketchup and mustard drizzle, one bitten to show a long stretchy mozzarella cheese pull (cheese only, no sausage)",
+    "cheese-masala-noodles": "spicy instant masala noodles with onion, tomato and capsicum, topped with melting grated cheese",
+    "pani-puri": "a plate of small round crisp hollow puris filled with potato and chickpeas, with a bowl of green mint water and sweet tamarind chutney",
+    "dubai-chocolate-bar": "a thick dark chocolate bar broken in half to show a bright green pistachio filling packed with crisp golden kunafa strands",
+    "biscoff-cheesecake-jar": "a small glass jar with a crumbly brown biscuit base, a layer of white cheesecake cream and a glossy caramel biscuit spread on top with crumbs",
+    "rasmalai-tres-leches": "a square of soft milk-soaked sponge cake in a pool of saffron milk, topped with whipped cream, chopped pistachios and saffron strands",
+    "chocolate-lava-cake": "a small dark chocolate cake cut open with molten chocolate flowing out, beside a scoop of vanilla ice cream",
+    "tiramisu-cups": "a glass cup with layers of coffee-soaked biscuits and white cream, dusted thickly with cocoa powder",
 }
 
 def looks(d):
@@ -129,8 +153,20 @@ def looks(d):
         kind = "a home-style dish"
     return f"{kind} made with {ing}" if ing else kind
 
+VESSEL = {
+    "kulhad-pizza": "a wooden board, in small clay kulhad cups",
+    "dubai-chocolate-bar": "a piece of parchment paper on a board",
+    "biscoff-cheesecake-jar": "a small glass jar",
+    "tiramisu-cups": "a small glass cup",
+    "pani-puri": "a steel plate",
+    "korean-cheese-corn-dog": "a piece of parchment paper on a board",
+    "korean-cream-cheese-garlic-bun": "a wooden board",
+}
+
 def vessel(d, i):
     t, c = d["id"], d["category"]
+    if t in VESSEL:
+        return VESSEL[t]
     if any(k in t for k in ("shake", "lassi", "smoothie", "chaas")):
         return "a tall glass"
     if "pizza" in t:

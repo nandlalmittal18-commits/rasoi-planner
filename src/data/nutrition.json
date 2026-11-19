@@ -1582,5 +1582,197 @@
   "carbs": 64.8,
   "fat": 13.7,
   "fibre": 10.1
+ },
+ "kulhad-pizza": {
+  "serving": "2 kulhads",
+  "kcal": 407,
+  "protein": 20.2,
+  "carbs": 34.6,
+  "fat": 21.3,
+  "fibre": 2.9
+ },
+ "bread-pizza": {
+  "serving": "2 slices",
+  "kcal": 302,
+  "protein": 12.9,
+  "carbs": 35.3,
+  "fat": 12.2,
+  "fibre": 2.5
+ },
+ "pink-sauce-pasta": {
+  "serving": "1 plate",
+  "kcal": 516,
+  "protein": 16.5,
+  "carbs": 74.0,
+  "fat": 17.4,
+  "fibre": 4.3
+ },
+ "chilli-cheese-toast": {
+  "serving": "2 slices",
+  "kcal": 365,
+  "protein": 14.0,
+  "carbs": 30.7,
+  "fat": 20.4,
+  "fibre": 1.8
+ },
+ "bombay-masala-toast": {
+  "serving": "1 sandwich",
+  "kcal": 433,
+  "protein": 11.9,
+  "carbs": 51.8,
+  "fat": 19.5,
+  "fibre": 4.2
+ },
+ "dabeli": {
+  "serving": "2 dabeli",
+  "kcal": 528,
+  "protein": 13.5,
+  "carbs": 57.6,
+  "fat": 27.6,
+  "fibre": 6.0
+ },
+ "tandoori-momos": {
+  "serving": "6 momos",
+  "kcal": 386,
+  "protein": 11.3,
+  "carbs": 49.8,
+  "fat": 15.7,
+  "fibre": 3.0
+ },
+ "kurkure-momos": {
+  "serving": "6 momos",
+  "kcal": 505,
+  "protein": 8.7,
+  "carbs": 82.3,
+  "fat": 15.8,
+  "fibre": 4.0
+ },
+ "peri-peri-fries": {
+  "serving": "1 plate",
+  "kcal": 272,
+  "protein": 3.0,
+  "carbs": 30.1,
+  "fat": 15.2,
+  "fibre": 3.3
+ },
+ "cheese-corn-balls": {
+  "serving": "6 balls",
+  "kcal": 414,
+  "protein": 11.0,
+  "carbs": 39.2,
+  "fat": 24.2,
+  "fibre": 3.3
+ },
+ "paneer-popcorn": {
+  "serving": "1 plate",
+  "kcal": 431,
+  "protein": 17.0,
+  "carbs": 24.8,
+  "fat": 29.2,
+  "fibre": 0.8
+ },
+ "crispy-corn": {
+  "serving": "1 plate",
+  "kcal": 325,
+  "protein": 4.4,
+  "carbs": 43.4,
+  "fat": 16.6,
+  "fibre": 3.8
+ },
+ "honey-chilli-potato": {
+  "serving": "1 plate",
+  "kcal": 455,
+  "protein": 4.8,
+  "carbs": 62.5,
+  "fat": 20.8,
+  "fibre": 4.3
+ },
+ "chilli-garlic-noodles": {
+  "serving": "1 plate",
+  "kcal": 401,
+  "protein": 9.9,
+  "carbs": 59.5,
+  "fat": 13.7,
+  "fibre": 4.3
+ },
+ "paneer-kathi-roll": {
+  "serving": "1 roll",
+  "kcal": 497,
+  "protein": 19.1,
+  "carbs": 42.7,
+  "fat": 27.8,
+  "fibre": 2.3
+ },
+ "korean-cream-cheese-garlic-bun": {
+  "serving": "1 bun",
+  "kcal": 476,
+  "protein": 8.5,
+  "carbs": 41.3,
+  "fat": 31.1,
+  "fibre": 1.9
+ },
+ "korean-cheese-corn-dog": {
+  "serving": "2 corn dogs",
+  "kcal": 693,
+  "protein": 22.1,
+  "carbs": 62.3,
+  "fat": 39.4,
+  "fibre": 2.8
+ },
+ "cheese-masala-noodles": {
+  "serving": "1 plate",
+  "kcal": 371,
+  "protein": 13.3,
+  "carbs": 54.6,
+  "fat": 10.8,
+  "fibre": 3.1
+ },
+ "pani-puri": {
+  "serving": "1 plate (8 puris)",
+  "kcal": 371,
+  "protein": 9.1,
+  "carbs": 53.5,
+  "fat": 13.5,
+  "fibre": 6.6
+ },
+ "dubai-chocolate-bar": {
+  "serving": "2 pieces",
+  "kcal": 423,
+  "protein": 7.0,
+  "carbs": 39.1,
+  "fat": 26.8,
+  "fibre": 4.5
+ },
+ "biscoff-cheesecake-jar": {
+  "serving": "1 jar",
+  "kcal": 520,
+  "protein": 5.7,
+  "carbs": 37.2,
+  "fat": 39.5,
+  "fibre": 0.6
+ },
+ "rasmalai-tres-leches": {
+  "serving": "1 piece",
+  "kcal": 418,
+  "protein": 10.2,
+  "carbs": 49.3,
+  "fat": 20.3,
+  "fibre": 1.2
+ },
+ "chocolate-lava-cake": {
+  "serving": "1 cake",
+  "kcal": 445,
+  "protein": 4.9,
+  "carbs": 55.0,
+  "fat": 22.9,
+  "fibre": 2.6
+ },
+ "tiramisu-cups": {
+  "serving": "1 cup",
+  "kcal": 429,
+  "protein": 5.0,
+  "carbs": 36.6,
+  "fat": 29.6,
+  "fibre": 0.6
  }
 }

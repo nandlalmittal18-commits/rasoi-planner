@@ -5933,5 +5933,778 @@
   "pairsWith": [
    "Garlic bread"
   ]
+ },
+ {
+  "id": "kulhad-pizza",
+  "name": "Kulhad Pizza",
+  "hindi": "कुल्हड़ पिज़्ज़ा",
+  "slots": [
+   "Snack",
+   "Dinner"
+  ],
+  "category": "Snack",
+  "diet": "Veg",
+  "region": "Modern",
+  "cookTime": 25,
+  "difficulty": "Easy",
+  "ingredients": [
+   "Pizza base",
+   "sweet corn",
+   "capsicum",
+   "onion",
+   "paneer",
+   "mozzarella"
+  ],
+  "jain": false,
+  "noOnionGarlic": false,
+  "vrat": false,
+  "tiffin": false,
+  "kidFavourite": true,
+  "season": "All",
+  "heaviness": "Medium",
+  "prepAhead": null,
+  "pairsWith": [
+   "Cold coffee"
+  ]
+ },
+ {
+  "id": "bread-pizza",
+  "name": "Bread Pizza",
+  "hindi": "ब्रेड पिज़्ज़ा",
+  "slots": [
+   "Breakfast",
+   "Snack"
+  ],
+  "category": "Snack",
+  "diet": "Veg",
+  "region": "Modern",
+  "cookTime": 15,
+  "difficulty": "Easy",
+  "ingredients": [
+   "Bread",
+   "onion",
+   "capsicum",
+   "sweet corn",
+   "mozzarella",
+   "butter"
+  ],
+  "jain": false,
+  "noOnionGarlic": false,
+  "vrat": false,
+  "tiffin": true,
+  "kidFavourite": true,
+  "season": "All",
+  "heaviness": "Medium",
+  "prepAhead": null,
+  "pairsWith": [
+   "Ketchup"
+  ]
+ },
+ {
+  "id": "pink-sauce-pasta",
+  "name": "Pink Sauce Pasta",
+  "hindi": "पिंक सॉस पास्ता",
+  "slots": [
+   "Lunch",
+   "Dinner"
+  ],
+  "category": "World Main",
+  "diet": "Veg",
+  "region": "Italian",
+  "cookTime": 30,
+  "difficulty": "Easy",
+  "ingredients": [
+   "Pasta",
+   "tomato",
+   "milk",
+   "cream",
+   "butter",
+   "garlic",
+   "capsicum",
+   "sweet corn",
+   "cheese"
+  ],
+  "jain": false,
+  "noOnionGarlic": false,
+  "vrat": false,
+  "tiffin": true,
+  "kidFavourite": true,
+  "season": "All",
+  "heaviness": "Heavy",
+  "prepAhead": null,
+  "pairsWith": [
+   "Garlic bread"
+  ]
+ },
+ {
+  "id": "chilli-cheese-toast",
+  "name": "Chilli Cheese Toast",
+  "hindi": "चिली चीज़ टोस्ट",
+  "slots": [
+   "Breakfast",
+   "Snack"
+  ],
+  "category": "Snack",
+  "diet": "Veg",
+  "region": "Maharashtra",
+  "cookTime": 15,
+  "difficulty": "Easy",
+  "ingredients": [
+   "Bread",
+   "cheese",
+   "green chilli",
+   "garlic",
+   "capsicum",
+   "butter"
+  ],
+  "jain": false,
+  "noOnionGarlic": false,
+  "vrat": false,
+  "tiffin": true,
+  "kidFavourite": true,
+  "season": "All",
+  "heaviness": "Medium",
+  "prepAhead": null,
+  "pairsWith": [
+   "Ketchup",
+   "tea"
+  ]
+ },
+ {
+  "id": "bombay-masala-toast",
+  "name": "Bombay Masala Toast",
+  "hindi": "बॉम्बे मसाला टोस्ट",
+  "slots": [
+   "Breakfast",
+   "Snack"
+  ],
+  "category": "Breakfast",
+  "diet": "Veg",
+  "region": "Maharashtra",
+  "cookTime": 30,
+  "difficulty": "Easy",
+  "ingredients": [
+   "Bread",
+   "potato",
+   "onion",
+   "tomato",
+   "cucumber",
+   "cheese",
+   "butter",
+   "green chutney"
+  ],
+  "jain": false,
+  "noOnionGarlic": false,
+  "vrat": false,
+  "tiffin": true,
+  "kidFavourite": true,
+  "season": "All",
+  "heaviness": "Heavy",
+  "prepAhead": "Boil potatoes",
+  "pairsWith": [
+   "Ketchup"
+  ]
+ },
+ {
+  "id": "dabeli",
+  "name": "Dabeli",
+  "hindi": "दाबेली",
+  "slots": [
+   "Snack"
+  ],
+  "category": "Snack",
+  "diet": "Veg",
+  "region": "Gujarat",
+  "cookTime": 35,
+  "difficulty": "Easy",
+  "ingredients": [
+   "Pav",
+   "potato",
+   "peanuts",
+   "pomegranate",
+   "sev",
+   "onion",
+   "butter"
+  ],
+  "jain": false,
+  "noOnionGarlic": false,
+  "vrat": false,
+  "tiffin": false,
+  "kidFavourite": true,
+  "season": "All",
+  "heaviness": "Medium",
+  "prepAhead": "Boil potatoes",
+  "pairsWith": [
+   "Tamarind chutney"
+  ]
+ },
+ {
+  "id": "tandoori-momos",
+  "name": "Tandoori Momos",
+  "hindi": "तंदूरी मोमोज़",
+  "slots": [
+   "Snack",
+   "Dinner"
+  ],
+  "category": "Snack",
+  "diet": "Veg",
+  "region": "North",
+  "cookTime": 45,
+  "difficulty": "Medium",
+  "ingredients": [
+   "Maida",
+   "cabbage",
+   "carrot",
+   "paneer",
+   "curd"
+  ],
+  "jain": false,
+  "noOnionGarlic": false,
+  "vrat": false,
+  "tiffin": false,
+  "kidFavourite": true,
+  "season": "Winter",
+  "heaviness": "Medium",
+  "prepAhead": "Steam momos ahead",
+  "pairsWith": [
+   "Mint mayo"
+  ]
+ },
+ {
+  "id": "kurkure-momos",
+  "name": "Kurkure Momos",
+  "hindi": "कुरकुरे मोमोज़",
+  "slots": [
+   "Snack"
+  ],
+  "category": "Snack",
+  "diet": "Veg",
+  "region": "North",
+  "cookTime": 45,
+  "difficulty": "Medium",
+  "ingredients": [
+   "Maida",
+   "cabbage",
+   "carrot",
+   "cornflour",
+   "cornflakes"
+  ],
+  "jain": false,
+  "noOnionGarlic": false,
+  "vrat": false,
+  "tiffin": false,
+  "kidFavourite": true,
+  "season": "All",
+  "heaviness": "Heavy",
+  "prepAhead": "Steam momos ahead",
+  "pairsWith": [
+   "Red chutney",
+   "mayonnaise"
+  ]
+ },
+ {
+  "id": "peri-peri-fries",
+  "name": "Peri Peri Fries",
+  "hindi": "पेरी पेरी फ्राइज़",
+  "slots": [
+   "Snack"
+  ],
+  "category": "Snack",
+  "diet": "Veg",
+  "region": "Modern",
+  "cookTime": 30,
+  "difficulty": "Easy",
+  "ingredients": [
+   "Potato",
+   "cornflour",
+   "peri peri masala"
+  ],
+  "jain": false,
+  "noOnionGarlic": false,
+  "vrat": false,
+  "tiffin": false,
+  "kidFavourite": true,
+  "season": "All",
+  "heaviness": "Medium",
+  "prepAhead": null,
+  "pairsWith": [
+   "Mayonnaise",
+   "ketchup"
+  ]
+ },
+ {
+  "id": "cheese-corn-balls",
+  "name": "Cheese Corn Balls",
+  "hindi": "चीज़ कॉर्न बॉल्स",
+  "slots": [
+   "Snack"
+  ],
+  "category": "Snack",
+  "diet": "Veg",
+  "region": "Modern",
+  "cookTime": 35,
+  "difficulty": "Medium",
+  "ingredients": [
+   "Sweet corn",
+   "potato",
+   "cheese",
+   "bread crumbs",
+   "cornflour",
+   "green chilli"
+  ],
+  "jain": false,
+  "noOnionGarlic": true,
+  "vrat": false,
+  "tiffin": false,
+  "kidFavourite": true,
+  "season": "All",
+  "heaviness": "Medium",
+  "prepAhead": "Boil potatoes",
+  "pairsWith": [
+   "Ketchup"
+  ]
+ },
+ {
+  "id": "paneer-popcorn",
+  "name": "Paneer Popcorn",
+  "hindi": "पनीर पॉपकॉर्न",
+  "slots": [
+   "Snack"
+  ],
+  "category": "Snack",
+  "diet": "Veg",
+  "region": "Modern",
+  "cookTime": 25,
+  "difficulty": "Easy",
+  "ingredients": [
+   "Paneer",
+   "cornflour",
+   "maida",
+   "bread crumbs",
+   "chilli flakes"
+  ],
+  "jain": true,
+  "noOnionGarlic": true,
+  "vrat": false,
+  "tiffin": true,
+  "kidFavourite": true,
+  "season": "All",
+  "heaviness": "Medium",
+  "prepAhead": null,
+  "pairsWith": [
+   "Mint mayo",
+   "ketchup"
+  ]
+ },
+ {
+  "id": "crispy-corn",
+  "name": "Crispy Corn",
+  "hindi": "क्रिस्पी कॉर्न",
+  "slots": [
+   "Snack",
+   "Dinner"
+  ],
+  "category": "World Side",
+  "diet": "Veg",
+  "region": "Indo-Chinese",
+  "cookTime": 20,
+  "difficulty": "Easy",
+  "ingredients": [
+   "Sweet corn",
+   "cornflour",
+   "rice flour",
+   "onion",
+   "capsicum",
+   "garlic"
+  ],
+  "jain": false,
+  "noOnionGarlic": false,
+  "vrat": false,
+  "tiffin": false,
+  "kidFavourite": true,
+  "season": "Monsoon",
+  "heaviness": "Medium",
+  "prepAhead": null,
+  "pairsWith": [
+   "Fried rice"
+  ]
+ },
+ {
+  "id": "honey-chilli-potato",
+  "name": "Honey Chilli Potato",
+  "hindi": "हनी चिली पोटैटो",
+  "slots": [
+   "Snack",
+   "Dinner"
+  ],
+  "category": "World Side",
+  "diet": "Veg",
+  "region": "Indo-Chinese",
+  "cookTime": 30,
+  "difficulty": "Medium",
+  "ingredients": [
+   "Potato",
+   "cornflour",
+   "maida",
+   "honey",
+   "sesame",
+   "garlic",
+   "onion",
+   "capsicum"
+  ],
+  "jain": false,
+  "noOnionGarlic": false,
+  "vrat": false,
+  "tiffin": false,
+  "kidFavourite": true,
+  "season": "All",
+  "heaviness": "Heavy",
+  "prepAhead": null,
+  "pairsWith": [
+   "Fried rice",
+   "noodles"
+  ]
+ },
+ {
+  "id": "chilli-garlic-noodles",
+  "name": "Chilli Garlic Noodles",
+  "hindi": "चिली गार्लिक नूडल्स",
+  "slots": [
+   "Dinner"
+  ],
+  "category": "One-Pot Meal",
+  "diet": "Veg",
+  "region": "Indo-Chinese",
+  "cookTime": 25,
+  "difficulty": "Easy",
+  "ingredients": [
+   "Noodles",
+   "garlic",
+   "cabbage",
+   "capsicum",
+   "carrot",
+   "soy sauce"
+  ],
+  "jain": false,
+  "noOnionGarlic": false,
+  "vrat": false,
+  "tiffin": true,
+  "kidFavourite": true,
+  "season": "All",
+  "heaviness": "Medium",
+  "prepAhead": null,
+  "pairsWith": [
+   "Manchurian"
+  ]
+ },
+ {
+  "id": "paneer-kathi-roll",
+  "name": "Paneer Kathi Roll",
+  "hindi": "पनीर काठी रोल",
+  "slots": [
+   "Snack",
+   "Dinner"
+  ],
+  "category": "Snack",
+  "diet": "Veg",
+  "region": "West Bengal",
+  "cookTime": 30,
+  "difficulty": "Medium",
+  "ingredients": [
+   "Paneer",
+   "maida",
+   "onion",
+   "capsicum",
+   "curd",
+   "green chutney"
+  ],
+  "jain": false,
+  "noOnionGarlic": false,
+  "vrat": false,
+  "tiffin": true,
+  "kidFavourite": true,
+  "season": "All",
+  "heaviness": "Heavy",
+  "prepAhead": null,
+  "pairsWith": [
+   "Ketchup"
+  ]
+ },
+ {
+  "id": "korean-cream-cheese-garlic-bun",
+  "name": "Korean Cream Cheese Garlic Bun",
+  "hindi": "कोरियन क्रीम चीज़ गार्लिक बन",
+  "slots": [
+   "Snack"
+  ],
+  "category": "Snack",
+  "diet": "Veg",
+  "region": "Modern",
+  "cookTime": 30,
+  "difficulty": "Medium",
+  "ingredients": [
+   "Burger buns",
+   "cream cheese",
+   "cream",
+   "butter",
+   "garlic",
+   "sugar"
+  ],
+  "jain": false,
+  "noOnionGarlic": false,
+  "vrat": false,
+  "tiffin": false,
+  "kidFavourite": true,
+  "season": "All",
+  "heaviness": "Heavy",
+  "prepAhead": null,
+  "pairsWith": [
+   "Cold coffee"
+  ]
+ },
+ {
+  "id": "korean-cheese-corn-dog",
+  "name": "Korean Cheese Corn Dog",
+  "hindi": "कोरियन चीज़ कॉर्न डॉग",
+  "slots": [
+   "Snack"
+  ],
+  "category": "Snack",
+  "diet": "Veg",
+  "region": "Modern",
+  "cookTime": 40,
+  "difficulty": "Medium",
+  "ingredients": [
+   "Mozzarella",
+   "maida",
+   "milk",
+   "potato",
+   "bread crumbs",
+   "sugar"
+  ],
+  "jain": false,
+  "noOnionGarlic": true,
+  "vrat": false,
+  "tiffin": false,
+  "kidFavourite": true,
+  "season": "All",
+  "heaviness": "Heavy",
+  "prepAhead": null,
+  "pairsWith": [
+   "Ketchup",
+   "mustard sauce"
+  ]
+ },
+ {
+  "id": "cheese-masala-noodles",
+  "name": "Cheese Masala Noodles",
+  "hindi": "चीज़ मसाला नूडल्स",
+  "slots": [
+   "Snack"
+  ],
+  "category": "Snack",
+  "diet": "Veg",
+  "region": "Modern",
+  "cookTime": 10,
+  "difficulty": "Easy",
+  "ingredients": [
+   "Noodles",
+   "onion",
+   "tomato",
+   "capsicum",
+   "cheese",
+   "butter"
+  ],
+  "jain": false,
+  "noOnionGarlic": false,
+  "vrat": false,
+  "tiffin": true,
+  "kidFavourite": true,
+  "season": "All",
+  "heaviness": "Medium",
+  "prepAhead": null,
+  "pairsWith": [
+   "Tea"
+  ]
+ },
+ {
+  "id": "pani-puri",
+  "name": "Pani Puri",
+  "hindi": "पानी पूरी",
+  "slots": [
+   "Snack"
+  ],
+  "category": "Snack",
+  "diet": "Veg",
+  "region": "North",
+  "cookTime": 40,
+  "difficulty": "Medium",
+  "ingredients": [
+   "Puris",
+   "potato",
+   "boiled chickpeas",
+   "mint",
+   "tamarind",
+   "boondi"
+  ],
+  "jain": false,
+  "noOnionGarlic": true,
+  "vrat": false,
+  "tiffin": false,
+  "kidFavourite": true,
+  "season": "Summer",
+  "heaviness": "Light",
+  "prepAhead": "Boil potatoes and chickpeas",
+  "pairsWith": []
+ },
+ {
+  "id": "dubai-chocolate-bar",
+  "name": "Dubai Chocolate Bar",
+  "hindi": "दुबई चॉकलेट बार",
+  "slots": [
+   "Dessert"
+  ],
+  "category": "Sweet",
+  "diet": "Veg",
+  "region": "Modern",
+  "cookTime": 40,
+  "difficulty": "Medium",
+  "ingredients": [
+   "Dark chocolate",
+   "pistachios",
+   "vermicelli",
+   "butter",
+   "milk"
+  ],
+  "jain": true,
+  "noOnionGarlic": true,
+  "vrat": false,
+  "tiffin": false,
+  "kidFavourite": true,
+  "season": "All",
+  "heaviness": "Heavy",
+  "prepAhead": "Set 1 hour in the fridge",
+  "pairsWith": []
+ },
+ {
+  "id": "biscoff-cheesecake-jar",
+  "name": "Biscoff Cheesecake Jar",
+  "hindi": "बिस्कॉफ़ चीज़केक जार",
+  "slots": [
+   "Dessert"
+  ],
+  "category": "Sweet",
+  "diet": "Veg",
+  "region": "Modern",
+  "cookTime": 20,
+  "difficulty": "Easy",
+  "ingredients": [
+   "Biscoff biscuits",
+   "cream cheese",
+   "cream",
+   "butter",
+   "sugar"
+  ],
+  "jain": true,
+  "noOnionGarlic": true,
+  "vrat": false,
+  "tiffin": false,
+  "kidFavourite": true,
+  "season": "All",
+  "heaviness": "Heavy",
+  "prepAhead": "Chill 2 hours",
+  "pairsWith": []
+ },
+ {
+  "id": "rasmalai-tres-leches",
+  "name": "Rasmalai Tres Leches",
+  "hindi": "रसमलाई ट्रेस लेचेस",
+  "slots": [
+   "Dessert"
+  ],
+  "category": "Sweet",
+  "diet": "Veg",
+  "region": "Modern",
+  "cookTime": 60,
+  "difficulty": "Medium",
+  "ingredients": [
+   "Maida",
+   "milk",
+   "condensed milk",
+   "cream",
+   "butter",
+   "pistachios"
+  ],
+  "jain": true,
+  "noOnionGarlic": true,
+  "vrat": false,
+  "tiffin": false,
+  "kidFavourite": true,
+  "season": "All",
+  "heaviness": "Heavy",
+  "prepAhead": "Bake and soak 4 hours ahead",
+  "pairsWith": []
+ },
+ {
+  "id": "chocolate-lava-cake",
+  "name": "Chocolate Lava Cake",
+  "hindi": "चॉकलेट लावा केक",
+  "slots": [
+   "Dessert"
+  ],
+  "category": "Sweet",
+  "diet": "Veg",
+  "region": "Continental",
+  "cookTime": 25,
+  "difficulty": "Medium",
+  "ingredients": [
+   "Maida",
+   "dark chocolate",
+   "butter",
+   "curd",
+   "sugar",
+   "milk"
+  ],
+  "jain": true,
+  "noOnionGarlic": true,
+  "vrat": false,
+  "tiffin": false,
+  "kidFavourite": true,
+  "season": "All",
+  "heaviness": "Heavy",
+  "prepAhead": null,
+  "pairsWith": [
+   "Vanilla ice cream"
+  ]
+ },
+ {
+  "id": "tiramisu-cups",
+  "name": "Tiramisu Cups",
+  "hindi": "तिरामिसु कप",
+  "slots": [
+   "Dessert"
+  ],
+  "category": "Sweet",
+  "diet": "Veg",
+  "region": "Italian",
+  "cookTime": 25,
+  "difficulty": "Easy",
+  "ingredients": [
+   "Biscuits",
+   "cream cheese",
+   "cream",
+   "sugar",
+   "coffee",
+   "cocoa"
+  ],
+  "jain": true,
+  "noOnionGarlic": true,
+  "vrat": false,
+  "tiffin": false,
+  "kidFavourite": false,
+  "season": "All",
+  "heaviness": "Heavy",
+  "prepAhead": "Chill 4 hours",
+  "pairsWith": []
  }
 ]

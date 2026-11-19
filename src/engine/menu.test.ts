@@ -83,9 +83,9 @@ function everyItem(plan: WeekPlan) {
 }
 
 describe('dish data', () => {
-  it('has 197 dishes with unique, plain ids and Hindi names', () => {
-    expect(DISHES).toHaveLength(197);
-    expect(new Set(DISHES.map((d) => d.id)).size).toBe(197);
+  it('has 221 dishes with unique, plain ids and Hindi names', () => {
+    expect(DISHES).toHaveLength(221);
+    expect(new Set(DISHES.map((d) => d.id)).size).toBe(221);
     expect(DISHES.every((d) => /^[a-z0-9-]+$/.test(d.id))).toBe(true);
     expect(DISHES.every((d) => d.hindi.length > 0)).toBe(true);
   });
@@ -600,6 +600,17 @@ describe('guest / party menu', () => {
       expect(new Set(m.courses.map((c) => c.dishId)).size).toBe(m.courses.length);
       for (const c of m.courses) expect(getDish(c.dishId).jain, c.dishId).toBe(true);
     }
+  });
+
+  it('can serve the trending party snacks as starters, and still keeps Jain rules', () => {
+    const seen = new Set<string>();
+    for (let seed = 1; seed <= 60; seed++) for (const c of partyMenu(base, 10, 'Dinner', 'usual', seed).courses) if (c.key === 'starter') seen.add(c.dishId);
+    const trending = ['kulhad-pizza', 'tandoori-momos', 'kurkure-momos', 'peri-peri-fries', 'paneer-popcorn', 'pani-puri', 'korean-cheese-corn-dog'];
+    expect(trending.some((id) => seen.has(id))).toBe(true);
+    // Paneer popcorn is Jain; momos (cabbage, garlic) are not, so a Jain party never gets them.
+    expect(getDish('paneer-popcorn').jain).toBe(true);
+    for (let seed = 1; seed <= 30; seed++)
+      for (const c of partyMenu({ ...base, jain: true }, 10, 'Dinner', 'usual', seed).courses) expect(getDish(c.dishId).jain, c.dishId).toBe(true);
   });
 
   it('makes a South Indian party without roti, and swaps one course', () => {
