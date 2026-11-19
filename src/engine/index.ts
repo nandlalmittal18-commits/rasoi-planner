@@ -26,4 +26,4 @@ export { randomSeed, toISODate, parseISODate, WEEKDAYS, WEEKDAYS_SHORT, WEEKDAYS
 export { FESTIVALS, RULE_LABEL, getFestival, upcomingFestivals, festivalOn, planFestival, type Festival } from './festivals';
 export { FRIDGE_ITEMS, cookFromFridge, placesFor, type FridgeItem, type FridgeMatch } from './fridge';
 export { cookTemplateParams, cookSpeech } from './cook';
-export { DRINKS, DRINK_TAGS, DRINK_GROUPS, MOCKTAIL_STYLES, MOCKTAIL_NOTE, isMocktail, DRINK_NOTE, getDrink, drinkFits, drinkOfTheDay, drinkCookMessage, type Drink, type DrinkTag, type DrinkGroup, type MocktailStyle } from './drinks';
+export { DRINKS, DRINK_TAGS, DRINK_GROUPS, MOCKTAIL_STYLES, MOCKTAIL_NOTE, CAFE_STYLES, CAFE_NOTE, DRINK_STYLES, TREAT_NOTES, isMocktail, isCafe, isTreat, DRINK_NOTE, getDrink, drinkFits, drinkOfTheDay, drinkCookMessage, type Drink, type DrinkTag, type DrinkGroup, type MocktailStyle, type CafeStyle } from './drinks';

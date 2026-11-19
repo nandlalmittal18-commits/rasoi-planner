@@ -4213,5 +4213,1325 @@
     "गिलास में डालें और टूटी-फ्रूटी या गुलाब की पंखुड़ियों से सजाएं।"
    ]
   }
+ },
+ {
+  "id": "filter-coffee",
+  "name": "South Indian Filter Coffee",
+  "hindi": "साउथ इंडियन फ़िल्टर कॉफ़ी",
+  "kind": "Café drink",
+  "group": "Cafe",
+  "style": "Hot coffee",
+  "hot": true,
+  "caffeine": "High",
+  "color": "#a8723f",
+  "tags": [],
+  "season": "All",
+  "time": "Morning",
+  "minutes": 20,
+  "serving": "1 cup (150 ml)",
+  "vrat": false,
+  "jain": true,
+  "noOnionGarlic": true,
+  "benefits": [],
+  "highlights": [
+   "Strong, frothy coffee served the Madras way in a steel tumbler and dabara",
+   "Coffee with a little chicory gives it the classic thick, bold taste",
+   "Pouring it between tumbler and dabara makes a light froth on top"
+  ],
+  "nutrients": [],
+  "caution": [
+   "Has caffeine (a cup of coffee has about 50–120 mg). Adults: keep to about 300 mg of caffeine a day in all, roughly 2–3 cups of coffee. Pregnant women: no more than 200 mg a day.",
+   "Have it at least an hour before or after a meal: tea and coffee with food stop the body taking up iron.",
+   "Not for young children. Skip it in the evening if it keeps you awake."
+  ],
+  "ingredients": [
+   {
+    "en": "3 tbsp filter coffee powder (coffee with chicory)",
+    "hi": "3 बड़े चम्मच फ़िल्टर कॉफ़ी पाउडर (चिकोरी वाला)"
+   },
+   {
+    "en": "¾ cup boiling water",
+    "hi": "¾ कप उबलता पानी"
+   },
+   {
+    "en": "¾ cup milk",
+    "hi": "¾ कप दूध"
+   },
+   {
+    "en": "1–2 tsp sugar",
+    "hi": "1–2 छोटे चम्मच चीनी"
+   }
+  ],
+  "steps": {
+   "en": [
+    "Put the coffee powder in the top part of the coffee filter and press it lightly with the plunger.",
+    "Pour the boiling water over it, cover, and let the decoction drip for 15–20 minutes.",
+    "Boil the milk.",
+    "In a steel tumbler, add sugar, ¼ cup decoction and the hot milk.",
+    "Pour between the tumbler and dabara 3–4 times to make it frothy. Serve hot."
+   ],
+   "hi": [
+    "कॉफ़ी फ़िल्टर के ऊपर वाले हिस्से में कॉफ़ी पाउडर डालें और ढक्कन वाली प्लेट से हल्का दबाएं।",
+    "ऊपर से उबलता पानी डालें, ढक दें और 15–20 मिनट तक डिकॉक्शन टपकने दें।",
+    "दूध उबाल लें।",
+    "स्टील के गिलास में चीनी, ¼ कप डिकॉक्शन और गरम दूध डालें।",
+    "गिलास और कटोरी (डबरा) के बीच 3–4 बार उलट-पलट करें ताकि झाग बने। गरम परोसें।"
+   ]
+  }
+ },
+ {
+  "id": "beaten-coffee",
+  "name": "Beaten Coffee (Indian Cappuccino)",
+  "hindi": "फेंटी हुई कॉफ़ी",
+  "kind": "Café drink",
+  "group": "Cafe",
+  "style": "Hot coffee",
+  "hot": true,
+  "caffeine": "High",
+  "color": "#b07a4c",
+  "tags": [],
+  "season": "All",
+  "time": "Any time",
+  "minutes": 10,
+  "serving": "1 cup (150 ml)",
+  "vrat": false,
+  "jain": true,
+  "noOnionGarlic": true,
+  "benefits": [],
+  "highlights": [
+   "Instant coffee and sugar beaten till pale and creamy, then topped with hot milk",
+   "Café-style foam at home with just a spoon and a cup",
+   "The classic Indian home coffee for guests"
+  ],
+  "nutrients": [],
+  "caution": [
+   "Has caffeine (a cup of coffee has about 50–120 mg). Adults: keep to about 300 mg of caffeine a day in all, roughly 2–3 cups of coffee. Pregnant women: no more than 200 mg a day.",
+   "Have it at least an hour before or after a meal: tea and coffee with food stop the body taking up iron.",
+   "Not for young children. Skip it in the evening if it keeps you awake."
+  ],
+  "ingredients": [
+   {
+    "en": "1 tsp instant coffee",
+    "hi": "1 छोटा चम्मच इंस्टेंट कॉफ़ी"
+   },
+   {
+    "en": "1–2 tsp sugar",
+    "hi": "1–2 छोटे चम्मच चीनी"
+   },
+   {
+    "en": "1 tsp water",
+    "hi": "1 छोटा चम्मच पानी"
+   },
+   {
+    "en": "1 cup hot milk",
+    "hi": "1 कप गरम दूध"
+   },
+   {
+    "en": "A pinch of cocoa powder (optional)",
+    "hi": "एक चुटकी कोको पाउडर (चाहें तो)"
+   }
+  ],
+  "steps": {
+   "en": [
+    "Put coffee, sugar and the water in a cup.",
+    "Beat hard with a spoon for 3–4 minutes till light brown and creamy.",
+    "Pour the hot milk from a height so it foams.",
+    "Dust with cocoa powder and serve."
+   ],
+   "hi": [
+    "कप में कॉफ़ी, चीनी और पानी डालें।",
+    "चम्मच से 3–4 मिनट ज़ोर से फेंटें, जब तक हल्का भूरा और क्रीमी न हो जाए।",
+    "गरम दूध ऊंचाई से डालें ताकि झाग बने।",
+    "ऊपर कोको पाउडर छिड़ककर परोसें।"
+   ]
+  }
+ },
+ {
+  "id": "cafe-latte",
+  "name": "Café Latte",
+  "hindi": "कैफ़े लाटे",
+  "kind": "Café drink",
+  "group": "Cafe",
+  "style": "Hot coffee",
+  "hot": true,
+  "caffeine": "High",
+  "color": "#c89a6c",
+  "tags": [],
+  "season": "All",
+  "time": "Morning",
+  "minutes": 10,
+  "serving": "1 cup (150 ml)",
+  "vrat": false,
+  "jain": true,
+  "noOnionGarlic": true,
+  "benefits": [],
+  "highlights": [
+   "Mild and milky: a little strong coffee with lots of hot, frothy milk",
+   "Smooth and not bitter, a good first coffee for tea drinkers",
+   "Froth the milk in a jar or with a hand frother"
+  ],
+  "nutrients": [],
+  "caution": [
+   "Has caffeine (a cup of coffee has about 50–120 mg). Adults: keep to about 300 mg of caffeine a day in all, roughly 2–3 cups of coffee. Pregnant women: no more than 200 mg a day.",
+   "Have it at least an hour before or after a meal: tea and coffee with food stop the body taking up iron.",
+   "Not for young children. Skip it in the evening if it keeps you awake."
+  ],
+  "ingredients": [
+   {
+    "en": "1 tsp instant coffee or ¼ cup strong brewed coffee",
+    "hi": "1 छोटा चम्मच इंस्टेंट कॉफ़ी या ¼ कप तेज़ बनी कॉफ़ी"
+   },
+   {
+    "en": "2 tbsp hot water (for instant coffee)",
+    "hi": "2 बड़े चम्मच गरम पानी (इंस्टेंट कॉफ़ी के लिए)"
+   },
+   {
+    "en": "1 cup milk",
+    "hi": "1 कप दूध"
+   },
+   {
+    "en": "1 tsp sugar (optional)",
+    "hi": "1 छोटा चम्मच चीनी (चाहें तो)"
+   }
+  ],
+  "steps": {
+   "en": [
+    "Mix the coffee in the hot water (or use the brewed coffee) in a big cup.",
+    "Heat the milk till hot but not boiling.",
+    "Froth it with a hand frother, or shake it in a closed jar with a cloth over it.",
+    "Pour the milk into the coffee, spoon the foam on top, and add sugar if you like."
+   ],
+   "hi": [
+    "बड़े कप में कॉफ़ी को गरम पानी में घोलें (या बनी हुई कॉफ़ी डालें)।",
+    "दूध को गरम करें, उबालें नहीं।",
+    "हैंड फ्रॉदर से झाग बनाएं, या बंद जार में डालकर कपड़े से पकड़कर हिलाएं।",
+    "दूध कॉफ़ी में डालें, ऊपर झाग रखें और चाहें तो चीनी मिलाएं।"
+   ]
+  }
+ },
+ {
+  "id": "black-coffee",
+  "name": "Black Coffee",
+  "hindi": "ब्लैक कॉफ़ी",
+  "kind": "Café drink",
+  "group": "Cafe",
+  "style": "Hot coffee",
+  "hot": true,
+  "caffeine": "High",
+  "color": "#3b2416",
+  "tags": [],
+  "season": "All",
+  "time": "Morning",
+  "minutes": 5,
+  "serving": "1 cup (150 ml)",
+  "vrat": false,
+  "jain": true,
+  "noOnionGarlic": true,
+  "benefits": [],
+  "highlights": [
+   "Just coffee and hot water: bold, simple and no milk",
+   "Almost no calories when you skip the sugar",
+   "Add a squeeze of lemon or a pinch of cinnamon for a twist"
+  ],
+  "nutrients": [],
+  "caution": [
+   "Has caffeine (a cup of coffee has about 50–120 mg). Adults: keep to about 300 mg of caffeine a day in all, roughly 2–3 cups of coffee. Pregnant women: no more than 200 mg a day.",
+   "Have it at least an hour before or after a meal: tea and coffee with food stop the body taking up iron.",
+   "Not for young children. Skip it in the evening if it keeps you awake.",
+   "Strong on an empty stomach for some people; have it after a light snack if it upsets you."
+  ],
+  "ingredients": [
+   {
+    "en": "1 tsp instant coffee or 2 tbsp ground coffee",
+    "hi": "1 छोटा चम्मच इंस्टेंट कॉफ़ी या 2 बड़े चम्मच पिसी कॉफ़ी"
+   },
+   {
+    "en": "1 cup hot water",
+    "hi": "1 कप गरम पानी"
+   },
+   {
+    "en": "Sugar or jaggery to taste (optional)",
+    "hi": "स्वाद अनुसार चीनी या गुड़ (चाहें तो)"
+   }
+  ],
+  "steps": {
+   "en": [
+    "For instant coffee, stir it into the hot water.",
+    "For ground coffee, steep it in the hot water for 4 minutes, then strain.",
+    "Add sugar only if you need it. Serve hot."
+   ],
+   "hi": [
+    "इंस्टेंट कॉफ़ी हो तो गरम पानी में घोल दें।",
+    "पिसी कॉफ़ी हो तो गरम पानी में 4 मिनट रखें, फिर छान लें।",
+    "ज़रूरत हो तभी चीनी डालें। गरम परोसें।"
+   ]
+  }
+ },
+ {
+  "id": "cafe-mocha",
+  "name": "Café Mocha",
+  "hindi": "कैफ़े मोका",
+  "kind": "Café drink",
+  "group": "Cafe",
+  "style": "Hot coffee",
+  "hot": true,
+  "caffeine": "High",
+  "color": "#7a4a2e",
+  "tags": [],
+  "season": "Winter",
+  "time": "Any time",
+  "minutes": 10,
+  "serving": "1 cup (150 ml)",
+  "vrat": false,
+  "jain": true,
+  "noOnionGarlic": true,
+  "benefits": [],
+  "highlights": [
+   "Coffee and chocolate together in hot milk",
+   "Rich and sweet, like a coffee and a hot chocolate in one cup",
+   "Lovely on a cold winter evening with friends"
+  ],
+  "nutrients": [],
+  "caution": [
+   "Has caffeine (a cup of coffee has about 50–120 mg). Adults: keep to about 300 mg of caffeine a day in all, roughly 2–3 cups of coffee. Pregnant women: no more than 200 mg a day.",
+   "Have it at least an hour before or after a meal: tea and coffee with food stop the body taking up iron.",
+   "Not for young children. Skip it in the evening if it keeps you awake.",
+   "A treat, not a health drink: it has added sugar. Use less sugar or skip the cream."
+  ],
+  "ingredients": [
+   {
+    "en": "1 tsp instant coffee",
+    "hi": "1 छोटा चम्मच इंस्टेंट कॉफ़ी"
+   },
+   {
+    "en": "1 tbsp cocoa powder",
+    "hi": "1 बड़ा चम्मच कोको पाउडर"
+   },
+   {
+    "en": "2 tsp sugar",
+    "hi": "2 छोटे चम्मच चीनी"
+   },
+   {
+    "en": "1 cup milk",
+    "hi": "1 कप दूध"
+   },
+   {
+    "en": "1 tbsp chopped dark chocolate (optional)",
+    "hi": "1 बड़ा चम्मच कटी डार्क चॉकलेट (चाहें तो)"
+   }
+  ],
+  "steps": {
+   "en": [
+    "Mix coffee, cocoa and sugar with 2 tbsp hot water to a smooth paste.",
+    "Heat the milk with the chocolate, stirring till it melts.",
+    "Pour the hot milk over the paste and whisk till frothy. Serve hot."
+   ],
+   "hi": [
+    "कॉफ़ी, कोको और चीनी को 2 बड़े चम्मच गरम पानी में मिलाकर चिकना पेस्ट बनाएं।",
+    "दूध में चॉकलेट डालकर गरम करें और पिघलने तक चलाएं।",
+    "गरम दूध पेस्ट पर डालें और झाग आने तक फेंटें। गरम परोसें।"
+   ]
+  }
+ },
+ {
+  "id": "masala-coffee",
+  "name": "Masala Coffee",
+  "hindi": "मसाला कॉफ़ी",
+  "kind": "Café drink",
+  "group": "Cafe",
+  "style": "Hot coffee",
+  "hot": true,
+  "caffeine": "High",
+  "color": "#9b6a43",
+  "tags": [],
+  "season": "Winter",
+  "time": "Any time",
+  "minutes": 10,
+  "serving": "1 cup (150 ml)",
+  "vrat": false,
+  "jain": true,
+  "noOnionGarlic": true,
+  "benefits": [],
+  "highlights": [
+   "Milky coffee warmed with elaichi, dalchini and a little black pepper",
+   "A desi twist on coffee for winter mornings and rainy days",
+   "The spices give a warm smell and taste with no extra sugar"
+  ],
+  "nutrients": [],
+  "caution": [
+   "Has caffeine (a cup of coffee has about 50–120 mg). Adults: keep to about 300 mg of caffeine a day in all, roughly 2–3 cups of coffee. Pregnant women: no more than 200 mg a day.",
+   "Have it at least an hour before or after a meal: tea and coffee with food stop the body taking up iron.",
+   "Not for young children. Skip it in the evening if it keeps you awake."
+  ],
+  "ingredients": [
+   {
+    "en": "1 cup milk",
+    "hi": "1 कप दूध"
+   },
+   {
+    "en": "¼ cup water",
+    "hi": "¼ कप पानी"
+   },
+   {
+    "en": "1 tsp instant coffee",
+    "hi": "1 छोटा चम्मच इंस्टेंट कॉफ़ी"
+   },
+   {
+    "en": "2 green cardamom, crushed",
+    "hi": "2 हरी इलायची, कुटी हुई"
+   },
+   {
+    "en": "1 small piece cinnamon and 2 black peppercorns",
+    "hi": "दालचीनी का छोटा टुकड़ा और 2 काली मिर्च"
+   },
+   {
+    "en": "1–2 tsp sugar or jaggery",
+    "hi": "1–2 छोटे चम्मच चीनी या गुड़"
+   }
+  ],
+  "steps": {
+   "en": [
+    "Boil the water with cardamom, cinnamon and pepper for 2 minutes.",
+    "Add the milk and bring it to a boil.",
+    "Turn off the heat, stir in the coffee and sugar (add jaggery only now, off the heat, so the milk doesn't split).",
+    "Strain into cups and serve hot."
+   ],
+   "hi": [
+    "पानी में इलायची, दालचीनी और काली मिर्च डालकर 2 मिनट उबालें।",
+    "दूध डालकर उबाल आने दें।",
+    "आंच बंद करके कॉफ़ी और चीनी मिलाएं (गुड़ हो तो आंच बंद करके ही डालें, ताकि दूध न फटे)।",
+    "छानकर कप में डालें और गरम परोसें।"
+   ]
+  }
+ },
+ {
+  "id": "cold-coffee",
+  "name": "Classic Cold Coffee",
+  "hindi": "कोल्ड कॉफ़ी",
+  "kind": "Café drink",
+  "group": "Cafe",
+  "style": "Cold coffee",
+  "hot": false,
+  "caffeine": "High",
+  "color": "#c49a6c",
+  "tags": [],
+  "season": "All",
+  "time": "Any time",
+  "minutes": 5,
+  "serving": "1 glass (250 ml)",
+  "vrat": false,
+  "jain": true,
+  "noOnionGarlic": true,
+  "benefits": [],
+  "highlights": [
+   "Thick, frothy and chilled: the café favourite, blended at home",
+   "Ready in 5 minutes with a mixer",
+   "Add a scoop of ice cream on top for a party version"
+  ],
+  "nutrients": [],
+  "caution": [
+   "Has caffeine (a cup of coffee has about 50–120 mg). Adults: keep to about 300 mg of caffeine a day in all, roughly 2–3 cups of coffee. Pregnant women: no more than 200 mg a day.",
+   "Have it at least an hour before or after a meal: tea and coffee with food stop the body taking up iron.",
+   "Not for young children. Skip it in the evening if it keeps you awake.",
+   "A treat, not a health drink: it has added sugar. Use less sugar or skip the cream."
+  ],
+  "ingredients": [
+   {
+    "en": "1½ tsp instant coffee",
+    "hi": "1½ छोटे चम्मच इंस्टेंट कॉफ़ी"
+   },
+   {
+    "en": "2 tsp sugar",
+    "hi": "2 छोटे चम्मच चीनी"
+   },
+   {
+    "en": "1 glass chilled milk",
+    "hi": "1 गिलास ठंडा दूध"
+   },
+   {
+    "en": "4–5 ice cubes",
+    "hi": "4–5 बर्फ़ के टुकड़े"
+   },
+   {
+    "en": "1 tsp chocolate syrup (optional)",
+    "hi": "1 छोटा चम्मच चॉकलेट सिरप (चाहें तो)"
+   }
+  ],
+  "steps": {
+   "en": [
+    "Dissolve the coffee and sugar in 2 tbsp warm water.",
+    "Put it in the mixer with the cold milk and ice.",
+    "Blend for a minute till very frothy.",
+    "Swirl chocolate syrup inside the glass, pour in the coffee and serve."
+   ],
+   "hi": [
+    "कॉफ़ी और चीनी को 2 बड़े चम्मच गुनगुने पानी में घोलें।",
+    "इसे ठंडे दूध और बर्फ़ के साथ मिक्सी में डालें।",
+    "एक मिनट चलाएं, जब तक खूब झाग न आ जाए।",
+    "गिलास के अंदर चॉकलेट सिरप लगाएं, कॉफ़ी डालें और परोसें।"
+   ]
+  }
+ },
+ {
+  "id": "dalgona-coffee",
+  "name": "Dalgona Coffee",
+  "hindi": "डालगोना कॉफ़ी",
+  "kind": "Café drink",
+  "group": "Cafe",
+  "style": "Cold coffee",
+  "hot": false,
+  "caffeine": "High",
+  "color": "#d9a066",
+  "tags": [],
+  "season": "All",
+  "time": "Any time",
+  "minutes": 10,
+  "serving": "1 glass (250 ml)",
+  "vrat": false,
+  "jain": true,
+  "noOnionGarlic": true,
+  "benefits": [],
+  "highlights": [
+   "A cloud of whipped coffee on top of cold milk",
+   "Looks like a café drink and needs only three things",
+   "Stir the foam into the milk before you drink"
+  ],
+  "nutrients": [],
+  "caution": [
+   "Has caffeine (a cup of coffee has about 50–120 mg). Adults: keep to about 300 mg of caffeine a day in all, roughly 2–3 cups of coffee. Pregnant women: no more than 200 mg a day.",
+   "Have it at least an hour before or after a meal: tea and coffee with food stop the body taking up iron.",
+   "Not for young children. Skip it in the evening if it keeps you awake.",
+   "A treat, not a health drink: it has added sugar. Use less sugar or skip the cream."
+  ],
+  "ingredients": [
+   {
+    "en": "1 tbsp instant coffee",
+    "hi": "1 बड़ा चम्मच इंस्टेंट कॉफ़ी"
+   },
+   {
+    "en": "1 tbsp sugar",
+    "hi": "1 बड़ा चम्मच चीनी"
+   },
+   {
+    "en": "1 tbsp hot water",
+    "hi": "1 बड़ा चम्मच गरम पानी"
+   },
+   {
+    "en": "1 glass chilled milk",
+    "hi": "1 गिलास ठंडा दूध"
+   },
+   {
+    "en": "A few ice cubes",
+    "hi": "कुछ बर्फ़ के टुकड़े"
+   }
+  ],
+  "steps": {
+   "en": [
+    "Put the coffee, sugar and hot water in a bowl.",
+    "Whisk for 4–5 minutes (or 2 minutes with a beater) till thick, light and holding peaks.",
+    "Fill a glass with ice and cold milk.",
+    "Spoon the whipped coffee on top and serve."
+   ],
+   "hi": [
+    "कटोरे में कॉफ़ी, चीनी और गरम पानी डालें।",
+    "4–5 मिनट (बीटर से 2 मिनट) फेंटें, जब तक गाढ़ा और हल्का न हो जाए।",
+    "गिलास में बर्फ़ और ठंडा दूध डालें।",
+    "ऊपर फेंटी हुई कॉफ़ी रखें और परोसें।"
+   ]
+  }
+ },
+ {
+  "id": "iced-latte",
+  "name": "Iced Latte",
+  "hindi": "आइस्ड लाटे",
+  "kind": "Café drink",
+  "group": "Cafe",
+  "style": "Cold coffee",
+  "hot": false,
+  "caffeine": "High",
+  "color": "#c8a07a",
+  "tags": [],
+  "season": "Summer",
+  "time": "Any time",
+  "minutes": 5,
+  "serving": "1 glass (250 ml)",
+  "vrat": false,
+  "jain": true,
+  "noOnionGarlic": true,
+  "benefits": [],
+  "highlights": [
+   "Strong coffee poured over ice and cold milk, not blended",
+   "Lighter than cold coffee, with pretty layers in the glass",
+   "Easy to make less sweet"
+  ],
+  "nutrients": [],
+  "caution": [
+   "Has caffeine (a cup of coffee has about 50–120 mg). Adults: keep to about 300 mg of caffeine a day in all, roughly 2–3 cups of coffee. Pregnant women: no more than 200 mg a day.",
+   "Have it at least an hour before or after a meal: tea and coffee with food stop the body taking up iron.",
+   "Not for young children. Skip it in the evening if it keeps you awake."
+  ],
+  "ingredients": [
+   {
+    "en": "1½ tsp instant coffee or ¼ cup strong brewed coffee",
+    "hi": "1½ छोटे चम्मच इंस्टेंट कॉफ़ी या ¼ कप तेज़ बनी कॉफ़ी"
+   },
+   {
+    "en": "3 tbsp water (for instant coffee)",
+    "hi": "3 बड़े चम्मच पानी (इंस्टेंट कॉफ़ी के लिए)"
+   },
+   {
+    "en": "¾ glass chilled milk",
+    "hi": "¾ गिलास ठंडा दूध"
+   },
+   {
+    "en": "1 tsp sugar (optional)",
+    "hi": "1 छोटा चम्मच चीनी (चाहें तो)"
+   },
+   {
+    "en": "Ice cubes",
+    "hi": "बर्फ़ के टुकड़े"
+   }
+  ],
+  "steps": {
+   "en": [
+    "Mix the coffee and sugar in the water (or use brewed coffee) and let it cool.",
+    "Fill a glass with ice and pour in the cold milk.",
+    "Slowly pour the coffee on top to make layers. Stir before drinking."
+   ],
+   "hi": [
+    "कॉफ़ी और चीनी को पानी में घोलें (या बनी हुई कॉफ़ी लें) और ठंडा होने दें।",
+    "गिलास में बर्फ़ भरें और ठंडा दूध डालें।",
+    "ऊपर से धीरे-धीरे कॉफ़ी डालें ताकि परतें बनें। पीने से पहले मिला लें।"
+   ]
+  }
+ },
+ {
+  "id": "affogato",
+  "name": "Affogato",
+  "hindi": "अफ़ोगाटो",
+  "kind": "Café drink",
+  "group": "Cafe",
+  "style": "Cold coffee",
+  "hot": false,
+  "caffeine": "High",
+  "color": "#8a5a3b",
+  "tags": [],
+  "season": "All",
+  "time": "Evening",
+  "minutes": 5,
+  "serving": "1 small glass",
+  "vrat": false,
+  "jain": false,
+  "noOnionGarlic": true,
+  "benefits": [],
+  "highlights": [
+   "A scoop of vanilla ice cream 'drowned' in hot coffee",
+   "Half dessert, half coffee: eat it with a spoon",
+   "An easy, fancy end to a dinner party"
+  ],
+  "nutrients": [],
+  "caution": [
+   "Has caffeine (a cup of coffee has about 50–120 mg). Adults: keep to about 300 mg of caffeine a day in all, roughly 2–3 cups of coffee. Pregnant women: no more than 200 mg a day.",
+   "Not for young children. Skip it in the evening if it keeps you awake.",
+   "A treat, not a health drink: it has added sugar. Use less sugar or skip the cream.",
+   "Use an eggless vanilla ice cream (look for the green dot)."
+  ],
+  "ingredients": [
+   {
+    "en": "1 scoop vanilla ice cream",
+    "hi": "1 स्कूप वनीला आइसक्रीम"
+   },
+   {
+    "en": "1 tsp instant coffee",
+    "hi": "1 छोटा चम्मच इंस्टेंट कॉफ़ी"
+   },
+   {
+    "en": "3 tbsp very hot water",
+    "hi": "3 बड़े चम्मच बहुत गरम पानी"
+   },
+   {
+    "en": "A few chopped nuts or grated chocolate",
+    "hi": "थोड़े कटे मेवे या कसी हुई चॉकलेट"
+   }
+  ],
+  "steps": {
+   "en": [
+    "Put the ice cream in a small glass or bowl.",
+    "Mix the coffee in the hot water to make a strong shot.",
+    "Pour the hot coffee over the ice cream, top with nuts or chocolate and serve at once."
+   ],
+   "hi": [
+    "छोटे गिलास या कटोरी में आइसक्रीम रखें।",
+    "गरम पानी में कॉफ़ी घोलकर तेज़ कॉफ़ी बनाएं।",
+    "गरम कॉफ़ी आइसक्रीम पर डालें, ऊपर मेवे या चॉकलेट डालें और तुरंत परोसें।"
+   ]
+  }
+ },
+ {
+  "id": "mocha-frappe",
+  "name": "Mocha Frappé",
+  "hindi": "मोका फ़्रैपे",
+  "kind": "Café drink",
+  "group": "Cafe",
+  "style": "Cold coffee",
+  "hot": false,
+  "caffeine": "High",
+  "color": "#8c5f40",
+  "tags": [],
+  "season": "Summer",
+  "time": "Any time",
+  "minutes": 5,
+  "serving": "1 glass (250 ml)",
+  "vrat": false,
+  "jain": true,
+  "noOnionGarlic": true,
+  "benefits": [],
+  "highlights": [
+   "Icy blended coffee with chocolate, thick like a slush",
+   "Tastes like a café frappé, made in the mixer",
+   "Top with a little whipped cream for a party"
+  ],
+  "nutrients": [],
+  "caution": [
+   "Has caffeine (a cup of coffee has about 50–120 mg). Adults: keep to about 300 mg of caffeine a day in all, roughly 2–3 cups of coffee. Pregnant women: no more than 200 mg a day.",
+   "Have it at least an hour before or after a meal: tea and coffee with food stop the body taking up iron.",
+   "Not for young children. Skip it in the evening if it keeps you awake.",
+   "A treat, not a health drink: it has added sugar. Use less sugar or skip the cream."
+  ],
+  "ingredients": [
+   {
+    "en": "1½ tsp instant coffee",
+    "hi": "1½ छोटे चम्मच इंस्टेंट कॉफ़ी"
+   },
+   {
+    "en": "1 tbsp cocoa powder or chocolate syrup",
+    "hi": "1 बड़ा चम्मच कोको पाउडर या चॉकलेट सिरप"
+   },
+   {
+    "en": "2 tsp sugar",
+    "hi": "2 छोटे चम्मच चीनी"
+   },
+   {
+    "en": "¾ glass chilled milk",
+    "hi": "¾ गिलास ठंडा दूध"
+   },
+   {
+    "en": "1 cup ice",
+    "hi": "1 कप बर्फ़"
+   }
+  ],
+  "steps": {
+   "en": [
+    "Dissolve coffee, cocoa and sugar in 2 tbsp warm water.",
+    "Blend with the milk and plenty of ice till thick and slushy.",
+    "Pour into a tall glass and serve with a straw."
+   ],
+   "hi": [
+    "कॉफ़ी, कोको और चीनी को 2 बड़े चम्मच गुनगुने पानी में घोलें।",
+    "दूध और खूब सारी बर्फ़ के साथ मिक्सी में गाढ़ा होने तक चलाएं।",
+    "लंबे गिलास में डालकर स्ट्रॉ के साथ परोसें।"
+   ]
+  }
+ },
+ {
+  "id": "condensed-milk-iced-coffee",
+  "name": "Condensed Milk Iced Coffee",
+  "hindi": "मिल्कमेड आइस्ड कॉफ़ी",
+  "kind": "Café drink",
+  "group": "Cafe",
+  "style": "Cold coffee",
+  "hot": false,
+  "caffeine": "High",
+  "color": "#a06a3e",
+  "tags": [],
+  "season": "Summer",
+  "time": "Any time",
+  "minutes": 10,
+  "serving": "1 small glass (150 ml)",
+  "vrat": false,
+  "jain": true,
+  "noOnionGarlic": true,
+  "benefits": [],
+  "highlights": [
+   "Strong coffee with sweet condensed milk over ice, Vietnamese style",
+   "Bold and very sweet: a small glass is enough",
+   "South Indian filter decoction works beautifully here"
+  ],
+  "nutrients": [],
+  "caution": [
+   "Has caffeine (a cup of coffee has about 50–120 mg). Adults: keep to about 300 mg of caffeine a day in all, roughly 2–3 cups of coffee. Pregnant women: no more than 200 mg a day.",
+   "Have it at least an hour before or after a meal: tea and coffee with food stop the body taking up iron.",
+   "Not for young children. Skip it in the evening if it keeps you awake.",
+   "A treat, not a health drink: condensed milk is very sweet. Use just a little."
+  ],
+  "ingredients": [
+   {
+    "en": "¼ cup strong filter coffee decoction or 1½ tsp instant coffee in ¼ cup hot water",
+    "hi": "¼ कप तेज़ फ़िल्टर कॉफ़ी डिकॉक्शन या ¼ कप गरम पानी में 1½ छोटे चम्मच इंस्टेंट कॉफ़ी"
+   },
+   {
+    "en": "1½ tbsp condensed milk",
+    "hi": "1½ बड़े चम्मच कंडेंस्ड मिल्क (मिल्कमेड)"
+   },
+   {
+    "en": "Ice cubes",
+    "hi": "बर्फ़ के टुकड़े"
+   },
+   {
+    "en": "¼ cup cold milk (optional)",
+    "hi": "¼ कप ठंडा दूध (चाहें तो)"
+   }
+  ],
+  "steps": {
+   "en": [
+    "Put the condensed milk at the bottom of a glass.",
+    "Pour the hot coffee over it and stir well.",
+    "Fill with ice, add cold milk if you like it lighter, and serve."
+   ],
+   "hi": [
+    "गिलास के नीचे कंडेंस्ड मिल्क डालें।",
+    "ऊपर से गरम कॉफ़ी डालकर अच्छी तरह मिलाएं।",
+    "बर्फ़ भरें, हल्की चाहिए तो ठंडा दूध डालें और परोसें।"
+   ]
+  }
+ },
+ {
+  "id": "coconut-cold-coffee",
+  "name": "Coconut Cold Coffee",
+  "hindi": "नारियल कोल्ड कॉफ़ी",
+  "kind": "Café drink",
+  "group": "Cafe",
+  "style": "Cold coffee",
+  "hot": false,
+  "caffeine": "High",
+  "color": "#b58c66",
+  "tags": [],
+  "season": "Summer",
+  "time": "Any time",
+  "minutes": 5,
+  "serving": "1 glass (250 ml)",
+  "vrat": false,
+  "jain": true,
+  "noOnionGarlic": true,
+  "benefits": [],
+  "highlights": [
+   "Cold coffee made with coconut milk instead of dairy",
+   "Creamy, with a gentle coconut taste",
+   "A good pick for anyone who avoids cow's milk"
+  ],
+  "nutrients": [],
+  "caution": [
+   "Has caffeine (a cup of coffee has about 50–120 mg). Adults: keep to about 300 mg of caffeine a day in all, roughly 2–3 cups of coffee. Pregnant women: no more than 200 mg a day.",
+   "Have it at least an hour before or after a meal: tea and coffee with food stop the body taking up iron.",
+   "Not for young children. Skip it in the evening if it keeps you awake.",
+   "Coconut milk is rich; use the thinner kind or mix it half and half with water."
+  ],
+  "ingredients": [
+   {
+    "en": "1½ tsp instant coffee",
+    "hi": "1½ छोटे चम्मच इंस्टेंट कॉफ़ी"
+   },
+   {
+    "en": "1 glass coconut milk",
+    "hi": "1 गिलास नारियल का दूध"
+   },
+   {
+    "en": "2 tsp sugar or jaggery powder",
+    "hi": "2 छोटे चम्मच चीनी या गुड़ पाउडर"
+   },
+   {
+    "en": "4–5 ice cubes",
+    "hi": "4–5 बर्फ़ के टुकड़े"
+   }
+  ],
+  "steps": {
+   "en": [
+    "Dissolve the coffee and sugar in 2 tbsp warm water.",
+    "Blend with the coconut milk and ice till frothy.",
+    "Pour into a glass and serve cold."
+   ],
+   "hi": [
+    "कॉफ़ी और चीनी को 2 बड़े चम्मच गुनगुने पानी में घोलें।",
+    "नारियल के दूध और बर्फ़ के साथ झागदार होने तक मिक्सी में चलाएं।",
+    "गिलास में डालकर ठंडा परोसें।"
+   ]
+  }
+ },
+ {
+  "id": "masala-chai",
+  "name": "Masala Chai",
+  "hindi": "मसाला चाय",
+  "kind": "Café drink",
+  "group": "Cafe",
+  "style": "Tea",
+  "hot": true,
+  "caffeine": "Medium",
+  "color": "#c48a52",
+  "tags": [],
+  "season": "All",
+  "time": "Morning",
+  "minutes": 10,
+  "serving": "2 cups",
+  "vrat": false,
+  "jain": false,
+  "noOnionGarlic": true,
+  "benefits": [],
+  "highlights": [
+   "The everyday Indian chai: tea leaves boiled with milk, ginger and elaichi",
+   "Strong, sweet and spicy, best with a light snack",
+   "Boil it well for that deep colour"
+  ],
+  "nutrients": [],
+  "caution": [
+   "Has caffeine (a cup of tea has about 30–65 mg). Adults: keep to about 300 mg of caffeine a day in all. Pregnant women: no more than 200 mg a day.",
+   "Have it at least an hour before or after a meal: tea and coffee with food stop the body taking up iron.",
+   "Not for young children. Skip it in the evening if it keeps you awake."
+  ],
+  "ingredients": [
+   {
+    "en": "1 cup water",
+    "hi": "1 कप पानी"
+   },
+   {
+    "en": "1 cup milk",
+    "hi": "1 कप दूध"
+   },
+   {
+    "en": "2 tsp tea leaves",
+    "hi": "2 छोटे चम्मच चाय पत्ती"
+   },
+   {
+    "en": "1 inch ginger, crushed",
+    "hi": "1 इंच अदरक, कुटा हुआ"
+   },
+   {
+    "en": "2 green cardamom, crushed",
+    "hi": "2 हरी इलायची, कुटी हुई"
+   },
+   {
+    "en": "2–3 tsp sugar",
+    "hi": "2–3 छोटे चम्मच चीनी"
+   }
+  ],
+  "steps": {
+   "en": [
+    "Boil the water with ginger and cardamom for 1 minute.",
+    "Add the tea leaves and sugar and boil for 1 more minute.",
+    "Add the milk and let it come to a boil 2–3 times on medium heat.",
+    "Strain into cups and serve hot."
+   ],
+   "hi": [
+    "पानी में अदरक और इलायची डालकर 1 मिनट उबालें।",
+    "चाय पत्ती और चीनी डालकर 1 मिनट और उबालें।",
+    "दूध डालें और मध्यम आंच पर 2–3 उबाल आने दें।",
+    "छानकर कप में डालें और गरम परोसें।"
+   ]
+  }
+ },
+ {
+  "id": "kashmiri-kahwa",
+  "name": "Kashmiri Kahwa",
+  "hindi": "कश्मीरी कहवा",
+  "kind": "Café drink",
+  "group": "Cafe",
+  "style": "Tea",
+  "hot": true,
+  "caffeine": "Low",
+  "color": "#d8a648",
+  "tags": [],
+  "season": "Winter",
+  "time": "Evening",
+  "minutes": 10,
+  "serving": "2 cups",
+  "vrat": false,
+  "jain": true,
+  "noOnionGarlic": true,
+  "benefits": [],
+  "highlights": [
+   "Golden green tea with saffron, elaichi, dalchini and sliced almonds",
+   "Light, fragrant and no milk",
+   "Served in Kashmir to guests on cold days"
+  ],
+  "nutrients": [],
+  "caution": [
+   "Green tea has a little caffeine, less than black tea or coffee.",
+   "Have it at least an hour before or after a meal: tea and coffee with food stop the body taking up iron.",
+   "Not for young children. Skip it in the evening if it keeps you awake."
+  ],
+  "ingredients": [
+   {
+    "en": "2 cups water",
+    "hi": "2 कप पानी"
+   },
+   {
+    "en": "1 tsp green tea leaves",
+    "hi": "1 छोटा चम्मच ग्रीन टी पत्ती"
+   },
+   {
+    "en": "5–6 saffron strands",
+    "hi": "5–6 केसर के धागे"
+   },
+   {
+    "en": "2 green cardamom and 1 small piece cinnamon",
+    "hi": "2 हरी इलायची और दालचीनी का छोटा टुकड़ा"
+   },
+   {
+    "en": "6 almonds, thinly sliced",
+    "hi": "6 बादाम, पतले कटे हुए"
+   },
+   {
+    "en": "1–2 tsp sugar",
+    "hi": "1–2 छोटे चम्मच चीनी"
+   }
+  ],
+  "steps": {
+   "en": [
+    "Boil the water with cardamom, cinnamon and saffron for 3 minutes.",
+    "Turn off the heat, add the green tea, cover and leave for 2 minutes (not longer, or it turns bitter).",
+    "Strain, stir in sugar, and top each cup with sliced almonds."
+   ],
+   "hi": [
+    "पानी में इलायची, दालचीनी और केसर डालकर 3 मिनट उबालें।",
+    "आंच बंद करके ग्रीन टी डालें, ढककर 2 मिनट रखें (ज़्यादा देर नहीं, वरना कड़वा हो जाएगा)।",
+    "छानें, चीनी मिलाएं और हर कप में ऊपर से कटे बादाम डालें।"
+   ]
+  }
+ },
+ {
+  "id": "irani-chai",
+  "name": "Irani Chai",
+  "hindi": "ईरानी चाय",
+  "kind": "Café drink",
+  "group": "Cafe",
+  "style": "Tea",
+  "hot": true,
+  "caffeine": "Medium",
+  "color": "#c9a07a",
+  "tags": [],
+  "season": "All",
+  "time": "Evening",
+  "minutes": 25,
+  "serving": "2 cups",
+  "vrat": false,
+  "jain": true,
+  "noOnionGarlic": true,
+  "benefits": [],
+  "highlights": [
+   "Hyderabad's creamy tea: strong brew mixed with thick, sweet milk",
+   "Rich and smooth, made for Osmania biscuits or bun maska",
+   "The tea is brewed slowly on a low flame"
+  ],
+  "nutrients": [],
+  "caution": [
+   "Has caffeine (a cup of tea has about 30–65 mg). Adults: keep to about 300 mg of caffeine a day in all. Pregnant women: no more than 200 mg a day.",
+   "Have it at least an hour before or after a meal: tea and coffee with food stop the body taking up iron.",
+   "Not for young children. Skip it in the evening if it keeps you awake.",
+   "A treat, not a health drink: it has added sugar. Use less sugar or skip the cream."
+  ],
+  "ingredients": [
+   {
+    "en": "1½ cups water",
+    "hi": "1½ कप पानी"
+   },
+   {
+    "en": "2 tsp tea leaves",
+    "hi": "2 छोटे चम्मच चाय पत्ती"
+   },
+   {
+    "en": "1 cup milk",
+    "hi": "1 कप दूध"
+   },
+   {
+    "en": "2 tbsp condensed milk or khoya",
+    "hi": "2 बड़े चम्मच कंडेंस्ड मिल्क या खोया"
+   },
+   {
+    "en": "1 green cardamom, crushed",
+    "hi": "1 हरी इलायची, कुटी हुई"
+   },
+   {
+    "en": "Sugar to taste",
+    "hi": "स्वाद अनुसार चीनी"
+   }
+  ],
+  "steps": {
+   "en": [
+    "Boil the water with tea leaves and cardamom, then cover and simmer on low for 10 minutes.",
+    "In another pan, boil the milk with condensed milk on low for 8–10 minutes till a little thick.",
+    "Pour half a cup of the strained tea into each cup, then top up with the thick milk.",
+    "Add sugar if needed, stir and serve."
+   ],
+   "hi": [
+    "पानी में चाय पत्ती और इलायची डालकर उबालें, फिर ढककर धीमी आंच पर 10 मिनट पकाएं।",
+    "दूसरे बर्तन में दूध और कंडेंस्ड मिल्क को धीमी आंच पर 8–10 मिनट थोड़ा गाढ़ा होने तक उबालें।",
+    "हर कप में आधा कप छनी चाय डालें, फिर ऊपर से गाढ़ा दूध भरें।",
+    "ज़रूरत हो तो चीनी डालें, मिलाएं और परोसें।"
+   ]
+  }
+ },
+ {
+  "id": "lemon-iced-tea",
+  "name": "Lemon Iced Tea",
+  "hindi": "लेमन आइस्ड टी",
+  "kind": "Café drink",
+  "group": "Cafe",
+  "style": "Tea",
+  "hot": false,
+  "caffeine": "Medium",
+  "color": "#c97a2b",
+  "tags": [],
+  "season": "Summer",
+  "time": "Any time",
+  "minutes": 15,
+  "serving": "2 glasses",
+  "vrat": false,
+  "jain": true,
+  "noOnionGarlic": true,
+  "benefits": [],
+  "highlights": [
+   "Chilled black tea with lemon and mint, no milk",
+   "Lighter than cold coffee, with less caffeine",
+   "Make a jug ahead and keep it in the fridge"
+  ],
+  "nutrients": [],
+  "caution": [
+   "Has caffeine (a cup of tea has about 30–65 mg). Adults: keep to about 300 mg of caffeine a day in all. Pregnant women: no more than 200 mg a day.",
+   "Have it at least an hour before or after a meal: tea and coffee with food stop the body taking up iron.",
+   "Not for young children. Skip it in the evening if it keeps you awake.",
+   "Sweet bottled iced teas have a lot of sugar; home-made lets you use just a little."
+  ],
+  "ingredients": [
+   {
+    "en": "2 cups water",
+    "hi": "2 कप पानी"
+   },
+   {
+    "en": "2 tsp tea leaves or 2 tea bags",
+    "hi": "2 छोटे चम्मच चाय पत्ती या 2 टी बैग"
+   },
+   {
+    "en": "2 tbsp lemon juice",
+    "hi": "2 बड़े चम्मच नींबू का रस"
+   },
+   {
+    "en": "2–3 tsp sugar",
+    "hi": "2–3 छोटे चम्मच चीनी"
+   },
+   {
+    "en": "A few mint leaves and ice",
+    "hi": "कुछ पुदीने के पत्ते और बर्फ़"
+   }
+  ],
+  "steps": {
+   "en": [
+    "Boil the water, turn off the heat, add the tea and leave for 3 minutes. Strain.",
+    "Stir in the sugar and let it cool.",
+    "Add lemon juice and mint.",
+    "Pour over ice and serve with a lemon slice."
+   ],
+   "hi": [
+    "पानी उबालें, आंच बंद करके चाय डालें और 3 मिनट रखें। छान लें।",
+    "चीनी मिलाकर ठंडा होने दें।",
+    "नींबू का रस और पुदीना डालें।",
+    "बर्फ़ पर डालें और नींबू के टुकड़े के साथ परोसें।"
+   ]
+  }
+ },
+ {
+  "id": "gud-wali-chai",
+  "name": "Gud Wali Chai",
+  "hindi": "गुड़ वाली चाय",
+  "kind": "Café drink",
+  "group": "Cafe",
+  "style": "Tea",
+  "hot": true,
+  "caffeine": "Medium",
+  "color": "#a8683a",
+  "tags": [],
+  "season": "Winter",
+  "time": "Morning",
+  "minutes": 10,
+  "serving": "2 cups",
+  "vrat": false,
+  "jain": false,
+  "noOnionGarlic": true,
+  "benefits": [],
+  "highlights": [
+   "Milky chai sweetened with jaggery instead of sugar",
+   "A deep, caramel-like taste that tastes of winter",
+   "Add the jaggery last, off the heat, so the milk doesn't split"
+  ],
+  "nutrients": [],
+  "caution": [
+   "Has caffeine (a cup of tea has about 30–65 mg). Adults: keep to about 300 mg of caffeine a day in all. Pregnant women: no more than 200 mg a day.",
+   "Have it at least an hour before or after a meal: tea and coffee with food stop the body taking up iron.",
+   "Not for young children. Skip it in the evening if it keeps you awake.",
+   "Jaggery is still sugar; use the same small amount you would of sugar."
+  ],
+  "ingredients": [
+   {
+    "en": "1 cup water",
+    "hi": "1 कप पानी"
+   },
+   {
+    "en": "1 cup milk",
+    "hi": "1 कप दूध"
+   },
+   {
+    "en": "2 tsp tea leaves",
+    "hi": "2 छोटे चम्मच चाय पत्ती"
+   },
+   {
+    "en": "1 inch ginger, crushed",
+    "hi": "1 इंच अदरक, कुटा हुआ"
+   },
+   {
+    "en": "2 tbsp grated jaggery",
+    "hi": "2 बड़े चम्मच कसा हुआ गुड़"
+   }
+  ],
+  "steps": {
+   "en": [
+    "Boil the water with ginger and tea leaves for 2 minutes.",
+    "Add the milk and boil 2–3 times.",
+    "Turn off the heat, wait 30 seconds, then stir in the jaggery till it melts.",
+    "Strain and serve hot."
+   ],
+   "hi": [
+    "पानी में अदरक और चाय पत्ती डालकर 2 मिनट उबालें।",
+    "दूध डालकर 2–3 उबाल आने दें।",
+    "आंच बंद करें, 30 सेकंड रुकें, फिर गुड़ डालकर घुलने तक मिलाएं।",
+    "छानकर गरम परोसें।"
+   ]
+  }
+ },
+ {
+  "id": "hot-chocolate",
+  "name": "Hot Chocolate",
+  "hindi": "हॉट चॉकलेट",
+  "kind": "Café drink",
+  "group": "Cafe",
+  "style": "Chocolate",
+  "hot": true,
+  "caffeine": "Low",
+  "color": "#5a3220",
+  "tags": [],
+  "season": "Winter",
+  "time": "Evening",
+  "minutes": 10,
+  "serving": "1 cup (150 ml)",
+  "vrat": false,
+  "jain": true,
+  "noOnionGarlic": true,
+  "benefits": [],
+  "highlights": [
+   "Thick, velvety chocolate in hot milk",
+   "A cosy winter treat the kids will love too",
+   "Real cocoa and a little dark chocolate, no ready-mix needed"
+  ],
+  "nutrients": [],
+  "caution": [
+   "Cocoa has a little caffeine, much less than coffee.",
+   "A treat, not a health drink: it has added sugar. Use less sugar or skip the cream.",
+   "Fine for children now and then, in a small cup."
+  ],
+  "ingredients": [
+   {
+    "en": "1 cup milk",
+    "hi": "1 कप दूध"
+   },
+   {
+    "en": "1 tbsp cocoa powder",
+    "hi": "1 बड़ा चम्मच कोको पाउडर"
+   },
+   {
+    "en": "2 tsp sugar",
+    "hi": "2 छोटे चम्मच चीनी"
+   },
+   {
+    "en": "2 tbsp chopped dark chocolate",
+    "hi": "2 बड़े चम्मच कटी डार्क चॉकलेट"
+   },
+   {
+    "en": "A pinch of cinnamon (optional)",
+    "hi": "एक चुटकी दालचीनी (चाहें तो)"
+   }
+  ],
+  "steps": {
+   "en": [
+    "Mix cocoa and sugar with 2 tbsp of the milk to a smooth paste.",
+    "Heat the rest of the milk, add the paste and chocolate, and stir till melted.",
+    "Simmer for 2 minutes till a little thick, whisk till frothy and serve hot."
+   ],
+   "hi": [
+    "कोको और चीनी को 2 बड़े चम्मच दूध में मिलाकर चिकना पेस्ट बनाएं।",
+    "बाकी दूध गरम करें, पेस्ट और चॉकलेट डालें और पिघलने तक चलाएं।",
+    "2 मिनट हल्का गाढ़ा होने तक पकाएं, झाग आने तक फेंटें और गरम परोसें।"
+   ]
+  }
+ },
+ {
+  "id": "cold-cocoa",
+  "name": "Cold Cocoa",
+  "hindi": "कोल्ड कोको",
+  "kind": "Café drink",
+  "group": "Cafe",
+  "style": "Chocolate",
+  "hot": false,
+  "caffeine": "Low",
+  "color": "#7b4a32",
+  "tags": [],
+  "season": "Summer",
+  "time": "Any time",
+  "minutes": 5,
+  "serving": "1 glass (250 ml)",
+  "vrat": false,
+  "jain": true,
+  "noOnionGarlic": true,
+  "benefits": [],
+  "highlights": [
+   "Thick chilled chocolate milk, the old-school café favourite",
+   "A coffee-free pick for kids and teens",
+   "Blend in a scoop of ice cream to make it a shake"
+  ],
+  "nutrients": [],
+  "caution": [
+   "Cocoa has a little caffeine, much less than coffee.",
+   "A treat, not a health drink: it has added sugar. Use less sugar or skip the cream."
+  ],
+  "ingredients": [
+   {
+    "en": "1 glass chilled milk",
+    "hi": "1 गिलास ठंडा दूध"
+   },
+   {
+    "en": "1 tbsp cocoa powder",
+    "hi": "1 बड़ा चम्मच कोको पाउडर"
+   },
+   {
+    "en": "2 tsp sugar",
+    "hi": "2 छोटे चम्मच चीनी"
+   },
+   {
+    "en": "1 tbsp chocolate syrup",
+    "hi": "1 बड़ा चम्मच चॉकलेट सिरप"
+   },
+   {
+    "en": "4–5 ice cubes",
+    "hi": "4–5 बर्फ़ के टुकड़े"
+   }
+  ],
+  "steps": {
+   "en": [
+    "Mix the cocoa and sugar in 2 tbsp warm milk till smooth.",
+    "Blend with the cold milk and ice till frothy.",
+    "Swirl chocolate syrup in the glass, pour in the cocoa and serve."
+   ],
+   "hi": [
+    "कोको और चीनी को 2 बड़े चम्मच गुनगुने दूध में चिकना होने तक मिलाएं।",
+    "ठंडे दूध और बर्फ़ के साथ झागदार होने तक मिक्सी में चलाएं।",
+    "गिलास में चॉकलेट सिरप लगाएं, कोको डालें और परोसें।"
+   ]
+  }
  }
 ]

@@ -31,6 +31,7 @@ import {
   DRINKS,
   DRINK_TAGS,
   drinkFits,
+  CAFE_STYLES,
   drinkOfTheDay,
   drinkCookMessage,
   cookTemplateParams,
@@ -686,8 +687,8 @@ describe('juices and drinks', () => {
     expect(DRINKS.filter((d) => d.group === 'Mixed juices').length).toBeGreaterThanOrEqual(12);
     expect(new Set(DRINKS.map((d) => d.id)).size).toBe(DRINKS.length);
     for (const d of DRINKS) {
-      if (d.group === 'Mocktails') {
-        // Party drinks make no health claims.
+      if (d.group === 'Mocktails' || d.group === 'Cafe') {
+        // Party and café drinks make no health claims.
         expect(d.benefits, d.id).toEqual([]);
         expect(d.tags, d.id).toEqual([]);
         expect(d.highlights!.length, d.id).toBeGreaterThanOrEqual(2);
@@ -726,9 +727,28 @@ describe('juices and drinks', () => {
       expect(d.group).not.toBe('Traditional drinks');
       expect(d.group).not.toBe('Mocktails');
     });
-    // Over a whole year, never a mocktail as the drink of the day.
-    for (let i = 0; i < 365; i += 3) expect(drinkOfTheDay(base, new Date(2026, 0, 1 + i))!.group).not.toBe('Mocktails');
+    // Over a whole year, never a mocktail or a coffee as the drink of the day.
+    for (let i = 0; i < 365; i += 3) expect(['Mocktails', 'Cafe']).not.toContain(drinkOfTheDay(base, new Date(2026, 0, 1 + i))!.group);
     expect(DRINKS.filter((d) => d.group === 'Mocktails').length).toBeGreaterThanOrEqual(15);
+  });
+
+  it('has 20 coffee, tea and chocolate drinks with honest caffeine notes', () => {
+    const cafe = DRINKS.filter((d) => d.group === 'Cafe');
+    expect(cafe.length).toBe(20);
+    for (const d of cafe) {
+      expect(CAFE_STYLES, d.id).toContain(d.style);
+      expect(['High', 'Medium', 'Low'], d.id).toContain(d.caffeine);
+      expect(typeof d.hot, d.id).toBe('boolean');
+      expect(d.caution.join(' '), d.id).toMatch(/caffeine/i);
+      expect(d.time, d.id).not.toBe('Night');
+      expect(d.vrat, d.id).toBe(false);
+    }
+    // Tea and coffee get the "an hour away from meals" iron note.
+    for (const d of cafe.filter((x) => x.style !== 'Chocolate' && x.id !== 'affogato')) expect(d.caution.join(' '), d.id).toMatch(/hour/);
+    // Ginger or ice cream is not Jain.
+    expect(drinkFits(DRINKS.find((d) => d.id === 'masala-chai')!, { ...base, jain: true })).toBe(false);
+    expect(drinkFits(DRINKS.find((d) => d.id === 'affogato')!, { ...base, jain: true })).toBe(false);
+    expect(drinkFits(DRINKS.find((d) => d.id === 'filter-coffee')!, { ...base, jain: true })).toBe(true);
   });
 
   it('writes the recipe for the cook in Hindi, with the lauki warning', () => {

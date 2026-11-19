@@ -3,9 +3,11 @@ import {
   DRINKS,
   DRINK_GROUPS,
   DRINK_NOTE,
-  MOCKTAIL_NOTE,
-  MOCKTAIL_STYLES,
+  DRINK_STYLES,
+  TREAT_NOTES,
+  isCafe,
   isMocktail,
+  isTreat,
   DRINK_TAGS,
   drinkCookMessage,
   drinkFits,
@@ -14,7 +16,6 @@ import {
   whatsappLink,
   type Drink,
   type DrinkGroup,
-  type MocktailStyle,
   type DrinkTag,
   type FamilyProfile,
 } from '../engine';
@@ -53,6 +54,11 @@ function DrinkCard({ drink, onOpen, fits }: { drink: Drink; onOpen: (id: string)
               <span className="drink-tag is-party">{drink.style}</span>
               <span className="drink-tag is-party">No alcohol</span>
             </>
+          ) : isCafe(drink) ? (
+            <>
+              <span className="drink-tag is-cafe">{drink.style}</span>
+              <span className="drink-tag is-cafe">{drink.caffeine} caffeine</span>
+            </>
           ) : (
             drink.tags.slice(0, 3).map((t) => (
               <span key={t} className="drink-tag">
@@ -75,8 +81,9 @@ export function DrinksView({ profile, onOpen }: { profile: FamilyProfile; onOpen
   const [when, setWhen] = useState<(typeof SEASONS)[number] | 'Now'>('Now');
   const [query, setQuery] = useState('');
   const [group, setGroup] = useState<DrinkGroup | 'All'>('All');
-  const [style, setStyle] = useState<MocktailStyle | null>(null);
-  const party = group === 'Mocktails';
+  const [style, setStyle] = useState<string | null>(null);
+  // Mocktails and café drinks have a "What kind?" filter instead of health benefits.
+  const styles = group === 'All' ? undefined : DRINK_STYLES[group];
   const today = drinkOfTheDay(profile, now);
 
   const shown = useMemo(() => {
@@ -84,19 +91,19 @@ export function DrinksView({ profile, onOpen }: { profile: FamilyProfile; onOpen
     return DRINKS.filter(
       (d) =>
         (group === 'All' || d.group === group) &&
-        (party ? !style || d.style === style : !tag || d.tags.includes(tag)) &&
+        (styles ? !style || d.style === style : !tag || d.tags.includes(tag)) &&
         (when === 'All year' ? true : when === 'Now' ? d.season === season || d.season === 'All' : d.season === when || d.season === 'All') &&
         (!q || `${d.name} ${d.hindi} ${d.benefits.join(' ')} ${(d.highlights ?? []).join(' ')} ${d.style ?? ''} ${d.ingredients.map((i) => i.en).join(' ')}`.toLowerCase().includes(q)),
     ).sort((a, b) => Number(drinkFits(b, profile)) - Number(drinkFits(a, profile)));
-  }, [tag, when, query, season, profile, group, party, style]);
+  }, [tag, when, query, season, profile, group, styles, style]);
 
   return (
     <div className="stack">
       <div className="week-head">
         <div>
           <p className="eyebrow">
-            {DRINKS.filter((d) => d.group === 'Juices' || d.group === 'Mixed juices').length} fresh juices, {DRINKS.filter((d) => d.group === 'Traditional drinks').length} traditional drinks and{' '}
-            {DRINKS.filter(isMocktail).length} mocktails
+            {DRINKS.filter((d) => d.group === 'Juices' || d.group === 'Mixed juices').length} fresh juices, {DRINKS.filter((d) => d.group === 'Traditional drinks').length} traditional drinks,{' '}
+            {DRINKS.filter(isCafe).length} coffees and teas, and {DRINKS.filter(isMocktail).length} mocktails
           </p>
           <h1>Juices and drinks</h1>
         </div>
@@ -128,16 +135,16 @@ export function DrinksView({ profile, onOpen }: { profile: FamilyProfile; onOpen
       <section className="card drink-filters" aria-label="Find a drink">
         <div className="seg drink-groups" role="radiogroup" aria-label="Kind of drink">
           {([{ key: 'All', label: 'All drinks' }, ...DRINK_GROUPS] as { key: DrinkGroup | 'All'; label: string }[]).map((g) => (
-            <button type="button" key={g.key} role="radio" aria-checked={group === g.key} className={`seg-btn${group === g.key ? ' is-on' : ''}`} onClick={() => setGroup(g.key)}>
+            <button type="button" key={g.key} role="radio" aria-checked={group === g.key} className={`seg-btn${group === g.key ? ' is-on' : ''}`} onClick={() => { setGroup(g.key); setStyle(null); }}>
               {g.label}
             </button>
           ))}
         </div>
-        {party ? (
+        {styles ? (
           <>
             <h2 className="filters-title">What kind?</h2>
             <div className="chips">
-              {MOCKTAIL_STYLES.map((t) => (
+              {styles.map((t) => (
                 <button key={t} type="button" className={`chip chip-toggle${style === t ? ' is-on' : ''}`} aria-pressed={style === t} onClick={() => setStyle(style === t ? null : t)}>
                   {t}
                 </button>
@@ -167,7 +174,7 @@ export function DrinksView({ profile, onOpen }: { profile: FamilyProfile; onOpen
           <label className="visually-hidden" htmlFor="drink-search">
             Search drinks
           </label>
-          <input id="drink-search" className="search" type="search" placeholder="Search: amla, protein, chaas…" value={query} onChange={(e) => setQuery(e.target.value)} />
+          <input id="drink-search" className="search" type="search" placeholder="Search: amla, chaas, coffee…" value={query} onChange={(e) => setQuery(e.target.value)} />
         </div>
       </section>
 
@@ -176,14 +183,14 @@ export function DrinksView({ profile, onOpen }: { profile: FamilyProfile; onOpen
         const list = shown.filter((d) => d.group === g.key);
         if (!list.length) return null;
         return (
-          <section key={g.key} className={`drink-section${g.key === 'Mocktails' ? ' is-party' : ''}`} aria-labelledby={`dg-${g.key}`}>
+          <section key={g.key} className={`drink-section${g.key === 'Mocktails' ? ' is-party' : g.key === 'Cafe' ? ' is-cafe' : ''}`} aria-labelledby={`dg-${g.key}`}>
             <div className="drink-section-head">
               <h2 id={`dg-${g.key}`}>
                 {g.label} <span className="muted">({list.length})</span>
               </h2>
               <p className="muted small">{g.note}</p>
             </div>
-            {g.key === 'Mocktails' && <p className="drink-note small">{MOCKTAIL_NOTE}</p>}
+            {TREAT_NOTES[g.key] && <p className="drink-note small">{TREAT_NOTES[g.key]}</p>}
             <div className="drink-grid">
               {list.map((d) => (
                 <DrinkCard key={d.id} drink={d} onOpen={onOpen} fits={drinkFits(d, profile)} />
@@ -219,15 +226,17 @@ export function DrinkSheet({ drinkId, profile, onClose, notify }: { drinkId: str
   const cookText = drinkCookMessage(d, profile);
   const fits = drinkFits(d, profile);
   const mock = isMocktail(d);
+  const treat = isTreat(d);
   const facts = [
     d.kind,
-    mock && d.style,
+    treat && d.style,
     mock && 'No alcohol',
+    isCafe(d) && `${d.caffeine} caffeine`,
     d.season === 'All' ? 'All year' : `${d.season} drink`,
     TIME_TEXT[d.time],
     `${d.minutes} min`,
     d.serving,
-    !mock && d.vrat && 'Vrat OK',
+    !treat && d.vrat && 'Vrat OK',
     d.jain && 'Jain OK',
   ].filter(Boolean) as string[];
   const lauki = d.id === 'lauki-juice';
@@ -257,10 +266,10 @@ export function DrinkSheet({ drinkId, profile, onClose, notify }: { drinkId: str
             {!fits && <p className="field-error">This drink doesn’t fit your family’s food rules (Jain or no onion-garlic).</p>}
           </div>
 
-          {mock ? (
+          {treat ? (
             <section>
               <h3>What it’s like</h3>
-              <ul className="benefit-list is-party">
+              <ul className={`benefit-list ${mock ? 'is-party' : 'is-cafe'}`}>
                 {(d.highlights ?? []).map((b) => (
                   <li key={b}>{b}</li>
                 ))}
@@ -324,7 +333,7 @@ export function DrinkSheet({ drinkId, profile, onClose, notify }: { drinkId: str
               <CopyIcon /> Copy Hindi recipe
             </button>
           </div>
-          <p className="drink-note small">{mock ? MOCKTAIL_NOTE : DRINK_NOTE}</p>
+          <p className="drink-note small">{TREAT_NOTES[d.group] ?? DRINK_NOTE}</p>
         </div>
       </div>
     </div>

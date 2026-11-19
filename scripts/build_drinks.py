@@ -1,6 +1,6 @@
 """Check the drinks list and write src/data/drinks.json.
 Edit scripts/drinks/drinks.json, then run: python3 scripts/build_drinks.py
-Every drink needs benefits, at least one caution or tip, ingredients in English and Hindi,
+Juices and traditional drinks need benefits; mocktails and café drinks need highlights instead. Every drink needs at least one caution or tip, ingredients in English and Hindi,
 and the same number of English and Hindi steps.
 """
 import json, re, sys
@@ -9,12 +9,14 @@ from pathlib import Path
 root = Path(__file__).resolve().parent.parent
 drinks = json.loads((root / "scripts/drinks/drinks.json").read_text(encoding="utf-8"))
 
-KINDS = {"Mocktail", "Juice", "Cooler", "Milk drink", "Warm drink", "Fermented", "Water"}
+KINDS = {"Café drink", "Mocktail", "Juice", "Cooler", "Milk drink", "Warm drink", "Fermented", "Water"}
 TAGS = {"Immunity", "Hydration", "Digestion", "Energy", "Protein", "Calcium", "Cooling", "Warming",
         "Low sugar", "Kids", "Heart", "Eyes & skin", "Sleep"}
 SEASONS = {"All", "Winter", "Summer", "Monsoon"}
-GROUPS = {"Mixed juices", "Juices", "Traditional drinks", "Mocktails"}
-STYLES = {"Mojito", "Fizzy", "Fruity", "Creamy", "Spiced"}
+GROUPS = {"Mixed juices", "Juices", "Traditional drinks", "Cafe", "Mocktails"}
+# "What kind?" filter for the two treat sections (no health claims there).
+STYLES = {"Mocktails": {"Mojito", "Fizzy", "Fruity", "Creamy", "Spiced"}, "Cafe": {"Hot coffee", "Cold coffee", "Tea", "Chocolate"}}
+CAFFEINE = {"High", "Medium", "Low"}
 TIMES = {"Morning", "Any time", "Evening", "Night", "After meals", "Before meals"}
 
 problems, seen = [], set()
@@ -30,12 +32,17 @@ for n, d in enumerate(drinks, 1):
     if d.get("season") not in SEASONS: problems.append(f"{where}: season must be one of {sorted(SEASONS)}")
     if d.get("time") not in TIMES: problems.append(f"{where}: time must be one of {sorted(TIMES)}")
     if not re.fullmatch(r"#[0-9a-fA-F]{6}", d.get("color", "")): problems.append(f"{where}: color must look like #a1b2c3")
-    if d.get("group") == "Mocktails":
-        # Party drinks: no health claims, just what they are like.
-        if d.get("benefits") or d.get("tags"): problems.append(f"{where}: mocktails must not have health benefits or health tags")
+    if d.get("group") in STYLES:
+        # Mocktails and café drinks are treats: no health claims, just what they are like.
+        if d.get("benefits") or d.get("tags"): problems.append(f"{where}: treats must not have health benefits or health tags")
         if len(d.get("highlights", [])) < 2: problems.append(f"{where}: needs at least 2 highlights (what it is like)")
-        if d.get("style") not in STYLES: problems.append(f"{where}: style must be one of {sorted(STYLES)}")
-    else:
+        if d.get("style") not in STYLES[d["group"]]: problems.append(f"{where}: style must be one of {sorted(STYLES[d['group']])}")
+    if d.get("group") == "Cafe":
+        if not isinstance(d.get("hot"), bool): problems.append(f"{where}: hot must be true or false")
+        if d.get("caffeine") not in CAFFEINE: problems.append(f"{where}: caffeine must be one of {sorted(CAFFEINE)}")
+        if not any("caffeine" in c.lower() for c in d.get("caution", [])): problems.append(f"{where}: needs a caffeine caution")
+        if d.get("time") == "Night": problems.append(f"{where}: caffeine drinks are not for bedtime")
+    if d.get("group") not in STYLES:
         bad = [t for t in d.get("tags", []) if t not in TAGS]
         if bad or not d.get("tags"): problems.append(f"{where}: tags must be from {sorted(TAGS)} (bad: {bad})")
         if len(d.get("benefits", [])) < 2: problems.append(f"{where}: needs at least 2 benefits")
@@ -66,6 +73,10 @@ SETTINGS = [
 ]
 def vessel(d):
     if d.get("group") == "Mocktails": return "a tall party glass" if d.get("style") != "Creamy" else "a chilled glass with a straw"
+    if d["id"] == "filter-coffee": return "a traditional steel tumbler and dabara, with froth on top"
+    if d["id"] in ("masala-chai", "gud-wali-chai"): return "a small glass chai cup (cutting chai glass)"
+    if d["id"] == "affogato": return "a small glass bowl"
+    if d.get("group") == "Cafe": return "a ceramic cup with a little steam rising" if d.get("hot") else "a tall glass with ice and a straw"
     if d["kind"] == "Warm drink" or d["id"] == "haldi-doodh": return "a ceramic cup with a little steam rising"
     if d["id"] in ("masala-chaas", "sweet-lassi", "jaljeera", "thandai", "sol-kadhi"): return "a traditional steel or brass tumbler"
     if d["id"] == "coconut-water": return "a fresh green tender coconut with a paper straw, plus a glass of coconut water beside it"
@@ -75,6 +86,7 @@ rows = []
 for i, d in enumerate(drinks):
     if d["id"] in photos: continue
     party = d.get("group") == "Mocktails"
+    cafe = d.get("group") == "Cafe"
     def clean(t):
         t = re.sub(r"\(.*?\)", "", t.lower())
         t = re.sub(r"^[\d½¼¾\-–\s]+", "", t)
@@ -85,8 +97,8 @@ for i, d in enumerate(drinks):
     picks = [clean(x["en"]) for x in d["ingredients"]]
     picks = [p for p in picks if p and not any(w in p for w in skip)][:2]
     props = " and ".join(picks) if picks else "a few fresh ingredients"
-    cold = "with condensation on the glass, " if "Cooling" in d["tags"] and d["kind"] != "Warm drink" else ""
-    kind = "a non-alcoholic party mocktail with ice, garnished nicely" if party else "an Indian drink"
+    cold = "with condensation on the glass, " if ("Cooling" in d["tags"] and d["kind"] != "Warm drink") or (cafe and not d.get("hot")) else ""
+    kind = "a non-alcoholic party mocktail with ice, garnished nicely" if party else "a home-made café-style drink" if cafe else "an Indian drink"
     prompt = (f"Realistic, refreshing food photograph of {d['name']} ({d['hindi']}), {kind}, served in {vessel(d)} {SETTINGS[(i * 3) % len(SETTINGS)]}, "
               f"{cold}the drink's true natural colour, with {props} placed casually nearby, slightly out of focus. "
               "Shot at a 30-degree angle with a 50mm lens, shallow depth of field, natural colours, looks home-made and real, not glossy or artificial. "
