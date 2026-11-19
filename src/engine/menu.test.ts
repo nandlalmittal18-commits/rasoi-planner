@@ -734,7 +734,11 @@ describe('juices and drinks', () => {
 
   it('has 20 coffee, tea and chocolate drinks with honest caffeine notes', () => {
     const cafe = DRINKS.filter((d) => d.group === 'Cafe');
-    expect(cafe.length).toBe(20);
+    expect(cafe.length).toBeGreaterThanOrEqual(24);
+    for (const id of ['vietnamese-iced-coffee', 'dalgona-coffee', 'spanish-latte', 'cold-brew-coffee', 'espresso-tonic', 'dirty-matcha-latte'])
+      expect(cafe.map((d) => d.id)).toContain(id);
+    // Tonic water has quinine; the espresso tonic says so.
+    expect(DRINKS.find((d) => d.id === 'espresso-tonic')!.caution.join(' ')).toMatch(/quinine/);
     for (const d of cafe) {
       expect(CAFE_STYLES, d.id).toContain(d.style);
       expect(['High', 'Medium', 'Low'], d.id).toContain(d.caffeine);

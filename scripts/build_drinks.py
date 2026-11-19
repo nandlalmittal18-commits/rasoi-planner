@@ -54,6 +54,7 @@ for n, d in enumerate(drinks, 1):
     for flag in ("vrat", "jain", "noOnionGarlic"):
         if not isinstance(d.get(flag), bool): problems.append(f"{where}: {flag} must be true or false")
     if not isinstance(d.get("minutes"), int): problems.append(f"{where}: minutes must be a whole number")
+    if "wait" in d and not (isinstance(d["wait"], str) and d["wait"]): problems.append(f"{where}: wait must be text, like '12 hours in the fridge'")
 
 if problems: sys.exit("\n".join(problems))
 (root / "src/data/drinks.json").write_text(json.dumps(drinks, ensure_ascii=False, indent=1), encoding="utf-8")

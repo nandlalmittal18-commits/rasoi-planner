@@ -4934,9 +4934,9 @@
   }
  },
  {
-  "id": "condensed-milk-iced-coffee",
-  "name": "Condensed Milk Iced Coffee",
-  "hindi": "मिल्कमेड आइस्ड कॉफ़ी",
+  "id": "vietnamese-iced-coffee",
+  "name": "Vietnamese Iced Coffee",
+  "hindi": "वियतनामी आइस्ड कॉफ़ी",
   "kind": "Café drink",
   "group": "Cafe",
   "style": "Cold coffee",
@@ -4953,8 +4953,8 @@
   "noOnionGarlic": true,
   "benefits": [],
   "highlights": [
-   "Strong coffee with sweet condensed milk over ice, Vietnamese style",
-   "Bold and very sweet: a small glass is enough",
+   "Strong dark coffee with sweet condensed milk, poured over ice",
+   "Bold and very sweet, the famous street coffee of Vietnam",
    "South Indian filter decoction works beautifully here"
   ],
   "nutrients": [],
@@ -5054,6 +5054,194 @@
     "कॉफ़ी और चीनी को 2 बड़े चम्मच गुनगुने पानी में घोलें।",
     "नारियल के दूध और बर्फ़ के साथ झागदार होने तक मिक्सी में चलाएं।",
     "गिलास में डालकर ठंडा परोसें।"
+   ]
+  }
+ },
+ {
+  "id": "spanish-latte",
+  "name": "Spanish Latte",
+  "hindi": "स्पैनिश लाटे",
+  "kind": "Café drink",
+  "group": "Cafe",
+  "style": "Cold coffee",
+  "hot": false,
+  "caffeine": "High",
+  "color": "#c79a6e",
+  "tags": [],
+  "season": "All",
+  "time": "Any time",
+  "minutes": 5,
+  "serving": "1 glass (250 ml)",
+  "vrat": false,
+  "jain": true,
+  "noOnionGarlic": true,
+  "benefits": [],
+  "highlights": [
+   "Strong coffee with condensed milk and cold milk: creamy and sweet",
+   "Smoother and sweeter than a regular latte",
+   "A café favourite that is easy to copy at home"
+  ],
+  "nutrients": [],
+  "caution": [
+   "Has caffeine (a cup of coffee has about 50–120 mg). Adults: keep to about 300 mg of caffeine a day in all, roughly 2–3 cups of coffee. Pregnant women: no more than 200 mg a day.",
+   "Have it at least an hour before or after a meal: tea and coffee with food stop the body taking up iron.",
+   "Not for young children. Skip it in the evening if it keeps you awake.",
+   "A treat, not a health drink: condensed milk is very sweet. Use just a little."
+  ],
+  "ingredients": [
+   {
+    "en": "2 tsp instant coffee in 3 tbsp hot water, or 1 espresso shot",
+    "hi": "3 बड़े चम्मच गरम पानी में 2 छोटे चम्मच इंस्टेंट कॉफ़ी, या 1 एस्प्रेसो शॉट"
+   },
+   {
+    "en": "1 tbsp condensed milk",
+    "hi": "1 बड़ा चम्मच कंडेंस्ड मिल्क"
+   },
+   {
+    "en": "¾ glass chilled milk",
+    "hi": "¾ गिलास ठंडा दूध"
+   },
+   {
+    "en": "Ice cubes",
+    "hi": "बर्फ़ के टुकड़े"
+   }
+  ],
+  "steps": {
+   "en": [
+    "Make the strong coffee and stir in the condensed milk while it is hot.",
+    "Fill a glass with ice and pour in the cold milk.",
+    "Pour the sweet coffee on top. Stir before drinking."
+   ],
+   "hi": [
+    "तेज़ कॉफ़ी बनाएं और गरम रहते ही उसमें कंडेंस्ड मिल्क मिलाएं।",
+    "गिलास में बर्फ़ भरें और ठंडा दूध डालें।",
+    "ऊपर से मीठी कॉफ़ी डालें। पीने से पहले मिला लें।"
+   ]
+  }
+ },
+ {
+  "id": "cold-brew-coffee",
+  "name": "Cold Brew Coffee",
+  "hindi": "कोल्ड ब्रू कॉफ़ी",
+  "kind": "Café drink",
+  "group": "Cafe",
+  "style": "Cold coffee",
+  "hot": false,
+  "caffeine": "High",
+  "color": "#4a2c1a",
+  "tags": [],
+  "season": "Summer",
+  "time": "Any time",
+  "minutes": 10,
+  "serving": "4 glasses",
+  "vrat": false,
+  "jain": true,
+  "noOnionGarlic": true,
+  "benefits": [],
+  "highlights": [
+   "Coffee steeped in cold water overnight: smooth, less bitter and less sour",
+   "Only 10 minutes of work; the fridge does the rest",
+   "One jar lasts up to 5 days; drink it black or with milk"
+  ],
+  "nutrients": [],
+  "caution": [
+   "Has caffeine (a cup of coffee has about 50–120 mg). Adults: keep to about 300 mg of caffeine a day in all, roughly 2–3 cups of coffee. Pregnant women: no more than 200 mg a day.",
+   "Have it at least an hour before or after a meal: tea and coffee with food stop the body taking up iron.",
+   "Not for young children. Skip it in the evening if it keeps you awake.",
+   "Cold brew is strong: mix it half and half with water or milk.",
+   "Keep it covered in the fridge and use within 5 days."
+  ],
+  "ingredients": [
+   {
+    "en": "½ cup coarsely ground coffee",
+    "hi": "आधा कप मोटी पिसी कॉफ़ी"
+   },
+   {
+    "en": "2 cups cold drinking water",
+    "hi": "2 कप ठंडा पीने का पानी"
+   },
+   {
+    "en": "Milk, ice and sugar to serve",
+    "hi": "परोसने के लिए दूध, बर्फ़ और चीनी"
+   }
+  ],
+  "steps": {
+   "en": [
+    "Stir the coffee into the cold water in a clean jar.",
+    "Cover and keep it in the fridge for 12–16 hours.",
+    "Strain twice through a fine strainer or a clean muslin cloth.",
+    "To serve, fill a glass with ice, add half cold brew and half water or milk, and sugar if you like."
+   ],
+   "hi": [
+    "साफ़ जार में ठंडे पानी में कॉफ़ी मिलाएं।",
+    "ढककर 12–16 घंटे फ्रिज में रखें।",
+    "बारीक छलनी या साफ़ मलमल के कपड़े से दो बार छान लें।",
+    "परोसने के लिए गिलास में बर्फ़ डालें, आधा कोल्ड ब्रू और आधा पानी या दूध मिलाएं, चाहें तो चीनी डालें।"
+   ]
+  },
+  "wait": "12–16 hours in the fridge"
+ },
+ {
+  "id": "espresso-tonic",
+  "name": "Espresso Tonic",
+  "hindi": "एस्प्रेसो टॉनिक",
+  "kind": "Café drink",
+  "group": "Cafe",
+  "style": "Cold coffee",
+  "hot": false,
+  "caffeine": "High",
+  "color": "#6b4a33",
+  "tags": [],
+  "season": "Summer",
+  "time": "Any time",
+  "minutes": 5,
+  "serving": "1 glass (250 ml)",
+  "vrat": false,
+  "jain": true,
+  "noOnionGarlic": true,
+  "benefits": [],
+  "highlights": [
+   "Fizzy tonic water with a shot of coffee floating on top",
+   "Bitter-sweet, bubbly and very refreshing, with no milk",
+   "Pour the coffee slowly for pretty layers"
+  ],
+  "nutrients": [],
+  "caution": [
+   "Has caffeine (a cup of coffee has about 50–120 mg). Adults: keep to about 300 mg of caffeine a day in all, roughly 2–3 cups of coffee. Pregnant women: no more than 200 mg a day.",
+   "Have it at least an hour before or after a meal: tea and coffee with food stop the body taking up iron.",
+   "Not for young children. Skip it in the evening if it keeps you awake.",
+   "Tonic water has sugar and a little quinine (that's the bitter taste). If a doctor has told you to avoid quinine, skip this one."
+  ],
+  "ingredients": [
+   {
+    "en": "2 tsp instant coffee in 3 tbsp hot water, or 1 espresso shot",
+    "hi": "3 बड़े चम्मच गरम पानी में 2 छोटे चम्मच इंस्टेंट कॉफ़ी, या 1 एस्प्रेसो शॉट"
+   },
+   {
+    "en": "¾ glass chilled tonic water",
+    "hi": "¾ गिलास ठंडा टॉनिक वॉटर"
+   },
+   {
+    "en": "Ice cubes",
+    "hi": "बर्फ़ के टुकड़े"
+   },
+   {
+    "en": "1 slice orange or lemon",
+    "hi": "संतरे या नींबू का 1 टुकड़ा"
+   }
+  ],
+  "steps": {
+   "en": [
+    "Make the strong coffee and let it cool.",
+    "Fill a tall glass with ice and pour in the tonic water.",
+    "Pour the coffee slowly over the back of a spoon so it floats on top.",
+    "Add the orange slice and serve at once, while it is fizzy."
+   ],
+   "hi": [
+    "तेज़ कॉफ़ी बनाकर ठंडी होने दें।",
+    "लंबे गिलास में बर्फ़ भरें और टॉनिक वॉटर डालें।",
+    "चम्मच के पीछे से धीरे-धीरे कॉफ़ी डालें ताकि वह ऊपर तैरती रहे।",
+    "संतरे का टुकड़ा लगाएं और झाग रहते ही तुरंत परोसें।"
    ]
   }
  },
@@ -5402,6 +5590,77 @@
     "दूध डालकर 2–3 उबाल आने दें।",
     "आंच बंद करें, 30 सेकंड रुकें, फिर गुड़ डालकर घुलने तक मिलाएं।",
     "छानकर गरम परोसें।"
+   ]
+  }
+ },
+ {
+  "id": "dirty-matcha-latte",
+  "name": "Dirty Matcha Latte",
+  "hindi": "डर्टी माचा लाटे",
+  "kind": "Café drink",
+  "group": "Cafe",
+  "style": "Tea",
+  "hot": false,
+  "caffeine": "High",
+  "color": "#7fa65a",
+  "tags": [],
+  "season": "All",
+  "time": "Any time",
+  "minutes": 5,
+  "serving": "1 glass (250 ml)",
+  "vrat": false,
+  "jain": true,
+  "noOnionGarlic": true,
+  "benefits": [],
+  "highlights": [
+   "Green matcha tea with milk, topped with a shot of coffee",
+   "Earthy matcha and bold coffee in pretty green and brown layers",
+   "'Dirty' just means a coffee shot is added"
+  ],
+  "nutrients": [],
+  "caution": [
+   "Has caffeine from both matcha and coffee, so count it as more than one cup. Adults: keep to about 300 mg of caffeine a day in all. Pregnant women: no more than 200 mg a day.",
+   "Have it at least an hour before or after a meal: tea and coffee with food stop the body taking up iron.",
+   "Not for young children. Skip it in the evening if it keeps you awake."
+  ],
+  "ingredients": [
+   {
+    "en": "1 tsp matcha powder",
+    "hi": "1 छोटा चम्मच माचा पाउडर"
+   },
+   {
+    "en": "2 tbsp warm water (not boiling)",
+    "hi": "2 बड़े चम्मच गुनगुना पानी (उबलता नहीं)"
+   },
+   {
+    "en": "¾ glass chilled milk",
+    "hi": "¾ गिलास ठंडा दूध"
+   },
+   {
+    "en": "1 tsp sugar (optional)",
+    "hi": "1 छोटा चम्मच चीनी (चाहें तो)"
+   },
+   {
+    "en": "2 tsp instant coffee in 3 tbsp hot water, or 1 espresso shot",
+    "hi": "3 बड़े चम्मच गरम पानी में 2 छोटे चम्मच इंस्टेंट कॉफ़ी, या 1 एस्प्रेसो शॉट"
+   },
+   {
+    "en": "Ice cubes",
+    "hi": "बर्फ़ के टुकड़े"
+   }
+  ],
+  "steps": {
+   "en": [
+    "Whisk the matcha and sugar with the warm water till smooth and frothy, with no lumps.",
+    "Fill a glass with ice and pour in the cold milk.",
+    "Pour the matcha over the milk.",
+    "Slowly pour the coffee on top. Stir before drinking."
+   ],
+   "hi": [
+    "माचा और चीनी को गुनगुने पानी में फेंटें, जब तक चिकना और झागदार न हो जाए और गुठलियां न रहें।",
+    "गिलास में बर्फ़ भरें और ठंडा दूध डालें।",
+    "दूध के ऊपर माचा डालें।",
+    "ऊपर से धीरे-धीरे कॉफ़ी डालें। पीने से पहले मिला लें।"
    ]
   }
  },

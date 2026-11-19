@@ -234,7 +234,7 @@ export function DrinkSheet({ drinkId, profile, onClose, notify }: { drinkId: str
     isCafe(d) && `${d.caffeine} caffeine`,
     d.season === 'All' ? 'All year' : `${d.season} drink`,
     TIME_TEXT[d.time],
-    `${d.minutes} min`,
+    d.wait ? `${d.minutes} min + ${d.wait}` : `${d.minutes} min`,
     d.serving,
     !treat && d.vrat && 'Vrat OK',
     d.jain && 'Jain OK',

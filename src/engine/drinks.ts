@@ -62,7 +62,10 @@ export interface Drink {
   tags: DrinkTag[];
   season: Season;
   time: 'Morning' | 'Any time' | 'Evening' | 'Night' | 'After meals' | 'Before meals';
+  /** Hands-on time */
   minutes: number;
+  /** Extra waiting time, if any (e.g. cold brew steeping overnight) */
+  wait?: string;
   serving: string;
   vrat: boolean;
   jain: boolean;
