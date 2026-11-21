@@ -856,3 +856,22 @@ body { background: #fff; }
 .drink-tag.is-cafe { background: #f4e8da; color: #7a4520; }
 .drink-section.is-cafe { background: linear-gradient(180deg, #fbf4ec, #ffffff 240px); border-radius: 26px; padding: 18px 16px 8px; margin-top: 16px; }
 .benefit-list.is-cafe li::before { background: #a0683a; }
+
+/* How-to videos from food creators */
+.dcard-video { position: absolute; left: 8px; top: 8px; z-index: 1; display: inline-flex; align-items: center; gap: 4px; background: rgb(20 28 46 / 0.78); color: #fff; font-weight: 700; font-size: 0.72rem; padding: 3px 9px 3px 7px; border-radius: 999px; }
+.howto-section { display: grid; gap: 10px; }
+.howto-section h3 { margin: 0; }
+.howto { margin: 0; display: grid; gap: 8px; }
+.howto-frame { position: relative; aspect-ratio: 16 / 9; border-radius: 16px; overflow: hidden; background: var(--ink); }
+.howto.is-tall .howto-frame { aspect-ratio: 9 / 16; max-height: 70vh; width: min(100%, 360px); }
+.howto-frame iframe { position: absolute; inset: 0; width: 100%; height: 100%; border: 0; }
+.howto-play { position: absolute; inset: 0; width: 100%; height: 100%; padding: 0; border: 0; cursor: pointer; background: var(--ink); display: grid; place-items: center; }
+.howto-play img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; }
+.howto-play-icon { position: relative; display: grid; place-items: center; width: 64px; height: 64px; border-radius: 50%; background: var(--primary); color: #fff; box-shadow: 0 6px 20px rgb(0 0 0 / 0.35); transition: transform 0.15s; }
+.howto-play-icon svg { margin-left: 3px; }
+.howto-play:hover .howto-play-icon, .howto-play:focus-visible .howto-play-icon { transform: scale(1.08); }
+.howto-play:focus-visible { outline: 3px solid var(--accent); outline-offset: -3px; }
+.howto-credit { display: flex; flex-wrap: wrap; justify-content: space-between; gap: 4px 12px; font-size: 0.88rem; color: var(--muted); }
+.howto-credit strong { color: var(--ink); }
+.howto-credit a { color: var(--primary); font-weight: 700; }
+@media (prefers-reduced-motion: reduce) { .howto-play-icon { transition: none; } }

@@ -1,5 +1,5 @@
 import type { ReactNode } from 'react';
-import { getNutrition, proteinLevel, type Dish } from '../engine';
+import { getNutrition, hasVideo, proteinLevel, type Dish } from '../engine';
 import { DishPicture } from './DishPicture';
 import { FoodMark } from './icons';
 
@@ -28,6 +28,14 @@ export function DishCard({
           <DishPicture dish={dish} size={320} cover />
         </button>
         {protein !== null && <span className={`dcard-badge${level === 'high' ? ' is-high' : ''}`}>{protein} g protein</span>}
+        {hasVideo(dish.id) && (
+          <span className="dcard-video" title="Has a how-to video">
+            <svg viewBox="0 0 24 24" width="12" height="12" aria-hidden="true">
+              <path d="M8 5.5v13l11-6.5z" fill="currentColor" />
+            </svg>
+            Video
+          </span>
+        )}
         {action && <div className="dcard-action">{action}</div>}
       </div>
       <button className="dcard-body" onClick={() => onOpen(dish.id)} tabIndex={-1} aria-hidden="true">

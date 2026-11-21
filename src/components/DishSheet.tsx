@@ -4,6 +4,7 @@ import { NutritionPanel } from './NutritionPanel';
 import { copyText } from '../lib/clipboard';
 import { usePhoto } from '../lib/photos';
 import { DishPicture } from './DishPicture';
+import { HowToVideos } from './HowToVideos';
 import { CopyIcon, FoodMark, WhatsAppIcon } from './icons';
 
 interface Props {
@@ -116,6 +117,8 @@ export function DishSheet({ dishId, onClose, notify }: Props) {
               <strong>Plan ahead:</strong> {d.prepAhead}
             </p>
           )}
+
+          <HowToVideos id={d.id} name={d.name} />
 
           <NutritionPanel dishId={d.id} />
 

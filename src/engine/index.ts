@@ -27,3 +27,4 @@ export { FESTIVALS, RULE_LABEL, getFestival, upcomingFestivals, festivalOn, plan
 export { FRIDGE_ITEMS, cookFromFridge, placesFor, type FridgeItem, type FridgeMatch } from './fridge';
 export { cookTemplateParams, cookSpeech } from './cook';
 export { DRINKS, DRINK_TAGS, DRINK_GROUPS, MOCKTAIL_STYLES, MOCKTAIL_NOTE, CAFE_STYLES, CAFE_NOTE, DRINK_STYLES, TREAT_NOTES, isMocktail, isCafe, isTreat, DRINK_NOTE, getDrink, drinkFits, drinkOfTheDay, drinkCookMessage, type Drink, type DrinkTag, type DrinkGroup, type MocktailStyle, type CafeStyle } from './drinks';
+export { videosFor, hasVideo, VIDEO_COUNT, watchUrl, embedUrl, thumbnailUrl, platformName, type HowToVideo, type VideoPlatform } from './videos';

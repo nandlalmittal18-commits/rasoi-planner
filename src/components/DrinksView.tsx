@@ -22,6 +22,7 @@ import {
 import { seasonFor } from '../engine/util';
 import { copyText } from '../lib/clipboard';
 import { DrinkPicture } from './DrinkPicture';
+import { HowToVideos } from './HowToVideos';
 import { CopyIcon, WhatsAppIcon } from './icons';
 
 const SEASONS = ['All year', 'Winter', 'Summer', 'Monsoon'] as const;
@@ -265,6 +266,8 @@ export function DrinkSheet({ drinkId, profile, onClose, notify }: { drinkId: str
             </div>
             {!fits && <p className="field-error">This drink doesn’t fit your family’s food rules (Jain or no onion-garlic).</p>}
           </div>
+
+          <HowToVideos id={d.id} name={d.name} />
 
           {treat ? (
             <section>

@@ -32,6 +32,12 @@ import {
   DRINK_TAGS,
   drinkFits,
   CAFE_STYLES,
+  videosFor,
+  hasVideo,
+  watchUrl,
+  embedUrl,
+  thumbnailUrl,
+  getDrink,
   drinkOfTheDay,
   drinkCookMessage,
   cookTemplateParams,
@@ -771,5 +777,35 @@ describe('juices and drinks', () => {
     expect(msg).toContain('Sunita जी');
     expect(msg).toContain('विधि');
     expect(msg).toContain('कड़वी');
+  });
+});
+
+describe('how-to videos', () => {
+  it('has a credited video for every trending dish, pointing at a real dish', () => {
+    const trending = ['kulhad-pizza', 'bread-pizza', 'pink-sauce-pasta', 'chilli-cheese-toast', 'bombay-masala-toast', 'dabeli', 'tandoori-momos', 'kurkure-momos',
+      'peri-peri-fries', 'cheese-corn-balls', 'paneer-popcorn', 'crispy-corn', 'honey-chilli-potato', 'chilli-garlic-noodles', 'paneer-kathi-roll',
+      'korean-cream-cheese-garlic-bun', 'korean-cheese-corn-dog', 'cheese-masala-noodles', 'pani-puri', 'dubai-chocolate-bar', 'biscoff-cheesecake-jar',
+      'rasmalai-tres-leches', 'chocolate-lava-cake', 'tiramisu-cups'];
+    for (const id of trending) {
+      expect(hasVideo(id), id).toBe(true);
+      expect(() => getDish(id)).not.toThrow();
+      for (const v of videosFor(id)) expect(v.creator.trim().length, id).toBeGreaterThan(0);
+    }
+    expect(videosFor('poha')).toEqual([]);
+    expect(getDrink('virgin-mojito')).toBeTruthy();
+  });
+
+  it('builds the official YouTube player, watch link and still picture', () => {
+    const v = videosFor('dabeli')[0];
+    expect(v.platform).toBe('youtube');
+    expect(v.id).toMatch(/^[A-Za-z0-9_-]{11}$/);
+    expect(embedUrl(v)).toBe(`https://www.youtube-nocookie.com/embed/${v.id}?autoplay=1&rel=0&playsinline=1`);
+    expect(watchUrl(v)).toBe(`https://www.youtube.com/watch?v=${v.id}`);
+    expect(thumbnailUrl(v)).toBe(`https://i.ytimg.com/vi/${v.id}/hqdefault.jpg`);
+    const short = videosFor('korean-cream-cheese-garlic-bun')[0];
+    expect(watchUrl(short)).toContain('/shorts/');
+    const insta = { platform: 'instagram' as const, url: 'https://www.instagram.com/reel/ABC123', creator: 'Test' };
+    expect(embedUrl(insta)).toBe('https://www.instagram.com/reel/ABC123/embed/');
+    expect(thumbnailUrl(insta)).toBeNull();
   });
 });
